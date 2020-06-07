@@ -73,56 +73,6 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/fr/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://xinii.github.io/pl/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://xinii.github.io/pt/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://xinii.github.io/de/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://xinii.github.io/es/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://xinii.github.io/zh-tw/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://xinii.github.io/fr/"
-                />
-  </url>
-  
-  <url>
     <loc>https://xinii.github.io/fr/tags/markdown/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url>
@@ -223,38 +173,92 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/fr/tags/privacy/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+    <loc>https://xinii.github.io/fr/</loc>
+    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pl"
+                href="https://xinii.github.io/pl/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://xinii.github.io/pt/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://xinii.github.io/de/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://xinii.github.io/es/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://xinii.github.io/zh-tw/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.github.io/ja/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://xinii.github.io/fr/"
+                />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/fr/posts/rich-content/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+    <loc>https://xinii.github.io/fr/about/</loc>
+    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pl"
+                href="https://xinii.github.io/pl/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://xinii.github.io/pt/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://xinii.github.io/fr/about/"
+                />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/fr/tags/shortcodes/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/fr/posts/placeholder-text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/fr/tags/text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/fr/tags/emoji/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/fr/posts/emoji-support/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+    <loc>https://xinii.github.io/fr/contact/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://xinii.github.io/fr/contact/"
+                />
   </url>
   
 </urlset>

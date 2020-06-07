@@ -17,6 +17,18 @@
     "body": "SSH interruption phenomenon  When logging in to a remote server with ssh, Write failed: Broken pipe may be displayed and the connection may be broken. It is necessary to change the ssh setting on the client side or the server side, because ssh is automatically disconnected by a timeout if it is not operated for a while.  Remedy  Deal on the client side  Describe the following contents in /etc/ssh/ssh_config or ~/.ssh/config\nServerAliveInterval 15 ServerAliveCountMax 10 With this setting, 10 times response confirmation will send to the server every 15 seconds, and if there is still no response, it times out.\n Deal on the server side  Describe the following contents in /etc/ssh/sshd_config\nClientAliveInterval 30 ClientAliveCountMax 5 With this setting, 5 times response confirmation will send to the client every 30 seconds, and if there is still no response, it times out.\nOne more thing It is recommended to use tools such as tmux or screen, so that even if the connection is lost halfway, you can log in to the remote server again and attach the previous session.\nSSH daemon on android by termux Installation apt install openssh Setting the key ssh-keygen cat ~/.ssh/id_rsa.pub \u0026gt; ~/.ssh/authorized_keys chmod 600 ~/.ssh/authorized_keys chmod 700 ~/.ssh Start daemon in debug mode sshd -d Start daemon sshd Login on the PC side Set the private key ~/.ssh/id_rsa generated on the android side in the SSH client of the PC side, and connect to the server on android with specifying IP and port 8022 and without a username.\n",
     "ref": "/posts/ssh-configuration/"
   },{
+    "title": "About",
+    "date": "February 28, 2019",
+    "description": "Hugo, the world’s fastest framework for building websites",
+    "body": "Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.\nHugo makes use of a variety of open source projects including:\n https://github.com/yuin/goldmark https://github.com/alecthomas/chroma https://github.com/muesli/smartcrop https://github.com/spf13/cobra https://github.com/spf13/viper  Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.\nHugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.\nWebsites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.\nLearn more and contribute on GitHub.\n",
+    "ref": "/about/"
+  },{
+    "title": "Contact",
+    "date": "January 1, 0001",
+    "description": "",
+    "body": "",
+    "ref": "/contact/"
+  },{
     "title": "Generate sheet music with Lilypond on Emacs",
     "date": "January 1, 0001",
     "description": "Emacsにおけるlilypondを使った楽譜生成",

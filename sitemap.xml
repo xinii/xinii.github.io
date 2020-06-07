@@ -18,10 +18,14 @@
 	<sitemap>
 	   	<loc>https://xinii.github.io/pl/sitemap.xml</loc>
 		
+	   	<lastmod>2019-02-28T00:00:00+00:00</lastmod>
+		
 	</sitemap>
 	
 	<sitemap>
 	   	<loc>https://xinii.github.io/pt/sitemap.xml</loc>
+		
+	   	<lastmod>2019-02-28T00:00:00+00:00</lastmod>
 		
 	</sitemap>
 	
