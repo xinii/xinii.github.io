@@ -8,42 +8,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://xinii.github.io/fr/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://xinii.github.io/pl/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://xinii.github.io/pt/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://xinii.github.io/de/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://xinii.github.io/es/categories/"
+                href="https://xinii.github.io/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://xinii.github.io/zh-tw/categories/"
+                href="https://xinii.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -53,17 +23,17 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/categories/diy/</loc>
+    <loc>https://xinii.github.io/ja/categories/configuration/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/categories/diy/"
+                href="https://xinii.github.io/en/categories/configuration/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/categories/diy/"
+                href="https://xinii.github.io/ja/categories/configuration/"
                 />
   </url>
   
@@ -78,17 +48,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://xinii.github.io/fr/posts/"
+                href="https://xinii.github.io/en/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/posts/"
+                href="https://xinii.github.io/posts/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -108,42 +73,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://xinii.github.io/fr/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://xinii.github.io/pl/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://xinii.github.io/pt/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://xinii.github.io/de/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://xinii.github.io/es/tags/"
+                href="https://xinii.github.io/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://xinii.github.io/zh-tw/tags/"
+                href="https://xinii.github.io/tags/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -153,73 +88,8 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/categories/tech/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/categories/tech/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/categories/tech/"
-                />
-  </url>
-  
-  <url>
     <loc>https://xinii.github.io/ja/tags/windows/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/ja/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://xinii.github.io/fr/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://xinii.github.io/pl/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://xinii.github.io/pt/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://xinii.github.io/de/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://xinii.github.io/es/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://xinii.github.io/zh-tw/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/"
-                />
   </url>
   
   <url>
@@ -233,12 +103,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/emacs/"
+                href="https://xinii.github.io/en/tags/emacs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/emacs/"
+                href="https://xinii.github.io/tags/emacs/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -273,8 +143,18 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/tags/pitfall/</loc>
+    <loc>https://xinii.github.io/ja/categories/pitfall/</loc>
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/categories/pitfall/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.github.io/ja/categories/pitfall/"
+                />
   </url>
   
   <url>
@@ -282,7 +162,7 @@
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="zh-cn"
                 href="https://xinii.github.io/tags/python/"
                 />
     <xhtml:link
@@ -293,6 +173,21 @@
   </url>
   
   <url>
+    <loc>https://xinii.github.io/ja/posts/generate-sheet-music-with-lilypond-on-emacs/</loc>
+    <lastmod>2019-11-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/ja/tags/lilypond/</loc>
+    <lastmod>2019-11-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/ja/tags/sheet-music/</loc>
+    <lastmod>2019-11-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xinii.github.io/ja/tags/absolute-pitch/</loc>
     <lastmod>2019-11-15T00:00:00+00:00</lastmod>
   </url>
@@ -300,21 +195,51 @@
   <url>
     <loc>https://xinii.github.io/ja/tags/music/</loc>
     <lastmod>2019-11-15T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/tags/music/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/tags/music/"
-                />
   </url>
   
   <url>
     <loc>https://xinii.github.io/ja/posts/about-absolute-pitch/</loc>
     <lastmod>2019-11-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/ja/</loc>
+    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.github.io/ja/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/ja/about/</loc>
+    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/en/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.github.io/ja/about/"
+                />
   </url>
   
 </urlset>

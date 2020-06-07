@@ -11,7 +11,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://xinii.github.io/ja/" />
-<meta property="og:updated_time" content="2020-06-04T00:00:00+00:00" />
+<meta property="og:updated_time" content="2019-02-28T00:00:00+00:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="xin blog"/>
 <meta name="twitter:description" content=""/>
@@ -127,21 +127,9 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
   <menu id="lang-menu" class="flyout-menu menu">
   <a href="#" lang="ja" class="nav link active">日本語 (ja)</a>
   
-      <a href="https://xinii.github.io/" lang="en" class="nav link">English (en)</a>
+      <a href="https://xinii.github.io/en/" lang="en" class="nav link">English (en)</a>
     
-      <a href="https://xinii.github.io/fr/" lang="fr" class="nav link">Français (fr)</a>
-    
-      <a href="https://xinii.github.io/pl/" lang="pl" class="nav link">Polski (pl)</a>
-    
-      <a href="https://xinii.github.io/pt/" lang="pt" class="nav link">Português (pt)</a>
-    
-      <a href="https://xinii.github.io/de/" lang="de" class="nav link">Deutsche (de)</a>
-    
-      <a href="https://xinii.github.io/es/" lang="es" class="nav link">Española (es)</a>
-    
-      <a href="https://xinii.github.io/zh-cn/" lang="zh-cn" class="nav link">中文 (zh-cn)</a>
-    
-      <a href="https://xinii.github.io/zh-tw/" lang="zh-tw" class="nav link">中文 (zh-tw)</a>
+      <a href="https://xinii.github.io/" lang="zh-cn" class="nav link">中文 (zh-cn)</a>
     
   
 </menu>
@@ -295,9 +283,7 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
     
       
         
-          <li><a class="article-terms-link" href="/ja/categories/tech/">tech</a></li>
-        
-          <li><a class="article-terms-link" href="/ja/categories/diy/">diy</a></li>
+          <li><a class="article-terms-link" href="/ja/categories/configuration/">configuration</a></li>
         
       
     
@@ -356,7 +342,11 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
   <li class="categories">
     <ul>
     
-      <li>None</li>
+      
+        
+          <li><a class="article-terms-link" href="/ja/categories/pitfall/">pitfall</a></li>
+        
+      
     
     </ul>
   </li>
@@ -364,8 +354,6 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
     <ul>
     
       
-        
-          <li><a class="article-terms-link" href="/ja/tags/pitfall/">pitfall</a></li>
         
           <li><a class="article-terms-link" href="/ja/tags/org-mode/">org-mode</a></li>
         
@@ -414,6 +402,88 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
   <li class="categories">
     <ul>
     
+      
+        
+          <li><a class="article-terms-link" href="/ja/categories/pitfall/">pitfall</a></li>
+        
+      
+    
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+    
+      
+        
+          <li><a class="article-terms-link" href="/ja/tags/latex/">latex</a></li>
+        
+          <li><a class="article-terms-link" href="/ja/tags/figure/">figure</a></li>
+        
+      
+    
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/ja/posts/generate-sheet-music-with-lilypond-on-emacs/">emacsとlilypondで楽譜生成</a></h2>
+    
+    
+      <p>emacsとlilypondで楽譜生成</p>
+    
+  </div>
+  <div class="meta">
+    <time class="published" datetime="2019-11-16 00:00:00 &#43;0000 UTC">
+      2019-11-16
+    </time>
+    <span class="author">Xin Li</span>
+    
+      <p>1 分で読めます</p>
+    
+  </div>
+</header>
+
+  
+
+  
+  <pre><code class="language-lilypond" data-lang="lilypond">\version &quot;2.18.2&quot;
+
+\score {
+  \new Staff &lt;&lt;
+    \new Voice \relative c''' {
+      \set midiInstrument = #&quot;flute&quot;
+      \voiceOne
+      \key g \major
+      \time 2/2
+      r2 g-&quot;Flute&quot; ~
+      g fis ~
+      fis4 g8 fis e2 ~
+      e4 d8 cis d2
+    }
+    \new Voice \relative c'' {
+      \set midiInstrument = #&quot;clarinet&quot;
+      \voiceTwo
+      b1-&quot;Clarinet&quot;
+      a2. b8 a
+      g2. fis8 e
+      fis2 r
+    }
+  &gt;&gt;
+  \layout { }
+  \midi {&hellip;</code></pre>
+  <footer>
+    <a href="/ja/posts/generate-sheet-music-with-lilypond-on-emacs/" class="button big">続きを読む</a>
+    <ul class="stats">
+  <li class="categories">
+    <ul>
+    
       <li>None</li>
     
     </ul>
@@ -423,11 +493,65 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
     
       
         
-          <li><a class="article-terms-link" href="/ja/tags/pitfall/">pitfall</a></li>
+          <li><a class="article-terms-link" href="/ja/tags/emacs/">emacs</a></li>
         
-          <li><a class="article-terms-link" href="/ja/tags/latex/">laTeX</a></li>
+          <li><a class="article-terms-link" href="/ja/tags/lilypond/">lilypond</a></li>
         
-          <li><a class="article-terms-link" href="/ja/tags/figure/">figure</a></li>
+          <li><a class="article-terms-link" href="/ja/tags/sheet-music/">sheet music</a></li>
+        
+      
+    
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/ja/posts/about-absolute-pitch/">絶対音感について</a></h2>
+    
+    
+      <p>絶対音感について</p>
+    
+  </div>
+  <div class="meta">
+    <time class="published" datetime="2019-11-15 00:00:00 &#43;0000 UTC">
+      2019-11-15
+    </time>
+    <span class="author">Xin Li</span>
+    
+      <p>1 分で読めます</p>
+    
+  </div>
+</header>
+
+  
+
+  
+  <p>次の表に，ピアノの鍵盤における88のキーに相応する音の周波数を示す。</p>
+  <footer>
+    <a href="/ja/posts/about-absolute-pitch/" class="button big">続きを読む</a>
+    <ul class="stats">
+  <li class="categories">
+    <ul>
+    
+      <li>None</li>
+    
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+    
+      
+        
+          <li><a class="article-terms-link" href="/ja/tags/music/">music</a></li>
+        
+          <li><a class="article-terms-link" href="/ja/tags/absolute-pitch/">absolute pitch</a></li>
         
       
     
@@ -442,8 +566,6 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
   
 <div class="pagination">
   
-  
-    <a href="/ja/page/2/" class="button"><div class="next"><div>Next</div></div></a>
   
 </div>
 
@@ -495,11 +617,26 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
 
         </section>
         <header>
+          <h2><a href="/ja/posts/generate-sheet-music-with-lilypond-on-emacs/">emacsとlilypondで楽譜生成</a></h2>
+          <time class="published" datetime="">2019-11-16</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
           <h2><a href="/ja/posts/about-absolute-pitch/">絶対音感について</a></h2>
           <time class="published" datetime="">2019-11-15</time>
         </header>
       </article>
       
+      
+        <footer>
+          <a href="/ja/blog/" class="button">続きを見る</a>
+        </footer>
       
     </section>
   
@@ -517,12 +654,12 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
           
           <li>
             
-              <a href="/ja/categories/diy/">diy<span class="count">1</span></a>
+              <a href="/ja/categories/pitfall/">pitfall<span class="count">2</span></a>
             
           
           <li>
             
-              <a href="/ja/categories/tech/">tech<span class="count">1</span></a>
+              <a href="/ja/categories/configuration/">configuration<span class="count">1</span></a>
             
           
           </li>

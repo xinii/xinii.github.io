@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-cn">
   <head>
   <meta charset="utf-8">
 <title>Contact - xin blog</title>
@@ -79,14 +79,23 @@
     </menu>
     <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
     <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
-    <a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
+    <a href="#lang-menu" class="nav lang-toggle" lang="zh-cn">zh-cn</a>
     <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
   </nav>
   <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
   <menu id="lang-menu" class="flyout-menu menu">
-  <a href="#" lang="en" class="nav link active">English (en)</a>
+  <a href="#" lang="zh-cn" class="nav link active">中文 (zh-cn)</a>
   
-      <a href="https://xinii.github.io/fr/contact/" lang="fr" class="nav link">Français (fr)</a>
+    
+      
+        <a href="/en" lang="en" class="nav no-lang link">English (en)</a>
+      
+    
+      
+    
+      
+        <a href="/ja" lang="ja" class="nav no-lang link">日本語 (ja)</a>
+      
     
   
 </menu>
@@ -131,7 +140,7 @@
   
 
   
-        <a href="mailto:?subject=Check%20out%20this%20post%20by %7b%20%20%20%20%20%20%20%20map%5b%5d%7d&amp;body=https%3a%2f%2fxinii.github.io%2fcontact%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+        <a href="mailto:?subject=%e6%9f%a5%e7%9c%8b%e6%ad%a4%e5%b8%96%e5%ad%90%e7%9a%84%e4%bd%9c%e8%80%85 %7b%20%20%20%20%20%20%20%20map%5b%5d%7d&amp;body=https%3a%2f%2fxinii.github.io%2fcontact%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
           <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
         </a>
   
@@ -219,7 +228,7 @@
           
             <form id="contact" action="//formspree.io/example@email.com" method="post" center width="300px">
           
-          <h4>Replies typically within 24 hours.</h4>
+          <h4>一般回应需时 24 小时</h4>
           <fieldset>
             <input placeholder="Your name" type="text" name="name" tabindex="1" required autofocus>
           </fieldset>
@@ -236,7 +245,7 @@
             <input type="hidden" name="_language" value="en">
           </fieldset>
           <fieldset>
-            <button name="submit" class="button" type="submit" id="contact-submit" tabindex="5">Submit</button>
+            <button name="submit" class="button" type="submit" id="contact-submit" tabindex="5">送出</button>
           </fieldset>
         </form>
       </div>
@@ -248,7 +257,7 @@
   
     <section id="recent-posts">
       <header>
-        <h1>Recent posts</h1>
+        <h1>最新文章</h1>
       </header>
       
       <article class="mini-post">
@@ -257,8 +266,8 @@
 
         </section>
         <header>
-          <h2><a href="/posts/some-configurations-for-windows-10/">Some works after Windows 10 clean installation</a></h2>
-          <time class="published" datetime="">June 4, 2020</time>
+          <h2><a href="/posts/install-opencv-on-jetson-nano/">在jetson nano上安装opencv</a></h2>
+          <time class="published" datetime="">July 12, 2019</time>
         </header>
       </article>
       
@@ -268,8 +277,8 @@
 
         </section>
         <header>
-          <h2><a href="/posts/add-apt-repository-for-fish-and-emacs/">Add apt repository for fish and emacs</a></h2>
-          <time class="published" datetime="">June 3, 2020</time>
+          <h2><a href="/posts/install-gnutls-and-compile-emacs-from-source/">安装gnutls并从源码编译emacs</a></h2>
+          <time class="published" datetime="">May 4, 2019</time>
         </header>
       </article>
       
@@ -279,37 +288,11 @@
 
         </section>
         <header>
-          <h2><a href="/posts/ssh-configuration/">SSH configuration</a></h2>
-          <time class="published" datetime="">June 3, 2020</time>
+          <h2><a href="/posts/my-shell-migration-record/">我的shell迁移记录</a></h2>
+          <time class="published" datetime="">May 3, 2019</time>
         </header>
       </article>
       
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
-          <h2><a href="/posts/lilypond/">Generate sheet music with Lilypond on Emacs</a></h2>
-          <time class="published" datetime="">January 1, 0001</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
-          <h2><a href="/posts/jetson-nano-opencv/">How to Install OpenCV on NVIDIA Jetson Nano</a></h2>
-          <time class="published" datetime="">January 1, 0001</time>
-        </header>
-      </article>
-      
-      
-        <footer>
-          <a href="/blog/" class="button">See more</a>
-        </footer>
       
     </section>
   
@@ -318,7 +301,7 @@
     
       <section id="categories">
         <header>
-          <h1><a href="/categories">Categories</a></h1>
+          <h1><a href="/categories">分类</a></h1>
         </header>
         <ul>
           
@@ -327,12 +310,12 @@
           
           <li>
             
-              <a href="/categories/diy/">diy<span class="count">1</span></a>
+              <a href="/categories/installation/">installation<span class="count">2</span></a>
             
           
           <li>
             
-              <a href="/categories/tech/">tech<span class="count">1</span></a>
+              <a href="/categories/pitfall/">pitfall<span class="count">1</span></a>
             
           
           </li>
@@ -344,11 +327,11 @@
   
     <section id="mini-bio">
       <header>
-        <h1>About</h1>
+        <h1>关于</h1>
       </header>
       <p>Xin Li's personal blog</p>
       <footer>
-        <a href="/about" class="button">Learn More</a>
+        <a href="/about" class="button">了解更多</a>
       </footer>
     </section>
   
@@ -405,12 +388,12 @@
   
   <p class="copyright">
     
-      &copy; 2020
+      &copy; 2019
       
         xin blog
       
     . <br>
-    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.67.0' target='_blank' rel='noopener'>Hugo</a>
+    主题: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.67.0'>Hugo</a> 驱动
   </p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>

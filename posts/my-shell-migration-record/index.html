@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="zh-cn">
+  <head>
+  <meta charset="utf-8">
+<title>我的shell迁移记录 - xin blog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="generator" content="Hugo 0.67.0" /><meta itemprop="name" content="我的shell迁移记录">
+<meta itemprop="description" content="从bash到zsh再到fish">
+<meta itemprop="datePublished" content="2019-05-03T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-05-03T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="135">
+
+
+
+<meta itemprop="keywords" content="shell,zsh shell,fish shell," /><meta property="og:title" content="我的shell迁移记录" />
+<meta property="og:description" content="从bash到zsh再到fish" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xinii.github.io/posts/my-shell-migration-record/" />
+<meta property="article:published_time" content="2019-05-03T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-05-03T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="我的shell迁移记录"/>
+<meta name="twitter:description" content="从bash到zsh再到fish"/>
+<meta name="twitter:site" content="@xintxt"/>
+<link rel="stylesheet" href="/css/bundle.min.759e3848ea529eef056dab665b241e2af569e601ab80f68f8d4a4d002a155dd4.css" integrity="sha256-dZ44SOpSnu8FbatmWyQeKvVp5gGrgPaPjUpNACoVXdQ="><link rel="stylesheet" href="/css/add-on.css">
+</head>
+
+  <body>
+    
+
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/" class="nav">
+        
+          
+            posts
+          
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu menu">
+      
+        
+          
+          
+            <a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+          
+        
+      
+        
+          
+          
+            <a href="/about/" class="nav link"><i class='far fa-id-card'></i> About</a>
+          
+        
+      
+        
+          
+          
+            <a href="/blog/" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+          
+        
+      
+        
+          
+          
+            <a href="/categories/" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+          
+        
+      
+        
+          
+          
+            <a href="/contact/" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+          
+        
+      
+      <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+      <a href="#search-input" class="nav search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
+    </menu>
+    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+    <a href="#lang-menu" class="nav lang-toggle" lang="zh-cn">zh-cn</a>
+    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+  <menu id="lang-menu" class="flyout-menu menu">
+  <a href="#" lang="zh-cn" class="nav link active">中文 (zh-cn)</a>
+  
+    
+      
+        <a href="/en" lang="en" class="nav no-lang link">English (en)</a>
+      
+    
+      
+    
+      
+        <a href="/ja" lang="ja" class="nav no-lang link">日本語 (ja)</a>
+      
+    
+  
+</menu>
+
+  
+    <menu id="share-menu" class="flyout-menu menu">
+      <h1>Share Post</h1>
+      
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=%e6%88%91%e7%9a%84shell%e8%bf%81%e7%a7%bb%e8%ae%b0%e5%bd%95&amp;url=https%3a%2f%2fxinii.github.io%2fposts%2fmy-shell-migration-record%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fxinii.github.io%2fposts%2fmy-shell-migration-record%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fposts%2fmy-shell-migration-record%2f&amp;title=%e6%88%91%e7%9a%84shell%e8%bf%81%e7%a7%bb%e8%ae%b0%e5%bd%95" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fposts%2fmy-shell-migration-record%2f&amp;title=%e6%88%91%e7%9a%84shell%e8%bf%81%e7%a7%bb%e8%ae%b0%e5%bd%95" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fposts%2fmy-shell-migration-record%2f&amp;description=%e6%88%91%e7%9a%84shell%e8%bf%81%e7%a7%bb%e8%ae%b0%e5%bd%95" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=%e6%9f%a5%e7%9c%8b%e6%ad%a4%e5%b8%96%e5%ad%90%e7%9a%84%e4%bd%9c%e8%80%85 Xin%20Li&amp;body=https%3a%2f%2fxinii.github.io%2fposts%2fmy-shell-migration-record%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+    </menu>
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" >
+  <a href="/"><img src="https://xinii.github.io/img/main/logo.jpg" class="circle" width="" alt="xin blog" /></a>
+  <header>
+    <h1>xin blog</h1>
+  </header>
+  <main>
+    <p>Thanks for coming to xin blog!</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/xinii" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/xinii" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+<li><a href="//facebook.com/xintxt" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+
+
+
+
+
+
+<li><a href="weixin://contacts/profile/xin099" target="_blank" rel="noopener" title="WeChat" class="fab fa-weixin"></a></li>
+<li><a href="//wpa.qq.com/msgrd?v=3&amp;uin=78809709&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener" title="QQ" class="fab fa-qq"></a></li>
+
+
+<li><a href="//twitter.com/xintxt" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+<li><a href="skype:xintxt?userinfo" target="_blank" rel="noopener" title="Skype" class="fab fa-skype"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:xinii@msn.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        
+  <article class="post">
+    <header>
+  <div class="title">
+    
+      <h2><a href="/posts/my-shell-migration-record/">我的shell迁移记录</a></h2>
+    
+    
+      <p>从bash到zsh再到fish</p>
+    
+  </div>
+  <div class="meta">
+    <time class="published" datetime="2019-05-03 00:00:00 &#43;0000 UTC">
+      May 3, 2019
+    </time>
+    <span class="author">Xin Li</span>
+    
+      <p>1 分钟</p>
+    
+  </div>
+</header>
+
+    <section id="socnet-share">
+      
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=%e6%88%91%e7%9a%84shell%e8%bf%81%e7%a7%bb%e8%ae%b0%e5%bd%95&amp;url=https%3a%2f%2fxinii.github.io%2fposts%2fmy-shell-migration-record%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fxinii.github.io%2fposts%2fmy-shell-migration-record%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fposts%2fmy-shell-migration-record%2f&amp;title=%e6%88%91%e7%9a%84shell%e8%bf%81%e7%a7%bb%e8%ae%b0%e5%bd%95" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fposts%2fmy-shell-migration-record%2f&amp;title=%e6%88%91%e7%9a%84shell%e8%bf%81%e7%a7%bb%e8%ae%b0%e5%bd%95" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fposts%2fmy-shell-migration-record%2f&amp;description=%e6%88%91%e7%9a%84shell%e8%bf%81%e7%a7%bb%e8%ae%b0%e5%bd%95" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=%e6%9f%a5%e7%9c%8b%e6%ad%a4%e5%b8%96%e5%ad%90%e7%9a%84%e4%bd%9c%e8%80%85 Xin%20Li&amp;body=https%3a%2f%2fxinii.github.io%2fposts%2fmy-shell-migration-record%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+    </section>
+    
+
+    <div class="content">
+      <h2 id="从bash到zsh">从bash到zsh</h2>
+<p>虽然我使用zsh shell两周后就换到fish shell了（关于fish shell下面有专门介绍），
+但这并不否认zsh shell仍然是个很好的shell。
+你可以通过下面的方式从任意的shell切换至zsh shell。</p>
+<ul>
+<li>安装zsh时通过下面的指令：</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">brew install zsh <span style="color:#f92672">(</span>MacOS<span style="color:#f92672">)</span>
+apt install zsh <span style="color:#f92672">(</span>Ubuntu / Linux Mint<span style="color:#f92672">)</span>
+</code></pre></div><ul>
+<li>如果你想要知道现在系统裡已经安装好的shell，输入下面的指令：</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cat /etc/shells
+</code></pre></div><ul>
+<li>如何将zsh作为你默认的shell呢？，输入下面的指令：</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">chsh -s /usr/local/bin/zsh
+</code></pre></div><ul>
+<li>关于配置文件的读取错误</li>
+</ul>
+<p>shell脚本解释出错时可以查看一下当前所使用的<code>sh</code>路径，
+比如有可能是<code>sh</code>指向了<code>dash</code>导致出错。
+通过下面的语句查看。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ls -l <span style="color:#e6db74">`</span>which sh<span style="color:#e6db74">`</span>
+</code></pre></div><ul>
+<li>脚本解释器在语法上的不同点</li>
+</ul>
+<p>从传统的bash等shell换到zsh时会发现集合的第一个元素的索引是从1开始的，
+如果希望从0开始，在配置文件中配置下面语句即可。</p>
+<ul>
+<li>Fix array index for zsh:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span>$ZSH_NAME<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;zsh&#34;</span> <span style="color:#f92672">]</span>;<span style="color:#66d9ef">then</span>
+	setopt localoptions ksharrays
+<span style="color:#66d9ef">fi</span>
+</code></pre></div><h4 id="配置zsh-shell">配置zsh shell</h4>
+<p>与bash shell的<code>.bashrc</code>类似，<code>zsh</code>的配置也需要一个配置文件，
+这个文件是在用户目录下的<code>.zshrc</code>文件，点击
+<a href="https://github.com/xinii/xinconfig/blob/master/profile/core/zsh.sh">这里</a>
+打开我上传到<code>Github</code>的配置文件下载使用。</p>
+<h2 id="从zsh到fish">从zsh到fish</h2>
+<p>使用zsh shell之后大概两週我就换到fish shell了，
+这不是因为zsh不好，而是fish天然的完成度和易用性吸引了我，
+转移到fish环境后，有关shell折腾算是告一段落，以下对该过程纪录。</p>
+<h4 id="fish-shell的安装以及默认shell的切换">fish shell的安装以及默认shell的切换</h4>
+<p>这个上面提到过，这裡具体针对不同的操作系统所需要执行的指令进行介绍。</p>
+<ul>
+<li>MacOS:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">brew install fish
+</code></pre></div><ul>
+<li>Ubuntu/Linux Mint:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">apt install fish
+</code></pre></div><ul>
+<li>OpenSUSE:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo zypper install fish
+</code></pre></div><p>如果需要<code>root</code>权限，例如你是运行在Windows下的OpenSUSE环境，
+则默认需要<code>root</code>权限，则前面加<code>sudo</code>。
+通过下面的语句查看当前系统所使用的shell：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cat /etc/shells
+</code></pre></div><p>如果显示你的fish shell在<code>/usr/bin/fish</code>，
+那麽执行下面的语句切换其为默认shell（权限不足则补充<code>sudo</code>）：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">chsh -s /usr/bin/fish
+</code></pre></div><p>现在重新打开一个终端会话会发现默认shell已经切换到fish了。
+如果打开fish shell后马上报很多关于hostname的错，
+也就是说当前环境缺少一个叫做hostname的包，
+那麽使用你所使用的发行版的包管理器安装<code>hostname</code>，
+例如在OpenSUSE下使用：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo zypper install hostname
+</code></pre></div><h4 id="fish的配置">fish的配置</h4>
+<p>我写好的配置上传在了Github，点击
+<a href="https://github.com/xinii/xinconfig/tree/master/profile/fish">这里</a>
+查看我的配置。</p>
+<h4 id="在fish-shell下使用python时的常见问题">在fish shell下使用python时的常见问题</h4>
+<p>目前我遇到的比较需要注意的问题有下面两点：</p>
+<ul>
+<li>关于tmux</li>
+</ul>
+<p>tmux在后台存在session的时候，
+即使更新<code>PYTHONPATH</code>环境变量也不会生效，
+此时需要关闭tmux的所有进程，更新才会生效。
+除fish以外其他shell环境应该也会遇到，
+我是在fish首次出现，留作纪录。</p>
+<ul>
+<li>关于PYTHONPATH</li>
+</ul>
+<p>fish shell中定义环境变量的方式为<code>set &lt;variable_name&gt; &lt;parameter_1&gt; &lt;parameter_2&gt;</code>
+这种方式有很大的优越性而且非常方便，
+然而对于<code>PYTHONPATH</code>，
+则<code>set PYTHONPATH &lt;parameter_1&gt;:&lt;parameter_2&gt;</code>的方式更具有通用性。
+原因为，经过测试在MacOS下两种方式均可正常使用，
+但在运行在Jetson Nano上的Ubuntu下测试时，只有第二种方式可用。
+具体原因尚未明确，有可能时操作系统不同的原因，
+也可能是python版本不同造成的
+（比如版本号相同，但处理器架构不同造成了编译方式的差异导致该问题）。</p>
+
+    </div>
+    <footer>
+      <ul class="stats">
+  <li class="categories">
+    <ul>
+    
+      <li>None</li>
+    
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+    
+      
+        
+          <li><a class="article-terms-link" href="/tags/shell/">shell</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/zsh-shell/">zsh shell</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/fish-shell/">fish shell</a></li>
+        
+      
+    
+    </ul>
+  </li>
+</ul>
+
+    </footer>
+  </article>
+  
+  <article class="post">
+    
+<div>
+  <h2>说些什么</h2>
+    <form id="post-js-form" class="post-new-comment" method="POST">
+      
+      <h5 class='post-reply-notice hidden'>
+        <span class='post-reply-arrow'></span><span class='post-reply-name'></span>
+      </h5>
+
+      
+      <input type="hidden" name="options[entryId]" value="4f2cc49a8e1e0928b0faa016ec7e9a8a">
+      <input type='hidden' name='fields[replyThread]' value=''>
+      <input type='hidden' name='fields[replyID]' value=''>
+      <input type='hidden' name='fields[replyName]' value=''>
+
+      
+      <input required name='fields[name]' type='text' placeholder='您的名字（必填）'>
+      <input name='fields[website]' type='text' placeholder='您的网站'>
+      <input required name='fields[email]' type='email' placeholder='您的电邮地址（必填，用于 Gravatar 头象）'>
+      <textarea required name='fields[body]' placeholder='您的留言。可使用 Markdown。（搜索 &#39;Markdown 語法速查&#39;）' rows='10'></textarea>
+
+      
+      
+
+      
+      <p class='post-submit-notice'>
+        <strong class='post-submit-notice-text submit-success hidden'>感谢您的评论！被批准后它会立即在此站点展示。</strong>
+        <strong class='post-submit-notice-text submit-failed hidden'>很抱歉，您的提交存在错误。请确保所有必填字段都已填写正确，然后再试一次。</strong>
+      </p>
+
+      
+      <input type='submit' value='送出' class='button'>
+      <input type='submit' value='已送出' class='hidden button' disabled>
+      <input type='reset' value='重设' class='button'>
+    </form>
+</div>
+
+
+<div>
+  <h2>评论</h2>
+
+  
+</div>
+
+  </article>
+
+
+  <div class="pagination">
+  
+  
+    <a href="/posts/install-gnutls-and-compile-emacs-from-source/" class="button"><div class="next"><div>安装gnutls并从源码编译emacs</div></div></a>
+  
+</div>
+
+
+      </main>
+      <section id="site-sidebar">
+  
+    <section id="recent-posts">
+      <header>
+        <h1>最新文章</h1>
+      </header>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/posts/install-opencv-on-jetson-nano/">在jetson nano上安装opencv</a></h2>
+          <time class="published" datetime="">July 12, 2019</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/posts/install-gnutls-and-compile-emacs-from-source/">安装gnutls并从源码编译emacs</a></h2>
+          <time class="published" datetime="">May 4, 2019</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/posts/my-shell-migration-record/">我的shell迁移记录</a></h2>
+          <time class="published" datetime="">May 3, 2019</time>
+        </header>
+      </article>
+      
+      
+    </section>
+  
+
+  
+    
+      <section id="categories">
+        <header>
+          <h1><a href="/categories">分类</a></h1>
+        </header>
+        <ul>
+          
+            
+          
+          
+          <li>
+            
+              <a href="/categories/installation/">installation<span class="count">2</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/pitfall/">pitfall<span class="count">1</span></a>
+            
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  
+    <section id="mini-bio">
+      <header>
+        <h1>关于</h1>
+      </header>
+      <p>Xin Li's personal blog</p>
+      <footer>
+        <a href="/about" class="button">了解更多</a>
+      </footer>
+    </section>
+  
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/xinii" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/xinii" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+<li><a href="//facebook.com/xintxt" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+
+
+
+
+
+
+<li><a href="weixin://contacts/profile/xin099" target="_blank" rel="noopener" title="WeChat" class="fab fa-weixin"></a></li>
+<li><a href="//wpa.qq.com/msgrd?v=3&amp;uin=78809709&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener" title="QQ" class="fab fa-qq"></a></li>
+
+
+<li><a href="//twitter.com/xintxt" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+<li><a href="skype:xintxt?userinfo" target="_blank" rel="noopener" title="Skype" class="fab fa-skype"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:xinii@msn.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+  
+  <p class="copyright">
+    
+      &copy; 2019
+      
+        xin blog
+      
+    . <br>
+    主题: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.67.0'>Hugo</a> 驱动
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      <script src="/js/highlight.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script><script src="/js/bundle.min.164c76cdbf053607d8165306f07b256a57d65b48860459cb32f06ca4c0bf9e2b.js" integrity="sha256-Fkx2zb8FNgfYFlMG8HslalfWW0iGBFnLMvBspMC/nis="></script>
+    <script src="/js/add-on.js"></script>
+    </div>
+  </body>
+</html>
