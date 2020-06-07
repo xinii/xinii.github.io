@@ -1,4 +1,10 @@
 [{
+    "title": "自我介绍",
+    "date": "June 6, 2020",
+    "description": "",
+    "body": "coming soon\u0026hellip;\n",
+    "ref": "/about/"
+  },{
     "title": "在jetson nano上安装opencv",
     "date": "July 12, 2019",
     "description": "在jetson nano上安装opencv",
@@ -29,13 +35,7 @@
     "body": "安装Jekyll Jekyll 是一个基于Ruby语言的静态网站生成工具，下面是官网介绍。\n Jekyll is a simple, extendable, static site generator. You give it text written in your favorite markup language and it churns through layouts to create a static website. Throughout that process you can tweak how you want the site URLs to look, what data gets displayed in the layout, and more.\n 那么安装Jekyll之前首先需要一个Ruby的编程环境， 这里首先需要准备好Ruby的包管理器gem， 然后只需要在终端执行gem install jekyll就可以安装Jekyll了。\n{% include elements/figure.html image=\u0026quot;https://xinii.github.io/clean-blog/img/posts/jekyll.png\u0026rdquo; caption=\u0026quot;The logo of Jekyll\u0026rdquo; %}\n发布到Github 安装好Jekyll之后，在你的工作目录下执行jekyll new \u0026lt;Your website folder name\u0026gt;， 即可生成一个测试网站。\n接下来在你的Github上创建一个叫做\u0026lt;Your username\u0026gt;.github.io的仓库（repository）， 然后通过git push指令把你的网站push到建立好的仓库就可以了。 几分钟后打开\u0026lt;Your username\u0026gt;.github.io就应该可以看到你的页面。\n我的这个博客的个人主页就是通过以上方式创建， 欢迎参考并留言。\n",
     "ref": "/blog/create-a-blog-by-jekyll-and-publish-to-github/"
   },{
-    "title": "O nas",
-    "date": "February 28, 2019",
-    "description": "Hugo, najszybszy na świecie program do tworzenia stron internetowych",
-    "body": "Napisany w Go, Hugo jest generatorem statycznych witryn o otwartym kodzie źródłowym, dostępnym na licencji [Apache License 2.0.] (Https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo obsługuje typy plików danych TOML, YAML i JSON , Markdown i pliki zawartości HTML oraz używa skrótów w celu dodania bogatej zawartości. Inne godne uwagi funkcje to taksonomie, tryb wielojęzyczny, przetwarzanie obrazu, niestandardowe formaty wyjściowe, minimalizacja HTML / CSS / JS oraz obsługa przepływów pracy Sass SCSS.\nHugo korzysta z różnych projektów open source, w tym:\n https://github.com/yuin/goldmark https://github.com/alecthomas/chroma https://github.com/muesli/smartcrop https://github.com/spf13/cobra https://github.com/spf13/viper  Hugo jest idealny do blogów, witryn korporacyjnych, kreatywnych portfeli, czasopism internetowych, aplikacji na jednej stronie, a nawet strony internetowej z tysiącami stron.\nHugo jest przeznaczony dla osób, które chcą ręcznie kodować własną stronę internetową, nie martwiąc się o konfigurowanie skomplikowanych środowisk uruchomieniowych, zależności i baz danych.\nStrony internetowe zbudowane przy użyciu Hugo są wyjątkowo szybkie, bezpieczne i można je wdrażać w dowolnym miejscu, w tym AWS, GitHub Pages, Heroku, Netlify i dowolnym innym dostawcy hostingu.\nDowiedz się więcej i wnieś swój wkład w [GitHub] (https://github.com/gohugoio).\n",
-    "ref": "/about/"
-  },{
-    "title": "Contact",
+    "title": "联系我",
     "date": "January 1, 0001",
     "description": "",
     "body": "",
