@@ -48,6 +48,26 @@
   </url>
   
   <url>
+    <loc>https://xinii.github.io/blog/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.github.io/ja/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/blog/"
+                />
+  </url>
+  
+  <url>
     <loc>https://xinii.github.io/categories/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -88,32 +108,12 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/posts/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/posts/"
-                />
-  </url>
-  
-  <url>
     <loc>https://xinii.github.io/tags/ricty/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xinii.github.io/posts/some-configurations-for-windows-10/</loc>
+    <loc>https://xinii.github.io/blog/some-configurations-for-windows-10/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
   </url>
   
@@ -143,7 +143,7 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/posts/add-apt-repository-for-fish-and-emacs/</loc>
+    <loc>https://xinii.github.io/blog/add-apt-repository-for-fish-and-emacs/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
   </url>
   
@@ -193,7 +193,7 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/posts/several-ssh-configurations/</loc>
+    <loc>https://xinii.github.io/blog/several-ssh-configurations/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
   </url>
   

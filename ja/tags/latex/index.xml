@@ -13,10 +13,10 @@
     
     <item>
       <title>LaTeXのplatexを使う際のfigureに関する落とし穴</title>
-      <link>https://xinii.github.io/ja/posts/pitfall-while-inserting-figure-into-latex-article/</link>
+      <link>https://xinii.github.io/ja/blog/pitfall-while-inserting-figure-into-latex-article/</link>
       <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/ja/posts/pitfall-while-inserting-figure-into-latex-article/</guid>
+      <guid>https://xinii.github.io/ja/blog/pitfall-while-inserting-figure-into-latex-article/</guid>
       <description>A pitfall when insert a figure into LaTeX
 platexを使う際に， epsが問題がないが， なぜかそのepsを入れたらビルドが失敗。
 しかも失敗した時のログをみると， なかなか問題がわからない。

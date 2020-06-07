@@ -43,6 +43,26 @@
   </url>
   
   <url>
+    <loc>https://xinii.github.io/zh-cn/blog/</loc>
+    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.github.io/ja/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/blog/"
+                />
+  </url>
+  
+  <url>
     <loc>https://xinii.github.io/zh-cn/tags/jetson-nano/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
   </url>
@@ -50,26 +70,6 @@
   <url>
     <loc>https://xinii.github.io/zh-cn/tags/opencv/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/zh-cn/posts/</loc>
-    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/posts/"
-                />
   </url>
   
   <url>
@@ -108,7 +108,7 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/zh-cn/posts/install-opencv-on-jetson-nano/</loc>
+    <loc>https://xinii.github.io/zh-cn/blog/install-opencv-on-jetson-nano/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
   </url>
   
@@ -188,7 +188,7 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/zh-cn/posts/install-gnutls-and-compile-emacs-from-source/</loc>
+    <loc>https://xinii.github.io/zh-cn/blog/install-gnutls-and-compile-emacs-from-source/</loc>
     <lastmod>2019-05-04T00:00:00+00:00</lastmod>
   </url>
   
@@ -218,13 +218,8 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/zh-cn/posts/my-shell-migration-record/</loc>
+    <loc>https://xinii.github.io/zh-cn/blog/my-shell-migration-record/</loc>
     <lastmod>2019-05-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/zh-cn/blog/</loc>
-    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>

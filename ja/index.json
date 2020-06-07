@@ -9,31 +9,31 @@
     "date": "2020-06-04",
     "description": "キーボードレイアウトに関するいくつかのレジストリー設定",
     "body": "スキャンコードマップ コンピューター\\HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Keyboard Layout 新規 - バイナリ値(B) - Scancode Map\n   Index Scancode 意味 Scancode 意味     0000 00 00 00 00 バージョン 00 00 00 00 フラグ   0008 08 00 00 00 マッピング数 1D 00 3A 00 LCtrl \u0026lt;- Caps   0010 3A 00 1D 00 Caps \u0026lt;- LCtrl 1D E0 38 00 RCtrl \u0026lt;- LAlt   0018 38 00 7B 00 LAlt \u0026lt;- 無変換 38 E0 70 00 RAlt \u0026lt;- かなキー   0020 39 00 79 00 Space \u0026lt;- 変換 01 00 38 E0 ESC \u0026lt;- RAlt   0028 00 00 00 00 終端ヌル値      他の言語の入力法のキーボードレイアウトをKBD106に変更 コンピューター\\HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Control\\Keyboard Layouts\\00000804 Layout File: KBDUS.DLL -\u0026gt; KBD106.DLL\nその他のレジストリー コンピューター\\HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MyComputer\\NameSpace ",
-    "ref": "/ja/posts/several-windows-registry-modifications/"
+    "ref": "/ja/blog/several-windows-registry-modifications/"
   },{
     "title": "emacsのorg-modeにおいてpythonコードブロックを使った時の落とし穴",
     "date": "2019-11-23",
     "description": "emacsのorg-modeにおいてpythonコードブロックを使った時の落とし穴",
     "body": "僕は家計簿をorg-modeで記録しています， しかし，以下のエラーが出たことがある。\n File \u0026quot;\u0026lt;stdin\u0026gt;\u0026quot;, line 3 SyntaxError: Non-UTF-8 code starting with '\\xe3' in file \u0026lt;stdin\u0026gt; on line 3, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details 例の# -*- coding: utf-8 -*-を先頭につけてもダメです。\n解決法は以下のようなコードブロックのヘッダーを，\n#+begin_src python :results file :var data=test 以下のように変換します。\n#+begin_src python :results file :var data=test[, 0:2] つまり，必要な数字や日付などのorg-modeのtableの列だけを pythonに転送すると，以上の問題が解決できますが， 根本的に# -*- coding: utf-8 -*-をコードブロックの中に 効く方法はまだわかりません。 わかる方は教えていただければありがたいと思います。\nコメントよろしくお願いします。\n",
-    "ref": "/ja/posts/pitfall-while-using-python-code-block-on-emacs-org-mode/"
+    "ref": "/ja/blog/pitfall-while-using-python-code-block-on-emacs-org-mode/"
   },{
     "title": "LaTeXのplatexを使う際のfigureに関する落とし穴",
     "date": "2019-11-23",
     "description": "LaTeXのplatexを使う際のfigureに関する落とし穴",
     "body": "A pitfall when insert a figure into LaTeX\nplatexを使う際に， epsが問題がないが， なぜかそのepsを入れたらビルドが失敗。\nしかも失敗した時のログをみると， なかなか問題がわからない。\n例えば，全ての入れたfigureの定義が見つからないなどのレポート。 その時に，epsを正方形に近い形状を 矩形にしたら，問題が解決できた。 原因はまだ不明。 たまにこのようなことがあるので， 結構ハマったので，一応記録を\n",
-    "ref": "/ja/posts/pitfall-while-inserting-figure-into-latex-article/"
+    "ref": "/ja/blog/pitfall-while-inserting-figure-into-latex-article/"
   },{
     "title": "emacsとlilypondで楽譜生成",
     "date": "2019-11-16",
     "description": "emacsとlilypondで楽譜生成",
     "body": "コード例 \\version \u0026quot;2.18.2\u0026quot; \\score { \\new Staff \u0026lt;\u0026lt; \\new Voice \\relative c''' { \\set midiInstrument = #\u0026quot;flute\u0026quot; \\voiceOne \\key g \\major \\time 2/2 r2 g-\u0026quot;Flute\u0026quot; ~ g fis ~ fis4 g8 fis e2 ~ e4 d8 cis d2 } \\new Voice \\relative c'' { \\set midiInstrument = #\u0026quot;clarinet\u0026quot; \\voiceTwo b1-\u0026quot;Clarinet\u0026quot; a2. b8 a g2. fis8 e fis2 r } \u0026gt;\u0026gt; \\layout { } \\midi { \\context { \\Staff \\remove \u0026quot;Staff_performer\u0026quot; } \\context { \\Voice \\consists \u0026quot;Staff_performer\u0026quot; } \\context { \\Score tempoWholesPerMinute = #(ly:make-moment 72 2) } } } 出力例 {% include elements/figure.html image=\u0026quot;https://xinii.github.io/clean-blog/img/posts/jekyll.png\u0026rdquo; caption=\u0026quot;The logo of Jekyll\u0026rdquo; %}\n",
-    "ref": "/ja/posts/generate-sheet-music-with-lilypond-on-emacs/"
+    "ref": "/ja/blog/generate-sheet-music-with-lilypond-on-emacs/"
   },{
     "title": "絶対音感について",
     "date": "2019-11-15",
     "description": "絶対音感について",
     "body": "音階と音の周波数 次の表に，ピアノの鍵盤における88のキーに相応する音の周波数を示す。\n   鍵盤番号 周波数(Hz) 階名 音名     1 27.500 ラ A0（イ）   …      37 220.000 ラ A3（イ）   38 233.082  A#3   39 246.942 シ B3（ロ）   40 261.626 ド C4（ハ）   41 277.183  C#4   42 293.665 レ D4（ニ）   43 311.127  D#4   44 329.628 ミ E4（ホ）   45 349.228 ファ F4（ヘ）   46 369.994  F#4   47 391.995 ソ G4（ト）   48 415.305  G#4   49 440.000 ラ A4（イ）   50 466.164  A#4   51 493.883 シ B4（ロ）   52 523.251 ド C5（ハ）   …      88 4186.009 ド C8（ハ）    音の周波数を等比数列\\(a_0, a_1, a_2 \\dots a_{12}\\)とし， 公比を\\(r\\)とすると，以下の関係がある。\n\\[a_{12} = a_{0} \\times r^{12} = a_0 \\times 2\\]\nまた，1オクターブの二つの音の周波数が2倍の関係なので， 以下の式によって公比\\(r\\)がわかるようになる。\n\\[r^{12} = 2 \\Rightarrow r = \\sqrt[12]{2} \\approx 1.059463094\\]\n従って，任意の音に対して，\\(n\\)個半音上の音を計算する方法は以下の式に示す。\n\\[a_n = a_0 \\times r^n = a_0 \\times 2^{\\frac{n}{12}}\\]\n以上によると，絶対音感を持っている人が， 任意の一つの音を聞いて，その周波数がわかる。 具体的な数値がわからなくても， その数値は必ず一つの音名に相応するので，音名がわかる。 これに対して，相対音感が\\(a_0\\)が必要である。 また，音名が固定だが，階名が変化するものである。 \\(a_0\\)を任意の音を指定しておく前提なら， 耳の感覚で，他の音を計算するものである。\n絶対音感が，5歳くらいまでにトレーニングしないと， 身に着けにくくなるとよく言われている。 これはなぜだろうか。 母国語に似ているものなので， この視点から分析してみる。\n絶対音感を身に着けるにはなぜ5歳までトレーニングする必要があるか ここで，まずいくつかの言語の例をあげてみたい。\n 言語に関する時間 言語に関する意味 言語に関する発音  （未完成\u0026hellip; 時間がある時に続いて書く）\n",
-    "ref": "/ja/posts/about-absolute-pitch/"
+    "ref": "/ja/blog/about-absolute-pitch/"
   },{
     "title": "サポート",
     "date": "0001-01-01",

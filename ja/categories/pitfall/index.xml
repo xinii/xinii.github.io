@@ -13,10 +13,10 @@
     
     <item>
       <title>emacsのorg-modeにおいてpythonコードブロックを使った時の落とし穴</title>
-      <link>https://xinii.github.io/ja/posts/pitfall-while-using-python-code-block-on-emacs-org-mode/</link>
+      <link>https://xinii.github.io/ja/blog/pitfall-while-using-python-code-block-on-emacs-org-mode/</link>
       <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/ja/posts/pitfall-while-using-python-code-block-on-emacs-org-mode/</guid>
+      <guid>https://xinii.github.io/ja/blog/pitfall-while-using-python-code-block-on-emacs-org-mode/</guid>
       <description>僕は家計簿をorg-modeで記録しています， しかし，以下のエラーが出たことがある。
  File &amp;quot;&amp;lt;stdin&amp;gt;&amp;quot;, line 3 SyntaxError: Non-UTF-8 code starting with &#39;\xe3&#39; in file &amp;lt;stdin&amp;gt; on line 3, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details 例の# -*- coding: utf-8 -*-を先頭につけてもダメです。
 解決法は以下のようなコードブロックのヘッダーを，
@@ -27,10 +27,10 @@
     
     <item>
       <title>LaTeXのplatexを使う際のfigureに関する落とし穴</title>
-      <link>https://xinii.github.io/ja/posts/pitfall-while-inserting-figure-into-latex-article/</link>
+      <link>https://xinii.github.io/ja/blog/pitfall-while-inserting-figure-into-latex-article/</link>
       <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/ja/posts/pitfall-while-inserting-figure-into-latex-article/</guid>
+      <guid>https://xinii.github.io/ja/blog/pitfall-while-inserting-figure-into-latex-article/</guid>
       <description>A pitfall when insert a figure into LaTeX
 platexを使う際に， epsが問題がないが， なぜかそのepsを入れたらビルドが失敗。
 しかも失敗した時のログをみると， なかなか問題がわからない。
