@@ -5,27 +5,18 @@
     <link>https://xinii.github.io/categories/</link>
     <description>Recent content in Categories on xin blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Sat, 04 May 2019 00:00:00 +0000</lastBuildDate>
+    <language>en</language>
+    <lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://xinii.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>installation</title>
-      <link>https://xinii.github.io/categories/installation/</link>
-      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
+      <title>configuration</title>
+      <link>https://xinii.github.io/categories/configuration/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/categories/installation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pitfall</title>
-      <link>https://xinii.github.io/categories/pitfall/</link>
-      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/categories/pitfall/</guid>
+      <guid>https://xinii.github.io/categories/configuration/</guid>
       <description></description>
     </item>
     

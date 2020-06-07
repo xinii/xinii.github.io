@@ -8,12 +8,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/en/"
+                href="https://xinii.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/"
+                href="https://xinii.github.io/zh-cn/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -28,12 +28,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/en/about/"
+                href="https://xinii.github.io/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/about/"
+                href="https://xinii.github.io/zh-cn/about/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -48,12 +48,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/en/categories/"
+                href="https://xinii.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/categories/"
+                href="https://xinii.github.io/zh-cn/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -68,7 +68,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/en/categories/configuration/"
+                href="https://xinii.github.io/categories/configuration/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -88,12 +88,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/en/posts/"
+                href="https://xinii.github.io/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/posts/"
+                href="https://xinii.github.io/zh-cn/posts/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -113,12 +113,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/en/tags/"
+                href="https://xinii.github.io/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/tags/"
+                href="https://xinii.github.io/zh-cn/tags/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -143,12 +143,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/en/tags/emacs/"
+                href="https://xinii.github.io/tags/emacs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/tags/emacs/"
+                href="https://xinii.github.io/zh-cn/tags/emacs/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -188,7 +188,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/categories/pitfall/"
+                href="https://xinii.github.io/zh-cn/categories/pitfall/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -203,7 +203,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/tags/python/"
+                href="https://xinii.github.io/zh-cn/tags/python/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -247,12 +247,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/en/contact/"
+                href="https://xinii.github.io/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/contact/"
+                href="https://xinii.github.io/zh-cn/contact/"
                 />
     <xhtml:link
                 rel="alternate"

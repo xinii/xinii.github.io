@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="zh-cn">
+  <head>
+  <meta charset="utf-8">
+<title>在jetson nano上安装opencv - xin blog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="generator" content="Hugo 0.67.0" /><meta itemprop="name" content="在jetson nano上安装opencv">
+<meta itemprop="description" content="在jetson nano上安装opencv">
+<meta itemprop="datePublished" content="2019-07-12T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-07-12T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="278">
+
+
+
+<meta itemprop="keywords" content="opencv,jetson nano,python," /><meta property="og:title" content="在jetson nano上安装opencv" />
+<meta property="og:description" content="在jetson nano上安装opencv" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xinii.github.io/zh-cn/posts/install-opencv-on-jetson-nano/" />
+<meta property="article:published_time" content="2019-07-12T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-07-12T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="在jetson nano上安装opencv"/>
+<meta name="twitter:description" content="在jetson nano上安装opencv"/>
+<meta name="twitter:site" content="@xintxt"/>
+<link rel="stylesheet" href="/css/bundle.min.759e3848ea529eef056dab665b241e2af569e601ab80f68f8d4a4d002a155dd4.css" integrity="sha256-dZ44SOpSnu8FbatmWyQeKvVp5gGrgPaPjUpNACoVXdQ="><link rel="stylesheet" href="/css/add-on.css">
+</head>
+
+  <body>
+    
+
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/zh-cn/" class="nav">
+        
+          
+            posts
+          
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu menu">
+      
+        
+          
+          
+            <a href="/zh-cn/" class="nav link"><i class='fa fa-home'></i> Home</a>
+          
+        
+      
+        
+          
+          
+            <a href="/zh-cn/about/" class="nav link"><i class='far fa-id-card'></i> About</a>
+          
+        
+      
+        
+          
+          
+            <a href="/zh-cn/blog/" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+          
+        
+      
+        
+          
+          
+            <a href="/zh-cn/categories/" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+          
+        
+      
+        
+          
+          
+            <a href="/zh-cn/contact/" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+          
+        
+      
+      <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+      <a href="#search-input" class="nav search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
+    </menu>
+    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+    <a href="#lang-menu" class="nav lang-toggle" lang="zh-cn">zh-cn</a>
+    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+  <menu id="lang-menu" class="flyout-menu menu">
+  <a href="#" lang="zh-cn" class="nav link active">中文 (zh-cn)</a>
+  
+    
+      
+        <a href="/en" lang="en" class="nav no-lang link">English (en)</a>
+      
+    
+      
+    
+      
+        <a href="/ja" lang="ja" class="nav no-lang link">日本語 (ja)</a>
+      
+    
+  
+</menu>
+
+  
+    <menu id="share-menu" class="flyout-menu menu">
+      <h1>Share Post</h1>
+      
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=%e5%9c%a8jetson%20nano%e4%b8%8a%e5%ae%89%e8%a3%85opencv&amp;url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fposts%2finstall-opencv-on-jetson-nano%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fxinii.github.io%2fzh-cn%2fposts%2finstall-opencv-on-jetson-nano%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fposts%2finstall-opencv-on-jetson-nano%2f&amp;title=%e5%9c%a8jetson%20nano%e4%b8%8a%e5%ae%89%e8%a3%85opencv" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fposts%2finstall-opencv-on-jetson-nano%2f&amp;title=%e5%9c%a8jetson%20nano%e4%b8%8a%e5%ae%89%e8%a3%85opencv" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fposts%2finstall-opencv-on-jetson-nano%2f&amp;description=%e5%9c%a8jetson%20nano%e4%b8%8a%e5%ae%89%e8%a3%85opencv" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=%e6%9f%a5%e7%9c%8b%e6%ad%a4%e5%b8%96%e5%ad%90%e7%9a%84%e4%bd%9c%e8%80%85 Xin%20Li&amp;body=https%3a%2f%2fxinii.github.io%2fzh-cn%2fposts%2finstall-opencv-on-jetson-nano%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+    </menu>
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" >
+  <a href="/zh-cn/"><img src="https://xinii.github.io/img/main/logo.jpg" class="circle" width="" alt="xin blog" /></a>
+  <header>
+    <h1>xin blog</h1>
+  </header>
+  <main>
+    <p>Thanks for coming to xin blog!</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/xinii" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/xinii" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+<li><a href="//facebook.com/xintxt" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+
+
+
+
+
+
+<li><a href="weixin://contacts/profile/xin099" target="_blank" rel="noopener" title="WeChat" class="fab fa-weixin"></a></li>
+<li><a href="//wpa.qq.com/msgrd?v=3&amp;uin=78809709&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener" title="QQ" class="fab fa-qq"></a></li>
+
+
+<li><a href="//twitter.com/xintxt" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+<li><a href="skype:xintxt?userinfo" target="_blank" rel="noopener" title="Skype" class="fab fa-skype"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:xinii@msn.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        
+  <article class="post">
+    <header>
+  <div class="title">
+    
+      <h2><a href="/zh-cn/posts/install-opencv-on-jetson-nano/">在jetson nano上安装opencv</a></h2>
+    
+    
+      <p>在jetson nano上安装opencv</p>
+    
+  </div>
+  <div class="meta">
+    <time class="published" datetime="2019-07-12 00:00:00 &#43;0000 UTC">
+      July 12, 2019
+    </time>
+    <span class="author">Xin Li</span>
+    
+      <p>2 分钟</p>
+    
+  </div>
+</header>
+
+    <section id="socnet-share">
+      
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=%e5%9c%a8jetson%20nano%e4%b8%8a%e5%ae%89%e8%a3%85opencv&amp;url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fposts%2finstall-opencv-on-jetson-nano%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fxinii.github.io%2fzh-cn%2fposts%2finstall-opencv-on-jetson-nano%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fposts%2finstall-opencv-on-jetson-nano%2f&amp;title=%e5%9c%a8jetson%20nano%e4%b8%8a%e5%ae%89%e8%a3%85opencv" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fposts%2finstall-opencv-on-jetson-nano%2f&amp;title=%e5%9c%a8jetson%20nano%e4%b8%8a%e5%ae%89%e8%a3%85opencv" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fposts%2finstall-opencv-on-jetson-nano%2f&amp;description=%e5%9c%a8jetson%20nano%e4%b8%8a%e5%ae%89%e8%a3%85opencv" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=%e6%9f%a5%e7%9c%8b%e6%ad%a4%e5%b8%96%e5%ad%90%e7%9a%84%e4%bd%9c%e8%80%85 Xin%20Li&amp;body=https%3a%2f%2fxinii.github.io%2fzh-cn%2fposts%2finstall-opencv-on-jetson-nano%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+    </section>
+    
+
+    <div class="content">
+      <h2 id="生成swap文件">生成swap文件</h2>
+<p>为防止编译途中由于内存不足等问题报错，
+这里首先提前创建一个swap文件，存放路径任意。
+重启后swap空间会消失，
+以下编译等全部工作完成后可以手动删除这个文件。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ fallocate -l 4G swapfile
+$ chmod <span style="color:#ae81ff">600</span> swapfile
+$ mkswap swapfile
+$ sudo swapon swapfile
+$ swapon -s
+</code></pre></div><h2 id="生成安装脚本">生成安装脚本</h2>
+<p><a href="https://github.com/AastaNV/JEP/blob/master/script/install_opencv4.0.0_Nano.sh">安装opencv 4.0.0版本的脚本原始链接</a></p>
+<p>以上是安装opencv 4.0.0的版本，在这里我们希望安装较新的4.1.0版本，将上面的代码稍作改动（版本号的部分）：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#!/bin/bash
+</span><span style="color:#75715e"></span>#
+<span style="color:#75715e"># Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.</span>
+#
+<span style="color:#75715e"># NVIDIA Corporation and its licensors retain all intellectual property</span>
+<span style="color:#75715e"># and proprietary rights in and to this software, related documentation</span>
+<span style="color:#75715e"># and any modifications thereto.  Any use, reproduction, disclosure or</span>
+<span style="color:#75715e"># distribution of this software and related documentation without an express</span>
+<span style="color:#75715e"># license agreement from NVIDIA Corporation is strictly prohibited.</span>
+#
+
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span>$#<span style="color:#e6db74">&#34;</span> -ne <span style="color:#ae81ff">1</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+    echo <span style="color:#e6db74">&#34;Usage: </span>$0<span style="color:#e6db74"> &lt;Install Folder&gt;&#34;</span>
+    exit
+<span style="color:#66d9ef">fi</span>
+folder<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>
+user<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nvidia&#34;</span>
+passwd<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nvidia&#34;</span>
+
+echo <span style="color:#e6db74">&#34;** Install requirement&#34;</span>
+sudo apt-get update
+sudo apt-get install -y build-essential cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+sudo apt-get install -y libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev
+sudo apt-get install -y python2.7-dev python3.6-dev python-dev python-numpy python3-numpy
+sudo apt-get install -y libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
+sudo apt-get install -y libv4l-dev v4l-utils qv4l2 v4l2ucp
+sudo apt-get install -y curl
+sudo apt-get update
+
+echo <span style="color:#e6db74">&#34;** Download opencv-4.1.0&#34;</span>
+cd $folder
+curl -L https://github.com/opencv/opencv/archive/4.1.0.zip -o opencv-4.1.0.zip
+curl -L https://github.com/opencv/opencv_contrib/archive/4.1.0.zip -o opencv_contrib-4.1.0.zip
+unzip opencv-4.1.0.zip 
+unzip opencv_contrib-4.1.0.zip 
+cd opencv-4.1.0/
+
+echo <span style="color:#e6db74">&#34;** Building...&#34;</span>
+mkdir release
+cd release/
+cmake -D WITH_CUDA<span style="color:#f92672">=</span>ON -D CUDA_ARCH_BIN<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;5.3&#34;</span> -D CUDA_ARCH_PTX<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span> -D OPENCV_EXTRA_MODULES_PATH<span style="color:#f92672">=</span>../../opencv_contrib-4.1.0/modules -D WITH_GSTREAMER<span style="color:#f92672">=</span>ON -D WITH_LIBV4L<span style="color:#f92672">=</span>ON -D BUILD_opencv_python2<span style="color:#f92672">=</span>ON -D BUILD_opencv_python3<span style="color:#f92672">=</span>ON -D BUILD_TESTS<span style="color:#f92672">=</span>OFF -D BUILD_PERF_TESTS<span style="color:#f92672">=</span>OFF -D BUILD_EXAMPLES<span style="color:#f92672">=</span>OFF -D CMAKE_BUILD_TYPE<span style="color:#f92672">=</span>RELEASE -D CMAKE_INSTALL_PREFIX<span style="color:#f92672">=</span>/usr/local ..
+
+make -j3
+sudo make install
+sudo apt-get install -y python-opencv python3-opencv
+
+echo <span style="color:#e6db74">&#34;** Install opencv-4.1.0 successfully&#34;</span>
+echo <span style="color:#e6db74">&#34;** Bye :)&#34;</span>
+</code></pre></div><p>将上面的脚本保存为<code>sh</code>文件，例如<code>install_opencv4.1.0_Nano.sh</code>。</p>
+<h2 id="运行脚本">运行脚本</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mkdir opencv
+sh install_opencv4.1.0_Nano.sh opencv
+</code></pre></div><p>安装会比较花时间，耐心等待安装结束，建议使用tmux等挂在后台执行。</p>
+<h2 id="测试安装好的opencv">测试安装好的opencv</h2>
+<p>通过python的交互界面测试语句<code>import cv2</code>，不报错则安装完成。</p>
+<p>不过，考虑到使用pyenv等工具进行python版本管理的用户，
+此时如果切换到pyenv下安装的python版本可能无法检测到已安装的OpenCV，
+作为解决版本是创建一个OpenCV库的软链接到pyenv中python版本的库目录下。</p>
+<p>假设你的pyenv中的python版本的库目录为
+<code>/home/xin/.anyenv/envs/pyenv/versions/3.6.8/lib/python3.6/site-packages</code>，
+安装好的OpenCV库路径为
+<code>/usr/local/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-linux-gnu.so</code>，
+那么执行下面的语句即可创建软链接。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cd /home/xin/.anyenv/envs/pyenv/versions/3.6.8/lib/python3.6/site-packages
+ln -s /usr/local/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-linux-gnu.so ./
+</code></pre></div><p>另外提前使用pyenv中的python版本的pip通过
+<code>pip install numpy</code>语句安装好numpy，
+去交互界面测试<code>import cv2</code>无错误显示则安装完成。</p>
+
+    </div>
+    <footer>
+      <ul class="stats">
+  <li class="categories">
+    <ul>
+    
+      <li>None</li>
+    
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+    
+      
+        
+          <li><a class="article-terms-link" href="/zh-cn/tags/opencv/">opencv</a></li>
+        
+          <li><a class="article-terms-link" href="/zh-cn/tags/jetson-nano/">jetson nano</a></li>
+        
+          <li><a class="article-terms-link" href="/zh-cn/tags/python/">python</a></li>
+        
+      
+    
+    </ul>
+  </li>
+</ul>
+
+    </footer>
+  </article>
+  
+  <article class="post">
+    
+<div>
+  <h2>说些什么</h2>
+    <form id="post-js-form" class="post-new-comment" method="POST">
+      
+      <h5 class='post-reply-notice hidden'>
+        <span class='post-reply-arrow'></span><span class='post-reply-name'></span>
+      </h5>
+
+      
+      <input type="hidden" name="options[entryId]" value="33d04c2f4270eef31a72e63dad403312">
+      <input type='hidden' name='fields[replyThread]' value=''>
+      <input type='hidden' name='fields[replyID]' value=''>
+      <input type='hidden' name='fields[replyName]' value=''>
+
+      
+      <input required name='fields[name]' type='text' placeholder='您的名字（必填）'>
+      <input name='fields[website]' type='text' placeholder='您的网站'>
+      <input required name='fields[email]' type='email' placeholder='您的电邮地址（必填，用于 Gravatar 头象）'>
+      <textarea required name='fields[body]' placeholder='您的留言。可使用 Markdown。（搜索 &#39;Markdown 語法速查&#39;）' rows='10'></textarea>
+
+      
+      
+
+      
+      <p class='post-submit-notice'>
+        <strong class='post-submit-notice-text submit-success hidden'>感谢您的评论！被批准后它会立即在此站点展示。</strong>
+        <strong class='post-submit-notice-text submit-failed hidden'>很抱歉，您的提交存在错误。请确保所有必填字段都已填写正确，然后再试一次。</strong>
+      </p>
+
+      
+      <input type='submit' value='送出' class='button'>
+      <input type='submit' value='已送出' class='hidden button' disabled>
+      <input type='reset' value='重设' class='button'>
+    </form>
+</div>
+
+
+<div>
+  <h2>评论</h2>
+
+  
+</div>
+
+  </article>
+
+
+  <div class="pagination">
+  
+    <a href="/zh-cn/posts/install-gnutls-and-compile-emacs-from-source/" class="button"><div class="previous"><div>安装gnutls并从源码编译emacs</div></div></a>
+  
+  
+</div>
+
+
+      </main>
+      <section id="site-sidebar">
+  
+    <section id="recent-posts">
+      <header>
+        <h1>最新文章</h1>
+      </header>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/zh-cn/posts/install-opencv-on-jetson-nano/">在jetson nano上安装opencv</a></h2>
+          <time class="published" datetime="">July 12, 2019</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/zh-cn/posts/install-gnutls-and-compile-emacs-from-source/">安装gnutls并从源码编译emacs</a></h2>
+          <time class="published" datetime="">May 4, 2019</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/zh-cn/posts/my-shell-migration-record/">我的shell迁移记录</a></h2>
+          <time class="published" datetime="">May 3, 2019</time>
+        </header>
+      </article>
+      
+      
+    </section>
+  
+
+  
+    
+      <section id="categories">
+        <header>
+          <h1><a href="/zh-cn/categories">分类</a></h1>
+        </header>
+        <ul>
+          
+            
+          
+          
+          <li>
+            
+              <a href="/zh-cn/categories/installation/">installation<span class="count">2</span></a>
+            
+          
+          <li>
+            
+              <a href="/zh-cn/categories/pitfall/">pitfall<span class="count">1</span></a>
+            
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  
+    <section id="mini-bio">
+      <header>
+        <h1>关于</h1>
+      </header>
+      <p>Xin Li's personal blog</p>
+      <footer>
+        <a href="/zh-cn/about" class="button">了解更多</a>
+      </footer>
+    </section>
+  
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/xinii" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/xinii" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+<li><a href="//facebook.com/xintxt" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+
+
+
+
+
+
+<li><a href="weixin://contacts/profile/xin099" target="_blank" rel="noopener" title="WeChat" class="fab fa-weixin"></a></li>
+<li><a href="//wpa.qq.com/msgrd?v=3&amp;uin=78809709&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener" title="QQ" class="fab fa-qq"></a></li>
+
+
+<li><a href="//twitter.com/xintxt" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+<li><a href="skype:xintxt?userinfo" target="_blank" rel="noopener" title="Skype" class="fab fa-skype"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:xinii@msn.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+  
+  <p class="copyright">
+    
+      &copy; 2020
+      
+        xin blog
+      
+    . <br>
+    主题: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.67.0'>Hugo</a> 驱动
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      <script src="/js/highlight.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script><script src="/js/bundle.min.164c76cdbf053607d8165306f07b256a57d65b48860459cb32f06ca4c0bf9e2b.js" integrity="sha256-Fkx2zb8FNgfYFlMG8HslalfWW0iGBFnLMvBspMC/nis="></script>
+    <script src="/js/add-on.js"></script>
+    </div>
+  </body>
+</html>

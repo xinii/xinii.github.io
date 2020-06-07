@@ -6,10 +6,22 @@
     <description>Recent content in Posts on xin blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 04 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://xinii.github.io/zh-cn/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>在jetson nano上安装opencv</title>
+      <link>https://xinii.github.io/zh-cn/posts/install-opencv-on-jetson-nano/</link>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/posts/install-opencv-on-jetson-nano/</guid>
+      <description>生成swap文件 为防止编译途中由于内存不足等问题报错， 这里首先提前创建一个swap文件，存放路径任意。 重启后swap空间会消失， 以下编译等全部工作完成后可以手动删除这个文件。
+$ fallocate -l 4G swapfile $ chmod 600 swapfile $ mkswap swapfile $ sudo swapon swapfile $ swapon -s 生成安装脚本 安装opencv 4.0.0版本的脚本原始链接
+以上是安装opencv 4.0.0的版本，在这里我们希望安装较新的4.1.0版本，将上面的代码稍作改动（版本号的部分）：
+#!/bin/bash # # Copyright (c) 2018, NVIDIA CORPORATION. All rights reserved. # # NVIDIA Corporation and its licensors retain all intellectual property # and proprietary rights in and to this software, related documentation # and any modifications thereto. Any use, reproduction, disclosure or # distribution of this software and related documentation without an express # license agreement from NVIDIA Corporation is strictly prohibited.</description>
+    </item>
     
     <item>
       <title>安装gnutls并从源码编译emacs</title>
@@ -36,30 +48,6 @@ checking for library containing tputs... no configure: error: The required funct
  安装zsh时通过下面的指令：  brew install zsh (MacOS) apt install zsh (Ubuntu / Linux Mint)  如果你想要知道现在系统裡已经安装好的shell，输入下面的指令：  cat /etc/shells  如何将zsh作为你默认的shell呢？，输入下面的指令：  chsh -s /usr/local/bin/zsh  关于配置文件的读取错误  shell脚本解释出错时可以查看一下当前所使用的sh路径， 比如有可能是sh指向了dash导致出错。 通过下面的语句查看。
 ls -l `which sh`  脚本解释器在语法上的不同点  从传统的bash等shell换到zsh时会发现集合的第一个元素的索引是从1开始的， 如果希望从0开始，在配置文件中配置下面语句即可。
  Fix array index for zsh:  if [ &amp;#34;$ZSH_NAME&amp;#34; = &amp;#34;zsh&amp;#34; ];then setopt localoptions ksharrays fi 配置zsh shell 与bash shell的.bashrc类似，zsh的配置也需要一个配置文件， 这个文件是在用户目录下的.</description>
-    </item>
-    
-    <item>
-      <title>使用USB设备安装Linux Mint</title>
-      <link>https://xinii.github.io/zh-cn/posts/install-linux-mint-from-the-usb-device/</link>
-      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/zh-cn/posts/install-linux-mint-from-the-usb-device/</guid>
-      <description>重要：在开始下面的工作之前，首先确保U盘没有存任何东西， 或者里面没有放任何的重要数据（因为烧录会导致数据丢失）， 同时电脑上已经准备好空的分区（安装到的目标分区的数据也会被抹掉）。
-准备一个用于安装Linux Mint的USB设备 首先准备一个USB设备，可以是U盘也可以是USB的移动硬盘， 之后会在这个上面写入供安装Linux Mint的安装程式。
- 如果你使用的是Windows操作系统，那么点击 这里 来查看Ubuntu官方的教程以创建一个可以安装Linux的USB设备。  注意：上面的教程是教你如何製作一个用于安装Ubuntu的USB设备， 安装Linux Mint的情况下仅需要把涉及到iso文件的地方换成Linux Mint的iso文件，其他地方完全相同。
- 其中会用到的软件叫做Rufus，上面的教程裡面也有提到，点击 这里 打开Rufus的官方网站，你也可以点击 这里 直接下载Rufus。  Linux Mint的iso文件 前一节提到的Linux Mint的iso文件需要从下面的地方获取。点击 这里 打开Linux Mint的官方网站。或者你也可以点击 这里 直接下载Linux Mint 19.1版本。</description>
-    </item>
-    
-    <item>
-      <title>通过jekyll创建博客并发布到github</title>
-      <link>https://xinii.github.io/zh-cn/posts/create-a-blog-by-jekyll-and-publish-to-github/</link>
-      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/zh-cn/posts/create-a-blog-by-jekyll-and-publish-to-github/</guid>
-      <description>安装Jekyll Jekyll 是一个基于Ruby语言的静态网站生成工具，下面是官网介绍。
- Jekyll is a simple, extendable, static site generator. You give it text written in your favorite markup language and it churns through layouts to create a static website. Throughout that process you can tweak how you want the site URLs to look, what data gets displayed in the layout, and more.
- 那么安装Jekyll之前首先需要一个Ruby的编程环境， 这里首先需要准备好Ruby的包管理器gem， 然后只需要在终端执行gem install jekyll就可以安装Jekyll了。
-{% include elements/figure.html image=&amp;quot;https://xinii.github.io/clean-blog/img/posts/jekyll.png&amp;rdquo; caption=&amp;quot;The logo of Jekyll&amp;rdquo; %}</description>
     </item>
     
   </channel>

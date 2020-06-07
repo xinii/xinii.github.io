@@ -5,153 +5,99 @@
     <link>https://xinii.github.io/tags/</link>
     <description>Recent content in Tags on xin blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Fri, 12 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <language>en</language>
+    <lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://xinii.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>jetson nano</title>
-      <link>https://xinii.github.io/tags/jetson-nano/</link>
-      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      <title>autohotkey</title>
+      <link>https://xinii.github.io/tags/autohotkey/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/tags/jetson-nano/</guid>
+      <guid>https://xinii.github.io/tags/autohotkey/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>opencv</title>
-      <link>https://xinii.github.io/tags/opencv/</link>
-      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      <title>msys2</title>
+      <link>https://xinii.github.io/tags/msys2/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/tags/opencv/</guid>
+      <guid>https://xinii.github.io/tags/msys2/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>python</title>
-      <link>https://xinii.github.io/tags/python/</link>
-      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      <title>ricty</title>
+      <link>https://xinii.github.io/tags/ricty/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/tags/python/</guid>
+      <guid>https://xinii.github.io/tags/ricty/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>windows activation</title>
+      <link>https://xinii.github.io/tags/windows-activation/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/tags/windows-activation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>android</title>
+      <link>https://xinii.github.io/tags/android/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/tags/android/</guid>
       <description></description>
     </item>
     
     <item>
       <title>emacs</title>
       <link>https://xinii.github.io/tags/emacs/</link>
-      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/tags/emacs/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>gnutls</title>
-      <link>https://xinii.github.io/tags/gnutls/</link>
-      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/tags/gnutls/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>http</title>
-      <link>https://xinii.github.io/tags/http/</link>
-      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/tags/http/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>https</title>
-      <link>https://xinii.github.io/tags/https/</link>
-      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/tags/https/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>fish shell</title>
       <link>https://xinii.github.io/tags/fish-shell/</link>
-      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/tags/fish-shell/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>shell</title>
-      <link>https://xinii.github.io/tags/shell/</link>
-      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
+      <title>linux</title>
+      <link>https://xinii.github.io/tags/linux/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/tags/shell/</guid>
+      <guid>https://xinii.github.io/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>zsh shell</title>
-      <link>https://xinii.github.io/tags/zsh-shell/</link>
-      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
+      <title>ssh</title>
+      <link>https://xinii.github.io/tags/ssh/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/tags/zsh-shell/</guid>
+      <guid>https://xinii.github.io/tags/ssh/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>linux mint</title>
-      <link>https://xinii.github.io/tags/linux-mint/</link>
-      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      <title>termux</title>
+      <link>https://xinii.github.io/tags/termux/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/tags/linux-mint/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>usb device</title>
-      <link>https://xinii.github.io/tags/usb-device/</link>
-      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/tags/usb-device/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>blog</title>
-      <link>https://xinii.github.io/tags/blog/</link>
-      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/tags/blog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>github</title>
-      <link>https://xinii.github.io/tags/github/</link>
-      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/tags/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>html</title>
-      <link>https://xinii.github.io/tags/html/</link>
-      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/tags/html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>jekyll</title>
-      <link>https://xinii.github.io/tags/jekyll/</link>
-      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/tags/jekyll/</guid>
+      <guid>https://xinii.github.io/tags/termux/</guid>
       <description></description>
     </item>
     
