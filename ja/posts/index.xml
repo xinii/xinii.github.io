@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on xin blog</title>
+    <link>https://xinii.github.io/ja/posts/</link>
+    <description>Recent content in Posts on xin blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://xinii.github.io/ja/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>キーボードレイアウトに関するいくつかのレジストリー設定</title>
+      <link>https://xinii.github.io/ja/posts/several-windows-registry-modifications/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/ja/posts/several-windows-registry-modifications/</guid>
+      <description>スキャンコードマップ コンピューター\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout 新規 - バイナリ値(B) - Scancode Map
+   Index Scancode 意味 Scancode 意味     0000 00 00 00 00 バージョン 00 00 00 00 フラグ   0008 08 00 00 00 マッピング数 1D 00 3A 00 LCtrl &amp;lt;- Caps   0010 3A 00 1D 00 Caps &amp;lt;- LCtrl 1D E0 38 00 RCtrl &amp;lt;- LAlt   0018 38 00 7B 00 LAlt &amp;lt;- 無変換 38 E0 70 00 RAlt &amp;lt;- かなキー   0020 39 00 79 00 Space &amp;lt;- 変換 01 00 38 E0 ESC &amp;lt;- RAlt   0028 00 00 00 00 終端ヌル値      他の言語の入力法のキーボードレイアウトをKBD106に変更 コンピューター\HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Keyboard Layouts\00000804 Layout File: KBDUS.</description>
+    </item>
+    
+    <item>
+      <title>emacsのorg-modeにおいてpythonコードブロックを使った時の落とし穴</title>
+      <link>https://xinii.github.io/ja/posts/pitfall-while-using-python-code-block-on-emacs-org-mode/</link>
+      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/ja/posts/pitfall-while-using-python-code-block-on-emacs-org-mode/</guid>
+      <description>僕は家計簿をorg-modeで記録しています， しかし，以下のエラーが出たことがある。
+ File &amp;quot;&amp;lt;stdin&amp;gt;&amp;quot;, line 3 SyntaxError: Non-UTF-8 code starting with &#39;\xe3&#39; in file &amp;lt;stdin&amp;gt; on line 3, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details 例の# -*- coding: utf-8 -*-を先頭につけてもダメです。
+解決法は以下のようなコードブロックのヘッダーを，
+#+begin_src python :results file :var data=test 以下のように変換します。
+#+begin_src python :results file :var data=test[, 0:2] つまり，必要な数字や日付などのorg-modeのtableの列だけを pythonに転送すると，以上の問題が解決できますが， 根本的に# -*- coding: utf-8 -*-をコードブロックの中に 効く方法はまだわかりません。 わかる方は教えていただければありがたいと思います。
+コメントよろしくお願いします。</description>
+    </item>
+    
+    <item>
+      <title>LaTeXのplatexを使う際のfigureに関する落とし穴</title>
+      <link>https://xinii.github.io/ja/posts/pitfall-while-inserting-figure-into-latex-article/</link>
+      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/ja/posts/pitfall-while-inserting-figure-into-latex-article/</guid>
+      <description>A pitfall when insert a figure into LaTeX
+platexを使う際に， epsが問題がないが， なぜかそのepsを入れたらビルドが失敗。
+しかも失敗した時のログをみると， なかなか問題がわからない。
+例えば，全ての入れたfigureの定義が見つからないなどのレポート。 その時に，epsを正方形に近い形状を 矩形にしたら，問題が解決できた。 原因はまだ不明。 たまにこのようなことがあるので， 結構ハマったので，一応記録を</description>
+    </item>
+    
+    <item>
+      <title>絶対音感について</title>
+      <link>https://xinii.github.io/ja/posts/about-absolute-pitch/</link>
+      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/ja/posts/about-absolute-pitch/</guid>
+      <description>音階と音の周波数 次の表に，ピアノの鍵盤における88のキーに相応する音の周波数を示す。
+   鍵盤番号 周波数(Hz) 階名 音名     1 27.500 ラ A0（イ）   …      37 220.000 ラ A3（イ）   38 233.082  A#3   39 246.942 シ B3（ロ）   40 261.626 ド C4（ハ）   41 277.183  C#4   42 293.665 レ D4（ニ）   43 311.127  D#4   44 329.628 ミ E4（ホ）   45 349.</description>
+    </item>
+    
+  </channel>
+</rss>

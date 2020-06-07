@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>emacs on xin blog</title>
+    <link>https://xinii.github.io/tags/emacs/</link>
+    <description>Recent content in emacs on xin blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 03 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://xinii.github.io/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Add apt repository for fish and emacs</title>
+      <link>https://xinii.github.io/posts/add-apt-repository-for-fish-and-emacs/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/posts/add-apt-repository-for-fish-and-emacs/</guid>
+      <description>Command to be use add-apt-repository No this command? Do this first apt install software-properties-common Process Register repository add-apt-repository ppa:kelleyk/emacs apt-add-repository ppa:fish-shell/release-3 Refresh repository apt update Installation apt install emacs26 apt install fish </description>
+    </item>
+    
+    <item>
+      <title>Generate sheet music with Lilypond on Emacs</title>
+      <link>https://xinii.github.io/posts/lilypond/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/posts/lilypond/</guid>
+      <description>コード例 \version &amp;quot;2.18.2&amp;quot; \score { \new Staff &amp;lt;&amp;lt; \new Voice \relative c&#39;&#39;&#39; { \set midiInstrument = #&amp;quot;flute&amp;quot; \voiceOne \key g \major \time 2/2 r2 g-&amp;quot;Flute&amp;quot; ~ g fis ~ fis4 g8 fis e2 ~ e4 d8 cis d2 } \new Voice \relative c&#39;&#39; { \set midiInstrument = #&amp;quot;clarinet&amp;quot; \voiceTwo b1-&amp;quot;Clarinet&amp;quot; a2. b8 a g2. fis8 e fis2 r } &amp;gt;&amp;gt; \layout { } \midi { \context { \Staff \remove &amp;quot;Staff_performer&amp;quot; } \context { \Voice \consists &amp;quot;Staff_performer&amp;quot; } \context { \Score tempoWholesPerMinute = #(ly:make-moment 72 2) } } } 出力例 {% include elements/figure.</description>
+    </item>
+    
+  </channel>
+</rss>

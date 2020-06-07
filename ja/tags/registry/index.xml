@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>registry on xin blog</title>
+    <link>https://xinii.github.io/ja/tags/registry/</link>
+    <description>Recent content in registry on xin blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://xinii.github.io/ja/tags/registry/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>キーボードレイアウトに関するいくつかのレジストリー設定</title>
+      <link>https://xinii.github.io/ja/posts/several-windows-registry-modifications/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/ja/posts/several-windows-registry-modifications/</guid>
+      <description>スキャンコードマップ コンピューター\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout 新規 - バイナリ値(B) - Scancode Map
+   Index Scancode 意味 Scancode 意味     0000 00 00 00 00 バージョン 00 00 00 00 フラグ   0008 08 00 00 00 マッピング数 1D 00 3A 00 LCtrl &amp;lt;- Caps   0010 3A 00 1D 00 Caps &amp;lt;- LCtrl 1D E0 38 00 RCtrl &amp;lt;- LAlt   0018 38 00 7B 00 LAlt &amp;lt;- 無変換 38 E0 70 00 RAlt &amp;lt;- かなキー   0020 39 00 79 00 Space &amp;lt;- 変換 01 00 38 E0 ESC &amp;lt;- RAlt   0028 00 00 00 00 終端ヌル値      他の言語の入力法のキーボードレイアウトをKBD106に変更 コンピューター\HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Keyboard Layouts\00000804 Layout File: KBDUS.</description>
+    </item>
+    
+  </channel>
+</rss>
