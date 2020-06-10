@@ -22,7 +22,7 @@
 <meta itemprop="description" content="キーボードレイアウトに関するいくつかのレジストリー設定">
 <meta itemprop="datePublished" content="2020-06-04T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-06-04T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="99">
+<meta itemprop="wordCount" content="219">
 
 
 
@@ -245,7 +245,7 @@
     </time>
     <span class="author">Xin Li</span>
     
-      <p>1 分で読めます</p>
+      <p>2 分で読めます</p>
     
   </div>
 </header>
@@ -301,6 +301,7 @@
       <h2 id="スキャンコードマップ">スキャンコードマップ</h2>
 <pre><code>コンピューター\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout
 </code></pre><p>新規 - バイナリ値(B) - Scancode Map</p>
+<h4 id="logicool-k380のための自分用レイアウト">Logicool K380のための自分用レイアウト</h4>
 <table>
 <thead>
 <tr>
@@ -356,12 +357,126 @@
 </tr>
 </tbody>
 </table>
+<h4 id="filco-majestouch-minila-airのための自分用レイアウト">FILCO Majestouch MINILA Airのための自分用レイアウト</h4>
+<table>
+<thead>
+<tr>
+<th>Index</th>
+<th>Scancode</th>
+<th>意味</th>
+<th>Scancode</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0000</code></td>
+<td><code>00 00 00 00</code></td>
+<td>バージョン</td>
+<td><code>00 00 00 00</code></td>
+<td>フラグ</td>
+</tr>
+<tr>
+<td><code>0008</code></td>
+<td><code>07 00 00 00</code></td>
+<td>マッピング数</td>
+<td><code>1C 00 52 E0</code></td>
+<td>Enter &lt;- Insert</td>
+</tr>
+<tr>
+<td><code>0010</code></td>
+<td><code>1D E0 38 00</code></td>
+<td>RCtrl &lt;- LAlt</td>
+<td><code>1D E0 70 00</code></td>
+<td>RCtrl &lt;- かなキー</td>
+</tr>
+<tr>
+<td><code>0018</code></td>
+<td><code>7B 00 46 00</code></td>
+<td>無変換 &lt;- Scroll</td>
+<td><code>79 00 1D E1</code></td>
+<td>変換 &lt;- Pause</td>
+</tr>
+<tr>
+<td><code>0020</code></td>
+<td><code>38 00 7B 00</code></td>
+<td>LAlt &lt;- 無変換</td>
+<td><code>00 00 00 00</code></td>
+<td>終端ヌル値</td>
+</tr>
+<tr>
+<td><code>0028</code></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="スキャンコードリスト">スキャンコードリスト</h4>
+<table>
+<thead>
+<tr>
+<th>キー</th>
+<th>コード</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RCtrl</td>
+<td><code>1D E0</code></td>
+</tr>
+<tr>
+<td>LAlt</td>
+<td><code>38 00</code></td>
+</tr>
+<tr>
+<td>RAlt</td>
+<td><code>38 E0</code></td>
+</tr>
+<tr>
+<td>ESC</td>
+<td><code>01 00</code></td>
+</tr>
+<tr>
+<td>Insert</td>
+<td><code>52 E0</code></td>
+</tr>
+<tr>
+<td>Enter</td>
+<td><code>1C 00</code></td>
+</tr>
+<tr>
+<td>Caps</td>
+<td><code>3A 00</code></td>
+</tr>
+<tr>
+<td>Space</td>
+<td><code>39 00</code></td>
+</tr>
+<tr>
+<td>無変換</td>
+<td><code>7B 00</code></td>
+</tr>
+<tr>
+<td>変換</td>
+<td><code>79 00</code></td>
+</tr>
+</tbody>
+</table>
 <h2 id="他の言語の入力法のキーボードレイアウトをkbd106に変更">他の言語の入力法のキーボードレイアウトをKBD106に変更</h2>
 <pre><code>コンピューター\HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Keyboard Layouts\00000804
 </code></pre><p>Layout File: KBDUS.DLL -&gt; KBD106.DLL</p>
 <h2 id="その他のレジストリー">その他のレジストリー</h2>
 <pre><code>コンピューター\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace
-</code></pre>
+</code></pre><h2 id="参考資料">参考資料</h2>
+<ul>
+<li><a href="http://softwaretechnique.jp/OS_Development/Tips/scan_code_set1.html">スキャンコード一覧（スキャンコードセット1）</a></li>
+<li><a href="https://usedoor.jp/howto/digital/pc/windows-uwagaki-keyboard-insert-key-mukouka/">上書きモードになる『Insert』キーを無効化する方法</a></li>
+<li><a href="https://tepp91.github.io/contents/misc/remap-keyboard-with-scancode-map.html">Scancode Mapによるキー割り当ての変更</a></li>
+<li><a href="https://seesaawiki.jp/w/smnb/d/Keyboard%20Scancode%20Map">Keyboard Scancode Map</a></li>
+</ul>
+
     </div>
     <footer>
       <ul class="stats">
