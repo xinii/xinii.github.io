@@ -2,120 +2,120 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on xin blog</title>
-    <link>https://xin-blog.netlify.app/ja/tags/</link>
+    <link>https://xinii.github.io/ja/tags/</link>
     <description>Recent content in Tags on xin blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://xin-blog.netlify.app/ja/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://xinii.github.io/ja/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>keyboard layout</title>
-      <link>https://xin-blog.netlify.app/ja/tags/keyboard-layout/</link>
+      <link>https://xinii.github.io/ja/tags/keyboard-layout/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xin-blog.netlify.app/ja/tags/keyboard-layout/</guid>
+      <guid>https://xinii.github.io/ja/tags/keyboard-layout/</guid>
       <description></description>
     </item>
     
     <item>
       <title>registry</title>
-      <link>https://xin-blog.netlify.app/ja/tags/registry/</link>
+      <link>https://xinii.github.io/ja/tags/registry/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xin-blog.netlify.app/ja/tags/registry/</guid>
+      <guid>https://xinii.github.io/ja/tags/registry/</guid>
       <description></description>
     </item>
     
     <item>
       <title>windows</title>
-      <link>https://xin-blog.netlify.app/ja/tags/windows/</link>
+      <link>https://xinii.github.io/ja/tags/windows/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xin-blog.netlify.app/ja/tags/windows/</guid>
+      <guid>https://xinii.github.io/ja/tags/windows/</guid>
       <description></description>
     </item>
     
     <item>
       <title>emacs</title>
-      <link>https://xin-blog.netlify.app/ja/tags/emacs/</link>
+      <link>https://xinii.github.io/ja/tags/emacs/</link>
       <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xin-blog.netlify.app/ja/tags/emacs/</guid>
+      <guid>https://xinii.github.io/ja/tags/emacs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>figure</title>
-      <link>https://xin-blog.netlify.app/ja/tags/figure/</link>
+      <link>https://xinii.github.io/ja/tags/figure/</link>
       <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xin-blog.netlify.app/ja/tags/figure/</guid>
+      <guid>https://xinii.github.io/ja/tags/figure/</guid>
       <description></description>
     </item>
     
     <item>
       <title>latex</title>
-      <link>https://xin-blog.netlify.app/ja/tags/latex/</link>
+      <link>https://xinii.github.io/ja/tags/latex/</link>
       <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xin-blog.netlify.app/ja/tags/latex/</guid>
+      <guid>https://xinii.github.io/ja/tags/latex/</guid>
       <description></description>
     </item>
     
     <item>
       <title>org-mode</title>
-      <link>https://xin-blog.netlify.app/ja/tags/org-mode/</link>
+      <link>https://xinii.github.io/ja/tags/org-mode/</link>
       <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xin-blog.netlify.app/ja/tags/org-mode/</guid>
+      <guid>https://xinii.github.io/ja/tags/org-mode/</guid>
       <description></description>
     </item>
     
     <item>
       <title>python</title>
-      <link>https://xin-blog.netlify.app/ja/tags/python/</link>
+      <link>https://xinii.github.io/ja/tags/python/</link>
       <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xin-blog.netlify.app/ja/tags/python/</guid>
+      <guid>https://xinii.github.io/ja/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>lilypond</title>
-      <link>https://xin-blog.netlify.app/ja/tags/lilypond/</link>
+      <link>https://xinii.github.io/ja/tags/lilypond/</link>
       <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xin-blog.netlify.app/ja/tags/lilypond/</guid>
+      <guid>https://xinii.github.io/ja/tags/lilypond/</guid>
       <description></description>
     </item>
     
     <item>
       <title>sheet music</title>
-      <link>https://xin-blog.netlify.app/ja/tags/sheet-music/</link>
+      <link>https://xinii.github.io/ja/tags/sheet-music/</link>
       <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xin-blog.netlify.app/ja/tags/sheet-music/</guid>
+      <guid>https://xinii.github.io/ja/tags/sheet-music/</guid>
       <description></description>
     </item>
     
     <item>
       <title>absolute pitch</title>
-      <link>https://xin-blog.netlify.app/ja/tags/absolute-pitch/</link>
+      <link>https://xinii.github.io/ja/tags/absolute-pitch/</link>
       <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xin-blog.netlify.app/ja/tags/absolute-pitch/</guid>
+      <guid>https://xinii.github.io/ja/tags/absolute-pitch/</guid>
       <description></description>
     </item>
     
     <item>
       <title>music</title>
-      <link>https://xin-blog.netlify.app/ja/tags/music/</link>
+      <link>https://xinii.github.io/ja/tags/music/</link>
       <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xin-blog.netlify.app/ja/tags/music/</guid>
+      <guid>https://xinii.github.io/ja/tags/music/</guid>
       <description></description>
     </item>
     

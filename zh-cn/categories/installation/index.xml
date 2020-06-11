@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>installation on xin blog</title>
-    <link>https://xin-blog.netlify.app/zh-cn/categories/installation/</link>
+    <link>https://xinii.github.io/zh-cn/categories/installation/</link>
     <description>Recent content in installation on xin blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Sat, 04 May 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://xin-blog.netlify.app/zh-cn/categories/installation/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://xinii.github.io/zh-cn/categories/installation/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>安装gnutls并从源码编译emacs</title>
-      <link>https://xin-blog.netlify.app/zh-cn/blog/install-gnutls-and-compile-emacs-from-source/</link>
+      <link>https://xinii.github.io/zh-cn/blog/install-gnutls-and-compile-emacs-from-source/</link>
       <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xin-blog.netlify.app/zh-cn/blog/install-gnutls-and-compile-emacs-from-source/</guid>
+      <guid>https://xinii.github.io/zh-cn/blog/install-gnutls-and-compile-emacs-from-source/</guid>
       <description>若当前环境没有gnutls， 那么在使用emacs源代码进行编译安装前的配置 （./configure）时可以临时使用--with-gnutls=no选项， 以使编译安装能够顺利进行。 例如下面的配置：
 bash configure --prefix=$HOME/.local --with-gif=no --with-gnutls=no 上面的例子虽然可以正常安装emacs到$HOME/.local目录， 但缺少了gnutls的支持， emacs内就只能使用http协议而并不能使用https协议， 虽然在emacs初始化时可以将melpa的链接都改为http协议解决问题， 但如果后期使用google-translate之类的包时还是会遇到问题。
 例如即使在elpa下将google-translate包内的所有.el 文件中出现的https改为http， 中途还是会出现自动使用某些https服务的情况，从而导致翻译异常。 （这里需要注意，修改后需删除所有.elc文件以强制重新编译使修改生效）
@@ -28,10 +28,10 @@ checking for library containing tputs... no configure: error: The required funct
     
     <item>
       <title>使用usb设备安装linux mint</title>
-      <link>https://xin-blog.netlify.app/zh-cn/blog/install-linux-mint-from-the-usb-device/</link>
+      <link>https://xinii.github.io/zh-cn/blog/install-linux-mint-from-the-usb-device/</link>
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xin-blog.netlify.app/zh-cn/blog/install-linux-mint-from-the-usb-device/</guid>
+      <guid>https://xinii.github.io/zh-cn/blog/install-linux-mint-from-the-usb-device/</guid>
       <description>重要：在开始下面的工作之前，首先确保U盘没有存任何东西， 或者里面没有放任何的重要数据（因为烧录会导致数据丢失）， 同时电脑上已经准备好空的分区（安装到的目标分区的数据也会被抹掉）。
 准备一个用于安装linux mint的usb设备 首先准备一个usb设备，可以是u盘也可以是usb的移动硬盘， 之后会在这个上面写入供安装linux mint的安装程序。
  如果使用的是windows操作系统，那么点击 这里 来查看ubuntu官方的教程以创建一个可以安装Linux的USB设备。  注意：上面的教程是教你如何製作一个用于安装Ubuntu的USB设备， 安装linux mint的情况下仅需要把涉及到iso文件的地方换成Linux Mint的iso文件，其他地方完全相同。

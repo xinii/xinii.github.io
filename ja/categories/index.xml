@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on xin blog</title>
-    <link>https://xin-blog.netlify.app/ja/categories/</link>
+    <link>https://xinii.github.io/ja/categories/</link>
     <description>Recent content in Categories on xin blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://xin-blog.netlify.app/ja/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://xinii.github.io/ja/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>configuration</title>
-      <link>https://xin-blog.netlify.app/ja/categories/configuration/</link>
+      <link>https://xinii.github.io/ja/categories/configuration/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xin-blog.netlify.app/ja/categories/configuration/</guid>
+      <guid>https://xinii.github.io/ja/categories/configuration/</guid>
       <description></description>
     </item>
     
     <item>
       <title>pitfall</title>
-      <link>https://xin-blog.netlify.app/ja/categories/pitfall/</link>
+      <link>https://xinii.github.io/ja/categories/pitfall/</link>
       <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xin-blog.netlify.app/ja/categories/pitfall/</guid>
+      <guid>https://xinii.github.io/ja/categories/pitfall/</guid>
       <description></description>
     </item>
     

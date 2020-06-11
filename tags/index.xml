@@ -2,102 +2,102 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on xin blog</title>
-    <link>https://xin-blog.netlify.app/tags/</link>
+    <link>https://xinii.github.io/tags/</link>
     <description>Recent content in Tags on xin blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://xin-blog.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://xinii.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>autohotkey</title>
-      <link>https://xin-blog.netlify.app/tags/autohotkey/</link>
+      <link>https://xinii.github.io/tags/autohotkey/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xin-blog.netlify.app/tags/autohotkey/</guid>
+      <guid>https://xinii.github.io/tags/autohotkey/</guid>
       <description></description>
     </item>
     
     <item>
       <title>msys2</title>
-      <link>https://xin-blog.netlify.app/tags/msys2/</link>
+      <link>https://xinii.github.io/tags/msys2/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xin-blog.netlify.app/tags/msys2/</guid>
+      <guid>https://xinii.github.io/tags/msys2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ricty</title>
-      <link>https://xin-blog.netlify.app/tags/ricty/</link>
+      <link>https://xinii.github.io/tags/ricty/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xin-blog.netlify.app/tags/ricty/</guid>
+      <guid>https://xinii.github.io/tags/ricty/</guid>
       <description></description>
     </item>
     
     <item>
       <title>windows activation</title>
-      <link>https://xin-blog.netlify.app/tags/windows-activation/</link>
+      <link>https://xinii.github.io/tags/windows-activation/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xin-blog.netlify.app/tags/windows-activation/</guid>
+      <guid>https://xinii.github.io/tags/windows-activation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>android</title>
-      <link>https://xin-blog.netlify.app/tags/android/</link>
+      <link>https://xinii.github.io/tags/android/</link>
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xin-blog.netlify.app/tags/android/</guid>
+      <guid>https://xinii.github.io/tags/android/</guid>
       <description></description>
     </item>
     
     <item>
       <title>emacs</title>
-      <link>https://xin-blog.netlify.app/tags/emacs/</link>
+      <link>https://xinii.github.io/tags/emacs/</link>
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xin-blog.netlify.app/tags/emacs/</guid>
+      <guid>https://xinii.github.io/tags/emacs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>fish shell</title>
-      <link>https://xin-blog.netlify.app/tags/fish-shell/</link>
+      <link>https://xinii.github.io/tags/fish-shell/</link>
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xin-blog.netlify.app/tags/fish-shell/</guid>
+      <guid>https://xinii.github.io/tags/fish-shell/</guid>
       <description></description>
     </item>
     
     <item>
       <title>linux</title>
-      <link>https://xin-blog.netlify.app/tags/linux/</link>
+      <link>https://xinii.github.io/tags/linux/</link>
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xin-blog.netlify.app/tags/linux/</guid>
+      <guid>https://xinii.github.io/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ssh</title>
-      <link>https://xin-blog.netlify.app/tags/ssh/</link>
+      <link>https://xinii.github.io/tags/ssh/</link>
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xin-blog.netlify.app/tags/ssh/</guid>
+      <guid>https://xinii.github.io/tags/ssh/</guid>
       <description></description>
     </item>
     
     <item>
       <title>termux</title>
-      <link>https://xin-blog.netlify.app/tags/termux/</link>
+      <link>https://xinii.github.io/tags/termux/</link>
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xin-blog.netlify.app/tags/termux/</guid>
+      <guid>https://xinii.github.io/tags/termux/</guid>
       <description></description>
     </item>
     

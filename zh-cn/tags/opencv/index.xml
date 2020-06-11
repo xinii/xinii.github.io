@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>opencv on xin blog</title>
-    <link>https://xin-blog.netlify.app/zh-cn/tags/opencv/</link>
+    <link>https://xinii.github.io/zh-cn/tags/opencv/</link>
     <description>Recent content in opencv on xin blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Fri, 12 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://xin-blog.netlify.app/zh-cn/tags/opencv/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://xinii.github.io/zh-cn/tags/opencv/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>在jetson nano上安装opencv</title>
-      <link>https://xin-blog.netlify.app/zh-cn/blog/install-opencv-on-jetson-nano/</link>
+      <link>https://xinii.github.io/zh-cn/blog/install-opencv-on-jetson-nano/</link>
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xin-blog.netlify.app/zh-cn/blog/install-opencv-on-jetson-nano/</guid>
+      <guid>https://xinii.github.io/zh-cn/blog/install-opencv-on-jetson-nano/</guid>
       <description>生成swap文件 为防止编译途中由于内存不足等问题报错， 这里首先提前创建一个swap文件，存放路径任意。 重启后swap空间会消失， 以下编译等全部工作完成后可以手动删除这个文件。
 $ fallocate -l 4G swapfile $ chmod 600 swapfile $ mkswap swapfile $ sudo swapon swapfile $ swapon -s 生成安装脚本 安装opencv 4.0.0版本的脚本原始链接
 以上是安装opencv 4.0.0的版本，在这里我们希望安装较新的4.1.0版本，将上面的代码稍作改动（版本号的部分）：
