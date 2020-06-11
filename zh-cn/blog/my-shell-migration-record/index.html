@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=0.16">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=0.16">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=0.16">
+  <link rel="manifest" href="/favicon/site.webmanifest?v=0.16">
   
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#ffffff">
-    <link rel="shortcut icon" href="/favicon/favicon.ico">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=0.16" color="#ffffff">
+    <link rel="shortcut icon" href="/favicon/favicon.ico?v=0.16">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml?v=0.16">
   
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
@@ -168,7 +168,7 @@
 
     <div id="wrapper">
       <section id="site-intro" >
-  <a href="/zh-cn/"><img src="https://xinii.github.io/img/main/logo.jpg" class="circle" width="" alt="xin blog" /></a>
+  <a href="/zh-cn/"><img src="https://xinii.github.io/img/main/logo.jpg" class="circle" width="72px" alt="xin blog" /></a>
   <header>
     <h1>xin blog</h1>
   </header>
@@ -427,51 +427,29 @@ apt install zsh <span style="color:#f92672">(</span>Ubuntu / Linux Mint<span sty
   </article>
   
   <article class="post">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
     
-<div>
-  <h2>说些什么</h2>
-    <form id="post-js-form" class="post-new-comment" method="POST">
-      
-      <h5 class='post-reply-notice hidden'>
-        <span class='post-reply-arrow'></span><span class='post-reply-name'></span>
-      </h5>
-
-      
-      <input type="hidden" name="options[entryId]" value="81b9f5ca01f0f767b3650b2e205f2e4e">
-      <input type='hidden' name='fields[replyThread]' value=''>
-      <input type='hidden' name='fields[replyID]' value=''>
-      <input type='hidden' name='fields[replyName]' value=''>
-
-      
-      <input required name='fields[name]' type='text' placeholder='您的名字（必填）'>
-      <input name='fields[website]' type='text' placeholder='您的网站'>
-      <input required name='fields[email]' type='email' placeholder='您的电邮地址（必填，用于 Gravatar 头象）'>
-      <textarea required name='fields[body]' placeholder='您的留言。可使用 Markdown。（搜索 &#39;Markdown 語法速查&#39;）' rows='10'></textarea>
-
-      
-      
-
-      
-      <p class='post-submit-notice'>
-        <strong class='post-submit-notice-text submit-success hidden'>感谢您的评论！被批准后它会立即在此站点展示。</strong>
-        <strong class='post-submit-notice-text submit-failed hidden'>很抱歉，您的提交存在错误。请确保所有必填字段都已填写正确，然后再试一次。</strong>
-      </p>
-
-      
-      <input type='submit' value='送出' class='button'>
-      <input type='submit' value='已送出' class='hidden button' disabled>
-      <input type='reset' value='重设' class='button'>
-    </form>
-</div>
-
-
-<div>
-  <h2>评论</h2>
-
-  
-</div>
-
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "xinii" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
   </article>
+
+
 
 
   <div class="pagination">
@@ -659,6 +637,17 @@ apt install zsh <span style="color:#f92672">(</span>Ubuntu / Linux Mint<span sty
       <script src="/js/highlight.js"></script>
     <script>hljs.initHighlightingOnLoad();</script><script src="/js/bundle.min.164c76cdbf053607d8165306f07b256a57d65b48860459cb32f06ca4c0bf9e2b.js" integrity="sha256-Fkx2zb8FNgfYFlMG8HslalfWW0iGBFnLMvBspMC/nis="></script>
     <script src="/js/add-on.js"></script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-169244465-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
     </div>
   </body>
 </html>
