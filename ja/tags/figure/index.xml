@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>figure on xin blog</title>
-    <link>https://xinii.github.io/ja/tags/figure/</link>
+    <link>https://xin-blog.netlify.app/ja/tags/figure/</link>
     <description>Recent content in figure on xin blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sat, 23 Nov 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://xinii.github.io/ja/tags/figure/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://xin-blog.netlify.app/ja/tags/figure/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>LaTeXのplatexを使う際のfigureに関する落とし穴</title>
-      <link>https://xinii.github.io/ja/blog/pitfall-while-inserting-figure-into-latex-article/</link>
+      <link>https://xin-blog.netlify.app/ja/blog/pitfall-while-inserting-figure-into-latex-article/</link>
       <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/ja/blog/pitfall-while-inserting-figure-into-latex-article/</guid>
+      <guid>https://xin-blog.netlify.app/ja/blog/pitfall-while-inserting-figure-into-latex-article/</guid>
       <description>A pitfall when insert a figure into LaTeX
 platexを使う際に， epsが問題がないが， なぜかそのepsを入れたらビルドが失敗。
 しかも失敗した時のログをみると， なかなか問題がわからない。

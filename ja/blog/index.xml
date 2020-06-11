@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on xin blog</title>
-    <link>https://xinii.github.io/ja/blog/</link>
+    <link>https://xin-blog.netlify.app/ja/blog/</link>
     <description>Recent content in Blog on xin blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://xinii.github.io/ja/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://xin-blog.netlify.app/ja/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>キーボードレイアウトに関するいくつかのレジストリー設定</title>
-      <link>https://xinii.github.io/ja/blog/several-windows-registry-modifications/</link>
+      <link>https://xin-blog.netlify.app/ja/blog/several-windows-registry-modifications/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/ja/blog/several-windows-registry-modifications/</guid>
+      <guid>https://xin-blog.netlify.app/ja/blog/several-windows-registry-modifications/</guid>
       <description>スキャンコードマップ コンピューター\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout 新規 - バイナリ値(B) - Scancode Map
 Logicool K380のための自分用レイアウト    Index Scancode 意味 Scancode 意味     0000 00 00 00 00 バージョン 00 00 00 00 フラグ   0008 08 00 00 00 マッピング数 1D 00 3A 00 LCtrl &amp;lt;- Caps   0010 3A 00 1D 00 Caps &amp;lt;- LCtrl 1D E0 38 00 RCtrl &amp;lt;- LAlt   0018 38 00 7B 00 LAlt &amp;lt;- 無変換 38 E0 70 00 RAlt &amp;lt;- かなキー   0020 39 00 79 00 Space &amp;lt;- 変換 01 00 38 E0 ESC &amp;lt;- RAlt   0028 00 00 00 00 終端ヌル値      FILCO Majestouch MINILA Airのための自分用レイアウト    Index Scancode 意味 Scancode 意味     0000 00 00 00 00 バージョン 00 00 00 00 フラグ   0008 08 00 00 00 マッピング数 1C 00 52 E0 Enter &amp;lt;- Insert   0010 1D E0 38 00 RCtrl &amp;lt;- LAlt 1D E0 70 00 RCtrl &amp;lt;- かなキー   0018 7B 00 46 00 無変換 &amp;lt;- Scroll 79 00 1D E1 変換 &amp;lt;- Pause   0020 38 00 7B 00 LAlt &amp;lt;- 無変換 01 00 79 00 ESC &amp;lt;- 変換   0028 00 00 00 00 終端ヌル値      スキャンコードリスト    キー コード     RCtrl 1D E0   LAlt 38 00   RAlt 38 E0   ESC 01 00   Insert 52 E0   Enter 1C 00   Caps 3A 00   Space 39 00   無変換 7B 00   変換 79 00    他の言語の入力法のキーボードレイアウトをKBD106に変更 コンピューター\HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Keyboard Layouts\00000804 Layout File: KBDUS.</description>
     </item>
     
     <item>
       <title>emacsのorg-modeにおいてpythonコードブロックを使った時の落とし穴</title>
-      <link>https://xinii.github.io/ja/blog/pitfall-while-using-python-code-block-on-emacs-org-mode/</link>
+      <link>https://xin-blog.netlify.app/ja/blog/pitfall-while-using-python-code-block-on-emacs-org-mode/</link>
       <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/ja/blog/pitfall-while-using-python-code-block-on-emacs-org-mode/</guid>
+      <guid>https://xin-blog.netlify.app/ja/blog/pitfall-while-using-python-code-block-on-emacs-org-mode/</guid>
       <description>僕は家計簿をorg-modeで記録しています， しかし，以下のエラーが出たことがある。
  File &amp;quot;&amp;lt;stdin&amp;gt;&amp;quot;, line 3 SyntaxError: Non-UTF-8 code starting with &#39;\xe3&#39; in file &amp;lt;stdin&amp;gt; on line 3, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details 例の# -*- coding: utf-8 -*-を先頭につけてもダメです。
 解決法は以下のようなコードブロックのヘッダーを，
@@ -37,10 +37,10 @@ Logicool K380のための自分用レイアウト    Index Scancode 意味 Scanc
     
     <item>
       <title>LaTeXのplatexを使う際のfigureに関する落とし穴</title>
-      <link>https://xinii.github.io/ja/blog/pitfall-while-inserting-figure-into-latex-article/</link>
+      <link>https://xin-blog.netlify.app/ja/blog/pitfall-while-inserting-figure-into-latex-article/</link>
       <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/ja/blog/pitfall-while-inserting-figure-into-latex-article/</guid>
+      <guid>https://xin-blog.netlify.app/ja/blog/pitfall-while-inserting-figure-into-latex-article/</guid>
       <description>A pitfall when insert a figure into LaTeX
 platexを使う際に， epsが問題がないが， なぜかそのepsを入れたらビルドが失敗。
 しかも失敗した時のログをみると， なかなか問題がわからない。
@@ -49,19 +49,19 @@ platexを使う際に， epsが問題がないが， なぜかそのepsを入れ
     
     <item>
       <title>emacsとlilypondで楽譜生成</title>
-      <link>https://xinii.github.io/ja/blog/generate-sheet-music-with-lilypond-on-emacs/</link>
+      <link>https://xin-blog.netlify.app/ja/blog/generate-sheet-music-with-lilypond-on-emacs/</link>
       <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/ja/blog/generate-sheet-music-with-lilypond-on-emacs/</guid>
+      <guid>https://xin-blog.netlify.app/ja/blog/generate-sheet-music-with-lilypond-on-emacs/</guid>
       <description>コード例 \version &amp;quot;2.18.2&amp;quot; \score { \new Staff &amp;lt;&amp;lt; \new Voice \relative c&#39;&#39;&#39; { \set midiInstrument = #&amp;quot;flute&amp;quot; \voiceOne \key g \major \time 2/2 r2 g-&amp;quot;Flute&amp;quot; ~ g fis ~ fis4 g8 fis e2 ~ e4 d8 cis d2 } \new Voice \relative c&#39;&#39; { \set midiInstrument = #&amp;quot;clarinet&amp;quot; \voiceTwo b1-&amp;quot;Clarinet&amp;quot; a2. b8 a g2. fis8 e fis2 r } &amp;gt;&amp;gt; \layout { } \midi { \context { \Staff \remove &amp;quot;Staff_performer&amp;quot; } \context { \Voice \consists &amp;quot;Staff_performer&amp;quot; } \context { \Score tempoWholesPerMinute = #(ly:make-moment 72 2) } } } 出力例 {% include elements/figure.</description>
     </item>
     
     <item>
       <title>絶対音感について</title>
-      <link>https://xinii.github.io/ja/blog/about-absolute-pitch/</link>
+      <link>https://xin-blog.netlify.app/ja/blog/about-absolute-pitch/</link>
       <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/ja/blog/about-absolute-pitch/</guid>
+      <guid>https://xin-blog.netlify.app/ja/blog/about-absolute-pitch/</guid>
       <description>音階と音の周波数 次の表に，ピアノの鍵盤における88のキーに相応する音の周波数を示す。
    鍵盤番号 周波数(Hz) 階名 音名     1 27.500 ラ A0（イ）   …      37 220.000 ラ A3（イ）   38 233.082  A#3   39 246.942 シ B3（ロ）   40 261.626 ド C4（ハ）   41 277.183  C#4   42 293.665 レ D4（ニ）   43 311.127  D#4   44 329.628 ミ E4（ホ）   45 349.</description>
     </item>

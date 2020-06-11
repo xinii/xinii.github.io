@@ -3,261 +3,261 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://xinii.github.io/ja/</loc>
+    <loc>https://xin-blog.netlify.app/ja/</loc>
     <lastmod>2020-06-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/"
+                href="https://xin-blog.netlify.app/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/"
+                href="https://xin-blog.netlify.app/zh-cn/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/"
+                href="https://xin-blog.netlify.app/ja/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/about/</loc>
+    <loc>https://xin-blog.netlify.app/ja/about/</loc>
     <lastmod>2020-06-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/about/"
+                href="https://xin-blog.netlify.app/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/about/"
+                href="https://xin-blog.netlify.app/zh-cn/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/about/"
+                href="https://xin-blog.netlify.app/ja/about/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/blog/</loc>
+    <loc>https://xin-blog.netlify.app/ja/blog/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/blog/"
+                href="https://xin-blog.netlify.app/blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/blog/"
+                href="https://xin-blog.netlify.app/zh-cn/blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/blog/"
+                href="https://xin-blog.netlify.app/ja/blog/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/categories/</loc>
+    <loc>https://xin-blog.netlify.app/ja/categories/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/categories/"
+                href="https://xin-blog.netlify.app/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/categories/"
+                href="https://xin-blog.netlify.app/zh-cn/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/categories/"
+                href="https://xin-blog.netlify.app/ja/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/categories/configuration/</loc>
+    <loc>https://xin-blog.netlify.app/ja/categories/configuration/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/categories/configuration/"
+                href="https://xin-blog.netlify.app/categories/configuration/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/categories/configuration/"
+                href="https://xin-blog.netlify.app/ja/categories/configuration/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/tags/keyboard-layout/</loc>
+    <loc>https://xin-blog.netlify.app/ja/tags/keyboard-layout/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/tags/registry/</loc>
+    <loc>https://xin-blog.netlify.app/ja/tags/registry/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/tags/</loc>
+    <loc>https://xin-blog.netlify.app/ja/tags/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/"
+                href="https://xin-blog.netlify.app/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/"
+                href="https://xin-blog.netlify.app/zh-cn/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/"
+                href="https://xin-blog.netlify.app/ja/tags/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/tags/windows/</loc>
+    <loc>https://xin-blog.netlify.app/ja/tags/windows/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/blog/several-windows-registry-modifications/</loc>
+    <loc>https://xin-blog.netlify.app/ja/blog/several-windows-registry-modifications/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/tags/emacs/</loc>
+    <loc>https://xin-blog.netlify.app/ja/tags/emacs/</loc>
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/emacs/"
+                href="https://xin-blog.netlify.app/tags/emacs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/emacs/"
+                href="https://xin-blog.netlify.app/zh-cn/tags/emacs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/emacs/"
+                href="https://xin-blog.netlify.app/ja/tags/emacs/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/blog/pitfall-while-using-python-code-block-on-emacs-org-mode/</loc>
+    <loc>https://xin-blog.netlify.app/ja/blog/pitfall-while-using-python-code-block-on-emacs-org-mode/</loc>
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/tags/figure/</loc>
+    <loc>https://xin-blog.netlify.app/ja/tags/figure/</loc>
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/tags/latex/</loc>
+    <loc>https://xin-blog.netlify.app/ja/tags/latex/</loc>
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/blog/pitfall-while-inserting-figure-into-latex-article/</loc>
+    <loc>https://xin-blog.netlify.app/ja/blog/pitfall-while-inserting-figure-into-latex-article/</loc>
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/tags/org-mode/</loc>
+    <loc>https://xin-blog.netlify.app/ja/tags/org-mode/</loc>
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/categories/pitfall/</loc>
+    <loc>https://xin-blog.netlify.app/ja/categories/pitfall/</loc>
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/categories/pitfall/"
+                href="https://xin-blog.netlify.app/zh-cn/categories/pitfall/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/categories/pitfall/"
+                href="https://xin-blog.netlify.app/ja/categories/pitfall/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/tags/python/</loc>
+    <loc>https://xin-blog.netlify.app/ja/tags/python/</loc>
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/python/"
+                href="https://xin-blog.netlify.app/zh-cn/tags/python/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/python/"
+                href="https://xin-blog.netlify.app/ja/tags/python/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/blog/generate-sheet-music-with-lilypond-on-emacs/</loc>
+    <loc>https://xin-blog.netlify.app/ja/blog/generate-sheet-music-with-lilypond-on-emacs/</loc>
     <lastmod>2019-11-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/tags/lilypond/</loc>
+    <loc>https://xin-blog.netlify.app/ja/tags/lilypond/</loc>
     <lastmod>2019-11-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/tags/sheet-music/</loc>
+    <loc>https://xin-blog.netlify.app/ja/tags/sheet-music/</loc>
     <lastmod>2019-11-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/tags/absolute-pitch/</loc>
+    <loc>https://xin-blog.netlify.app/ja/tags/absolute-pitch/</loc>
     <lastmod>2019-11-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/tags/music/</loc>
+    <loc>https://xin-blog.netlify.app/ja/tags/music/</loc>
     <lastmod>2019-11-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/blog/about-absolute-pitch/</loc>
+    <loc>https://xin-blog.netlify.app/ja/blog/about-absolute-pitch/</loc>
     <lastmod>2019-11-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/contact/</loc>
+    <loc>https://xin-blog.netlify.app/ja/contact/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/contact/"
+                href="https://xin-blog.netlify.app/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/contact/"
+                href="https://xin-blog.netlify.app/zh-cn/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/contact/"
+                href="https://xin-blog.netlify.app/ja/contact/"
                 />
   </url>
   
