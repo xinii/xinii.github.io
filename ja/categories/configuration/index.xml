@@ -12,13 +12,14 @@
     
     
     <item>
-      <title>キーボードレイアウトに関するいくつかのレジストリー設定</title>
+      <title>より効率的な作業を行うためのいくつかWindowsのレジストリー設定</title>
       <link>https://xinii.github.io/ja/blog/several-windows-registry-modifications/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/ja/blog/several-windows-registry-modifications/</guid>
-      <description>スキャンコードマップ コンピューター\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout 新規 - バイナリ値(B) - Scancode Map
-Logicool K380のための自分用レイアウト    Index Scancode 意味 Scancode 意味     0000 00 00 00 00 バージョン 00 00 00 00 フラグ   0008 08 00 00 00 マッピング数 1D 00 3A 00 LCtrl &amp;lt;- Caps   0010 3A 00 1D 00 Caps &amp;lt;- LCtrl 1D E0 38 00 RCtrl &amp;lt;- LAlt   0018 38 00 7B 00 LAlt &amp;lt;- 無変換 38 E0 70 00 RAlt &amp;lt;- かなキー   0020 39 00 79 00 Space &amp;lt;- 変換 01 00 38 E0 ESC &amp;lt;- RAlt   0028 00 00 00 00 終端ヌル値      FILCO Majestouch MINILA Airのための自分用レイアウト    Index Scancode 意味 Scancode 意味     0000 00 00 00 00 バージョン 00 00 00 00 フラグ   0008 08 00 00 00 マッピング数 1C 00 52 E0 Enter &amp;lt;- Insert   0010 1D E0 38 00 RCtrl &amp;lt;- LAlt 1D E0 70 00 RCtrl &amp;lt;- かなキー   0018 7B 00 46 00 無変換 &amp;lt;- Scroll 79 00 1D E1 変換 &amp;lt;- Pause   0020 38 00 7B 00 LAlt &amp;lt;- 無変換 01 00 79 00 ESC &amp;lt;- 変換   0028 00 00 00 00 終端ヌル値      スキャンコードリスト    キー コード     RCtrl 1D E0   LAlt 38 00   RAlt 38 E0   ESC 01 00   Insert 52 E0   Enter 1C 00   Caps 3A 00   Space 39 00   無変換 7B 00   変換 79 00    他の言語の入力法のキーボードレイアウトをKBD106に変更 コンピューター\HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Keyboard Layouts\00000804 Layout File: KBDUS.</description>
+      <description>目次  日本語キーボードのレイアウトに関するレジストリー設定  スキャンコードについて スキャンコードの例 レジストリーでスキャンコードのマッピングを行うためには   キーボードレイアウトの種類を変更  中国語入力において英語配列から日本語配列に 他の言語の入力法において〇〇配列から〇〇配列に   「マイコンピュータ」や「PC」の画面に不明なアイコンが出た時のレジストリー設定 どうしてもローカルネットワークのNASとかに繋がらない時のレジストリー設定   日本語キーボードのレイアウトに関するレジストリー設定 スキャンコードについて まずは，ウィキペディアに載せた スキャンコードの定義 を見よう
+ スキャンコード (scancode) とは、コンピュータのキーボードのキーが押されたり離されたりしたときに、キーボードからCPUに送られるコード（符号）のこと。走査コード（そうさコード）ともいう。
+ スキャンコードの例    キー コード     RCtrl 1D E0   LAlt 38 00   RAlt 38 E0   ESC 01 00   Insert 52 E0   Enter 1C 00   Caps 3A 00   Space 39 00   無変換 7B 00   変換 79 00    レジストリーでスキャンコードのマッピングを行うためには  まず，Win key + Rを押してregeditを入力したらEnterキーを押す。 そうすると，Windowsのレジストリーエディターが開かれたはず。 そこでレジストリーエディターで以下の場所を開く。  コンピューター\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout  次に，右クリックしたら，「新規 - バイナリ値(B) - Scancode Map」の順で「Scancode Map」というバイナリキーを作る。  「Scancode Map」のバリュー（マッピングのルール）については， 以下のような僕の設定を参考していじってみればいいと思う。 ただし，「バージョン」，「フラグ」と「終端ヌル値」の部分は残る必要がある。 あと，「マッピング数」については，「終端ヌル値」も含めて設定したマッピングルールの数を数えて書けば良い。</description>
     </item>
     
   </channel>
