@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>org-mode on xin blog</title>
+    <link>https://xinii.github.io/tags/org-mode/</link>
+    <description>Recent content in org-mode on xin blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 23 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://xinii.github.io/tags/org-mode/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>emacsのorg-modeにおいてpythonコードブロックを使った時の落とし穴</title>
+      <link>https://xinii.github.io/blog/pitfall/pitfall-while-using-python-code-block-on-emacs-org-mode/</link>
+      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/blog/pitfall/pitfall-while-using-python-code-block-on-emacs-org-mode/</guid>
+      <description>僕は家計簿をorg-modeで記録しています， しかし，以下のエラーが出たことがある。
+ File &amp;quot;&amp;lt;stdin&amp;gt;&amp;quot;, line 3 SyntaxError: Non-UTF-8 code starting with &#39;\xe3&#39; in file &amp;lt;stdin&amp;gt; on line 3, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details 例の# -*- coding: utf-8 -*-を先頭につけてもダメです。
+解決法は以下のようなコードブロックのヘッダーを，
+#+begin_src python :results file :var data=test 以下のように変換します。
+#+begin_src python :results file :var data=test[, 0:2] つまり，必要な数字や日付などのorg-modeのtableの列だけを pythonに転送すると，以上の問題が解決できますが， 根本的に# -*- coding: utf-8 -*-をコードブロックの中に 効く方法はまだわかりません。 わかる方は教えていただければありがたいと思います。
+コメントよろしくお願いします。</description>
+    </item>
+    
+  </channel>
+</rss>

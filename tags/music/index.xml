@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Music on xin blog</title>
+    <title>music on xin blog</title>
     <link>https://xinii.github.io/tags/music/</link>
-    <description>Recent content in Music on xin blog</description>
+    <description>Recent content in music on xin blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>ja</language>
+    <lastBuildDate>Fri, 15 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://xinii.github.io/tags/music/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Generate sheet music with Lilypond on Emacs</title>
-      <link>https://xinii.github.io/posts/lilypond/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>絶対音感について</title>
+      <link>https://xinii.github.io/blog/music/about-absolute-pitch/</link>
+      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/posts/lilypond/</guid>
-      <description>コード例 \version &amp;quot;2.18.2&amp;quot; \score { \new Staff &amp;lt;&amp;lt; \new Voice \relative c&#39;&#39;&#39; { \set midiInstrument = #&amp;quot;flute&amp;quot; \voiceOne \key g \major \time 2/2 r2 g-&amp;quot;Flute&amp;quot; ~ g fis ~ fis4 g8 fis e2 ~ e4 d8 cis d2 } \new Voice \relative c&#39;&#39; { \set midiInstrument = #&amp;quot;clarinet&amp;quot; \voiceTwo b1-&amp;quot;Clarinet&amp;quot; a2. b8 a g2. fis8 e fis2 r } &amp;gt;&amp;gt; \layout { } \midi { \context { \Staff \remove &amp;quot;Staff_performer&amp;quot; } \context { \Voice \consists &amp;quot;Staff_performer&amp;quot; } \context { \Score tempoWholesPerMinute = #(ly:make-moment 72 2) } } } 出力例 {% include elements/figure.</description>
+      <guid>https://xinii.github.io/blog/music/about-absolute-pitch/</guid>
+      <description>音階と音の周波数 次の表に，ピアノの鍵盤における88のキーに相応する音の周波数を示す。
+   鍵盤番号 周波数(Hz) 階名 音名     1 27.500 ラ A0（イ）   …      37 220.000 ラ A3（イ）   38 233.082  A#3   39 246.942 シ B3（ロ）   40 261.626 ド C4（ハ）   41 277.183  C#4   42 293.665 レ D4（ニ）   43 311.127  D#4   44 329.628 ミ E4（ホ）   45 349.</description>
     </item>
     
   </channel>

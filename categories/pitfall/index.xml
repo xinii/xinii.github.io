@@ -5,25 +5,36 @@
     <link>https://xinii.github.io/categories/pitfall/</link>
     <description>Recent content in pitfall on xin blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Sat, 04 May 2019 00:00:00 +0000</lastBuildDate>
+    <language>ja</language>
+    <lastBuildDate>Sat, 23 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://xinii.github.io/categories/pitfall/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>安装gnutls并从源码编译emacs</title>
-      <link>https://xinii.github.io/posts/install-gnutls-and-compile-emacs-from-source/</link>
-      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
+      <title>emacsのorg-modeにおいてpythonコードブロックを使った時の落とし穴</title>
+      <link>https://xinii.github.io/blog/pitfall/pitfall-while-using-python-code-block-on-emacs-org-mode/</link>
+      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/posts/install-gnutls-and-compile-emacs-from-source/</guid>
-      <description>若当前环境没有gnutls， 那么在使用emacs源代码进行编译安装前的配置 （./configure）时可以临时使用--with-gnutls=no选项， 以使编译安装能够顺利进行。 例如下面的配置：
-bash configure --prefix=$HOME/.local --with-gif=no --with-gnutls=no 上面的例子虽然可以正常安装emacs到$HOME/.local目录， 但缺少了gnutls的支持， emacs内就只能使用http协议而并不能使用https协议， 虽然在emacs初始化时可以将melpa的链接都改为http协议解决问题， 但如果后期使用google-translate之类的包时还是会遇到问题。
-例如即使在elpa下将google-translate包内的所有.el 文件中出现的https改为http， 中途还是会出现自动使用某些https服务的情况，从而导致翻译异常。 （这里需要注意，修改后需删除所有.elc文件以强制重新编译使修改生效）
-上面问题的解决办法很简单，只需在当前环境安装gnutls即可。
-以OpenSUSE为例，在终端下运行下面的语句即可完成安装。
-sudo zypper install gnutls 另外，在安装emacs时，如果make后报以下错误，
-checking for library containing tputs... no configure: error: The required function &amp;#39;tputs&amp;#39; was not found in any library. The following libraries were tried (in order): libtinfo, libncurses, libterminfo, libcurses, libtermcap Please try installing whichever of these libraries is most appropriate for your system, together with its header files.</description>
+      <guid>https://xinii.github.io/blog/pitfall/pitfall-while-using-python-code-block-on-emacs-org-mode/</guid>
+      <description>僕は家計簿をorg-modeで記録しています， しかし，以下のエラーが出たことがある。
+ File &amp;quot;&amp;lt;stdin&amp;gt;&amp;quot;, line 3 SyntaxError: Non-UTF-8 code starting with &#39;\xe3&#39; in file &amp;lt;stdin&amp;gt; on line 3, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details 例の# -*- coding: utf-8 -*-を先頭につけてもダメです。
+解決法は以下のようなコードブロックのヘッダーを，
+#+begin_src python :results file :var data=test 以下のように変換します。
+#+begin_src python :results file :var data=test[, 0:2] つまり，必要な数字や日付などのorg-modeのtableの列だけを pythonに転送すると，以上の問題が解決できますが， 根本的に# -*- coding: utf-8 -*-をコードブロックの中に 効く方法はまだわかりません。 わかる方は教えていただければありがたいと思います。
+コメントよろしくお願いします。</description>
+    </item>
+    
+    <item>
+      <title>LaTeXのplatexを使う際のfigureに関する落とし穴</title>
+      <link>https://xinii.github.io/blog/pitfall/pitfall-while-inserting-figure-into-latex-article/</link>
+      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/blog/pitfall/pitfall-while-inserting-figure-into-latex-article/</guid>
+      <description>A pitfall when insert a figure into LaTeX
+platexを使う際に， epsが問題がないが， なぜかそのepsを入れたらビルドが失敗。
+しかも失敗した時のログをみると， なかなか問題がわからない。
+例えば，全ての入れたfigureの定義が見つからないなどのレポート。 その時に，epsを正方形に近い形状を 矩形にしたら，問題が解決できた。 原因はまだ不明。 たまにこのようなことがあるので， 結構ハマったので，一応記録を</description>
     </item>
     
   </channel>

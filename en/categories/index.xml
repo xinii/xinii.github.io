@@ -12,11 +12,29 @@
     
     
     <item>
-      <title>configuration</title>
-      <link>https://xinii.github.io/en/categories/configuration/</link>
+      <title>windows</title>
+      <link>https://xinii.github.io/en/categories/windows/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/en/categories/configuration/</guid>
+      <guid>https://xinii.github.io/en/categories/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>config</title>
+      <link>https://xinii.github.io/en/categories/config/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/en/categories/config/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>env</title>
+      <link>https://xinii.github.io/en/categories/env/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/en/categories/env/</guid>
       <description></description>
     </item>
     

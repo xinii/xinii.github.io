@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>activation</title>
+      <link>https://xinii.github.io/en/tags/activation/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/en/tags/activation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>autohotkey</title>
       <link>https://xinii.github.io/en/tags/autohotkey/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
@@ -39,11 +48,11 @@
     </item>
     
     <item>
-      <title>windows activation</title>
-      <link>https://xinii.github.io/en/tags/windows-activation/</link>
+      <title>windows</title>
+      <link>https://xinii.github.io/en/tags/windows/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/en/tags/windows-activation/</guid>
+      <guid>https://xinii.github.io/en/tags/windows/</guid>
       <description></description>
     </item>
     
@@ -57,6 +66,15 @@
     </item>
     
     <item>
+      <title>apt</title>
+      <link>https://xinii.github.io/en/tags/apt/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/en/tags/apt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>emacs</title>
       <link>https://xinii.github.io/en/tags/emacs/</link>
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
@@ -66,11 +84,11 @@
     </item>
     
     <item>
-      <title>fish shell</title>
-      <link>https://xinii.github.io/en/tags/fish-shell/</link>
+      <title>fish</title>
+      <link>https://xinii.github.io/en/tags/fish/</link>
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/en/tags/fish-shell/</guid>
+      <guid>https://xinii.github.io/en/tags/fish/</guid>
       <description></description>
     </item>
     
@@ -80,6 +98,24 @@
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/en/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>repository</title>
+      <link>https://xinii.github.io/en/tags/repository/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/en/tags/repository/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shell</title>
+      <link>https://xinii.github.io/en/tags/shell/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/en/tags/shell/</guid>
       <description></description>
     </item>
     
@@ -98,6 +134,15 @@
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/en/tags/termux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ubuntu</title>
+      <link>https://xinii.github.io/en/tags/ubuntu/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/en/tags/ubuntu/</guid>
       <description></description>
     </item>
     
