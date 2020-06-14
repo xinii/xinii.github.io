@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on xin blog</title>
+    <link>https://xinii.github.io/blog/</link>
+    <description>Recent content in Blog on xin blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://xinii.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>より効率的な作業を行うためのいくつかWindowsのレジストリー設定</title>
+      <link>https://xinii.github.io/blog/windows/several-windows-registry-modifications/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/blog/windows/several-windows-registry-modifications/</guid>
+      <description>目次  日本語キーボードのレイアウトに関するレジストリー設定  スキャンコードについて スキャンコードの例 レジストリーでスキャンコードのマッピングを行うためには   キーボードレイアウトの種類を変更  中国語入力において英語配列から日本語配列に 他の言語の入力法において〇〇配列から〇〇配列に   「マイコンピュータ」や「PC」の画面に不明なアイコンが出た時のレジストリー設定 どうしてもローカルネットワークのNASとかに繋がらない時のレジストリー設定 参考資料  日本語キーボードのレイアウトに関するレジストリー設定 スキャンコードについて まずは，ウィキペディアに載せたスキャンコードの定義を見よう
+ スキャンコード (scancode) とは、コンピュータのキーボードのキーが押されたり離されたりしたときに、 キーボードからCPUに送られるコード（符号）のこと。走査コード（そうさコード）ともいう。 &amp;ndash;Wikipedia1 スキャンコードの例2    キー コード     RCtrl 1D E0   LAlt 38 00   RAlt 38 E0   ESC 01 00   Insert 52 E0   Enter 1C 00   Caps 3A 00   Space 39 00   無変換 7B 00   変換 79 00    レジストリーでスキャンコードのマッピングを行うためには  まず，Win key + Rを押してregeditを入力したらEnterキーを押す。 そうすると，Windowsのレジストリーエディターが開かれたはず。 そこでレジストリーエディターで以下の場所を開く。  コンピューター\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout  次に，右クリックしたら，「新規 - バイナリ値(B) - Scancode Map」の順で「Scancode Map」というバイナリキーを作る。  「Scancode Map」のバリュー（マッピングのルール）については， 以下のような僕の設定を参考していじってみればいいと思う。 ただし，「バージョン」，「フラグ」と「終端ヌル値」の部分は残る必要がある。 あと，「マッピング数」については，「終端ヌル値」も含めて設定したマッピングルールの数を数えて書けば良い。</description>
+    </item>
+    
+    <item>
+      <title>emacsのorg-modeにおいてpythonコードブロックを使った時の落とし穴</title>
+      <link>https://xinii.github.io/blog/pitfall/pitfall-while-using-python-code-block-on-emacs-org-mode/</link>
+      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/blog/pitfall/pitfall-while-using-python-code-block-on-emacs-org-mode/</guid>
+      <description>僕は家計簿をorg-modeで記録しています， しかし，以下のエラーが出たことがある。
+ File &amp;quot;&amp;lt;stdin&amp;gt;&amp;quot;, line 3 SyntaxError: Non-UTF-8 code starting with &#39;\xe3&#39; in file &amp;lt;stdin&amp;gt; on line 3, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details 例の# -*- coding: utf-8 -*-を先頭につけてもダメです。
+解決法は以下のようなコードブロックのヘッダーを，
+#+begin_src python :results file :var data=test 以下のように変換します。
+#+begin_src python :results file :var data=test[, 0:2] つまり，必要な数字や日付などのorg-modeのtableの列だけを pythonに転送すると，以上の問題が解決できますが， 根本的に# -*- coding: utf-8 -*-をコードブロックの中に 効く方法はまだわかりません。 わかる方は教えていただければありがたいと思います。
+コメントよろしくお願いします。</description>
+    </item>
+    
+    <item>
+      <title>LaTeXのplatexを使う際のfigureに関する落とし穴</title>
+      <link>https://xinii.github.io/blog/pitfall/pitfall-while-inserting-figure-into-latex-article/</link>
+      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/blog/pitfall/pitfall-while-inserting-figure-into-latex-article/</guid>
+      <description>A pitfall when insert a figure into LaTeX
+platexを使う際に， epsが問題がないが， なぜかそのepsを入れたらビルドが失敗。
+しかも失敗した時のログをみると， なかなか問題がわからない。
+例えば，全ての入れたfigureの定義が見つからないなどのレポート。 その時に，epsを正方形に近い形状を 矩形にしたら，問題が解決できた。 原因はまだ不明。 たまにこのようなことがあるので， 結構ハマったので，一応記録を</description>
+    </item>
+    
+    <item>
+      <title>emacsとlilypondで楽譜生成</title>
+      <link>https://xinii.github.io/blog/music/generate-sheet-music-with-lilypond-on-emacs/</link>
+      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/blog/music/generate-sheet-music-with-lilypond-on-emacs/</guid>
+      <description>コード例 \version &amp;quot;2.18.2&amp;quot; \score { \new Staff &amp;lt;&amp;lt; \new Voice \relative c&#39;&#39;&#39; { \set midiInstrument = #&amp;quot;flute&amp;quot; \voiceOne \key g \major \time 2/2 r2 g-&amp;quot;Flute&amp;quot; ~ g fis ~ fis4 g8 fis e2 ~ e4 d8 cis d2 } \new Voice \relative c&#39;&#39; { \set midiInstrument = #&amp;quot;clarinet&amp;quot; \voiceTwo b1-&amp;quot;Clarinet&amp;quot; a2. b8 a g2. fis8 e fis2 r } &amp;gt;&amp;gt; \layout { } \midi { \context { \Staff \remove &amp;quot;Staff_performer&amp;quot; } \context { \Voice \consists &amp;quot;Staff_performer&amp;quot; } \context { \Score tempoWholesPerMinute = #(ly:make-moment 72 2) } } } 出力例 {% include elements/figure.</description>
+    </item>
+    
+    <item>
+      <title>絶対音感について</title>
+      <link>https://xinii.github.io/blog/music/about-absolute-pitch/</link>
+      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/blog/music/about-absolute-pitch/</guid>
+      <description>音階と音の周波数 次の表に，ピアノの鍵盤における88のキーに相応する音の周波数を示す。
+   鍵盤番号 周波数(Hz) 階名 音名     1 27.500 ラ A0（イ）   …      37 220.000 ラ A3（イ）   38 233.082  A#3   39 246.942 シ B3（ロ）   40 261.626 ド C4（ハ）   41 277.183  C#4   42 293.665 レ D4（ニ）   43 311.127  D#4   44 329.628 ミ E4（ホ）   45 349.</description>
+    </item>
+    
+  </channel>
+</rss>
