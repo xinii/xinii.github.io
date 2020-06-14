@@ -63,6 +63,41 @@
   </url>
   
   <url>
+    <loc>https://xinii.github.io/zh-cn/categories/</loc>
+    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.github.io/ja/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/zh-cn/categories/env/</loc>
+    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/categories/env/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/categories/env/"
+                />
+  </url>
+  
+  <url>
     <loc>https://xinii.github.io/zh-cn/tags/jetson-nano/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
   </url>
@@ -108,28 +143,8 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/zh-cn/blog/install-opencv-on-jetson-nano/</loc>
+    <loc>https://xinii.github.io/zh-cn/blog/env/install-opencv-on-jetson-nano/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/zh-cn/categories/</loc>
-    <lastmod>2019-05-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/categories/"
-                />
   </url>
   
   <url>
@@ -168,48 +183,28 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/zh-cn/categories/installation/</loc>
-    <lastmod>2019-05-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/zh-cn/categories/pitfall/</loc>
-    <lastmod>2019-05-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/categories/pitfall/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/categories/pitfall/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/zh-cn/blog/install-gnutls-and-compile-emacs-from-source/</loc>
+    <loc>https://xinii.github.io/zh-cn/blog/env/install-gnutls-and-compile-emacs-from-source/</loc>
     <lastmod>2019-05-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://xinii.github.io/zh-cn/tags/fish-shell/</loc>
     <lastmod>2019-05-03T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/tags/fish-shell/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/fish-shell/"
-                />
   </url>
   
   <url>
     <loc>https://xinii.github.io/zh-cn/tags/shell/</loc>
     <lastmod>2019-05-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/tags/shell/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/tags/shell/"
+                />
   </url>
   
   <url>
@@ -218,7 +213,7 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/zh-cn/blog/my-shell-migration-record/</loc>
+    <loc>https://xinii.github.io/zh-cn/blog/env/my-shell-migration-record/</loc>
     <lastmod>2019-05-03T00:00:00+00:00</lastmod>
   </url>
   
@@ -233,12 +228,17 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/zh-cn/blog/install-linux-mint-from-the-usb-device/</loc>
+    <loc>https://xinii.github.io/zh-cn/blog/env/install-linux-mint-from-the-usb-device/</loc>
     <lastmod>2019-04-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://xinii.github.io/zh-cn/tags/blog/</loc>
+    <lastmod>2019-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/zh-cn/categories/cms/</loc>
     <lastmod>2019-04-02T00:00:00+00:00</lastmod>
   </url>
   
@@ -258,7 +258,7 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/zh-cn/blog/create-a-blog-by-jekyll-and-publish-to-github/</loc>
+    <loc>https://xinii.github.io/zh-cn/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/</loc>
     <lastmod>2019-04-02T00:00:00+00:00</lastmod>
   </url>
   

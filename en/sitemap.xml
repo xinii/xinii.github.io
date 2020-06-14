@@ -43,6 +43,11 @@
   </url>
   
   <url>
+    <loc>https://xinii.github.io/tags/activation/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xinii.github.io/tags/autohotkey/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
   </url>
@@ -88,21 +93,6 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/categories/configuration/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/categories/configuration/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/categories/configuration/"
-                />
-  </url>
-  
-  <url>
     <loc>https://xinii.github.io/tags/msys2/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
   </url>
@@ -113,7 +103,7 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/blog/some-configurations-for-windows-10/</loc>
+    <loc>https://xinii.github.io/blog/windows/some-configurations-for-windows-10/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
   </url>
   
@@ -138,17 +128,52 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/windows-activation/</loc>
+    <loc>https://xinii.github.io/tags/windows/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.github.io/ja/tags/windows/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/tags/windows/"
+                />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/blog/add-apt-repository-for-fish-and-emacs/</loc>
+    <loc>https://xinii.github.io/categories/windows/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.github.io/ja/categories/windows/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/categories/windows/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/blog/env/add-apt-repository-for-fish-and-emacs/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://xinii.github.io/tags/android/</loc>
+    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/tags/apt/</loc>
+    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/categories/config/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
   </url>
   
@@ -173,18 +198,23 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/fish-shell/</loc>
+    <loc>https://xinii.github.io/categories/env/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/fish-shell/"
+                href="https://xinii.github.io/zh-cn/categories/env/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/fish-shell/"
+                href="https://xinii.github.io/categories/env/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/tags/fish/</loc>
+    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -193,8 +223,28 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/blog/several-ssh-configurations/</loc>
+    <loc>https://xinii.github.io/tags/repository/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/blog/env/several-ssh-configurations/</loc>
+    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/tags/shell/</loc>
+    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/tags/shell/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/tags/shell/"
+                />
   </url>
   
   <url>
@@ -204,6 +254,11 @@
   
   <url>
     <loc>https://xinii.github.io/tags/termux/</loc>
+    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/tags/ubuntu/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
   </url>
   

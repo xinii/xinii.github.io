@@ -83,27 +83,17 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/categories/configuration/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/categories/configuration/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/categories/configuration/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/ja/tags/keyboard-layout/</loc>
+    <loc>https://xinii.github.io/ja/tags/keyboard/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://xinii.github.io/ja/tags/lan/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/ja/tags/layout/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
   </url>
   
@@ -150,10 +140,35 @@
   <url>
     <loc>https://xinii.github.io/ja/tags/windows/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/tags/windows/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.github.io/ja/tags/windows/"
+                />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/blog/several-windows-registry-modifications/</loc>
+    <loc>https://xinii.github.io/ja/categories/windows/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/categories/windows/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.github.io/ja/categories/windows/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/ja/blog/windows/several-windows-registry-modifications/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
   </url>
   
@@ -178,7 +193,7 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/blog/pitfall-while-using-python-code-block-on-emacs-org-mode/</loc>
+    <loc>https://xinii.github.io/ja/blog/pitfall/pitfall-while-using-python-code-block-on-emacs-org-mode/</loc>
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
   </url>
   
@@ -193,7 +208,7 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/blog/pitfall-while-inserting-figure-into-latex-article/</loc>
+    <loc>https://xinii.github.io/ja/blog/pitfall/pitfall-while-inserting-figure-into-latex-article/</loc>
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
   </url>
   
@@ -205,16 +220,6 @@
   <url>
     <loc>https://xinii.github.io/ja/categories/pitfall/</loc>
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/categories/pitfall/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/categories/pitfall/"
-                />
   </url>
   
   <url>
@@ -233,12 +238,17 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/blog/generate-sheet-music-with-lilypond-on-emacs/</loc>
+    <loc>https://xinii.github.io/ja/blog/music/generate-sheet-music-with-lilypond-on-emacs/</loc>
     <lastmod>2019-11-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://xinii.github.io/ja/tags/lilypond/</loc>
+    <lastmod>2019-11-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/ja/categories/music/</loc>
     <lastmod>2019-11-16T00:00:00+00:00</lastmod>
   </url>
   
@@ -258,7 +268,7 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/blog/about-absolute-pitch/</loc>
+    <loc>https://xinii.github.io/ja/blog/music/about-absolute-pitch/</loc>
     <lastmod>2019-11-15T00:00:00+00:00</lastmod>
   </url>
   
