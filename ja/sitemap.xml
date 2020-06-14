@@ -83,6 +83,16 @@
   </url>
   
   <url>
+    <loc>https://xinii.github.io/tags/configuration/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/categories/configuration/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xinii.github.io/tags/keyboard/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
   </url>
@@ -94,16 +104,6 @@
   
   <url>
     <loc>https://xinii.github.io/tags/layout/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/tags/nas/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/tags/pc/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
   </url>
   
@@ -168,7 +168,7 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/blog/windows/several-windows-registry-modifications/</loc>
+    <loc>https://xinii.github.io/blog/configuration/several-windows-registry-configurations/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
   </url>
   
@@ -193,7 +193,27 @@
   </url>
   
   <url>
+    <loc>https://xinii.github.io/categories/emacs/</loc>
+    <lastmod>2019-11-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/categories/emacs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.github.io/categories/emacs/"
+                />
+  </url>
+  
+  <url>
     <loc>https://xinii.github.io/blog/pitfall/pitfall-while-using-python-code-block-on-emacs-org-mode/</loc>
+    <lastmod>2019-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/tags/eps/</loc>
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
   </url>
   
@@ -208,6 +228,11 @@
   </url>
   
   <url>
+    <loc>https://xinii.github.io/categories/latex/</loc>
+    <lastmod>2019-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xinii.github.io/blog/pitfall/pitfall-while-inserting-figure-into-latex-article/</loc>
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
   </url>
@@ -218,7 +243,17 @@
   </url>
   
   <url>
+    <loc>https://xinii.github.io/tags/pitfall/</loc>
+    <lastmod>2019-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xinii.github.io/categories/pitfall/</loc>
+    <lastmod>2019-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/tags/platex/</loc>
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
   </url>
   
@@ -248,12 +283,22 @@
   </url>
   
   <url>
+    <loc>https://xinii.github.io/categories/lilypond/</loc>
+    <lastmod>2019-11-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/tags/music/</loc>
+    <lastmod>2019-11-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xinii.github.io/categories/music/</loc>
     <lastmod>2019-11-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/sheet-music/</loc>
+    <loc>https://xinii.github.io/tags/score/</loc>
     <lastmod>2019-11-16T00:00:00+00:00</lastmod>
   </url>
   
@@ -263,7 +308,17 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/music/</loc>
+    <loc>https://xinii.github.io/categories/absolute-pitch/</loc>
+    <lastmod>2019-11-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/tags/sense/</loc>
+    <lastmod>2019-11-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/tags/sound/</loc>
     <lastmod>2019-11-15T00:00:00+00:00</lastmod>
   </url>
   

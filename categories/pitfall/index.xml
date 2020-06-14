@@ -31,8 +31,7 @@
       <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/blog/pitfall/pitfall-while-inserting-figure-into-latex-article/</guid>
-      <description>A pitfall when insert a figure into LaTeX
-platexを使う際に， epsが問題がないが， なぜかそのepsを入れたらビルドが失敗。
+      <description>platexを使う際に， epsが問題がないが， なぜかそのepsを入れたらビルドが失敗。
 しかも失敗した時のログをみると， なかなか問題がわからない。
 例えば，全ての入れたfigureの定義が見つからないなどのレポート。 その時に，epsを正方形に近い形状を 矩形にしたら，問題が解決できた。 原因はまだ不明。 たまにこのようなことがあるので， 結構ハマったので，一応記録を</description>
     </item>

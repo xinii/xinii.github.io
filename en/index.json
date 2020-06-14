@@ -9,19 +9,19 @@
     "date": "June 4, 2020",
     "description": "The following are some of the things I have to do after installing windows. It will be very comfortable for me to use. I don’t know if it is suitable for you. Do you want to try it?",
     "body": "Activation of your Windows 10 slmgr -ipk {your product key} slmgr -skms {kms server address of your company} slmgr -ato Installation of some useful tools  Msys2 AutoHotKey Ricty  Configuration of msys2 pacman -S git fish tmux emacs gcc python cd ~ git clone https://github.com/xinii/xinconfig .xinconfig cd .xinconfig ./setenv fish exec fish set_conf tmux set_el auto set_el cn change_emacs xin emacs ssh-keygen -A emacs /etc/ssh/sshd_config #Port **** #PasswordAuthentication no cat {path to your pub key} \u0026gt; ~/.ssh/authorized_keys chmod 600 ~/.ssh/authorized_keys chmod 700 ~/.ssh /usr/bin/sshd ",
-    "ref": "/en/blog/windows/some-configurations-for-windows-10/"
+    "ref": "/en/blog/installation/some-installations-for-windows-10/"
   },{
     "title": "Add apt repository for fish and emacs",
     "date": "June 3, 2020",
     "description": "Do you want to install emacs26 or fish3.0 on the lower version of ubuntu based linux? Try this method",
     "body": "Command to be use add-apt-repository No this command? Do this first apt install software-properties-common Process Register repository add-apt-repository ppa:kelleyk/emacs apt-add-repository ppa:fish-shell/release-3 Refresh repository apt update Installation apt install emacs26 apt install fish ",
-    "ref": "/en/blog/env/add-apt-repository-for-fish-and-emacs/"
+    "ref": "/en/blog/environment/add-apt-repository-for-fish-and-emacs/"
   },{
     "title": "Several SSH configurations",
     "date": "June 3, 2020",
     "description": "Very headache for the ssh interruption phenomenon? Want to set an ssh daemon on android by termux? Take a look at this article.",
     "body": "SSH interruption phenomenon  When logging in to a remote server with ssh, Write failed: Broken pipe may be displayed and the connection may be broken. It is necessary to change the ssh setting on the client side or the server side, because ssh is automatically disconnected by a timeout if it is not operated for a while.  Remedy  Deal on the client side  Describe the following contents in /etc/ssh/ssh_config or ~/.ssh/config\nServerAliveInterval 15 ServerAliveCountMax 10 With this setting, 10 times response confirmation will send to the server every 15 seconds, and if there is still no response, it times out.\n Deal on the server side  Describe the following contents in /etc/ssh/sshd_config\nClientAliveInterval 30 ClientAliveCountMax 5 With this setting, 5 times response confirmation will send to the client every 30 seconds, and if there is still no response, it times out.\nOne more thing It is recommended to use tools such as tmux or screen, so that even if the connection is lost halfway, you can log in to the remote server again and attach the previous session.\nSSH daemon on android by termux Installation apt install openssh Setting the key ssh-keygen cat ~/.ssh/id_rsa.pub \u0026gt; ~/.ssh/authorized_keys chmod 600 ~/.ssh/authorized_keys chmod 700 ~/.ssh Start daemon in debug mode sshd -d Start daemon sshd Login on the PC side Set the private key ~/.ssh/id_rsa generated on the android side in the SSH client of the PC side, and connect to the server on android with specifying IP and port 8022 and without a username.\n",
-    "ref": "/en/blog/env/several-ssh-configurations/"
+    "ref": "/en/blog/environment/several-ssh-configurations/"
   },{
     "title": "Contact",
     "date": "January 1, 0001",

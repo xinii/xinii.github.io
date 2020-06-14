@@ -12,11 +12,29 @@
     
     
     <item>
-      <title>jetson nano</title>
-      <link>https://xinii.github.io/zh-cn/tags/jetson-nano/</link>
+      <title>environment</title>
+      <link>https://xinii.github.io/zh-cn/tags/environment/</link>
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/zh-cn/tags/jetson-nano/</guid>
+      <guid>https://xinii.github.io/zh-cn/tags/environment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jetson</title>
+      <link>https://xinii.github.io/zh-cn/tags/jetson/</link>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/jetson/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nano</title>
+      <link>https://xinii.github.io/zh-cn/tags/nano/</link>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/nano/</guid>
       <description></description>
     </item>
     
@@ -30,11 +48,29 @@
     </item>
     
     <item>
+      <title>pyenv</title>
+      <link>https://xinii.github.io/zh-cn/tags/pyenv/</link>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/pyenv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>python</title>
       <link>https://xinii.github.io/zh-cn/tags/python/</link>
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/zh-cn/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>compile</title>
+      <link>https://xinii.github.io/zh-cn/tags/compile/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/compile/</guid>
       <description></description>
     </item>
     
@@ -57,29 +93,56 @@
     </item>
     
     <item>
-      <title>http</title>
-      <link>https://xinii.github.io/zh-cn/tags/http/</link>
+      <title>make</title>
+      <link>https://xinii.github.io/zh-cn/tags/make/</link>
       <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/zh-cn/tags/http/</guid>
+      <guid>https://xinii.github.io/zh-cn/tags/make/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>https</title>
-      <link>https://xinii.github.io/zh-cn/tags/https/</link>
+      <title>opensuse</title>
+      <link>https://xinii.github.io/zh-cn/tags/opensuse/</link>
       <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/zh-cn/tags/https/</guid>
+      <guid>https://xinii.github.io/zh-cn/tags/opensuse/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>fish shell</title>
-      <link>https://xinii.github.io/zh-cn/tags/fish-shell/</link>
+      <title>zypper</title>
+      <link>https://xinii.github.io/zh-cn/tags/zypper/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/zypper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bash</title>
+      <link>https://xinii.github.io/zh-cn/tags/bash/</link>
       <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/zh-cn/tags/fish-shell/</guid>
+      <guid>https://xinii.github.io/zh-cn/tags/bash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fish</title>
+      <link>https://xinii.github.io/zh-cn/tags/fish/</link>
+      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/fish/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pythonpath</title>
+      <link>https://xinii.github.io/zh-cn/tags/pythonpath/</link>
+      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/pythonpath/</guid>
       <description></description>
     </item>
     
@@ -93,29 +156,83 @@
     </item>
     
     <item>
-      <title>zsh shell</title>
-      <link>https://xinii.github.io/zh-cn/tags/zsh-shell/</link>
+      <title>tmux</title>
+      <link>https://xinii.github.io/zh-cn/tags/tmux/</link>
       <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/zh-cn/tags/zsh-shell/</guid>
+      <guid>https://xinii.github.io/zh-cn/tags/tmux/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>linux mint</title>
-      <link>https://xinii.github.io/zh-cn/tags/linux-mint/</link>
-      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      <title>zsh</title>
+      <link>https://xinii.github.io/zh-cn/tags/zsh/</link>
+      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/zh-cn/tags/linux-mint/</guid>
+      <guid>https://xinii.github.io/zh-cn/tags/zsh/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>usb device</title>
-      <link>https://xinii.github.io/zh-cn/tags/usb-device/</link>
+      <title>create</title>
+      <link>https://xinii.github.io/zh-cn/tags/create/</link>
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/zh-cn/tags/usb-device/</guid>
+      <guid>https://xinii.github.io/zh-cn/tags/create/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>installation</title>
+      <link>https://xinii.github.io/zh-cn/tags/installation/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/installation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://xinii.github.io/zh-cn/tags/linux/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mint</title>
+      <link>https://xinii.github.io/zh-cn/tags/mint/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/mint/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rufus</title>
+      <link>https://xinii.github.io/zh-cn/tags/rufus/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/rufus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>stick</title>
+      <link>https://xinii.github.io/zh-cn/tags/stick/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/stick/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>usb</title>
+      <link>https://xinii.github.io/zh-cn/tags/usb/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/usb/</guid>
       <description></description>
     </item>
     
@@ -129,6 +246,15 @@
     </item>
     
     <item>
+      <title>cms</title>
+      <link>https://xinii.github.io/zh-cn/tags/cms/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/cms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>github</title>
       <link>https://xinii.github.io/zh-cn/tags/github/</link>
       <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
@@ -138,20 +264,38 @@
     </item>
     
     <item>
-      <title>html</title>
-      <link>https://xinii.github.io/zh-cn/tags/html/</link>
-      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/zh-cn/tags/html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>jekyll</title>
       <link>https://xinii.github.io/zh-cn/tags/jekyll/</link>
       <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/zh-cn/tags/jekyll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ruby</title>
+      <link>https://xinii.github.io/zh-cn/tags/ruby/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/ruby/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>site</title>
+      <link>https://xinii.github.io/zh-cn/tags/site/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/site/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web</title>
+      <link>https://xinii.github.io/zh-cn/tags/web/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/web/</guid>
       <description></description>
     </item>
     

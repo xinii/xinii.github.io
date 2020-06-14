@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>installation</title>
+      <link>https://xinii.github.io/en/categories/installation/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/en/categories/installation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>windows</title>
       <link>https://xinii.github.io/en/categories/windows/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
@@ -21,20 +30,29 @@
     </item>
     
     <item>
-      <title>config</title>
-      <link>https://xinii.github.io/en/categories/config/</link>
+      <title>environment</title>
+      <link>https://xinii.github.io/en/categories/environment/</link>
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/en/categories/config/</guid>
+      <guid>https://xinii.github.io/en/categories/environment/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>env</title>
-      <link>https://xinii.github.io/en/categories/env/</link>
+      <title>repository</title>
+      <link>https://xinii.github.io/en/categories/repository/</link>
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/en/categories/env/</guid>
+      <guid>https://xinii.github.io/en/categories/repository/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ssh</title>
+      <link>https://xinii.github.io/en/categories/ssh/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/en/categories/ssh/</guid>
       <description></description>
     </item>
     

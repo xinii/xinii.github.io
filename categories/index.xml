@@ -12,11 +12,38 @@
     
     
     <item>
+      <title>configuration</title>
+      <link>https://xinii.github.io/categories/configuration/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/categories/configuration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>windows</title>
       <link>https://xinii.github.io/categories/windows/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/categories/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>emacs</title>
+      <link>https://xinii.github.io/categories/emacs/</link>
+      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/categories/emacs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>latex</title>
+      <link>https://xinii.github.io/categories/latex/</link>
+      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/categories/latex/</guid>
       <description></description>
     </item>
     
@@ -30,11 +57,29 @@
     </item>
     
     <item>
+      <title>lilypond</title>
+      <link>https://xinii.github.io/categories/lilypond/</link>
+      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/categories/lilypond/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>music</title>
       <link>https://xinii.github.io/categories/music/</link>
       <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/categories/music/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>absolute pitch</title>
+      <link>https://xinii.github.io/categories/absolute-pitch/</link>
+      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/categories/absolute-pitch/</guid>
       <description></description>
     </item>
     

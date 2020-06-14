@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>configuration</title>
+      <link>https://xinii.github.io/tags/configuration/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/tags/configuration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>keyboard</title>
       <link>https://xinii.github.io/tags/keyboard/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
@@ -35,24 +44,6 @@
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/tags/layout/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>nas</title>
-      <link>https://xinii.github.io/tags/nas/</link>
-      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/tags/nas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pc</title>
-      <link>https://xinii.github.io/tags/pc/</link>
-      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/tags/pc/</guid>
       <description></description>
     </item>
     
@@ -93,6 +84,15 @@
     </item>
     
     <item>
+      <title>eps</title>
+      <link>https://xinii.github.io/tags/eps/</link>
+      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/tags/eps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>figure</title>
       <link>https://xinii.github.io/tags/figure/</link>
       <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
@@ -120,6 +120,24 @@
     </item>
     
     <item>
+      <title>pitfall</title>
+      <link>https://xinii.github.io/tags/pitfall/</link>
+      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/tags/pitfall/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>platex</title>
+      <link>https://xinii.github.io/tags/platex/</link>
+      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/tags/platex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>python</title>
       <link>https://xinii.github.io/tags/python/</link>
       <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
@@ -138,11 +156,20 @@
     </item>
     
     <item>
-      <title>sheet music</title>
-      <link>https://xinii.github.io/tags/sheet-music/</link>
+      <title>music</title>
+      <link>https://xinii.github.io/tags/music/</link>
       <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/tags/sheet-music/</guid>
+      <guid>https://xinii.github.io/tags/music/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>score</title>
+      <link>https://xinii.github.io/tags/score/</link>
+      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/tags/score/</guid>
       <description></description>
     </item>
     
@@ -156,11 +183,20 @@
     </item>
     
     <item>
-      <title>music</title>
-      <link>https://xinii.github.io/tags/music/</link>
+      <title>sense</title>
+      <link>https://xinii.github.io/tags/sense/</link>
       <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/tags/music/</guid>
+      <guid>https://xinii.github.io/tags/sense/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sound</title>
+      <link>https://xinii.github.io/tags/sound/</link>
+      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/tags/sound/</guid>
       <description></description>
     </item>
     
