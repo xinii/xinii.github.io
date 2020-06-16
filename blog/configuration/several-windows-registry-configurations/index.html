@@ -22,7 +22,7 @@
 <meta itemprop="description" content="Windowsのシステム環境設定だけではなかなか叶えない機能だけど，重くなるのでサードパーティ製のソフトウェアも使いたくない？レジストリーを使いこなそう！">
 <meta itemprop="datePublished" content="2020-06-04T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-06-04T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="317">
+<meta itemprop="wordCount" content="336">
 <meta itemprop="image" content="https://xinii.github.io/img/2020/06/0400.jpeg">
 
 
@@ -530,6 +530,14 @@
 </tr>
 </tbody>
 </table>
+<p>ここで，「Pause/Break」がいつくかのコードで組み合わせたもので，
+「NumLock」のコードも入っているため，
+以上のように設定する時に少し工夫をした。
+以下も参考</p>
+<blockquote>
+<p>Pause	0xE1:0x1D:0x45 [ 84key Ctrl(0x1D)+NumLock(0x45)], no auto repeat, break code 0xE1:0x9D:0xC5
+&ndash;<!-- raw HTML omitted -->Keyboard Scancode Map<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup><!-- raw HTML omitted --></p>
+</blockquote>
 <h2 id="キーボードレイアウトの種類を変更">キーボードレイアウトの種類を変更</h2>
 <h4 id="中国語入力において英語配列から日本語配列に">中国語入力において英語配列から日本語配列に</h4>
 <ul>
@@ -561,7 +569,7 @@
 <h2 id="マイコンピュータやpcの画面に不明なアイコンが出た時のレジストリー設定">「マイコンピュータ」や「PC」の画面に不明なアイコンが出た時のレジストリー設定</h2>
 <p>以下のレジストリーのパスに，その不明なものを探して見つけたら見つけたものを削除すれば良い</p>
 <pre><code>コンピューター\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace
-</code></pre><h2 id="どうしてもローカルネットワークのnasとかに繋がらない時のレジストリー設定citenascite">どうしてもローカルネットワークのNASとかに繋がらない時のレジストリー設定<!-- raw HTML omitted --><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup><!-- raw HTML omitted --></h2>
+</code></pre><h2 id="どうしてもローカルネットワークのnasとかに繋がらない時のレジストリー設定citenascite">どうしてもローカルネットワークのNASとかに繋がらない時のレジストリー設定<!-- raw HTML omitted --><sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup><!-- raw HTML omitted --></h2>
 <ul>
 <li>まずは，以下の場所を開く</li>
 </ul>
@@ -589,7 +597,6 @@
 <ol>
 <li><a href="https://usedoor.jp/howto/digital/pc/windows-uwagaki-keyboard-insert-key-mukouka/">上書きモードになる『Insert』キーを無効化する方法</a></li>
 <li><a href="https://tepp91.github.io/contents/misc/remap-keyboard-with-scancode-map.html">Scancode Mapによるキー割り当ての変更</a></li>
-<li><a href="https://seesaawiki.jp/w/smnb/d/Keyboard%20Scancode%20Map">Keyboard Scancode Map</a></li>
 <li><a href="https://answers.microsoft.com/en-us/windows/forum/windows_10-files/homegroup-removed-how-to-get-network-sharing-work/01277332-2916-4a68-853a-116696b20743">Homegroup removed! How to get network sharing work with Windows 10 v1803.</a></li>
 </ol>
 <section class="footnotes" role="doc-endnotes">
@@ -602,7 +609,10 @@
 <p><a href="http://softwaretechnique.jp/OS_Development/Tips/scan_code_set1.html">スキャンコード一覧（スキャンコードセット1）</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
-<p><a href="https://www.nedia.ne.jp/blog/2019/04/02/13919">NASに接続できない！原因はSMB1.0ではなかった！</a> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://seesaawiki.jp/w/smnb/d/Keyboard%20Scancode%20Map">Keyboard Scancode Map</a> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p><a href="https://www.nedia.ne.jp/blog/2019/04/02/13919">NASに接続できない！原因はSMB1.0ではなかった！</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
