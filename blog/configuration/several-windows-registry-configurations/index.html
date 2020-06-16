@@ -22,7 +22,7 @@
 <meta itemprop="description" content="Windowsのシステム環境設定だけではなかなか叶えない機能だけど，重くなるのでサードパーティ製のソフトウェアも使いたくない？レジストリーを使いこなそう！">
 <meta itemprop="datePublished" content="2020-06-04T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-06-04T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="295">
+<meta itemprop="wordCount" content="317">
 <meta itemprop="image" content="https://xinii.github.io/img/2020/06/0400.jpeg">
 
 
@@ -488,7 +488,7 @@
 </tr>
 <tr>
 <td><code>0008</code></td>
-<td><code>08 00 00 00</code></td>
+<td><code>0B 00 00 00</code></td>
 <td>マッピング数</td>
 <td><code>1C 00 52 E0</code></td>
 <td>Enter &lt;- Insert</td>
@@ -503,23 +503,30 @@
 <tr>
 <td><code>0018</code></td>
 <td><code>7B 00 46 00</code></td>
-<td>無変換 &lt;- Scroll</td>
+<td>無変換 &lt;- ScrollLock</td>
 <td><code>79 00 1D E1</code></td>
 <td>変換 &lt;- Pause</td>
 </tr>
 <tr>
 <td><code>0020</code></td>
+<td><code>00 00 45 00</code></td>
+<td>なし &lt;- NumLock</td>
+<td><code>00 00 9D E1</code></td>
+<td>なし &lt;- Break</td>
+</tr>
+<tr>
+<td><code>0028</code></td>
 <td><code>38 00 7B 00</code></td>
 <td>LAlt &lt;- 無変換</td>
 <td><code>01 00 79 00</code></td>
 <td>ESC &lt;- 変換</td>
 </tr>
 <tr>
-<td><code>0028</code></td>
+<td><code>0030</code></td>
+<td><code>52 E0 29 00</code></td>
+<td>Insert &lt;- E/J</td>
 <td><code>00 00 00 00</code></td>
 <td>終端ヌル値</td>
-<td></td>
-<td></td>
 </tr>
 </tbody>
 </table>
