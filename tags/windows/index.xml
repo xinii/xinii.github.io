@@ -5,20 +5,19 @@
     <link>https://xinii.github.io/tags/windows/</link>
     <description>Recent content in windows on xin iDEA iNNATA</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
+    <language>en</language>
     <lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://xinii.github.io/tags/windows/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>より効率的な作業を行うためのいくつかWindowsのレジストリー設定</title>
-      <link>https://xinii.github.io/blog/configuration/several-windows-registry-configurations/</link>
+      <title>Some works after Windows 10 clean installation</title>
+      <link>https://xinii.github.io/blog/installation/some-installations-for-windows-10/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/blog/configuration/several-windows-registry-configurations/</guid>
-      <description>目次  日本語キーボードのレイアウトに関するレジストリー設定  スキャンコードについて スキャンコードの例 レジストリーでスキャンコードのマッピングを行うためには   キーボードレイアウトの種類を変更  中国語入力において英語配列から日本語配列に 他の言語の入力法において〇〇配列から〇〇配列に   「マイコンピュータ」や「PC」の画面に不明なアイコンが出た時のレジストリー設定 どうしてもローカルネットワークのNASとかに繋がらない時のレジストリー設定 参考資料  日本語キーボードのレイアウトに関するレジストリー設定 スキャンコードについて まずは，ウィキペディアに載せたスキャンコードの定義を見よう
- スキャンコード (scancode) とは、コンピュータのキーボードのキーが押されたり離されたりしたときに、 キーボードからCPUに送られるコード（符号）のこと。走査コード（そうさコード）ともいう。 &amp;ndash;Wikipedia1 スキャンコードの例2    キー コード     RCtrl 1D E0   LAlt 38 00   RAlt 38 E0   ESC 01 00   Insert 52 E0   Enter 1C 00   Caps 3A 00   Space 39 00   無変換 7B 00   変換 79 00    レジストリーでスキャンコードのマッピングを行うためには  まず，Win key + Rを押してregeditを入力したらEnterキーを押す。 そうすると，Windowsのレジストリーエディターが開かれたはず。 そこでレジストリーエディターで以下の場所を開く。  コンピューター\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout  次に，右クリックしたら，「新規 - バイナリ値(B) - Scancode Map」の順で「Scancode Map」というバイナリキーを作る。  「Scancode Map」のバリュー（マッピングのルール）については， 以下のような僕の設定を参考していじってみればいいと思う。 ただし，「バージョン」，「フラグ」と「終端ヌル値」の部分は残る必要がある。 あと，「マッピング数」については，「終端ヌル値」も含めて設定したマッピングルールの数を数えて書けば良い。</description>
+      <guid>https://xinii.github.io/blog/installation/some-installations-for-windows-10/</guid>
+      <description>Activation of your Windows 10 slmgr -ipk {your product key} slmgr -skms {kms server address of your company} slmgr -ato Installation of some useful tools  Msys2 AutoHotKey Ricty  Configuration of msys2 pacman -S git fish tmux emacs gcc python cd ~ git clone https://github.com/xinii/xinconfig .xinconfig cd .xinconfig ./setenv fish exec fish set_conf tmux set_el auto set_el cn change_emacs xin emacs ssh-keygen -A emacs /etc/ssh/sshd_config #Port **** #PasswordAuthentication no cat {path to your pub key} &amp;gt; ~/.</description>
     </item>
     
   </channel>

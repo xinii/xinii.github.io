@@ -8,12 +8,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/en/"
+                href="https://xinii.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/"
+                href="https://xinii.github.io/ja/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -28,12 +28,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/en/about/"
+                href="https://xinii.github.io/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/about/"
+                href="https://xinii.github.io/ja/about/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -48,12 +48,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/en/blog/"
+                href="https://xinii.github.io/blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/blog/"
+                href="https://xinii.github.io/ja/blog/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -68,12 +68,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/en/categories/"
+                href="https://xinii.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/categories/"
+                href="https://xinii.github.io/ja/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -88,7 +88,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/en/tags/environment/"
+                href="https://xinii.github.io/tags/environment/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -103,7 +103,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/en/categories/environment/"
+                href="https://xinii.github.io/categories/environment/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -143,7 +143,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/tags/python/"
+                href="https://xinii.github.io/ja/tags/python/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -158,12 +158,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/en/tags/"
+                href="https://xinii.github.io/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/tags/"
+                href="https://xinii.github.io/ja/tags/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -188,12 +188,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/en/tags/emacs/"
+                href="https://xinii.github.io/tags/emacs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/tags/emacs/"
+                href="https://xinii.github.io/ja/tags/emacs/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -208,7 +208,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/categories/emacs/"
+                href="https://xinii.github.io/ja/categories/emacs/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -253,7 +253,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/en/tags/fish/"
+                href="https://xinii.github.io/tags/fish/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -273,7 +273,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/en/tags/shell/"
+                href="https://xinii.github.io/tags/shell/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -313,7 +313,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/en/tags/installation/"
+                href="https://xinii.github.io/tags/installation/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -328,7 +328,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/en/categories/installation/"
+                href="https://xinii.github.io/categories/installation/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -343,7 +343,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/en/tags/linux/"
+                href="https://xinii.github.io/tags/linux/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -437,12 +437,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/en/contact/"
+                href="https://xinii.github.io/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/contact/"
+                href="https://xinii.github.io/ja/contact/"
                 />
     <xhtml:link
                 rel="alternate"

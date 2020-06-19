@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>installation on xin iDEA iNNATA</title>
+    <link>https://xinii.github.io/categories/installation/</link>
+    <description>Recent content in installation on xin iDEA iNNATA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://xinii.github.io/categories/installation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Some works after Windows 10 clean installation</title>
+      <link>https://xinii.github.io/blog/installation/some-installations-for-windows-10/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/blog/installation/some-installations-for-windows-10/</guid>
+      <description>Activation of your Windows 10 slmgr -ipk {your product key} slmgr -skms {kms server address of your company} slmgr -ato Installation of some useful tools  Msys2 AutoHotKey Ricty  Configuration of msys2 pacman -S git fish tmux emacs gcc python cd ~ git clone https://github.com/xinii/xinconfig .xinconfig cd .xinconfig ./setenv fish exec fish set_conf tmux set_el auto set_el cn change_emacs xin emacs ssh-keygen -A emacs /etc/ssh/sshd_config #Port **** #PasswordAuthentication no cat {path to your pub key} &amp;gt; ~/.</description>
+    </item>
+    
+  </channel>
+</rss>

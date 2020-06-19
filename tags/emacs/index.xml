@@ -5,33 +5,19 @@
     <link>https://xinii.github.io/tags/emacs/</link>
     <description>Recent content in emacs on xin iDEA iNNATA</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Sat, 23 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <language>en</language>
+    <lastBuildDate>Wed, 03 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://xinii.github.io/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>emacsのorg-modeにおいてpythonコードブロックを使った時の落とし穴</title>
-      <link>https://xinii.github.io/blog/pitfall/pitfall-while-using-python-code-block-on-emacs-org-mode/</link>
-      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
+      <title>Add apt repository for fish and emacs</title>
+      <link>https://xinii.github.io/blog/environment/add-apt-repository-for-fish-and-emacs/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/blog/pitfall/pitfall-while-using-python-code-block-on-emacs-org-mode/</guid>
-      <description>僕は家計簿をorg-modeで記録しています， しかし，以下のエラーが出たことがある。
- File &amp;quot;&amp;lt;stdin&amp;gt;&amp;quot;, line 3 SyntaxError: Non-UTF-8 code starting with &#39;\xe3&#39; in file &amp;lt;stdin&amp;gt; on line 3, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details 例の# -*- coding: utf-8 -*-を先頭につけてもダメです。
-解決法は以下のようなコードブロックのヘッダーを，
-#+begin_src python :results file :var data=test 以下のように変換します。
-#+begin_src python :results file :var data=test[, 0:2] つまり，必要な数字や日付などのorg-modeのtableの列だけを pythonに転送すると，以上の問題が解決できますが， 根本的に# -*- coding: utf-8 -*-をコードブロックの中に 効く方法はまだわかりません。 わかる方は教えていただければありがたいと思います。
-コメントよろしくお願いします。</description>
-    </item>
-    
-    <item>
-      <title>emacsとlilypondで楽譜生成</title>
-      <link>https://xinii.github.io/blog/music/generate-sheet-music-with-lilypond-on-emacs/</link>
-      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/blog/music/generate-sheet-music-with-lilypond-on-emacs/</guid>
-      <description>コード例 \version &amp;quot;2.18.2&amp;quot; \score { \new Staff &amp;lt;&amp;lt; \new Voice \relative c&#39;&#39;&#39; { \set midiInstrument = #&amp;quot;flute&amp;quot; \voiceOne \key g \major \time 2/2 r2 g-&amp;quot;Flute&amp;quot; ~ g fis ~ fis4 g8 fis e2 ~ e4 d8 cis d2 } \new Voice \relative c&#39;&#39; { \set midiInstrument = #&amp;quot;clarinet&amp;quot; \voiceTwo b1-&amp;quot;Clarinet&amp;quot; a2. b8 a g2. fis8 e fis2 r } &amp;gt;&amp;gt; \layout { } \midi { \context { \Staff \remove &amp;quot;Staff_performer&amp;quot; } \context { \Voice \consists &amp;quot;Staff_performer&amp;quot; } \context { \Score tempoWholesPerMinute = #(ly:make-moment 72 2) } } } 出力例 {% include elements/figure.</description>
+      <guid>https://xinii.github.io/blog/environment/add-apt-repository-for-fish-and-emacs/</guid>
+      <description>Command to be use add-apt-repository No this command? Do this first apt install software-properties-common Process Register repository add-apt-repository ppa:kelleyk/emacs apt-add-repository ppa:fish-shell/release-3 Refresh repository apt update Installation apt install emacs26 apt install fish </description>
     </item>
     
   </channel>
