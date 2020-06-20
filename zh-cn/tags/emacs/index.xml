@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>为 Fish 和 Emacs 添加 apt 仓库</title>
+      <title>为Fish和Emacs添加apt仓库</title>
       <link>https://xinii.github.io/zh-cn/blog/environment/add-apt-repository-for-fish-and-emacs/</link>
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
@@ -21,18 +21,19 @@
     </item>
     
     <item>
-      <title>安装gnutls并从源码编译emacs</title>
+      <title>安装Gnutls并从源码编译Emacs</title>
       <link>https://xinii.github.io/zh-cn/blog/environment/install-gnutls-and-compile-emacs-from-source/</link>
       <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/zh-cn/blog/environment/install-gnutls-and-compile-emacs-from-source/</guid>
-      <description>The logo of Emacs1若当前环境没有gnutls， 那么在使用emacs源代码进行编译安装前的配置 （./configure）时可以临时使用--with-gnutls=no选项， 以使编译安装能够顺利进行。 例如下面的配置：
-bash configure --prefix=$HOME/.local --with-gif=no --with-gnutls=no 上面的例子虽然可以正常安装emacs到$HOME/.local目录， 但缺少了gnutls的支持， emacs内就只能使用http协议而并不能使用https协议， 虽然在emacs初始化时可以将melpa的链接都改为http协议解决问题， 但如果后期使用google-translate之类的包时还是会遇到问题。
-例如即使在elpa下将google-translate包内的所有.el 文件中出现的https改为http， 中途还是会出现自动使用某些https服务的情况，从而导致翻译异常。 （这里需要注意，修改后需删除所有.elc文件以强制重新编译使修改生效）
-上面问题的解决办法很简单，只需在当前环境安装gnutls即可。
-以OpenSUSE为例，在终端下运行下面的语句即可完成安装。
-sudo zypper install gnutls 另外，在安装emacs时，如果make后报以下错误，
-checking for library containing tputs... no configure: error: The required function &amp;#39;tputs&amp;#39; was not found in any library. The following libraries were tried (in order): libtinfo, libncurses, libterminfo, libcurses, libtermcap Please try installing whichever of these libraries is most appropriate for your system, together with its header files.</description>
+      <description>Emacs 的 Logo1目录  环境中缺少Gnutls的情况 潜在的问题 安装Gnutls 其他可能的问题  环境中缺少Gnutls的情况 若当前环境缺少 Gnutls，那么在对 Emacs 的源代码进行编译安装前需要以下配置。
+./configure --with-gnutls=no 或者同时指定安装目录、添加忽略其他仍缺少的依赖库的选项等，例如以下配置。
+bash configure --prefix=$HOME/.local --with-gif=no --with-gnutls=no 这样可以在缺少对默认安装路径权限，或者缺少各种依赖库的情况下使配置及安装得以顺利进行。
+潜在的问题 以上虽可以达到正常安装 Emacs 到 $HOME/.local 目录的目的， 但由于缺少了 Gnutls 组件，Emacs 中用到网络传输的时候便只能使用 http 而不能使用 https。
+如果只是 Emacs 初始化时需要网络连接，还可以通过将 Melpa 的链接都改为以 http 开头来解决问题， 但这为今后使用 Emacs 中需要网络连接的各种扩展带来问题。
+例如使用 google-translate 时，即使将 Emacs 配置文件夹中 elpa 文件夹下的 google-translate 包内的所有 *.el 文件中出现的 https 改为 http， 在实际使用的途中仍会出现自动使用某些 https 服务的情况，从而导致翻译异常。
+这里有一点需要注意的是，修改 *.el 文件后需删除所有 *.elc 文件以强制重新编译使修改生效。
+安装Gnutls 经过以上实际测试我们不难发现，在当前环境中安装好 Gnutls 之后再从源码安装 Emacs 是一个不错的选择。</description>
     </item>
     
   </channel>

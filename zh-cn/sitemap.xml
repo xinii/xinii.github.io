@@ -570,11 +570,26 @@
   <url>
     <loc>https://xinii.github.io/zh-cn/tags/compile/</loc>
     <lastmod>2019-05-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/tags/compile/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/tags/compile/"
+                />
   </url>
   
   <url>
     <loc>https://xinii.github.io/zh-cn/categories/emacs/</loc>
     <lastmod>2019-05-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/categories/emacs/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -590,26 +605,76 @@
   <url>
     <loc>https://xinii.github.io/zh-cn/tags/gnutls/</loc>
     <lastmod>2019-05-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/tags/gnutls/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/tags/gnutls/"
+                />
   </url>
   
   <url>
     <loc>https://xinii.github.io/zh-cn/tags/make/</loc>
     <lastmod>2019-05-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/tags/make/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/tags/make/"
+                />
   </url>
   
   <url>
     <loc>https://xinii.github.io/zh-cn/tags/opensuse/</loc>
     <lastmod>2019-05-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/tags/opensuse/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/tags/opensuse/"
+                />
   </url>
   
   <url>
     <loc>https://xinii.github.io/zh-cn/tags/zypper/</loc>
     <lastmod>2019-05-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/tags/zypper/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/tags/zypper/"
+                />
   </url>
   
   <url>
     <loc>https://xinii.github.io/zh-cn/blog/environment/install-gnutls-and-compile-emacs-from-source/</loc>
     <lastmod>2019-05-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/blog/environment/install-gnutls-and-compile-emacs-from-source/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/blog/environment/install-gnutls-and-compile-emacs-from-source/"
+                />
   </url>
   
   <url>

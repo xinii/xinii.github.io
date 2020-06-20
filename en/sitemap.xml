@@ -613,6 +613,116 @@
   </url>
   
   <url>
+    <loc>https://xinii.github.io/tags/compile/</loc>
+    <lastmod>2019-05-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/tags/compile/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/tags/compile/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/categories/emacs/</loc>
+    <lastmod>2019-05-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.github.io/ja/categories/emacs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/categories/emacs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/categories/emacs/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/tags/gnutls/</loc>
+    <lastmod>2019-05-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/tags/gnutls/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/tags/gnutls/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/blog/environment/install-gnutls-and-compile-emacs-from-source/</loc>
+    <lastmod>2019-05-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/blog/environment/install-gnutls-and-compile-emacs-from-source/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/blog/environment/install-gnutls-and-compile-emacs-from-source/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/tags/make/</loc>
+    <lastmod>2019-05-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/tags/make/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/tags/make/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/tags/opensuse/</loc>
+    <lastmod>2019-05-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/tags/opensuse/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/tags/opensuse/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/tags/zypper/</loc>
+    <lastmod>2019-05-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/tags/zypper/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/tags/zypper/"
+                />
+  </url>
+  
+  <url>
     <loc>https://xinii.github.io/tags/blog/</loc>
     <lastmod>2019-04-02T00:00:00+00:00</lastmod>
     <xhtml:link

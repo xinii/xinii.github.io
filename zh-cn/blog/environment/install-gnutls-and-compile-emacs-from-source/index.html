@@ -2,7 +2,7 @@
 <html lang="zh-cn">
   <head>
   <meta charset="utf-8">
-<title>安装gnutls并从源码编译emacs - xin iDEA iNNATA</title>
+<title>安装Gnutls并从源码编译Emacs - xin iDEA iNNATA</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -18,17 +18,17 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
 
-<meta name="generator" content="Hugo 0.67.0" /><meta itemprop="name" content="安装gnutls并从源码编译emacs">
-<meta itemprop="description" content="安装gnutls并从源码编译emacs">
+<meta name="generator" content="Hugo 0.67.0" /><meta itemprop="name" content="安装Gnutls并从源码编译Emacs">
+<meta itemprop="description" content="从源码编译 Emacs 时出现有关 Gnutls 的错误？让我我们来具体看看是怎么回事吧！">
 <meta itemprop="datePublished" content="2019-05-04T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-05-04T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="114">
+<meta itemprop="wordCount" content="175">
 <meta itemprop="image" content="https://xinii.github.io/img/2019/05/0400.jpeg">
 
 
 
-<meta itemprop="keywords" content="gnutls,compile,make,opensuse,zypper,environment,emacs," /><meta property="og:title" content="安装gnutls并从源码编译emacs" />
-<meta property="og:description" content="安装gnutls并从源码编译emacs" />
+<meta itemprop="keywords" content="gnutls,compile,make,opensuse,zypper,environment,emacs," /><meta property="og:title" content="安装Gnutls并从源码编译Emacs" />
+<meta property="og:description" content="从源码编译 Emacs 时出现有关 Gnutls 的错误？让我我们来具体看看是怎么回事吧！" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://xinii.github.io/zh-cn/blog/environment/install-gnutls-and-compile-emacs-from-source/" />
 <meta property="og:image" content="https://xinii.github.io/img/2019/05/0400.jpeg" />
@@ -37,8 +37,8 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://xinii.github.io/img/2019/05/0400.jpeg"/>
 
-<meta name="twitter:title" content="安装gnutls并从源码编译emacs"/>
-<meta name="twitter:description" content="安装gnutls并从源码编译emacs"/>
+<meta name="twitter:title" content="安装Gnutls并从源码编译Emacs"/>
+<meta name="twitter:description" content="从源码编译 Emacs 时出现有关 Gnutls 的错误？让我我们来具体看看是怎么回事吧！"/>
 <meta name="twitter:site" content="@xintxt"/>
 <link rel="stylesheet" href="/css/bundle.min.759e3848ea529eef056dab665b241e2af569e601ab80f68f8d4a4d002a155dd4.css" integrity="sha256-dZ44SOpSnu8FbatmWyQeKvVp5gGrgPaPjUpNACoVXdQ="><link rel="stylesheet" href="/css/add-on.css">
 </head>
@@ -113,16 +113,7 @@
   <menu id="lang-menu" class="flyout-menu menu">
   <a href="#" lang="zh-cn" class="nav link active">简体中文 (zh-cn)</a>
   
-    
-      
-        <a href="/en" lang="en" class="nav no-lang link">English (en)</a>
-      
-    
-      
-        <a href="/ja" lang="ja" class="nav no-lang link">日本語 (ja)</a>
-      
-    
-      
+      <a href="https://xinii.github.io/blog/environment/install-gnutls-and-compile-emacs-from-source/" lang="en" class="nav link">English (en)</a>
     
   
 </menu>
@@ -137,7 +128,7 @@
 
   
     
-    <a href="//twitter.com/share?text=%e5%ae%89%e8%a3%85gnutls%e5%b9%b6%e4%bb%8e%e6%ba%90%e7%a0%81%e7%bc%96%e8%af%91emacs&amp;url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2finstall-gnutls-and-compile-emacs-from-source%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+    <a href="//twitter.com/share?text=%e5%ae%89%e8%a3%85Gnutls%e5%b9%b6%e4%bb%8e%e6%ba%90%e7%a0%81%e7%bc%96%e8%af%91Emacs&amp;url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2finstall-gnutls-and-compile-emacs-from-source%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
         <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
       </a>
   
@@ -149,19 +140,19 @@
   
 
   
-    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2finstall-gnutls-and-compile-emacs-from-source%2f&amp;title=%e5%ae%89%e8%a3%85gnutls%e5%b9%b6%e4%bb%8e%e6%ba%90%e7%a0%81%e7%bc%96%e8%af%91emacs" target="_blank" rel="noopener" class="nav share-btn reddit">
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2finstall-gnutls-and-compile-emacs-from-source%2f&amp;title=%e5%ae%89%e8%a3%85Gnutls%e5%b9%b6%e4%bb%8e%e6%ba%90%e7%a0%81%e7%bc%96%e8%af%91Emacs" target="_blank" rel="noopener" class="nav share-btn reddit">
           <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
         </a>
   
 
   
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2finstall-gnutls-and-compile-emacs-from-source%2f&amp;title=%e5%ae%89%e8%a3%85gnutls%e5%b9%b6%e4%bb%8e%e6%ba%90%e7%a0%81%e7%bc%96%e8%af%91emacs" target="_blank" rel="noopener" class="nav share-btn linkedin">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2finstall-gnutls-and-compile-emacs-from-source%2f&amp;title=%e5%ae%89%e8%a3%85Gnutls%e5%b9%b6%e4%bb%8e%e6%ba%90%e7%a0%81%e7%bc%96%e8%af%91Emacs" target="_blank" rel="noopener" class="nav share-btn linkedin">
             <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
           </a>
   
 
   
-        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2finstall-gnutls-and-compile-emacs-from-source%2f&amp;description=%e5%ae%89%e8%a3%85gnutls%e5%b9%b6%e4%bb%8e%e6%ba%90%e7%a0%81%e7%bc%96%e8%af%91emacs" target="_blank" rel="noopener" class="nav share-btn pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2finstall-gnutls-and-compile-emacs-from-source%2f&amp;description=%e5%ae%89%e8%a3%85Gnutls%e5%b9%b6%e4%bb%8e%e6%ba%90%e7%a0%81%e7%bc%96%e8%af%91Emacs" target="_blank" rel="noopener" class="nav share-btn pinterest">
           <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
         </a>
   
@@ -244,10 +235,10 @@
     <header>
   <div class="title">
     
-      <h2><a href="/zh-cn/blog/environment/install-gnutls-and-compile-emacs-from-source/">安装gnutls并从源码编译emacs</a></h2>
+      <h2><a href="/zh-cn/blog/environment/install-gnutls-and-compile-emacs-from-source/">安装Gnutls并从源码编译Emacs</a></h2>
     
     
-      <p>安装gnutls并从源码编译emacs</p>
+      <p>从源码编译 Emacs 时出现有关 Gnutls 的错误？让我我们来具体看看是怎么回事吧！</p>
     
   </div>
   <div class="meta">
@@ -269,7 +260,7 @@
 
   
     
-    <a href="//twitter.com/share?text=%e5%ae%89%e8%a3%85gnutls%e5%b9%b6%e4%bb%8e%e6%ba%90%e7%a0%81%e7%bc%96%e8%af%91emacs&amp;url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2finstall-gnutls-and-compile-emacs-from-source%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+    <a href="//twitter.com/share?text=%e5%ae%89%e8%a3%85Gnutls%e5%b9%b6%e4%bb%8e%e6%ba%90%e7%a0%81%e7%bc%96%e8%af%91Emacs&amp;url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2finstall-gnutls-and-compile-emacs-from-source%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
         <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
       </a>
   
@@ -281,19 +272,19 @@
   
 
   
-    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2finstall-gnutls-and-compile-emacs-from-source%2f&amp;title=%e5%ae%89%e8%a3%85gnutls%e5%b9%b6%e4%bb%8e%e6%ba%90%e7%a0%81%e7%bc%96%e8%af%91emacs" target="_blank" rel="noopener" class="nav share-btn reddit">
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2finstall-gnutls-and-compile-emacs-from-source%2f&amp;title=%e5%ae%89%e8%a3%85Gnutls%e5%b9%b6%e4%bb%8e%e6%ba%90%e7%a0%81%e7%bc%96%e8%af%91Emacs" target="_blank" rel="noopener" class="nav share-btn reddit">
           <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
         </a>
   
 
   
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2finstall-gnutls-and-compile-emacs-from-source%2f&amp;title=%e5%ae%89%e8%a3%85gnutls%e5%b9%b6%e4%bb%8e%e6%ba%90%e7%a0%81%e7%bc%96%e8%af%91emacs" target="_blank" rel="noopener" class="nav share-btn linkedin">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2finstall-gnutls-and-compile-emacs-from-source%2f&amp;title=%e5%ae%89%e8%a3%85Gnutls%e5%b9%b6%e4%bb%8e%e6%ba%90%e7%a0%81%e7%bc%96%e8%af%91Emacs" target="_blank" rel="noopener" class="nav share-btn linkedin">
             <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
           </a>
   
 
   
-        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2finstall-gnutls-and-compile-emacs-from-source%2f&amp;description=%e5%ae%89%e8%a3%85gnutls%e5%b9%b6%e4%bb%8e%e6%ba%90%e7%a0%81%e7%bc%96%e8%af%91emacs" target="_blank" rel="noopener" class="nav share-btn pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2finstall-gnutls-and-compile-emacs-from-source%2f&amp;description=%e5%ae%89%e8%a3%85Gnutls%e5%b9%b6%e4%bb%8e%e6%ba%90%e7%a0%81%e7%bc%96%e8%af%91Emacs" target="_blank" rel="noopener" class="nav share-btn pinterest">
           <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
         </a>
   
@@ -315,25 +306,34 @@
 
 
     <div class="content">
-      <p><!-- raw HTML omitted -->The logo of Emacs<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><!-- raw HTML omitted --></p>
-<p>若当前环境没有gnutls，
-那么在使用emacs源代码进行编译安装前的配置
-（<code>./configure</code>）时可以临时使用<code>--with-gnutls=no</code>选项，
-以使编译安装能够顺利进行。
-例如下面的配置：</p>
+      <p><!-- raw HTML omitted -->Emacs 的 Logo<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><!-- raw HTML omitted --></p>
+<h2 id="目录">目录</h2>
+<ul>
+<li><a href="#%E7%8E%AF%E5%A2%83%E4%B8%AD%E7%BC%BA%E5%B0%91Gnutls%E7%9A%84%E6%83%85%E5%86%B5">环境中缺少Gnutls的情况</a></li>
+<li><a href="#%E6%BD%9C%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98">潜在的问题</a></li>
+<li><a href="#%E5%AE%89%E8%A3%85gnutls">安装Gnutls</a></li>
+<li><a href="#%E5%85%B6%E4%BB%96%E5%8F%AF%E8%83%BD%E7%9A%84%E9%97%AE%E9%A2%98">其他可能的问题</a></li>
+</ul>
+<h2 id="环境中缺少gnutls的情况">环境中缺少Gnutls的情况</h2>
+<p>若当前环境缺少 Gnutls，那么在对 Emacs 的源代码进行编译安装前需要以下配置。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">./configure --with-gnutls<span style="color:#f92672">=</span>no
+</code></pre></div><p>或者同时指定安装目录、添加忽略其他仍缺少的依赖库的选项等，例如以下配置。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">bash configure --prefix<span style="color:#f92672">=</span>$HOME/.local --with-gif<span style="color:#f92672">=</span>no --with-gnutls<span style="color:#f92672">=</span>no
-</code></pre></div><p>上面的例子虽然可以正常安装emacs到<code>$HOME/.local</code>目录，
-但缺少了gnutls的支持，
-emacs内就只能使用http协议而并不能使用https协议，
-虽然在emacs初始化时可以将melpa的链接都改为http协议解决问题，
-但如果后期使用<code>google-translate</code>之类的包时还是会遇到问题。</p>
-<p>例如即使在elpa下将<code>google-translate</code>包内的所有<code>.el</code> 文件中出现的<code>https</code>改为<code>http</code>，
-中途还是会出现自动使用某些https服务的情况，从而导致翻译异常。
-（这里需要注意，修改后需删除所有<code>.elc</code>文件以强制重新编译使修改生效）</p>
-<p>上面问题的解决办法很简单，只需在当前环境安装gnutls即可。</p>
-<p>以OpenSUSE为例，在终端下运行下面的语句即可完成安装。</p>
+</code></pre></div><p>这样可以在缺少对默认安装路径权限，或者缺少各种依赖库的情况下使配置及安装得以顺利进行。</p>
+<h2 id="潜在的问题">潜在的问题</h2>
+<p>以上虽可以达到正常安装 Emacs 到 <code>$HOME/.local</code> 目录的目的，
+但由于缺少了 Gnutls 组件，Emacs 中用到网络传输的时候便只能使用 http 而不能使用 https。</p>
+<p>如果只是 Emacs 初始化时需要网络连接，还可以通过将 Melpa 的链接都改为以 http 开头来解决问题，
+但这为今后使用 Emacs 中需要网络连接的各种扩展带来问题。</p>
+<p>例如使用 <code>google-translate</code> 时，即使将 Emacs 配置文件夹中 elpa 文件夹下的
+<code>google-translate</code> 包内的所有 <code>*.el</code> 文件中出现的 <code>https</code> 改为 <code>http</code>，
+在实际使用的途中仍会出现自动使用某些 <code>https</code> 服务的情况，从而导致翻译异常。</p>
+<p>这里有一点需要注意的是，修改 <code>*.el</code> 文件后需删除所有 <code>*.elc</code> 文件以强制重新编译使修改生效。</p>
+<h2 id="安装gnutls">安装Gnutls</h2>
+<p>经过以上实际测试我们不难发现，在当前环境中安装好 Gnutls 之后再从源码安装 Emacs 是一个不错的选择。</p>
+<p>以 OpenSUSE 为例，在终端运行下面的语句即可安装 Gnutls。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo zypper install gnutls
-</code></pre></div><p>另外，在安装emacs时，如果make后报以下错误，</p>
+</code></pre></div><h2 id="其他可能的问题">其他可能的问题</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">checking <span style="color:#66d9ef">for</span> library containing tputs... no
 configure: error: The required <span style="color:#66d9ef">function</span> <span style="color:#e6db74">&#39;tputs&#39;</span> was not found in any library.
 The following libraries were tried <span style="color:#f92672">(</span>in order<span style="color:#f92672">)</span>:
@@ -343,7 +343,8 @@ Please try installing whichever of these libraries is most appropriate
 For example, a libncurses-dev<span style="color:#f92672">(</span>el<span style="color:#f92672">)</span> or similar package.
 make: *** No targets specified and no makefile found.  Stop.
 make: *** No rule to make target <span style="color:#e6db74">&#39;install&#39;</span>.  Stop.
-</code></pre></div><p>那么对于OpenSUSE的环境可能需要ncurses-devel的包，
+</code></pre></div><p>另外，如果 Gnutls 在当前环境已安装，而 <code>make</code> 后仍报上面的错误，
+那么对于 OpenSUSE 的环境则需要一个叫做 <code>ncurses-devel</code> 的包，
 执行下面的语句安装即可。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo zypper install ncurses-devel
 </code></pre></div><section class="footnotes" role="doc-endnotes">
@@ -455,7 +456,7 @@ make: *** No rule to make target <span style="color:#e6db74">&#39;install&#39;</
 
         </section>
         <header>
-          <h2><a href="/zh-cn/blog/configuration/several-windows-registry-configurations/">一些可帮助你更有效地工作的 Windows 注册表设置</a></h2>
+          <h2><a href="/zh-cn/blog/configuration/several-windows-registry-configurations/">一些可帮助你更有效地工作的Windows注册表设置</a></h2>
           <time class="published" datetime="">June 4, 2020</time>
         </header>
       </article>
@@ -472,7 +473,7 @@ make: *** No rule to make target <span style="color:#e6db74">&#39;install&#39;</
 
         </section>
         <header>
-          <h2><a href="/zh-cn/blog/environment/add-apt-repository-for-fish-and-emacs/">为 Fish 和 Emacs 添加 apt 仓库</a></h2>
+          <h2><a href="/zh-cn/blog/environment/add-apt-repository-for-fish-and-emacs/">为Fish和Emacs添加apt仓库</a></h2>
           <time class="published" datetime="">June 3, 2020</time>
         </header>
       </article>
@@ -506,7 +507,7 @@ make: *** No rule to make target <span style="color:#e6db74">&#39;install&#39;</
 
         </section>
         <header>
-          <h2><a href="/zh-cn/blog/environment/install-gnutls-and-compile-emacs-from-source/">安装gnutls并从源码编译emacs</a></h2>
+          <h2><a href="/zh-cn/blog/environment/install-gnutls-and-compile-emacs-from-source/">安装Gnutls并从源码编译Emacs</a></h2>
           <time class="published" datetime="">May 4, 2019</time>
         </header>
       </article>

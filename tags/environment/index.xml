@@ -29,5 +29,15 @@
       <description>SSH interruption phenomenon  When logging in to a remote server with ssh, Write failed: Broken pipe may be displayed and the connection may be broken. It is necessary to change the ssh setting on the client side or the server side, because ssh is automatically disconnected by a timeout if it is not operated for a while.  Remedy  Deal on the client side  Describe the following contents in /etc/ssh/ssh_config or ~/.</description>
     </item>
     
+    <item>
+      <title>Install Gnutls and compile Emacs from source</title>
+      <link>https://xinii.github.io/blog/environment/install-gnutls-and-compile-emacs-from-source/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/blog/environment/install-gnutls-and-compile-emacs-from-source/</guid>
+      <description>The logo of Emacs1Table of Contents  The lack of Gnutls in the environment Potential problems Install Gnutls Other possible problems  The lack of Gnutls in the environment If the current environment lacks Gnutls, the following configuration is required before compiling and installing the Emacs source code.
+./configure --with-gnutls=no Or specify the installation directory at the same time, add the option to ignore other dependent libraries that are still missing, such as the following configuration.</description>
+    </item>
+    
   </channel>
 </rss>

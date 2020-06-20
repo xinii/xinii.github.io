@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>zypper on xin iDEA iNNATA</title>
+    <link>https://xinii.github.io/tags/zypper/</link>
+    <description>Recent content in zypper on xin iDEA iNNATA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 04 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://xinii.github.io/tags/zypper/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Install Gnutls and compile Emacs from source</title>
+      <link>https://xinii.github.io/blog/environment/install-gnutls-and-compile-emacs-from-source/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/blog/environment/install-gnutls-and-compile-emacs-from-source/</guid>
+      <description>The logo of Emacs1Table of Contents  The lack of Gnutls in the environment Potential problems Install Gnutls Other possible problems  The lack of Gnutls in the environment If the current environment lacks Gnutls, the following configuration is required before compiling and installing the Emacs source code.
+./configure --with-gnutls=no Or specify the installation directory at the same time, add the option to ignore other dependent libraries that are still missing, such as the following configuration.</description>
+    </item>
+    
+  </channel>
+</rss>

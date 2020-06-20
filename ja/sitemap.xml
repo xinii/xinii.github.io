@@ -527,6 +527,11 @@
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/categories/emacs/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="zh-cn"
                 href="https://xinii.github.io/zh-cn/categories/emacs/"
                 />
