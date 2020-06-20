@@ -6,10 +6,28 @@
     <description>Recent content in Categories on xin iDEA iNNATA</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 12 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://xinii.github.io/zh-cn/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>configuration</title>
+      <link>https://xinii.github.io/zh-cn/categories/configuration/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/categories/configuration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>windows</title>
+      <link>https://xinii.github.io/zh-cn/categories/windows/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/categories/windows/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>environment</title>

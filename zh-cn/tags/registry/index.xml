@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>registry on xin iDEA iNNATA</title>
+    <link>https://xinii.github.io/zh-cn/tags/registry/</link>
+    <description>Recent content in registry on xin iDEA iNNATA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://xinii.github.io/zh-cn/tags/registry/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>一些可帮助你更有效地工作的 Windows 注册表设置</title>
+      <link>https://xinii.github.io/zh-cn/blog/configuration/several-windows-registry-configurations/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/blog/configuration/several-windows-registry-configurations/</guid>
+      <description>目录  有关日语键盘布局的注册表设置  关于键盘扫描码 键盘扫描码的例子 在注册表中进行键盘扫描码映射   更改键盘布局类型  中文输入法的英文布局改为日语键盘布局 其他语言的输入法的键盘布局更改   当资源管理器的「我的电脑」或「PC」中出现未知图标时的注册表设置 无法连接到本地网络上的 NAS 时的注册表设置 参考资料  有关日语键盘布局的注册表设置 关于键盘扫描码 首先，键盘扫描码是什么呢？让我们看看维基百科上的定义。
+ 键盘扫描码（英語：scancode或scan code）是绝大多数电脑键盘向计算机发送的一项数据， 用以报告哪些键被按下。它使用一个数字或数字序列来表示分配到键盘上的每个按键。 &amp;ndash;Wikipedia1 键盘扫描码的例子2    Key Code     RCtrl 1D E0   LAlt 38 00   RAlt 38 E0   ESC 01 00   Insert 52 E0   Enter 1C 00   Caps 3A 00   Space 39 00   日语键盘无变换键 7B 00   日语键盘变换键 79 00    在注册表中进行键盘扫描码映射   首先，按 Windows 徽标键 + R，输入 regedit 后然后按 Enter 键打开 Windows 注册表编辑器。 然后在注册表编辑器中打开以下位置。</description>
+    </item>
+    
+  </channel>
+</rss>

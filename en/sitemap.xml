@@ -93,6 +93,46 @@
   </url>
   
   <url>
+    <loc>https://xinii.github.io/tags/configuration/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.github.io/ja/tags/configuration/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/tags/configuration/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/tags/configuration/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/categories/configuration/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.github.io/ja/categories/configuration/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/categories/configuration/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/categories/configuration/"
+                />
+  </url>
+  
+  <url>
     <loc>https://xinii.github.io/tags/installation/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -123,13 +163,133 @@
   </url>
   
   <url>
+    <loc>https://xinii.github.io/tags/keyboard/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.github.io/ja/tags/keyboard/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/tags/keyboard/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/tags/keyboard/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/tags/lan/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.github.io/ja/tags/lan/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/tags/lan/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/tags/lan/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/tags/layout/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.github.io/ja/tags/layout/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/tags/layout/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/tags/layout/"
+                />
+  </url>
+  
+  <url>
     <loc>https://xinii.github.io/tags/msys2/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>https://xinii.github.io/tags/registry/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.github.io/ja/tags/registry/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/tags/registry/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/tags/registry/"
+                />
+  </url>
+  
+  <url>
     <loc>https://xinii.github.io/tags/ricty/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/tags/scancode/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.github.io/ja/tags/scancode/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/tags/scancode/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/tags/scancode/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/blog/configuration/several-windows-registry-configurations/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.github.io/ja/blog/configuration/several-windows-registry-configurations/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/blog/configuration/several-windows-registry-configurations/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/blog/configuration/several-windows-registry-configurations/"
+                />
   </url>
   
   <url>
@@ -167,6 +327,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/tags/windows/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="https://xinii.github.io/tags/windows/"
                 />
@@ -179,6 +344,11 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://xinii.github.io/ja/categories/windows/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/categories/windows/"
                 />
     <xhtml:link
                 rel="alternate"

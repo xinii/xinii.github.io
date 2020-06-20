@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Some Windows registry settings that can help you work more efficiently</title>
+      <link>https://xinii.github.io/blog/configuration/several-windows-registry-configurations/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/blog/configuration/several-windows-registry-configurations/</guid>
+      <description>Table of Contents  Registry settings for Japanese keyboard layout  About keyboard scan code Example of keyboard scan code Perform keyboard scan code mapping in the registry   Change keyboard layout for IME  Change Chinese input method English layout to Japanese keyboard layout Change the keyboard layout of input methods in other languages   Registry settings when an unknown icon appears in &amp;ldquo;My Computer&amp;rdquo; or &amp;ldquo;PC&amp;rdquo; in Explorer Registry settings when unable to connect to the NAS on the local network  References  Registry settings for Japanese keyboard layout About keyboard scan code First, what is the keyboard scan code?</description>
+    </item>
+    
+    <item>
       <title>Some works after Windows 10 clean installation</title>
       <link>https://xinii.github.io/blog/installation/some-installations-for-windows-10/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
