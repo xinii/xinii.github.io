@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>Add apt repository for fish and emacs</title>
+      <title>Add apt repository for Fish and Emacs</title>
       <link>https://xinii.github.io/blog/environment/add-apt-repository-for-fish-and-emacs/</link>
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/blog/environment/add-apt-repository-for-fish-and-emacs/</guid>
-      <description>Command to be use add-apt-repository No this command? Do this first apt install software-properties-common Process Register repository add-apt-repository ppa:kelleyk/emacs apt-add-repository ppa:fish-shell/release-3 Refresh repository apt update Installation apt install emacs26 apt install fish </description>
+      <description>Table of Contents  Command to be use No this command? Do this first Process  Register repository Refresh repository Installation    Command to be use add-apt-repository No this command? Do this first apt install software-properties-common Process Register repository add-apt-repository ppa:kelleyk/emacs apt-add-repository ppa:fish-shell/release-3 Refresh repository apt update Installation apt install emacs26 apt install fish </description>
     </item>
     
   </channel>

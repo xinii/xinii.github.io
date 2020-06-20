@@ -75,11 +75,74 @@
     </item>
     
     <item>
+      <title>apt</title>
+      <link>https://xinii.github.io/zh-cn/tags/apt/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/apt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>emacs</title>
+      <link>https://xinii.github.io/zh-cn/tags/emacs/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/emacs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>environment</title>
       <link>https://xinii.github.io/zh-cn/tags/environment/</link>
-      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/zh-cn/tags/environment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fish</title>
+      <link>https://xinii.github.io/zh-cn/tags/fish/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/fish/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://xinii.github.io/zh-cn/tags/linux/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>repository</title>
+      <link>https://xinii.github.io/zh-cn/tags/repository/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/repository/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shell</title>
+      <link>https://xinii.github.io/zh-cn/tags/shell/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ubuntu</title>
+      <link>https://xinii.github.io/zh-cn/tags/ubuntu/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/ubuntu/</guid>
       <description></description>
     </item>
     
@@ -138,15 +201,6 @@
     </item>
     
     <item>
-      <title>emacs</title>
-      <link>https://xinii.github.io/zh-cn/tags/emacs/</link>
-      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/zh-cn/tags/emacs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>gnutls</title>
       <link>https://xinii.github.io/zh-cn/tags/gnutls/</link>
       <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
@@ -192,29 +246,11 @@
     </item>
     
     <item>
-      <title>fish</title>
-      <link>https://xinii.github.io/zh-cn/tags/fish/</link>
-      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/zh-cn/tags/fish/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>pythonpath</title>
       <link>https://xinii.github.io/zh-cn/tags/pythonpath/</link>
       <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/zh-cn/tags/pythonpath/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>shell</title>
-      <link>https://xinii.github.io/zh-cn/tags/shell/</link>
-      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/zh-cn/tags/shell/</guid>
       <description></description>
     </item>
     
@@ -251,15 +287,6 @@
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/zh-cn/tags/installation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>linux</title>
-      <link>https://xinii.github.io/zh-cn/tags/linux/</link>
-      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/zh-cn/tags/linux/</guid>
       <description></description>
     </item>
     

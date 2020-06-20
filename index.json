@@ -17,10 +17,10 @@
     "body": "Activation of your Windows 10 slmgr -ipk {your product key} slmgr -skms {kms server address of your company} slmgr -ato Installation of some useful tools  Msys2 AutoHotKey Ricty  Configuration of msys2 pacman -S git fish tmux emacs gcc python cd ~ git clone https://github.com/xinii/xinconfig .xinconfig cd .xinconfig ./setenv fish exec fish set_conf tmux set_el auto set_el cn change_emacs xin emacs ssh-keygen -A emacs /etc/ssh/sshd_config #Port **** #PasswordAuthentication no cat {path to your pub key} \u0026gt; ~/.ssh/authorized_keys chmod 600 ~/.ssh/authorized_keys chmod 700 ~/.ssh /usr/bin/sshd ",
     "ref": "/blog/installation/some-installations-for-windows-10/"
   },{
-    "title": "Add apt repository for fish and emacs",
+    "title": "Add apt repository for Fish and Emacs",
     "date": "June 3, 2020",
-    "description": "Do you want to install emacs26 or fish3.0 on the lower version of ubuntu based linux? Try this method",
-    "body": "Command to be use add-apt-repository No this command? Do this first apt install software-properties-common Process Register repository add-apt-repository ppa:kelleyk/emacs apt-add-repository ppa:fish-shell/release-3 Refresh repository apt update Installation apt install emacs26 apt install fish ",
+    "description": "Do you want to install Emacs26 or Fish3.0 on the lower version of ubuntu based linux? Try this method",
+    "body": "Table of Contents  Command to be use No this command? Do this first Process  Register repository Refresh repository Installation    Command to be use add-apt-repository No this command? Do this first apt install software-properties-common Process Register repository add-apt-repository ppa:kelleyk/emacs apt-add-repository ppa:fish-shell/release-3 Refresh repository apt update Installation apt install emacs26 apt install fish ",
     "ref": "/blog/environment/add-apt-repository-for-fish-and-emacs/"
   },{
     "title": "Several SSH configurations",

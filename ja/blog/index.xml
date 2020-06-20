@@ -22,6 +22,15 @@
     </item>
     
     <item>
+      <title>FishとEmacsのためのaptリポジトリ追加</title>
+      <link>https://xinii.github.io/ja/blog/environment/add-apt-repository-for-fish-and-emacs/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/ja/blog/environment/add-apt-repository-for-fish-and-emacs/</guid>
+      <description>目次  使う予定のコマンド このコマンドがない？以下のようにコマンドを入れる 以下のステップに従ってインストール  リポジトリを登録 リポジトリを更新 必要なものをインストール    使う予定のコマンド add-apt-repository このコマンドがない？以下のようにコマンドを入れる apt install software-properties-common 以下のステップに従ってインストール リポジトリを登録 add-apt-repository ppa:kelleyk/emacs apt-add-repository ppa:fish-shell/release-3 リポジトリを更新 apt update 必要なものをインストール apt install emacs26 apt install fish </description>
+    </item>
+    
+    <item>
       <title>emacsのorg-modeにおいてpythonコードブロックを使った時の落とし穴</title>
       <link>https://xinii.github.io/ja/blog/pitfall/pitfall-while-using-python-code-block-on-emacs-org-mode/</link>
       <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>

@@ -6,10 +6,19 @@
     <description>Recent content in linux on xin iDEA iNNATA</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 23 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://xinii.github.io/zh-cn/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>为 Fish 和 Emacs 添加 apt 仓库</title>
+      <link>https://xinii.github.io/zh-cn/blog/environment/add-apt-repository-for-fish-and-emacs/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/blog/environment/add-apt-repository-for-fish-and-emacs/</guid>
+      <description>目录  将要使用的命令 没这个命令？先试试这个 安装过程  注册仓库 刷新仓库 安装    将要使用的命令 add-apt-repository 没这个命令？先试试这个 apt install software-properties-common 安装过程 注册仓库 add-apt-repository ppa:kelleyk/emacs apt-add-repository ppa:fish-shell/release-3 刷新仓库 apt update 安装 apt install emacs26 apt install fish </description>
+    </item>
     
     <item>
       <title>使用usb设备安装linux mint</title>
