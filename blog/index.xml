@@ -38,5 +38,15 @@
       <description>SSH interruption phenomenon  When logging in to a remote server with ssh, Write failed: Broken pipe may be displayed and the connection may be broken. It is necessary to change the ssh setting on the client side or the server side, because ssh is automatically disconnected by a timeout if it is not operated for a while.  Remedy  Deal on the client side  Describe the following contents in /etc/ssh/ssh_config or ~/.</description>
     </item>
     
+    <item>
+      <title>Create a blog via Jekyll and post to Github</title>
+      <link>https://xinii.github.io/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/</guid>
+      <description>The logo of Jekyll1Table of Contents  Install Jekyll Publish blog to Github  Install Jekyll Jekyll is a static website generation framework written in Ruby language. The following is the official website introduction.
+ Jekyll is a static site generator. You give it text written in your favorite markup language and it uses layouts to create a static website. You can tweak how you want the site URLs to look, what data gets displayed on the site, and more.</description>
+    </item>
+    
   </channel>
 </rss>

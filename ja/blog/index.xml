@@ -65,5 +65,17 @@
    鍵盤番号 周波数(Hz) 階名 音名     1 27.500 ラ A0（イ）   …      37 220.000 ラ A3（イ）   38 233.082  A#3   39 246.942 シ B3（ロ）   40 261.626 ド C4（ハ）   41 277.183  C#4   42 293.665 レ D4（ニ）   43 311.127  D#4   44 329.628 ミ E4（ホ）   45 349.</description>
     </item>
     
+    <item>
+      <title>Jekyllで作成したブログをGithubに公開</title>
+      <link>https://xinii.github.io/ja/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/ja/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/</guid>
+      <description>Jekyllのログ1目次  Jekyllをインストール Githubに公開  Jekyllをインストール JekyllがRubyで書いた静的なサイトジェネレーター。 以下は公式サイトの紹介文。
+ Jekyll is a static site generator. You give it text written in your favorite markup language and it uses layouts to create a static website. You can tweak how you want the site URLs to look, what data gets displayed on the site, and more. &amp;ndash;Jekyll2 Jekyllをインストールする際に， まずはRubyのパッケージ管理ツールを入れておくとあとは便利。 よく使われているRubyのパッケージ管理ツールがgemで， Ubuntuなどのシステムにおいて， 以下のコマンドでgemが同時にインストールされる。
+apt install ruby-dev gemをインストールして，PATHの環境変数にちゃんとgemが入っていれば， gemを使っていろんなRubyのパッケージを入れることが可能になる。 もしrbenvなどのバーチャル環境管理ツールを使っていれば， 実行可能なgemがあればあとは同じ。 以下のコマンドでJekyllを入れる。簡単だね。
+gem install jekyll Githubに公開 Jekyllをインストールしたら， とりあえずJekyllで作った何かしらをGithubに公開して見てみたいだね。 気持ちがわかる。</description>
+    </item>
+    
   </channel>
 </rss>

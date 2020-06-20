@@ -83,5 +83,23 @@
       <description></description>
     </item>
     
+    <item>
+      <title>cms</title>
+      <link>https://xinii.github.io/ja/categories/cms/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/ja/categories/cms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jekyll</title>
+      <link>https://xinii.github.io/ja/categories/jekyll/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/ja/categories/jekyll/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

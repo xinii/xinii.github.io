@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jekyll on xin iDEA iNNATA</title>
+    <link>https://xinii.github.io/ja/categories/jekyll/</link>
+    <description>Recent content in jekyll on xin iDEA iNNATA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 02 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://xinii.github.io/ja/categories/jekyll/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Jekyllで作成したブログをGithubに公開</title>
+      <link>https://xinii.github.io/ja/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/ja/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/</guid>
+      <description>Jekyllのログ1目次  Jekyllをインストール Githubに公開  Jekyllをインストール JekyllがRubyで書いた静的なサイトジェネレーター。 以下は公式サイトの紹介文。
+ Jekyll is a static site generator. You give it text written in your favorite markup language and it uses layouts to create a static website. You can tweak how you want the site URLs to look, what data gets displayed on the site, and more. &amp;ndash;Jekyll2 Jekyllをインストールする際に， まずはRubyのパッケージ管理ツールを入れておくとあとは便利。 よく使われているRubyのパッケージ管理ツールがgemで， Ubuntuなどのシステムにおいて， 以下のコマンドでgemが同時にインストールされる。
+apt install ruby-dev gemをインストールして，PATHの環境変数にちゃんとgemが入っていれば， gemを使っていろんなRubyのパッケージを入れることが可能になる。 もしrbenvなどのバーチャル環境管理ツールを使っていれば， 実行可能なgemがあればあとは同じ。 以下のコマンドでJekyllを入れる。簡単だね。
+gem install jekyll Githubに公開 Jekyllをインストールしたら， とりあえずJekyllで作った何かしらをGithubに公開して見てみたいだね。 気持ちがわかる。</description>
+    </item>
+    
+  </channel>
+</rss>

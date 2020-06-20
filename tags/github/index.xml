@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>github on xin iDEA iNNATA</title>
+    <link>https://xinii.github.io/tags/github/</link>
+    <description>Recent content in github on xin iDEA iNNATA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 02 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://xinii.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Create a blog via Jekyll and post to Github</title>
+      <link>https://xinii.github.io/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/</guid>
+      <description>The logo of Jekyll1Table of Contents  Install Jekyll Publish blog to Github  Install Jekyll Jekyll is a static website generation framework written in Ruby language. The following is the official website introduction.
+ Jekyll is a static site generator. You give it text written in your favorite markup language and it uses layouts to create a static website. You can tweak how you want the site URLs to look, what data gets displayed on the site, and more.</description>
+    </item>
+    
+  </channel>
+</rss>

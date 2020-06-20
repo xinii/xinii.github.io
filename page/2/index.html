@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
   <head>
   <meta charset="utf-8">
 <title>xin iDEA iNNATA</title>
@@ -95,42 +95,42 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
         
           
           
-            <a href="/" class="nav link"><i class='fas fa-home'></i> ホーム</a>
+            <a href="/" class="nav link"><i class='fas fa-home'></i> Home</a>
           
         
       
         
           
           
-            <a href="/about/" class="nav link"><i class='far fa-id-card'></i> 私について</a>
+            <a href="/about/" class="nav link"><i class='far fa-id-card'></i> About</a>
           
         
       
         
           
           
-            <a href="/blog/" class="nav link"><i class='far fa-newspaper'></i> 記事</a>
+            <a href="/blog/" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
           
         
       
         
           
           
-            <a href="/categories/" class="nav link"><i class='fas fa-sitemap'></i> カテゴリー</a>
+            <a href="/categories/" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
           
         
       
         
           
           
-            <a href="/tags/" class="nav link"><i class='fas fa-tags'></i> タグ</a>
+            <a href="/tags/" class="nav link"><i class='fas fa-tags'></i> Tags</a>
           
         
       
         
           
           
-            <a href="/contact/" class="nav link"><i class='far fa-envelope'></i> サポート</a>
+            <a href="/contact/" class="nav link"><i class='far fa-envelope'></i> Contact</a>
           
         
       
@@ -139,14 +139,14 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
     </menu>
     <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
     <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
-    <a href="#lang-menu" class="nav lang-toggle" lang="ja">ja</a>
+    <a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
     <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
   </nav>
   <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
   <menu id="lang-menu" class="flyout-menu menu">
-  <a href="#" lang="ja" class="nav link active">日本語 (ja)</a>
+  <a href="#" lang="en" class="nav link active">English (en)</a>
   
-      <a href="https://xinii.github.io/en/" lang="en" class="nav link">English (en)</a>
+      <a href="https://xinii.github.io/ja/" lang="ja" class="nav link">日本語 (ja)</a>
     
       <a href="https://xinii.github.io/zh-cn/" lang="zh-cn" class="nav link">简体中文 (zh-cn)</a>
     
@@ -193,7 +193,7 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
   
 
   
-        <a href="mailto:?subject=%e3%81%93%e3%81%ae%e6%8a%95%e7%a8%bf%e3%82%92%e3%83%81%e3%82%a7%e3%83%83%e3%82%af%e3%81%99%e3%82%8b %7b%20%20%20%20%20%20%20%20map%5b%5d%7d&amp;body=https%3a%2f%2fxinii.github.io%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+        <a href="mailto:?subject=Check%20out%20this%20post%20by %7b%20%20%20%20%20%20%20%20map%5b%5d%7d&amp;body=https%3a%2f%2fxinii.github.io%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
           <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
         </a>
   
@@ -272,62 +272,44 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
   <header>
   <div class="title">
     
-      <h2><a href="/blog/music/generate-sheet-music-with-lilypond-on-emacs/">emacsとlilypondで楽譜生成</a></h2>
+      <h2><a href="/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/">Create a blog via Jekyll and post to Github</a></h2>
     
     
-      <p>emacsとlilypondで楽譜生成</p>
+      <p>Want to own a blog but don’t know how to create it? Try Jekyll natively supported by Github!</p>
     
   </div>
   <div class="meta">
-    <time class="published" datetime="2019-11-16 00:00:00 &#43;0000 UTC">
-      2019-11-16
+    <time class="published" datetime="2019-04-02 00:00:00 &#43;0000 UTC">
+      April 2, 2019
     </time>
     <span class="author">Xin Li</span>
     
-      <p>1 分で読めます</p>
+      <p>2 minute read</p>
     
   </div>
 </header>
 
   
+  <a href="/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/" class="image featured">
+    
+      <img src="https://raw.githubusercontent.com/jekyll/brand/master/jekyll-logo-black-red-transparent.png" alt="">
+    
+  </a>
+
 
   
-  <pre><code class="language-lilypond" data-lang="lilypond">\version &quot;2.18.2&quot;
-
-\score {
-  \new Staff &lt;&lt;
-    \new Voice \relative c''' {
-      \set midiInstrument = #&quot;flute&quot;
-      \voiceOne
-      \key g \major
-      \time 2/2
-      r2 g-&quot;Flute&quot; ~
-      g fis ~
-      fis4 g8 fis e2 ~
-      e4 d8 cis d2
-    }
-    \new Voice \relative c'' {
-      \set midiInstrument = #&quot;clarinet&quot;
-      \voiceTwo
-      b1-&quot;Clarinet&quot;
-      a2. b8 a
-      g2. fis8 e
-      fis2 r
-    }
-  &gt;&gt;
-  \layout { }
-  \midi {&hellip;</code></pre>
+  <p><!-- raw HTML omitted -->The logo of Jekyll<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><!-- raw HTML omitted --></p>
   <footer>
-    <a href="/blog/music/generate-sheet-music-with-lilypond-on-emacs/" class="button big">続きを読む</a>
+    <a href="/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/" class="button big">Read more</a>
     <ul class="stats">
   <li class="categories">
     <ul>
     
       
         
-          <li><a class="article-terms-link" href="/categories/music/">music</a></li>
+          <li><a class="article-terms-link" href="/categories/cms/">cms</a></li>
         
-          <li><a class="article-terms-link" href="/categories/lilypond/">lilypond</a></li>
+          <li><a class="article-terms-link" href="/categories/jekyll/">jekyll</a></li>
         
       
     
@@ -338,77 +320,19 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
     
       
         
-          <li><a class="article-terms-link" href="/tags/emacs/">emacs</a></li>
+          <li><a class="article-terms-link" href="/tags/github/">github</a></li>
         
-          <li><a class="article-terms-link" href="/tags/score/">score</a></li>
+          <li><a class="article-terms-link" href="/tags/web/">web</a></li>
         
-          <li><a class="article-terms-link" href="/tags/music/">music</a></li>
+          <li><a class="article-terms-link" href="/tags/site/">site</a></li>
         
-          <li><a class="article-terms-link" href="/tags/lilypond/">lilypond</a></li>
+          <li><a class="article-terms-link" href="/tags/blog/">blog</a></li>
         
-      
-    
-    </ul>
-  </li>
-</ul>
-
-  </footer>
-</article>
-
-  
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/blog/music/about-absolute-pitch/">絶対音感について</a></h2>
-    
-    
-      <p>絶対音感について</p>
-    
-  </div>
-  <div class="meta">
-    <time class="published" datetime="2019-11-15 00:00:00 &#43;0000 UTC">
-      2019-11-15
-    </time>
-    <span class="author">Xin Li</span>
-    
-      <p>1 分で読めます</p>
-    
-  </div>
-</header>
-
-  
-
-  
-  <p>次の表に，ピアノの鍵盤における88のキーに相応する音の周波数を示す。</p>
-  <footer>
-    <a href="/blog/music/about-absolute-pitch/" class="button big">続きを読む</a>
-    <ul class="stats">
-  <li class="categories">
-    <ul>
-    
-      
+          <li><a class="article-terms-link" href="/tags/ruby/">ruby</a></li>
         
-          <li><a class="article-terms-link" href="/categories/music/">music</a></li>
+          <li><a class="article-terms-link" href="/tags/cms/">cms</a></li>
         
-          <li><a class="article-terms-link" href="/categories/absolute-pitch/">absolute pitch</a></li>
-        
-      
-    
-    </ul>
-  </li>
-  <li class="tags">
-    <ul>
-    
-      
-        
-          <li><a class="article-terms-link" href="/tags/sound/">sound</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/sense/">sense</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/music/">music</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/absolute-pitch/">absolute pitch</a></li>
+          <li><a class="article-terms-link" href="/tags/jekyll/">jekyll</a></li>
         
       
     
@@ -434,74 +358,59 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
   
     <section id="recent-posts">
       <header>
-        <h1>最近の投稿</h1>
+        <h1>Recent posts</h1>
       </header>
       
       <article class="mini-post">
         <section>
           
-  <a href="/blog/configuration/several-windows-registry-configurations/" class="image featured">
+
+        </section>
+        <header>
+          <h2><a href="/blog/installation/some-installations-for-windows-10/">Some works after Windows 10 clean installation</a></h2>
+          <time class="published" datetime="">June 4, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/blog/environment/add-apt-repository-for-fish-and-emacs/">Add apt repository for fish and emacs</a></h2>
+          <time class="published" datetime="">June 3, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/blog/environment/several-ssh-configurations/">Several SSH configurations</a></h2>
+          <time class="published" datetime="">June 3, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+  <a href="/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/" class="image featured">
     
-      <img src="https://xinii.github.io/img/2020/06/0400.jpeg" alt="">
+      <img src="https://raw.githubusercontent.com/jekyll/brand/master/jekyll-logo-black-red-transparent.png" alt="">
     
   </a>
 
 
         </section>
         <header>
-          <h2><a href="/blog/configuration/several-windows-registry-configurations/">より効率的な作業を行うためのいくつかWindowsのレジストリー設定</a></h2>
-          <time class="published" datetime="">2020-06-04</time>
+          <h2><a href="/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/">Create a blog via Jekyll and post to Github</a></h2>
+          <time class="published" datetime="">April 2, 2019</time>
         </header>
       </article>
       
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
-          <h2><a href="/blog/pitfall/pitfall-while-using-python-code-block-on-emacs-org-mode/">emacsのorg-modeにおいてpythonコードブロックを使った時の落とし穴</a></h2>
-          <time class="published" datetime="">2019-11-23</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
-          <h2><a href="/blog/pitfall/pitfall-while-inserting-figure-into-latex-article/">LaTeXのplatexを使う際のfigureに関する落とし穴</a></h2>
-          <time class="published" datetime="">2019-11-23</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
-          <h2><a href="/blog/music/generate-sheet-music-with-lilypond-on-emacs/">emacsとlilypondで楽譜生成</a></h2>
-          <time class="published" datetime="">2019-11-16</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
-          <h2><a href="/blog/music/about-absolute-pitch/">絶対音感について</a></h2>
-          <time class="published" datetime="">2019-11-15</time>
-        </header>
-      </article>
-      
-      
-        <footer>
-          <a href="/blog/" class="button">続きを見る</a>
-        </footer>
       
     </section>
   
@@ -510,7 +419,7 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
     
       <section id="categories">
         <header>
-          <h1><a href="/categories">カテゴリー</a></h1>
+          <h1><a href="/categories">Categories</a></h1>
         </header>
         <ul>
           
@@ -519,37 +428,32 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
           
           <li>
             
-              <a href="/categories/music/">music<span class="count">2</span></a>
+              <a href="/categories/environment/">environment<span class="count">2</span></a>
             
           
           <li>
             
-              <a href="/categories/pitfall/">pitfall<span class="count">2</span></a>
+              <a href="/categories/cms/">cms<span class="count">1</span></a>
             
           
           <li>
             
-              <a href="/categories/absolute-pitch/">absolute-pitch<span class="count">1</span></a>
+              <a href="/categories/installation/">installation<span class="count">1</span></a>
             
           
           <li>
             
-              <a href="/categories/configuration/">configuration<span class="count">1</span></a>
+              <a href="/categories/jekyll/">jekyll<span class="count">1</span></a>
             
           
           <li>
             
-              <a href="/categories/emacs/">emacs<span class="count">1</span></a>
+              <a href="/categories/repository/">repository<span class="count">1</span></a>
             
           
           <li>
             
-              <a href="/categories/latex/">latex<span class="count">1</span></a>
-            
-          
-          <li>
-            
-              <a href="/categories/lilypond/">lilypond<span class="count">1</span></a>
+              <a href="/categories/ssh/">ssh<span class="count">1</span></a>
             
           
           <li>
@@ -570,7 +474,7 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
       </header>
       <p>Wellcome to xin idea innata! Click the button below to get more information about me.</p>
       <footer>
-        <a href="/about" class="button">もっと知る</a>
+        <a href="/about" class="button">Learn More</a>
       </footer>
     </section>
   
