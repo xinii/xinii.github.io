@@ -1083,6 +1083,26 @@
   </url>
   
   <url>
+    <loc>https://xinii.github.io/blog/environment/my-shell-migration-record/</loc>
+    <lastmod>2019-05-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.github.io/ja/blog/environment/my-shell-migration-record/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/blog/environment/my-shell-migration-record/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/blog/environment/my-shell-migration-record/"
+                />
+  </url>
+  
+  <url>
     <loc>https://xinii.github.io/tags/pythonpath/</loc>
     <lastmod>2019-05-03T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -1159,26 +1179,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://xinii.github.io/tags/zsh/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/blog/environment/my-shell-migration-record/</loc>
-    <lastmod>2019-05-03T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/blog/environment/my-shell-migration-record/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/blog/environment/my-shell-migration-record/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/blog/environment/my-shell-migration-record/"
                 />
   </url>
   
