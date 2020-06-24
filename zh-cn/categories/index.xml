@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>installation</title>
+      <link>https://xinii.github.io/zh-cn/categories/installation/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/categories/installation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>windows</title>
       <link>https://xinii.github.io/zh-cn/categories/windows/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
@@ -48,6 +57,15 @@
     </item>
     
     <item>
+      <title>ssh</title>
+      <link>https://xinii.github.io/zh-cn/categories/ssh/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/categories/ssh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>opencv</title>
       <link>https://xinii.github.io/zh-cn/categories/opencv/</link>
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
@@ -71,15 +89,6 @@
       <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/zh-cn/categories/shell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>installation</title>
-      <link>https://xinii.github.io/zh-cn/categories/installation/</link>
-      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/zh-cn/categories/installation/</guid>
       <description></description>
     </item>
     

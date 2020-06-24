@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gnutls on xin iDEA iNNATA</title>
+    <link>https://xinii.github.io/ja/tags/gnutls/</link>
+    <description>Recent content in gnutls on xin iDEA iNNATA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 04 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://xinii.github.io/ja/tags/gnutls/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GnutlsをインストールしてソースからEmacsをコンパイル</title>
+      <link>https://xinii.github.io/ja/blog/environment/install-gnutls-and-compile-emacs-from-source/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/ja/blog/environment/install-gnutls-and-compile-emacs-from-source/</guid>
+      <description>EmacsのLogo1目次  今の環境にGnutlsがない場合 潜在的なリスク Gnutlsをインストール その他の問題  今の環境にGnutlsがない場合 今の環境にGnutlsがない場合は，ソースからEmacsをコンパイルする時に以下の設定が必要。
+./configure --with-gnutls=no 他にも依存されるライブラリーなどが足りない場合は，例えば以下のように設定をする。
+bash configure --prefix=$HOME/.local --with-gif=no --with-gnutls=no これでデフォルトのパスとかへの権限や，ライブラリーが足りない場合でもソースからインストール出来てしまう。
+潜在的なリスク 以上のようにEmacsを$HOME/.localへのインストールが出来てしまうけど， Gnutlsがサポートされないゆえに，Emacsでインターネットが必要となった時にhttpsが使えない。
+Emacsが初期化される時だけなら，設定ファイルの中のMelpaリンクを全てhttpに変更すれば済ませるが， セキュリティ上にあまりお勧めができないし，今後Emacsの拡張機能を使う時のリスクにもなる。
+例えば，google-translateのEmacs拡張パッケージを使う場合は， Emacsのelpaフォルダーにあるgoogle-translateの中の全ての*.elにあるhttpsをhttpに書き換えても， 実際に使う時に一部の機能にとってはhttpsが必須で翻訳が正常に機能しない恐れがある。
+ここでは，*.elを変更した後に，*.elcを削除しないと変更が反映されない可能性がある。
+Gnutlsをインストール 以上の問題を解決するもっとも簡単な方法としては， 今の環境にGnutlsをインストールしてからソースからもう一度Emacsをインストールすること。
+OpenSUSEを例として，以下のコマンドでGnutlsをインストールする。
+sudo zypper install gnutls その他の問題 checking for library containing tputs... no configure: error: The required function &amp;#39;tputs&amp;#39; was not found in any library. The following libraries were tried (in order): libtinfo, libncurses, libterminfo, libcurses, libtermcap Please try installing whichever of these libraries is most appropriate for your system, together with its header files.</description>
+    </item>
+    
+  </channel>
+</rss>

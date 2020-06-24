@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>installation</title>
+      <link>https://xinii.github.io/ja/categories/installation/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/ja/categories/installation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>windows</title>
       <link>https://xinii.github.io/ja/categories/windows/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
@@ -44,6 +53,15 @@
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/ja/categories/repository/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ssh</title>
+      <link>https://xinii.github.io/ja/categories/ssh/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/ja/categories/ssh/</guid>
       <description></description>
     </item>
     
@@ -98,6 +116,33 @@
       <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/ja/categories/absolute-pitch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>opencv</title>
+      <link>https://xinii.github.io/ja/categories/opencv/</link>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/ja/categories/opencv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shell</title>
+      <link>https://xinii.github.io/ja/categories/shell/</link>
+      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/ja/categories/shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://xinii.github.io/ja/categories/linux/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/ja/categories/linux/</guid>
       <description></description>
     </item>
     

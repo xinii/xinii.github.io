@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Several SSH configurations</title>
+      <link>https://xinii.github.io/zh-cn/blog/environment/several-ssh-configurations/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/blog/environment/several-ssh-configurations/</guid>
+      <description>SSH interruption phenomenon  When logging in to a remote server with ssh, Write failed: Broken pipe may be displayed and the connection may be broken. It is necessary to change the ssh setting on the client side or the server side, because ssh is automatically disconnected by a timeout if it is not operated for a while.  Remedy  Deal on the client side  Describe the following contents in /etc/ssh/ssh_config or ~/.</description>
+    </item>
+    
+    <item>
       <title>为Fish和Emacs添加apt仓库</title>
       <link>https://xinii.github.io/zh-cn/blog/environment/add-apt-repository-for-fish-and-emacs/</link>
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>

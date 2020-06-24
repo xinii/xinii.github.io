@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Some works after Windows 10 clean installation</title>
+      <link>https://xinii.github.io/ja/blog/installation/some-installations-for-windows-10/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/ja/blog/installation/some-installations-for-windows-10/</guid>
+      <description>Activation of your Windows 10 slmgr -ipk {your product key} slmgr -skms {kms server address of your company} slmgr -ato Installation of some useful tools  Msys2 AutoHotKey Ricty  Configuration of msys2 pacman -S git fish tmux emacs gcc python cd ~ git clone https://github.com/xinii/xinconfig .xinconfig cd .xinconfig ./setenv fish exec fish set_conf tmux set_el auto set_el cn change_emacs xin emacs ssh-keygen -A emacs /etc/ssh/sshd_config #Port **** #PasswordAuthentication no cat {path to your pub key} &amp;gt; ~/.</description>
+    </item>
+    
+    <item>
       <title>より効率的な作業を行うためのいくつかWindowsのレジストリー設定</title>
       <link>https://xinii.github.io/ja/blog/configuration/several-windows-registry-configurations/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
@@ -28,6 +37,15 @@
       
       <guid>https://xinii.github.io/ja/blog/environment/add-apt-repository-for-fish-and-emacs/</guid>
       <description>目次  使う予定のコマンド このコマンドがない？以下のようにコマンドを入れる 以下のステップに従ってインストール  リポジトリを登録 リポジトリを更新 必要なものをインストール    使う予定のコマンド add-apt-repository このコマンドがない？以下のようにコマンドを入れる apt install software-properties-common 以下のステップに従ってインストール リポジトリを登録 add-apt-repository ppa:kelleyk/emacs apt-add-repository ppa:fish-shell/release-3 リポジトリを更新 apt update 必要なものをインストール apt install emacs26 apt install fish </description>
+    </item>
+    
+    <item>
+      <title>Several SSH configurations</title>
+      <link>https://xinii.github.io/ja/blog/environment/several-ssh-configurations/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/ja/blog/environment/several-ssh-configurations/</guid>
+      <description>SSH interruption phenomenon  When logging in to a remote server with ssh, Write failed: Broken pipe may be displayed and the connection may be broken. It is necessary to change the ssh setting on the client side or the server side, because ssh is automatically disconnected by a timeout if it is not operated for a while.  Remedy  Deal on the client side  Describe the following contents in /etc/ssh/ssh_config or ~/.</description>
     </item>
     
     <item>
@@ -72,6 +90,62 @@
       <guid>https://xinii.github.io/ja/blog/music/about-absolute-pitch/</guid>
       <description>音階と音の周波数 次の表に，ピアノの鍵盤における88のキーに相応する音の周波数を示す。
    鍵盤番号 周波数(Hz) 階名 音名     1 27.500 ラ A0（イ）   …      37 220.000 ラ A3（イ）   38 233.082  A#3   39 246.942 シ B3（ロ）   40 261.626 ド C4（ハ）   41 277.183  C#4   42 293.665 レ D4（ニ）   43 311.127  D#4   44 329.628 ミ E4（ホ）   45 349.</description>
+    </item>
+    
+    <item>
+      <title>在jetson nano上安装opencv</title>
+      <link>https://xinii.github.io/ja/blog/environment/install-opencv-on-jetson-nano/</link>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/ja/blog/environment/install-opencv-on-jetson-nano/</guid>
+      <description>生成swap文件 为防止编译途中由于内存不足等问题报错， 这里首先提前创建一个swap文件，存放路径任意。 重启后swap空间会消失， 以下编译等全部工作完成后可以手动删除这个文件。
+$ fallocate -l 4G swapfile $ chmod 600 swapfile $ mkswap swapfile $ sudo swapon swapfile $ swapon -s 生成安装脚本 安装opencv 4.0.0版本的脚本原始链接
+以上是安装opencv 4.0.0的版本，在这里我们希望安装较新的4.1.0版本，将上面的代码稍作改动（版本号的部分）：
+#!/bin/bash # # Copyright (c) 2018, NVIDIA CORPORATION. All rights reserved. # # NVIDIA Corporation and its licensors retain all intellectual property # and proprietary rights in and to this software, related documentation # and any modifications thereto. Any use, reproduction, disclosure or # distribution of this software and related documentation without an express # license agreement from NVIDIA Corporation is strictly prohibited.</description>
+    </item>
+    
+    <item>
+      <title>GnutlsをインストールしてソースからEmacsをコンパイル</title>
+      <link>https://xinii.github.io/ja/blog/environment/install-gnutls-and-compile-emacs-from-source/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/ja/blog/environment/install-gnutls-and-compile-emacs-from-source/</guid>
+      <description>EmacsのLogo1目次  今の環境にGnutlsがない場合 潜在的なリスク Gnutlsをインストール その他の問題  今の環境にGnutlsがない場合 今の環境にGnutlsがない場合は，ソースからEmacsをコンパイルする時に以下の設定が必要。
+./configure --with-gnutls=no 他にも依存されるライブラリーなどが足りない場合は，例えば以下のように設定をする。
+bash configure --prefix=$HOME/.local --with-gif=no --with-gnutls=no これでデフォルトのパスとかへの権限や，ライブラリーが足りない場合でもソースからインストール出来てしまう。
+潜在的なリスク 以上のようにEmacsを$HOME/.localへのインストールが出来てしまうけど， Gnutlsがサポートされないゆえに，Emacsでインターネットが必要となった時にhttpsが使えない。
+Emacsが初期化される時だけなら，設定ファイルの中のMelpaリンクを全てhttpに変更すれば済ませるが， セキュリティ上にあまりお勧めができないし，今後Emacsの拡張機能を使う時のリスクにもなる。
+例えば，google-translateのEmacs拡張パッケージを使う場合は， Emacsのelpaフォルダーにあるgoogle-translateの中の全ての*.elにあるhttpsをhttpに書き換えても， 実際に使う時に一部の機能にとってはhttpsが必須で翻訳が正常に機能しない恐れがある。
+ここでは，*.elを変更した後に，*.elcを削除しないと変更が反映されない可能性がある。
+Gnutlsをインストール 以上の問題を解決するもっとも簡単な方法としては， 今の環境にGnutlsをインストールしてからソースからもう一度Emacsをインストールすること。
+OpenSUSEを例として，以下のコマンドでGnutlsをインストールする。
+sudo zypper install gnutls その他の問題 checking for library containing tputs... no configure: error: The required function &amp;#39;tputs&amp;#39; was not found in any library. The following libraries were tried (in order): libtinfo, libncurses, libterminfo, libcurses, libtermcap Please try installing whichever of these libraries is most appropriate for your system, together with its header files.</description>
+    </item>
+    
+    <item>
+      <title>我的shell迁移记录</title>
+      <link>https://xinii.github.io/ja/blog/environment/my-shell-migration-record/</link>
+      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/ja/blog/environment/my-shell-migration-record/</guid>
+      <description>Picture: High contrast utilities terminal1从bash到zsh 虽然我使用zsh shell两周后就换到fish shell了（关于fish shell下面有专门介绍）， 但这并不否认zsh shell仍然是个很好的shell。 你可以通过下面的方式从任意的shell切换至zsh shell。
+ 安装zsh时通过下面的指令：  brew install zsh (MacOS) apt install zsh (Ubuntu / Linux Mint)  如果你想要知道现在系统裡已经安装好的shell，输入下面的指令：  cat /etc/shells  如何将zsh作为你默认的shell呢？，输入下面的指令：  chsh -s /usr/local/bin/zsh  关于配置文件的读取错误  shell脚本解释出错时可以查看一下当前所使用的sh路径， 比如有可能是sh指向了dash导致出错。 通过下面的语句查看。
+ls -l `which sh`  脚本解释器在语法上的不同点  从传统的bash等shell换到zsh时会发现集合的第一个元素的索引是从1开始的， 如果希望从0开始，在配置文件中配置下面语句即可。
+ Fix array index for zsh:  if [ &amp;#34;$ZSH_NAME&amp;#34; = &amp;#34;zsh&amp;#34; ];then setopt localoptions ksharrays fi 配置zsh shell 与bash shell的.</description>
+    </item>
+    
+    <item>
+      <title>使用usb设备安装linux mint</title>
+      <link>https://xinii.github.io/ja/blog/installation/install-linux-mint-from-the-usb-device/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/ja/blog/installation/install-linux-mint-from-the-usb-device/</guid>
+      <description>The logo of Linux Mint1目录  准备一个用于安装 Linux Mint 的 USB 设备 Linux Mint 的 ISO 文件   重要：在开始下面的工作之前，首先确保U盘没有存任何东西， 或者里面没有放任何的重要数据（因为烧录会导致数据丢失）， 同时电脑上已经准备好空的分区（安装到的目标分区的数据也会被抹掉）。
+准备一个用于安装linux mint的usb设备 首先准备一个usb设备，可以是u盘也可以是usb的移动硬盘， 之后会在这个上面写入供安装linux mint的安装程序。
+ 如果使用的是windows操作系统，那么点击 这里 来查看ubuntu官方的教程以创建一个可以安装Linux的USB设备。  注意：上面的教程是教你如何製作一个用于安装Ubuntu的USB设备， 安装linux mint的情况下仅需要把涉及到iso文件的地方换成Linux Mint的iso文件，其他地方完全相同。
+ 其中会用到的软件叫做rufus，上面的教程裡面也有提到，点击 这里 打开rufus的官方网站，你也可以点击 这里 直接下载rufus。  linux mint的iso文件 前一节提到的linux mint的iso文件需要从下面的地方获取。点击 这里 打开linux mint的官方网站。 或者也可以点击 这里 直接下载Linux Mint 19.1版本。
+  The logo of Linux Mint &amp;#x21a9;&amp;#xfe0e;
+   </description>
     </item>
     
     <item>

@@ -244,15 +244,15 @@
   <header>
   <div class="title">
     
-      <h2><a href="/ja/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/">Jekyllで作成したブログをGithubに公開</a></h2>
+      <h2><a href="/ja/blog/music/generate-sheet-music-with-lilypond-on-emacs/">emacsとlilypondで楽譜生成</a></h2>
     
     
-      <p>自分のブログがほしいけどやり方はわからない？GithubがデフォルトでビルドとかをサポートしているJekyllを試してみよう！</p>
+      <p>emacsとlilypondで楽譜生成</p>
     
   </div>
   <div class="meta">
-    <time class="published" datetime="2019-04-02 00:00:00 &#43;0000 UTC">
-      2019-04-02
+    <time class="published" datetime="2019-11-16 00:00:00 &#43;0000 UTC">
+      2019-11-16
     </time>
     <span class="author">Xin Li</span>
     
@@ -262,26 +262,44 @@
 </header>
 
   
-  <a href="/ja/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/" class="image featured">
-    
-      <img src="https://raw.githubusercontent.com/jekyll/brand/master/jekyll-logo-black-red-transparent.png" alt="">
-    
-  </a>
-
 
   
-  <p><!-- raw HTML omitted -->Jekyllのログ<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><!-- raw HTML omitted --></p>
+  <pre><code class="language-lilypond" data-lang="lilypond">\version &quot;2.18.2&quot;
+
+\score {
+  \new Staff &lt;&lt;
+    \new Voice \relative c''' {
+      \set midiInstrument = #&quot;flute&quot;
+      \voiceOne
+      \key g \major
+      \time 2/2
+      r2 g-&quot;Flute&quot; ~
+      g fis ~
+      fis4 g8 fis e2 ~
+      e4 d8 cis d2
+    }
+    \new Voice \relative c'' {
+      \set midiInstrument = #&quot;clarinet&quot;
+      \voiceTwo
+      b1-&quot;Clarinet&quot;
+      a2. b8 a
+      g2. fis8 e
+      fis2 r
+    }
+  &gt;&gt;
+  \layout { }
+  \midi {&hellip;</code></pre>
   <footer>
-    <a href="/ja/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/" class="button big">続きを読む</a>
+    <a href="/ja/blog/music/generate-sheet-music-with-lilypond-on-emacs/" class="button big">続きを読む</a>
     <ul class="stats">
   <li class="categories">
     <ul>
     
       
         
-          <li><a class="article-terms-link" href="/ja/categories/cms/">cms</a></li>
+          <li><a class="article-terms-link" href="/ja/categories/music/">music</a></li>
         
-          <li><a class="article-terms-link" href="/ja/categories/jekyll/">jekyll</a></li>
+          <li><a class="article-terms-link" href="/ja/categories/lilypond/">lilypond</a></li>
         
       
     
@@ -292,19 +310,154 @@
     
       
         
-          <li><a class="article-terms-link" href="/ja/tags/github/">github</a></li>
+          <li><a class="article-terms-link" href="/ja/tags/emacs/">emacs</a></li>
         
-          <li><a class="article-terms-link" href="/ja/tags/web/">web</a></li>
+          <li><a class="article-terms-link" href="/ja/tags/score/">score</a></li>
         
-          <li><a class="article-terms-link" href="/ja/tags/site/">site</a></li>
+          <li><a class="article-terms-link" href="/ja/tags/music/">music</a></li>
         
-          <li><a class="article-terms-link" href="/ja/tags/blog/">blog</a></li>
+          <li><a class="article-terms-link" href="/ja/tags/lilypond/">lilypond</a></li>
         
-          <li><a class="article-terms-link" href="/ja/tags/ruby/">ruby</a></li>
+      
+    
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/ja/blog/music/about-absolute-pitch/">絶対音感について</a></h2>
+    
+    
+      <p>絶対音感について</p>
+    
+  </div>
+  <div class="meta">
+    <time class="published" datetime="2019-11-15 00:00:00 &#43;0000 UTC">
+      2019-11-15
+    </time>
+    <span class="author">Xin Li</span>
+    
+      <p>1 分で読めます</p>
+    
+  </div>
+</header>
+
+  
+
+  
+  <p>次の表に，ピアノの鍵盤における88のキーに相応する音の周波数を示す。</p>
+  <footer>
+    <a href="/ja/blog/music/about-absolute-pitch/" class="button big">続きを読む</a>
+    <ul class="stats">
+  <li class="categories">
+    <ul>
+    
+      
         
-          <li><a class="article-terms-link" href="/ja/tags/cms/">cms</a></li>
+          <li><a class="article-terms-link" href="/ja/categories/music/">music</a></li>
         
-          <li><a class="article-terms-link" href="/ja/tags/jekyll/">jekyll</a></li>
+          <li><a class="article-terms-link" href="/ja/categories/absolute-pitch/">absolute pitch</a></li>
+        
+      
+    
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+    
+      
+        
+          <li><a class="article-terms-link" href="/ja/tags/sound/">sound</a></li>
+        
+          <li><a class="article-terms-link" href="/ja/tags/sense/">sense</a></li>
+        
+          <li><a class="article-terms-link" href="/ja/tags/music/">music</a></li>
+        
+          <li><a class="article-terms-link" href="/ja/tags/absolute-pitch/">absolute pitch</a></li>
+        
+      
+    
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/ja/blog/environment/install-opencv-on-jetson-nano/">在jetson nano上安装opencv</a></h2>
+    
+    
+      <p>在jetson nano上安装opencv</p>
+    
+  </div>
+  <div class="meta">
+    <time class="published" datetime="2019-07-12 00:00:00 &#43;0000 UTC">
+      2019-07-12
+    </time>
+    <span class="author">Xin Li</span>
+    
+      <p>2 分で読めます</p>
+    
+  </div>
+</header>
+
+  
+  <a href="/ja/blog/environment/install-opencv-on-jetson-nano/" class="image featured">
+    
+      <img src="https://xinii.github.io/img/2019/07/1200.png" alt="">
+    
+  </a>
+
+
+  
+  <p>为防止编译途中由于内存不足等问题报错，
+这里首先提前创建一个swap文件，存放路径任意。
+重启后swap空间会消失，
+以下编译等全部工作完成后可以手动删除这个文件。</p>
+  <footer>
+    <a href="/ja/blog/environment/install-opencv-on-jetson-nano/" class="button big">続きを読む</a>
+    <ul class="stats">
+  <li class="categories">
+    <ul>
+    
+      
+        
+          <li><a class="article-terms-link" href="/ja/categories/environment/">environment</a></li>
+        
+          <li><a class="article-terms-link" href="/ja/categories/opencv/">opencv</a></li>
+        
+      
+    
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+    
+      
+        
+          <li><a class="article-terms-link" href="/ja/tags/jetson/">jetson</a></li>
+        
+          <li><a class="article-terms-link" href="/ja/tags/nano/">nano</a></li>
+        
+          <li><a class="article-terms-link" href="/ja/tags/python/">python</a></li>
+        
+          <li><a class="article-terms-link" href="/ja/tags/pyenv/">pyenv</a></li>
+        
+          <li><a class="article-terms-link" href="/ja/tags/environment/">environment</a></li>
+        
+          <li><a class="article-terms-link" href="/ja/tags/opencv/">opencv</a></li>
         
       
     
@@ -322,6 +475,8 @@
     <a href="/ja/page/2/" class="button"><div class="previous"><div>Previous</div></div></a>
   
   
+    <a href="/ja/page/4/" class="button"><div class="next"><div>Next</div></div></a>
+  
 </div>
 
 
@@ -336,9 +491,26 @@
       <article class="mini-post">
         <section>
           
+  <a href="/ja/blog/installation/some-installations-for-windows-10/" class="image featured">
+    
+      <img src="https://xinii.github.io/img/2020/06/0401.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <header>
+          <h2><a href="/ja/blog/installation/some-installations-for-windows-10/">Some works after Windows 10 clean installation</a></h2>
+          <time class="published" datetime="">2020-06-04</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
   <a href="/ja/blog/configuration/several-windows-registry-configurations/" class="image featured">
     
-      <img src="https://xinii.github.io/img/2020/06/0400.jpeg" alt="">
+      <img src="https://xinii.github.io/img/2020/06/0400.png" alt="">
     
   </a>
 
@@ -355,7 +527,7 @@
           
   <a href="/ja/blog/environment/add-apt-repository-for-fish-and-emacs/" class="image featured">
     
-      <img src="https://xinii.github.io/img/2020/06/0300.jpeg" alt="">
+      <img src="https://xinii.github.io/img/2020/06/0300.png" alt="">
     
   </a>
 
@@ -370,33 +542,28 @@
       <article class="mini-post">
         <section>
           
+  <a href="/ja/blog/environment/several-ssh-configurations/" class="image featured">
+    
+      <img src="https://xinii.github.io/img/2020/06/0301.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <header>
+          <h2><a href="/ja/blog/environment/several-ssh-configurations/">Several SSH configurations</a></h2>
+          <time class="published" datetime="">2020-06-03</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
 
         </section>
         <header>
           <h2><a href="/ja/blog/pitfall/pitfall-while-using-python-code-block-on-emacs-org-mode/">emacsのorg-modeにおいてpythonコードブロックを使った時の落とし穴</a></h2>
           <time class="published" datetime="">2019-11-23</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
-          <h2><a href="/ja/blog/pitfall/pitfall-while-inserting-figure-into-latex-article/">LaTeXのplatexを使う際のfigureに関する落とし穴</a></h2>
-          <time class="published" datetime="">2019-11-23</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
-          <h2><a href="/ja/blog/music/generate-sheet-music-with-lilypond-on-emacs/">emacsとlilypondで楽譜生成</a></h2>
-          <time class="published" datetime="">2019-11-16</time>
         </header>
       </article>
       
@@ -421,12 +588,32 @@
           
           <li>
             
+              <a href="/ja/categories/environment/">environment<span class="count">5</span></a>
+            
+          
+          <li>
+            
+              <a href="/ja/categories/emacs/">emacs<span class="count">2</span></a>
+            
+          
+          <li>
+            
+              <a href="/ja/categories/installation/">installation<span class="count">2</span></a>
+            
+          
+          <li>
+            
               <a href="/ja/categories/music/">music<span class="count">2</span></a>
             
           
           <li>
             
               <a href="/ja/categories/pitfall/">pitfall<span class="count">2</span></a>
+            
+          
+          <li>
+            
+              <a href="/ja/categories/windows/">windows<span class="count">2</span></a>
             
           
           <li>
@@ -446,16 +633,6 @@
           
           <li>
             
-              <a href="/ja/categories/emacs/">emacs<span class="count">1</span></a>
-            
-          
-          <li>
-            
-              <a href="/ja/categories/environment/">environment<span class="count">1</span></a>
-            
-          
-          <li>
-            
               <a href="/ja/categories/jekyll/">jekyll<span class="count">1</span></a>
             
           
@@ -471,12 +648,27 @@
           
           <li>
             
+              <a href="/ja/categories/linux/">linux<span class="count">1</span></a>
+            
+          
+          <li>
+            
+              <a href="/ja/categories/opencv/">opencv<span class="count">1</span></a>
+            
+          
+          <li>
+            
               <a href="/ja/categories/repository/">repository<span class="count">1</span></a>
             
           
           <li>
             
-              <a href="/ja/categories/windows/">windows<span class="count">1</span></a>
+              <a href="/ja/categories/shell/">shell<span class="count">1</span></a>
+            
+          
+          <li>
+            
+              <a href="/ja/categories/ssh/">ssh<span class="count">1</span></a>
             
           
           </li>

@@ -12,11 +12,38 @@
     
     
     <item>
+      <title>activation</title>
+      <link>https://xinii.github.io/zh-cn/tags/activation/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/activation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>autohotkey</title>
+      <link>https://xinii.github.io/zh-cn/tags/autohotkey/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/autohotkey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>configuration</title>
       <link>https://xinii.github.io/zh-cn/tags/configuration/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/zh-cn/tags/configuration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>installation</title>
+      <link>https://xinii.github.io/zh-cn/tags/installation/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/installation/</guid>
       <description></description>
     </item>
     
@@ -48,11 +75,29 @@
     </item>
     
     <item>
+      <title>msys2</title>
+      <link>https://xinii.github.io/zh-cn/tags/msys2/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/msys2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>registry</title>
       <link>https://xinii.github.io/zh-cn/tags/registry/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/zh-cn/tags/registry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ricty</title>
+      <link>https://xinii.github.io/zh-cn/tags/ricty/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/ricty/</guid>
       <description></description>
     </item>
     
@@ -71,6 +116,15 @@
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/zh-cn/tags/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>android</title>
+      <link>https://xinii.github.io/zh-cn/tags/android/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/android/</guid>
       <description></description>
     </item>
     
@@ -111,6 +165,15 @@
     </item>
     
     <item>
+      <title>keygen</title>
+      <link>https://xinii.github.io/zh-cn/tags/keygen/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/keygen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>linux</title>
       <link>https://xinii.github.io/zh-cn/tags/linux/</link>
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
@@ -134,6 +197,33 @@
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/zh-cn/tags/shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ssh</title>
+      <link>https://xinii.github.io/zh-cn/tags/ssh/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/ssh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sshd</title>
+      <link>https://xinii.github.io/zh-cn/tags/sshd/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/sshd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>termux</title>
+      <link>https://xinii.github.io/zh-cn/tags/termux/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/zh-cn/tags/termux/</guid>
       <description></description>
     </item>
     
@@ -278,15 +368,6 @@
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/zh-cn/tags/create/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>installation</title>
-      <link>https://xinii.github.io/zh-cn/tags/installation/</link>
-      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/zh-cn/tags/installation/</guid>
       <description></description>
     </item>
     

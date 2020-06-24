@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+  <meta charset="utf-8">
+<title>使用usb设备安装linux mint - xin iDEA iNNATA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#ffffff">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+  
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+<meta name="generator" content="Hugo 0.67.0" /><meta itemprop="name" content="使用usb设备安装linux mint">
+<meta itemprop="description" content="使用usb设备安装linux mint">
+<meta itemprop="datePublished" content="2019-04-23T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-04-23T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="54">
+<meta itemprop="image" content="https://upload.wikimedia.org/wikipedia/commons/5/5c/Linux_Mint_Official_Logo.svg">
+
+
+
+<meta itemprop="keywords" content="create,usb,stick,rufus,linux,mint,installation," /><meta property="og:title" content="使用usb设备安装linux mint" />
+<meta property="og:description" content="使用usb设备安装linux mint" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xinii.github.io/ja/blog/installation/install-linux-mint-from-the-usb-device/" />
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/5/5c/Linux_Mint_Official_Logo.svg" />
+<meta property="article:published_time" content="2019-04-23T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-04-23T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/5/5c/Linux_Mint_Official_Logo.svg"/>
+
+<meta name="twitter:title" content="使用usb设备安装linux mint"/>
+<meta name="twitter:description" content="使用usb设备安装linux mint"/>
+<meta name="twitter:site" content="@xintxt"/>
+<link rel="stylesheet" href="/css/bundle.min.759e3848ea529eef056dab665b241e2af569e601ab80f68f8d4a4d002a155dd4.css" integrity="sha256-dZ44SOpSnu8FbatmWyQeKvVp5gGrgPaPjUpNACoVXdQ="><link rel="stylesheet" href="/css/add-on.css">
+</head>
+
+  <body>
+    
+
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/ja/" class="nav">
+        
+          
+            ブログ
+          
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu menu">
+      
+        
+          
+          
+            <a href="/ja/" class="nav link"><i class='fas fa-home'></i> ホーム</a>
+          
+        
+      
+        
+          
+          
+            <a href="/ja/about/" class="nav link"><i class='far fa-id-card'></i> 私について</a>
+          
+        
+      
+        
+          
+          
+            <a href="/ja/blog/" class="nav link"><i class='far fa-newspaper'></i> 記事</a>
+          
+        
+      
+        
+          
+          
+            <a href="/ja/categories/" class="nav link"><i class='fas fa-sitemap'></i> カテゴリー</a>
+          
+        
+      
+        
+          
+          
+            <a href="/ja/tags/" class="nav link"><i class='fas fa-tags'></i> タグ</a>
+          
+        
+      
+        
+          
+          
+            <a href="/ja/contact/" class="nav link"><i class='far fa-envelope'></i> サポート</a>
+          
+        
+      
+      <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+      <a href="#search-input" class="nav search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
+    </menu>
+    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+    <a href="#lang-menu" class="nav lang-toggle" lang="ja">ja</a>
+    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+  <menu id="lang-menu" class="flyout-menu menu">
+  <a href="#" lang="ja" class="nav link active">日本語 (ja)</a>
+  
+      <a href="https://xinii.github.io/blog/installation/install-linux-mint-from-the-usb-device/" lang="en" class="nav link">English (en)</a>
+    
+      <a href="https://xinii.github.io/zh-cn/blog/installation/install-linux-mint-from-the-usb-device/" lang="zh-cn" class="nav link">简体中文 (zh-cn)</a>
+    
+  
+</menu>
+
+  
+    <menu id="share-menu" class="flyout-menu menu">
+      <h1>Share Post</h1>
+      
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=%e4%bd%bf%e7%94%a8usb%e8%ae%be%e5%a4%87%e5%ae%89%e8%a3%85linux%20mint&amp;url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2finstallation%2finstall-linux-mint-from-the-usb-device%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fxinii.github.io%2fja%2fblog%2finstallation%2finstall-linux-mint-from-the-usb-device%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2finstallation%2finstall-linux-mint-from-the-usb-device%2f&amp;title=%e4%bd%bf%e7%94%a8usb%e8%ae%be%e5%a4%87%e5%ae%89%e8%a3%85linux%20mint" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2finstallation%2finstall-linux-mint-from-the-usb-device%2f&amp;title=%e4%bd%bf%e7%94%a8usb%e8%ae%be%e5%a4%87%e5%ae%89%e8%a3%85linux%20mint" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2finstallation%2finstall-linux-mint-from-the-usb-device%2f&amp;description=%e4%bd%bf%e7%94%a8usb%e8%ae%be%e5%a4%87%e5%ae%89%e8%a3%85linux%20mint" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=%e3%81%93%e3%81%ae%e6%8a%95%e7%a8%bf%e3%82%92%e3%83%81%e3%82%a7%e3%83%83%e3%82%af%e3%81%99%e3%82%8b Xin%20Li&amp;body=https%3a%2f%2fxinii.github.io%2fja%2fblog%2finstallation%2finstall-linux-mint-from-the-usb-device%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+    </menu>
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" >
+  <a href="/ja/"><img src="https://xinii.github.io/img/main/logo.jpg" class="circle" width="72px" alt="xin iDEA iNNATA" /></a>
+  <header>
+    <h1>xin idea innata</h1>
+  </header>
+  <main>
+    <p>Wellcome to xin iDEA iNNATA!</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/xinii" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/xinii" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+<li><a href="//facebook.com/xintxt" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+
+
+
+
+
+
+<li><a href="weixin://contacts/profile/xin099" target="_blank" rel="noopener" title="WeChat" class="fab fa-weixin"></a></li>
+<li><a href="//wpa.qq.com/msgrd?v=3&amp;uin=78809709&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener" title="QQ" class="fab fa-qq"></a></li>
+
+
+<li><a href="//twitter.com/xintxt" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+<li><a href="skype:xintxt?userinfo" target="_blank" rel="noopener" title="Skype" class="fab fa-skype"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:xinii@msn.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        
+  <article class="post">
+    <header>
+  <div class="title">
+    
+      <h2><a href="/ja/blog/installation/install-linux-mint-from-the-usb-device/">使用usb设备安装linux mint</a></h2>
+    
+    
+      <p>使用usb设备安装linux mint</p>
+    
+  </div>
+  <div class="meta">
+    <time class="published" datetime="2019-04-23 00:00:00 &#43;0000 UTC">
+      2019-04-23
+    </time>
+    <span class="author">Xin Li</span>
+    
+      <p>1 分で読めます</p>
+    
+  </div>
+</header>
+
+    <section id="socnet-share">
+      
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=%e4%bd%bf%e7%94%a8usb%e8%ae%be%e5%a4%87%e5%ae%89%e8%a3%85linux%20mint&amp;url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2finstallation%2finstall-linux-mint-from-the-usb-device%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fxinii.github.io%2fja%2fblog%2finstallation%2finstall-linux-mint-from-the-usb-device%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2finstallation%2finstall-linux-mint-from-the-usb-device%2f&amp;title=%e4%bd%bf%e7%94%a8usb%e8%ae%be%e5%a4%87%e5%ae%89%e8%a3%85linux%20mint" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2finstallation%2finstall-linux-mint-from-the-usb-device%2f&amp;title=%e4%bd%bf%e7%94%a8usb%e8%ae%be%e5%a4%87%e5%ae%89%e8%a3%85linux%20mint" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2finstallation%2finstall-linux-mint-from-the-usb-device%2f&amp;description=%e4%bd%bf%e7%94%a8usb%e8%ae%be%e5%a4%87%e5%ae%89%e8%a3%85linux%20mint" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=%e3%81%93%e3%81%ae%e6%8a%95%e7%a8%bf%e3%82%92%e3%83%81%e3%82%a7%e3%83%83%e3%82%af%e3%81%99%e3%82%8b Xin%20Li&amp;body=https%3a%2f%2fxinii.github.io%2fja%2fblog%2finstallation%2finstall-linux-mint-from-the-usb-device%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+    </section>
+    
+  <a href="/ja/blog/installation/install-linux-mint-from-the-usb-device/" class="image featured">
+    
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Linux_Mint_Official_Logo.svg" alt="">
+    
+  </a>
+
+
+    <div class="content">
+      <p><!-- raw HTML omitted -->The logo of Linux Mint<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><!-- raw HTML omitted --></p>
+<h2 id="目录">目录</h2>
+<ul>
+<li><a href="#%E5%87%86%E5%A4%87%E4%B8%80%E4%B8%AA%E7%94%A8%E4%BA%8E%E5%AE%89%E8%A3%85linux-mint%E7%9A%84usb%E8%AE%BE%E5%A4%87">准备一个用于安装 Linux Mint 的 USB 设备</a></li>
+<li><a href="#linux-mint%E7%9A%84iso%E6%96%87%E4%BB%B6">Linux Mint 的 ISO 文件</a></li>
+</ul>
+<hr>
+<p><strong>重要</strong>：在开始下面的工作之前，首先确保U盘没有存任何东西，
+或者里面没有放任何的重要数据（因为烧录会导致数据丢失），
+同时电脑上已经准备好空的分区（安装到的目标分区的数据也会被抹掉）。</p>
+<h2 id="准备一个用于安装linux-mint的usb设备">准备一个用于安装linux mint的usb设备</h2>
+<p>首先准备一个usb设备，可以是u盘也可以是usb的移动硬盘，
+之后会在这个上面写入供安装linux mint的安装程序。</p>
+<ul>
+<li>如果使用的是windows操作系统，那么点击
+<a href="https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0">这里</a>
+来查看ubuntu官方的教程以创建一个可以安装Linux的USB设备。</li>
+</ul>
+<p><strong>注意</strong>：上面的教程是教你如何製作一个用于安装Ubuntu的USB设备，
+安装linux mint的情况下仅需要把涉及到iso文件的地方换成Linux Mint的iso文件，其他地方完全相同。</p>
+<ul>
+<li>其中会用到的软件叫做rufus，上面的教程裡面也有提到，点击
+<a href="https://rufus.akeo.ie/">这里</a>
+打开rufus的官方网站，你也可以点击
+<a href="https://github.com/pbatard/rufus/releases/download/v3.5/rufus-3.5.exe">这里</a>
+直接下载rufus。</li>
+</ul>
+<h2 id="linux-mint的iso文件">linux mint的iso文件</h2>
+<p>前一节提到的linux mint的iso文件需要从下面的地方获取。点击
+<a href="https://linuxmint.com/">这里</a>
+打开linux mint的官方网站。
+或者也可以点击
+<a href="http://mirrors.evowise.com/linuxmint/stable/19.1/linuxmint-19.1-cinnamon-64bit.iso">这里</a>
+直接下载Linux Mint 19.1版本。</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p><a href="https://linuxmint.com/">The logo of Linux Mint</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+    </div>
+    <footer>
+      <ul class="stats">
+  <li class="categories">
+    <ul>
+    
+      
+        
+          <li><a class="article-terms-link" href="/ja/categories/installation/">installation</a></li>
+        
+          <li><a class="article-terms-link" href="/ja/categories/linux/">linux</a></li>
+        
+      
+    
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+    
+      
+        
+          <li><a class="article-terms-link" href="/ja/tags/create/">create</a></li>
+        
+          <li><a class="article-terms-link" href="/ja/tags/usb/">usb</a></li>
+        
+          <li><a class="article-terms-link" href="/ja/tags/stick/">stick</a></li>
+        
+          <li><a class="article-terms-link" href="/ja/tags/rufus/">rufus</a></li>
+        
+          <li><a class="article-terms-link" href="/ja/tags/linux/">linux</a></li>
+        
+          <li><a class="article-terms-link" href="/ja/tags/mint/">mint</a></li>
+        
+          <li><a class="article-terms-link" href="/ja/tags/installation/">installation</a></li>
+        
+      
+    
+    </ul>
+  </li>
+</ul>
+
+    </footer>
+  </article>
+  
+  <article class="post">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "xinii" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </article>
+
+
+
+
+  <div class="pagination">
+  
+    <a href="/ja/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/" class="button"><div class="previous">Previous</div></a>
+  
+  
+    <a href="/ja/blog/environment/my-shell-migration-record/" class="button"><div class="next">Next</div></a>
+  
+</div>
+
+
+      </main>
+      <section id="site-sidebar">
+  
+    <section id="recent-posts">
+      <header>
+        <h1>最近の投稿</h1>
+      </header>
+      
+      <article class="mini-post">
+        <section>
+          
+  <a href="/ja/blog/installation/some-installations-for-windows-10/" class="image featured">
+    
+      <img src="https://xinii.github.io/img/2020/06/0401.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <header>
+          <h2><a href="/ja/blog/installation/some-installations-for-windows-10/">Some works after Windows 10 clean installation</a></h2>
+          <time class="published" datetime="">2020-06-04</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+  <a href="/ja/blog/configuration/several-windows-registry-configurations/" class="image featured">
+    
+      <img src="https://xinii.github.io/img/2020/06/0400.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <header>
+          <h2><a href="/ja/blog/configuration/several-windows-registry-configurations/">より効率的な作業を行うためのいくつかWindowsのレジストリー設定</a></h2>
+          <time class="published" datetime="">2020-06-04</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+  <a href="/ja/blog/environment/add-apt-repository-for-fish-and-emacs/" class="image featured">
+    
+      <img src="https://xinii.github.io/img/2020/06/0300.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <header>
+          <h2><a href="/ja/blog/environment/add-apt-repository-for-fish-and-emacs/">FishとEmacsのためのaptリポジトリ追加</a></h2>
+          <time class="published" datetime="">2020-06-03</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+  <a href="/ja/blog/environment/several-ssh-configurations/" class="image featured">
+    
+      <img src="https://xinii.github.io/img/2020/06/0301.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <header>
+          <h2><a href="/ja/blog/environment/several-ssh-configurations/">Several SSH configurations</a></h2>
+          <time class="published" datetime="">2020-06-03</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/ja/blog/pitfall/pitfall-while-using-python-code-block-on-emacs-org-mode/">emacsのorg-modeにおいてpythonコードブロックを使った時の落とし穴</a></h2>
+          <time class="published" datetime="">2019-11-23</time>
+        </header>
+      </article>
+      
+      
+        <footer>
+          <a href="/ja/blog/" class="button">続きを見る</a>
+        </footer>
+      
+    </section>
+  
+
+  
+    
+      <section id="categories">
+        <header>
+          <h1><a href="/ja/categories">カテゴリー</a></h1>
+        </header>
+        <ul>
+          
+            
+          
+          
+          <li>
+            
+              <a href="/ja/categories/environment/">environment<span class="count">5</span></a>
+            
+          
+          <li>
+            
+              <a href="/ja/categories/emacs/">emacs<span class="count">2</span></a>
+            
+          
+          <li>
+            
+              <a href="/ja/categories/installation/">installation<span class="count">2</span></a>
+            
+          
+          <li>
+            
+              <a href="/ja/categories/music/">music<span class="count">2</span></a>
+            
+          
+          <li>
+            
+              <a href="/ja/categories/pitfall/">pitfall<span class="count">2</span></a>
+            
+          
+          <li>
+            
+              <a href="/ja/categories/windows/">windows<span class="count">2</span></a>
+            
+          
+          <li>
+            
+              <a href="/ja/categories/absolute-pitch/">absolute-pitch<span class="count">1</span></a>
+            
+          
+          <li>
+            
+              <a href="/ja/categories/cms/">cms<span class="count">1</span></a>
+            
+          
+          <li>
+            
+              <a href="/ja/categories/configuration/">configuration<span class="count">1</span></a>
+            
+          
+          <li>
+            
+              <a href="/ja/categories/jekyll/">jekyll<span class="count">1</span></a>
+            
+          
+          <li>
+            
+              <a href="/ja/categories/latex/">latex<span class="count">1</span></a>
+            
+          
+          <li>
+            
+              <a href="/ja/categories/lilypond/">lilypond<span class="count">1</span></a>
+            
+          
+          <li>
+            
+              <a href="/ja/categories/linux/">linux<span class="count">1</span></a>
+            
+          
+          <li>
+            
+              <a href="/ja/categories/opencv/">opencv<span class="count">1</span></a>
+            
+          
+          <li>
+            
+              <a href="/ja/categories/repository/">repository<span class="count">1</span></a>
+            
+          
+          <li>
+            
+              <a href="/ja/categories/shell/">shell<span class="count">1</span></a>
+            
+          
+          <li>
+            
+              <a href="/ja/categories/ssh/">ssh<span class="count">1</span></a>
+            
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  
+    <section id="mini-bio">
+      <header>
+        <h1>About</h1>
+      </header>
+      <p>I believe everyone has their innate ideas, don't be afraid, let your idea fly and realize your value, here is xin iDEA iNNATA. <br>Click the button below to get more information about me.</p>
+      <footer>
+        <a href="/ja/about" class="button">もっと知る</a>
+      </footer>
+    </section>
+  
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/xinii" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/xinii" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+<li><a href="//facebook.com/xintxt" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+
+
+
+
+
+
+<li><a href="weixin://contacts/profile/xin099" target="_blank" rel="noopener" title="WeChat" class="fab fa-weixin"></a></li>
+<li><a href="//wpa.qq.com/msgrd?v=3&amp;uin=78809709&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener" title="QQ" class="fab fa-qq"></a></li>
+
+
+<li><a href="//twitter.com/xintxt" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+<li><a href="skype:xintxt?userinfo" target="_blank" rel="noopener" title="Skype" class="fab fa-skype"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:xinii@msn.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+  
+  <p class="copyright">
+    
+      &copy; 2020
+      
+        xin iDEA iNNATA
+      
+    . <br>
+    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.67.0' target='_blank' rel='noopener'>Hugo</a>
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      <script src="/js/highlight.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script><script src="/js/bundle.min.164c76cdbf053607d8165306f07b256a57d65b48860459cb32f06ca4c0bf9e2b.js" integrity="sha256-Fkx2zb8FNgfYFlMG8HslalfWW0iGBFnLMvBspMC/nis="></script>
+    <script src="/js/add-on.js"></script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-169244465-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script data-ad-client="ca-pub-9872583441136696" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    </div>
+  </body>
+</html>

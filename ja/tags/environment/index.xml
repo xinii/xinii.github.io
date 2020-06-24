@@ -20,5 +20,56 @@
       <description>目次  使う予定のコマンド このコマンドがない？以下のようにコマンドを入れる 以下のステップに従ってインストール  リポジトリを登録 リポジトリを更新 必要なものをインストール    使う予定のコマンド add-apt-repository このコマンドがない？以下のようにコマンドを入れる apt install software-properties-common 以下のステップに従ってインストール リポジトリを登録 add-apt-repository ppa:kelleyk/emacs apt-add-repository ppa:fish-shell/release-3 リポジトリを更新 apt update 必要なものをインストール apt install emacs26 apt install fish </description>
     </item>
     
+    <item>
+      <title>Several SSH configurations</title>
+      <link>https://xinii.github.io/ja/blog/environment/several-ssh-configurations/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/ja/blog/environment/several-ssh-configurations/</guid>
+      <description>SSH interruption phenomenon  When logging in to a remote server with ssh, Write failed: Broken pipe may be displayed and the connection may be broken. It is necessary to change the ssh setting on the client side or the server side, because ssh is automatically disconnected by a timeout if it is not operated for a while.  Remedy  Deal on the client side  Describe the following contents in /etc/ssh/ssh_config or ~/.</description>
+    </item>
+    
+    <item>
+      <title>在jetson nano上安装opencv</title>
+      <link>https://xinii.github.io/ja/blog/environment/install-opencv-on-jetson-nano/</link>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/ja/blog/environment/install-opencv-on-jetson-nano/</guid>
+      <description>生成swap文件 为防止编译途中由于内存不足等问题报错， 这里首先提前创建一个swap文件，存放路径任意。 重启后swap空间会消失， 以下编译等全部工作完成后可以手动删除这个文件。
+$ fallocate -l 4G swapfile $ chmod 600 swapfile $ mkswap swapfile $ sudo swapon swapfile $ swapon -s 生成安装脚本 安装opencv 4.0.0版本的脚本原始链接
+以上是安装opencv 4.0.0的版本，在这里我们希望安装较新的4.1.0版本，将上面的代码稍作改动（版本号的部分）：
+#!/bin/bash # # Copyright (c) 2018, NVIDIA CORPORATION. All rights reserved. # # NVIDIA Corporation and its licensors retain all intellectual property # and proprietary rights in and to this software, related documentation # and any modifications thereto. Any use, reproduction, disclosure or # distribution of this software and related documentation without an express # license agreement from NVIDIA Corporation is strictly prohibited.</description>
+    </item>
+    
+    <item>
+      <title>GnutlsをインストールしてソースからEmacsをコンパイル</title>
+      <link>https://xinii.github.io/ja/blog/environment/install-gnutls-and-compile-emacs-from-source/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/ja/blog/environment/install-gnutls-and-compile-emacs-from-source/</guid>
+      <description>EmacsのLogo1目次  今の環境にGnutlsがない場合 潜在的なリスク Gnutlsをインストール その他の問題  今の環境にGnutlsがない場合 今の環境にGnutlsがない場合は，ソースからEmacsをコンパイルする時に以下の設定が必要。
+./configure --with-gnutls=no 他にも依存されるライブラリーなどが足りない場合は，例えば以下のように設定をする。
+bash configure --prefix=$HOME/.local --with-gif=no --with-gnutls=no これでデフォルトのパスとかへの権限や，ライブラリーが足りない場合でもソースからインストール出来てしまう。
+潜在的なリスク 以上のようにEmacsを$HOME/.localへのインストールが出来てしまうけど， Gnutlsがサポートされないゆえに，Emacsでインターネットが必要となった時にhttpsが使えない。
+Emacsが初期化される時だけなら，設定ファイルの中のMelpaリンクを全てhttpに変更すれば済ませるが， セキュリティ上にあまりお勧めができないし，今後Emacsの拡張機能を使う時のリスクにもなる。
+例えば，google-translateのEmacs拡張パッケージを使う場合は， Emacsのelpaフォルダーにあるgoogle-translateの中の全ての*.elにあるhttpsをhttpに書き換えても， 実際に使う時に一部の機能にとってはhttpsが必須で翻訳が正常に機能しない恐れがある。
+ここでは，*.elを変更した後に，*.elcを削除しないと変更が反映されない可能性がある。
+Gnutlsをインストール 以上の問題を解決するもっとも簡単な方法としては， 今の環境にGnutlsをインストールしてからソースからもう一度Emacsをインストールすること。
+OpenSUSEを例として，以下のコマンドでGnutlsをインストールする。
+sudo zypper install gnutls その他の問題 checking for library containing tputs... no configure: error: The required function &amp;#39;tputs&amp;#39; was not found in any library. The following libraries were tried (in order): libtinfo, libncurses, libterminfo, libcurses, libtermcap Please try installing whichever of these libraries is most appropriate for your system, together with its header files.</description>
+    </item>
+    
+    <item>
+      <title>我的shell迁移记录</title>
+      <link>https://xinii.github.io/ja/blog/environment/my-shell-migration-record/</link>
+      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/ja/blog/environment/my-shell-migration-record/</guid>
+      <description>Picture: High contrast utilities terminal1从bash到zsh 虽然我使用zsh shell两周后就换到fish shell了（关于fish shell下面有专门介绍）， 但这并不否认zsh shell仍然是个很好的shell。 你可以通过下面的方式从任意的shell切换至zsh shell。
+ 安装zsh时通过下面的指令：  brew install zsh (MacOS) apt install zsh (Ubuntu / Linux Mint)  如果你想要知道现在系统裡已经安装好的shell，输入下面的指令：  cat /etc/shells  如何将zsh作为你默认的shell呢？，输入下面的指令：  chsh -s /usr/local/bin/zsh  关于配置文件的读取错误  shell脚本解释出错时可以查看一下当前所使用的sh路径， 比如有可能是sh指向了dash导致出错。 通过下面的语句查看。
+ls -l `which sh`  脚本解释器在语法上的不同点  从传统的bash等shell换到zsh时会发现集合的第一个元素的索引是从1开始的， 如果希望从0开始，在配置文件中配置下面语句即可。
+ Fix array index for zsh:  if [ &amp;#34;$ZSH_NAME&amp;#34; = &amp;#34;zsh&amp;#34; ];then setopt localoptions ksharrays fi 配置zsh shell 与bash shell的.</description>
+    </item>
+    
   </channel>
 </rss>
