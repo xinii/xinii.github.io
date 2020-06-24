@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
   <meta charset="utf-8">
-<title>Several SSH configurations - xin iDEA iNNATA</title>
+<title>いくつかのssh設定 - xin iDEA iNNATA</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -18,27 +18,27 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
 
-<meta name="generator" content="Hugo 0.67.0" /><meta itemprop="name" content="Several SSH configurations">
-<meta itemprop="description" content="Very headache for the ssh interruption phenomenon? Want to set an ssh daemon on android by termux? Take a look at this article.">
+<meta name="generator" content="Hugo 0.67.0" /><meta itemprop="name" content="いくつかのssh設定">
+<meta itemprop="description" content="sshの途切れる現象に腹立つ？アンドロイドのtermux使ってsshサーバーを建てたい？この記事を読もう！">
 <meta itemprop="datePublished" content="2020-06-03T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-06-03T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="251">
-<meta itemprop="image" content="https://xinii.github.io/img/2020/06/0301.png">
+<meta itemprop="wordCount" content="63">
+<meta itemprop="image" content="https://xinii.github.io/img/blog/ssh-image.png">
 
 
 
-<meta itemprop="keywords" content="sshd,android,termux,keygen,environment,ssh," /><meta property="og:title" content="Several SSH configurations" />
-<meta property="og:description" content="Very headache for the ssh interruption phenomenon? Want to set an ssh daemon on android by termux? Take a look at this article." />
+<meta itemprop="keywords" content="sshd,android,termux,keygen,environment,ssh," /><meta property="og:title" content="いくつかのssh設定" />
+<meta property="og:description" content="sshの途切れる現象に腹立つ？アンドロイドのtermux使ってsshサーバーを建てたい？この記事を読もう！" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://xinii.github.io/ja/blog/environment/several-ssh-configurations/" />
-<meta property="og:image" content="https://xinii.github.io/img/2020/06/0301.png" />
+<meta property="og:image" content="https://xinii.github.io/img/blog/ssh-image.png" />
 <meta property="article:published_time" content="2020-06-03T00:00:00+00:00" />
 <meta property="article:modified_time" content="2020-06-03T00:00:00+00:00" />
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://xinii.github.io/img/2020/06/0301.png"/>
+<meta name="twitter:image" content="https://xinii.github.io/img/blog/ssh-image.png"/>
 
-<meta name="twitter:title" content="Several SSH configurations"/>
-<meta name="twitter:description" content="Very headache for the ssh interruption phenomenon? Want to set an ssh daemon on android by termux? Take a look at this article."/>
+<meta name="twitter:title" content="いくつかのssh設定"/>
+<meta name="twitter:description" content="sshの途切れる現象に腹立つ？アンドロイドのtermux使ってsshサーバーを建てたい？この記事を読もう！"/>
 <meta name="twitter:site" content="@xintxt"/>
 <link rel="stylesheet" href="/css/bundle.min.759e3848ea529eef056dab665b241e2af569e601ab80f68f8d4a4d002a155dd4.css" integrity="sha256-dZ44SOpSnu8FbatmWyQeKvVp5gGrgPaPjUpNACoVXdQ="><link rel="stylesheet" href="/css/add-on.css">
 </head>
@@ -130,7 +130,7 @@
 
   
     
-    <a href="//twitter.com/share?text=Several%20SSH%20configurations&amp;url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fenvironment%2fseveral-ssh-configurations%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+    <a href="//twitter.com/share?text=%e3%81%84%e3%81%8f%e3%81%a4%e3%81%8b%e3%81%aessh%e8%a8%ad%e5%ae%9a&amp;url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fenvironment%2fseveral-ssh-configurations%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
         <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
       </a>
   
@@ -142,19 +142,19 @@
   
 
   
-    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fenvironment%2fseveral-ssh-configurations%2f&amp;title=Several%20SSH%20configurations" target="_blank" rel="noopener" class="nav share-btn reddit">
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fenvironment%2fseveral-ssh-configurations%2f&amp;title=%e3%81%84%e3%81%8f%e3%81%a4%e3%81%8b%e3%81%aessh%e8%a8%ad%e5%ae%9a" target="_blank" rel="noopener" class="nav share-btn reddit">
           <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
         </a>
   
 
   
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fenvironment%2fseveral-ssh-configurations%2f&amp;title=Several%20SSH%20configurations" target="_blank" rel="noopener" class="nav share-btn linkedin">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fenvironment%2fseveral-ssh-configurations%2f&amp;title=%e3%81%84%e3%81%8f%e3%81%a4%e3%81%8b%e3%81%aessh%e8%a8%ad%e5%ae%9a" target="_blank" rel="noopener" class="nav share-btn linkedin">
             <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
           </a>
   
 
   
-        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fenvironment%2fseveral-ssh-configurations%2f&amp;description=Several%20SSH%20configurations" target="_blank" rel="noopener" class="nav share-btn pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fenvironment%2fseveral-ssh-configurations%2f&amp;description=%e3%81%84%e3%81%8f%e3%81%a4%e3%81%8b%e3%81%aessh%e8%a8%ad%e5%ae%9a" target="_blank" rel="noopener" class="nav share-btn pinterest">
           <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
         </a>
   
@@ -237,10 +237,10 @@
     <header>
   <div class="title">
     
-      <h2><a href="/ja/blog/environment/several-ssh-configurations/">Several SSH configurations</a></h2>
+      <h2><a href="/ja/blog/environment/several-ssh-configurations/">いくつかのssh設定</a></h2>
     
     
-      <p>Very headache for the ssh interruption phenomenon? Want to set an ssh daemon on android by termux? Take a look at this article.</p>
+      <p>sshの途切れる現象に腹立つ？アンドロイドのtermux使ってsshサーバーを建てたい？この記事を読もう！</p>
     
   </div>
   <div class="meta">
@@ -249,7 +249,7 @@
     </time>
     <span class="author">Xin Li</span>
     
-      <p>2 分で読めます</p>
+      <p>1 分で読めます</p>
     
   </div>
 </header>
@@ -262,7 +262,7 @@
 
   
     
-    <a href="//twitter.com/share?text=Several%20SSH%20configurations&amp;url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fenvironment%2fseveral-ssh-configurations%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+    <a href="//twitter.com/share?text=%e3%81%84%e3%81%8f%e3%81%a4%e3%81%8b%e3%81%aessh%e8%a8%ad%e5%ae%9a&amp;url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fenvironment%2fseveral-ssh-configurations%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
         <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
       </a>
   
@@ -274,19 +274,19 @@
   
 
   
-    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fenvironment%2fseveral-ssh-configurations%2f&amp;title=Several%20SSH%20configurations" target="_blank" rel="noopener" class="nav share-btn reddit">
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fenvironment%2fseveral-ssh-configurations%2f&amp;title=%e3%81%84%e3%81%8f%e3%81%a4%e3%81%8b%e3%81%aessh%e8%a8%ad%e5%ae%9a" target="_blank" rel="noopener" class="nav share-btn reddit">
           <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
         </a>
   
 
   
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fenvironment%2fseveral-ssh-configurations%2f&amp;title=Several%20SSH%20configurations" target="_blank" rel="noopener" class="nav share-btn linkedin">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fenvironment%2fseveral-ssh-configurations%2f&amp;title=%e3%81%84%e3%81%8f%e3%81%a4%e3%81%8b%e3%81%aessh%e8%a8%ad%e5%ae%9a" target="_blank" rel="noopener" class="nav share-btn linkedin">
             <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
           </a>
   
 
   
-        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fenvironment%2fseveral-ssh-configurations%2f&amp;description=Several%20SSH%20configurations" target="_blank" rel="noopener" class="nav share-btn pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fenvironment%2fseveral-ssh-configurations%2f&amp;description=%e3%81%84%e3%81%8f%e3%81%a4%e3%81%8b%e3%81%aessh%e8%a8%ad%e5%ae%9a" target="_blank" rel="noopener" class="nav share-btn pinterest">
           <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
         </a>
   
@@ -302,53 +302,76 @@
     
   <a href="/ja/blog/environment/several-ssh-configurations/" class="image featured">
     
-      <img src="https://xinii.github.io/img/2020/06/0301.png" alt="">
+      <img src="https://xinii.github.io/img/blog/ssh-image.png" alt="">
     
   </a>
 
 
     <div class="content">
-      <h2 id="ssh-interruption-phenomenon">SSH interruption phenomenon</h2>
+      <h2 id="目次">目次</h2>
 <ul>
-<li>When logging in to a remote server with ssh, <code>Write failed: Broken pipe</code> may be displayed and the connection may be broken.</li>
-<li>It is necessary to change the ssh setting on the client side or the server side, because ssh is automatically disconnected by a timeout if it is not operated for a while.</li>
-</ul>
-<h4 id="remedy">Remedy</h4>
+<li><a href="#ssh%E3%81%AE%E9%80%94%E5%88%87%E3%82%8C%E3%82%8B%E7%8F%BE%E8%B1%A1">sshの途切れる現象</a>
 <ul>
-<li>Deal on the client side</li>
+<li><a href="#%E3%82%84%E3%82%8A%E6%96%B9">やり方</a></li>
+<li><a href="#%E3%81%9D%E3%81%AE%E4%BB%96">その他</a></li>
 </ul>
-<p>Describe the following contents in <code>/etc/ssh/ssh_config</code> or <code>~/.ssh/config</code></p>
+</li>
+<li><a href="#%E3%82%A2%E3%83%B3%E3%83%89%E3%83%AD%E3%82%A4%E3%83%89%E3%81%AEtermux%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6ssh%E3%83%87%E3%83%BC%E3%83%A2%E3%83%B3%E3%82%92%E7%AB%8B%E3%81%A6%E3%82%8B">アンドロイドのtermuxアプリを使ってsshデーモンを立てる</a>
+<ul>
+<li><a href="#%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB">インストール</a></li>
+<li><a href="#%E3%82%AD%E3%83%BC%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B">キーを設定する</a></li>
+<li><a href="#%E3%83%87%E3%83%90%E3%83%83%E3%82%B0%E3%83%A2%E3%83%BC%E3%83%89%E3%82%92%E3%83%87%E3%83%BC%E3%83%A2%E3%83%B3%E3%82%92%E8%B5%B7%E5%8B%95">デバッグモードをデーモンを起動</a></li>
+<li><a href="#%E3%83%87%E3%83%BC%E3%83%A2%E3%83%B3%E3%82%92%E8%B5%B7%E5%8B%95">デーモンを起動</a></li>
+<li><a href="#%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3%E3%81%A7%E7%AB%8B%E3%81%A6%E3%81%9F%E3%83%87%E3%83%BC%E3%83%A2%E3%83%B3%E3%81%AB%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3">パソコンで立てたデーモンにログイン</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="sshの途切れる現象">sshの途切れる現象</h2>
+<ul>
+<li>
+<p>sshを使ってリモートサーバーにログインしている時に，一定の時間内に操作がなければ，
+<code>Write failed: Broken pipe</code>というエラーが出てきてしまう可能性がある。</p>
+</li>
+<li>
+<p>以上のことを避けるために，クライアント側やサーバー側のssh設定を変える必要がある。</p>
+</li>
+</ul>
+<h4 id="やり方">やり方</h4>
+<ul>
+<li>クライアント側で対処する</li>
+</ul>
+<p>以下の内容を<code>/etc/ssh/ssh_config</code>か<code>~/.ssh/config</code>に記述する。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ServerAliveInterval <span style="color:#ae81ff">15</span>
 ServerAliveCountMax <span style="color:#ae81ff">10</span>
-</code></pre></div><p>With this setting, 10 times response confirmation will send to the server every 15 seconds,
-and if there is still no response, it times out.</p>
+</code></pre></div><p>この設定は，15秒ごとに10回の応答が送信されることを意味する。
+それでも応答がなければ接続が切断される。</p>
 <ul>
-<li>Deal on the server side</li>
+<li>サーバー側で対処する</li>
 </ul>
-<p>Describe the following contents in <code>/etc/ssh/sshd_config</code></p>
+<p>以下の内容を<code>/etc/ssh/sshd_config</code>に記述する。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ClientAliveInterval <span style="color:#ae81ff">30</span>
 ClientAliveCountMax <span style="color:#ae81ff">5</span>
-</code></pre></div><p>With this setting, 5 times response confirmation will send to the client every 30 seconds,
-and if there is still no response, it times out.</p>
-<h4 id="one-more-thing">One more thing</h4>
-<p>It is recommended to use tools such as tmux or screen,
-so that even if the connection is lost halfway,
-you can log in to the remote server again and attach the previous session.</p>
-<h2 id="ssh-daemon-on-android-by-termux">SSH daemon on android by termux</h2>
-<h4 id="installation">Installation</h4>
+</code></pre></div><p>この設定は，30秒ごとに5回の応答が送信されることを意味する。
+それでも応答がなければ接続が切断される。</p>
+<h4 id="その他">その他</h4>
+<p>sshを使う際にtmuxやscreenなどを使うことがおすすめ。
+これで，リモートへの接続が途切れたとしても，
+リモートに再びログインした後にすでにあるセッションにattachすれば元の環境が戻ってくる。</p>
+<h2 id="アンドロイドのtermuxアプリを使ってsshデーモンを立てる">アンドロイドのtermuxアプリを使ってsshデーモンを立てる</h2>
+<h4 id="インストール">インストール</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">apt install openssh
-</code></pre></div><h4 id="setting-the-key">Setting the key</h4>
+</code></pre></div><h4 id="キーを設定する">キーを設定する</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ssh-keygen
 cat ~/.ssh/id_rsa.pub &gt; ~/.ssh/authorized_keys
 chmod <span style="color:#ae81ff">600</span> ~/.ssh/authorized_keys
 chmod <span style="color:#ae81ff">700</span> ~/.ssh
-</code></pre></div><h4 id="start-daemon-in-debug-mode">Start daemon in debug mode</h4>
+</code></pre></div><h4 id="デバッグモードをデーモンを起動">デバッグモードをデーモンを起動</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sshd -d
-</code></pre></div><h4 id="start-daemon">Start daemon</h4>
+</code></pre></div><h4 id="デーモンを起動">デーモンを起動</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sshd
-</code></pre></div><h4 id="login-on-the-pc-side">Login on the PC side</h4>
-<p>Set the private key <code>~/.ssh/id_rsa</code> generated on the android side in the SSH client of the PC side,
-and connect to the server on android with specifying IP and port <code>8022</code> and without a username.</p>
+</code></pre></div><h4 id="パソコンで立てたデーモンにログイン">パソコンで立てたデーモンにログイン</h4>
+<p>アンドロイドで生成されたプライベートキー<code>~/.ssh/id_rsa</code>をパソコン側のsshクライアントに設定し，
+アンドロードのipアドレスにポート<code>8022</code>を加えてユーザ名なしで接続すれば良い。</p>
 
     </div>
     <footer>
@@ -441,14 +464,14 @@ and connect to the server on android with specifying IP and port <code>8022</cod
           
   <a href="/ja/blog/installation/some-installations-for-windows-10/" class="image featured">
     
-      <img src="https://xinii.github.io/img/2020/06/0401.png" alt="">
+      <img src="https://xinii.github.io/img/blog/windows-logo.png" alt="">
     
   </a>
 
 
         </section>
         <header>
-          <h2><a href="/ja/blog/installation/some-installations-for-windows-10/">Some works after Windows 10 clean installation</a></h2>
+          <h2><a href="/ja/blog/installation/some-installations-for-windows-10/">Windows 10をクリーンインストールした後の作業</a></h2>
           <time class="published" datetime="">2020-06-04</time>
         </header>
       </article>
@@ -458,7 +481,7 @@ and connect to the server on android with specifying IP and port <code>8022</cod
           
   <a href="/ja/blog/configuration/several-windows-registry-configurations/" class="image featured">
     
-      <img src="https://xinii.github.io/img/2020/06/0400.png" alt="">
+      <img src="https://xinii.github.io/img/blog/registry-editor-icon.png" alt="">
     
   </a>
 
@@ -475,7 +498,7 @@ and connect to the server on android with specifying IP and port <code>8022</cod
           
   <a href="/ja/blog/environment/add-apt-repository-for-fish-and-emacs/" class="image featured">
     
-      <img src="https://xinii.github.io/img/2020/06/0300.png" alt="">
+      <img src="https://xinii.github.io/img/blog/fish-emacs-logo.png" alt="">
     
   </a>
 
@@ -492,14 +515,14 @@ and connect to the server on android with specifying IP and port <code>8022</cod
           
   <a href="/ja/blog/environment/several-ssh-configurations/" class="image featured">
     
-      <img src="https://xinii.github.io/img/2020/06/0301.png" alt="">
+      <img src="https://xinii.github.io/img/blog/ssh-image.png" alt="">
     
   </a>
 
 
         </section>
         <header>
-          <h2><a href="/ja/blog/environment/several-ssh-configurations/">Several SSH configurations</a></h2>
+          <h2><a href="/ja/blog/environment/several-ssh-configurations/">いくつかのssh設定</a></h2>
           <time class="published" datetime="">2020-06-03</time>
         </header>
       </article>

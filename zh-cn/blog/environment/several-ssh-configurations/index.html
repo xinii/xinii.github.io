@@ -2,7 +2,7 @@
 <html lang="zh-cn">
   <head>
   <meta charset="utf-8">
-<title>Several SSH configurations - xin iDEA iNNATA</title>
+<title>几个ssh的设定 - xin iDEA iNNATA</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -18,27 +18,27 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
 
-<meta name="generator" content="Hugo 0.67.0" /><meta itemprop="name" content="Several SSH configurations">
-<meta itemprop="description" content="Very headache for the ssh interruption phenomenon? Want to set an ssh daemon on android by termux? Take a look at this article.">
+<meta name="generator" content="Hugo 0.67.0" /><meta itemprop="name" content="几个ssh的设定">
+<meta itemprop="description" content="很头痛 ssh 中途断掉连接的事情吗？想要在安卓平台上通过 termux 应用创建 ssh 服务？来看看这篇文件的内容吧。">
 <meta itemprop="datePublished" content="2020-06-03T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-06-03T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="251">
-<meta itemprop="image" content="https://xinii.github.io/img/2020/06/0301.png">
+<meta itemprop="wordCount" content="95">
+<meta itemprop="image" content="https://xinii.github.io/img/blog/ssh-image.png">
 
 
 
-<meta itemprop="keywords" content="sshd,android,termux,keygen,environment,ssh," /><meta property="og:title" content="Several SSH configurations" />
-<meta property="og:description" content="Very headache for the ssh interruption phenomenon? Want to set an ssh daemon on android by termux? Take a look at this article." />
+<meta itemprop="keywords" content="sshd,android,termux,keygen,environment,ssh," /><meta property="og:title" content="几个ssh的设定" />
+<meta property="og:description" content="很头痛 ssh 中途断掉连接的事情吗？想要在安卓平台上通过 termux 应用创建 ssh 服务？来看看这篇文件的内容吧。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://xinii.github.io/zh-cn/blog/environment/several-ssh-configurations/" />
-<meta property="og:image" content="https://xinii.github.io/img/2020/06/0301.png" />
+<meta property="og:image" content="https://xinii.github.io/img/blog/ssh-image.png" />
 <meta property="article:published_time" content="2020-06-03T00:00:00+00:00" />
 <meta property="article:modified_time" content="2020-06-03T00:00:00+00:00" />
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://xinii.github.io/img/2020/06/0301.png"/>
+<meta name="twitter:image" content="https://xinii.github.io/img/blog/ssh-image.png"/>
 
-<meta name="twitter:title" content="Several SSH configurations"/>
-<meta name="twitter:description" content="Very headache for the ssh interruption phenomenon? Want to set an ssh daemon on android by termux? Take a look at this article."/>
+<meta name="twitter:title" content="几个ssh的设定"/>
+<meta name="twitter:description" content="很头痛 ssh 中途断掉连接的事情吗？想要在安卓平台上通过 termux 应用创建 ssh 服务？来看看这篇文件的内容吧。"/>
 <meta name="twitter:site" content="@xintxt"/>
 <link rel="stylesheet" href="/css/bundle.min.759e3848ea529eef056dab665b241e2af569e601ab80f68f8d4a4d002a155dd4.css" integrity="sha256-dZ44SOpSnu8FbatmWyQeKvVp5gGrgPaPjUpNACoVXdQ="><link rel="stylesheet" href="/css/add-on.css">
 </head>
@@ -130,7 +130,7 @@
 
   
     
-    <a href="//twitter.com/share?text=Several%20SSH%20configurations&amp;url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2fseveral-ssh-configurations%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+    <a href="//twitter.com/share?text=%e5%87%a0%e4%b8%aassh%e7%9a%84%e8%ae%be%e5%ae%9a&amp;url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2fseveral-ssh-configurations%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
         <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
       </a>
   
@@ -142,19 +142,19 @@
   
 
   
-    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2fseveral-ssh-configurations%2f&amp;title=Several%20SSH%20configurations" target="_blank" rel="noopener" class="nav share-btn reddit">
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2fseveral-ssh-configurations%2f&amp;title=%e5%87%a0%e4%b8%aassh%e7%9a%84%e8%ae%be%e5%ae%9a" target="_blank" rel="noopener" class="nav share-btn reddit">
           <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
         </a>
   
 
   
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2fseveral-ssh-configurations%2f&amp;title=Several%20SSH%20configurations" target="_blank" rel="noopener" class="nav share-btn linkedin">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2fseveral-ssh-configurations%2f&amp;title=%e5%87%a0%e4%b8%aassh%e7%9a%84%e8%ae%be%e5%ae%9a" target="_blank" rel="noopener" class="nav share-btn linkedin">
             <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
           </a>
   
 
   
-        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2fseveral-ssh-configurations%2f&amp;description=Several%20SSH%20configurations" target="_blank" rel="noopener" class="nav share-btn pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2fseveral-ssh-configurations%2f&amp;description=%e5%87%a0%e4%b8%aassh%e7%9a%84%e8%ae%be%e5%ae%9a" target="_blank" rel="noopener" class="nav share-btn pinterest">
           <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
         </a>
   
@@ -237,10 +237,10 @@
     <header>
   <div class="title">
     
-      <h2><a href="/zh-cn/blog/environment/several-ssh-configurations/">Several SSH configurations</a></h2>
+      <h2><a href="/zh-cn/blog/environment/several-ssh-configurations/">几个ssh的设定</a></h2>
     
     
-      <p>Very headache for the ssh interruption phenomenon? Want to set an ssh daemon on android by termux? Take a look at this article.</p>
+      <p>很头痛 ssh 中途断掉连接的事情吗？想要在安卓平台上通过 termux 应用创建 ssh 服务？来看看这篇文件的内容吧。</p>
     
   </div>
   <div class="meta">
@@ -249,7 +249,7 @@
     </time>
     <span class="author">Xin Li</span>
     
-      <p>2 分钟</p>
+      <p>1 分钟</p>
     
   </div>
 </header>
@@ -262,7 +262,7 @@
 
   
     
-    <a href="//twitter.com/share?text=Several%20SSH%20configurations&amp;url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2fseveral-ssh-configurations%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+    <a href="//twitter.com/share?text=%e5%87%a0%e4%b8%aassh%e7%9a%84%e8%ae%be%e5%ae%9a&amp;url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2fseveral-ssh-configurations%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
         <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
       </a>
   
@@ -274,19 +274,19 @@
   
 
   
-    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2fseveral-ssh-configurations%2f&amp;title=Several%20SSH%20configurations" target="_blank" rel="noopener" class="nav share-btn reddit">
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2fseveral-ssh-configurations%2f&amp;title=%e5%87%a0%e4%b8%aassh%e7%9a%84%e8%ae%be%e5%ae%9a" target="_blank" rel="noopener" class="nav share-btn reddit">
           <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
         </a>
   
 
   
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2fseveral-ssh-configurations%2f&amp;title=Several%20SSH%20configurations" target="_blank" rel="noopener" class="nav share-btn linkedin">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2fseveral-ssh-configurations%2f&amp;title=%e5%87%a0%e4%b8%aassh%e7%9a%84%e8%ae%be%e5%ae%9a" target="_blank" rel="noopener" class="nav share-btn linkedin">
             <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
           </a>
   
 
   
-        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2fseveral-ssh-configurations%2f&amp;description=Several%20SSH%20configurations" target="_blank" rel="noopener" class="nav share-btn pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2fenvironment%2fseveral-ssh-configurations%2f&amp;description=%e5%87%a0%e4%b8%aassh%e7%9a%84%e8%ae%be%e5%ae%9a" target="_blank" rel="noopener" class="nav share-btn pinterest">
           <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
         </a>
   
@@ -302,53 +302,68 @@
     
   <a href="/zh-cn/blog/environment/several-ssh-configurations/" class="image featured">
     
-      <img src="https://xinii.github.io/img/2020/06/0301.png" alt="">
+      <img src="https://xinii.github.io/img/blog/ssh-image.png" alt="">
     
   </a>
 
 
     <div class="content">
-      <h2 id="ssh-interruption-phenomenon">SSH interruption phenomenon</h2>
+      <h2 id="目录">目录</h2>
 <ul>
-<li>When logging in to a remote server with ssh, <code>Write failed: Broken pipe</code> may be displayed and the connection may be broken.</li>
-<li>It is necessary to change the ssh setting on the client side or the server side, because ssh is automatically disconnected by a timeout if it is not operated for a while.</li>
-</ul>
-<h4 id="remedy">Remedy</h4>
+<li><a href="#ssh%E8%BF%9E%E6%8E%A5%E7%BB%88%E7%AB%AF%E7%9A%84%E7%8E%B0%E8%B1%A1">ssh连接终端的现象</a>
 <ul>
-<li>Deal on the client side</li>
+<li><a href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95">解决方法</a></li>
+<li><a href="#one-more-thing">One more thing</a></li>
 </ul>
-<p>Describe the following contents in <code>/etc/ssh/ssh_config</code> or <code>~/.ssh/config</code></p>
+</li>
+<li><a href="#%E9%80%9A%E8%BF%87termux%E5%BA%94%E7%94%A8%E5%BC%80%E5%90%AF%E5%AE%89%E5%8D%93ssh%E6%9C%8D%E5%8A%A1">通过termux应用开启安卓ssh服务</a>
+<ul>
+<li><a href="#%E5%AE%89%E8%A3%85">安装</a></li>
+<li><a href="#%E8%AE%BE%E7%BD%AE%E5%AF%86%E9%92%A5%E6%96%87%E4%BB%B6">设置密钥文件</a></li>
+<li><a href="#%E5%9C%A8%E8%B0%83%E8%AF%95%E6%A8%A1%E5%BC%8F%E4%B8%8B%E5%90%AF%E5%8A%A8%E6%9C%8D%E5%8A%A1">在调试模式下启动服务</a></li>
+<li><a href="#%E5%90%AF%E5%8A%A8%E6%9C%8D%E5%8A%A1">启动服务</a></li>
+<li><a href="#%E5%9C%A8%E7%94%B5%E8%84%91%E7%AB%AF%E7%99%BB%E5%BD%95%E8%AE%BE%E7%BD%AE%E5%A5%BD%E7%9A%84%E6%9C%8D%E5%8A%A1">在电脑端登录设置好的服务</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="ssh连接终端的现象">ssh连接终端的现象</h2>
+<ul>
+<li>当通过 ssh 进行远程登录的时候，如果长时间没有操作，则会出现 <code>Write failed: Broken pipe</code> 的错误提示并连接中断。</li>
+<li>这是因为在一定时间内没有数据交换的情况下 ssh 连接默认会自动断开。要解决这个问题需要从客户端或者服务器端来改变设置。</li>
+</ul>
+<h4 id="解决方法">解决方法</h4>
+<ul>
+<li>从客户端解决</li>
+</ul>
+<p>将下面的内容配置在 <code>/etc/ssh/ssh_config</code> 或 <code>~/.ssh/config</code> 中。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ServerAliveInterval <span style="color:#ae81ff">15</span>
 ServerAliveCountMax <span style="color:#ae81ff">10</span>
-</code></pre></div><p>With this setting, 10 times response confirmation will send to the server every 15 seconds,
-and if there is still no response, it times out.</p>
+</code></pre></div><p>通过以上的设定，每 15 秒会进行 10 次应答确认，仍然没有应答的情况下才会断开连接。</p>
 <ul>
-<li>Deal on the server side</li>
+<li>从服务器端解决</li>
 </ul>
-<p>Describe the following contents in <code>/etc/ssh/sshd_config</code></p>
+<p>将下面的内容配置在 <code>/etc/ssh/sshd_config</code> 中。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ClientAliveInterval <span style="color:#ae81ff">30</span>
 ClientAliveCountMax <span style="color:#ae81ff">5</span>
-</code></pre></div><p>With this setting, 5 times response confirmation will send to the client every 30 seconds,
-and if there is still no response, it times out.</p>
+</code></pre></div><p>通过以上的设定，每 30 秒会进行 5 次应答确认，仍然没有应答的情况下才会断开连接。</p>
 <h4 id="one-more-thing">One more thing</h4>
-<p>It is recommended to use tools such as tmux or screen,
-so that even if the connection is lost halfway,
-you can log in to the remote server again and attach the previous session.</p>
-<h2 id="ssh-daemon-on-android-by-termux">SSH daemon on android by termux</h2>
-<h4 id="installation">Installation</h4>
+<p>这里非常推荐使用 tmux 或者 screen 之类的工具，
+这样即使丢失连接，也可以在重新连接服务器后快速通过挂载原先的会话的方式迅速恢复工作环境。</p>
+<h2 id="通过termux应用开启安卓ssh服务">通过termux应用开启安卓ssh服务</h2>
+<h4 id="安装">安装</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">apt install openssh
-</code></pre></div><h4 id="setting-the-key">Setting the key</h4>
+</code></pre></div><h4 id="设置密钥文件">设置密钥文件</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ssh-keygen
 cat ~/.ssh/id_rsa.pub &gt; ~/.ssh/authorized_keys
 chmod <span style="color:#ae81ff">600</span> ~/.ssh/authorized_keys
 chmod <span style="color:#ae81ff">700</span> ~/.ssh
-</code></pre></div><h4 id="start-daemon-in-debug-mode">Start daemon in debug mode</h4>
+</code></pre></div><h4 id="在调试模式下启动服务">在调试模式下启动服务</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sshd -d
-</code></pre></div><h4 id="start-daemon">Start daemon</h4>
+</code></pre></div><h4 id="启动服务">启动服务</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sshd
-</code></pre></div><h4 id="login-on-the-pc-side">Login on the PC side</h4>
-<p>Set the private key <code>~/.ssh/id_rsa</code> generated on the android side in the SSH client of the PC side,
-and connect to the server on android with specifying IP and port <code>8022</code> and without a username.</p>
+</code></pre></div><h4 id="在电脑端登录设置好的服务">在电脑端登录设置好的服务</h4>
+<p>将在安卓端取得的私有密钥 <code>~/.ssh/id_rsa</code> 配置到电脑端的 ssh 客户端，
+然后通过空用户名连接安卓端的 ip 地址及端口号 <code>8022</code> 即可。</p>
 
     </div>
     <footer>
@@ -420,10 +435,10 @@ and connect to the server on android with specifying IP and port <code>8022</cod
 
   <div class="pagination">
   
-    <a href="/zh-cn/blog/environment/add-apt-repository-for-fish-and-emacs/" class="button"><div class="previous">Previous</div></a>
+    <a href="/zh-cn/blog/environment/install-opencv-on-jetson-nano/" class="button"><div class="previous">Previous</div></a>
   
   
-    <a href="/zh-cn/blog/configuration/several-windows-registry-configurations/" class="button"><div class="next">Next</div></a>
+    <a href="/zh-cn/blog/environment/add-apt-repository-for-fish-and-emacs/" class="button"><div class="next">Next</div></a>
   
 </div>
 
@@ -439,26 +454,9 @@ and connect to the server on android with specifying IP and port <code>8022</cod
       <article class="mini-post">
         <section>
           
-  <a href="/zh-cn/blog/installation/some-installations-for-windows-10/" class="image featured">
-    
-      <img src="https://xinii.github.io/img/2020/06/0401.png" alt="">
-    
-  </a>
-
-
-        </section>
-        <header>
-          <h2><a href="/zh-cn/blog/installation/some-installations-for-windows-10/">Some works after Windows 10 clean installation</a></h2>
-          <time class="published" datetime="">June 4, 2020</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-        <section>
-          
   <a href="/zh-cn/blog/configuration/several-windows-registry-configurations/" class="image featured">
     
-      <img src="https://xinii.github.io/img/2020/06/0400.png" alt="">
+      <img src="https://xinii.github.io/img/blog/registry-editor-icon.png" alt="">
     
   </a>
 
@@ -473,17 +471,17 @@ and connect to the server on android with specifying IP and port <code>8022</cod
       <article class="mini-post">
         <section>
           
-  <a href="/zh-cn/blog/environment/several-ssh-configurations/" class="image featured">
+  <a href="/zh-cn/blog/installation/some-installations-for-windows-10/" class="image featured">
     
-      <img src="https://xinii.github.io/img/2020/06/0301.png" alt="">
+      <img src="https://xinii.github.io/img/blog/windows-logo.png" alt="">
     
   </a>
 
 
         </section>
         <header>
-          <h2><a href="/zh-cn/blog/environment/several-ssh-configurations/">Several SSH configurations</a></h2>
-          <time class="published" datetime="">June 3, 2020</time>
+          <h2><a href="/zh-cn/blog/installation/some-installations-for-windows-10/">重装windows 10后的一些工作</a></h2>
+          <time class="published" datetime="">June 4, 2020</time>
         </header>
       </article>
       
@@ -492,7 +490,7 @@ and connect to the server on android with specifying IP and port <code>8022</cod
           
   <a href="/zh-cn/blog/environment/add-apt-repository-for-fish-and-emacs/" class="image featured">
     
-      <img src="https://xinii.github.io/img/2020/06/0300.png" alt="">
+      <img src="https://xinii.github.io/img/blog/fish-emacs-logo.png" alt="">
     
   </a>
 
@@ -507,16 +505,33 @@ and connect to the server on android with specifying IP and port <code>8022</cod
       <article class="mini-post">
         <section>
           
-  <a href="/zh-cn/blog/environment/install-opencv-on-jetson-nano/" class="image featured">
+  <a href="/zh-cn/blog/environment/several-ssh-configurations/" class="image featured">
     
-      <img src="https://xinii.github.io/img/2019/07/1200.png" alt="">
+      <img src="https://xinii.github.io/img/blog/ssh-image.png" alt="">
     
   </a>
 
 
         </section>
         <header>
-          <h2><a href="/zh-cn/blog/environment/install-opencv-on-jetson-nano/">在jetson nano上安装opencv</a></h2>
+          <h2><a href="/zh-cn/blog/environment/several-ssh-configurations/">几个ssh的设定</a></h2>
+          <time class="published" datetime="">June 3, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+  <a href="/zh-cn/blog/environment/install-opencv-on-jetson-nano/" class="image featured">
+    
+      <img src="https://xinii.github.io/img/blog/opencv-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <header>
+          <h2><a href="/zh-cn/blog/environment/install-opencv-on-jetson-nano/">在Jetson Nano上安装OpenCV</a></h2>
           <time class="published" datetime="">July 12, 2019</time>
         </header>
       </article>

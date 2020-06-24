@@ -21,24 +21,31 @@
     </item>
     
     <item>
-      <title>Several SSH configurations</title>
+      <title>いくつかのssh設定</title>
       <link>https://xinii.github.io/ja/blog/environment/several-ssh-configurations/</link>
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/ja/blog/environment/several-ssh-configurations/</guid>
-      <description>SSH interruption phenomenon  When logging in to a remote server with ssh, Write failed: Broken pipe may be displayed and the connection may be broken. It is necessary to change the ssh setting on the client side or the server side, because ssh is automatically disconnected by a timeout if it is not operated for a while.  Remedy  Deal on the client side  Describe the following contents in /etc/ssh/ssh_config or ~/.</description>
+      <description>目次  sshの途切れる現象  やり方 その他   アンドロイドのtermuxアプリを使ってsshデーモンを立てる  インストール キーを設定する デバッグモードをデーモンを起動 デーモンを起動 パソコンで立てたデーモンにログイン    sshの途切れる現象   sshを使ってリモートサーバーにログインしている時に，一定の時間内に操作がなければ， Write failed: Broken pipeというエラーが出てきてしまう可能性がある。
+  以上のことを避けるために，クライアント側やサーバー側のssh設定を変える必要がある。
+  やり方  クライアント側で対処する  以下の内容を/etc/ssh/ssh_configか~/.ssh/configに記述する。
+ServerAliveInterval 15 ServerAliveCountMax 10 この設定は，15秒ごとに10回の応答が送信されることを意味する。 それでも応答がなければ接続が切断される。
+ サーバー側で対処する  以下の内容を/etc/ssh/sshd_configに記述する。
+ClientAliveInterval 30 ClientAliveCountMax 5 この設定は，30秒ごとに5回の応答が送信されることを意味する。 それでも応答がなければ接続が切断される。
+その他 sshを使う際にtmuxやscreenなどを使うことがおすすめ。 これで，リモートへの接続が途切れたとしても， リモートに再びログインした後にすでにあるセッションにattachすれば元の環境が戻ってくる。
+アンドロイドのtermuxアプリを使ってsshデーモンを立てる インストール apt install openssh キーを設定する ssh-keygen cat ~/.ssh/id_rsa.pub &amp;gt; ~/.ssh/authorized_keys chmod 600 ~/.ssh/authorized_keys chmod 700 ~/.</description>
     </item>
     
     <item>
-      <title>在jetson nano上安装opencv</title>
+      <title>Jetson NanoにOpenCVをインストール</title>
       <link>https://xinii.github.io/ja/blog/environment/install-opencv-on-jetson-nano/</link>
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/ja/blog/environment/install-opencv-on-jetson-nano/</guid>
-      <description>生成swap文件 为防止编译途中由于内存不足等问题报错， 这里首先提前创建一个swap文件，存放路径任意。 重启后swap空间会消失， 以下编译等全部工作完成后可以手动删除这个文件。
-$ fallocate -l 4G swapfile $ chmod 600 swapfile $ mkswap swapfile $ sudo swapon swapfile $ swapon -s 生成安装脚本 安装opencv 4.0.0版本的脚本原始链接
-以上是安装opencv 4.0.0的版本，在这里我们希望安装较新的4.1.0版本，将上面的代码稍作改动（版本号的部分）：
-#!/bin/bash # # Copyright (c) 2018, NVIDIA CORPORATION. All rights reserved. # # NVIDIA Corporation and its licensors retain all intellectual property # and proprietary rights in and to this software, related documentation # and any modifications thereto. Any use, reproduction, disclosure or # distribution of this software and related documentation without an express # license agreement from NVIDIA Corporation is strictly prohibited.</description>
+      <description>目次  swapファイルを生成 インストールのスクリプトを生成 スクリプトを実行する インストールされたOpenCVをテスト  swapファイルを生成 コンパイル途中にメモリー不足などの問題を防ぐため， swapという交換用ファイルを任意のパスに生成しておく。 このファイルは，OS再起動の後に自動的に消えるが， 全てのインストールが終わったら，手作業で交換用ファイルを削除しても良い。
+$ fallocate -l 4G swapfile $ chmod 600 swapfile $ mkswap swapfile $ sudo swapon swapfile $ swapon -s インストールのスクリプトを生成 OpenCV 4.0.0をインストールためのリンク
+以上は，OpenCV 4.0.0をインストールためのリンクで，ここでは，OpenCV 4.1.0をインストールしたいため， バージョン番号の部分に少し手を加える。
+#!/bin/bash # # Copyright (c) 2018, NVIDIA CORPORATION. All rights reserved. # # NVIDIA Corporation and its licensors retain all intellectual property # and proprietary rights in and to this software, related documentation # and any modifications thereto.</description>
     </item>
     
     <item>

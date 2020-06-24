@@ -803,42 +803,42 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/jetson/</loc>
+    <loc>https://xinii.github.io/blog/environment/install-opencv-on-jetson-nano/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/jetson/"
+                href="https://xinii.github.io/ja/blog/environment/install-opencv-on-jetson-nano/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/jetson/"
+                href="https://xinii.github.io/zh-cn/blog/environment/install-opencv-on-jetson-nano/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/jetson/"
+                href="https://xinii.github.io/blog/environment/install-opencv-on-jetson-nano/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/nano/</loc>
+    <loc>https://xinii.github.io/tags/jetson-nano/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/nano/"
+                href="https://xinii.github.io/ja/tags/jetson-nano/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/nano/"
+                href="https://xinii.github.io/zh-cn/tags/jetson-nano/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/nano/"
+                href="https://xinii.github.io/tags/jetson-nano/"
                 />
   </url>
   
@@ -919,26 +919,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://xinii.github.io/tags/python/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/blog/environment/install-opencv-on-jetson-nano/</loc>
-    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/blog/environment/install-opencv-on-jetson-nano/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/blog/environment/install-opencv-on-jetson-nano/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/blog/environment/install-opencv-on-jetson-nano/"
                 />
   </url>
   

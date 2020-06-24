@@ -343,26 +343,6 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/zh-cn/blog/installation/some-installations-for-windows-10/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/blog/installation/some-installations-for-windows-10/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/blog/installation/some-installations-for-windows-10/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/blog/installation/some-installations-for-windows-10/"
-                />
-  </url>
-  
-  <url>
     <loc>https://xinii.github.io/zh-cn/tags/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -439,6 +419,26 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://xinii.github.io/zh-cn/blog/configuration/several-windows-registry-configurations/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/zh-cn/blog/installation/some-installations-for-windows-10/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/blog/installation/some-installations-for-windows-10/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.github.io/ja/blog/installation/some-installations-for-windows-10/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/blog/installation/some-installations-for-windows-10/"
                 />
   </url>
   
@@ -643,26 +643,6 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/zh-cn/blog/environment/several-ssh-configurations/</loc>
-    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/blog/environment/several-ssh-configurations/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/blog/environment/several-ssh-configurations/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/blog/environment/several-ssh-configurations/"
-                />
-  </url>
-  
-  <url>
     <loc>https://xinii.github.io/zh-cn/tags/shell/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -803,42 +783,42 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/zh-cn/tags/jetson/</loc>
-    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
+    <loc>https://xinii.github.io/zh-cn/blog/environment/several-ssh-configurations/</loc>
+    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/jetson/"
+                href="https://xinii.github.io/blog/environment/several-ssh-configurations/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/jetson/"
+                href="https://xinii.github.io/ja/blog/environment/several-ssh-configurations/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/jetson/"
+                href="https://xinii.github.io/zh-cn/blog/environment/several-ssh-configurations/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/zh-cn/tags/nano/</loc>
+    <loc>https://xinii.github.io/zh-cn/tags/jetson-nano/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/nano/"
+                href="https://xinii.github.io/tags/jetson-nano/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/nano/"
+                href="https://xinii.github.io/ja/tags/jetson-nano/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/nano/"
+                href="https://xinii.github.io/zh-cn/tags/jetson-nano/"
                 />
   </url>
   

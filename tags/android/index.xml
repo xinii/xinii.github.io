@@ -17,7 +17,7 @@
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/blog/environment/several-ssh-configurations/</guid>
-      <description>SSH interruption phenomenon  When logging in to a remote server with ssh, Write failed: Broken pipe may be displayed and the connection may be broken. It is necessary to change the ssh setting on the client side or the server side, because ssh is automatically disconnected by a timeout if it is not operated for a while.  Remedy  Deal on the client side  Describe the following contents in /etc/ssh/ssh_config or ~/.</description>
+      <description>Table of Contents  [SSH interruption phenomenon](#SSH interruption phenomenon)  Remedy One more thing   SSH daemon on android by termux  Installation Setting the key Start daemon in debug mode Start daemon Login on the PC side    SSH interruption phenomenon  When logging in to a remote server with ssh, Write failed: Broken pipe may be displayed and the connection may be broken. It is necessary to change the ssh setting on the client side or the server side, because ssh is automatically disconnected by a timeout if it is not operated for a while.</description>
     </item>
     
   </channel>

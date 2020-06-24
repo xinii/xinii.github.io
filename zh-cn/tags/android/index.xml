@@ -12,12 +12,16 @@
     
     
     <item>
-      <title>Several SSH configurations</title>
+      <title>几个ssh的设定</title>
       <link>https://xinii.github.io/zh-cn/blog/environment/several-ssh-configurations/</link>
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/zh-cn/blog/environment/several-ssh-configurations/</guid>
-      <description>SSH interruption phenomenon  When logging in to a remote server with ssh, Write failed: Broken pipe may be displayed and the connection may be broken. It is necessary to change the ssh setting on the client side or the server side, because ssh is automatically disconnected by a timeout if it is not operated for a while.  Remedy  Deal on the client side  Describe the following contents in /etc/ssh/ssh_config or ~/.</description>
+      <description>目录  ssh连接终端的现象  解决方法 One more thing   通过termux应用开启安卓ssh服务  安装 设置密钥文件 在调试模式下启动服务 启动服务 在电脑端登录设置好的服务    ssh连接终端的现象  当通过 ssh 进行远程登录的时候，如果长时间没有操作，则会出现 Write failed: Broken pipe 的错误提示并连接中断。 这是因为在一定时间内没有数据交换的情况下 ssh 连接默认会自动断开。要解决这个问题需要从客户端或者服务器端来改变设置。  解决方法  从客户端解决  将下面的内容配置在 /etc/ssh/ssh_config 或 ~/.ssh/config 中。
+ServerAliveInterval 15 ServerAliveCountMax 10 通过以上的设定，每 15 秒会进行 10 次应答确认，仍然没有应答的情况下才会断开连接。
+ 从服务器端解决  将下面的内容配置在 /etc/ssh/sshd_config 中。
+ClientAliveInterval 30 ClientAliveCountMax 5 通过以上的设定，每 30 秒会进行 5 次应答确认，仍然没有应答的情况下才会断开连接。
+One more thing 这里非常推荐使用 tmux 或者 screen 之类的工具， 这样即使丢失连接，也可以在重新连接服务器后快速通过挂载原先的会话的方式迅速恢复工作环境。</description>
     </item>
     
   </channel>
