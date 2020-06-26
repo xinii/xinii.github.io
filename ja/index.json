@@ -83,7 +83,7 @@
     "body": "JekyllのLogo1目次  Jekyllをインストール Githubに公開  Jekyllをインストール JekyllがRubyで書いた静的なサイトジェネレーター。 以下は公式サイトの紹介文。\n Jekyll is a static site generator. You give it text written in your favorite markup language and it uses layouts to create a static website. You can tweak how you want the site URLs to look, what data gets displayed on the site, and more. \u0026ndash;Jekyll2 Jekyllをインストールする際に， まずはRubyのパッケージ管理ツールを入れておくとあとは便利。 よく使われているRubyのパッケージ管理ツールがgemで， Ubuntuなどのシステムにおいて， 以下のコマンドでgemが同時にインストールされる。\napt install ruby-dev gemをインストールして，PATHの環境変数にちゃんとgemが入っていれば， gemを使っていろんなRubyのパッケージを入れることが可能になる。 もしrbenvなどのバーチャル環境管理ツールを使っていれば， 実行可能なgemがあればあとは同じ。 以下のコマンドでJekyllを入れる。簡単だね。\ngem install jekyll Githubに公開 Jekyllをインストールしたら， とりあえずJekyllで作った何かしらをGithubに公開して見てみたいだね。 気持ちがわかる。\nそうしたら，記事などを色々書き始める前に，空のブログを一旦Githubに公開しよう！ まずローカルでブログを管理したい場所に以下のコマンドを叩く。\njekyll new folder-name-for-your-blog そうすると，カレントフォルダーにfolder-name-for-your-blogという名前のサブフォルダーが出来てしまう。\nそして，Githubのリポジトリのページにおいて， your-user-name-of-github.github.ioという名前のリポジトリを作っておく。\n新しいリポを作ったら，gitでどうpushするかとかのヒントが出てくると思うので， それに従ってさっき作ったfolder-name-for-your-blogフォルダーの内容をyour-user-name-of-github.github.ioにpushすればおしまい。\n数分後に，ブラウザを使ってyour-user-name-of-github.github.ioにアクセスしてみれば， 何かしらのJekyllページが出てくるはず。\nこのブログでも以上の方法で作っている。\n（2020年6月14日追記）\nこのブログは現在hugoという静的なサイトジェネレーターで作っている。\n古いブログを参考していただく場合は，ここをクリック してください。\nそれでは。\n  JekyllのLogo \u0026#x21a9;\u0026#xfe0e;\n jekyllrb.com \u0026#x21a9;\u0026#xfe0e;\n   ",
     "ref": "/ja/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/"
   },{
-    "title": "サポート",
+    "title": "コンタクト",
     "date": "0001-01-01",
     "description": "",
     "body": "",
