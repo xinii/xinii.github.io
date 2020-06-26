@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>一些可帮助你更有效地工作的Windows注册表设置</title>
+      <title>一些可帮助你更有效地工作的 Windows 注册表设置</title>
       <link>https://xinii.github.io/zh-cn/blog/configuration/several-windows-registry-configurations/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
@@ -22,7 +22,7 @@
     </item>
     
     <item>
-      <title>重装windows 10后的一些工作</title>
+      <title>重装 Windows 10 后的一些工作</title>
       <link>https://xinii.github.io/zh-cn/blog/installation/some-installations-for-windows-10/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
@@ -31,7 +31,7 @@
     </item>
     
     <item>
-      <title>为Fish和Emacs添加apt仓库</title>
+      <title>为 Fish 和 Emacs 添加 apt 仓库</title>
       <link>https://xinii.github.io/zh-cn/blog/environment/add-apt-repository-for-fish-and-emacs/</link>
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
@@ -40,20 +40,19 @@
     </item>
     
     <item>
-      <title>几个ssh的设定</title>
+      <title>几个有关 SSH 的配置</title>
       <link>https://xinii.github.io/zh-cn/blog/environment/several-ssh-configurations/</link>
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/zh-cn/blog/environment/several-ssh-configurations/</guid>
-      <description>目录  ssh连接终端的现象  解决方法 One more thing   通过termux应用开启安卓ssh服务  安装 设置密钥文件 在调试模式下启动服务 启动服务 在电脑端登录设置好的服务    ssh连接终端的现象  当通过 ssh 进行远程登录的时候，如果长时间没有操作，则会出现 Write failed: Broken pipe 的错误提示并连接中断。 这是因为在一定时间内没有数据交换的情况下 ssh 连接默认会自动断开。要解决这个问题需要从客户端或者服务器端来改变设置。  解决方法  从客户端解决  将下面的内容配置在 /etc/ssh/ssh_config 或 ~/.ssh/config 中。
+      <description>目录  SSH 连接中断的现象  解决方法 One more thing   通过 Termux 应用开启安卓 SSH 服务  安装 设置密钥文件 在调试模式下启动服务 启动服务 在电脑端登录设置好的服务    ssh 连接中断的现象  当通过 ssh 进行远程登录的时候，如果长时间没有操作，则会出现 Write failed: Broken pipe 的错误提示并连接中断。 这是因为在一定时间内没有数据交换的情况下 ssh 连接默认会自动断开。要解决这个问题需要从客户端或者服务器端来改变设置。  解决方法  从客户端解决  将下面的内容配置在 /etc/ssh/ssh_config 或 ~/.ssh/config 中。
 ServerAliveInterval 15 ServerAliveCountMax 10 通过以上的设定，每 15 秒会进行 10 次应答确认，仍然没有应答的情况下才会断开连接。
  从服务器端解决  将下面的内容配置在 /etc/ssh/sshd_config 中。
-ClientAliveInterval 30 ClientAliveCountMax 5 通过以上的设定，每 30 秒会进行 5 次应答确认，仍然没有应答的情况下才会断开连接。
-One more thing 这里非常推荐使用 tmux 或者 screen 之类的工具， 这样即使丢失连接，也可以在重新连接服务器后快速通过挂载原先的会话的方式迅速恢复工作环境。</description>
+ClientAliveInterval 30 ClientAliveCountMax 5 通过以上的设定，每 30 秒会进行 5 次应答确认，仍然没有应答的情况下才会断开连接。</description>
     </item>
     
     <item>
-      <title>在Jetson Nano上安装OpenCV</title>
+      <title>在 Jetson Nano 上安装 OpenCV</title>
       <link>https://xinii.github.io/zh-cn/blog/environment/install-opencv-on-jetson-nano/</link>
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
       
@@ -65,7 +64,7 @@ $ fallocate -l 4G swapfile $ chmod 600 swapfile $ mkswap swapfile $ sudo swapon 
     </item>
     
     <item>
-      <title>安装Gnutls并从源码编译Emacs</title>
+      <title>安装 Gnutls 并从源码编译 Emacs</title>
       <link>https://xinii.github.io/zh-cn/blog/environment/install-gnutls-and-compile-emacs-from-source/</link>
       <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
       
@@ -81,7 +80,7 @@ bash configure --prefix=$HOME/.local --with-gif=no --with-gnutls=no 这样可以
     </item>
     
     <item>
-      <title>我的shell迁移记录</title>
+      <title>我的 Shell 迁移记录</title>
       <link>https://xinii.github.io/zh-cn/blog/environment/my-shell-migration-record/</link>
       <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
       
@@ -93,7 +92,7 @@ ls -l `which sh`  脚本解释器在语法上的不同点  从传统的bash等sh
     </item>
     
     <item>
-      <title>使用usb设备安装linux mint</title>
+      <title>使用 USB 设备安装 Linux Mint</title>
       <link>https://xinii.github.io/zh-cn/blog/installation/install-linux-mint-from-the-usb-device/</link>
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
       
@@ -107,7 +106,7 @@ ls -l `which sh`  脚本解释器在语法上的不同点  从传统的bash等sh
     </item>
     
     <item>
-      <title>通过Jekyll创建博客并发布到Github</title>
+      <title>通过 Jekyll 创建博客并发布到 Github</title>
       <link>https://xinii.github.io/zh-cn/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/</link>
       <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
       

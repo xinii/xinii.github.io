@@ -2,7 +2,7 @@
 <html lang="zh-cn">
   <head>
   <meta charset="utf-8">
-<title>使用usb设备安装linux mint - xin iDEA iNNATA</title>
+<title>使用 USB 设备安装 Linux Mint - xin iDEA iNNATA</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -18,8 +18,13 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
 
-<meta name="generator" content="Hugo 0.67.0" /><meta itemprop="name" content="使用usb设备安装linux mint">
-<meta itemprop="description" content="使用usb设备安装linux mint">
+<meta name="generator" content="Hugo 0.67.0" /><meta itemprop="name" content="使用 USB 设备安装 Linux Mint">
+<meta itemprop="description" content="Linux Mint 的 Logo1目录  准备一个用于安装 Linux Mint 的 USB 设备 Linux Mint 的 ISO 文件   重要：在开始下面的工作之前，首先确保U盘没有存任何东西， 或者里面没有放任何的重要数据（因为烧录会导致数据丢失）， 同时电脑上已经准备好空的分区（安装到的目标分区的数据也会被抹掉）。
+准备一个用于安装linux mint的usb设备 首先准备一个usb设备，可以是u盘也可以是usb的移动硬盘， 之后会在这个上面写入供安装linux mint的安装程序。
+ 如果使用的是windows操作系统，那么点击 这里 来查看ubuntu官方的教程以创建一个可以安装Linux的USB设备。  注意：上面的教程是教你如何製作一个用于安装Ubuntu的USB设备， 安装linux mint的情况下仅需要把涉及到iso文件的地方换成Linux Mint的iso文件，其他地方完全相同。
+ 其中会用到的软件叫做rufus，上面的教程裡面也有提到，点击 这里 打开rufus的官方网站，你也可以点击 这里 直接下载rufus。  linux mint的iso文件 前一节提到的linux mint的iso文件需要从下面的地方获取。点击 这里 打开linux mint的官方网站。 或者也可以点击 这里 直接下载Linux Mint 19.1版本。
+  Linux Mint 的 Logo &#x21a9;&#xfe0e;
+   ">
 <meta itemprop="datePublished" content="2019-04-23T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-04-23T00:00:00&#43;00:00" />
 <meta itemprop="wordCount" content="52">
@@ -27,8 +32,13 @@
 
 
 
-<meta itemprop="keywords" content="create,usb,stick,rufus,linux,mint,installation," /><meta property="og:title" content="使用usb设备安装linux mint" />
-<meta property="og:description" content="使用usb设备安装linux mint" />
+<meta itemprop="keywords" content="create,usb,stick,rufus,linux,mint,installation," /><meta property="og:title" content="使用 USB 设备安装 Linux Mint" />
+<meta property="og:description" content="Linux Mint 的 Logo1目录  准备一个用于安装 Linux Mint 的 USB 设备 Linux Mint 的 ISO 文件   重要：在开始下面的工作之前，首先确保U盘没有存任何东西， 或者里面没有放任何的重要数据（因为烧录会导致数据丢失）， 同时电脑上已经准备好空的分区（安装到的目标分区的数据也会被抹掉）。
+准备一个用于安装linux mint的usb设备 首先准备一个usb设备，可以是u盘也可以是usb的移动硬盘， 之后会在这个上面写入供安装linux mint的安装程序。
+ 如果使用的是windows操作系统，那么点击 这里 来查看ubuntu官方的教程以创建一个可以安装Linux的USB设备。  注意：上面的教程是教你如何製作一个用于安装Ubuntu的USB设备， 安装linux mint的情况下仅需要把涉及到iso文件的地方换成Linux Mint的iso文件，其他地方完全相同。
+ 其中会用到的软件叫做rufus，上面的教程裡面也有提到，点击 这里 打开rufus的官方网站，你也可以点击 这里 直接下载rufus。  linux mint的iso文件 前一节提到的linux mint的iso文件需要从下面的地方获取。点击 这里 打开linux mint的官方网站。 或者也可以点击 这里 直接下载Linux Mint 19.1版本。
+  Linux Mint 的 Logo &#x21a9;&#xfe0e;
+   " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://xinii.github.io/zh-cn/blog/installation/install-linux-mint-from-the-usb-device/" />
 <meta property="og:image" content="https://xinii.github.io/img/blog/linux-mint-logo.png" />
@@ -37,10 +47,15 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://xinii.github.io/img/blog/linux-mint-logo.png"/>
 
-<meta name="twitter:title" content="使用usb设备安装linux mint"/>
-<meta name="twitter:description" content="使用usb设备安装linux mint"/>
+<meta name="twitter:title" content="使用 USB 设备安装 Linux Mint"/>
+<meta name="twitter:description" content="Linux Mint 的 Logo1目录  准备一个用于安装 Linux Mint 的 USB 设备 Linux Mint 的 ISO 文件   重要：在开始下面的工作之前，首先确保U盘没有存任何东西， 或者里面没有放任何的重要数据（因为烧录会导致数据丢失）， 同时电脑上已经准备好空的分区（安装到的目标分区的数据也会被抹掉）。
+准备一个用于安装linux mint的usb设备 首先准备一个usb设备，可以是u盘也可以是usb的移动硬盘， 之后会在这个上面写入供安装linux mint的安装程序。
+ 如果使用的是windows操作系统，那么点击 这里 来查看ubuntu官方的教程以创建一个可以安装Linux的USB设备。  注意：上面的教程是教你如何製作一个用于安装Ubuntu的USB设备， 安装linux mint的情况下仅需要把涉及到iso文件的地方换成Linux Mint的iso文件，其他地方完全相同。
+ 其中会用到的软件叫做rufus，上面的教程裡面也有提到，点击 这里 打开rufus的官方网站，你也可以点击 这里 直接下载rufus。  linux mint的iso文件 前一节提到的linux mint的iso文件需要从下面的地方获取。点击 这里 打开linux mint的官方网站。 或者也可以点击 这里 直接下载Linux Mint 19.1版本。
+  Linux Mint 的 Logo &#x21a9;&#xfe0e;
+   "/>
 <meta name="twitter:site" content="@xintxt"/>
-<link rel="stylesheet" href="/css/bundle.min.759e3848ea529eef056dab665b241e2af569e601ab80f68f8d4a4d002a155dd4.css" integrity="sha256-dZ44SOpSnu8FbatmWyQeKvVp5gGrgPaPjUpNACoVXdQ="><link rel="stylesheet" href="/css/add-on.css">
+<link rel="stylesheet" href="/css/bundle.min.863ce312165b4df632ac9c555977c9c9d0d4690551567c0c4775b9341ea5c853.css" integrity="sha256-hjzjEhZbTfYyrJxVWXfJydDUaQVRVnwMR3W5NB6lyFM="><link rel="stylesheet" href="/css/add-on.css">
 </head>
 
   <body>
@@ -130,7 +145,7 @@
 
   
     
-    <a href="//twitter.com/share?text=%e4%bd%bf%e7%94%a8usb%e8%ae%be%e5%a4%87%e5%ae%89%e8%a3%85linux%20mint&amp;url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2finstallation%2finstall-linux-mint-from-the-usb-device%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+    <a href="//twitter.com/share?text=%e4%bd%bf%e7%94%a8%20USB%20%e8%ae%be%e5%a4%87%e5%ae%89%e8%a3%85%20Linux%20Mint&amp;url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2finstallation%2finstall-linux-mint-from-the-usb-device%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
         <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
       </a>
   
@@ -142,19 +157,19 @@
   
 
   
-    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2finstallation%2finstall-linux-mint-from-the-usb-device%2f&amp;title=%e4%bd%bf%e7%94%a8usb%e8%ae%be%e5%a4%87%e5%ae%89%e8%a3%85linux%20mint" target="_blank" rel="noopener" class="nav share-btn reddit">
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2finstallation%2finstall-linux-mint-from-the-usb-device%2f&amp;title=%e4%bd%bf%e7%94%a8%20USB%20%e8%ae%be%e5%a4%87%e5%ae%89%e8%a3%85%20Linux%20Mint" target="_blank" rel="noopener" class="nav share-btn reddit">
           <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
         </a>
   
 
   
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2finstallation%2finstall-linux-mint-from-the-usb-device%2f&amp;title=%e4%bd%bf%e7%94%a8usb%e8%ae%be%e5%a4%87%e5%ae%89%e8%a3%85linux%20mint" target="_blank" rel="noopener" class="nav share-btn linkedin">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2finstallation%2finstall-linux-mint-from-the-usb-device%2f&amp;title=%e4%bd%bf%e7%94%a8%20USB%20%e8%ae%be%e5%a4%87%e5%ae%89%e8%a3%85%20Linux%20Mint" target="_blank" rel="noopener" class="nav share-btn linkedin">
             <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
           </a>
   
 
   
-        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2finstallation%2finstall-linux-mint-from-the-usb-device%2f&amp;description=%e4%bd%bf%e7%94%a8usb%e8%ae%be%e5%a4%87%e5%ae%89%e8%a3%85linux%20mint" target="_blank" rel="noopener" class="nav share-btn pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2finstallation%2finstall-linux-mint-from-the-usb-device%2f&amp;description=%e4%bd%bf%e7%94%a8%20USB%20%e8%ae%be%e5%a4%87%e5%ae%89%e8%a3%85%20Linux%20Mint" target="_blank" rel="noopener" class="nav share-btn pinterest">
           <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
         </a>
   
@@ -174,7 +189,7 @@
       <section id="site-intro" >
   <a href="/zh-cn/"><img src="https://xinii.github.io/img/main/logo.jpg" class="circle" width="72px" alt="xin iDEA iNNATA" /></a>
   <header>
-    <h1>xin idea innata</h1>
+    <h1>xin iDEA iNNATA</h1>
   </header>
   <main>
     <p>Wellcome to xin iDEA iNNATA!</p>
@@ -237,10 +252,8 @@
     <header>
   <div class="title">
     
-      <h2><a href="/zh-cn/blog/installation/install-linux-mint-from-the-usb-device/">使用usb设备安装linux mint</a></h2>
+      <h2><a href="/zh-cn/blog/installation/install-linux-mint-from-the-usb-device/">使用 USB 设备安装 Linux Mint</a></h2>
     
-    
-      <p>使用usb设备安装linux mint</p>
     
   </div>
   <div class="meta">
@@ -262,7 +275,7 @@
 
   
     
-    <a href="//twitter.com/share?text=%e4%bd%bf%e7%94%a8usb%e8%ae%be%e5%a4%87%e5%ae%89%e8%a3%85linux%20mint&amp;url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2finstallation%2finstall-linux-mint-from-the-usb-device%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+    <a href="//twitter.com/share?text=%e4%bd%bf%e7%94%a8%20USB%20%e8%ae%be%e5%a4%87%e5%ae%89%e8%a3%85%20Linux%20Mint&amp;url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2finstallation%2finstall-linux-mint-from-the-usb-device%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
         <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
       </a>
   
@@ -274,19 +287,19 @@
   
 
   
-    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2finstallation%2finstall-linux-mint-from-the-usb-device%2f&amp;title=%e4%bd%bf%e7%94%a8usb%e8%ae%be%e5%a4%87%e5%ae%89%e8%a3%85linux%20mint" target="_blank" rel="noopener" class="nav share-btn reddit">
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2finstallation%2finstall-linux-mint-from-the-usb-device%2f&amp;title=%e4%bd%bf%e7%94%a8%20USB%20%e8%ae%be%e5%a4%87%e5%ae%89%e8%a3%85%20Linux%20Mint" target="_blank" rel="noopener" class="nav share-btn reddit">
           <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
         </a>
   
 
   
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2finstallation%2finstall-linux-mint-from-the-usb-device%2f&amp;title=%e4%bd%bf%e7%94%a8usb%e8%ae%be%e5%a4%87%e5%ae%89%e8%a3%85linux%20mint" target="_blank" rel="noopener" class="nav share-btn linkedin">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2finstallation%2finstall-linux-mint-from-the-usb-device%2f&amp;title=%e4%bd%bf%e7%94%a8%20USB%20%e8%ae%be%e5%a4%87%e5%ae%89%e8%a3%85%20Linux%20Mint" target="_blank" rel="noopener" class="nav share-btn linkedin">
             <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
           </a>
   
 
   
-        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2finstallation%2finstall-linux-mint-from-the-usb-device%2f&amp;description=%e4%bd%bf%e7%94%a8usb%e8%ae%be%e5%a4%87%e5%ae%89%e8%a3%85linux%20mint" target="_blank" rel="noopener" class="nav share-btn pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fzh-cn%2fblog%2finstallation%2finstall-linux-mint-from-the-usb-device%2f&amp;description=%e4%bd%bf%e7%94%a8%20USB%20%e8%ae%be%e5%a4%87%e5%ae%89%e8%a3%85%20Linux%20Mint" target="_blank" rel="noopener" class="nav share-btn pinterest">
           <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
         </a>
   
@@ -451,7 +464,7 @@
 
 
         </section>
-        <h2><a href="/zh-cn/blog/configuration/several-windows-registry-configurations/">一些可帮助你更有效地工作的Windows注册表设置</a></h2>
+        <h2><a href="/zh-cn/blog/configuration/several-windows-registry-configurations/">一些可帮助你更有效地工作的 Windows 注册表设置</a></h2>
         <time class="published" datetime="">June 4, 2020</time>
       </header>
     </article>
@@ -468,7 +481,7 @@
 
 
         </section>
-        <h2><a href="/zh-cn/blog/installation/some-installations-for-windows-10/">重装windows 10后的一些工作</a></h2>
+        <h2><a href="/zh-cn/blog/installation/some-installations-for-windows-10/">重装 Windows 10 后的一些工作</a></h2>
         <time class="published" datetime="">June 4, 2020</time>
       </header>
     </article>
@@ -485,7 +498,7 @@
 
 
         </section>
-        <h2><a href="/zh-cn/blog/environment/add-apt-repository-for-fish-and-emacs/">为Fish和Emacs添加apt仓库</a></h2>
+        <h2><a href="/zh-cn/blog/environment/add-apt-repository-for-fish-and-emacs/">为 Fish 和 Emacs 添加 apt 仓库</a></h2>
         <time class="published" datetime="">June 3, 2020</time>
       </header>
     </article>
@@ -502,7 +515,7 @@
 
 
         </section>
-        <h2><a href="/zh-cn/blog/environment/several-ssh-configurations/">几个ssh的设定</a></h2>
+        <h2><a href="/zh-cn/blog/environment/several-ssh-configurations/">几个有关 SSH 的配置</a></h2>
         <time class="published" datetime="">June 3, 2020</time>
       </header>
     </article>
@@ -519,7 +532,7 @@
 
 
         </section>
-        <h2><a href="/zh-cn/blog/environment/install-opencv-on-jetson-nano/">在Jetson Nano上安装OpenCV</a></h2>
+        <h2><a href="/zh-cn/blog/environment/install-opencv-on-jetson-nano/">在 Jetson Nano 上安装 OpenCV</a></h2>
         <time class="published" datetime="">July 12, 2019</time>
       </header>
     </article>
@@ -536,7 +549,7 @@
 
 
         </section>
-        <h2><a href="/zh-cn/blog/environment/install-gnutls-and-compile-emacs-from-source/">安装Gnutls并从源码编译Emacs</a></h2>
+        <h2><a href="/zh-cn/blog/environment/install-gnutls-and-compile-emacs-from-source/">安装 Gnutls 并从源码编译 Emacs</a></h2>
         <time class="published" datetime="">May 4, 2019</time>
       </header>
     </article>
@@ -553,7 +566,7 @@
 
 
         </section>
-        <h2><a href="/zh-cn/blog/environment/my-shell-migration-record/">我的shell迁移记录</a></h2>
+        <h2><a href="/zh-cn/blog/environment/my-shell-migration-record/">我的 Shell 迁移记录</a></h2>
         <time class="published" datetime="">May 3, 2019</time>
       </header>
     </article>
@@ -570,7 +583,7 @@
 
 
         </section>
-        <h2><a href="/zh-cn/blog/installation/install-linux-mint-from-the-usb-device/">使用usb设备安装linux mint</a></h2>
+        <h2><a href="/zh-cn/blog/installation/install-linux-mint-from-the-usb-device/">使用 USB 设备安装 Linux Mint</a></h2>
         <time class="published" datetime="">April 23, 2019</time>
       </header>
     </article>
@@ -587,7 +600,7 @@
 
 
         </section>
-        <h2><a href="/zh-cn/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/">通过Jekyll创建博客并发布到Github</a></h2>
+        <h2><a href="/zh-cn/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/">通过 Jekyll 创建博客并发布到 Github</a></h2>
         <time class="published" datetime="">April 2, 2019</time>
       </header>
     </article>
