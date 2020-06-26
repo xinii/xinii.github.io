@@ -48,12 +48,17 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/categories/programming/</loc>
+    <loc>https://xinii.github.io/ja/tags/education/</loc>
     <lastmod>2020-06-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xinii.github.io/ja/tags/software-engineering/</loc>
+    <loc>https://xinii.github.io/ja/tags/programming/</loc>
+    <lastmod>2020-06-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xinii.github.io/ja/categories/se/</loc>
     <lastmod>2020-06-26T00:00:00+00:00</lastmod>
   </url>
   
