@@ -13,84 +13,74 @@
     
     <item>
       <title>Some Windows registry settings that can help you work more efficiently</title>
-      <link>https://xinii.github.io/blog/configuration/several-windows-registry-configurations/</link>
+      <link>https://xinii.github.io/blog/windows/several-windows-registry-configurations/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/blog/configuration/several-windows-registry-configurations/</guid>
-      <description>Table of Contents  Registry settings for Japanese keyboard layout  About keyboard scan code Example of keyboard scan code Perform keyboard scan code mapping in the registry   Change keyboard layout for IME  Change Chinese input method English layout to Japanese keyboard layout Change the keyboard layout of input methods in other languages   Registry settings when an unknown icon appears in &amp;ldquo;My Computer&amp;rdquo; or &amp;ldquo;PC&amp;rdquo; in Explorer Registry settings when unable to connect to the NAS on the local network  References  Registry settings for Japanese keyboard layout About keyboard scan code First, what is the keyboard scan code?</description>
+      <guid>https://xinii.github.io/blog/windows/several-windows-registry-configurations/</guid>
+      <description>Registry settings for Japanese keyboard layout  About keyboard scan code   First, what is the keyboard scan code? Let us look at the definition on Wikipedia.   A scancode (or scan code) is the data that most computer keyboards send to a computer to report which keys have been pressed. A number, or sequence of numbers, is assigned to each key on the keyboard. - Wikipedia  Example of keyboard scan code1     Key Code     RCtrl 1D E0   LAlt 38 00   RAlt 38 E0   ESC 01 00   Insert 52 E0   Enter 1C 00   Caps 3A 00   Space 39 00   Muhenkan key 7B 00   Henkan key 79 00    Perform keyboard scan code mapping in the registry     First, press the Windows logo key + R, enter regedit and then press Enter to open the Windows Registry Editor.</description>
     </item>
     
     <item>
       <title>Some works after Windows 10 clean installation</title>
-      <link>https://xinii.github.io/blog/installation/some-installations-for-windows-10/</link>
+      <link>https://xinii.github.io/blog/windows/some-installations-for-windows-10/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/blog/installation/some-installations-for-windows-10/</guid>
-      <description>Activation of your Windows 10 slmgr -ipk {your product key} slmgr -skms {kms server address of your company} slmgr -ato Installation of some useful tools  Msys2 AutoHotKey Ricty  Configuration of msys2 pacman -S git fish tmux emacs gcc python cd ~ git clone https://github.com/xinii/xinconfig .xinconfig cd .xinconfig ./setenv fish exec fish set_conf tmux set_el auto set_el cn change_emacs xin emacs ssh-keygen -A emacs /etc/ssh/sshd_config #Port **** #PasswordAuthentication no cat {path to your pub key} &amp;gt; ~/.</description>
+      <guid>https://xinii.github.io/blog/windows/some-installations-for-windows-10/</guid>
+      <description>Activation of your Windows 10   Open the cmd of Windows. slmgr -ipk {your product key} slmgr -skms {kms server address of your company} slmgr -ato  Installation of some useful tools     Msys2    AutoHotKey    Ricty   Configuration of msys2  pacman -S git fish tmux emacs gcc python cd ~ git clone https://github.com/xinii/xinconfig .xinconfig cd .xinconfig ./setenv fish exec fish set_conf tmux set_el auto set_el cn change_emacs xin emacs ssh-keygen -A emacs /etc/ssh/sshd_config #Port **** #PasswordAuthentication no cat {path to your pub key} &amp;gt; ~/.</description>
     </item>
     
     <item>
       <title>Add apt repository for Fish and Emacs</title>
-      <link>https://xinii.github.io/blog/environment/add-apt-repository-for-fish-and-emacs/</link>
+      <link>https://xinii.github.io/blog/linux/add-apt-repository-for-fish-and-emacs/</link>
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/blog/environment/add-apt-repository-for-fish-and-emacs/</guid>
-      <description>Table of Contents  Command to be use No this command? Do this first Process  Register repository Refresh repository Installation    Command to be use add-apt-repository No this command? Do this first apt install software-properties-common Process Register repository add-apt-repository ppa:kelleyk/emacs apt-add-repository ppa:fish-shell/release-3 Refresh repository apt update Installation apt install emacs26 apt install fish </description>
+      <guid>https://xinii.github.io/blog/linux/add-apt-repository-for-fish-and-emacs/</guid>
+      <description> Command to be use  add-apt-repository  No this command? Do this first  apt install software-properties-common  Process  Register repository  add-apt-repository ppa:kelleyk/emacs apt-add-repository ppa:fish-shell/release-3  Refresh repository  apt update  Installation  apt install emacs26 apt install fish  </description>
     </item>
     
     <item>
       <title>Several SSH configurations</title>
-      <link>https://xinii.github.io/blog/environment/several-ssh-configurations/</link>
+      <link>https://xinii.github.io/blog/ssh/several-ssh-configurations/</link>
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/blog/environment/several-ssh-configurations/</guid>
-      <description>Table of Contents  [SSH interruption phenomenon](#SSH interruption phenomenon)  Remedy One more thing   SSH daemon on android by termux  Installation Setting the key Start daemon in debug mode Start daemon Login on the PC side    SSH interruption phenomenon  When logging in to a remote server with ssh, Write failed: Broken pipe may be displayed and the connection may be broken. It is necessary to change the ssh setting on the client side or the server side, because ssh is automatically disconnected by a timeout if it is not operated for a while.</description>
+      <guid>https://xinii.github.io/blog/ssh/several-ssh-configurations/</guid>
+      <description>SSH interruption phenomenon     When logging in to a remote server with ssh, Write failed: Broken pipe may be displayed and the connection may be broken.    It is necessary to change the ssh setting on the client side or the server side, because ssh is automatically disconnected by a timeout if it is not operated for a while. Remedy     Deal on the client side    Describe the following contents in /etc/ssh/ssh_config or ~/.</description>
     </item>
     
     <item>
       <title>How to install OpenCV on Jetson Nano?</title>
-      <link>https://xinii.github.io/blog/environment/install-opencv-on-jetson-nano/</link>
+      <link>https://xinii.github.io/blog/opencv/install-opencv-on-jetson-nano/</link>
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/blog/environment/install-opencv-on-jetson-nano/</guid>
-      <description>Table of Contents  Generate swap file Generate installation script Run the script Test the installed OpenCV  Generate swap file To prevent errors due to insufficient memory during compilation, create a swap file firstly, and store it to somewhere you know. After OS restarting, the swap space will disappear, or you can manually delete this file after the completion of the following compilation and other work.
-$ fallocate -l 4G swapfile $ chmod 600 swapfile $ mkswap swapfile $ sudo swapon swapfile $ swapon -s Generate installation script The original link of the script to install the OpenCV 4.</description>
+      <guid>https://xinii.github.io/blog/opencv/install-opencv-on-jetson-nano/</guid>
+      <description>Generate swap file   To prevent errors due to insufficient memory during compilation, create a swap file firstly, and store it to somewhere you know. After OS restarting, the swap space will disappear, or you can manually delete this file after the completion of the following compilation and other work. $ fallocate -l 4G swapfile $ chmod 600 swapfile $ mkswap swapfile $ sudo swapon swapfile $ swapon -s  Generate installation script   The original link of the script to install the OpenCV 4.</description>
     </item>
     
     <item>
       <title>Install Gnutls and compile Emacs from source</title>
-      <link>https://xinii.github.io/blog/environment/install-gnutls-and-compile-emacs-from-source/</link>
+      <link>https://xinii.github.io/blog/emacs/install-gnutls-and-compile-emacs-from-source/</link>
       <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/blog/environment/install-gnutls-and-compile-emacs-from-source/</guid>
-      <description>The logo of Emacs1Table of Contents  The lack of Gnutls in the environment Potential problems Install Gnutls Other possible problems  The lack of Gnutls in the environment If the current environment lacks Gnutls, the following configuration is required before compiling and installing the Emacs source code.
-./configure --with-gnutls=no Or specify the installation directory at the same time, add the option to ignore other dependent libraries that are still missing, such as the following configuration.</description>
+      <guid>https://xinii.github.io/blog/emacs/install-gnutls-and-compile-emacs-from-source/</guid>
+      <description>The lack of Gnutls in the environment   If the current environment lacks Gnutls, the following configuration is required before compiling and installing the Emacs1 source code. ./configure --with-gnutls=no   Or specify the installation directory at the same time, add the option to ignore other dependent libraries that are still missing, such as the following configuration. bash configure --prefix=$HOME/.local --with-gif=no --with-gnutls=no   In this way, the configuration and installation can be carried out smoothly in the absence of permission to the default installation path, or the lack of various dependent libraries.</description>
     </item>
     
     <item>
       <title>My shell migration record</title>
-      <link>https://xinii.github.io/blog/environment/my-shell-migration-record/</link>
+      <link>https://xinii.github.io/blog/shell/my-shell-migration-record/</link>
       <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/blog/environment/my-shell-migration-record/</guid>
-      <description>从bash到zsh 虽然我使用zsh shell两周后就换到fish shell了（关于fish shell下面有专门介绍）， 但这并不否认zsh shell仍然是个很好的shell。 你可以通过下面的方式从任意的shell切换至zsh shell。
- 安装zsh时通过下面的指令：  brew install zsh (MacOS) apt install zsh (Ubuntu / Linux Mint)  如果你想要知道现在系统裡已经安装好的shell，输入下面的指令：  cat /etc/shells  如何将zsh作为你默认的shell呢？，输入下面的指令：  chsh -s /usr/local/bin/zsh  关于配置文件的读取错误  shell脚本解释出错时可以查看一下当前所使用的sh路径， 比如有可能是sh指向了dash导致出错。 通过下面的语句查看。
-ls -l `which sh`  脚本解释器在语法上的不同点  从传统的bash等shell换到zsh时会发现集合的第一个元素的索引是从1开始的， 如果希望从0开始，在配置文件中配置下面语句即可。
- Fix array index for zsh:  if [ &amp;#34;$ZSH_NAME&amp;#34; = &amp;#34;zsh&amp;#34; ];then setopt localoptions ksharrays fi 配置zsh shell 与bash shell的.bashrc类似，zsh的配置也需要一个配置文件， 这个文件是在用户目录下的.</description>
+      <guid>https://xinii.github.io/blog/shell/my-shell-migration-record/</guid>
+      <description>From bash to zsh   Although I switched to the fish shell two weeks after using the zsh shell (the fish shell has a special introduction below), this does not deny that the zsh shell is still a good shell. You can switch from any shell to zsh shell in the following way.    Use the following instructions when installing zsh,   brew install zsh (MacOS) apt install zsh (Ubuntu / Linux Mint)     If you want to know the shell currently installed in the system, enter the following command,   cat /etc/shells     How to use zsh as your default shell?</description>
     </item>
     
     <item>
-      <title>使用usb设备安装linux mint</title>
-      <link>https://xinii.github.io/blog/installation/install-linux-mint-from-the-usb-device/</link>
+      <title>Install Linux Mint from USB device</title>
+      <link>https://xinii.github.io/blog/linux/install-linux-mint-from-the-usb-device/</link>
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/blog/installation/install-linux-mint-from-the-usb-device/</guid>
-      <description>The logo of Linux Mint1目录  准备一个用于安装 Linux Mint 的 USB 设备 Linux Mint 的 ISO 文件   重要：在开始下面的工作之前，首先确保U盘没有存任何东西， 或者里面没有放任何的重要数据（因为烧录会导致数据丢失）， 同时电脑上已经准备好空的分区（安装到的目标分区的数据也会被抹掉）。
-准备一个用于安装linux mint的usb设备 首先准备一个usb设备，可以是u盘也可以是usb的移动硬盘， 之后会在这个上面写入供安装linux mint的安装程序。
- 如果使用的是windows操作系统，那么点击 这里 来查看ubuntu官方的教程以创建一个可以安装Linux的USB设备。  注意：上面的教程是教你如何製作一个用于安装Ubuntu的USB设备， 安装linux mint的情况下仅需要把涉及到iso文件的地方换成Linux Mint的iso文件，其他地方完全相同。
- 其中会用到的软件叫做rufus，上面的教程裡面也有提到，点击 这里 打开rufus的官方网站，你也可以点击 这里 直接下载rufus。  linux mint的iso文件 前一节提到的linux mint的iso文件需要从下面的地方获取。点击 这里 打开linux mint的官方网站。 或者也可以点击 这里 直接下载Linux Mint 19.1版本。
-  The logo of Linux Mint &amp;#x21a9;&amp;#xfe0e;
-   </description>
+      <guid>https://xinii.github.io/blog/linux/install-linux-mint-from-the-usb-device/</guid>
+      <description>Important: Before starting the following work, first make sure nothing is stored in the USB device, Or there is no important data in it (because burning will cause data loss), At the same time, an empty partition has been prepared on the computer (the data of the target partition installed will also be erased). Prepare a USB device for installing Linux Mint1   首先准备一个USB设备，可以是U盘也可以是USB的移动硬盘， 之后会在这个上面写入供安装Linux Mint的安装程序。    如果使用的是Windows操作系统，那么点击 这里来查看Ubuntu官方的教程以创建一个可以安装Linux的USB设备。    *注意*：上面的教程是教你如何製作一个用于安装Ubuntu的USB设备， 安装Linux Mint的情况下仅需要把涉及到ISO文件的地方换成Linux Mint的ISO文件，其他地方完全相同。    其中会用到的软件叫做rufus，上面的教程裡面也有提到，点击 这里打开rufus的官方网站，你也可以点击 这里直接下载rufus。   ISO file of Linux Mint   前一节提到的linux mint的iso文件需要从下面的地方获取。点击 这里打开linux mint的官方网站。 或者也可以点击这里直接下载Linux Mint 19.</description>
     </item>
     
     <item>
@@ -99,8 +89,7 @@ ls -l `which sh`  脚本解释器在语法上的不同点  从传统的bash等sh
       <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/</guid>
-      <description>The logo of Jekyll1Table of Contents  Install Jekyll Publish blog to Github  Install Jekyll Jekyll is a static website generation framework written in Ruby language. The following is the official website introduction.
- Jekyll is a static site generator. You give it text written in your favorite markup language and it uses layouts to create a static website. You can tweak how you want the site URLs to look, what data gets displayed on the site, and more.</description>
+      <description>Install Jekyll   Jekyll1 is a static website generation framework written in Ruby language. The following is the official website introduction.   Jekyll is a static site generator. You give it text written in your favorite markup language and it uses layouts to create a static website. You can tweak how you want the site URLs to look, what data gets displayed on the site, and more. –Jekyll2   When installing Jekyll, you first need a Ruby package management environment.</description>
     </item>
     
   </channel>

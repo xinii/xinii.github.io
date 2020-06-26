@@ -6,10 +6,28 @@
     <description>Recent content in Tags on xin iDEA iNNATA</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://xinii.github.io/ja/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>course</title>
+      <link>https://xinii.github.io/ja/tags/course/</link>
+      <pubDate>Fri, 26 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/ja/tags/course/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>software-engineering</title>
+      <link>https://xinii.github.io/ja/tags/software-engineering/</link>
+      <pubDate>Fri, 26 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/ja/tags/software-engineering/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>activation</title>
@@ -30,47 +48,11 @@
     </item>
     
     <item>
-      <title>configuration</title>
-      <link>https://xinii.github.io/ja/tags/configuration/</link>
+      <title>keyboard-layout</title>
+      <link>https://xinii.github.io/ja/tags/keyboard-layout/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/ja/tags/configuration/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>installation</title>
-      <link>https://xinii.github.io/ja/tags/installation/</link>
-      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/tags/installation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>keyboard</title>
-      <link>https://xinii.github.io/ja/tags/keyboard/</link>
-      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/tags/keyboard/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>lan</title>
-      <link>https://xinii.github.io/ja/tags/lan/</link>
-      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/tags/lan/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>layout</title>
-      <link>https://xinii.github.io/ja/tags/layout/</link>
-      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/tags/layout/</guid>
+      <guid>https://xinii.github.io/ja/tags/keyboard-layout/</guid>
       <description></description>
     </item>
     
@@ -111,15 +93,6 @@
     </item>
     
     <item>
-      <title>windows</title>
-      <link>https://xinii.github.io/ja/tags/windows/</link>
-      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/tags/windows/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>android</title>
       <link>https://xinii.github.io/ja/tags/android/</link>
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
@@ -138,6 +111,15 @@
     </item>
     
     <item>
+      <title>daemon</title>
+      <link>https://xinii.github.io/ja/tags/daemon/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/ja/tags/daemon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>emacs</title>
       <link>https://xinii.github.io/ja/tags/emacs/</link>
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
@@ -147,20 +129,11 @@
     </item>
     
     <item>
-      <title>environment</title>
-      <link>https://xinii.github.io/ja/tags/environment/</link>
+      <title>fish-shell</title>
+      <link>https://xinii.github.io/ja/tags/fish-shell/</link>
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/ja/tags/environment/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>fish</title>
-      <link>https://xinii.github.io/ja/tags/fish/</link>
-      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/tags/fish/</guid>
+      <guid>https://xinii.github.io/ja/tags/fish-shell/</guid>
       <description></description>
     </item>
     
@@ -174,51 +147,6 @@
     </item>
     
     <item>
-      <title>linux</title>
-      <link>https://xinii.github.io/ja/tags/linux/</link>
-      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>repository</title>
-      <link>https://xinii.github.io/ja/tags/repository/</link>
-      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/tags/repository/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>shell</title>
-      <link>https://xinii.github.io/ja/tags/shell/</link>
-      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/tags/shell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ssh</title>
-      <link>https://xinii.github.io/ja/tags/ssh/</link>
-      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/tags/ssh/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sshd</title>
-      <link>https://xinii.github.io/ja/tags/sshd/</link>
-      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/tags/sshd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>termux</title>
       <link>https://xinii.github.io/ja/tags/termux/</link>
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
@@ -228,29 +156,11 @@
     </item>
     
     <item>
-      <title>ubuntu</title>
-      <link>https://xinii.github.io/ja/tags/ubuntu/</link>
-      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/tags/ubuntu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>eps</title>
       <link>https://xinii.github.io/ja/tags/eps/</link>
       <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/ja/tags/eps/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>figure</title>
-      <link>https://xinii.github.io/ja/tags/figure/</link>
-      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/tags/figure/</guid>
       <description></description>
     </item>
     
@@ -269,15 +179,6 @@
       <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/ja/tags/org-mode/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pitfall</title>
-      <link>https://xinii.github.io/ja/tags/pitfall/</link>
-      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/tags/pitfall/</guid>
       <description></description>
     </item>
     
@@ -309,25 +210,16 @@
     </item>
     
     <item>
-      <title>music</title>
-      <link>https://xinii.github.io/ja/tags/music/</link>
+      <title>sheet-music</title>
+      <link>https://xinii.github.io/ja/tags/sheet-music/</link>
       <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/ja/tags/music/</guid>
+      <guid>https://xinii.github.io/ja/tags/sheet-music/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>score</title>
-      <link>https://xinii.github.io/ja/tags/score/</link>
-      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/tags/score/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>absolute pitch</title>
+      <title>absolute-pitch</title>
       <link>https://xinii.github.io/ja/tags/absolute-pitch/</link>
       <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
       
@@ -336,47 +228,11 @@
     </item>
     
     <item>
-      <title>sense</title>
-      <link>https://xinii.github.io/ja/tags/sense/</link>
-      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/tags/sense/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sound</title>
-      <link>https://xinii.github.io/ja/tags/sound/</link>
-      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/tags/sound/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>jetson nano</title>
+      <title>jetson-nano</title>
       <link>https://xinii.github.io/ja/tags/jetson-nano/</link>
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/ja/tags/jetson-nano/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>opencv</title>
-      <link>https://xinii.github.io/ja/tags/opencv/</link>
-      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/tags/opencv/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pyenv</title>
-      <link>https://xinii.github.io/ja/tags/pyenv/</link>
-      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/tags/pyenv/</guid>
       <description></description>
     </item>
     
@@ -399,47 +255,11 @@
     </item>
     
     <item>
-      <title>make</title>
-      <link>https://xinii.github.io/ja/tags/make/</link>
-      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/tags/make/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>opensuse</title>
-      <link>https://xinii.github.io/ja/tags/opensuse/</link>
-      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/tags/opensuse/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>zypper</title>
-      <link>https://xinii.github.io/ja/tags/zypper/</link>
-      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/tags/zypper/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>bash</title>
       <link>https://xinii.github.io/ja/tags/bash/</link>
       <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/ja/tags/bash/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pythonpath</title>
-      <link>https://xinii.github.io/ja/tags/pythonpath/</link>
-      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/tags/pythonpath/</guid>
       <description></description>
     </item>
     
@@ -462,20 +282,20 @@
     </item>
     
     <item>
-      <title>create</title>
-      <link>https://xinii.github.io/ja/tags/create/</link>
+      <title>linux-mint</title>
+      <link>https://xinii.github.io/ja/tags/linux-mint/</link>
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/ja/tags/create/</guid>
+      <guid>https://xinii.github.io/ja/tags/linux-mint/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>mint</title>
-      <link>https://xinii.github.io/ja/tags/mint/</link>
+      <title>os</title>
+      <link>https://xinii.github.io/ja/tags/os/</link>
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/ja/tags/mint/</guid>
+      <guid>https://xinii.github.io/ja/tags/os/</guid>
       <description></description>
     </item>
     
@@ -485,15 +305,6 @@
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/ja/tags/rufus/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>stick</title>
-      <link>https://xinii.github.io/ja/tags/stick/</link>
-      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/tags/stick/</guid>
       <description></description>
     </item>
     
@@ -516,15 +327,6 @@
     </item>
     
     <item>
-      <title>cms</title>
-      <link>https://xinii.github.io/ja/tags/cms/</link>
-      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/tags/cms/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>github</title>
       <link>https://xinii.github.io/ja/tags/github/</link>
       <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
@@ -539,33 +341,6 @@
       <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/ja/tags/jekyll/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ruby</title>
-      <link>https://xinii.github.io/ja/tags/ruby/</link>
-      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/tags/ruby/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>site</title>
-      <link>https://xinii.github.io/ja/tags/site/</link>
-      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/tags/site/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>web</title>
-      <link>https://xinii.github.io/ja/tags/web/</link>
-      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/tags/web/</guid>
       <description></description>
     </item>
     

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>daemon on xin iDEA iNNATA</title>
+    <link>https://xinii.github.io/ja/tags/daemon/</link>
+    <description>Recent content in daemon on xin iDEA iNNATA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 03 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://xinii.github.io/ja/tags/daemon/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>いくつかのssh設定</title>
+      <link>https://xinii.github.io/ja/blog/ssh/several-ssh-configurations/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/ja/blog/ssh/several-ssh-configurations/</guid>
+      <description>sshの途切れる現象     sshを使ってリモートサーバーにログインしている時に，一定の時間内に操作がなければ， =Write failed: Broken pipe=というエラーが出てきてしまう可能性がある。    以上のことを避けるために，クライアント側やサーバー側のssh設定を変える必要がある。 やり方     クライアント側で対処する    以下の内容を=/etc/ssh/ssh_config=か=~/.ssh/config=に記述する。 ServerAliveInterval 15 ServerAliveCountMax 10   この設定は，15秒ごとに10回の応答が送信されることを意味する。 それでも応答がなければ接続が切断される。    サーバー側で対処する    以下の内容を=/etc/ssh/sshd_config=に記述する。 ClientAliveInterval 30 ClientAliveCountMax 5   この設定は，30秒ごとに5回の応答が送信されることを意味する。 それでも応答がなければ接続が切断される。 その他   sshを使う際にtmuxやscreenなどを使うことがおすすめ。 これで，リモートへの接続が途切れたとしても， リモートに再びログインした後にすでにあるセッションにattachすれば元の環境が戻ってくる。 アンドロイドのtermuxアプリを使ってsshデーモンを立てる  インストール  apt install openssh  キーを設定する  ssh-keygen cat ~/.ssh/id_rsa.pub &amp;gt; ~/.ssh/authorized_keys chmod 600 ~/.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -19,16 +19,16 @@
   <meta name="theme-color" content="#ffffff">
 
 <meta name="generator" content="Hugo 0.67.0" /><meta itemprop="name" content="Create a blog via Jekyll and post to Github">
-<meta itemprop="description" content="Want to own a blog but don’t know how to create it? Try Jekyll natively supported by Github!">
+<meta itemprop="description" content="Want to own a blog but don&#39;t know how to create it? Try Jekyll natively supported by Github!">
 <meta itemprop="datePublished" content="2019-04-02T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-04-02T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="373">
+<meta itemprop="wordCount" content="358">
 <meta itemprop="image" content="https://xinii.github.io/img/blog/jekyll-logo.png">
 
 
 
-<meta itemprop="keywords" content="github,web,site,blog,ruby,cms,jekyll," /><meta property="og:title" content="Create a blog via Jekyll and post to Github" />
-<meta property="og:description" content="Want to own a blog but don’t know how to create it? Try Jekyll natively supported by Github!" />
+<meta itemprop="keywords" content="jekyll,github,blog," /><meta property="og:title" content="Create a blog via Jekyll and post to Github" />
+<meta property="og:description" content="Want to own a blog but don&#39;t know how to create it? Try Jekyll natively supported by Github!" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://xinii.github.io/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/" />
 <meta property="og:image" content="https://xinii.github.io/img/blog/jekyll-logo.png" />
@@ -38,7 +38,7 @@
 <meta name="twitter:image" content="https://xinii.github.io/img/blog/jekyll-logo.png"/>
 
 <meta name="twitter:title" content="Create a blog via Jekyll and post to Github"/>
-<meta name="twitter:description" content="Want to own a blog but don’t know how to create it? Try Jekyll natively supported by Github!"/>
+<meta name="twitter:description" content="Want to own a blog but don&#39;t know how to create it? Try Jekyll natively supported by Github!"/>
 <meta name="twitter:site" content="@xintxt"/>
 <link rel="stylesheet" href="/css/bundle.min.863ce312165b4df632ac9c555977c9c9d0d4690551567c0c4775b9341ea5c853.css" integrity="sha256-hjzjEhZbTfYyrJxVWXfJydDUaQVRVnwMR3W5NB6lyFM="><link rel="stylesheet" href="/css/add-on.css">
 </head>
@@ -233,14 +233,14 @@
 
       <main id="site-main">
         
-  <article class="post">
-    <header>
+<article class="post">
+  <header>
   <div class="title">
     
       <h2><a href="/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/">Create a blog via Jekyll and post to Github</a></h2>
     
     
-      <p>Want to own a blog but don’t know how to create it? Try Jekyll natively supported by Github!</p>
+      <p>Want to own a blog but don&#39;t know how to create it? Try Jekyll natively supported by Github!</p>
     
   </div>
   <div class="meta">
@@ -254,8 +254,8 @@
   </div>
 </header>
 
-    <section id="socnet-share">
-      
+  <section id="socnet-share">
+    
 
 
 
@@ -298,8 +298,8 @@
   
 
 
-    </section>
-    
+  </section>
+  
   <a href="/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/" class="image featured">
     
       <img src="https://xinii.github.io/img/blog/jekyll-logo.png" alt="">
@@ -307,74 +307,129 @@
   </a>
 
 
-    <div class="content">
-      <p><!-- raw HTML omitted -->The logo of Jekyll<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><!-- raw HTML omitted --></p>
-<h2 id="table-of-contents">Table of Contents</h2>
+  <div class="content">
+    <h2>Table of contents</h2>
+    <nav id="TableOfContents">
 <ul>
-<li><a href="#install-jekyll">Install Jekyll</a></li>
-<li><a href="#publish-blog-to-github">Publish blog to Github</a></li>
+<li><a href="#headline-1">Install Jekyll</a>
+</li>
+<li><a href="#headline-2">Publish blog to Github</a>
+</li>
 </ul>
-<h2 id="install-jekyll">Install Jekyll</h2>
-<p>Jekyll is a static website generation framework written in Ruby language.
-The following is the official website introduction.</p>
+</nav>
+    <hr>
+    
+<h2 id="headline-1">
+Install Jekyll
+</h2>
+<p>
+Jekyll<sup class="footnote-reference"><a id="footnote-reference-1" href="#footnote-1">1</a></sup> is a static website generation framework written in Ruby
+language. The following is the official website introduction.
+</p>
 <blockquote>
-<p>Jekyll is a static site generator.
-You give it text written in your favorite markup language and it uses layouts to create a static website.
-You can tweak how you want the site URLs to look, what data gets displayed on the site, and more.
-&ndash;<!-- raw HTML omitted -->Jekyll<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup><!-- raw HTML omitted --></p>
+<p>
+Jekyll is a static site generator. You give it text written in your
+  favorite markup language and it uses layouts to create a static
+  website. You can tweak how you want the site URLs to look, what data
+  gets displayed on the site, and more. –Jekyll<sup class="footnote-reference"><a id="footnote-reference-2" href="#footnote-2">2</a></sup>
+</p>
 </blockquote>
-<p>When installing Jekyll, you first need a Ruby package management environment.
-The commonly used package manager of the Ruby programming environment is <code>gem</code>.
-For example, executing the following statement in Ubuntu will also install <code>gem</code>.</p>
-<pre><code>apt install ruby-dev
-</code></pre><p>After installing <code>gem</code>, make sure its execution path is in our <code>PATH</code> environment variable.
-If you do not use the above method, but use virtual environment management tools such as <code>rbenv</code>,
-just call the <code>gem</code> configured in the virtual environment.
-Then you can install Jekyll by executing the following statement.</p>
-<pre><code>gem install jekyll
-</code></pre><h2 id="publish-blog-to-github">Publish blog to Github</h2>
-<p>After installing Jekyll,
-you must hope to post something to Github first to see the effect.
-Especially understand this mood.</p>
-<p>Then next, before blogging,
-let&rsquo;s firstly use Jekyll installed to generate a default site and publish it to Github.
-Execute the following command in the current path where you want to manage the blog locally.</p>
-<pre><code>jekyll new folder-name-for-your-blog
-</code></pre><p>Then a folder called <code>folder-name-for-your-blog</code> will be generated under the current path,
-which is the new blog source code created by Jekyll.</p>
-<p>Then create a repository called <code>your-user-name-of-github.github.io</code> on Github.
-After creating the repository, Github will prompt how to use <code>git</code> to <code>push</code> local content to the repository.
-Follow the wizard to <code>push</code> the contents of the <code>folder-name-for-your-blog</code> folder you just created to this repository.</p>
-<p>Then wait a few minutes to open <code>your-user-name-of-github.github.io</code> through your browser,
-and you can see Jekyll&rsquo;s welcome page if nothing unexpected happens.</p>
-<p>~~This site is also created by the above method. ~~</p>
-<p>(Postscript on June 14, 2020)</p>
-<p>[This site] (<a href="https://xinii.github.io">https://xinii.github.io</a>) has now been created using the <code>hugo</code> static website generation framework,
-To refer to the original site, please [click here] (<a href="https://xinii.github.io/jekyll-blog">https://xinii.github.io/jekyll-blog</a>) to visit.</p>
-<p>Welcome to contact and leave a message.</p>
-<section class="footnotes" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn:1" role="doc-endnote">
-<p><a href="https://raw.githubusercontent.com/jekyll/brand/master/jekyll-logo-black-red-transparent.png">The logo of Jekyll</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:2" role="doc-endnote">
-<p><a href="https://jekyllrb.com/docs/">jekyllrb.com</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-</ol>
-</section>
+<p>
+When installing Jekyll, you first need a Ruby package management
+environment. The commonly used package manager of the Ruby programming
+environment is <code class="verbatim">gem</code>. For example, executing the following statement in
+Ubuntu will also install <code class="verbatim">gem</code>.
+</p>
+<div class="src src-text">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">  apt install ruby-dev</code></pre></div>
+</div>
+<p>
+After installing <code class="verbatim">gem</code>, make sure its execution path is in our <code class="verbatim">PATH</code>
+environment variable. If you do not use the above method, but use
+virtual environment management tools such as <code class="verbatim">rbenv</code>, just call the
+<code class="verbatim">gem</code> configured in the virtual environment. Then you can install Jekyll
+by executing the following statement.
+</p>
+<div class="src src-text">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">  gem install jekyll</code></pre></div>
+</div>
+<h2 id="headline-2">
+Publish blog to Github
+</h2>
+<p>
+After installing Jekyll, you must hope to post something to Github first
+to see the effect. Especially understand this mood.
+</p>
+<p>
+Then next, before blogging, let&#39;s firstly use Jekyll installed to
+generate a default site and publish it to Github. Execute the following
+command in the current path where you want to manage the blog locally.
+</p>
+<div class="src src-text">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">  jekyll new folder-name-for-your-blog</code></pre></div>
+</div>
+<p>
+Then a folder called <code class="verbatim">folder-name-for-your-blog</code> will be generated under
+the current path, which is the new blog source code created by Jekyll.
+</p>
+<p>
+Then create a repository called <code class="verbatim">your-user-name-of-github.github.io</code> on
+Github. After creating the repository, Github will prompt how to use
+<code class="verbatim">git</code> to <code class="verbatim">push</code> local content to the repository. Follow the wizard to
+<code class="verbatim">push</code> the contents of the <code class="verbatim">folder-name-for-your-blog</code> folder you just
+created to this repository.
+</p>
+<p>
+Then wait a few minutes to open <code class="verbatim">your-user-name-of-github.github.io</code>
+through your browser, and you can see Jekyll&#39;s welcome page if nothing
+unexpected happens.
+</p>
+<p>
+<del>This site is also created by the above method.</del>
+</p>
+<p>
+(Postscript on June 14, 2020)
+</p>
+<p>
+<a href="https://xinii.github.io">This site</a> has now been created using the
+<code class="verbatim">hugo</code> static website generation framework, To refer to the original
+site, please <a href="https://xinii.github.io/jekyll-blog">click here</a> to visit.
+</p>
+<p>
+Welcome to contact and leave a message.
+</p>
+<div class="footnotes">
+<hr class="footnotes-separatator">
+<div class="footnote-definitions">
+<div class="footnote-definition">
+<sup id="footnote-1"><a href="#footnote-reference-1">1</a></sup>
+<div class="footnote-body">
+<p>
+<a href="https://raw.githubusercontent.com/jekyll/brand/master/jekyll-logo-black-red-transparent.png">The logo of Jekyll</a>
+</p>
+</div>
+</div>
+<div class="footnote-definition">
+<sup id="footnote-2"><a href="#footnote-reference-2">2</a></sup>
+<div class="footnote-body">
+<p>
+<a href="https://jekyllrb.com/docs/"> jekyllrb.com</a>
+</p>
+</div>
+</div>
+</div>
+</div>
 
-    </div>
-    <footer>
-      <ul class="stats">
+  </div>
+  <hr>
+  <footer>
+    <ul class="stats">
   <li class="categories">
     <ul>
     
       
         
-          <li><a class="article-terms-link" href="/categories/cms/">cms</a></li>
-        
-          <li><a class="article-terms-link" href="/categories/jekyll/">jekyll</a></li>
+          <li><a class="article-terms-link" href="/categories/cms/"><div>cms</div></a></li>
         
       
     
@@ -385,19 +440,11 @@ To refer to the original site, please [click here] (<a href="https://xinii.githu
     
       
         
-          <li><a class="article-terms-link" href="/tags/github/">github</a></li>
+          <li><a class="article-terms-link" href="/tags/jekyll/"><div>jekyll</div></a></li>
         
-          <li><a class="article-terms-link" href="/tags/web/">web</a></li>
+          <li><a class="article-terms-link" href="/tags/github/"><div>github</div></a></li>
         
-          <li><a class="article-terms-link" href="/tags/site/">site</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/blog/">blog</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/ruby/">ruby</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/cms/">cms</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/jekyll/">jekyll</a></li>
+          <li><a class="article-terms-link" href="/tags/blog/"><div>blog</div></a></li>
         
       
     
@@ -405,9 +452,9 @@ To refer to the original site, please [click here] (<a href="https://xinii.githu
   </li>
 </ul>
 
-    </footer>
-  </article>
-  
+  </footer>
+</article>
+
   <article class="post">
     <div id="disqus_thread"></div>
 <script type="application/javascript">
@@ -434,10 +481,10 @@ To refer to the original site, please [click here] (<a href="https://xinii.githu
 
 
 
-  <div class="pagination">
+<div class="pagination">
   
   
-    <a href="/blog/installation/install-linux-mint-from-the-usb-device/" class="button"><div class="next">Next post</div></a>
+    <a href="/blog/linux/install-linux-mint-from-the-usb-device/" class="button"><div class="next">Next post</div></a>
   
 </div>
 
@@ -454,7 +501,7 @@ To refer to the original site, please [click here] (<a href="https://xinii.githu
       <header>
         <section>
           
-  <a href="/blog/configuration/several-windows-registry-configurations/" class="image featured">
+  <a href="/blog/windows/several-windows-registry-configurations/" class="image featured">
     
       <img src="https://xinii.github.io/img/blog/registry-editor-icon.png" alt="">
     
@@ -462,7 +509,7 @@ To refer to the original site, please [click here] (<a href="https://xinii.githu
 
 
         </section>
-        <h2><a href="/blog/configuration/several-windows-registry-configurations/">Some Windows registry settings that can help you work more efficiently</a></h2>
+        <h2><a href="/blog/windows/several-windows-registry-configurations/">Some Windows registry settings that can help you work more efficiently</a></h2>
         <time class="published" datetime="">June 4, 2020</time>
       </header>
     </article>
@@ -471,7 +518,7 @@ To refer to the original site, please [click here] (<a href="https://xinii.githu
       <header>
         <section>
           
-  <a href="/blog/installation/some-installations-for-windows-10/" class="image featured">
+  <a href="/blog/windows/some-installations-for-windows-10/" class="image featured">
     
       <img src="https://xinii.github.io/img/blog/windows-logo.png" alt="">
     
@@ -479,7 +526,7 @@ To refer to the original site, please [click here] (<a href="https://xinii.githu
 
 
         </section>
-        <h2><a href="/blog/installation/some-installations-for-windows-10/">Some works after Windows 10 clean installation</a></h2>
+        <h2><a href="/blog/windows/some-installations-for-windows-10/">Some works after Windows 10 clean installation</a></h2>
         <time class="published" datetime="">June 4, 2020</time>
       </header>
     </article>
@@ -488,7 +535,7 @@ To refer to the original site, please [click here] (<a href="https://xinii.githu
       <header>
         <section>
           
-  <a href="/blog/environment/add-apt-repository-for-fish-and-emacs/" class="image featured">
+  <a href="/blog/linux/add-apt-repository-for-fish-and-emacs/" class="image featured">
     
       <img src="https://xinii.github.io/img/blog/fish-emacs-logo.png" alt="">
     
@@ -496,7 +543,7 @@ To refer to the original site, please [click here] (<a href="https://xinii.githu
 
 
         </section>
-        <h2><a href="/blog/environment/add-apt-repository-for-fish-and-emacs/">Add apt repository for Fish and Emacs</a></h2>
+        <h2><a href="/blog/linux/add-apt-repository-for-fish-and-emacs/">Add apt repository for Fish and Emacs</a></h2>
         <time class="published" datetime="">June 3, 2020</time>
       </header>
     </article>
@@ -505,7 +552,7 @@ To refer to the original site, please [click here] (<a href="https://xinii.githu
       <header>
         <section>
           
-  <a href="/blog/environment/several-ssh-configurations/" class="image featured">
+  <a href="/blog/ssh/several-ssh-configurations/" class="image featured">
     
       <img src="https://xinii.github.io/img/blog/ssh-image.png" alt="">
     
@@ -513,7 +560,7 @@ To refer to the original site, please [click here] (<a href="https://xinii.githu
 
 
         </section>
-        <h2><a href="/blog/environment/several-ssh-configurations/">Several SSH configurations</a></h2>
+        <h2><a href="/blog/ssh/several-ssh-configurations/">Several SSH configurations</a></h2>
         <time class="published" datetime="">June 3, 2020</time>
       </header>
     </article>
@@ -522,7 +569,7 @@ To refer to the original site, please [click here] (<a href="https://xinii.githu
       <header>
         <section>
           
-  <a href="/blog/environment/install-opencv-on-jetson-nano/" class="image featured">
+  <a href="/blog/opencv/install-opencv-on-jetson-nano/" class="image featured">
     
       <img src="https://xinii.github.io/img/blog/opencv-logo.png" alt="">
     
@@ -530,7 +577,7 @@ To refer to the original site, please [click here] (<a href="https://xinii.githu
 
 
         </section>
-        <h2><a href="/blog/environment/install-opencv-on-jetson-nano/">How to install OpenCV on Jetson Nano?</a></h2>
+        <h2><a href="/blog/opencv/install-opencv-on-jetson-nano/">How to install OpenCV on Jetson Nano?</a></h2>
         <time class="published" datetime="">July 12, 2019</time>
       </header>
     </article>
@@ -539,7 +586,7 @@ To refer to the original site, please [click here] (<a href="https://xinii.githu
       <header>
         <section>
           
-  <a href="/blog/environment/install-gnutls-and-compile-emacs-from-source/" class="image featured">
+  <a href="/blog/emacs/install-gnutls-and-compile-emacs-from-source/" class="image featured">
     
       <img src="https://xinii.github.io/img/blog/emacs-logo.png" alt="">
     
@@ -547,7 +594,7 @@ To refer to the original site, please [click here] (<a href="https://xinii.githu
 
 
         </section>
-        <h2><a href="/blog/environment/install-gnutls-and-compile-emacs-from-source/">Install Gnutls and compile Emacs from source</a></h2>
+        <h2><a href="/blog/emacs/install-gnutls-and-compile-emacs-from-source/">Install Gnutls and compile Emacs from source</a></h2>
         <time class="published" datetime="">May 4, 2019</time>
       </header>
     </article>
@@ -556,7 +603,7 @@ To refer to the original site, please [click here] (<a href="https://xinii.githu
       <header>
         <section>
           
-  <a href="/blog/environment/my-shell-migration-record/" class="image featured">
+  <a href="/blog/shell/my-shell-migration-record/" class="image featured">
     
       <img src="https://xinii.github.io/img/blog/fish-logo.png" alt="">
     
@@ -564,7 +611,7 @@ To refer to the original site, please [click here] (<a href="https://xinii.githu
 
 
         </section>
-        <h2><a href="/blog/environment/my-shell-migration-record/">My shell migration record</a></h2>
+        <h2><a href="/blog/shell/my-shell-migration-record/">My shell migration record</a></h2>
         <time class="published" datetime="">May 3, 2019</time>
       </header>
     </article>
@@ -573,7 +620,7 @@ To refer to the original site, please [click here] (<a href="https://xinii.githu
       <header>
         <section>
           
-  <a href="/blog/installation/install-linux-mint-from-the-usb-device/" class="image featured">
+  <a href="/blog/linux/install-linux-mint-from-the-usb-device/" class="image featured">
     
       <img src="https://xinii.github.io/img/blog/linux-mint-logo.png" alt="">
     
@@ -581,7 +628,7 @@ To refer to the original site, please [click here] (<a href="https://xinii.githu
 
 
         </section>
-        <h2><a href="/blog/installation/install-linux-mint-from-the-usb-device/">使用usb设备安装linux mint</a></h2>
+        <h2><a href="/blog/linux/install-linux-mint-from-the-usb-device/">Install Linux Mint from USB device</a></h2>
         <time class="published" datetime="">April 23, 2019</time>
       </header>
     </article>
@@ -620,12 +667,7 @@ To refer to the original site, please [click here] (<a href="https://xinii.githu
       
       <li>
         
-        <a href="/categories/environment/">environment<span class="count">5</span></a>
-        
-        
-      <li>
-        
-        <a href="/categories/installation/">installation<span class="count">2</span></a>
+        <a href="/categories/linux/">linux<span class="count">2</span></a>
         
         
       <li>
@@ -640,32 +682,12 @@ To refer to the original site, please [click here] (<a href="https://xinii.githu
         
       <li>
         
-        <a href="/categories/configuration/">configuration<span class="count">1</span></a>
-        
-        
-      <li>
-        
         <a href="/categories/emacs/">emacs<span class="count">1</span></a>
         
         
       <li>
         
-        <a href="/categories/jekyll/">jekyll<span class="count">1</span></a>
-        
-        
-      <li>
-        
-        <a href="/categories/linux/">linux<span class="count">1</span></a>
-        
-        
-      <li>
-        
         <a href="/categories/opencv/">opencv<span class="count">1</span></a>
-        
-        
-      <li>
-        
-        <a href="/categories/repository/">repository<span class="count">1</span></a>
         
         
       <li>

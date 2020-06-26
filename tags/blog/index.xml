@@ -17,8 +17,7 @@
       <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/</guid>
-      <description>The logo of Jekyll1Table of Contents  Install Jekyll Publish blog to Github  Install Jekyll Jekyll is a static website generation framework written in Ruby language. The following is the official website introduction.
- Jekyll is a static site generator. You give it text written in your favorite markup language and it uses layouts to create a static website. You can tweak how you want the site URLs to look, what data gets displayed on the site, and more.</description>
+      <description>Install Jekyll   Jekyll1 is a static website generation framework written in Ruby language. The following is the official website introduction.   Jekyll is a static site generator. You give it text written in your favorite markup language and it uses layouts to create a static website. You can tweak how you want the site URLs to look, what data gets displayed on the site, and more. –Jekyll2   When installing Jekyll, you first need a Ruby package management environment.</description>
     </item>
     
   </channel>

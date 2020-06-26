@@ -12,24 +12,6 @@
     
     
     <item>
-      <title>configuration</title>
-      <link>https://xinii.github.io/categories/configuration/</link>
-      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/categories/configuration/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>installation</title>
-      <link>https://xinii.github.io/categories/installation/</link>
-      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/categories/installation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>windows</title>
       <link>https://xinii.github.io/categories/windows/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
@@ -39,20 +21,11 @@
     </item>
     
     <item>
-      <title>environment</title>
-      <link>https://xinii.github.io/categories/environment/</link>
+      <title>linux</title>
+      <link>https://xinii.github.io/categories/linux/</link>
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/categories/environment/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>repository</title>
-      <link>https://xinii.github.io/categories/repository/</link>
-      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/categories/repository/</guid>
+      <guid>https://xinii.github.io/categories/linux/</guid>
       <description></description>
     </item>
     
@@ -93,29 +66,11 @@
     </item>
     
     <item>
-      <title>linux</title>
-      <link>https://xinii.github.io/categories/linux/</link>
-      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/categories/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>cms</title>
       <link>https://xinii.github.io/categories/cms/</link>
       <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/categories/cms/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>jekyll</title>
-      <link>https://xinii.github.io/categories/jekyll/</link>
-      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/categories/jekyll/</guid>
       <description></description>
     </item>
     

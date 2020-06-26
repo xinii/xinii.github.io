@@ -13,11 +13,11 @@
     
     <item>
       <title>重装 Windows 10 后的一些工作</title>
-      <link>https://xinii.github.io/zh-cn/blog/installation/some-installations-for-windows-10/</link>
+      <link>https://xinii.github.io/zh-cn/blog/windows/some-installations-for-windows-10/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/zh-cn/blog/installation/some-installations-for-windows-10/</guid>
-      <description>激活 Windows 10 slmgr -ipk {your product key} slmgr -skms {kms server address of your company} slmgr -ato 安装一些有用的工具  Msys2 AutoHotKey Ricty  配置msys2 pacman -S git fish tmux emacs gcc python cd ~ git clone https://github.com/xinii/xinconfig .xinconfig cd .xinconfig ./setenv fish exec fish set_conf tmux set_el auto set_el cn change_emacs xin emacs ssh-keygen -A emacs /etc/ssh/sshd_config #Port **** #PasswordAuthentication no cat {path to your pub key} &amp;gt; ~/.ssh/authorized_keys chmod 600 ~/.</description>
+      <guid>https://xinii.github.io/zh-cn/blog/windows/some-installations-for-windows-10/</guid>
+      <description>激活 Windows 10   打开 cmd ，输入下面语句。 slmgr -ipk {your product key} slmgr -skms {kms server address of your company} slmgr -ato  安装一些有用的工具     Msys2    AutoHotKey    Ricty   配置msys2  pacman -S git fish tmux emacs gcc python cd ~ git clone https://github.com/xinii/xinconfig .xinconfig cd .xinconfig ./setenv fish exec fish set_conf tmux set_el auto set_el cn change_emacs xin emacs ssh-keygen -A emacs /etc/ssh/sshd_config #Port **** #PasswordAuthentication no cat {path to your pub key} &amp;gt; ~/.</description>
     </item>
     
   </channel>

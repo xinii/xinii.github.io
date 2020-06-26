@@ -123,142 +123,22 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/zh-cn/tags/configuration/</loc>
+    <loc>https://xinii.github.io/zh-cn/tags/keyboard-layout/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/configuration/"
+                href="https://xinii.github.io/tags/keyboard-layout/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/configuration/"
+                href="https://xinii.github.io/ja/tags/keyboard-layout/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/configuration/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/zh-cn/categories/configuration/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/categories/configuration/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/categories/configuration/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/categories/configuration/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/zh-cn/tags/installation/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/tags/installation/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/tags/installation/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/installation/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/zh-cn/categories/installation/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/categories/installation/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/categories/installation/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/categories/installation/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/zh-cn/tags/keyboard/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/tags/keyboard/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/tags/keyboard/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/keyboard/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/zh-cn/tags/lan/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/tags/lan/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/tags/lan/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/lan/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/zh-cn/tags/layout/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/tags/layout/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/tags/layout/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/layout/"
+                href="https://xinii.github.io/zh-cn/tags/keyboard-layout/"
                 />
   </url>
   
@@ -363,26 +243,6 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/zh-cn/tags/windows/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/tags/windows/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/tags/windows/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/windows/"
-                />
-  </url>
-  
-  <url>
     <loc>https://xinii.github.io/zh-cn/categories/windows/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -403,42 +263,42 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/zh-cn/blog/configuration/several-windows-registry-configurations/</loc>
+    <loc>https://xinii.github.io/zh-cn/blog/windows/several-windows-registry-configurations/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/blog/configuration/several-windows-registry-configurations/"
+                href="https://xinii.github.io/blog/windows/several-windows-registry-configurations/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/blog/configuration/several-windows-registry-configurations/"
+                href="https://xinii.github.io/ja/blog/windows/several-windows-registry-configurations/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/blog/configuration/several-windows-registry-configurations/"
+                href="https://xinii.github.io/zh-cn/blog/windows/several-windows-registry-configurations/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/zh-cn/blog/installation/some-installations-for-windows-10/</loc>
+    <loc>https://xinii.github.io/zh-cn/blog/windows/some-installations-for-windows-10/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/blog/installation/some-installations-for-windows-10/"
+                href="https://xinii.github.io/blog/windows/some-installations-for-windows-10/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/blog/installation/some-installations-for-windows-10/"
+                href="https://xinii.github.io/ja/blog/windows/some-installations-for-windows-10/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/blog/installation/some-installations-for-windows-10/"
+                href="https://xinii.github.io/zh-cn/blog/windows/some-installations-for-windows-10/"
                 />
   </url>
   
@@ -483,6 +343,26 @@
   </url>
   
   <url>
+    <loc>https://xinii.github.io/zh-cn/tags/daemon/</loc>
+    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.github.io/tags/daemon/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.github.io/ja/tags/daemon/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xinii.github.io/zh-cn/tags/daemon/"
+                />
+  </url>
+  
+  <url>
     <loc>https://xinii.github.io/zh-cn/tags/emacs/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -503,62 +383,22 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/zh-cn/tags/environment/</loc>
+    <loc>https://xinii.github.io/zh-cn/tags/fish-shell/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/environment/"
+                href="https://xinii.github.io/tags/fish-shell/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/environment/"
+                href="https://xinii.github.io/ja/tags/fish-shell/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/environment/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/zh-cn/categories/environment/</loc>
-    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/categories/environment/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/categories/environment/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/categories/environment/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/zh-cn/tags/fish/</loc>
-    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/tags/fish/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/tags/fish/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/fish/"
+                href="https://xinii.github.io/zh-cn/tags/fish-shell/"
                 />
   </url>
   
@@ -583,102 +423,22 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/zh-cn/tags/linux/</loc>
+    <loc>https://xinii.github.io/zh-cn/categories/linux/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/linux/"
+                href="https://xinii.github.io/categories/linux/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/linux/"
+                href="https://xinii.github.io/ja/categories/linux/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/linux/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/zh-cn/tags/repository/</loc>
-    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/tags/repository/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/tags/repository/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/repository/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/zh-cn/categories/repository/</loc>
-    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/categories/repository/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/categories/repository/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/categories/repository/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/zh-cn/tags/shell/</loc>
-    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/tags/shell/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/tags/shell/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/shell/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/zh-cn/tags/ssh/</loc>
-    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/tags/ssh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/tags/ssh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/ssh/"
+                href="https://xinii.github.io/zh-cn/categories/linux/"
                 />
   </url>
   
@@ -703,26 +463,6 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/zh-cn/tags/sshd/</loc>
-    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/tags/sshd/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/tags/sshd/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/sshd/"
-                />
-  </url>
-  
-  <url>
     <loc>https://xinii.github.io/zh-cn/tags/termux/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -743,62 +483,42 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/zh-cn/tags/ubuntu/</loc>
+    <loc>https://xinii.github.io/zh-cn/blog/linux/add-apt-repository-for-fish-and-emacs/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/ubuntu/"
+                href="https://xinii.github.io/blog/linux/add-apt-repository-for-fish-and-emacs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/ubuntu/"
+                href="https://xinii.github.io/ja/blog/linux/add-apt-repository-for-fish-and-emacs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/ubuntu/"
+                href="https://xinii.github.io/zh-cn/blog/linux/add-apt-repository-for-fish-and-emacs/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/zh-cn/blog/environment/add-apt-repository-for-fish-and-emacs/</loc>
+    <loc>https://xinii.github.io/zh-cn/blog/ssh/several-ssh-configurations/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/blog/environment/add-apt-repository-for-fish-and-emacs/"
+                href="https://xinii.github.io/blog/ssh/several-ssh-configurations/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/blog/environment/add-apt-repository-for-fish-and-emacs/"
+                href="https://xinii.github.io/ja/blog/ssh/several-ssh-configurations/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/blog/environment/add-apt-repository-for-fish-and-emacs/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/zh-cn/blog/environment/several-ssh-configurations/</loc>
-    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/blog/environment/several-ssh-configurations/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/blog/environment/several-ssh-configurations/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/blog/environment/several-ssh-configurations/"
+                href="https://xinii.github.io/zh-cn/blog/ssh/several-ssh-configurations/"
                 />
   </url>
   
@@ -823,26 +543,6 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/zh-cn/tags/opencv/</loc>
-    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/tags/opencv/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/tags/opencv/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/opencv/"
-                />
-  </url>
-  
-  <url>
     <loc>https://xinii.github.io/zh-cn/categories/opencv/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -859,26 +559,6 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://xinii.github.io/zh-cn/categories/opencv/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/zh-cn/tags/pyenv/</loc>
-    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/tags/pyenv/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/tags/pyenv/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/pyenv/"
                 />
   </url>
   
@@ -903,22 +583,22 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/zh-cn/blog/environment/install-opencv-on-jetson-nano/</loc>
+    <loc>https://xinii.github.io/zh-cn/blog/opencv/install-opencv-on-jetson-nano/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/blog/environment/install-opencv-on-jetson-nano/"
+                href="https://xinii.github.io/blog/opencv/install-opencv-on-jetson-nano/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/blog/environment/install-opencv-on-jetson-nano/"
+                href="https://xinii.github.io/ja/blog/opencv/install-opencv-on-jetson-nano/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/blog/environment/install-opencv-on-jetson-nano/"
+                href="https://xinii.github.io/zh-cn/blog/opencv/install-opencv-on-jetson-nano/"
                 />
   </url>
   
@@ -983,82 +663,22 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/zh-cn/tags/make/</loc>
+    <loc>https://xinii.github.io/zh-cn/blog/emacs/install-gnutls-and-compile-emacs-from-source/</loc>
     <lastmod>2019-05-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/make/"
+                href="https://xinii.github.io/blog/emacs/install-gnutls-and-compile-emacs-from-source/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/make/"
+                href="https://xinii.github.io/ja/blog/emacs/install-gnutls-and-compile-emacs-from-source/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/make/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/zh-cn/tags/opensuse/</loc>
-    <lastmod>2019-05-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/tags/opensuse/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/tags/opensuse/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/opensuse/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/zh-cn/tags/zypper/</loc>
-    <lastmod>2019-05-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/tags/zypper/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/tags/zypper/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/zypper/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/zh-cn/blog/environment/install-gnutls-and-compile-emacs-from-source/</loc>
-    <lastmod>2019-05-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/blog/environment/install-gnutls-and-compile-emacs-from-source/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/blog/environment/install-gnutls-and-compile-emacs-from-source/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/blog/environment/install-gnutls-and-compile-emacs-from-source/"
+                href="https://xinii.github.io/zh-cn/blog/emacs/install-gnutls-and-compile-emacs-from-source/"
                 />
   </url>
   
@@ -1079,26 +699,6 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://xinii.github.io/zh-cn/tags/bash/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/zh-cn/tags/pythonpath/</loc>
-    <lastmod>2019-05-03T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/tags/pythonpath/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/tags/pythonpath/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/pythonpath/"
                 />
   </url>
   
@@ -1163,82 +763,62 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/zh-cn/blog/environment/my-shell-migration-record/</loc>
+    <loc>https://xinii.github.io/zh-cn/blog/shell/my-shell-migration-record/</loc>
     <lastmod>2019-05-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/blog/environment/my-shell-migration-record/"
+                href="https://xinii.github.io/blog/shell/my-shell-migration-record/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/blog/environment/my-shell-migration-record/"
+                href="https://xinii.github.io/ja/blog/shell/my-shell-migration-record/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/blog/environment/my-shell-migration-record/"
+                href="https://xinii.github.io/zh-cn/blog/shell/my-shell-migration-record/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/zh-cn/tags/create/</loc>
+    <loc>https://xinii.github.io/zh-cn/tags/linux-mint/</loc>
     <lastmod>2019-04-23T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/create/"
+                href="https://xinii.github.io/tags/linux-mint/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/create/"
+                href="https://xinii.github.io/ja/tags/linux-mint/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/create/"
+                href="https://xinii.github.io/zh-cn/tags/linux-mint/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/zh-cn/categories/linux/</loc>
+    <loc>https://xinii.github.io/zh-cn/tags/os/</loc>
     <lastmod>2019-04-23T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/categories/linux/"
+                href="https://xinii.github.io/tags/os/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/categories/linux/"
+                href="https://xinii.github.io/ja/tags/os/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/categories/linux/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/zh-cn/tags/mint/</loc>
-    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/tags/mint/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/tags/mint/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/mint/"
+                href="https://xinii.github.io/zh-cn/tags/os/"
                 />
   </url>
   
@@ -1263,26 +843,6 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/zh-cn/tags/stick/</loc>
-    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/tags/stick/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/tags/stick/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/stick/"
-                />
-  </url>
-  
-  <url>
     <loc>https://xinii.github.io/zh-cn/tags/usb/</loc>
     <lastmod>2019-04-23T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -1303,22 +863,22 @@
   </url>
   
   <url>
-    <loc>https://xinii.github.io/zh-cn/blog/installation/install-linux-mint-from-the-usb-device/</loc>
+    <loc>https://xinii.github.io/zh-cn/blog/linux/install-linux-mint-from-the-usb-device/</loc>
     <lastmod>2019-04-23T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/blog/installation/install-linux-mint-from-the-usb-device/"
+                href="https://xinii.github.io/blog/linux/install-linux-mint-from-the-usb-device/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/blog/installation/install-linux-mint-from-the-usb-device/"
+                href="https://xinii.github.io/ja/blog/linux/install-linux-mint-from-the-usb-device/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/blog/installation/install-linux-mint-from-the-usb-device/"
+                href="https://xinii.github.io/zh-cn/blog/linux/install-linux-mint-from-the-usb-device/"
                 />
   </url>
   
@@ -1339,26 +899,6 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://xinii.github.io/zh-cn/tags/blog/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/zh-cn/tags/cms/</loc>
-    <lastmod>2019-04-02T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/tags/cms/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/tags/cms/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/cms/"
                 />
   </url>
   
@@ -1419,86 +959,6 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://xinii.github.io/zh-cn/tags/jekyll/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/zh-cn/categories/jekyll/</loc>
-    <lastmod>2019-04-02T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/categories/jekyll/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/categories/jekyll/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/categories/jekyll/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/zh-cn/tags/ruby/</loc>
-    <lastmod>2019-04-02T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/tags/ruby/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/tags/ruby/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/ruby/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/zh-cn/tags/site/</loc>
-    <lastmod>2019-04-02T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/tags/site/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/tags/site/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/site/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/zh-cn/tags/web/</loc>
-    <lastmod>2019-04-02T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/tags/web/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/tags/web/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/web/"
                 />
   </url>
   

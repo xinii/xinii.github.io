@@ -17,10 +17,7 @@
       <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/ja/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/</guid>
-      <description>JekyllのLogo1目次  Jekyllをインストール Githubに公開  Jekyllをインストール JekyllがRubyで書いた静的なサイトジェネレーター。 以下は公式サイトの紹介文。
- Jekyll is a static site generator. You give it text written in your favorite markup language and it uses layouts to create a static website. You can tweak how you want the site URLs to look, what data gets displayed on the site, and more. &amp;ndash;Jekyll2 Jekyllをインストールする際に， まずはRubyのパッケージ管理ツールを入れておくとあとは便利。 よく使われているRubyのパッケージ管理ツールがgemで， Ubuntuなどのシステムにおいて， 以下のコマンドでgemが同時にインストールされる。
-apt install ruby-dev gemをインストールして，PATHの環境変数にちゃんとgemが入っていれば， gemを使っていろんなRubyのパッケージを入れることが可能になる。 もしrbenvなどのバーチャル環境管理ツールを使っていれば， 実行可能なgemがあればあとは同じ。 以下のコマンドでJekyllを入れる。簡単だね。
-gem install jekyll Githubに公開 Jekyllをインストールしたら， とりあえずJekyllで作った何かしらをGithubに公開して見てみたいだね。 気持ちがわかる。</description>
+      <description>Jekyll1をインストール   JekyllがRubyで書いた静的なサイトジェネレーター。 以下は公式サイトの紹介文。   Jekyll is a static site generator. You give it text written in your favorite markup language and it uses layouts to create a static website. You can tweak how you want the site URLs to look, what data gets displayed on the site, and more. –Jekyll2   Jekyllをインストールする際に， まずはRubyのパッケージ管理ツールを入れておくとあとは便利。 よく使われているRubyのパッケージ管理ツールが gem で， Ubuntuなどのシステムにおいて， 以下のコマンドで gem が同時にインストールされる。 apt install ruby-dev   gem をインストールして， PATH の環境変数にちゃんと gem が入っていれば， gem を使っていろんなRubyのパッケージを入れることが可能になる。 もし rbenv などのバーチャル環境管理ツールを使っていれば， 実行可能な gem があればあとは同じ。 以下のコマンドでJekyllを入れる。簡単だね。 gem install jekyll  Githubに公開   Jekyllをインストールしたら， とりあえずJekyllで作った何かしらをGithubに公開して見てみたいだね。 気持ちがわかる。  そうしたら，記事などを色々書き始める前に，空のブログを一旦Githubに公開しよう！ まずローカルでブログを管理したい場所に以下のコマンドを叩く。 jekyll new folder-name-for-your-blog   そうすると，カレントフォルダーに folder-name-for-your-blog という名前のサブフォルダーが出来てしまう。  そして，Githubのリポジトリのページにおいて， your-user-name-of-github.</description>
     </item>
     
   </channel>

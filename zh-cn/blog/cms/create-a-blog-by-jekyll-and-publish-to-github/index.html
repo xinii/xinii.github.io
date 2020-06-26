@@ -22,12 +22,12 @@
 <meta itemprop="description" content="希望拥有一个自己的博客但不知如何创建？试试 Github 原生支持的 Jekyll 吧！">
 <meta itemprop="datePublished" content="2019-04-02T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-04-02T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="145">
+<meta itemprop="wordCount" content="143">
 <meta itemprop="image" content="https://xinii.github.io/img/blog/jekyll-logo.png">
 
 
 
-<meta itemprop="keywords" content="github,web,site,blog,ruby,cms,jekyll," /><meta property="og:title" content="通过 Jekyll 创建博客并发布到 Github" />
+<meta itemprop="keywords" content="jekyll,github,blog," /><meta property="og:title" content="通过 Jekyll 创建博客并发布到 Github" />
 <meta property="og:description" content="希望拥有一个自己的博客但不知如何创建？试试 Github 原生支持的 Jekyll 吧！" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://xinii.github.io/zh-cn/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/" />
@@ -233,8 +233,8 @@
 
       <main id="site-main">
         
-  <article class="post">
-    <header>
+<article class="post">
+  <header>
   <div class="title">
     
       <h2><a href="/zh-cn/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/">通过 Jekyll 创建博客并发布到 Github</a></h2>
@@ -254,8 +254,8 @@
   </div>
 </header>
 
-    <section id="socnet-share">
-      
+  <section id="socnet-share">
+    
 
 
 
@@ -298,8 +298,8 @@
   
 
 
-    </section>
-    
+  </section>
+  
   <a href="/zh-cn/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/" class="image featured">
     
       <img src="https://xinii.github.io/img/blog/jekyll-logo.png" alt="">
@@ -307,73 +307,123 @@
   </a>
 
 
-    <div class="content">
-      <p><!-- raw HTML omitted -->Jekyll 的 Logo<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><!-- raw HTML omitted --></p>
-<h2 id="目录">目录</h2>
+  <div class="content">
+    <h2>目录</h2>
+    <nav id="TableOfContents">
 <ul>
-<li><a href="#%E5%AE%89%E8%A3%85-jekyll">安装 Jekyll</a></li>
-<li><a href="#%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2%E5%88%B0-github">发布博客到 Github</a></li>
+<li><a href="#安装-jekyll">安装 Jekyll<sup class="footnote-reference">1</sup></a>
+</li>
+<li><a href="#发布博客到-github">发布博客到 Github</a>
+</li>
 </ul>
-<h2 id="安装-jekyll">安装 Jekyll</h2>
-<p>Jekyll 是一个通过 Ruby 语言写的静态网站生成框架，下面是官网介绍。</p>
+</nav>
+    <hr>
+    
+<h2 id="安装-jekyll">
+安装 Jekyll<sup class="footnote-reference"><a id="footnote-reference-1" href="#footnote-1">1</a></sup>
+</h2>
+<p>
+Jekyll 是一个通过 Ruby 语言写的静态网站生成框架，下面是官网介绍。
+</p>
 <blockquote>
-<p>Jekyll is a static site generator.
-You give it text written in your favorite markup language and it uses layouts to create a static website.
-You can tweak how you want the site URLs to look, what data gets displayed on the site, and more.
-&ndash;<!-- raw HTML omitted -->Jekyll<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup><!-- raw HTML omitted --></p>
+<p>
+Jekyll is a static site generator. You give it text written in your
+  favorite markup language and it uses layouts to create a static
+  website. You can tweak how you want the site URLs to look, what data
+  gets displayed on the site, and more. –Jekyll<sup class="footnote-reference"><a id="footnote-reference-2" href="#footnote-2">2</a></sup>
+</p>
 </blockquote>
-<p>安装 Jekyll 时，首先需要一个 Ruby 的包管理环境，
-Ruby 编程环境的常用包管理器为 <code>gem</code>，
-例如 Ubuntu 中执行下面的语句则会同时安装 <code>gem</code>。</p>
-<pre><code>apt install ruby-dev
-</code></pre><p>安装好 <code>gem</code> 之后，确保它的执行路径在我们的 <code>PATH</code> 环境变量中。
-如果不上采用上述方式，而是使用了 <code>rbenv</code> 等虚拟环境管理工具的话，
-只要调用虚拟环境下配置好的 <code>gem</code> 就可以了。
-随后便可以通过执行下面的语句来安装Jekyll，是不是很简单呢？</p>
-<pre><code>gem install jekyll
-</code></pre><h2 id="发布博客到-github">发布博客到 Github</h2>
-<p>安装好 Jekyll 之后，
-一定是希望先把随便什么内容发布到 Github 上看看效果的哈，
-特别能理解这种心情。</p>
-<p>那么接下来，在实际写博客之前，
-我们首先用安装好的 Jekyll 生成一个默认站点并将其发布到 Github。
-在希望在本地管理博客的路径下执行下面的语句。</p>
-<pre><code>jekyll new folder-name-for-your-blog
-</code></pre><p>随后在当前路径下会生成一个叫做 <code>folder-name-for-your-blog</code> 的文件夹，
-这里面便是 Jekyll 新建的博客源码。</p>
-<p>然后在 Github 上创建一个叫做 <code>your-user-name-of-github.github.io</code> 的仓库。
-创建好新的仓库后，Github 会提示如何通过 <code>git</code> 来 <code>push</code> 本地内容到该仓库。
-按着所提示的向导将刚创建好的 <code>folder-name-for-your-blog</code> 的内容 <code>push</code> 到这个仓库。</p>
-<p>随后等几分钟通过浏览器打开 <code>your-user-name-of-github.github.io</code>，
-不出意外的话即可看到 Jekyll 的欢迎页面。</p>
-<p><del>本站也是通过以上方式创建。</del></p>
-<p>（2020年6月14日追记）</p>
-<p><a href="https://xinii.github.io">本站</a>现已改用<code>hugo</code>静态网站生成框架创建，
-如需参考原来的站点，请<a href="https://xinii.github.io/jekyll-blog">点击这里</a>访问。</p>
-<p>欢迎联络并留言。</p>
-<section class="footnotes" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn:1" role="doc-endnote">
-<p><a href="https://raw.githubusercontent.com/jekyll/brand/master/jekyll-logo-black-red-transparent.png">Jekyll 的 Logo</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:2" role="doc-endnote">
-<p><a href="https://jekyllrb.com/docs/">jekyllrb.com</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-</ol>
-</section>
+<p>
+安装 Jekyll 时，首先需要一个 Ruby 的包管理环境， Ruby
+编程环境的常用包管理器为 <code>gem</code> ， 例如 Ubuntu
+中执行下面的语句则会同时安装 <code>gem</code> 。
+</p>
+<div class="src src-text">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">  apt install ruby-dev</code></pre></div>
+</div>
+<p>
+安装好 <code class="verbatim">gem</code> 之后，确保它的执行路径在我们的 <code class="verbatim">PATH</code> 环境变量中。
+如果不上采用上述方式，而是使用了 <code class="verbatim">rbenv</code> 等虚拟环境管理工具的话，
+只要调用虚拟环境下配置好的 <code class="verbatim">gem</code> 就可以了。
+随后便可以通过执行下面的语句来安装Jekyll，是不是很简单呢？
+</p>
+<div class="src src-text">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">  gem install jekyll</code></pre></div>
+</div>
+<h2 id="发布博客到-github">
+发布博客到 Github
+</h2>
+<p>
+安装好 Jekyll 之后， 一定是希望先把随便什么内容发布到 Github
+上看看效果的哈， 特别能理解这种心情。
+</p>
+<p>
+那么接下来，在实际写博客之前， 我们首先用安装好的 Jekyll
+生成一个默认站点并将其发布到 Github。
+在希望在本地管理博客的路径下执行下面的语句。
+</p>
+<div class="src src-text">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">  jekyll new folder-name-for-your-blog</code></pre></div>
+</div>
+<p>
+随后在当前路径下会生成一个叫做 <code class="verbatim">folder-name-for-your-blog</code> 的文件夹，
+这里面便是 Jekyll 新建的博客源码。
+</p>
+<p>
+然后在 Github 上创建一个叫做 <code class="verbatim">your-user-name-of-github.github.io</code>
+的仓库。 创建好新的仓库后，Github 会提示如何通过 <code class="verbatim">git</code> 来 <code class="verbatim">push</code>
+本地内容到该仓库。 按着所提示的向导将刚创建好的
+<code class="verbatim">folder-name-for-your-blog</code> 的内容 <code class="verbatim">push</code> 到这个仓库。
+</p>
+<p>
+随后等几分钟通过浏览器打开 <code class="verbatim">your-user-name-of-github.github.io</code> ，
+不出意外的话即可看到 Jekyll 的欢迎页面。
+</p>
+<p>
+<del>本站也是通过以上方式创建。</del>
+</p>
+<p>
+（2020年6月14日追记）
+</p>
+<p>
+<a href="https://xinii.github.io">本站</a>现已改用 <code>hugo</code> 静态网站生成框架创建，
+如需参考原来的站点，请<a href="https://xinii.github.io/jekyll-blog">点击这里</a>访问。
+</p>
+<p>
+欢迎联络并留言。
+</p>
+<div class="footnotes">
+<hr class="footnotes-separatator">
+<div class="footnote-definitions">
+<div class="footnote-definition">
+<sup id="footnote-1"><a href="#footnote-reference-1">1</a></sup>
+<div class="footnote-body">
+<p>
+<a href="https://raw.githubusercontent.com/jekyll/brand/master/jekyll-logo-black-red-transparent.png">Jekyll 的 Logo</a>
+</p>
+</div>
+</div>
+<div class="footnote-definition">
+<sup id="footnote-2"><a href="#footnote-reference-2">2</a></sup>
+<div class="footnote-body">
+<p>
+<a href="https://jekyllrb.com/docs/">jekyllrb.com</a>
+</p>
+</div>
+</div>
+</div>
+</div>
 
-    </div>
-    <footer>
-      <ul class="stats">
+  </div>
+  <hr>
+  <footer>
+    <ul class="stats">
   <li class="categories">
     <ul>
     
       
         
-          <li><a class="article-terms-link" href="/zh-cn/categories/cms/">cms</a></li>
-        
-          <li><a class="article-terms-link" href="/zh-cn/categories/jekyll/">jekyll</a></li>
+          <li><a class="article-terms-link" href="/zh-cn/categories/cms/"><div>cms</div></a></li>
         
       
     
@@ -384,19 +434,11 @@ Ruby 编程环境的常用包管理器为 <code>gem</code>，
     
       
         
-          <li><a class="article-terms-link" href="/zh-cn/tags/github/">github</a></li>
+          <li><a class="article-terms-link" href="/zh-cn/tags/jekyll/"><div>jekyll</div></a></li>
         
-          <li><a class="article-terms-link" href="/zh-cn/tags/web/">web</a></li>
+          <li><a class="article-terms-link" href="/zh-cn/tags/github/"><div>github</div></a></li>
         
-          <li><a class="article-terms-link" href="/zh-cn/tags/site/">site</a></li>
-        
-          <li><a class="article-terms-link" href="/zh-cn/tags/blog/">blog</a></li>
-        
-          <li><a class="article-terms-link" href="/zh-cn/tags/ruby/">ruby</a></li>
-        
-          <li><a class="article-terms-link" href="/zh-cn/tags/cms/">cms</a></li>
-        
-          <li><a class="article-terms-link" href="/zh-cn/tags/jekyll/">jekyll</a></li>
+          <li><a class="article-terms-link" href="/zh-cn/tags/blog/"><div>blog</div></a></li>
         
       
     
@@ -404,9 +446,9 @@ Ruby 编程环境的常用包管理器为 <code>gem</code>，
   </li>
 </ul>
 
-    </footer>
-  </article>
-  
+  </footer>
+</article>
+
   <article class="post">
     <div id="disqus_thread"></div>
 <script type="application/javascript">
@@ -433,10 +475,10 @@ Ruby 编程环境的常用包管理器为 <code>gem</code>，
 
 
 
-  <div class="pagination">
+<div class="pagination">
   
   
-    <a href="/zh-cn/blog/installation/install-linux-mint-from-the-usb-device/" class="button"><div class="next">下一篇</div></a>
+    <a href="/zh-cn/blog/linux/install-linux-mint-from-the-usb-device/" class="button"><div class="next">下一篇</div></a>
   
 </div>
 
@@ -453,7 +495,7 @@ Ruby 编程环境的常用包管理器为 <code>gem</code>，
       <header>
         <section>
           
-  <a href="/zh-cn/blog/configuration/several-windows-registry-configurations/" class="image featured">
+  <a href="/zh-cn/blog/windows/several-windows-registry-configurations/" class="image featured">
     
       <img src="https://xinii.github.io/img/blog/registry-editor-icon.png" alt="">
     
@@ -461,7 +503,7 @@ Ruby 编程环境的常用包管理器为 <code>gem</code>，
 
 
         </section>
-        <h2><a href="/zh-cn/blog/configuration/several-windows-registry-configurations/">一些可帮助你更有效地工作的 Windows 注册表设置</a></h2>
+        <h2><a href="/zh-cn/blog/windows/several-windows-registry-configurations/">一些可帮助你更有效地工作的 Windows 注册表设置</a></h2>
         <time class="published" datetime="">June 4, 2020</time>
       </header>
     </article>
@@ -470,7 +512,7 @@ Ruby 编程环境的常用包管理器为 <code>gem</code>，
       <header>
         <section>
           
-  <a href="/zh-cn/blog/installation/some-installations-for-windows-10/" class="image featured">
+  <a href="/zh-cn/blog/windows/some-installations-for-windows-10/" class="image featured">
     
       <img src="https://xinii.github.io/img/blog/windows-logo.png" alt="">
     
@@ -478,7 +520,7 @@ Ruby 编程环境的常用包管理器为 <code>gem</code>，
 
 
         </section>
-        <h2><a href="/zh-cn/blog/installation/some-installations-for-windows-10/">重装 Windows 10 后的一些工作</a></h2>
+        <h2><a href="/zh-cn/blog/windows/some-installations-for-windows-10/">重装 Windows 10 后的一些工作</a></h2>
         <time class="published" datetime="">June 4, 2020</time>
       </header>
     </article>
@@ -487,7 +529,7 @@ Ruby 编程环境的常用包管理器为 <code>gem</code>，
       <header>
         <section>
           
-  <a href="/zh-cn/blog/environment/add-apt-repository-for-fish-and-emacs/" class="image featured">
+  <a href="/zh-cn/blog/linux/add-apt-repository-for-fish-and-emacs/" class="image featured">
     
       <img src="https://xinii.github.io/img/blog/fish-emacs-logo.png" alt="">
     
@@ -495,7 +537,7 @@ Ruby 编程环境的常用包管理器为 <code>gem</code>，
 
 
         </section>
-        <h2><a href="/zh-cn/blog/environment/add-apt-repository-for-fish-and-emacs/">为 Fish 和 Emacs 添加 apt 仓库</a></h2>
+        <h2><a href="/zh-cn/blog/linux/add-apt-repository-for-fish-and-emacs/">为 Fish 和 Emacs 添加 apt 仓库</a></h2>
         <time class="published" datetime="">June 3, 2020</time>
       </header>
     </article>
@@ -504,7 +546,7 @@ Ruby 编程环境的常用包管理器为 <code>gem</code>，
       <header>
         <section>
           
-  <a href="/zh-cn/blog/environment/several-ssh-configurations/" class="image featured">
+  <a href="/zh-cn/blog/ssh/several-ssh-configurations/" class="image featured">
     
       <img src="https://xinii.github.io/img/blog/ssh-image.png" alt="">
     
@@ -512,7 +554,7 @@ Ruby 编程环境的常用包管理器为 <code>gem</code>，
 
 
         </section>
-        <h2><a href="/zh-cn/blog/environment/several-ssh-configurations/">几个有关 SSH 的配置</a></h2>
+        <h2><a href="/zh-cn/blog/ssh/several-ssh-configurations/">几个有关 SSH 的配置</a></h2>
         <time class="published" datetime="">June 3, 2020</time>
       </header>
     </article>
@@ -521,7 +563,7 @@ Ruby 编程环境的常用包管理器为 <code>gem</code>，
       <header>
         <section>
           
-  <a href="/zh-cn/blog/environment/install-opencv-on-jetson-nano/" class="image featured">
+  <a href="/zh-cn/blog/opencv/install-opencv-on-jetson-nano/" class="image featured">
     
       <img src="https://xinii.github.io/img/blog/opencv-logo.png" alt="">
     
@@ -529,7 +571,7 @@ Ruby 编程环境的常用包管理器为 <code>gem</code>，
 
 
         </section>
-        <h2><a href="/zh-cn/blog/environment/install-opencv-on-jetson-nano/">在 Jetson Nano 上安装 OpenCV</a></h2>
+        <h2><a href="/zh-cn/blog/opencv/install-opencv-on-jetson-nano/">在 Jetson Nano 上安装 OpenCV</a></h2>
         <time class="published" datetime="">July 12, 2019</time>
       </header>
     </article>
@@ -538,7 +580,7 @@ Ruby 编程环境的常用包管理器为 <code>gem</code>，
       <header>
         <section>
           
-  <a href="/zh-cn/blog/environment/install-gnutls-and-compile-emacs-from-source/" class="image featured">
+  <a href="/zh-cn/blog/emacs/install-gnutls-and-compile-emacs-from-source/" class="image featured">
     
       <img src="https://xinii.github.io/img/blog/emacs-logo.png" alt="">
     
@@ -546,7 +588,7 @@ Ruby 编程环境的常用包管理器为 <code>gem</code>，
 
 
         </section>
-        <h2><a href="/zh-cn/blog/environment/install-gnutls-and-compile-emacs-from-source/">安装 Gnutls 并从源码编译 Emacs</a></h2>
+        <h2><a href="/zh-cn/blog/emacs/install-gnutls-and-compile-emacs-from-source/">安装 Gnutls 并从源码编译 Emacs</a></h2>
         <time class="published" datetime="">May 4, 2019</time>
       </header>
     </article>
@@ -555,7 +597,7 @@ Ruby 编程环境的常用包管理器为 <code>gem</code>，
       <header>
         <section>
           
-  <a href="/zh-cn/blog/environment/my-shell-migration-record/" class="image featured">
+  <a href="/zh-cn/blog/shell/my-shell-migration-record/" class="image featured">
     
       <img src="https://xinii.github.io/img/blog/fish-logo.png" alt="">
     
@@ -563,7 +605,7 @@ Ruby 编程环境的常用包管理器为 <code>gem</code>，
 
 
         </section>
-        <h2><a href="/zh-cn/blog/environment/my-shell-migration-record/">我的 Shell 迁移记录</a></h2>
+        <h2><a href="/zh-cn/blog/shell/my-shell-migration-record/">我的 Shell 迁移记录</a></h2>
         <time class="published" datetime="">May 3, 2019</time>
       </header>
     </article>
@@ -572,7 +614,7 @@ Ruby 编程环境的常用包管理器为 <code>gem</code>，
       <header>
         <section>
           
-  <a href="/zh-cn/blog/installation/install-linux-mint-from-the-usb-device/" class="image featured">
+  <a href="/zh-cn/blog/linux/install-linux-mint-from-the-usb-device/" class="image featured">
     
       <img src="https://xinii.github.io/img/blog/linux-mint-logo.png" alt="">
     
@@ -580,7 +622,7 @@ Ruby 编程环境的常用包管理器为 <code>gem</code>，
 
 
         </section>
-        <h2><a href="/zh-cn/blog/installation/install-linux-mint-from-the-usb-device/">使用 USB 设备安装 Linux Mint</a></h2>
+        <h2><a href="/zh-cn/blog/linux/install-linux-mint-from-the-usb-device/">使用 USB 设备安装 Linux Mint</a></h2>
         <time class="published" datetime="">April 23, 2019</time>
       </header>
     </article>
@@ -619,12 +661,7 @@ Ruby 编程环境的常用包管理器为 <code>gem</code>，
       
       <li>
         
-        <a href="/zh-cn/categories/environment/">environment<span class="count">5</span></a>
-        
-        
-      <li>
-        
-        <a href="/zh-cn/categories/installation/">installation<span class="count">2</span></a>
+        <a href="/zh-cn/categories/linux/">linux<span class="count">2</span></a>
         
         
       <li>
@@ -639,32 +676,12 @@ Ruby 编程环境的常用包管理器为 <code>gem</code>，
         
       <li>
         
-        <a href="/zh-cn/categories/configuration/">configuration<span class="count">1</span></a>
-        
-        
-      <li>
-        
         <a href="/zh-cn/categories/emacs/">emacs<span class="count">1</span></a>
         
         
       <li>
         
-        <a href="/zh-cn/categories/jekyll/">jekyll<span class="count">1</span></a>
-        
-        
-      <li>
-        
-        <a href="/zh-cn/categories/linux/">linux<span class="count">1</span></a>
-        
-        
-      <li>
-        
         <a href="/zh-cn/categories/opencv/">opencv<span class="count">1</span></a>
-        
-        
-      <li>
-        
-        <a href="/zh-cn/categories/repository/">repository<span class="count">1</span></a>
         
         
       <li>

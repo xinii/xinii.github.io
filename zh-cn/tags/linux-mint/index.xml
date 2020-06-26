@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>linux mint on xin blog</title>
+    <title>linux-mint on xin iDEA iNNATA</title>
     <link>https://xinii.github.io/zh-cn/tags/linux-mint/</link>
-    <description>Recent content in linux mint on xin blog</description>
+    <description>Recent content in linux-mint on xin iDEA iNNATA</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Tue, 23 Apr 2019 00:00:00 +0000</lastBuildDate>
@@ -12,15 +12,12 @@
     
     
     <item>
-      <title>使用usb设备安装linux mint</title>
-      <link>https://xinii.github.io/zh-cn/blog/env/install-linux-mint-from-the-usb-device/</link>
+      <title>使用 USB 设备安装 Linux Mint</title>
+      <link>https://xinii.github.io/zh-cn/blog/linux/install-linux-mint-from-the-usb-device/</link>
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/zh-cn/blog/env/install-linux-mint-from-the-usb-device/</guid>
-      <description>重要：在开始下面的工作之前，首先确保U盘没有存任何东西， 或者里面没有放任何的重要数据（因为烧录会导致数据丢失）， 同时电脑上已经准备好空的分区（安装到的目标分区的数据也会被抹掉）。
-准备一个用于安装linux mint的usb设备 首先准备一个usb设备，可以是u盘也可以是usb的移动硬盘， 之后会在这个上面写入供安装linux mint的安装程序。
- 如果使用的是windows操作系统，那么点击 这里 来查看ubuntu官方的教程以创建一个可以安装Linux的USB设备。  注意：上面的教程是教你如何製作一个用于安装Ubuntu的USB设备， 安装linux mint的情况下仅需要把涉及到iso文件的地方换成Linux Mint的iso文件，其他地方完全相同。
- 其中会用到的软件叫做rufus，上面的教程裡面也有提到，点击 这里 打开rufus的官方网站，你也可以点击 这里 直接下载rufus。  linux mint的iso文件 前一节提到的linux mint的iso文件需要从下面的地方获取。点击 这里 打开linux mint的官方网站。 或者也可以点击 这里 直接下载Linux Mint 19.1版本。</description>
+      <guid>https://xinii.github.io/zh-cn/blog/linux/install-linux-mint-from-the-usb-device/</guid>
+      <description>  Linux Mint 的 Logo  *重要*：在开始下面的工作之前，首先确保U盘没有存任何东西， 或者里面没有放任何的重要数据（因为烧录会导致数据丢失）， 同时电脑上已经准备好空的分区（安装到的目标分区的数据也会被抹掉）。 准备一个用于安装Linux Mint的USB设备   首先准备一个USB设备，可以是U盘也可以是USB的移动硬盘， 之后会在这个上面写入供安装Linux Mint的安装程序。    如果使用的是Windows操作系统，那么点击 这里来查看Ubuntu官方的教程以创建一个可以安装Linux的USB设备。    *注意*：上面的教程是教你如何製作一个用于安装Ubuntu的USB设备， 安装Linux Mint的情况下仅需要把涉及到ISO文件的地方换成Linux Mint的iso文件，其他地方完全相同。    其中会用到的软件叫做rufus，上面的教程裡面也有提到，点击 这里打开rufus的官方网站，你也可以点击 这里直接下载rufus。   Linux Mint的ISO文件   前一节提到的linux mint的iso文件需要从下面的地方获取。 点击这里打开linux mint的官方网站。 或者也可以点击这里直接下载Linux Mint 19.1版本。 </description>
     </item>
     
   </channel>

@@ -6,26 +6,17 @@
     <description>Recent content in Categories on xin iDEA iNNATA</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://xinii.github.io/ja/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>configuration</title>
-      <link>https://xinii.github.io/ja/categories/configuration/</link>
-      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      <title>programming</title>
+      <link>https://xinii.github.io/ja/categories/programming/</link>
+      <pubDate>Fri, 26 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/ja/categories/configuration/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>installation</title>
-      <link>https://xinii.github.io/ja/categories/installation/</link>
-      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/categories/installation/</guid>
+      <guid>https://xinii.github.io/ja/categories/programming/</guid>
       <description></description>
     </item>
     
@@ -39,20 +30,11 @@
     </item>
     
     <item>
-      <title>environment</title>
-      <link>https://xinii.github.io/ja/categories/environment/</link>
+      <title>linux</title>
+      <link>https://xinii.github.io/ja/categories/linux/</link>
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/ja/categories/environment/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>repository</title>
-      <link>https://xinii.github.io/ja/categories/repository/</link>
-      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/categories/repository/</guid>
+      <guid>https://xinii.github.io/ja/categories/linux/</guid>
       <description></description>
     </item>
     
@@ -66,38 +48,11 @@
     </item>
     
     <item>
-      <title>emacs</title>
-      <link>https://xinii.github.io/ja/categories/emacs/</link>
-      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/categories/emacs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>latex</title>
-      <link>https://xinii.github.io/ja/categories/latex/</link>
-      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/categories/latex/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>pitfall</title>
       <link>https://xinii.github.io/ja/categories/pitfall/</link>
       <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/ja/categories/pitfall/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>lilypond</title>
-      <link>https://xinii.github.io/ja/categories/lilypond/</link>
-      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/categories/lilypond/</guid>
       <description></description>
     </item>
     
@@ -111,20 +66,20 @@
     </item>
     
     <item>
-      <title>absolute pitch</title>
-      <link>https://xinii.github.io/ja/categories/absolute-pitch/</link>
-      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/categories/absolute-pitch/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>opencv</title>
       <link>https://xinii.github.io/ja/categories/opencv/</link>
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/ja/categories/opencv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>emacs</title>
+      <link>https://xinii.github.io/ja/categories/emacs/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/ja/categories/emacs/</guid>
       <description></description>
     </item>
     
@@ -138,29 +93,11 @@
     </item>
     
     <item>
-      <title>linux</title>
-      <link>https://xinii.github.io/ja/categories/linux/</link>
-      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/categories/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>cms</title>
       <link>https://xinii.github.io/ja/categories/cms/</link>
       <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/ja/categories/cms/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>jekyll</title>
-      <link>https://xinii.github.io/ja/categories/jekyll/</link>
-      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xinii.github.io/ja/categories/jekyll/</guid>
       <description></description>
     </item>
     

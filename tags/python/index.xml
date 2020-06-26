@@ -13,12 +13,11 @@
     
     <item>
       <title>How to install OpenCV on Jetson Nano?</title>
-      <link>https://xinii.github.io/blog/environment/install-opencv-on-jetson-nano/</link>
+      <link>https://xinii.github.io/blog/opencv/install-opencv-on-jetson-nano/</link>
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/blog/environment/install-opencv-on-jetson-nano/</guid>
-      <description>Table of Contents  Generate swap file Generate installation script Run the script Test the installed OpenCV  Generate swap file To prevent errors due to insufficient memory during compilation, create a swap file firstly, and store it to somewhere you know. After OS restarting, the swap space will disappear, or you can manually delete this file after the completion of the following compilation and other work.
-$ fallocate -l 4G swapfile $ chmod 600 swapfile $ mkswap swapfile $ sudo swapon swapfile $ swapon -s Generate installation script The original link of the script to install the OpenCV 4.</description>
+      <guid>https://xinii.github.io/blog/opencv/install-opencv-on-jetson-nano/</guid>
+      <description>Generate swap file   To prevent errors due to insufficient memory during compilation, create a swap file firstly, and store it to somewhere you know. After OS restarting, the swap space will disappear, or you can manually delete this file after the completion of the following compilation and other work. $ fallocate -l 4G swapfile $ chmod 600 swapfile $ mkswap swapfile $ sudo swapon swapfile $ swapon -s  Generate installation script   The original link of the script to install the OpenCV 4.</description>
     </item>
     
   </channel>

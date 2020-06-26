@@ -13,20 +13,20 @@
     
     <item>
       <title>Some Windows registry settings that can help you work more efficiently</title>
-      <link>https://xinii.github.io/blog/configuration/several-windows-registry-configurations/</link>
+      <link>https://xinii.github.io/blog/windows/several-windows-registry-configurations/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/blog/configuration/several-windows-registry-configurations/</guid>
-      <description>Table of Contents  Registry settings for Japanese keyboard layout  About keyboard scan code Example of keyboard scan code Perform keyboard scan code mapping in the registry   Change keyboard layout for IME  Change Chinese input method English layout to Japanese keyboard layout Change the keyboard layout of input methods in other languages   Registry settings when an unknown icon appears in &amp;ldquo;My Computer&amp;rdquo; or &amp;ldquo;PC&amp;rdquo; in Explorer Registry settings when unable to connect to the NAS on the local network  References  Registry settings for Japanese keyboard layout About keyboard scan code First, what is the keyboard scan code?</description>
+      <guid>https://xinii.github.io/blog/windows/several-windows-registry-configurations/</guid>
+      <description>Registry settings for Japanese keyboard layout  About keyboard scan code   First, what is the keyboard scan code? Let us look at the definition on Wikipedia.   A scancode (or scan code) is the data that most computer keyboards send to a computer to report which keys have been pressed. A number, or sequence of numbers, is assigned to each key on the keyboard. - Wikipedia  Example of keyboard scan code1     Key Code     RCtrl 1D E0   LAlt 38 00   RAlt 38 E0   ESC 01 00   Insert 52 E0   Enter 1C 00   Caps 3A 00   Space 39 00   Muhenkan key 7B 00   Henkan key 79 00    Perform keyboard scan code mapping in the registry     First, press the Windows logo key + R, enter regedit and then press Enter to open the Windows Registry Editor.</description>
     </item>
     
     <item>
       <title>Some works after Windows 10 clean installation</title>
-      <link>https://xinii.github.io/blog/installation/some-installations-for-windows-10/</link>
+      <link>https://xinii.github.io/blog/windows/some-installations-for-windows-10/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xinii.github.io/blog/installation/some-installations-for-windows-10/</guid>
-      <description>Activation of your Windows 10 slmgr -ipk {your product key} slmgr -skms {kms server address of your company} slmgr -ato Installation of some useful tools  Msys2 AutoHotKey Ricty  Configuration of msys2 pacman -S git fish tmux emacs gcc python cd ~ git clone https://github.com/xinii/xinconfig .xinconfig cd .xinconfig ./setenv fish exec fish set_conf tmux set_el auto set_el cn change_emacs xin emacs ssh-keygen -A emacs /etc/ssh/sshd_config #Port **** #PasswordAuthentication no cat {path to your pub key} &amp;gt; ~/.</description>
+      <guid>https://xinii.github.io/blog/windows/some-installations-for-windows-10/</guid>
+      <description>Activation of your Windows 10   Open the cmd of Windows. slmgr -ipk {your product key} slmgr -skms {kms server address of your company} slmgr -ato  Installation of some useful tools     Msys2    AutoHotKey    Ricty   Configuration of msys2  pacman -S git fish tmux emacs gcc python cd ~ git clone https://github.com/xinii/xinconfig .xinconfig cd .xinconfig ./setenv fish exec fish set_conf tmux set_el auto set_el cn change_emacs xin emacs ssh-keygen -A emacs /etc/ssh/sshd_config #Port **** #PasswordAuthentication no cat {path to your pub key} &amp;gt; ~/.</description>
     </item>
     
   </channel>
