@@ -393,14 +393,14 @@ if they switch to the python version installed under pyenv,
 the installed OpenCV may not be recognized.
 The solution is to create a soft link to the OpenCV library
 and link it to the python library directory under the management of pyenv.</p>
-<p>For example, suppose the library directory of the python version in pyenv is,
-<code>/home/{username}/.anyenv/envs/pyenv/versions/3.6.8/lib/python3.6/site-packages</code>,
-and the installed OpenCV library path is,
-<code>/usr/local/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-linux-gnu.so</code>,
-then execute the following statement to create a soft link.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cd /home/<span style="color:#f92672">{</span>username<span style="color:#f92672">}</span>/.anyenv/envs/pyenv/versions/3.6.8/lib/python3.6/site-packages
+<p>For example, suppose the library directory of the python version in pyenv is,</p>
+<pre><code>/home/{username}/.anyenv/envs/pyenv/versions/3.6.8/lib/python3.6/site-packages
+</code></pre><p>And the installed OpenCV library path is,</p>
+<pre><code>/usr/local/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-linux-gnu.so
+</code></pre><p>Then execute the following statement to create a soft link,</p>
+<pre><code>cd /home/{username}/.anyenv/envs/pyenv/versions/3.6.8/lib/python3.6/site-packages
 ln -s /usr/local/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-linux-gnu.so ./
-</code></pre></div><p>Besides, use the python version of pip in pyenv to install numpy through the <code>pip install numpy</code> statement,
+</code></pre><p>Besides, use the python version of pip in pyenv to install numpy through the <code>pip install numpy</code> statement,
 and go to the interactive interface to test <code>import cv2</code>. If no error is displayed, the installation is complete.</p>
 
     </div>
@@ -471,10 +471,10 @@ and go to the interactive interface to test <code>import cv2</code>. If no error
 
   <div class="pagination">
   
-    <a href="/blog/environment/install-gnutls-and-compile-emacs-from-source/" class="button"><div class="previous">Previous</div></a>
+    <a href="/blog/environment/install-gnutls-and-compile-emacs-from-source/" class="button"><div class="previous">Prev post</div></a>
   
   
-    <a href="/blog/environment/several-ssh-configurations/" class="button"><div class="next">Next</div></a>
+    <a href="/blog/environment/several-ssh-configurations/" class="button"><div class="next">Next post</div></a>
   
 </div>
 
@@ -572,10 +572,74 @@ and go to the interactive interface to test <code>import cv2</code>. If no error
         </header>
       </article>
       
+      <article class="mini-post">
+        <section>
+          
+  <a href="/blog/environment/install-gnutls-and-compile-emacs-from-source/" class="image featured">
+    
+      <img src="https://xinii.github.io/img/blog/emacs-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <header>
+          <h2><a href="/blog/environment/install-gnutls-and-compile-emacs-from-source/">Install Gnutls and compile Emacs from source</a></h2>
+          <time class="published" datetime="">May 4, 2019</time>
+        </header>
+      </article>
       
-        <footer>
-          <a href="/blog/" class="button">See more</a>
-        </footer>
+      <article class="mini-post">
+        <section>
+          
+  <a href="/blog/environment/my-shell-migration-record/" class="image featured">
+    
+      <img src="https://xinii.github.io/img/blog/fish-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <header>
+          <h2><a href="/blog/environment/my-shell-migration-record/">My shell migration record</a></h2>
+          <time class="published" datetime="">May 3, 2019</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+  <a href="/blog/installation/install-linux-mint-from-the-usb-device/" class="image featured">
+    
+      <img src="https://xinii.github.io/img/blog/linux-mint-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <header>
+          <h2><a href="/blog/installation/install-linux-mint-from-the-usb-device/">使用usb设备安装linux mint</a></h2>
+          <time class="published" datetime="">April 23, 2019</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+  <a href="/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/" class="image featured">
+    
+      <img src="https://xinii.github.io/img/blog/jekyll-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <header>
+          <h2><a href="/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/">Create a blog via Jekyll and post to Github</a></h2>
+          <time class="published" datetime="">April 2, 2019</time>
+        </header>
+      </article>
+      
       
     </section>
   
