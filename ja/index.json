@@ -41,10 +41,10 @@
     "body": " 僕は家計簿をOrg-modeで記録しています， しかし，以下のエラーが出たことがある。 File \u0026#34;\u0026lt;stdin\u0026gt;\u0026#34;, line 3 SyntaxError: Non-UTF-8 code starting with \u0026#39;\\xe3\u0026#39; in file \u0026lt;stdin\u0026gt; on line 3, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details   例の # -*- coding: utf-8 -*- を先頭につけてもダメです。  解決法は以下のようなコードブロックのヘッダーを， #+begin_src python :results file :var data=test   以下のように変換します。 #+begin_src python :results file :var data=test[, 0:2]   つまり，必要な数字や日付などのorg-modeのtableの列だけを pythonに転送すると，以上の問題が解決できますが， 根本的に # -*- coding: utf-8 -*- をコードブロックの中に 効く方法はまだわかりません。 わかる方は教えていただければありがたいと思います。 ",
     "ref": "/ja/blog/other/pitfall-while-using-python-code-block-on-emacs-org-mode/"
   },{
-    "title": "LaTeXのplatexを使う際のfigureに関する落とし穴",
+    "title": "platexを使う際に扱うepsグラフに関する落とし穴",
     "date": "2019-11-23",
-    "description": "LaTeXのplatexを使う際に，グラフのスケールによってコンパイルが失敗してしまう可能性があるので，注意しよう！",
-    "body": " platexを使う際に， epsが問題がないが， なぜかそのepsを入れたらビルドが失敗。  しかも失敗した時のログをみると， なかなか問題がわからない。  例えば，全ての入れたfigureの定義が見つからないなどのレポート。 その時に，epsを正方形に近い形状を 矩形にしたら，問題が解決できた。 原因はまだ不明。 たまにこのようなことがあるので， 結構ハマったので，一応記録を ",
+    "description": "platexを使う際に，扱うepsグラフのスケールによってコンパイルが失敗になってしまう可能性があるかもしれないので気をつけて！",
+    "body": " platexを使う際に，なぜか特定のepsグラフを文書のソースに入れたらビルドが失敗。 しかも失敗した時のログをみると，まったく問題を特定できない。  例えば，入れたすべてのfigureの定義が見つからないとかに関するエラー。 このようなエラーになった時に， epsグラフのスケールを正方形に近い形状から矩形にしたら， 問題解決できた。  原因はまだ不明だけど，また調査してみる。 たまにハマってしまったので，ここにメモを残っておく。  以上。 ",
     "ref": "/ja/blog/other/pitfall-while-inserting-figure-into-latex-article/"
   },{
     "title": "EmacsとLilypondで楽譜生成",

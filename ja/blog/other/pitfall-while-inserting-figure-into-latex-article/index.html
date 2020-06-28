@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
   <meta charset="utf-8">
-<title>LaTeXのplatexを使う際のfigureに関する落とし穴 - xin iDEA iNNATA</title>
+<title>platexを使う際に扱うepsグラフに関する落とし穴 - xin iDEA iNNATA</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -18,17 +18,17 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
 
-<meta name="generator" content="Hugo 0.67.0" /><meta itemprop="name" content="LaTeXのplatexを使う際のfigureに関する落とし穴">
-<meta itemprop="description" content="LaTeXのplatexを使う際に，グラフのスケールによってコンパイルが失敗してしまう可能性があるので，注意しよう！">
+<meta name="generator" content="Hugo 0.67.0" /><meta itemprop="name" content="platexを使う際に扱うepsグラフに関する落とし穴">
+<meta itemprop="description" content="platexを使う際に，扱うepsグラフのスケールによってコンパイルが失敗になってしまう可能性があるかもしれないので気をつけて！">
 <meta itemprop="datePublished" content="2019-11-23T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-11-23T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="11">
+<meta itemprop="wordCount" content="9">
 <meta itemprop="image" content="https://xinii.github.io/img/main/logo.jpg"/>
 
 
 
-<meta itemprop="keywords" content="latex,platex,eps," /><meta property="og:title" content="LaTeXのplatexを使う際のfigureに関する落とし穴" />
-<meta property="og:description" content="LaTeXのplatexを使う際に，グラフのスケールによってコンパイルが失敗してしまう可能性があるので，注意しよう！" />
+<meta itemprop="keywords" content="latex,platex,eps," /><meta property="og:title" content="platexを使う際に扱うepsグラフに関する落とし穴" />
+<meta property="og:description" content="platexを使う際に，扱うepsグラフのスケールによってコンパイルが失敗になってしまう可能性があるかもしれないので気をつけて！" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://xinii.github.io/ja/blog/other/pitfall-while-inserting-figure-into-latex-article/" />
 <meta property="og:image" content="https://xinii.github.io/img/main/logo.jpg"/>
@@ -37,8 +37,8 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://xinii.github.io/img/main/logo.jpg"/>
 
-<meta name="twitter:title" content="LaTeXのplatexを使う際のfigureに関する落とし穴"/>
-<meta name="twitter:description" content="LaTeXのplatexを使う際に，グラフのスケールによってコンパイルが失敗してしまう可能性があるので，注意しよう！"/>
+<meta name="twitter:title" content="platexを使う際に扱うepsグラフに関する落とし穴"/>
+<meta name="twitter:description" content="platexを使う際に，扱うepsグラフのスケールによってコンパイルが失敗になってしまう可能性があるかもしれないので気をつけて！"/>
 <meta name="twitter:site" content="@xintxt"/>
 <link rel="stylesheet" href="/css/bundle.min.e0b4f4d471560c894134ee31c2399f5aa7687672a226a2db6013c783c58d4ec7.css" integrity="sha256-4LT01HFWDIlBNO4xwjmfWqdodnKiJqLbYBPHg8WNTsc="><link rel="stylesheet" href="/css/add-on.css">
 </head>
@@ -103,7 +103,7 @@
 
   
     
-    <a href="//twitter.com/share?text=LaTeX%e3%81%aeplatex%e3%82%92%e4%bd%bf%e3%81%86%e9%9a%9b%e3%81%aefigure%e3%81%ab%e9%96%a2%e3%81%99%e3%82%8b%e8%90%bd%e3%81%a8%e3%81%97%e7%a9%b4&amp;url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fother%2fpitfall-while-inserting-figure-into-latex-article%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+    <a href="//twitter.com/share?text=platex%e3%82%92%e4%bd%bf%e3%81%86%e9%9a%9b%e3%81%ab%e6%89%b1%e3%81%86eps%e3%82%b0%e3%83%a9%e3%83%95%e3%81%ab%e9%96%a2%e3%81%99%e3%82%8b%e8%90%bd%e3%81%a8%e3%81%97%e7%a9%b4&amp;url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fother%2fpitfall-while-inserting-figure-into-latex-article%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
         <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
       </a>
   
@@ -115,19 +115,19 @@
   
 
   
-    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fother%2fpitfall-while-inserting-figure-into-latex-article%2f&amp;title=LaTeX%e3%81%aeplatex%e3%82%92%e4%bd%bf%e3%81%86%e9%9a%9b%e3%81%aefigure%e3%81%ab%e9%96%a2%e3%81%99%e3%82%8b%e8%90%bd%e3%81%a8%e3%81%97%e7%a9%b4" target="_blank" rel="noopener" class="nav share-btn reddit">
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fother%2fpitfall-while-inserting-figure-into-latex-article%2f&amp;title=platex%e3%82%92%e4%bd%bf%e3%81%86%e9%9a%9b%e3%81%ab%e6%89%b1%e3%81%86eps%e3%82%b0%e3%83%a9%e3%83%95%e3%81%ab%e9%96%a2%e3%81%99%e3%82%8b%e8%90%bd%e3%81%a8%e3%81%97%e7%a9%b4" target="_blank" rel="noopener" class="nav share-btn reddit">
           <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
         </a>
   
 
   
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fother%2fpitfall-while-inserting-figure-into-latex-article%2f&amp;title=LaTeX%e3%81%aeplatex%e3%82%92%e4%bd%bf%e3%81%86%e9%9a%9b%e3%81%aefigure%e3%81%ab%e9%96%a2%e3%81%99%e3%82%8b%e8%90%bd%e3%81%a8%e3%81%97%e7%a9%b4" target="_blank" rel="noopener" class="nav share-btn linkedin">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fother%2fpitfall-while-inserting-figure-into-latex-article%2f&amp;title=platex%e3%82%92%e4%bd%bf%e3%81%86%e9%9a%9b%e3%81%ab%e6%89%b1%e3%81%86eps%e3%82%b0%e3%83%a9%e3%83%95%e3%81%ab%e9%96%a2%e3%81%99%e3%82%8b%e8%90%bd%e3%81%a8%e3%81%97%e7%a9%b4" target="_blank" rel="noopener" class="nav share-btn linkedin">
             <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
           </a>
   
 
   
-        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fother%2fpitfall-while-inserting-figure-into-latex-article%2f&amp;description=LaTeX%e3%81%aeplatex%e3%82%92%e4%bd%bf%e3%81%86%e9%9a%9b%e3%81%aefigure%e3%81%ab%e9%96%a2%e3%81%99%e3%82%8b%e8%90%bd%e3%81%a8%e3%81%97%e7%a9%b4" target="_blank" rel="noopener" class="nav share-btn pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fother%2fpitfall-while-inserting-figure-into-latex-article%2f&amp;description=platex%e3%82%92%e4%bd%bf%e3%81%86%e9%9a%9b%e3%81%ab%e6%89%b1%e3%81%86eps%e3%82%b0%e3%83%a9%e3%83%95%e3%81%ab%e9%96%a2%e3%81%99%e3%82%8b%e8%90%bd%e3%81%a8%e3%81%97%e7%a9%b4" target="_blank" rel="noopener" class="nav share-btn pinterest">
           <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
         </a>
   
@@ -210,10 +210,10 @@
   <header>
   <div class="title">
     
-      <h2><a href="/ja/blog/other/pitfall-while-inserting-figure-into-latex-article/">LaTeXのplatexを使う際のfigureに関する落とし穴</a></h2>
+      <h2><a href="/ja/blog/other/pitfall-while-inserting-figure-into-latex-article/">platexを使う際に扱うepsグラフに関する落とし穴</a></h2>
     
     
-      <p>LaTeXのplatexを使う際に，グラフのスケールによってコンパイルが失敗してしまう可能性があるので，注意しよう！</p>
+      <p>platexを使う際に，扱うepsグラフのスケールによってコンパイルが失敗になってしまう可能性があるかもしれないので気をつけて！</p>
     
   </div>
   <div class="meta">
@@ -235,7 +235,7 @@
 
   
     
-    <a href="//twitter.com/share?text=LaTeX%e3%81%aeplatex%e3%82%92%e4%bd%bf%e3%81%86%e9%9a%9b%e3%81%aefigure%e3%81%ab%e9%96%a2%e3%81%99%e3%82%8b%e8%90%bd%e3%81%a8%e3%81%97%e7%a9%b4&amp;url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fother%2fpitfall-while-inserting-figure-into-latex-article%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+    <a href="//twitter.com/share?text=platex%e3%82%92%e4%bd%bf%e3%81%86%e9%9a%9b%e3%81%ab%e6%89%b1%e3%81%86eps%e3%82%b0%e3%83%a9%e3%83%95%e3%81%ab%e9%96%a2%e3%81%99%e3%82%8b%e8%90%bd%e3%81%a8%e3%81%97%e7%a9%b4&amp;url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fother%2fpitfall-while-inserting-figure-into-latex-article%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
         <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
       </a>
   
@@ -247,19 +247,19 @@
   
 
   
-    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fother%2fpitfall-while-inserting-figure-into-latex-article%2f&amp;title=LaTeX%e3%81%aeplatex%e3%82%92%e4%bd%bf%e3%81%86%e9%9a%9b%e3%81%aefigure%e3%81%ab%e9%96%a2%e3%81%99%e3%82%8b%e8%90%bd%e3%81%a8%e3%81%97%e7%a9%b4" target="_blank" rel="noopener" class="nav share-btn reddit">
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fother%2fpitfall-while-inserting-figure-into-latex-article%2f&amp;title=platex%e3%82%92%e4%bd%bf%e3%81%86%e9%9a%9b%e3%81%ab%e6%89%b1%e3%81%86eps%e3%82%b0%e3%83%a9%e3%83%95%e3%81%ab%e9%96%a2%e3%81%99%e3%82%8b%e8%90%bd%e3%81%a8%e3%81%97%e7%a9%b4" target="_blank" rel="noopener" class="nav share-btn reddit">
           <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
         </a>
   
 
   
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fother%2fpitfall-while-inserting-figure-into-latex-article%2f&amp;title=LaTeX%e3%81%aeplatex%e3%82%92%e4%bd%bf%e3%81%86%e9%9a%9b%e3%81%aefigure%e3%81%ab%e9%96%a2%e3%81%99%e3%82%8b%e8%90%bd%e3%81%a8%e3%81%97%e7%a9%b4" target="_blank" rel="noopener" class="nav share-btn linkedin">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fother%2fpitfall-while-inserting-figure-into-latex-article%2f&amp;title=platex%e3%82%92%e4%bd%bf%e3%81%86%e9%9a%9b%e3%81%ab%e6%89%b1%e3%81%86eps%e3%82%b0%e3%83%a9%e3%83%95%e3%81%ab%e9%96%a2%e3%81%99%e3%82%8b%e8%90%bd%e3%81%a8%e3%81%97%e7%a9%b4" target="_blank" rel="noopener" class="nav share-btn linkedin">
             <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
           </a>
   
 
   
-        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fother%2fpitfall-while-inserting-figure-into-latex-article%2f&amp;description=LaTeX%e3%81%aeplatex%e3%82%92%e4%bd%bf%e3%81%86%e9%9a%9b%e3%81%aefigure%e3%81%ab%e9%96%a2%e3%81%99%e3%82%8b%e8%90%bd%e3%81%a8%e3%81%97%e7%a9%b4" target="_blank" rel="noopener" class="nav share-btn pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fja%2fblog%2fother%2fpitfall-while-inserting-figure-into-latex-article%2f&amp;description=platex%e3%82%92%e4%bd%bf%e3%81%86%e9%9a%9b%e3%81%ab%e6%89%b1%e3%81%86eps%e3%82%b0%e3%83%a9%e3%83%95%e3%81%ab%e9%96%a2%e3%81%99%e3%82%8b%e8%90%bd%e3%81%a8%e3%81%97%e7%a9%b4" target="_blank" rel="noopener" class="nav share-btn pinterest">
           <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
         </a>
   
@@ -279,17 +279,21 @@
     
     <hr>
     <p>
-platexを使う際に， epsが問題がないが，
-なぜかそのepsを入れたらビルドが失敗。
+platexを使う際に，なぜか特定のepsグラフを文書のソースに入れたらビルドが失敗。
+しかも失敗した時のログをみると，まったく問題を特定できない。
 </p>
 <p>
-しかも失敗した時のログをみると， なかなか問題がわからない。
+例えば，入れたすべてのfigureの定義が見つからないとかに関するエラー。
+このようなエラーになった時に，
+epsグラフのスケールを正方形に近い形状から矩形にしたら，
+問題解決できた。
 </p>
 <p>
-例えば，全ての入れたfigureの定義が見つからないなどのレポート。
-その時に，epsを正方形に近い形状を 矩形にしたら，問題が解決できた。
-原因はまだ不明。 たまにこのようなことがあるので，
-結構ハマったので，一応記録を
+原因はまだ不明だけど，また調査してみる。
+たまにハマってしまったので，ここにメモを残っておく。
+</p>
+<p>
+以上。
 </p>
 
   </div>
@@ -467,7 +471,7 @@ platexを使う際に， epsが問題がないが，
           
 
         </section>
-        <h2><a href="/ja/blog/other/pitfall-while-inserting-figure-into-latex-article/">LaTeXのplatexを使う際のfigureに関する落とし穴</a></h2>
+        <h2><a href="/ja/blog/other/pitfall-while-inserting-figure-into-latex-article/">platexを使う際に扱うepsグラフに関する落とし穴</a></h2>
         <time class="published" datetime="">2019-11-23</time>
       </header>
     </article>

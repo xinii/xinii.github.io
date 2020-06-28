@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>LaTeXのplatexを使う際のfigureに関する落とし穴</title>
+      <title>platexを使う際に扱うepsグラフに関する落とし穴</title>
       <link>https://xinii.github.io/ja/blog/other/pitfall-while-inserting-figure-into-latex-article/</link>
       <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://xinii.github.io/ja/blog/other/pitfall-while-inserting-figure-into-latex-article/</guid>
-      <description> platexを使う際に， epsが問題がないが， なぜかそのepsを入れたらビルドが失敗。  しかも失敗した時のログをみると， なかなか問題がわからない。  例えば，全ての入れたfigureの定義が見つからないなどのレポート。 その時に，epsを正方形に近い形状を 矩形にしたら，問題が解決できた。 原因はまだ不明。 たまにこのようなことがあるので， 結構ハマったので，一応記録を </description>
+      <description> platexを使う際に，なぜか特定のepsグラフを文書のソースに入れたらビルドが失敗。 しかも失敗した時のログをみると，まったく問題を特定できない。  例えば，入れたすべてのfigureの定義が見つからないとかに関するエラー。 このようなエラーになった時に， epsグラフのスケールを正方形に近い形状から矩形にしたら， 問題解決できた。  原因はまだ不明だけど，また調査してみる。 たまにハマってしまったので，ここにメモを残っておく。  以上。 </description>
     </item>
     
   </channel>
