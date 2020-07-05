@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux | xin iDEA iNNATA</title>
+    <link>https://xinii.cf/category/linux/</link>
+      <atom:link href="https://xinii.cf/category/linux/index.xml" rel="self" type="application/rss+xml" />
+    <description>Linux</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja-jp</language><copyright>© 2020 xin iDEA iNNATA</copyright><lastBuildDate>Wed, 03 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xinii.cf/images/icon_huc6d37f8d5848c4cf0bbdc638499793df_110525_512x512_fill_lanczos_center_2.png</url>
+      <title>Linux</title>
+      <link>https://xinii.cf/category/linux/</link>
+    </image>
+    
+    <item>
+      <title>FishとEmacsのためのaptリポジトリ追加</title>
+      <link>https://xinii.cf/post/add-apt-repository-for-fish-and-emacs/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/post/add-apt-repository-for-fish-and-emacs/</guid>
+      <description>
+&lt;p&gt;
+&lt;h2&gt;目次&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-1&#34;&gt;使う予定のコマンド&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-2&#34;&gt;このコマンドがない？以下のようにコマンドを入れる&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-3&#34;&gt;以下のステップに従ってインストール&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-4&#34;&gt;リポジトリを登録&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-5&#34;&gt;リポジトリを更新&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-6&#34;&gt;必要なものをインストール&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+使う予定のコマンド
+&lt;/h2&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  add-apt-repository&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+このコマンドがない？以下のようにコマンドを入れる
+&lt;/h2&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  apt install software-properties-common&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;headline-3&#34;&gt;
+以下のステップに従ってインストール
+&lt;/h2&gt;
+&lt;h3 id=&#34;headline-4&#34;&gt;
+リポジトリを登録
+&lt;/h3&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  add-apt-repository ppa:kelleyk/emacs
+  apt-add-repository ppa:fish-shell/release-3&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;headline-5&#34;&gt;
+リポジトリを更新
+&lt;/h3&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  apt update&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;headline-6&#34;&gt;
+必要なものをインストール
+&lt;/h3&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  apt install emacs26
+  apt install fish&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>USBデバイスからLinux Mintをインストール</title>
+      <link>https://xinii.cf/post/install-linux-mint-from-the-usb-device/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/post/install-linux-mint-from-the-usb-device/</guid>
+      <description>
+&lt;p&gt;
+&lt;h2&gt;目次&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-1&#34;&gt;Linux Mint&lt;sup class=&#34;footnote-reference&#34;&gt;1&lt;/sup&gt;をインストールするためのUSBデバイスを用意する&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-2&#34;&gt;Linux MintのISOファイル&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+*重要*：在开始下面的工作之前，首先确保U盘没有存任何东西，
+或者里面没有放任何的重要数据（因为烧录会导致数据丢失），
+同时电脑上已经准备好空的分区（安装到的目标分区的数据也会被抹掉）。
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Linux Mint&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;をインストールするためのUSBデバイスを用意する
+&lt;/h2&gt;
+&lt;p&gt;
+首先准备一个usb设备，可以是u盘也可以是usb的移动硬盘，
+之后会在这个上面写入供安装linux mint的安装程序。
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+如果使用的是windows操作系统，那么点击
+&lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0&#34;&gt;这里&lt;/a&gt;
+来查看ubuntu官方的教程以创建一个可以安装Linux的USB设备。
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+*注意*：上面的教程是教你如何製作一个用于安装Ubuntu的USB设备， 安装linux
+mint的情况下仅需要把涉及到iso文件的地方换成Linux
+Mint的iso文件，其他地方完全相同。
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+其中会用到的软件叫做rufus，上面的教程裡面也有提到，点击
+&lt;a href=&#34;https://rufus.akeo.ie/&#34;&gt;这里&lt;/a&gt; 打开rufus的官方网站，你也可以点击
+&lt;a href=&#34;https://github.com/pbatard/rufus/releases/download/v3.5/rufus-3.5.exe&#34;&gt;这里&lt;/a&gt;
+直接下载rufus。
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+Linux MintのISOファイル
+&lt;/h2&gt;
+&lt;p&gt;
+前一节提到的linux mint的iso文件需要从下面的地方获取。点击
+&lt;a href=&#34;https://linuxmint.com/&#34;&gt;这里&lt;/a&gt; 打开linux mint的官方网站。
+或者也可以点击
+&lt;a href=&#34;http://mirrors.evowise.com/linuxmint/stable/19.1/linuxmint-19.1-cinnamon-64bit.iso&#34;&gt;这里&lt;/a&gt;
+直接下载Linux Mint 19.1版本。
+&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr class=&#34;footnotes-separatator&#34;&gt;
+&lt;div class=&#34;footnote-definitions&#34;&gt;
+&lt;div class=&#34;footnote-definition&#34;&gt;
+&lt;sup id=&#34;footnote-1&#34;&gt;&lt;a href=&#34;#footnote-reference-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
+&lt;div class=&#34;footnote-body&#34;&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://upload.wikimedia.org/wikipedia/commons/5/5c/Linux_Mint_Official_Logo.svg&#34;&gt;Linux MintのLogo&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Translation | xin iDEA iNNATA</title>
+    <link>https://xinii.cf/tag/translation/</link>
+      <atom:link href="https://xinii.cf/tag/translation/index.xml" rel="self" type="application/rss+xml" />
+    <description>Translation</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja-jp</language><copyright>© 2020 xin iDEA iNNATA</copyright><lastBuildDate>Thu, 01 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xinii.cf/images/icon_huc6d37f8d5848c4cf0bbdc638499793df_110525_512x512_fill_lanczos_center_2.png</url>
+      <title>Translation</title>
+      <link>https://xinii.cf/tag/translation/</link>
+    </image>
+    
+    <item>
+      <title>Multi-translation parallel corpus construction of Don Quixote</title>
+      <link>https://xinii.cf/publication/wang2017/</link>
+      <pubDate>Thu, 01 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/publication/wang2017/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

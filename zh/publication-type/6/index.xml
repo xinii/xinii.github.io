@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>6 | xin iDEA iNNATA</title>
+    <link>https://xinii.cf/zh/publication-type/6/</link>
+      <atom:link href="https://xinii.cf/zh/publication-type/6/index.xml" rel="self" type="application/rss+xml" />
+    <description>6</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-cn</language><copyright>© 2020 xin iDEA iNNATA</copyright><lastBuildDate>Thu, 01 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xinii.cf/images/icon_huc6d37f8d5848c4cf0bbdc638499793df_110525_512x512_fill_lanczos_center_2.png</url>
+      <title>6</title>
+      <link>https://xinii.cf/zh/publication-type/6/</link>
+    </image>
+    
+    <item>
+      <title>《唐吉诃德》一语多译平行语料库构建设想</title>
+      <link>https://xinii.cf/zh/publication/wang2017/</link>
+      <pubDate>Thu, 01 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/zh/publication/wang2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>外語專業學生口語交際策略實證研究 - 以西班牙語為例</title>
+      <link>https://xinii.cf/zh/publication/wang2016/</link>
+      <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/zh/publication/wang2016/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

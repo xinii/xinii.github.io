@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Keyboard layout | xin iDEA iNNATA</title>
+    <link>https://xinii.cf/en/tag/keyboard-layout/</link>
+      <atom:link href="https://xinii.cf/en/tag/keyboard-layout/index.xml" rel="self" type="application/rss+xml" />
+    <description>Keyboard layout</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 xin iDEA iNNATA</copyright><lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xinii.cf/images/icon_huc6d37f8d5848c4cf0bbdc638499793df_110525_512x512_fill_lanczos_center_2.png</url>
+      <title>Keyboard layout</title>
+      <link>https://xinii.cf/en/tag/keyboard-layout/</link>
+    </image>
+    
+    <item>
+      <title>Some Windows registry settings that can help you work more efficiently</title>
+      <link>https://xinii.cf/en/post/several-windows-registry-configurations/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/en/post/several-windows-registry-configurations/</guid>
+      <description>
+&lt;p&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-1&#34;&gt;Registry settings for Japanese keyboard layout&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-2&#34;&gt;About keyboard scan code&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-3&#34;&gt;Example of keyboard scan code&lt;sup class=&#34;footnote-reference&#34;&gt;1&lt;/sup&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-4&#34;&gt;Perform keyboard scan code mapping in the registry&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-5&#34;&gt;Change keyboard layout for IME&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-6&#34;&gt;Change Chinese input method English layout to Japanese keyboard layout&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-7&#34;&gt;Change the keyboard layout of input methods in other languages&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-8&#34;&gt;Registry settings when an unknown icon appears in &amp;#34;My Computer&amp;#34; or &amp;#34;PC&amp;#34; in Explorer&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-9&#34;&gt;Registry settings when unable to connect to the NAS on the local network&lt;sup class=&#34;footnote-reference&#34;&gt;2&lt;/sup&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-10&#34;&gt;References&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Registry settings for Japanese keyboard layout
+&lt;/h2&gt;
+&lt;h3 id=&#34;headline-2&#34;&gt;
+About keyboard scan code
+&lt;/h3&gt;
+&lt;p&gt;
+First, what is the keyboard scan code? Let us look at the definition on Wikipedia.
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+A scancode (or scan code) is the data that most computer keyboards send to a computer to report which keys have been pressed.
+A number, or sequence of numbers, is assigned to each key on the keyboard. - &lt;a href=&#34;https://en.wikipedia.org/wiki/Scancode&#34;&gt;Wikipedia&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;headline-3&#34;&gt;
+Example of keyboard scan code&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
+&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Code&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;RCtrl&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1D E0&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;LAlt&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;38 00&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;RAlt&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;38 E0&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ESC&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;01 00&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Insert&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;52 E0&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Enter&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1C 00&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Caps&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;3A 00&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Space&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;39 00&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Muhenkan key&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;7B 00&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Henkan key&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;79 00&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;headline-4&#34;&gt;
+Perform keyboard scan code mapping in the registry
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+First, press the Windows logo key + &lt;code&gt;R&lt;/code&gt;, enter &lt;code&gt;regedit&lt;/code&gt; and then press &lt;code&gt;Enter&lt;/code&gt; to open the Windows Registry Editor.
+Then open the following location in the registry editor.
+&lt;/p&gt;
+&lt;div class=&#34;src src-sample&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Next, right-click on the blank space and create a binary key called &amp;#34;Scancode Map&amp;#34;
+in the order of &amp;#34;New-Binary Value (B)-Scancode Map&amp;#34;. Double-click to edit.
+&lt;/p&gt;
+&lt;p&gt;
+Regarding the value of &amp;#34;Scancode Map&amp;#34; (that is, the mapping rule), taking my settings as an example,
+the following table is listed for reference.
+Here, the parts of &amp;#34;version&amp;#34;, &amp;#34;flag&amp;#34; and &amp;#34;terminal null value&amp;#34; should be left as they are.
+In addition, regarding the &amp;#34;number of mappings&amp;#34;,
+it is necessary to set the sum of the number of mapping rules and the number of &amp;#34;terminal null values&amp;#34;.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+The mapping of my Logicool K380 keyboard (Japanese layout)
+&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Index&lt;/th&gt;
+&lt;th&gt;Scancode&lt;/th&gt;
+&lt;th&gt;Mapping&lt;/th&gt;
+&lt;th&gt;Scancode&lt;/th&gt;
+&lt;th&gt;Mapping&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0000&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;00 00 00 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Version&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;00 00 00 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Flag&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0008&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;08 00 00 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Number of mappings&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1D 00 3A 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;LCtrl &amp;lt;- Caps&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0010&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;3A 00 1D 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Caps &amp;lt;- LCtrl&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1D E0 38 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;RCtrl &amp;lt;- LAlt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0018&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;38 00 7B 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;LAlt &amp;lt;- Muhenkan&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;38 E0 70 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;RAlt &amp;lt;- Kana&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0020&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;39 00 79 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Space &amp;lt;- Henkan&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;01 00 38 E0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;ESC &amp;lt;- RAlt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0028&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;00 00 00 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Terminal null value&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+The mapping of my FILCO Majestouch MINILA Air keyboard (Japanese layout)
+&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Index&lt;/th&gt;
+&lt;th&gt;Scancode&lt;/th&gt;
+&lt;th&gt;Mapping&lt;/th&gt;
+&lt;th&gt;Scancode&lt;/th&gt;
+&lt;th&gt;Mapping&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0000&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;00 00 00 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Version&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;00 00 00 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Flag&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0008&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0B 00 00 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Number of mappings&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1C 00 52 E0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Enter &amp;lt;- Insert&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0010&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1D E0 38 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;RCtrl &amp;lt;- LAlt&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1D E0 70 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;RCtrl &amp;lt;- Kana&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0018&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;7B 00 46 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Muhenkan &amp;lt;- ScrollLock&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;79 00 1D E1&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Henkan &amp;lt;- Pause&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0020&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;00 00 45 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Null &amp;lt;- NumLock&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;00 00 9D E1&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Null &amp;lt;- Break&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0028&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;38 00 7B 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;LAlt &amp;lt;- Muhenkan&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;01 00 79 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;ESC &amp;lt;- Henkan&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0030&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;52 E0 29 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Insert &amp;lt;- E/J&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;00 00 00 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Terminal null value&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+It should be noted here that the &amp;#34;Pause/Break&amp;#34; key is not composed of a single scan code,
+The scan code of &amp;#34;NumLock&amp;#34; is also included, and it needs to be flexibly set according to the situation.
+You can refer to the following description.
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Pause &lt;code&gt;0xE1:0x1D:0x45&lt;/code&gt; [ 84key &lt;code&gt;Ctrl&lt;/code&gt; (0x1D) + &lt;code&gt;NumLock&lt;/code&gt; (0x45)], no auto repeat,
+break code &lt;code&gt;0xE1:0x9D:0xC5&lt;/code&gt; - &lt;a href=&#34;https://seesaawiki.jp/w/smnb/d/Keyboard%20Scancode%20Map&#34;&gt;Keyboard Scancode Map&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;headline-5&#34;&gt;
+Change keyboard layout for IME
+&lt;/h2&gt;
+&lt;h3 id=&#34;headline-6&#34;&gt;
+Change Chinese input method English layout to Japanese keyboard layout
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+First, open the following location of the registry.
+&lt;/p&gt;
+&lt;div class=&#34;src src-sample&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Keyboard Layouts\00000804&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Then make the following adjustment.
+&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Before change&lt;/th&gt;
+&lt;th&gt;After change&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Layout File&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;KBDUS.DLL&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;KBD106.DLL&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;headline-7&#34;&gt;
+Change the keyboard layout of input methods in other languages
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+In the case of other languages, you only need to change the entry method of the registry path &lt;code&gt;00000804&lt;/code&gt;
+to the corresponding language input method,
+then change the part of &lt;code&gt;***.DLL&lt;/code&gt; to the name of the dynamic link library file in the corresponding language.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;headline-8&#34;&gt;
+Registry settings when an unknown icon appears in &amp;#34;My Computer&amp;#34; or &amp;#34;PC&amp;#34; in Explorer
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+You can delete the item corresponding to the location icon by locating the following registry path.
+&lt;/p&gt;
+&lt;div class=&#34;src src-sample&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;headline-9&#34;&gt;
+Registry settings when unable to connect to the NAS on the local network&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-2&#34; href=&#34;#footnote-2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+First open the following registry location
+&lt;/p&gt;
+&lt;div class=&#34;src src-sample&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Then make the following change
+&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Before change&lt;/th&gt;
+&lt;th&gt;After change&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;AllowInsecureGuestAuth&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;headline-10&#34;&gt;
+References
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://usedoor.jp/howto/digital/pc/windows-uwagaki-keyboard-insert-key-mukouka/&#34;&gt;How to invalidate the Insert key (Originally in Japanese)&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://tepp91.github.io/contents/misc/remap-keyboard-with-scancode-map.html&#34;&gt;Change the key assignment via Scancode Map (Originally in Japanese)&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://answers.microsoft.com/en-us/windows/forum/windows_10-files/homegroup-removed-how-to-get-network-sharing-work/01277332-2916-4a68-853a-116696b20743&#34;&gt;Homegroup removed! How to get network sharing work with Windows 10 v1803&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr class=&#34;footnotes-separatator&#34;&gt;
+&lt;div class=&#34;footnote-definitions&#34;&gt;
+&lt;div class=&#34;footnote-definition&#34;&gt;
+&lt;sup id=&#34;footnote-1&#34;&gt;&lt;a href=&#34;#footnote-reference-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
+&lt;div class=&#34;footnote-body&#34;&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://softwaretechnique.jp/OS_Development/Tips/scan_code_set1.html&#34;&gt;Keyboard scan code list (Originally in Japanese)&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnote-definition&#34;&gt;
+&lt;sup id=&#34;footnote-2&#34;&gt;&lt;a href=&#34;#footnote-reference-2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
+&lt;div class=&#34;footnote-body&#34;&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.nedia.ne.jp/blog/2019/04/02/13919&#34;&gt;Unable to connect to NAS! The original reason is not SMB1.0! (Originally in Japanese)&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

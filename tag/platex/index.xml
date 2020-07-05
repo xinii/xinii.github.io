@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pLaTeX | xin iDEA iNNATA</title>
+    <link>https://xinii.cf/tag/platex/</link>
+      <atom:link href="https://xinii.cf/tag/platex/index.xml" rel="self" type="application/rss+xml" />
+    <description>pLaTeX</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja-jp</language><copyright>© 2020 xin iDEA iNNATA</copyright><lastBuildDate>Sat, 23 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xinii.cf/images/icon_huc6d37f8d5848c4cf0bbdc638499793df_110525_512x512_fill_lanczos_center_2.png</url>
+      <title>pLaTeX</title>
+      <link>https://xinii.cf/tag/platex/</link>
+    </image>
+    
+    <item>
+      <title>pLaTeXを使う際に扱うepsグラフに関する落とし穴</title>
+      <link>https://xinii.cf/post/single-language/pitfall-while-inserting-figure-into-latex-article/</link>
+      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/post/single-language/pitfall-while-inserting-figure-into-latex-article/</guid>
+      <description>&lt;p&gt;
+pLaTeXを使う際に，なぜか特定のepsグラフを文書のソースに入れたらビルドが失敗。
+しかも失敗した時のログをみると，まったく問題を特定できない。
+&lt;/p&gt;
+&lt;p&gt;
+例えば，入れたすべてのfigureの定義が見つからないとかに関するエラー。
+このようなエラーになった時に，
+epsグラフのスケールを正方形に近い形状から矩形にしたら，
+問題解決できた。
+&lt;/p&gt;
+&lt;p&gt;
+原因はまだ不明だけど，また調査してみる。
+たまにハマってしまったので，ここにメモを残っておく。
+&lt;/p&gt;
+&lt;p&gt;
+以上。
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

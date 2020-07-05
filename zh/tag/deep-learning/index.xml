@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deep learning | xin iDEA iNNATA</title>
+    <link>https://xinii.cf/zh/tag/deep-learning/</link>
+      <atom:link href="https://xinii.cf/zh/tag/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <description>Deep learning</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-cn</language><copyright>© 2020 xin iDEA iNNATA</copyright><lastBuildDate>Sun, 01 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xinii.cf/images/icon_huc6d37f8d5848c4cf0bbdc638499793df_110525_512x512_fill_lanczos_center_2.png</url>
+      <title>Deep learning</title>
+      <link>https://xinii.cf/zh/tag/deep-learning/</link>
+    </image>
+    
+    <item>
+      <title>Wave-making resistance estimation through deep learning considering the distribution of ship figure</title>
+      <link>https://xinii.cf/zh/publication/li2020wave/</link>
+      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/zh/publication/li2020wave/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to copy or download the publication metadata.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An Improved Auto-encoder Based on 2-Level Prioritized Experience Replay for High Dimension Skewed Data</title>
+      <link>https://xinii.cf/zh/publication/li2019improved/</link>
+      <pubDate>Thu, 05 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/zh/publication/li2019improved/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to copy or download the publication metadata.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Prioritized Sampling Method for Autoencoder to Reduce Loss Rate for Skewed Data</title>
+      <link>https://xinii.cf/zh/publication/li2018prioritized/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/zh/publication/li2018prioritized/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Org-mode | xin iDEA iNNATA</title>
+    <link>https://xinii.cf/tag/org-mode/</link>
+      <atom:link href="https://xinii.cf/tag/org-mode/index.xml" rel="self" type="application/rss+xml" />
+    <description>Org-mode</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja-jp</language><copyright>© 2020 xin iDEA iNNATA</copyright><lastBuildDate>Sat, 23 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xinii.cf/images/icon_huc6d37f8d5848c4cf0bbdc638499793df_110525_512x512_fill_lanczos_center_2.png</url>
+      <title>Org-mode</title>
+      <link>https://xinii.cf/tag/org-mode/</link>
+    </image>
+    
+    <item>
+      <title>EmacsのOrg-modeにおいてPythonコードブロックを使った時の落とし穴</title>
+      <link>https://xinii.cf/post/single-language/pitfall-while-using-python-code-block-on-emacs-org-mode/</link>
+      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/post/single-language/pitfall-while-using-python-code-block-on-emacs-org-mode/</guid>
+      <description>&lt;p&gt;
+僕は家計簿をOrg-modeで記録していて，
+その中にPythonのコードを書き，実行とかをやっている。
+しかし，以下のエラーになったことがある。
+&lt;/p&gt;
+&lt;div class=&#34;src src-sample&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;File &amp;#34;&amp;lt;stdin&amp;gt;&amp;#34;, line 3
+SyntaxError: Non-UTF-8 code starting with &amp;#39;\xe3&amp;#39; in file &amp;lt;stdin&amp;gt; on line 3, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;
+考えられるのは， &lt;code&gt;# -*- coding: utf-8 -*-&lt;/code&gt; を先頭につけることしかないけど，
+結局 &lt;strong&gt;Org-modeの中のPythonのコードブロック&lt;/strong&gt; なら効かなかった。
+&lt;/p&gt;
+&lt;p&gt;
+解決法は以下のようなコードブロックのヘッダーを，
+&lt;/p&gt;
+&lt;div class=&#34;src src-sample&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;#+begin_src python :results file :var data=test&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;
+以下のように変換する
+&lt;/p&gt;
+&lt;div class=&#34;src src-sample&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;#+begin_src python :results file :var data=test[, 0:2]&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;
+すなわち，必須となる数字や日付などが入っているテーブルの列だけを
+Pythonに転送すると，一時的なエラーを解消できるけど，
+本質的には解決していない。
+&lt;/p&gt;
+&lt;p&gt;
+引き続き調査。
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

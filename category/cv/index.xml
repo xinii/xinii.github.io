@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CV | xin iDEA iNNATA</title>
+    <link>https://xinii.cf/category/cv/</link>
+      <atom:link href="https://xinii.cf/category/cv/index.xml" rel="self" type="application/rss+xml" />
+    <description>CV</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja-jp</language><copyright>© 2020 xin iDEA iNNATA</copyright>
+    <image>
+      <url>https://xinii.cf/images/icon_huc6d37f8d5848c4cf0bbdc638499793df_110525_512x512_fill_lanczos_center_2.png</url>
+      <title>CV</title>
+      <link>https://xinii.cf/category/cv/</link>
+    </image>
+    
+    <item>
+      <title>履歴書</title>
+      <link>https://xinii.cf/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/cv/</guid>
+      <description>
+&lt;p&gt;
+横浜市に住んでいる李欣です。僕のブログに来てくれて誠にありがとうございます。僕の履歴に興味がある方はこのページの紹介をご覧ください。
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+学歴
+&lt;/h2&gt;
+&lt;h3 id=&#34;headline-2&#34;&gt;
+横浜国立大学
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;2016 年 10 月 - 2020 年 3 月&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;em&gt;2016 年 5 月&lt;/em&gt; に中国政府留学基金委員会による国費留学プログラムの資格を取得，
+&lt;/p&gt;
+&lt;p&gt;
+&lt;em&gt;2016 年 10 月&lt;/em&gt; に&lt;a href=&#34;http://gakufu.eng.ynu.ac.jp&#34;&gt;横浜国立大学大学院工学府&lt;/a&gt; 博士課程後期 &lt;a href=&#34;https://gakufu.eng.ynu.ac.jp/exam/dep/physicalinformation/index.html&#34;&gt;物理情報工学専攻電気電子ネットワークコース&lt;/a&gt;
+に入学し，機械学習及び深層学習の応用に関する研究に従事，
+&lt;/p&gt;
+&lt;p&gt;
+&lt;em&gt;2020 年 3 月&lt;/em&gt; に博士（工学）の学位を取得。
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;headline-3&#34;&gt;
+東京国際大学
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;2014 年 4 月 - 2015 年 3 月&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;em&gt;2014 年 4 月&lt;/em&gt; に交換留学生として&lt;a href=&#34;https://www.tiu.ac.jp/department/commercial_g/&#34;&gt;東京国際大学商学研究科&lt;/a&gt; 博士課程前期に入学し経営情報を専攻。
+&lt;/p&gt;
+&lt;p&gt;
+&lt;em&gt;2015 年 3 月&lt;/em&gt; に単位取得。
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;headline-4&#34;&gt;
+山西大学（中国）
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;2009 年 9 月 - 2016 年 7 月&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;em&gt;2009 年 9 月&lt;/em&gt; に&lt;a href=&#34;https://www.sxu.edu.cn/&#34;&gt;山西大学&lt;/a&gt;に入学，
+&lt;a href=&#34;http://cs.sxu.edu.cn/&#34;&gt;計算機情報技術学部&lt;/a&gt;でソフトウェアエンジニアリングを専攻し，
+&lt;a href=&#34;http://jgxy.sxu.edu.cn/&#34;&gt;経済管理学部&lt;/a&gt;で工商管理を専攻。
+&lt;/p&gt;
+&lt;p&gt;
+&lt;em&gt;2013 年 7 月&lt;/em&gt; に工学・管理学学士学位取得。
+&lt;/p&gt;
+&lt;p&gt;
+&lt;em&gt;2013 年 9 月&lt;/em&gt; に&lt;a href=&#34;http://cs.sxu.edu.cn/&#34;&gt;山西大学大学院計算機情報技術研究科&lt;/a&gt;に入学，
+&lt;em&gt;2016 年 7 月&lt;/em&gt; に工学修士学位取得。
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;headline-5&#34;&gt;
+研究及びソフトウェア開発
+&lt;/h2&gt;
+&lt;h3 id=&#34;headline-6&#34;&gt;
+論文発表
+&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;李 欣&lt;/strong&gt;, 新井 洋, and 濱上 知樹.
+船型データの分布を考慮した深層学習による造波抵抗推定.
+&lt;em&gt;電気学会論文誌Ｃ（電子・情報・システム部門誌）&lt;/em&gt;, 140(3):391–397, 2020.
+&lt;/p&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Available on&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://doi.org/10.1541/ieejeiss.140.391&#34;&gt;DOI&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.jstage.jst.go.jp/article/ieejeiss/140/3/140_391/_article/&#34;&gt;J-STAGE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://ci.nii.ac.jp/naid/130007804400&#34;&gt;CiNii&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://id.ndl.go.jp/bib/030294241&#34;&gt;NDL Online&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;Xin Li&lt;/strong&gt; and Tomoki Hamagami.
+An improved auto-encoder based on 2-level prioritized experience replay for high dimension skewed data.
+&lt;em&gt;Proceedings in Adaptation, Learning and Optimization&lt;/em&gt;, 12:93–105, 2020. （本文言語が英語）
+&lt;/p&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Available on&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://doi.org/10.1007/978-3-030-37442-6_9&#34;&gt;DOI&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://link.springer.com/chapter/10.1007%2F978-3-030-37442-6_9&#34;&gt;Springer Link&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;Xin Li&lt;/strong&gt; and Tomoki Hamagami.
+Prioritized sampling method for autoencoder to reduce loss rate for skewed data.
+&lt;em&gt;The papers of technical meeting on systems, IEE Japan&lt;/em&gt;, 2018(39):199–203, 2018. （本文言語が英語）
+&lt;/p&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Available on&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://ci.nii.ac.jp/naid/40021703788&#34;&gt;CiNii&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://id.ndl.go.jp/bib/029306595&#34;&gt;NDL Online&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Jinwei Wang and &lt;strong&gt;Xin Li&lt;/strong&gt;.
+Multi-translation parallel corpus construction of don quixote.
+In &lt;em&gt;Spanish Paper Series 2017&lt;/em&gt;, pages 4250–4423.
+Foreign Language Teaching and Researching Press, Beijing, 11 2018. （本文言語が中国語簡体字）
+&lt;/p&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Available on&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.amazon.cn/dp/B07N2JYZVV&#34;&gt;Amazon Kindle Store&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Jinwei Wang and &lt;strong&gt;Xin Li&lt;/strong&gt;.
+An empirical study of oral communication strategies for foreign language students - taking spanish as an example.
+In &lt;em&gt;Proceedings of the 11th Cross-Strait Foreign Language Teaching Symposium&lt;/em&gt;, pages 1–11.
+Fu Jen Catholic University Press, Taibei, 9 2016. （本文言語が中国語繁体字）
+&lt;/p&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Available on&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://books.google.co.jp/books?id=4iqrDwAAQBAJ&#34;&gt;Google Books&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;headline-7&#34;&gt;
+国際学会及び国内シンポジウム
+&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;Xin Li&lt;/strong&gt; and Tomoki Hamagami.
+An improved auto-encoder based on 2-level prioritized experience replay for high dimension skewed data.
+In &lt;em&gt;Proceedings of the 23rd Asia Pacific Symposium on Intelligent and Evolutionary Systems&lt;/em&gt;, 2019.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;Xin Li&lt;/strong&gt; and Tomoki Hamagami.
+Prioritized sampling method for autoencoder to reduce loss rate for skewed data.
+In &lt;em&gt;The 28th Fuzzy, Artificial Intelligence, Neural Networks and Computational Intelligence&lt;/em&gt;, 2018.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;Xin Li&lt;/strong&gt;, Masaya Nakata, Hamatsu Fumiya, and Tomoki Hamagami.
+A research about anomaly detection method for multidimensional time series data.
+In &lt;em&gt;The International Conference on Electrical Engineering&lt;/em&gt;, 2017.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;headline-8&#34;&gt;
+ソフトウェア開発
+&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;
+2014 年 11 月：「顔認識及び音声認識に基づいた目の練習アプリ」中国国家特許局ソフトウェア著作権取得。
+（記録番号：2014SR177728，ファイル番号：軟著登字第0846964号）
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+2014 年 9 月：「Bag-of-wordsに基づいた画像検索分類システム」中国国家特許局ソフトウェア著作権取得。
+（記録番号：2014SR136257，ファイル番号：軟著登字第0805497号）
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+2014 年 5 月：「Androidに基づいた高解像度画像生成システム」中国国家特許局ソフトウェア著作権取得。
+（記録番号：2014SR052862，ファイル番号：軟著登字第0722106号）
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;headline-9&#34;&gt;
+職歴及びインターンシップ
+&lt;/h2&gt;
+&lt;h3 id=&#34;headline-10&#34;&gt;
+神奈川県横浜市
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;2020 年 4 月 - 現在&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+横浜国立大学大学院工学研究院，非常勤教員（ポスドク研究員）。
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;2019 年 4 月 - 2020 年 3 月&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+横浜国立大学理工学部，非常勤講師（電子情報システム基礎実験I，II）。
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;2017 年 4 月 - 2017 年 7 月&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+横浜国立大学大学院工学府，TA（プログラミング演習I）。
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;headline-11&#34;&gt;
+埼玉県川越市
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;2014 年 6 月 - 2015 年 2 月&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+株式会社セリア東武霞ヶ関店，アルバイト。
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;headline-12&#34;&gt;
+北京（中国）
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;2012 年 7 月 - 2012 年 9 月&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+中軟国際有限公司，インターンシップ。
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;headline-13&#34;&gt;
+山西省太原市（中国）
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;2013 年 4 月 - 2014 年 3 月&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+太原創成煥新科技有限公司，ソフトウェアプロジェクト及び業務管理。
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;2010 年 6 月 - 2010 年 8 月&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+太原優連科技有限公司，インターンシップ。
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

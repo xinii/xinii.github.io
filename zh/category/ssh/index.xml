@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SSH | xin iDEA iNNATA</title>
+    <link>https://xinii.cf/zh/category/ssh/</link>
+      <atom:link href="https://xinii.cf/zh/category/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <description>SSH</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-cn</language><copyright>© 2020 xin iDEA iNNATA</copyright><lastBuildDate>Wed, 03 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xinii.cf/images/icon_huc6d37f8d5848c4cf0bbdc638499793df_110525_512x512_fill_lanczos_center_2.png</url>
+      <title>SSH</title>
+      <link>https://xinii.cf/zh/category/ssh/</link>
+    </image>
+    
+    <item>
+      <title>几个有关 SSH 的配置</title>
+      <link>https://xinii.cf/zh/post/several-ssh-configurations/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/zh/post/several-ssh-configurations/</guid>
+      <description>
+&lt;p&gt;
+&lt;h2&gt;目录&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-1&#34;&gt;ssh 连接中断的现象&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-2&#34;&gt;解决方法&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-3&#34;&gt;One more thing&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-4&#34;&gt;通过 Termux 应用开启安卓 SSH 服务&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-5&#34;&gt;安装&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-6&#34;&gt;设置密钥文件&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-7&#34;&gt;在调试模式下启动服务&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-8&#34;&gt;启动服务&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-9&#34;&gt;在电脑端登录设置好的服务&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+ssh 连接中断的现象
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+当通过 ssh 进行远程登录的时候，如果长时间没有操作，则会出现
+&lt;code class=&#34;verbatim&#34;&gt;Write failed: Broken pipe&lt;/code&gt; 的错误提示并连接中断。
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+这是因为在一定时间内没有数据交换的情况下 ssh
+连接默认会自动断开。要解决这个问题需要从客户端或者服务器端来改变设置。
+&lt;/p&gt;
+&lt;h3 id=&#34;headline-2&#34;&gt;
+解决方法
+&lt;/h3&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+从客户端解决
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+将下面的内容配置在 &lt;code class=&#34;verbatim&#34;&gt;/etc/ssh/ssh_config&lt;/code&gt; 或 &lt;code class=&#34;verbatim&#34;&gt;~/.ssh/config&lt;/code&gt; 中。
+&lt;/p&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  ServerAliveInterval &lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;
+  ServerAliveCountMax &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+通过以上的设定，每 15 秒会进行 10
+次应答确认，仍然没有应答的情况下才会断开连接。
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+从服务器端解决
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+将下面的内容配置在 &lt;code class=&#34;verbatim&#34;&gt;/etc/ssh/sshd_config&lt;/code&gt; 中。
+&lt;/p&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  ClientAliveInterval &lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;
+  ClientAliveCountMax &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+通过以上的设定，每 30 秒会进行 5
+次应答确认，仍然没有应答的情况下才会断开连接。
+&lt;/p&gt;
+&lt;h3 id=&#34;headline-3&#34;&gt;
+One more thing
+&lt;/h3&gt;
+&lt;p&gt;
+这里非常推荐使用 tmux 或者 screen 之类的工具，
+这样即使丢失连接，也可以在重新连接服务器后快速通过挂载原先的会话的方式迅速恢复工作环境。
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-4&#34;&gt;
+通过 Termux 应用开启安卓 SSH 服务
+&lt;/h2&gt;
+&lt;h3 id=&#34;headline-5&#34;&gt;
+安装
+&lt;/h3&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  apt install openssh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;headline-6&#34;&gt;
+设置密钥文件
+&lt;/h3&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  ssh-keygen
+  cat ~/.ssh/id_rsa.pub &amp;gt; ~/.ssh/authorized_keys
+  chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;600&lt;/span&gt; ~/.ssh/authorized_keys
+  chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;700&lt;/span&gt; ~/.ssh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;headline-7&#34;&gt;
+在调试模式下启动服务
+&lt;/h3&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  sshd -d&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;headline-8&#34;&gt;
+启动服务
+&lt;/h3&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  sshd&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;headline-9&#34;&gt;
+在电脑端登录设置好的服务
+&lt;/h3&gt;
+&lt;p&gt;
+将在安卓端取得的私有密钥 &lt;code class=&#34;verbatim&#34;&gt;~/.ssh/id_rsa&lt;/code&gt; 配置到电脑端的 ssh 客户端，
+然后通过空用户名连接安卓端的 ip 地址及端口号 &lt;code class=&#34;verbatim&#34;&gt;8022&lt;/code&gt; 即可。
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

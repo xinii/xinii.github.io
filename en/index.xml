@@ -1,0 +1,1805 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>xin iDEA iNNATA</title>
+    <link>https://xinii.cf/en/</link>
+      <atom:link href="https://xinii.cf/en/index.xml" rel="self" type="application/rss+xml" />
+    <description>xin iDEA iNNATA</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 xin iDEA iNNATA</copyright><lastBuildDate>Tue, 30 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xinii.cf/images/icon_huc6d37f8d5848c4cf0bbdc638499793df_110525_512x512_fill_lanczos_center_2.png</url>
+      <title>xin iDEA iNNATA</title>
+      <link>https://xinii.cf/en/</link>
+    </image>
+    
+    <item>
+      <title>A reasonable configuration tool for your unified working environment</title>
+      <link>https://xinii.cf/en/project/xinconfig/</link>
+      <pubDate>Tue, 30 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/en/project/xinconfig/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Some Windows registry settings that can help you work more efficiently</title>
+      <link>https://xinii.cf/en/post/several-windows-registry-configurations/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/en/post/several-windows-registry-configurations/</guid>
+      <description>
+&lt;p&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-1&#34;&gt;Registry settings for Japanese keyboard layout&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-2&#34;&gt;About keyboard scan code&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-3&#34;&gt;Example of keyboard scan code&lt;sup class=&#34;footnote-reference&#34;&gt;1&lt;/sup&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-4&#34;&gt;Perform keyboard scan code mapping in the registry&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-5&#34;&gt;Change keyboard layout for IME&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-6&#34;&gt;Change Chinese input method English layout to Japanese keyboard layout&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-7&#34;&gt;Change the keyboard layout of input methods in other languages&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-8&#34;&gt;Registry settings when an unknown icon appears in &amp;#34;My Computer&amp;#34; or &amp;#34;PC&amp;#34; in Explorer&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-9&#34;&gt;Registry settings when unable to connect to the NAS on the local network&lt;sup class=&#34;footnote-reference&#34;&gt;2&lt;/sup&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-10&#34;&gt;References&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Registry settings for Japanese keyboard layout
+&lt;/h2&gt;
+&lt;h3 id=&#34;headline-2&#34;&gt;
+About keyboard scan code
+&lt;/h3&gt;
+&lt;p&gt;
+First, what is the keyboard scan code? Let us look at the definition on Wikipedia.
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+A scancode (or scan code) is the data that most computer keyboards send to a computer to report which keys have been pressed.
+A number, or sequence of numbers, is assigned to each key on the keyboard. - &lt;a href=&#34;https://en.wikipedia.org/wiki/Scancode&#34;&gt;Wikipedia&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;headline-3&#34;&gt;
+Example of keyboard scan code&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
+&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Code&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;RCtrl&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1D E0&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;LAlt&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;38 00&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;RAlt&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;38 E0&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ESC&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;01 00&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Insert&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;52 E0&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Enter&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1C 00&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Caps&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;3A 00&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Space&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;39 00&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Muhenkan key&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;7B 00&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Henkan key&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;79 00&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;headline-4&#34;&gt;
+Perform keyboard scan code mapping in the registry
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+First, press the Windows logo key + &lt;code&gt;R&lt;/code&gt;, enter &lt;code&gt;regedit&lt;/code&gt; and then press &lt;code&gt;Enter&lt;/code&gt; to open the Windows Registry Editor.
+Then open the following location in the registry editor.
+&lt;/p&gt;
+&lt;div class=&#34;src src-sample&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Next, right-click on the blank space and create a binary key called &amp;#34;Scancode Map&amp;#34;
+in the order of &amp;#34;New-Binary Value (B)-Scancode Map&amp;#34;. Double-click to edit.
+&lt;/p&gt;
+&lt;p&gt;
+Regarding the value of &amp;#34;Scancode Map&amp;#34; (that is, the mapping rule), taking my settings as an example,
+the following table is listed for reference.
+Here, the parts of &amp;#34;version&amp;#34;, &amp;#34;flag&amp;#34; and &amp;#34;terminal null value&amp;#34; should be left as they are.
+In addition, regarding the &amp;#34;number of mappings&amp;#34;,
+it is necessary to set the sum of the number of mapping rules and the number of &amp;#34;terminal null values&amp;#34;.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+The mapping of my Logicool K380 keyboard (Japanese layout)
+&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Index&lt;/th&gt;
+&lt;th&gt;Scancode&lt;/th&gt;
+&lt;th&gt;Mapping&lt;/th&gt;
+&lt;th&gt;Scancode&lt;/th&gt;
+&lt;th&gt;Mapping&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0000&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;00 00 00 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Version&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;00 00 00 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Flag&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0008&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;08 00 00 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Number of mappings&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1D 00 3A 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;LCtrl &amp;lt;- Caps&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0010&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;3A 00 1D 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Caps &amp;lt;- LCtrl&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1D E0 38 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;RCtrl &amp;lt;- LAlt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0018&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;38 00 7B 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;LAlt &amp;lt;- Muhenkan&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;38 E0 70 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;RAlt &amp;lt;- Kana&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0020&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;39 00 79 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Space &amp;lt;- Henkan&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;01 00 38 E0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;ESC &amp;lt;- RAlt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0028&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;00 00 00 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Terminal null value&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+The mapping of my FILCO Majestouch MINILA Air keyboard (Japanese layout)
+&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Index&lt;/th&gt;
+&lt;th&gt;Scancode&lt;/th&gt;
+&lt;th&gt;Mapping&lt;/th&gt;
+&lt;th&gt;Scancode&lt;/th&gt;
+&lt;th&gt;Mapping&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0000&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;00 00 00 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Version&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;00 00 00 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Flag&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0008&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0B 00 00 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Number of mappings&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1C 00 52 E0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Enter &amp;lt;- Insert&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0010&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1D E0 38 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;RCtrl &amp;lt;- LAlt&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1D E0 70 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;RCtrl &amp;lt;- Kana&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0018&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;7B 00 46 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Muhenkan &amp;lt;- ScrollLock&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;79 00 1D E1&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Henkan &amp;lt;- Pause&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0020&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;00 00 45 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Null &amp;lt;- NumLock&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;00 00 9D E1&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Null &amp;lt;- Break&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0028&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;38 00 7B 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;LAlt &amp;lt;- Muhenkan&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;01 00 79 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;ESC &amp;lt;- Henkan&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0030&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;52 E0 29 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Insert &amp;lt;- E/J&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;00 00 00 00&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Terminal null value&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+It should be noted here that the &amp;#34;Pause/Break&amp;#34; key is not composed of a single scan code,
+The scan code of &amp;#34;NumLock&amp;#34; is also included, and it needs to be flexibly set according to the situation.
+You can refer to the following description.
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Pause &lt;code&gt;0xE1:0x1D:0x45&lt;/code&gt; [ 84key &lt;code&gt;Ctrl&lt;/code&gt; (0x1D) + &lt;code&gt;NumLock&lt;/code&gt; (0x45)], no auto repeat,
+break code &lt;code&gt;0xE1:0x9D:0xC5&lt;/code&gt; - &lt;a href=&#34;https://seesaawiki.jp/w/smnb/d/Keyboard%20Scancode%20Map&#34;&gt;Keyboard Scancode Map&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;headline-5&#34;&gt;
+Change keyboard layout for IME
+&lt;/h2&gt;
+&lt;h3 id=&#34;headline-6&#34;&gt;
+Change Chinese input method English layout to Japanese keyboard layout
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+First, open the following location of the registry.
+&lt;/p&gt;
+&lt;div class=&#34;src src-sample&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Keyboard Layouts\00000804&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Then make the following adjustment.
+&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Before change&lt;/th&gt;
+&lt;th&gt;After change&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Layout File&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;KBDUS.DLL&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;KBD106.DLL&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;headline-7&#34;&gt;
+Change the keyboard layout of input methods in other languages
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+In the case of other languages, you only need to change the entry method of the registry path &lt;code&gt;00000804&lt;/code&gt;
+to the corresponding language input method,
+then change the part of &lt;code&gt;***.DLL&lt;/code&gt; to the name of the dynamic link library file in the corresponding language.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;headline-8&#34;&gt;
+Registry settings when an unknown icon appears in &amp;#34;My Computer&amp;#34; or &amp;#34;PC&amp;#34; in Explorer
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+You can delete the item corresponding to the location icon by locating the following registry path.
+&lt;/p&gt;
+&lt;div class=&#34;src src-sample&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;headline-9&#34;&gt;
+Registry settings when unable to connect to the NAS on the local network&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-2&#34; href=&#34;#footnote-2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+First open the following registry location
+&lt;/p&gt;
+&lt;div class=&#34;src src-sample&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Then make the following change
+&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Before change&lt;/th&gt;
+&lt;th&gt;After change&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;AllowInsecureGuestAuth&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;headline-10&#34;&gt;
+References
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://usedoor.jp/howto/digital/pc/windows-uwagaki-keyboard-insert-key-mukouka/&#34;&gt;How to invalidate the Insert key (Originally in Japanese)&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://tepp91.github.io/contents/misc/remap-keyboard-with-scancode-map.html&#34;&gt;Change the key assignment via Scancode Map (Originally in Japanese)&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://answers.microsoft.com/en-us/windows/forum/windows_10-files/homegroup-removed-how-to-get-network-sharing-work/01277332-2916-4a68-853a-116696b20743&#34;&gt;Homegroup removed! How to get network sharing work with Windows 10 v1803&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr class=&#34;footnotes-separatator&#34;&gt;
+&lt;div class=&#34;footnote-definitions&#34;&gt;
+&lt;div class=&#34;footnote-definition&#34;&gt;
+&lt;sup id=&#34;footnote-1&#34;&gt;&lt;a href=&#34;#footnote-reference-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
+&lt;div class=&#34;footnote-body&#34;&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://softwaretechnique.jp/OS_Development/Tips/scan_code_set1.html&#34;&gt;Keyboard scan code list (Originally in Japanese)&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnote-definition&#34;&gt;
+&lt;sup id=&#34;footnote-2&#34;&gt;&lt;a href=&#34;#footnote-reference-2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
+&lt;div class=&#34;footnote-body&#34;&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.nedia.ne.jp/blog/2019/04/02/13919&#34;&gt;Unable to connect to NAS! The original reason is not SMB1.0! (Originally in Japanese)&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Some works after Windows 10 clean installation</title>
+      <link>https://xinii.cf/en/post/some-installations-for-windows-10/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/en/post/some-installations-for-windows-10/</guid>
+      <description>
+&lt;p&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-1&#34;&gt;Activation of your Windows 10&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-2&#34;&gt;Installation of some useful tools&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-3&#34;&gt;Configuration of msys2&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Activation of your Windows 10
+&lt;/h2&gt;
+&lt;p&gt;
+Open the &lt;code&gt;cmd&lt;/code&gt; of Windows.
+&lt;/p&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;slmgr -ipk &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;your product key&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+slmgr -skms &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;kms server address of your company&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+slmgr -ato&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+Installation of some useful tools
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.msys2.org/&#34;&gt;Msys2&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.autohotkey.com/&#34;&gt;AutoHotKey&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://github.com/edihbrandon/RictyDiminished&#34;&gt;Ricty&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;headline-3&#34;&gt;
+Configuration of msys2
+&lt;/h2&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;pacman -S git fish tmux emacs gcc python
+cd ~
+git clone https://github.com/xinii/xinconfig .xinconfig
+cd .xinconfig
+./setenv fish
+exec fish
+set_conf tmux
+set_el auto
+set_el cn
+change_emacs xin
+emacs
+ssh-keygen -A
+emacs /etc/ssh/sshd_config
+ &lt;span style=&#34;color:#75715e&#34;&gt;#Port ****&lt;/span&gt;
+ &lt;span style=&#34;color:#75715e&#34;&gt;#PasswordAuthentication no&lt;/span&gt;
+cat &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;path to your pub key&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt; &amp;gt; ~/.ssh/authorized_keys
+chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;600&lt;/span&gt; ~/.ssh/authorized_keys
+chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;700&lt;/span&gt; ~/.ssh
+/usr/bin/sshd&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Add apt repository for Fish and Emacs</title>
+      <link>https://xinii.cf/en/post/add-apt-repository-for-fish-and-emacs/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/en/post/add-apt-repository-for-fish-and-emacs/</guid>
+      <description>
+&lt;p&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-1&#34;&gt;Command to be use&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-2&#34;&gt;No this command? Do this first&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-3&#34;&gt;Process&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-4&#34;&gt;Register repository&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-5&#34;&gt;Refresh repository&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-6&#34;&gt;Installation&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Command to be use
+&lt;/h2&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  add-apt-repository&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+No this command? Do this first
+&lt;/h2&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  apt install software-properties-common&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;headline-3&#34;&gt;
+Process
+&lt;/h2&gt;
+&lt;h3 id=&#34;headline-4&#34;&gt;
+Register repository
+&lt;/h3&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  add-apt-repository ppa:kelleyk/emacs
+  apt-add-repository ppa:fish-shell/release-3&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;headline-5&#34;&gt;
+Refresh repository
+&lt;/h3&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  apt update&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;headline-6&#34;&gt;
+Installation
+&lt;/h3&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  apt install emacs26
+  apt install fish&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Several SSH configurations</title>
+      <link>https://xinii.cf/en/post/several-ssh-configurations/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/en/post/several-ssh-configurations/</guid>
+      <description>
+&lt;p&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-1&#34;&gt;SSH interruption phenomenon&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-2&#34;&gt;Remedy&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-3&#34;&gt;One more thing&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-4&#34;&gt;SSH daemon on android by termux&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-5&#34;&gt;Installation&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-6&#34;&gt;Setting the key&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-7&#34;&gt;Start daemon in debug mode&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-8&#34;&gt;Start daemon&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-9&#34;&gt;Login on the PC side&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+SSH interruption phenomenon
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+When logging in to a remote server with ssh,
+&lt;code class=&#34;verbatim&#34;&gt;Write failed: Broken pipe&lt;/code&gt; may be displayed and the connection may be
+broken.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+It is necessary to change the ssh setting on the client side or the
+server side, because ssh is automatically disconnected by a timeout if
+it is not operated for a while.
+&lt;/p&gt;
+&lt;h3 id=&#34;headline-2&#34;&gt;
+Remedy
+&lt;/h3&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Deal on the client side
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+Describe the following contents in &lt;code class=&#34;verbatim&#34;&gt;/etc/ssh/ssh_config&lt;/code&gt; or
+&lt;code class=&#34;verbatim&#34;&gt;~/.ssh/config&lt;/code&gt;
+&lt;/p&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  ServerAliveInterval &lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;
+  ServerAliveCountMax &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+With this setting, 10 times response confirmation will send to the
+server every 15 seconds, and if there is still no response, it times
+out.
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+Deal on the server side
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+Describe the following contents in &lt;code class=&#34;verbatim&#34;&gt;/etc/ssh/sshd_config&lt;/code&gt;
+&lt;/p&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  ClientAliveInterval &lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;
+  ClientAliveCountMax &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+With this setting, 5 times response confirmation will send to the client
+every 30 seconds, and if there is still no response, it times out.
+&lt;/p&gt;
+&lt;h3 id=&#34;headline-3&#34;&gt;
+One more thing
+&lt;/h3&gt;
+&lt;p&gt;
+It is recommended to use tools such as tmux or screen, so that even if
+the connection is lost halfway, you can log in to the remote server
+again and attach the previous session.
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-4&#34;&gt;
+SSH daemon on android by termux
+&lt;/h2&gt;
+&lt;h3 id=&#34;headline-5&#34;&gt;
+Installation
+&lt;/h3&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  apt install openssh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;headline-6&#34;&gt;
+Setting the key
+&lt;/h3&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  ssh-keygen
+  cat ~/.ssh/id_rsa.pub &amp;gt; ~/.ssh/authorized_keys
+  chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;600&lt;/span&gt; ~/.ssh/authorized_keys
+  chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;700&lt;/span&gt; ~/.ssh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;headline-7&#34;&gt;
+Start daemon in debug mode
+&lt;/h3&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  sshd -d&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;headline-8&#34;&gt;
+Start daemon
+&lt;/h3&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  sshd&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;headline-9&#34;&gt;
+Login on the PC side
+&lt;/h3&gt;
+&lt;p&gt;
+Set the private key &lt;code class=&#34;verbatim&#34;&gt;~/.ssh/id_rsa&lt;/code&gt; generated on the android side in the
+SSH client of the PC side, and connect to the server on android with
+specifying IP and port &lt;code class=&#34;verbatim&#34;&gt;8022&lt;/code&gt; and without a username.
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Wave-making resistance estimation through deep learning considering the distribution of ship figure</title>
+      <link>https://xinii.cf/en/publication/li2020wave/</link>
+      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/en/publication/li2020wave/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to copy or download the publication metadata.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An Improved Auto-encoder Based on 2-Level Prioritized Experience Replay for High Dimension Skewed Data</title>
+      <link>https://xinii.cf/en/publication/li2019improved/</link>
+      <pubDate>Thu, 05 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/en/publication/li2019improved/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to copy or download the publication metadata.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to install OpenCV on Jetson Nano?</title>
+      <link>https://xinii.cf/en/post/install-opencv-on-jetson-nano/</link>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/en/post/install-opencv-on-jetson-nano/</guid>
+      <description>
+&lt;p&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-1&#34;&gt;Generate swap file&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-2&#34;&gt;Generate installation script&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-3&#34;&gt;Run the script&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-4&#34;&gt;Test the installed OpenCV&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Generate swap file
+&lt;/h2&gt;
+&lt;p&gt;
+To prevent errors due to insufficient memory during compilation, create
+a swap file firstly, and store it to somewhere you know. After OS
+restarting, the swap space will disappear, or you can manually delete
+this file after the completion of the following compilation and other
+work.
+&lt;/p&gt;
+&lt;div class=&#34;src src-bash&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  $ fallocate -l 4G swapfile
+  $ chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;600&lt;/span&gt; swapfile
+  $ mkswap swapfile
+  $ sudo swapon swapfile
+  $ swapon -s&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+Generate installation script
+&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://github.com/AastaNV/JEP/blob/master/script/install_opencv4.0.0_Nano.sh&#34;&gt;The original link of the script to install the OpenCV 4.0.0 version&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+The above is the version used to install OpenCV 4.0.0, here we want to
+install the newer version 4.1.0, so change the version number part of
+the above code.
+&lt;/p&gt;
+&lt;div class=&#34;src src-bash&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash&lt;/span&gt;
+  #
+  &lt;span style=&#34;color:#75715e&#34;&gt;# Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.&lt;/span&gt;
+  #
+  &lt;span style=&#34;color:#75715e&#34;&gt;# NVIDIA Corporation and its licensors retain all intellectual property&lt;/span&gt;
+  &lt;span style=&#34;color:#75715e&#34;&gt;# and proprietary rights in and to this software, related documentation&lt;/span&gt;
+  &lt;span style=&#34;color:#75715e&#34;&gt;# and any modifications thereto.  Any use, reproduction, disclosure or&lt;/span&gt;
+  &lt;span style=&#34;color:#75715e&#34;&gt;# distribution of this software and related documentation without an express&lt;/span&gt;
+  &lt;span style=&#34;color:#75715e&#34;&gt;# license agreement from NVIDIA Corporation is strictly prohibited.&lt;/span&gt;
+  #
+
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$#&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; -ne &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
+      echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Usage: &lt;/span&gt;$0&lt;span style=&#34;color:#e6db74&#34;&gt; &amp;lt;Install Folder&amp;gt;&amp;#34;&lt;/span&gt;
+      exit
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+  folder&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$1&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+  user&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;nvidia&amp;#34;&lt;/span&gt;
+  passwd&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;nvidia&amp;#34;&lt;/span&gt;
+
+  echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** Install requirement&amp;#34;&lt;/span&gt;
+  sudo apt-get update
+  sudo apt-get install -y build-essential cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+  sudo apt-get install -y libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev
+  sudo apt-get install -y python2.7-dev python3.6-dev python-dev python-numpy python3-numpy
+  sudo apt-get install -y libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
+  sudo apt-get install -y libv4l-dev v4l-utils qv4l2 v4l2ucp
+  sudo apt-get install -y curl
+  sudo apt-get update
+
+  echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** Download opencv-4.1.0&amp;#34;&lt;/span&gt;
+  cd $folder
+  curl -L https://github.com/opencv/opencv/archive/4.1.0.zip -o opencv-4.1.0.zip
+  curl -L https://github.com/opencv/opencv_contrib/archive/4.1.0.zip -o opencv_contrib-4.1.0.zip
+  unzip opencv-4.1.0.zip 
+  unzip opencv_contrib-4.1.0.zip 
+  cd opencv-4.1.0/
+
+  echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** Building...&amp;#34;&lt;/span&gt;
+  mkdir release
+  cd release/
+  cmake -D WITH_CUDA&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;ON -D CUDA_ARCH_BIN&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;5.3&amp;#34;&lt;/span&gt; -D CUDA_ARCH_PTX&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; -D OPENCV_EXTRA_MODULES_PATH&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;../../opencv_contrib-4.1.0/modules -D WITH_GSTREAMER&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;ON -D WITH_LIBV4L&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;ON -D BUILD_opencv_python2&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;ON -D BUILD_opencv_python3&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;ON -D BUILD_TESTS&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;OFF -D BUILD_PERF_TESTS&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;OFF -D BUILD_EXAMPLES&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;OFF -D CMAKE_BUILD_TYPE&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;RELEASE -D CMAKE_INSTALL_PREFIX&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/usr/local ..
+
+  make -j3
+  sudo make install
+  sudo apt-get install -y python-opencv python3-opencv
+
+  echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** Install opencv-4.1.0 successfully&amp;#34;&lt;/span&gt;
+  echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** Bye :)&amp;#34;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+Save the above script as a &lt;code class=&#34;verbatim&#34;&gt;sh&lt;/code&gt; file, for example,
+&lt;code class=&#34;verbatim&#34;&gt;install_opencv4.1.0_Nano.sh&lt;/code&gt;.
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-3&#34;&gt;
+Run the script
+&lt;/h2&gt;
+&lt;div class=&#34;src src-bash&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  mkdir opencv
+  sh install_opencv4.1.0_Nano.sh opencv&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+The installation may take a lot of time, please be patient and wait for
+the installation to end. It is recommended to use tmux to hang in the
+background.
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-4&#34;&gt;
+Test the installed OpenCV
+&lt;/h2&gt;
+&lt;p&gt;
+Test the statement &lt;code class=&#34;verbatim&#34;&gt;import cv2&lt;/code&gt; through the interactive interface of
+python, it is good if no error is reported.
+&lt;/p&gt;
+&lt;p&gt;
+However, considering that users who use tools such as pyenv for python
+version management, if they switch to the python version installed under
+pyenv, the installed OpenCV may not be recognized. The solution is to
+create a soft link to the OpenCV library and link it to the python
+library directory under the management of pyenv.
+&lt;/p&gt;
+&lt;p&gt;
+For example, suppose the library directory of the python version in
+pyenv is,
+&lt;/p&gt;
+&lt;div class=&#34;src src-bash&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  /home/&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;username&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;/.anyenv/envs/pyenv/versions/3.6.8/lib/python3.6/site-packages&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+And the installed OpenCV library path is,
+&lt;/p&gt;
+&lt;div class=&#34;src src-bash&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  /usr/local/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-linux-gnu.so&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+Then execute the following statement to create a soft link,
+&lt;/p&gt;
+&lt;div class=&#34;src src-bash&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  cd /home/&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;username&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;/.anyenv/envs/pyenv/versions/3.6.8/lib/python3.6/site-packages
+  ln -s /usr/local/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-linux-gnu.so ./&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+Besides, use the python version of pip in pyenv to install numpy through
+the &lt;code class=&#34;verbatim&#34;&gt;pip install numpy&lt;/code&gt; statement, and go to the interactive interface
+to test &lt;code class=&#34;verbatim&#34;&gt;import cv2&lt;/code&gt;. If no error is displayed, the installation is
+complete.
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Install Gnutls and compile Emacs from source</title>
+      <link>https://xinii.cf/en/post/install-gnutls-and-compile-emacs-from-source/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/en/post/install-gnutls-and-compile-emacs-from-source/</guid>
+      <description>
+&lt;p&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-1&#34;&gt;The lack of Gnutls in the environment&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-2&#34;&gt;Potential problems&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-3&#34;&gt;Install Gnutls&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-4&#34;&gt;Other possible problems&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+The lack of Gnutls in the environment
+&lt;/h2&gt;
+&lt;p&gt;
+If the current environment lacks Gnutls, the following configuration is
+required before compiling and installing the Emacs&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; source code.
+&lt;/p&gt;
+&lt;div class=&#34;src src-bash&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  ./configure --with-gnutls&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;no&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+Or specify the installation directory at the same time, add the option
+to ignore other dependent libraries that are still missing, such as the
+following configuration.
+&lt;/p&gt;
+&lt;div class=&#34;src src-bash&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  bash configure --prefix&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;$HOME/.local --with-gif&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;no --with-gnutls&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;no&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+In this way, the configuration and installation can be carried out
+smoothly in the absence of permission to the default installation path,
+or the lack of various dependent libraries.
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+Potential problems
+&lt;/h2&gt;
+&lt;p&gt;
+Although the above can achieve the purpose of normal installation of
+Emacs to the &lt;code class=&#34;verbatim&#34;&gt;$HOME/.local&lt;/code&gt; directory, However, due to the lack of the
+Gnutls component, when using network transmission in Emacs, you can only
+use http instead of https.
+&lt;/p&gt;
+&lt;p&gt;
+If only needs a network connection during Emacs initialization, you can
+solve the problem by changing the Melpa links to start with http, but
+this will cause problems for future extensions that require network
+connectivity in Emacs.
+&lt;/p&gt;
+&lt;p&gt;
+For example, when using &lt;code class=&#34;verbatim&#34;&gt;google-translate&lt;/code&gt;, even if the &lt;code class=&#34;verbatim&#34;&gt;https&lt;/code&gt; in all
+&lt;code class=&#34;verbatim&#34;&gt;*.el&lt;/code&gt; files in the &lt;code class=&#34;verbatim&#34;&gt;google-translate&lt;/code&gt; package are changed to &lt;code class=&#34;verbatim&#34;&gt;http&lt;/code&gt;,
+during actual use, some &lt;code class=&#34;verbatim&#34;&gt;https&lt;/code&gt; services will still be used
+automatically, resulting in abnormal translation.
+&lt;/p&gt;
+&lt;p&gt;
+One thing to note here is that after modifying the &lt;code class=&#34;verbatim&#34;&gt;*.el&lt;/code&gt; file, you need
+to delete all &lt;code class=&#34;verbatim&#34;&gt;*.elc&lt;/code&gt; files to force a recompilation to make the changes
+take effect.
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-3&#34;&gt;
+Install Gnutls
+&lt;/h2&gt;
+&lt;p&gt;
+After the above actual tests, it is not difficult to find that it is a
+good choice to install Emacs from the source code after installing
+Gnutls in the current environment.
+&lt;/p&gt;
+&lt;p&gt;
+Taking OpenSUSE as an example, Gnutls can be installed by running the
+following statement on the terminal.
+&lt;/p&gt;
+&lt;div class=&#34;src src-bash&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  sudo zypper install gnutls&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;headline-4&#34;&gt;
+Other possible problems
+&lt;/h2&gt;
+&lt;div class=&#34;src src-bash&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  checking &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; library containing tputs... no
+  configure: error: The required &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;tputs&amp;#39;&lt;/span&gt; was not found in any library.
+  The following libraries were tried &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;in order&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;:
+    libtinfo, libncurses, libterminfo, libcurses, libtermcap
+  Please try installing whichever of these libraries is most appropriate
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; your system, together with its header files.
+  For example, a libncurses-dev&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;el&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; or similar package.
+  make: *** No targets specified and no makefile found.  Stop.
+  make: *** No rule to make target &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;install&amp;#39;&lt;/span&gt;.  Stop.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+Besides, if Gnutls is installed in the current environment, and the
+above error is still reported after &lt;code class=&#34;verbatim&#34;&gt;make&lt;/code&gt;, then for OpenSUSE
+environment, you need a package called &lt;code class=&#34;verbatim&#34;&gt;ncurses-devel&lt;/code&gt;, execute the
+following sentence to install.
+&lt;/p&gt;
+&lt;div class=&#34;src src-bash&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  sudo zypper install ncurses-devel&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr class=&#34;footnotes-separatator&#34;&gt;
+&lt;div class=&#34;footnote-definitions&#34;&gt;
+&lt;div class=&#34;footnote-definition&#34;&gt;
+&lt;sup id=&#34;footnote-1&#34;&gt;&lt;a href=&#34;#footnote-reference-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
+&lt;div class=&#34;footnote-body&#34;&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://ja.wikipedia.org/wiki/Emacs&#34;&gt;The logo of Emacs&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My shell migration record</title>
+      <link>https://xinii.cf/en/post/my-shell-migration-record/</link>
+      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/en/post/my-shell-migration-record/</guid>
+      <description>
+&lt;p&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-1&#34;&gt;From bash to zsh&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-2&#34;&gt;Configure zsh&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-3&#34;&gt;From zsh to fish-shell&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-4&#34;&gt;fish shell installation and default shell switch&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-5&#34;&gt;Configuration of Fish shell&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-6&#34;&gt;Common problems when using python under the fish shell&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+From bash to zsh
+&lt;/h2&gt;
+&lt;p&gt;
+Although I switched to the fish shell two weeks after using the zsh shell
+(the fish shell has a special introduction below),
+this does not deny that the zsh shell is still a good shell.
+You can switch from any shell to zsh shell in the following way.
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+Use the following instructions when installing zsh,
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  brew install zsh &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;MacOS&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+  apt install zsh &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Ubuntu / Linux Mint&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+If you want to know the shell currently installed in the system, enter the following command,
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  cat /etc/shells&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+How to use zsh as your default shell? Enter the following command,
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  chsh -s /usr/local/bin/zsh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+Error reading about the configuration file
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+When the shell script explains the error,
+you can check the currently used &lt;code class=&#34;verbatim&#34;&gt;sh&lt;/code&gt; path.
+For example, it may be that &lt;code class=&#34;verbatim&#34;&gt;sh&lt;/code&gt; points to &lt;code class=&#34;verbatim&#34;&gt;dash&lt;/code&gt;, which causes an error.
+View through the following statement.
+&lt;/p&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  ls -l &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;which sh&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+Script interpreter differences in syntax
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+When switching from traditional bash and other shells to zsh,
+you will find that the index of the first element of the collection starts from 1.
+If you want to start from 0, configure the following statement in the configuration file.
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+Fix array index for zsh:
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$ZSH_NAME&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;zsh&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
+      setopt localoptions ksharrays
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;headline-2&#34;&gt;
+Configure zsh
+&lt;/h3&gt;
+&lt;p&gt;
+Similar to the bash shell&amp;#39;s &lt;code class=&#34;verbatim&#34;&gt;.bashrc&lt;/code&gt;,
+the configuration of &lt;code class=&#34;verbatim&#34;&gt;zsh&lt;/code&gt; also requires a configuration file.
+This file is the &lt;code class=&#34;verbatim&#34;&gt;.zshrc&lt;/code&gt; file in the user directory.
+&lt;a href=&#34;https://github.com/xinii/xinconfig/blob/master/profile/core/zsh.sh&#34;&gt;Click here&lt;/a&gt; to open the configuration file I uploaded to Github to download and use.
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-3&#34;&gt;
+From zsh to fish-shell
+&lt;/h2&gt;
+&lt;p&gt;
+After using the zsh shell,
+I switched to the fish shell in about two weeks.
+This is not because zsh is not good, but the natural completion and ease of use of fish attracted me.
+After moving to the fish environment, the shell toss is a conclusion. The following records of the process.
+&lt;/p&gt;
+&lt;h3 id=&#34;headline-4&#34;&gt;
+fish shell installation and default shell switch
+&lt;/h3&gt;
+&lt;p&gt;
+This was mentioned above.
+Now we will introduce the instructions that different operating systems need to execute.
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+MacOS:
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  brew install fish&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+Ubuntu/Linux Mint:
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  apt install fish&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+OpenSUSE:
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  sudo zypper install fish&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+If it is an OpenSUSE environment running under Windows,
+you may need &lt;code class=&#34;verbatim&#34;&gt;root&lt;/code&gt; permission, then add &lt;code class=&#34;verbatim&#34;&gt;sudo&lt;/code&gt; in front of the command.
+Use the following statement to view the shell used by the current system.
+&lt;/p&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  cat /etc/shells&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+If your fish shell is displayed at &lt;code class=&#34;verbatim&#34;&gt;/usr/bin/fish&lt;/code&gt;,
+Then execute the following statement to switch it to the default shell
+(add &lt;code class=&#34;verbatim&#34;&gt;sudo&lt;/code&gt; if you have insufficient permissions).
+&lt;/p&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  chsh -s /usr/bin/fish&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+Now reopen a terminal session and you will find that the default shell has been switched to fish.
+If it reports a lot of errors about hostname immediately after opening the fish shell,
+that is to say, the current environment lacks a package called hostname,
+then use the package manager of the distribution you are using to install &lt;code class=&#34;verbatim&#34;&gt;hostname&lt;/code&gt;, for example, under OpenSUSE,
+&lt;/p&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  sudo zypper install hostname&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;headline-5&#34;&gt;
+Configuration of Fish shell
+&lt;/h3&gt;
+&lt;p&gt;
+The configuration I wrote was uploaded on Github, &lt;a href=&#34;https://github.com/xinii/xinconfig/tree/master/profile/fish&#34;&gt;click here&lt;/a&gt; to view my configuration.
+&lt;/p&gt;
+&lt;h3 id=&#34;headline-6&#34;&gt;
+Common problems when using python under the fish shell
+&lt;/h3&gt;
+&lt;p&gt;
+There are two issues that I need to pay attention to at present,
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+About tmux
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+When tmux has a session in the background,
+even if the update &lt;code class=&#34;verbatim&#34;&gt;PYTHONPATH&lt;/code&gt; environment variable will not take effect,
+then all processes of tmux need to be closed before the update will take effect.
+In addition to fish, other shell environments should also be encountered.
+I first appeared in fish and kept it as a record.
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+About &lt;code class=&#34;verbatim&#34;&gt;PYTHONPATH&lt;/code&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+The way to define environment variables in fish shell is &lt;code class=&#34;verbatim&#34;&gt;set &amp;lt;variable_name&amp;gt; &amp;lt;parameter_1&amp;gt; &amp;lt;parameter_2&amp;gt;&lt;/code&gt;
+This method has great advantages and is very convenient, but for &lt;code class=&#34;verbatim&#34;&gt;PYTHONPATH&lt;/code&gt;,
+then &lt;code class=&#34;verbatim&#34;&gt;set PYTHONPATH &amp;lt;parameter_1&amp;gt;:&amp;lt;parameter_2&amp;gt;&lt;/code&gt; is more versatile.
+The reason is that after testing, both methods can be used normally under MacOS, but it is running on Jetson
+When testing under Ubuntu on Nano, only the second method is available.
+The specific reason is not yet clear, there may be different reasons for the operating system,
+It may also be caused by different python versions
+(For example, the version number is the same, but the different processor architectures cause differences in compilation methods and cause this problem).
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Install Linux Mint from USB device</title>
+      <link>https://xinii.cf/en/post/install-linux-mint-from-the-usb-device/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/en/post/install-linux-mint-from-the-usb-device/</guid>
+      <description>
+&lt;p&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-1&#34;&gt;Prepare a USB device for installing Linux Mint&lt;sup class=&#34;footnote-reference&#34;&gt;1&lt;/sup&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-2&#34;&gt;ISO file of Linux Mint&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Important&lt;/strong&gt;: Before starting the following work, first make sure nothing is stored in the USB device,
+Or there is no important data in it (because burning will cause data loss),
+At the same time, an empty partition has been prepared on the computer (the data of the target partition installed will also be erased).
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Prepare a USB device for installing Linux Mint&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+First prepare a USB device, it can be a U disk or a USB mobile hard disk,
+later, the installation program for installing Linux Mint will be written on this.
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+如果使用的是Windows操作系统，那么点击
+&lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0&#34;&gt;这里&lt;/a&gt;来查看Ubuntu官方的教程以创建一个可以安装Linux的USB设备。
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+*注意*：上面的教程是教你如何製作一个用于安装Ubuntu的USB设备，
+安装Linux Mint的情况下仅需要把涉及到ISO文件的地方换成Linux
+Mint的ISO文件，其他地方完全相同。
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+其中会用到的软件叫做rufus，上面的教程裡面也有提到，点击
+&lt;a href=&#34;https://rufus.akeo.ie/&#34;&gt;这里&lt;/a&gt;打开rufus的官方网站，你也可以点击
+&lt;a href=&#34;https://github.com/pbatard/rufus/releases/download/v3.5/rufus-3.5.exe&#34;&gt;这里&lt;/a&gt;直接下载rufus。
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+ISO file of Linux Mint
+&lt;/h2&gt;
+&lt;p&gt;
+前一节提到的linux mint的iso文件需要从下面的地方获取。点击
+&lt;a href=&#34;https://linuxmint.com/&#34;&gt;这里&lt;/a&gt;打开linux mint的官方网站。
+或者也可以点击&lt;a href=&#34;http://mirrors.evowise.com/linuxmint/stable/19.1/linuxmint-19.1-cinnamon-64bit.iso&#34;&gt;这里&lt;/a&gt;直接下载Linux Mint 19.1版本。
+&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr class=&#34;footnotes-separatator&#34;&gt;
+&lt;div class=&#34;footnote-definitions&#34;&gt;
+&lt;div class=&#34;footnote-definition&#34;&gt;
+&lt;sup id=&#34;footnote-1&#34;&gt;&lt;a href=&#34;#footnote-reference-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
+&lt;div class=&#34;footnote-body&#34;&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://linuxmint.com/&#34;&gt;The logo of Linux Mint&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Create a blog via Jekyll and post to Github</title>
+      <link>https://xinii.cf/en/post/create-a-blog-by-jekyll-and-publish-to-github/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/en/post/create-a-blog-by-jekyll-and-publish-to-github/</guid>
+      <description>
+&lt;p&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-1&#34;&gt;Install Jekyll&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-2&#34;&gt;Publish blog to Github&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Install Jekyll
+&lt;/h2&gt;
+&lt;p&gt;
+Jekyll&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; is a static website generation framework written in Ruby
+language. The following is the official website introduction.
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Jekyll is a static site generator. You give it text written in your
+  favorite markup language and it uses layouts to create a static
+  website. You can tweak how you want the site URLs to look, what data
+  gets displayed on the site, and more. –Jekyll&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-2&#34; href=&#34;#footnote-2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+When installing Jekyll, you first need a Ruby package management
+environment. The commonly used package manager of the Ruby programming
+environment is &lt;code class=&#34;verbatim&#34;&gt;gem&lt;/code&gt;. For example, executing the following statement in
+Ubuntu will also install &lt;code class=&#34;verbatim&#34;&gt;gem&lt;/code&gt;.
+&lt;/p&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  apt install ruby-dev&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+After installing &lt;code class=&#34;verbatim&#34;&gt;gem&lt;/code&gt;, make sure its execution path is in our &lt;code class=&#34;verbatim&#34;&gt;PATH&lt;/code&gt;
+environment variable. If you do not use the above method, but use
+virtual environment management tools such as &lt;code class=&#34;verbatim&#34;&gt;rbenv&lt;/code&gt;, just call the
+&lt;code class=&#34;verbatim&#34;&gt;gem&lt;/code&gt; configured in the virtual environment. Then you can install Jekyll
+by executing the following statement.
+&lt;/p&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  gem install jekyll&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+Publish blog to Github
+&lt;/h2&gt;
+&lt;p&gt;
+After installing Jekyll, you must hope to post something to Github first
+to see the effect. Especially understand this mood.
+&lt;/p&gt;
+&lt;p&gt;
+Then next, before blogging, let&amp;#39;s firstly use Jekyll installed to
+generate a default site and publish it to Github. Execute the following
+command in the current path where you want to manage the blog locally.
+&lt;/p&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  jekyll new folder-name-for-your-blog&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+Then a folder called &lt;code class=&#34;verbatim&#34;&gt;folder-name-for-your-blog&lt;/code&gt; will be generated under
+the current path, which is the new blog source code created by Jekyll.
+&lt;/p&gt;
+&lt;p&gt;
+Then create a repository called &lt;code class=&#34;verbatim&#34;&gt;your-user-name-of-github.github.io&lt;/code&gt; on
+Github. After creating the repository, Github will prompt how to use
+&lt;code class=&#34;verbatim&#34;&gt;git&lt;/code&gt; to &lt;code class=&#34;verbatim&#34;&gt;push&lt;/code&gt; local content to the repository. Follow the wizard to
+&lt;code class=&#34;verbatim&#34;&gt;push&lt;/code&gt; the contents of the &lt;code class=&#34;verbatim&#34;&gt;folder-name-for-your-blog&lt;/code&gt; folder you just
+created to this repository.
+&lt;/p&gt;
+&lt;p&gt;
+Then wait a few minutes to open &lt;code class=&#34;verbatim&#34;&gt;your-user-name-of-github.github.io&lt;/code&gt;
+through your browser, and you can see Jekyll&amp;#39;s welcome page if nothing
+unexpected happens.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;del&gt;This site is also created by the above method.&lt;/del&gt;
+&lt;/p&gt;
+&lt;p&gt;
+(Postscript on June 14, 2020)
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://xinii.github.io&#34;&gt;This site&lt;/a&gt; has now been created using the
+&lt;code class=&#34;verbatim&#34;&gt;hugo&lt;/code&gt; static website generation framework, To refer to the original
+site, please &lt;a href=&#34;https://xinii.github.io/jekyll-blog&#34;&gt;click here&lt;/a&gt; to visit.
+&lt;/p&gt;
+&lt;p&gt;
+Welcome to contact and leave a message.
+&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr class=&#34;footnotes-separatator&#34;&gt;
+&lt;div class=&#34;footnote-definitions&#34;&gt;
+&lt;div class=&#34;footnote-definition&#34;&gt;
+&lt;sup id=&#34;footnote-1&#34;&gt;&lt;a href=&#34;#footnote-reference-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
+&lt;div class=&#34;footnote-body&#34;&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://raw.githubusercontent.com/jekyll/brand/master/jekyll-logo-black-red-transparent.png&#34;&gt;The logo of Jekyll&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnote-definition&#34;&gt;
+&lt;sup id=&#34;footnote-2&#34;&gt;&lt;a href=&#34;#footnote-reference-2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
+&lt;div class=&#34;footnote-body&#34;&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://jekyllrb.com/docs/&#34;&gt;jekyllrb.com&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Multi-translation parallel corpus construction of Don Quixote</title>
+      <link>https://xinii.cf/en/publication/wang2017/</link>
+      <pubDate>Thu, 01 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/en/publication/wang2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prioritized Sampling Method for Autoencoder to Reduce Loss Rate for Skewed Data</title>
+      <link>https://xinii.cf/en/publication/li2018prioritized/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/en/publication/li2018prioritized/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Research About Anomaly Detection Method for Multidimensional Time Series Data</title>
+      <link>https://xinii.cf/en/publication/li2017research/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/en/publication/li2017research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An Empirical Study of Oral Communication Strategies for Foreign Language Students - Taking Spanish as an Example</title>
+      <link>https://xinii.cf/en/publication/wang2016/</link>
+      <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/en/publication/wang2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Curriculum vitae</title>
+      <link>https://xinii.cf/en/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/en/cv/</guid>
+      <description>
+&lt;p&gt;
+My name is Xin Li, living in Yokohama. I sincerely thank you for coming. The following is my brief introduction.
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Educational experience
+&lt;/h2&gt;
+&lt;h3 id=&#34;headline-2&#34;&gt;
+Yokohama National University, Japan
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;October 2016 - March 2020&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+In &lt;em&gt;May 2016&lt;/em&gt;, I awarded a scholarship under the &lt;em&gt;State Scholarship
+Fund&lt;/em&gt; by the &lt;em&gt;China Scholarship Council (CSC)&lt;/em&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+From &lt;em&gt;October 2016&lt;/em&gt;, I studied at the &lt;a href=&#34;http://gakufu.eng.ynu.ac.jp/english/&#34;&gt;Graduate School of Engineering, Yokohama National University&lt;/a&gt;.
+Specialize in &lt;a href=&#34;https://gakufu.eng.ynu.ac.jp/english/dep/physicalinformation/index.html&#34;&gt;Physics, Electrical and Computer Engineering&lt;/a&gt;,
+research in areas such as machine learning, deep learning, and artificial intelligence applications.
+&lt;/p&gt;
+&lt;p&gt;
+In &lt;em&gt;March 2020&lt;/em&gt;, I obtained a &lt;strong&gt;Doctor of Engineering&lt;/strong&gt; degree.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;headline-3&#34;&gt;
+Tokyo International University, Japan
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;April 2014 - March 2015&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+From &lt;em&gt;April 2014&lt;/em&gt;, I studied at the &lt;a href=&#34;https://www.tiu.ac.jp/department/commercial_g/&#34;&gt;Graduate School of Business, Tokyo International University&lt;/a&gt; as an exchange student.
+&lt;/p&gt;
+&lt;p&gt;
+In &lt;em&gt;March 2015&lt;/em&gt;, I completed the study plan.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;headline-4&#34;&gt;
+Shanxi University, China
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;September 2009 - July 2016&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+From &lt;em&gt;September 2009&lt;/em&gt;, I studied at the &lt;a href=&#34;http://cs.sxu.edu.cn/&#34;&gt;School of Computer and Information Technology, Shanxi University&lt;/a&gt;,
+and the &lt;a href=&#34;http://jgxy.sxu.edu.cn/&#34;&gt;School of Economics and Management, Shanxi University&lt;/a&gt;,
+specialize in &lt;a href=&#34;http://cs.sxu.edu.cn/major/zysz/96b6f6f0572c4a6884b177fc5c3fb7e5.htm&#34;&gt;Software Engineering&lt;/a&gt; and &lt;a href=&#34;http://jgxy.sxu.edu.cn/xkjs/0b205770b5a64637856e60ca20484aed.htm&#34;&gt;Business Administration&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+In &lt;em&gt;July 2013&lt;/em&gt;, I obtained a &lt;strong&gt;Bachelor of Engineering&lt;/strong&gt; degree and a
+&lt;strong&gt;Bachelor of Business Administration&lt;/strong&gt; degree (a second degree).
+&lt;/p&gt;
+&lt;p&gt;
+From &lt;em&gt;September 2013&lt;/em&gt;, I studied at the (Graduate) &lt;a href=&#34;http://cs.sxu.edu.cn/&#34;&gt;School of Computer and Information Technology, Shanxi University&lt;/a&gt;,
+specialize in &lt;a href=&#34;http://cs.sxu.edu.cn/major/zysz/96b6f6f0572c4a6884b177fc5c3fb7e5.htm&#34;&gt;Software Engineering&lt;/a&gt;, and in &lt;em&gt;July 2016&lt;/em&gt;, I obtained a &lt;strong&gt;Master of Engineering&lt;/strong&gt; degree.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;headline-5&#34;&gt;
+Research and software works
+&lt;/h2&gt;
+&lt;h3 id=&#34;headline-6&#34;&gt;
+Publications
+&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;Xin Li&lt;/strong&gt;, Hiroshi Arai, and Tomoki Hamagami.
+Wave-making resistance estimation through deep learning considering the distribution of ship figure.
+&lt;em&gt;IEEJ Transactions on Electronics, Information and Systems&lt;/em&gt;, 140(3):391–397, 2020. ( in Japanese )
+&lt;/p&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Available on&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://doi.org/10.1541/ieejeiss.140.391&#34;&gt;DOI&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.jstage.jst.go.jp/article/ieejeiss/140/3/140_391/_article/&#34;&gt;J-STAGE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://ci.nii.ac.jp/naid/130007804400&#34;&gt;CiNii&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://id.ndl.go.jp/bib/030294241&#34;&gt;NDL Online&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;Xin Li&lt;/strong&gt; and Tomoki Hamagami. An improved auto-encoder based on
+2-level prioritized experience replay for high dimension skewed data.
+&lt;em&gt;Proceedings in Adaptation, Learning and Optimization&lt;/em&gt;, 12:93–105, 2020.
+&lt;/p&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Available on&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://doi.org/10.1007/978-3-030-37442-6_9&#34;&gt;DOI&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://link.springer.com/chapter/10.1007%2F978-3-030-37442-6_9&#34;&gt;Springer Link&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;Xin Li&lt;/strong&gt; and Tomoki Hamagami.
+Prioritized sampling method for autoencoder to reduce loss rate for skewed data.
+&lt;em&gt;The papers of technical meeting on systems, IEE Japan&lt;/em&gt;, 2018(39):199–203, 2018.
+&lt;/p&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Available on&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://ci.nii.ac.jp/naid/40021703788&#34;&gt;CiNii&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://id.ndl.go.jp/bib/029306595&#34;&gt;NDL Online&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Jinwei Wang and &lt;strong&gt;Xin Li&lt;/strong&gt;.
+Multi-translation parallel corpus construction of don quixote.
+In &lt;em&gt;Spanish Paper Series 2017&lt;/em&gt;, pages 4250–4423.
+Foreign Language Teaching and Researching Press, Beijing, 11 2018. ( in Simplified Chinese )
+&lt;/p&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Available on&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.amazon.cn/dp/B07N2JYZVV&#34;&gt;Amazon Kindle Store&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Jinwei Wang and &lt;strong&gt;Xin Li&lt;/strong&gt;.
+An empirical study of oral communication strategies for foreign language students - taking spanish as an example.
+In &lt;em&gt;Proceedings of the 11th Cross-Strait Foreign Language Teaching Symposium&lt;/em&gt;, pages 1–11.
+Fu Jen Catholic University Press, Taibei, 9 2016. ( in Traditional Chinese )
+&lt;/p&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Available on&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://books.google.co.jp/books?id=4iqrDwAAQBAJ&#34;&gt;Google Books&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;headline-7&#34;&gt;
+Academic conference
+&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;Xin Li&lt;/strong&gt; and Tomoki Hamagami.
+An improved auto-encoder based on 2-level prioritized experience replay for high dimension skewed data.
+In &lt;em&gt;Proceedings of the 23rd Asia Pacific Symposium on Intelligent and Evolutionary Systems&lt;/em&gt;, 2019.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;Xin Li&lt;/strong&gt; and Tomoki Hamagami.
+Prioritized sampling method for autoencoder to reduce loss rate for skewed data.
+In &lt;em&gt;The 28th Fuzzy, Artificial Intelligence, Neural Networks and Computational Intelligence&lt;/em&gt;, 2018.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;Xin Li&lt;/strong&gt;, Masaya Nakata, Hamatsu Fumiya, and Tomoki Hamagami.
+A research about anomaly detection method for multidimensional time series data.
+In &lt;em&gt;The International Conference on Electrical Engineering&lt;/em&gt;, 2017.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;headline-8&#34;&gt;
+Software works
+&lt;/h3&gt;
+&lt;p&gt;
+Computer software copyright registration certificate from &lt;em&gt;China National Copyright Administration&lt;/em&gt;,
+&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;November 2014&lt;/strong&gt;, &lt;em&gt;Eye exercises software based on face recognition and speech recognition&lt;/em&gt;,
+Registration No.2014SR177728, Certificate No.0846964.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;September 2014&lt;/strong&gt;, &lt;em&gt;Image retrieval and classification system based on the bag-of-words model&lt;/em&gt;,
+Registration No.2014SR136257, Certificate No.0805497.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;May 2014&lt;/strong&gt;, &lt;em&gt;HD image generation system based on Android&lt;/em&gt;,
+Registration No.2014SR052862，Certificate No.0722106.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;headline-9&#34;&gt;
+Work experience and internships
+&lt;/h2&gt;
+&lt;h3 id=&#34;headline-10&#34;&gt;
+Yokohama, Kanagawa, Japan
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;April 2020 - Now&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+In &lt;em&gt;Faculty of Engineering, Yokohama National University&lt;/em&gt;,
+as a part-time teaching staff and postdoctoral researcher.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;April 2019 - March 2020&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+In &lt;em&gt;College of Engineering Science, Yokohama National University&lt;/em&gt;,
+as a part-time lecturer for &lt;em&gt;Information System Basic Experiment Course I &amp;amp; II&lt;/em&gt;.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;April 2017 - July 2017&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+In &lt;em&gt;Graduate School of Engineering, Yokohama National University&lt;/em&gt;,
+as a teaching assistant for &lt;em&gt;C-programming Experiment Course I&lt;/em&gt;.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;headline-11&#34;&gt;
+Kawagoe, Saitama, Japan
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;June 2014 - February 2015&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+In &lt;em&gt;Seria Corporation Tobu Kasumigaseki Store&lt;/em&gt;, as a part-time working staff.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;headline-12&#34;&gt;
+Beijing, China
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;July 2012 - September 2012&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+In &lt;em&gt;ChinaSoft International Co., Ltd.&lt;/em&gt;, for internship.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;headline-13&#34;&gt;
+Taiyuan, Shanxi, China
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;April 2013 - March 2014&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+In &lt;em&gt;Taiyuan ChuangChengHuanXin Technology Co., Ltd.&lt;/em&gt;, as a part-time software and business manager.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;strong&gt;June 2010 - August 2010&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+In &lt;em&gt;Taiyuan Union Technology Co., Ltd.&lt;/em&gt;, for internship.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

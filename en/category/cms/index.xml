@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CMS | xin iDEA iNNATA</title>
+    <link>https://xinii.cf/en/category/cms/</link>
+      <atom:link href="https://xinii.cf/en/category/cms/index.xml" rel="self" type="application/rss+xml" />
+    <description>CMS</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 xin iDEA iNNATA</copyright><lastBuildDate>Tue, 02 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xinii.cf/images/icon_huc6d37f8d5848c4cf0bbdc638499793df_110525_512x512_fill_lanczos_center_2.png</url>
+      <title>CMS</title>
+      <link>https://xinii.cf/en/category/cms/</link>
+    </image>
+    
+    <item>
+      <title>Create a blog via Jekyll and post to Github</title>
+      <link>https://xinii.cf/en/post/create-a-blog-by-jekyll-and-publish-to-github/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/en/post/create-a-blog-by-jekyll-and-publish-to-github/</guid>
+      <description>
+&lt;p&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-1&#34;&gt;Install Jekyll&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-2&#34;&gt;Publish blog to Github&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Install Jekyll
+&lt;/h2&gt;
+&lt;p&gt;
+Jekyll&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; is a static website generation framework written in Ruby
+language. The following is the official website introduction.
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Jekyll is a static site generator. You give it text written in your
+  favorite markup language and it uses layouts to create a static
+  website. You can tweak how you want the site URLs to look, what data
+  gets displayed on the site, and more. –Jekyll&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-2&#34; href=&#34;#footnote-2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+When installing Jekyll, you first need a Ruby package management
+environment. The commonly used package manager of the Ruby programming
+environment is &lt;code class=&#34;verbatim&#34;&gt;gem&lt;/code&gt;. For example, executing the following statement in
+Ubuntu will also install &lt;code class=&#34;verbatim&#34;&gt;gem&lt;/code&gt;.
+&lt;/p&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  apt install ruby-dev&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+After installing &lt;code class=&#34;verbatim&#34;&gt;gem&lt;/code&gt;, make sure its execution path is in our &lt;code class=&#34;verbatim&#34;&gt;PATH&lt;/code&gt;
+environment variable. If you do not use the above method, but use
+virtual environment management tools such as &lt;code class=&#34;verbatim&#34;&gt;rbenv&lt;/code&gt;, just call the
+&lt;code class=&#34;verbatim&#34;&gt;gem&lt;/code&gt; configured in the virtual environment. Then you can install Jekyll
+by executing the following statement.
+&lt;/p&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  gem install jekyll&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+Publish blog to Github
+&lt;/h2&gt;
+&lt;p&gt;
+After installing Jekyll, you must hope to post something to Github first
+to see the effect. Especially understand this mood.
+&lt;/p&gt;
+&lt;p&gt;
+Then next, before blogging, let&amp;#39;s firstly use Jekyll installed to
+generate a default site and publish it to Github. Execute the following
+command in the current path where you want to manage the blog locally.
+&lt;/p&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  jekyll new folder-name-for-your-blog&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+Then a folder called &lt;code class=&#34;verbatim&#34;&gt;folder-name-for-your-blog&lt;/code&gt; will be generated under
+the current path, which is the new blog source code created by Jekyll.
+&lt;/p&gt;
+&lt;p&gt;
+Then create a repository called &lt;code class=&#34;verbatim&#34;&gt;your-user-name-of-github.github.io&lt;/code&gt; on
+Github. After creating the repository, Github will prompt how to use
+&lt;code class=&#34;verbatim&#34;&gt;git&lt;/code&gt; to &lt;code class=&#34;verbatim&#34;&gt;push&lt;/code&gt; local content to the repository. Follow the wizard to
+&lt;code class=&#34;verbatim&#34;&gt;push&lt;/code&gt; the contents of the &lt;code class=&#34;verbatim&#34;&gt;folder-name-for-your-blog&lt;/code&gt; folder you just
+created to this repository.
+&lt;/p&gt;
+&lt;p&gt;
+Then wait a few minutes to open &lt;code class=&#34;verbatim&#34;&gt;your-user-name-of-github.github.io&lt;/code&gt;
+through your browser, and you can see Jekyll&amp;#39;s welcome page if nothing
+unexpected happens.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;del&gt;This site is also created by the above method.&lt;/del&gt;
+&lt;/p&gt;
+&lt;p&gt;
+(Postscript on June 14, 2020)
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://xinii.github.io&#34;&gt;This site&lt;/a&gt; has now been created using the
+&lt;code class=&#34;verbatim&#34;&gt;hugo&lt;/code&gt; static website generation framework, To refer to the original
+site, please &lt;a href=&#34;https://xinii.github.io/jekyll-blog&#34;&gt;click here&lt;/a&gt; to visit.
+&lt;/p&gt;
+&lt;p&gt;
+Welcome to contact and leave a message.
+&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr class=&#34;footnotes-separatator&#34;&gt;
+&lt;div class=&#34;footnote-definitions&#34;&gt;
+&lt;div class=&#34;footnote-definition&#34;&gt;
+&lt;sup id=&#34;footnote-1&#34;&gt;&lt;a href=&#34;#footnote-reference-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
+&lt;div class=&#34;footnote-body&#34;&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://raw.githubusercontent.com/jekyll/brand/master/jekyll-logo-black-red-transparent.png&#34;&gt;The logo of Jekyll&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnote-definition&#34;&gt;
+&lt;sup id=&#34;footnote-2&#34;&gt;&lt;a href=&#34;#footnote-reference-2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
+&lt;div class=&#34;footnote-body&#34;&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://jekyllrb.com/docs/&#34;&gt;jekyllrb.com&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

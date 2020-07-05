@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Android | xin iDEA iNNATA</title>
+    <link>https://xinii.cf/en/tag/android/</link>
+      <atom:link href="https://xinii.cf/en/tag/android/index.xml" rel="self" type="application/rss+xml" />
+    <description>Android</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 xin iDEA iNNATA</copyright><lastBuildDate>Wed, 03 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xinii.cf/images/icon_huc6d37f8d5848c4cf0bbdc638499793df_110525_512x512_fill_lanczos_center_2.png</url>
+      <title>Android</title>
+      <link>https://xinii.cf/en/tag/android/</link>
+    </image>
+    
+    <item>
+      <title>Several SSH configurations</title>
+      <link>https://xinii.cf/en/post/several-ssh-configurations/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/en/post/several-ssh-configurations/</guid>
+      <description>
+&lt;p&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-1&#34;&gt;SSH interruption phenomenon&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-2&#34;&gt;Remedy&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-3&#34;&gt;One more thing&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-4&#34;&gt;SSH daemon on android by termux&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-5&#34;&gt;Installation&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-6&#34;&gt;Setting the key&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-7&#34;&gt;Start daemon in debug mode&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-8&#34;&gt;Start daemon&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-9&#34;&gt;Login on the PC side&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+SSH interruption phenomenon
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+When logging in to a remote server with ssh,
+&lt;code class=&#34;verbatim&#34;&gt;Write failed: Broken pipe&lt;/code&gt; may be displayed and the connection may be
+broken.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+It is necessary to change the ssh setting on the client side or the
+server side, because ssh is automatically disconnected by a timeout if
+it is not operated for a while.
+&lt;/p&gt;
+&lt;h3 id=&#34;headline-2&#34;&gt;
+Remedy
+&lt;/h3&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+Deal on the client side
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+Describe the following contents in &lt;code class=&#34;verbatim&#34;&gt;/etc/ssh/ssh_config&lt;/code&gt; or
+&lt;code class=&#34;verbatim&#34;&gt;~/.ssh/config&lt;/code&gt;
+&lt;/p&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  ServerAliveInterval &lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;
+  ServerAliveCountMax &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+With this setting, 10 times response confirmation will send to the
+server every 15 seconds, and if there is still no response, it times
+out.
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+Deal on the server side
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+Describe the following contents in &lt;code class=&#34;verbatim&#34;&gt;/etc/ssh/sshd_config&lt;/code&gt;
+&lt;/p&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  ClientAliveInterval &lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;
+  ClientAliveCountMax &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+With this setting, 5 times response confirmation will send to the client
+every 30 seconds, and if there is still no response, it times out.
+&lt;/p&gt;
+&lt;h3 id=&#34;headline-3&#34;&gt;
+One more thing
+&lt;/h3&gt;
+&lt;p&gt;
+It is recommended to use tools such as tmux or screen, so that even if
+the connection is lost halfway, you can log in to the remote server
+again and attach the previous session.
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-4&#34;&gt;
+SSH daemon on android by termux
+&lt;/h2&gt;
+&lt;h3 id=&#34;headline-5&#34;&gt;
+Installation
+&lt;/h3&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  apt install openssh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;headline-6&#34;&gt;
+Setting the key
+&lt;/h3&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  ssh-keygen
+  cat ~/.ssh/id_rsa.pub &amp;gt; ~/.ssh/authorized_keys
+  chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;600&lt;/span&gt; ~/.ssh/authorized_keys
+  chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;700&lt;/span&gt; ~/.ssh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;headline-7&#34;&gt;
+Start daemon in debug mode
+&lt;/h3&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  sshd -d&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;headline-8&#34;&gt;
+Start daemon
+&lt;/h3&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  sshd&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;headline-9&#34;&gt;
+Login on the PC side
+&lt;/h3&gt;
+&lt;p&gt;
+Set the private key &lt;code class=&#34;verbatim&#34;&gt;~/.ssh/id_rsa&lt;/code&gt; generated on the android side in the
+SSH client of the PC side, and connect to the server on android with
+specifying IP and port &lt;code class=&#34;verbatim&#34;&gt;8022&lt;/code&gt; and without a username.
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

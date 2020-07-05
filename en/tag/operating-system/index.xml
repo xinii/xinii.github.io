@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Operating System | xin iDEA iNNATA</title>
+    <link>https://xinii.cf/en/tag/operating-system/</link>
+      <atom:link href="https://xinii.cf/en/tag/operating-system/index.xml" rel="self" type="application/rss+xml" />
+    <description>Operating System</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 xin iDEA iNNATA</copyright><lastBuildDate>Tue, 23 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xinii.cf/images/icon_huc6d37f8d5848c4cf0bbdc638499793df_110525_512x512_fill_lanczos_center_2.png</url>
+      <title>Operating System</title>
+      <link>https://xinii.cf/en/tag/operating-system/</link>
+    </image>
+    
+    <item>
+      <title>Install Linux Mint from USB device</title>
+      <link>https://xinii.cf/en/post/install-linux-mint-from-the-usb-device/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/en/post/install-linux-mint-from-the-usb-device/</guid>
+      <description>
+&lt;p&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-1&#34;&gt;Prepare a USB device for installing Linux Mint&lt;sup class=&#34;footnote-reference&#34;&gt;1&lt;/sup&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-2&#34;&gt;ISO file of Linux Mint&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Important&lt;/strong&gt;: Before starting the following work, first make sure nothing is stored in the USB device,
+Or there is no important data in it (because burning will cause data loss),
+At the same time, an empty partition has been prepared on the computer (the data of the target partition installed will also be erased).
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Prepare a USB device for installing Linux Mint&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+First prepare a USB device, it can be a U disk or a USB mobile hard disk,
+later, the installation program for installing Linux Mint will be written on this.
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+如果使用的是Windows操作系统，那么点击
+&lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0&#34;&gt;这里&lt;/a&gt;来查看Ubuntu官方的教程以创建一个可以安装Linux的USB设备。
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+*注意*：上面的教程是教你如何製作一个用于安装Ubuntu的USB设备，
+安装Linux Mint的情况下仅需要把涉及到ISO文件的地方换成Linux
+Mint的ISO文件，其他地方完全相同。
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+其中会用到的软件叫做rufus，上面的教程裡面也有提到，点击
+&lt;a href=&#34;https://rufus.akeo.ie/&#34;&gt;这里&lt;/a&gt;打开rufus的官方网站，你也可以点击
+&lt;a href=&#34;https://github.com/pbatard/rufus/releases/download/v3.5/rufus-3.5.exe&#34;&gt;这里&lt;/a&gt;直接下载rufus。
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+ISO file of Linux Mint
+&lt;/h2&gt;
+&lt;p&gt;
+前一节提到的linux mint的iso文件需要从下面的地方获取。点击
+&lt;a href=&#34;https://linuxmint.com/&#34;&gt;这里&lt;/a&gt;打开linux mint的官方网站。
+或者也可以点击&lt;a href=&#34;http://mirrors.evowise.com/linuxmint/stable/19.1/linuxmint-19.1-cinnamon-64bit.iso&#34;&gt;这里&lt;/a&gt;直接下载Linux Mint 19.1版本。
+&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr class=&#34;footnotes-separatator&#34;&gt;
+&lt;div class=&#34;footnote-definitions&#34;&gt;
+&lt;div class=&#34;footnote-definition&#34;&gt;
+&lt;sup id=&#34;footnote-1&#34;&gt;&lt;a href=&#34;#footnote-reference-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
+&lt;div class=&#34;footnote-body&#34;&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://linuxmint.com/&#34;&gt;The logo of Linux Mint&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -3,1001 +3,1719 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://xinii.github.io/about/</loc>
-    <lastmod>2020-06-06T00:00:00+00:00</lastmod>
+    <loc>https://xinii.cf/en/project/xinconfig/</loc>
+    <lastmod>2020-06-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/about/"
+                href="https://xinii.cf/project/xinconfig/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/about/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/project/xinconfig/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/about/"
+                href="https://xinii.cf/en/project/xinconfig/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/</loc>
-    <lastmod>2020-06-06T00:00:00+00:00</lastmod>
+    <loc>https://xinii.cf/en/tag/bash/</loc>
+    <lastmod>2020-06-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/"
+                href="https://xinii.cf/tag/bash/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/bash/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/"
+                href="https://xinii.cf/en/tag/bash/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/activation/</loc>
+    <loc>https://xinii.cf/en/categories/</loc>
+    <lastmod>2020-06-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/category/configuration-tool/</loc>
+    <lastmod>2020-06-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/category/configuration-tool/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/category/configuration-tool/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/category/configuration-tool/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/tag/emacs/</loc>
+    <lastmod>2020-06-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/tag/emacs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/emacs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/tag/emacs/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/tag/fish-shell/</loc>
+    <lastmod>2020-06-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/tag/fish-shell/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/fish-shell/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/tag/fish-shell/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/project/</loc>
+    <lastmod>2020-06-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/project/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/project/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/project/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/tag/script/</loc>
+    <lastmod>2020-06-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/tag/script/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/script/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/tag/script/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/tags/</loc>
+    <lastmod>2020-06-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/</loc>
+    <lastmod>2020-06-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/tag/activation/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/activation/"
+                href="https://xinii.cf/tag/activation/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/activation/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/activation/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/activation/"
+                href="https://xinii.cf/en/tag/activation/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/autohotkey/</loc>
+    <loc>https://xinii.cf/en/tag/autohotkey/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/autohotkey/"
+                href="https://xinii.cf/tag/autohotkey/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/autohotkey/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/autohotkey/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/autohotkey/"
+                href="https://xinii.cf/en/tag/autohotkey/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/blog/</loc>
+    <loc>https://xinii.cf/en/tag/keyboard-layout/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/blog/"
+                href="https://xinii.cf/tag/keyboard-layout/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/blog/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/keyboard-layout/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/blog/"
+                href="https://xinii.cf/en/tag/keyboard-layout/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/categories/</loc>
+    <loc>https://xinii.cf/en/tag/msys2/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/categories/"
+                href="https://xinii.cf/tag/msys2/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/categories/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/msys2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/categories/"
+                href="https://xinii.cf/en/tag/msys2/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/keyboard-layout/</loc>
+    <loc>https://xinii.cf/en/post/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/post/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/tag/registry/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/keyboard-layout/"
+                href="https://xinii.cf/tag/registry/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/keyboard-layout/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/registry/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/keyboard-layout/"
+                href="https://xinii.cf/en/tag/registry/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/msys2/</loc>
+    <loc>https://xinii.cf/en/tag/ricty/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/msys2/"
+                href="https://xinii.cf/tag/ricty/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/msys2/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/ricty/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/msys2/"
+                href="https://xinii.cf/en/tag/ricty/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/registry/</loc>
+    <loc>https://xinii.cf/en/tag/scancode/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/registry/"
+                href="https://xinii.cf/tag/scancode/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/registry/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/scancode/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/registry/"
+                href="https://xinii.cf/en/tag/scancode/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/ricty/</loc>
+    <loc>https://xinii.cf/en/post/several-windows-registry-configurations/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/ricty/"
+                href="https://xinii.cf/post/several-windows-registry-configurations/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/ricty/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/post/several-windows-registry-configurations/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/ricty/"
+                href="https://xinii.cf/en/post/several-windows-registry-configurations/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/scancode/</loc>
+    <loc>https://xinii.cf/en/post/some-installations-for-windows-10/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/scancode/"
+                href="https://xinii.cf/post/some-installations-for-windows-10/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/scancode/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/post/some-installations-for-windows-10/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/scancode/"
+                href="https://xinii.cf/en/post/some-installations-for-windows-10/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/blog/windows/several-windows-registry-configurations/</loc>
+    <loc>https://xinii.cf/en/category/windows/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/blog/windows/several-windows-registry-configurations/"
+                href="https://xinii.cf/category/windows/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/blog/windows/several-windows-registry-configurations/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/blog/windows/several-windows-registry-configurations/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/blog/windows/some-installations-for-windows-10/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/blog/windows/some-installations-for-windows-10/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/blog/windows/some-installations-for-windows-10/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/category/windows/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/blog/windows/some-installations-for-windows-10/"
+                href="https://xinii.cf/en/category/windows/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/tags/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/categories/windows/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/categories/windows/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/categories/windows/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/categories/windows/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/blog/linux/add-apt-repository-for-fish-and-emacs/</loc>
+    <loc>https://xinii.cf/en/post/add-apt-repository-for-fish-and-emacs/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/blog/linux/add-apt-repository-for-fish-and-emacs/"
+                href="https://xinii.cf/post/add-apt-repository-for-fish-and-emacs/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/blog/linux/add-apt-repository-for-fish-and-emacs/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/post/add-apt-repository-for-fish-and-emacs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/blog/linux/add-apt-repository-for-fish-and-emacs/"
+                href="https://xinii.cf/en/post/add-apt-repository-for-fish-and-emacs/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/android/</loc>
+    <loc>https://xinii.cf/en/tag/android/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/android/"
+                href="https://xinii.cf/tag/android/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/android/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/android/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/android/"
+                href="https://xinii.cf/en/tag/android/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/apt/</loc>
+    <loc>https://xinii.cf/en/tag/apt/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/apt/"
+                href="https://xinii.cf/tag/apt/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/apt/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/apt/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/apt/"
+                href="https://xinii.cf/en/tag/apt/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/daemon/</loc>
+    <loc>https://xinii.cf/en/tag/daemon/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/daemon/"
+                href="https://xinii.cf/tag/daemon/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/daemon/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/daemon/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/daemon/"
+                href="https://xinii.cf/en/tag/daemon/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/emacs/</loc>
+    <loc>https://xinii.cf/en/tag/keygen/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/emacs/"
+                href="https://xinii.cf/tag/keygen/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/emacs/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/keygen/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/emacs/"
+                href="https://xinii.cf/en/tag/keygen/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/fish-shell/</loc>
+    <loc>https://xinii.cf/en/category/linux/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/fish-shell/"
+                href="https://xinii.cf/category/linux/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/fish-shell/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/category/linux/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/fish-shell/"
+                href="https://xinii.cf/en/category/linux/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/keygen/</loc>
+    <loc>https://xinii.cf/en/post/several-ssh-configurations/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/keygen/"
+                href="https://xinii.cf/post/several-ssh-configurations/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/keygen/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/post/several-ssh-configurations/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/keygen/"
+                href="https://xinii.cf/en/post/several-ssh-configurations/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/categories/linux/</loc>
+    <loc>https://xinii.cf/en/category/ssh/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/categories/linux/"
+                href="https://xinii.cf/category/ssh/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/categories/linux/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/category/ssh/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/categories/linux/"
+                href="https://xinii.cf/en/category/ssh/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/blog/ssh/several-ssh-configurations/</loc>
+    <loc>https://xinii.cf/en/tag/termux/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/blog/ssh/several-ssh-configurations/"
+                href="https://xinii.cf/tag/termux/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/blog/ssh/several-ssh-configurations/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/termux/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/blog/ssh/several-ssh-configurations/"
+                href="https://xinii.cf/en/tag/termux/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/categories/ssh/</loc>
-    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
+    <loc>https://xinii.cf/en/publication-type/2/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/categories/ssh/"
+                href="https://xinii.cf/publication-type/2/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/categories/ssh/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/publication-type/2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/categories/ssh/"
+                href="https://xinii.cf/en/publication-type/2/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/termux/</loc>
-    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
+    <loc>https://xinii.cf/en/authors/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/authors/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/termux/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/termux/"
+                href="https://xinii.cf/authors/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/termux/"
+                href="https://xinii.cf/en/authors/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/blog/opencv/install-opencv-on-jetson-nano/</loc>
+    <loc>https://xinii.cf/en/tag/auto-encoder/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/tag/auto-encoder/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/auto-encoder/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/tag/auto-encoder/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/tag/deep-learning/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/tag/deep-learning/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/deep-learning/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/tag/deep-learning/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/author/hiroshi-arai/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/author/hiroshi-arai/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/author/hiroshi-arai/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/author/hiroshi-arai/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/category/journal-article/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/category/journal-article/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/category/journal-article/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/category/journal-article/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/tag/priority-sampling/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/tag/priority-sampling/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/priority-sampling/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/tag/priority-sampling/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/publication_types/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/publication_types/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/publication_types/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/publication_types/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/publication/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/publication/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/publication/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/publication/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/author/tomoki-hamagami/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/author/tomoki-hamagami/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/author/tomoki-hamagami/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/author/tomoki-hamagami/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/publication/li2020wave/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/publication/li2020wave/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/publication/li2020wave/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/publication/li2020wave/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/author/xin-li/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/author/xin-li/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/author/xin-li/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/author/xin-li/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/publication-type/1/</loc>
+    <lastmod>2019-12-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/publication-type/1/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/publication-type/1/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/publication-type/1/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/publication/li2019improved/</loc>
+    <lastmod>2019-12-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/publication/li2019improved/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/publication/li2019improved/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/publication/li2019improved/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/category/conference-paper/</loc>
+    <lastmod>2019-12-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/category/conference-paper/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/category/conference-paper/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/category/conference-paper/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/post/install-opencv-on-jetson-nano/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/blog/opencv/install-opencv-on-jetson-nano/"
+                href="https://xinii.cf/post/install-opencv-on-jetson-nano/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/blog/opencv/install-opencv-on-jetson-nano/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/post/install-opencv-on-jetson-nano/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/blog/opencv/install-opencv-on-jetson-nano/"
+                href="https://xinii.cf/en/post/install-opencv-on-jetson-nano/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/jetson-nano/</loc>
+    <loc>https://xinii.cf/en/tag/jetson-nano/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/jetson-nano/"
+                href="https://xinii.cf/tag/jetson-nano/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/jetson-nano/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/jetson-nano/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/jetson-nano/"
+                href="https://xinii.cf/en/tag/jetson-nano/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/categories/opencv/</loc>
+    <loc>https://xinii.cf/en/category/opencv/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/categories/opencv/"
+                href="https://xinii.cf/category/opencv/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/categories/opencv/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/category/opencv/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/categories/opencv/"
+                href="https://xinii.cf/en/category/opencv/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/python/</loc>
+    <loc>https://xinii.cf/en/tag/python/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/python/"
+                href="https://xinii.cf/tag/python/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/python/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/python/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/python/"
+                href="https://xinii.cf/en/tag/python/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/compile/</loc>
+    <loc>https://xinii.cf/en/tag/compile/</loc>
     <lastmod>2019-05-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/compile/"
+                href="https://xinii.cf/tag/compile/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/compile/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/compile/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/compile/"
+                href="https://xinii.cf/en/tag/compile/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/categories/emacs/</loc>
+    <loc>https://xinii.cf/en/category/emacs/</loc>
     <lastmod>2019-05-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/categories/emacs/"
+                href="https://xinii.cf/category/emacs/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/categories/emacs/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/category/emacs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/categories/emacs/"
+                href="https://xinii.cf/en/category/emacs/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/gnutls/</loc>
+    <loc>https://xinii.cf/en/tag/gnutls/</loc>
     <lastmod>2019-05-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/gnutls/"
+                href="https://xinii.cf/tag/gnutls/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/gnutls/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/gnutls/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/gnutls/"
+                href="https://xinii.cf/en/tag/gnutls/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/blog/emacs/install-gnutls-and-compile-emacs-from-source/</loc>
+    <loc>https://xinii.cf/en/post/install-gnutls-and-compile-emacs-from-source/</loc>
     <lastmod>2019-05-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/blog/emacs/install-gnutls-and-compile-emacs-from-source/"
+                href="https://xinii.cf/post/install-gnutls-and-compile-emacs-from-source/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/blog/emacs/install-gnutls-and-compile-emacs-from-source/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/post/install-gnutls-and-compile-emacs-from-source/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/blog/emacs/install-gnutls-and-compile-emacs-from-source/"
+                href="https://xinii.cf/en/post/install-gnutls-and-compile-emacs-from-source/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/bash/</loc>
+    <loc>https://xinii.cf/en/post/my-shell-migration-record/</loc>
     <lastmod>2019-05-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/bash/"
+                href="https://xinii.cf/post/my-shell-migration-record/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/bash/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/post/my-shell-migration-record/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/bash/"
+                href="https://xinii.cf/en/post/my-shell-migration-record/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/blog/shell/my-shell-migration-record/</loc>
+    <loc>https://xinii.cf/en/tag/tmux/</loc>
     <lastmod>2019-05-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/blog/shell/my-shell-migration-record/"
+                href="https://xinii.cf/tag/tmux/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/blog/shell/my-shell-migration-record/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/tmux/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/blog/shell/my-shell-migration-record/"
+                href="https://xinii.cf/en/tag/tmux/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/categories/shell/</loc>
+    <loc>https://xinii.cf/en/tag/z-shell/</loc>
     <lastmod>2019-05-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/categories/shell/"
+                href="https://xinii.cf/tag/z-shell/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/categories/shell/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/categories/shell/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/tags/tmux/</loc>
-    <lastmod>2019-05-03T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/tags/tmux/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/tmux/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/z-shell/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/tmux/"
+                href="https://xinii.cf/en/tag/z-shell/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/zsh/</loc>
-    <lastmod>2019-05-03T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/tags/zsh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/zsh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/tags/zsh/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/blog/linux/install-linux-mint-from-the-usb-device/</loc>
+    <loc>https://xinii.cf/en/post/install-linux-mint-from-the-usb-device/</loc>
     <lastmod>2019-04-23T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/blog/linux/install-linux-mint-from-the-usb-device/"
+                href="https://xinii.cf/post/install-linux-mint-from-the-usb-device/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/blog/linux/install-linux-mint-from-the-usb-device/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/post/install-linux-mint-from-the-usb-device/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/blog/linux/install-linux-mint-from-the-usb-device/"
+                href="https://xinii.cf/en/post/install-linux-mint-from-the-usb-device/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/linux-mint/</loc>
+    <loc>https://xinii.cf/en/tag/linux-mint/</loc>
     <lastmod>2019-04-23T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/linux-mint/"
+                href="https://xinii.cf/tag/linux-mint/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/linux-mint/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/linux-mint/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/linux-mint/"
+                href="https://xinii.cf/en/tag/linux-mint/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/os/</loc>
+    <loc>https://xinii.cf/en/tag/operating-system/</loc>
     <lastmod>2019-04-23T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/os/"
+                href="https://xinii.cf/tag/operating-system/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/os/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/operating-system/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/os/"
+                href="https://xinii.cf/en/tag/operating-system/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/rufus/</loc>
+    <loc>https://xinii.cf/en/tag/usb/</loc>
     <lastmod>2019-04-23T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/rufus/"
+                href="https://xinii.cf/tag/usb/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/rufus/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.github.io/tags/rufus/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.github.io/tags/usb/</loc>
-    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.github.io/ja/tags/usb/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/usb/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/usb/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/usb/"
+                href="https://xinii.cf/en/tag/usb/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/blog/</loc>
+    <loc>https://xinii.cf/en/tag/blog/</loc>
     <lastmod>2019-04-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/blog/"
+                href="https://xinii.cf/tag/blog/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/blog/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/blog/"
+                href="https://xinii.cf/en/tag/blog/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/categories/cms/</loc>
+    <loc>https://xinii.cf/en/category/cms/</loc>
     <lastmod>2019-04-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/categories/cms/"
+                href="https://xinii.cf/category/cms/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/categories/cms/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/category/cms/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/categories/cms/"
+                href="https://xinii.cf/en/category/cms/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/</loc>
+    <loc>https://xinii.cf/en/post/create-a-blog-by-jekyll-and-publish-to-github/</loc>
     <lastmod>2019-04-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/"
+                href="https://xinii.cf/post/create-a-blog-by-jekyll-and-publish-to-github/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/post/create-a-blog-by-jekyll-and-publish-to-github/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/"
+                href="https://xinii.cf/en/post/create-a-blog-by-jekyll-and-publish-to-github/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/github/</loc>
+    <loc>https://xinii.cf/en/tag/github/</loc>
     <lastmod>2019-04-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/github/"
+                href="https://xinii.cf/tag/github/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/github/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/github/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/github/"
+                href="https://xinii.cf/en/tag/github/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/tags/jekyll/</loc>
+    <loc>https://xinii.cf/en/tag/jekyll/</loc>
     <lastmod>2019-04-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/tags/jekyll/"
+                href="https://xinii.cf/tag/jekyll/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/tags/jekyll/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/jekyll/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/tags/jekyll/"
+                href="https://xinii.cf/en/tag/jekyll/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.github.io/contact/</loc>
+    <loc>https://xinii.cf/en/publication-type/6/</loc>
+    <lastmod>2018-11-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.github.io/ja/contact/"
+                href="https://xinii.cf/publication-type/6/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://xinii.github.io/zh-cn/contact/"
+                hreflang="zh"
+                href="https://xinii.cf/zh/publication-type/6/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.github.io/contact/"
+                href="https://xinii.cf/en/publication-type/6/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/category/book-section/</loc>
+    <lastmod>2018-11-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/category/book-section/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/category/book-section/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/category/book-section/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/tag/corpus/</loc>
+    <lastmod>2018-11-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/tag/corpus/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/corpus/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/tag/corpus/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/tag/don-quixote/</loc>
+    <lastmod>2018-11-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/tag/don-quixote/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/don-quixote/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/tag/don-quixote/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/author/jinwei-wang/</loc>
+    <lastmod>2018-11-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/author/jinwei-wang/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/author/jinwei-wang/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/author/jinwei-wang/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/publication/wang2017/</loc>
+    <lastmod>2018-11-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/publication/wang2017/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/publication/wang2017/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/publication/wang2017/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/tag/spanish/</loc>
+    <lastmod>2018-11-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/tag/spanish/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/spanish/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/tag/spanish/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/tag/translation/</loc>
+    <lastmod>2018-11-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/tag/translation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/translation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/tag/translation/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/publication/li2018prioritized/</loc>
+    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/publication/li2018prioritized/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/publication/li2018prioritized/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/publication/li2018prioritized/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/publication/li2017research/</loc>
+    <lastmod>2017-07-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/publication/li2017research/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/publication/li2017research/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/publication/li2017research/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/tag/anomaly-detection/</loc>
+    <lastmod>2017-07-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/tag/anomaly-detection/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/anomaly-detection/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/tag/anomaly-detection/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/author/hamatsu-fumiya/</loc>
+    <lastmod>2017-07-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/author/hamatsu-fumiya/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/author/hamatsu-fumiya/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/author/hamatsu-fumiya/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/author/masaya-nakata/</loc>
+    <lastmod>2017-07-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/author/masaya-nakata/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/author/masaya-nakata/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/author/masaya-nakata/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/tag/multidimensional-data/</loc>
+    <lastmod>2017-07-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/tag/multidimensional-data/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/multidimensional-data/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/tag/multidimensional-data/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/tag/time-series-data/</loc>
+    <lastmod>2017-07-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/tag/time-series-data/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/time-series-data/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/tag/time-series-data/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/publication/wang2016/</loc>
+    <lastmod>2016-09-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/publication/wang2016/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/publication/wang2016/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/publication/wang2016/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/tag/language-education/</loc>
+    <lastmod>2016-09-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/tag/language-education/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/language-education/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/tag/language-education/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/tag/oral-communication/</loc>
+    <lastmod>2016-09-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/tag/oral-communication/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/tag/oral-communication/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/tag/oral-communication/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/courses/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/courses/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/courses/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/courses/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/cv/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/cv/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/cv/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/cv/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/en/category/cv/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/category/cv/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/category/cv/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/category/cv/"
                 />
   </url>
   

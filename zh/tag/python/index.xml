@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python | xin iDEA iNNATA</title>
+    <link>https://xinii.cf/zh/tag/python/</link>
+      <atom:link href="https://xinii.cf/zh/tag/python/index.xml" rel="self" type="application/rss+xml" />
+    <description>Python</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-cn</language><copyright>© 2020 xin iDEA iNNATA</copyright><lastBuildDate>Fri, 12 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xinii.cf/images/icon_huc6d37f8d5848c4cf0bbdc638499793df_110525_512x512_fill_lanczos_center_2.png</url>
+      <title>Python</title>
+      <link>https://xinii.cf/zh/tag/python/</link>
+    </image>
+    
+    <item>
+      <title>在 Jetson Nano 上安装 OpenCV</title>
+      <link>https://xinii.cf/zh/post/install-opencv-on-jetson-nano/</link>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/zh/post/install-opencv-on-jetson-nano/</guid>
+      <description>
+&lt;p&gt;
+&lt;h2&gt;目录&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-1&#34;&gt;生成 swap 文件&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-2&#34;&gt;生成安装脚本&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-3&#34;&gt;运行脚本&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-4&#34;&gt;测试安装好的 OpenCV&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+生成 swap 文件
+&lt;/h2&gt;
+&lt;p&gt;
+为防止编译途中由于内存不足等问题报错，
+这里首先提前创建一个swap文件，存放路径任意。 重启后swap空间会消失，
+以下编译等全部工作完成后可以手动删除这个文件。
+&lt;/p&gt;
+&lt;div class=&#34;src src-bash&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  $ fallocate -l 4G swapfile
+  $ chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;600&lt;/span&gt; swapfile
+  $ mkswap swapfile
+  $ sudo swapon swapfile
+  $ swapon -s&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+生成安装脚本
+&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://github.com/AastaNV/JEP/blob/master/script/install_opencv4.0.0_Nano.sh&#34;&gt;安装opencv 4.0.0版本的脚本原始链接&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+以上是安装opencv
+4.0.0的版本，在这里我们希望安装较新的4.1.0版本，将上面的代码中版本号的部分稍作改动。
+&lt;/p&gt;
+&lt;div class=&#34;src src-bash&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash&lt;/span&gt;
+  #
+  &lt;span style=&#34;color:#75715e&#34;&gt;# Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.&lt;/span&gt;
+  #
+  &lt;span style=&#34;color:#75715e&#34;&gt;# NVIDIA Corporation and its licensors retain all intellectual property&lt;/span&gt;
+  &lt;span style=&#34;color:#75715e&#34;&gt;# and proprietary rights in and to this software, related documentation&lt;/span&gt;
+  &lt;span style=&#34;color:#75715e&#34;&gt;# and any modifications thereto.  Any use, reproduction, disclosure or&lt;/span&gt;
+  &lt;span style=&#34;color:#75715e&#34;&gt;# distribution of this software and related documentation without an express&lt;/span&gt;
+  &lt;span style=&#34;color:#75715e&#34;&gt;# license agreement from NVIDIA Corporation is strictly prohibited.&lt;/span&gt;
+  #
+
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$#&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; -ne &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
+      echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Usage: &lt;/span&gt;$0&lt;span style=&#34;color:#e6db74&#34;&gt; &amp;lt;Install Folder&amp;gt;&amp;#34;&lt;/span&gt;
+      exit
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+  folder&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$1&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+  user&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;nvidia&amp;#34;&lt;/span&gt;
+  passwd&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;nvidia&amp;#34;&lt;/span&gt;
+
+  echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** Install requirement&amp;#34;&lt;/span&gt;
+  sudo apt-get update
+  sudo apt-get install -y build-essential cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+  sudo apt-get install -y libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev
+  sudo apt-get install -y python2.7-dev python3.6-dev python-dev python-numpy python3-numpy
+  sudo apt-get install -y libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
+  sudo apt-get install -y libv4l-dev v4l-utils qv4l2 v4l2ucp
+  sudo apt-get install -y curl
+  sudo apt-get update
+
+  echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** Download opencv-4.1.0&amp;#34;&lt;/span&gt;
+  cd $folder
+  curl -L https://github.com/opencv/opencv/archive/4.1.0.zip -o opencv-4.1.0.zip
+  curl -L https://github.com/opencv/opencv_contrib/archive/4.1.0.zip -o opencv_contrib-4.1.0.zip
+  unzip opencv-4.1.0.zip 
+  unzip opencv_contrib-4.1.0.zip 
+  cd opencv-4.1.0/
+
+  echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** Building...&amp;#34;&lt;/span&gt;
+  mkdir release
+  cd release/
+  cmake -D WITH_CUDA&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;ON -D CUDA_ARCH_BIN&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;5.3&amp;#34;&lt;/span&gt; -D CUDA_ARCH_PTX&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; -D OPENCV_EXTRA_MODULES_PATH&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;../../opencv_contrib-4.1.0/modules -D WITH_GSTREAMER&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;ON -D WITH_LIBV4L&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;ON -D BUILD_opencv_python2&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;ON -D BUILD_opencv_python3&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;ON -D BUILD_TESTS&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;OFF -D BUILD_PERF_TESTS&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;OFF -D BUILD_EXAMPLES&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;OFF -D CMAKE_BUILD_TYPE&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;RELEASE -D CMAKE_INSTALL_PREFIX&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/usr/local ..
+
+  make -j3
+  sudo make install
+  sudo apt-get install -y python-opencv python3-opencv
+
+  echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** Install opencv-4.1.0 successfully&amp;#34;&lt;/span&gt;
+  echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** Bye :)&amp;#34;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+将上面的脚本保存为 &lt;code class=&#34;verbatim&#34;&gt;sh&lt;/code&gt; 文件，例如 &lt;code class=&#34;verbatim&#34;&gt;install_opencv4.1.0_Nano.sh&lt;/code&gt; 。
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-3&#34;&gt;
+运行脚本
+&lt;/h2&gt;
+&lt;div class=&#34;src src-bash&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  mkdir opencv
+  sh install_opencv4.1.0_Nano.sh opencv&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+安装会比较花时间，耐心等待安装结束，建议使用tmux等挂在后台执行。
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-4&#34;&gt;
+测试安装好的 OpenCV
+&lt;/h2&gt;
+&lt;p&gt;
+通过 Python 的交互界面测试语句 &lt;code class=&#34;verbatim&#34;&gt;import cv2&lt;/code&gt; ，不报错则安装完成。
+&lt;/p&gt;
+&lt;p&gt;
+不过，考虑到使用 Pyenv 等工具进行 Python 版本管理的用户，
+此时如果切换到pyenv下安装的 Python 版本可能无法检测到已安装的 OpenCV，
+作为解决版本是创建一个 OpenCV 库的软链接到pyenv中python版本的库目录下。
+&lt;/p&gt;
+&lt;p&gt;
+假设 Pyenv 下已安装的 Python 版本对应的库文件目录如下。
+&lt;/p&gt;
+&lt;div class=&#34;src src-bash&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  /home/&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;username&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;/.anyenv/envs/pyenv/versions/3.6.8/lib/python3.6/site-packages&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+安装完成的 OpenCV 的库文件路径如下。
+&lt;/p&gt;
+&lt;div class=&#34;src src-bash&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  /usr/local/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-linux-gnu.so&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+执行下面的语句即可创建软链接。
+&lt;/p&gt;
+&lt;div class=&#34;src src-bash&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  cd /home/&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;username&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;/.anyenv/envs/pyenv/versions/3.6.8/lib/python3.6/site-packages
+  ln -s /usr/local/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-linux-gnu.so ./&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+另外提前使用 Pyenv 下的 Python 版本对应的 pip 工具执行 
+&lt;code class=&#34;verbatim&#34;&gt;pip install numpy&lt;/code&gt; 语句安装好 Numpy，
+去交互界面测试 &lt;code class=&#34;verbatim&#34;&gt;import cv2&lt;/code&gt; 后如无错误显示则安装完成。
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
