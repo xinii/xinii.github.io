@@ -2,8 +2,8 @@
   "name": "xin iDEA iNNATA",
   "short_name": "xin iDEA iNNATA",
   "lang": "zh-cn",
-  "theme_color": "hsl(339, 90%, 68%)",
-  "background_color": "hsl(339, 90%, 68%)",
+  "theme_color": "#2962ff",
+  "background_color": "#2962ff",
   "icons": [{
     "src": "/images/icon_huc6d37f8d5848c4cf0bbdc638499793df_110525_192x192_fill_lanczos_center_2.png",
     "sizes": "192x192",

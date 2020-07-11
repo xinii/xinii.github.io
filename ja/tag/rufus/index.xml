@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rufus | xin iDEA iNNATA</title>
+    <link>https://xinii.cf/ja/tag/rufus/</link>
+      <atom:link href="https://xinii.cf/ja/tag/rufus/index.xml" rel="self" type="application/rss+xml" />
+    <description>Rufus</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja-jp</language><copyright>© 2020 xin iDEA iNNATA</copyright><lastBuildDate>Tue, 23 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xinii.cf/images/logo_hu4469573970495a9d28444639a51ce6fc_83092_300x300_fit_lanczos_2.png</url>
+      <title>Rufus</title>
+      <link>https://xinii.cf/ja/tag/rufus/</link>
+    </image>
+    
+    <item>
+      <title>USBメモリーからLinux Mintをインストール</title>
+      <link>https://xinii.cf/ja/post/install-linux-mint-from-the-usb-device/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/ja/post/install-linux-mint-from-the-usb-device/</guid>
+      <description>
+&lt;p&gt;
+&lt;h2&gt;目次&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-1&#34;&gt;Linux MintをインストールするためのUSBメモリーを用意する&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-2&#34;&gt;Linux MintのISOファイル&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;重要&lt;/strong&gt;：インストーラをUSBメモリーに書き込むことでデータが失ってしまうため，
+始める前に，USBメモリーに何も保存されていないか，
+あるいは失われてもよいコンテンツしか保存されていないことを
+&lt;strong&gt;必ず&lt;/strong&gt;確認しておく。
+また，PCに空のドライブを一つ準備しておく。
+Cドライブでもよいが，中に重要なデータは何も入っていないことを事前に確認する。
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Linux MintをインストールするためのUSBメモリーを用意する
+&lt;/h2&gt;
+&lt;p&gt;
+用意するのはUSBメモリーと書いているが，
+USBメモリーがなかったらUSBのHDDやSSDなどでも良い。
+後で用意されたUSBデバイスにインストーラを書き込むので，
+バックアップをちゃんと取っておいたほうが良いかも。
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+Windowsを使っている場合は，&lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0&#34;&gt;ここをクリック&lt;/a&gt;してUbuntuのオフィシャルマニュアルを参照できる。
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    以上のマニュアルはUbuntuをインストールする目的だが，
+Linux Mintをインストールするのも大体同じ。
+一つだけ異なるのは，ISOイメージを選択するところ。
+ここで，UbuntuのISOイメージではなく，Linux MintのISOイメージを指定すれば良い。
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+Linux Mintのインストーラを作成するのに使うツールがRufusというソフトウェアで，
+&lt;a href=&#34;https://rufus.akeo.ie/&#34;&gt;ここをクリック&lt;/a&gt;することでRufusのオフィシャルサイトが開ける。
+あるいは&lt;a href=&#34;https://github.com/pbatard/rufus/releases/download/v3.5/rufus-3.5.exe&#34;&gt;ここをクリック&lt;/a&gt;することで直接Rufusをダウンロードできる。
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+Linux MintのISOファイル
+&lt;/h2&gt;
+&lt;p&gt;
+Linux MintのISOイメージについては，以下の場所からダウンロードできる。
+&lt;a href=&#34;https://linuxmint.com/&#34;&gt;ここをクリック&lt;/a&gt;することでLinux Mintのオフィシャルサイトを開く。
+また，&lt;a href=&#34;http://mirrors.evowise.com/linuxmint/stable/19.1/linuxmint-19.1-cinnamon-64bit.iso&#34;&gt;ここをクリック&lt;/a&gt;することで直接Linux Mint 19.1のバージョンをダウンロードできる。
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

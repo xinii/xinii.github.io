@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Music | xin iDEA iNNATA</title>
+    <link>https://xinii.cf/ja/category/music/</link>
+      <atom:link href="https://xinii.cf/ja/category/music/index.xml" rel="self" type="application/rss+xml" />
+    <description>Music</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja-jp</language><copyright>© 2020 xin iDEA iNNATA</copyright><lastBuildDate>Sat, 16 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xinii.cf/images/logo_hu4469573970495a9d28444639a51ce6fc_83092_300x300_fit_lanczos_2.png</url>
+      <title>Music</title>
+      <link>https://xinii.cf/ja/category/music/</link>
+    </image>
+    
+    <item>
+      <title>EmacsとLilypondで楽譜生成</title>
+      <link>https://xinii.cf/ja/post/single-language/generate-sheet-music-with-lilypond-on-emacs/</link>
+      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/ja/post/single-language/generate-sheet-music-with-lilypond-on-emacs/</guid>
+      <description>
+&lt;h2 id=&#34;headline-1&#34;&gt;
+コード例
+&lt;/h2&gt;
+&lt;div class=&#34;src src-lilypond&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;language-lilypond&#34; data-lang=&#34;lilypond&#34;&gt;  \version &amp;#34;2.18.2&amp;#34;
+
+  \score {
+    \new Staff &amp;lt;&amp;lt;
+      \new Voice \relative c&amp;#39;&amp;#39;&amp;#39; {
+        \set midiInstrument = #&amp;#34;flute&amp;#34;
+        \voiceOne
+        \key g \major
+        \time 2/2
+        r2 g-&amp;#34;Flute&amp;#34; ~
+        g fis ~
+        fis4 g8 fis e2 ~
+        e4 d8 cis d2
+      }
+      \new Voice \relative c&amp;#39;&amp;#39; {
+        \set midiInstrument = #&amp;#34;clarinet&amp;#34;
+        \voiceTwo
+        b1-&amp;#34;Clarinet&amp;#34;
+        a2. b8 a
+        g2. fis8 e
+        fis2 r
+      }
+    &amp;gt;&amp;gt;
+    \layout { }
+    \midi {
+      \context {
+        \Staff
+        \remove &amp;#34;Staff_performer&amp;#34;
+      }
+      \context {
+        \Voice
+        \consists &amp;#34;Staff_performer&amp;#34;      
+      }
+      \context {
+        \Score
+        tempoWholesPerMinute = #(ly:make-moment 72 2)
+      }
+    }
+  }&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+出力例
+&lt;/h2&gt;
+&lt;p&gt;
+（後で追加）
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>絶対音感について</title>
+      <link>https://xinii.cf/ja/post/single-language/about-absolute-pitch/</link>
+      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/ja/post/single-language/about-absolute-pitch/</guid>
+      <description>
+&lt;h2 id=&#34;headline-1&#34;&gt;
+音階と音の周波数
+&lt;/h2&gt;
+&lt;p&gt;
+次の表に，ピアノの鍵盤における88のキーに相応する音の周波数を示す。
+&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th class=&#34;align-right&#34;&gt;鍵盤番号&lt;/th&gt;
+&lt;th class=&#34;align-right&#34;&gt;周波数(Hz)&lt;/th&gt;
+&lt;th&gt;階名&lt;/th&gt;
+&lt;th&gt;音名&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&#34;align-right&#34;&gt;1&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;27.500&lt;/td&gt;
+&lt;td&gt;ラ&lt;/td&gt;
+&lt;td&gt;A0（イ）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;align-right&#34;&gt;…&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;align-right&#34;&gt;37&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;220.000&lt;/td&gt;
+&lt;td&gt;ラ&lt;/td&gt;
+&lt;td&gt;A3（イ）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;align-right&#34;&gt;38&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;233.082&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;A#3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;align-right&#34;&gt;39&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;246.942&lt;/td&gt;
+&lt;td&gt;シ&lt;/td&gt;
+&lt;td&gt;B3（ロ）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;align-right&#34;&gt;40&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;261.626&lt;/td&gt;
+&lt;td&gt;ド&lt;/td&gt;
+&lt;td&gt;C4（ハ）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;align-right&#34;&gt;41&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;277.183&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;C#4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;align-right&#34;&gt;42&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;293.665&lt;/td&gt;
+&lt;td&gt;レ&lt;/td&gt;
+&lt;td&gt;D4（ニ）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;align-right&#34;&gt;43&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;311.127&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;D#4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;align-right&#34;&gt;44&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;329.628&lt;/td&gt;
+&lt;td&gt;ミ&lt;/td&gt;
+&lt;td&gt;E4（ホ）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;align-right&#34;&gt;45&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;349.228&lt;/td&gt;
+&lt;td&gt;ファ&lt;/td&gt;
+&lt;td&gt;F4（ヘ）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;align-right&#34;&gt;46&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;369.994&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;F#4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;align-right&#34;&gt;47&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;391.995&lt;/td&gt;
+&lt;td&gt;ソ&lt;/td&gt;
+&lt;td&gt;G4（ト）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;align-right&#34;&gt;48&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;415.305&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;G#4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;align-right&#34;&gt;49&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;440.000&lt;/td&gt;
+&lt;td&gt;ラ&lt;/td&gt;
+&lt;td&gt;A4（イ）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;align-right&#34;&gt;50&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;466.164&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;A#4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;align-right&#34;&gt;51&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;493.883&lt;/td&gt;
+&lt;td&gt;シ&lt;/td&gt;
+&lt;td&gt;B4（ロ）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;align-right&#34;&gt;52&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;523.251&lt;/td&gt;
+&lt;td&gt;ド&lt;/td&gt;
+&lt;td&gt;C5（ハ）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;align-right&#34;&gt;…&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&#34;align-right&#34;&gt;88&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;4186.009&lt;/td&gt;
+&lt;td&gt;ド&lt;/td&gt;
+&lt;td&gt;C8（ハ）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+音の周波数を等比数列 $a_0, a_1, a_2 \dots a_{12}$ とし，
+公比を $r$ とすると，以下の関係がある。
+&lt;/p&gt;
+&lt;p&gt;
+$$a_{12} = a_{0} \times r^{12} = a_0 \times 2$$
+&lt;/p&gt;
+&lt;p&gt;
+また，1オクターブの二つの音の周波数が2倍の関係なので，
+以下の式によって公比\(r\)がわかるようになる。
+&lt;/p&gt;
+&lt;p&gt;
+$$r^{12} = 2 \Rightarrow r = \sqrt[12]{2} \approx 1.059463094$$
+&lt;/p&gt;
+&lt;p&gt;
+従って，任意の音に対して，\(n\)個半音上の音を計算する方法は以下の式に示す。
+&lt;/p&gt;
+&lt;p&gt;
+$$a_n = a_0 \times r^n = a_0 \times 2^{\frac{n}{12}}$$
+&lt;/p&gt;
+&lt;p&gt;
+以上によると，絶対音感を持っている人が，
+任意の一つの音を聞いて，その周波数がわかる。
+具体的な数値がわからなくても，
+その数値は必ず一つの音名に相応するので，音名がわかる。
+これに対して，相対音感が\(a_0\)が必要である。
+また，音名が固定だが，階名が変化するものである。
+\(a_0\)を任意の音を指定しておく前提なら，
+耳の感覚で，他の音を計算するものである。
+&lt;/p&gt;
+&lt;p&gt;
+絶対音感が，5歳くらいまでにトレーニングしないと，
+身に着けにくくなるとよく言われている。 これはなぜだろうか。
+母国語に似ているものなので， この視点から分析してみる。
+&lt;/p&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+絶対音感を身に着けるにはなぜ5歳までトレーニングする必要があるか
+&lt;/h2&gt;
+&lt;p&gt;
+ここで，まずいくつかの言語の例をあげてみたい。
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+言語に関する時間
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+言語に関する意味
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+言語に関する発音
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+（未完成… 時間がある時に続いて書く）
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

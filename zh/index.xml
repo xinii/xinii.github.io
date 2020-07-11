@@ -5,198 +5,12 @@
     <link>https://xinii.cf/zh/</link>
       <atom:link href="https://xinii.cf/zh/index.xml" rel="self" type="application/rss+xml" />
     <description>xin iDEA iNNATA</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-cn</language><copyright>© 2020 xin iDEA iNNATA</copyright><lastBuildDate>Sun, 05 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-cn</language><copyright>© 2020 xin iDEA iNNATA</copyright><lastBuildDate>Tue, 30 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://xinii.cf/images/icon_huc6d37f8d5848c4cf0bbdc638499793df_110525_512x512_fill_lanczos_center_2.png</url>
+      <url>https://xinii.cf/images/logo_hu4469573970495a9d28444639a51ce6fc_83092_300x300_fit_lanczos_2.png</url>
       <title>xin iDEA iNNATA</title>
       <link>https://xinii.cf/zh/</link>
     </image>
-    
-    <item>
-      <title>可能的课程</title>
-      <link>https://xinii.cf/zh/slides/possible-course/</link>
-      <pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>https://xinii.cf/zh/slides/possible-course/</guid>
-      <description>
-&lt;h2 id=&#34;headline-1&#34;&gt;
-能够担任的计算机专业相关课程
-&lt;/h2&gt;
-&lt;p&gt;
-横滨国立大学 李欣
-&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;headline-2&#34;&gt;
-高级语言程序设计
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;
-C 语言程序设计
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-Java 语言程序设计
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-Python 语言程序设计
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-&lt;aside class=&#34;notes&#34;&gt;
-  &lt;ul&gt;
-&lt;li&gt;这里说明以下&lt;/li&gt;
-&lt;li&gt;这个&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;/aside&gt;
-&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;
-计算机专业学习课程
-&lt;/p&gt;
-&lt;p&gt;
-计算机专业课程有电路原理、模拟电子技术、数字逻辑、数字分析、计算机原理、微型计算机技术、计算机系统结构、计算机网络、高级语言、汇编语言、数据结构、操作系统等。
-计算机专业培养目标与要求
-&lt;/p&gt;
-&lt;p&gt;
-本专业培养具有良好的科学素养，系统地、较好地掌握计算机科学与技术包括计算机硬件、软件与应用的基本理论、基本知识和基本技能与方法，能在科研部门、教育单位、企业、事业、技术和行政管理部门等单位从事计算机教学、科学研究和应用的计算机科学与技术学科的高级专门科学技术人才。
-&lt;/p&gt;
-&lt;p&gt;
-本专业学生主要学习计算机科学与技术方面的基本理论和基本知识，接受从事研究与应用计算机的基本训练，具有研究和开发计算机系统的基本能力。
-计算机专业必备能力
-&lt;/p&gt;
-&lt;p&gt;
-1.掌握计算机科学与技术的基本理论、基本知识；
-&lt;/p&gt;
-&lt;p&gt;
-2.掌握计算机系统的分析和设计的基本方法；
-&lt;/p&gt;
-&lt;p&gt;
-3.具有研究开发计算机软、硬件的基本能力；
-&lt;/p&gt;
-&lt;p&gt;
-4.了解与计算机有关的法规；
-&lt;/p&gt;
-&lt;p&gt;
-5.了解计算机科学与技术的发展动态；
-&lt;/p&gt;
-&lt;p&gt;
-6.掌握文献检索、资料查询的基本方法，具有获取信息的能力。
-&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;headline-3&#34;&gt;
-软件工程
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;
-本硕为软件工程专业
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;headline-4&#34;&gt;
-数据结构
-&lt;/h2&gt;
-&lt;h2 id=&#34;headline-5&#34;&gt;
-操作系统
-&lt;/h2&gt;
-&lt;p&gt;
-$x + y = z$
-&lt;/p&gt;
-&lt;p&gt;
-$$
-f\left( x \right) = \;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
-$$
-&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;headline-6&#34;&gt;
-Fragments
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;code class=&#34;verbatim&#34;&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;code class=&#34;verbatim&#34;&gt;weight&lt;/code&gt;: sets the order in which a fragment appears
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-&lt;span class=&#34;fragment &#34; &gt;
-   One 
-&lt;/span&gt;
-&lt;span class=&#34;fragment &#34; &gt;
-   Two 
-&lt;/span&gt;
-&lt;span class=&#34;fragment &#34; &gt;
-   Three 
-&lt;/span&gt;
-&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;headline-7&#34;&gt;
-Custom Slide
-&lt;/h2&gt;
-&lt;p&gt;
-Customize the slide style and background
-&lt;/p&gt;
-&lt;p&gt;
-```markdown
-{{&amp;lt; slide background-image=&amp;#34;/img/boards.jpg&amp;#34; &amp;gt;}}
-{{&amp;lt; slide background-color=&amp;#34;#0000FF&amp;#34; &amp;gt;}}
-{{&amp;lt; slide class=&amp;#34;my-style&amp;#34; &amp;gt;}}
-```
-&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;headline-8&#34;&gt;
-Custom CSS Example
-&lt;/h2&gt;
-&lt;p&gt;
-Let&amp;#39;s make headers navy colored.
-&lt;/p&gt;
-&lt;p&gt;
-Create `assets/css/reveal_custom.css` with:
-&lt;/p&gt;
-&lt;p&gt;
-```css
-.reveal section h1,
-.reveal section h2,
-.reveal section h3 {
-  color: navy;
-}
-```
-&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;
-
-&lt;section data-noprocess data-shortcode-slide
-  
-      
-      data-background-image=&#34;/img/boards.jpg&#34;
-  &gt;
-
-&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;headline-9&#34;&gt;
-Questions?
-&lt;/h2&gt;
-&lt;p&gt;
-[Ask](&lt;a href=&#34;https://spectrum.chat/academic)&#34;&gt;https://spectrum.chat/academic)&lt;/a&gt;
-&lt;/p&gt;
-&lt;p&gt;
-[Documentation](&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-slides)&#34;&gt;https://sourcethemes.com/academic/docs/managing-content/#create-slides)&lt;/a&gt;
-&lt;/p&gt;
-</description>
-    </item>
     
     <item>
       <title>A reasonable configuration tool for your unified working environment</title>
@@ -1077,7 +891,7 @@ One more thing
     </item>
     
     <item>
-      <title>安装 Gnutls 并从源码编译 Emacs</title>
+      <title>安装 GnuTLS 并从源码编译 Emacs</title>
       <link>https://xinii.cf/zh/post/install-gnutls-and-compile-emacs-from-source/</link>
       <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
       <guid>https://xinii.cf/zh/post/install-gnutls-and-compile-emacs-from-source/</guid>
@@ -1086,11 +900,11 @@ One more thing
 &lt;h2&gt;目录&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#headline-1&#34;&gt;环境中缺少Gnutls的情况&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-1&#34;&gt;环境中缺少GnuTLS的情况&lt;/a&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#headline-2&#34;&gt;潜在的问题&lt;/a&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#headline-3&#34;&gt;安装Gnutls&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-3&#34;&gt;安装GnuTLS&lt;/a&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#headline-4&#34;&gt;其他可能的问题&lt;/a&gt;
 &lt;/li&gt;
@@ -1099,10 +913,10 @@ One more thing
 
 &lt;/p&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
-环境中缺少Gnutls的情况
+环境中缺少GnuTLS的情况
 &lt;/h2&gt;
 &lt;p&gt;
-若当前环境缺少 Gnutls，那么在对 Emacs&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; 的源代码进行编译安装前需要以下配置。
+若当前环境缺少 GnuTLS，那么在对 Emacs&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; 的源代码进行编译安装前需要以下配置。
 &lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  ./configure --with-gnutls&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;no&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -1121,7 +935,7 @@ One more thing
 &lt;/h2&gt;
 &lt;p&gt;
 以上虽可以达到正常安装 Emacs 到 &lt;code class=&#34;verbatim&#34;&gt;$HOME/.local&lt;/code&gt; 目录的目的， 但由于缺少了
-Gnutls 组件，Emacs 中用到网络传输的时候便只能使用 http 而不能使用 https。
+GnuTLS 组件，Emacs 中用到网络传输的时候便只能使用 http 而不能使用 https。
 &lt;/p&gt;
 &lt;p&gt;
 如果只是 Emacs 初始化时需要网络连接，还可以通过将 Melpa 的链接都改为以
@@ -1138,14 +952,14 @@ http 开头来解决问题， 但这为今后使用 Emacs
 文件以强制重新编译使修改生效。
 &lt;/p&gt;
 &lt;h2 id=&#34;headline-3&#34;&gt;
-安装Gnutls
+安装GnuTLS
 &lt;/h2&gt;
 &lt;p&gt;
-经过以上实际测试我们不难发现，在当前环境中安装好 Gnutls 之后再从源码安装
+经过以上实际测试我们不难发现，在当前环境中安装好 GnuTLS 之后再从源码安装
 Emacs 是一个不错的选择。
 &lt;/p&gt;
 &lt;p&gt;
-以 OpenSUSE 为例，在终端运行下面的语句即可安装 Gnutls。
+以 OpenSUSE 为例，在终端运行下面的语句即可安装 GnuTLS。
 &lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  sudo zypper install gnutls&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -1165,12 +979,12 @@ Emacs 是一个不错的选择。
   make: *** No rule to make target &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;install&amp;#39;&lt;/span&gt;.  Stop.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
-另外，如果 Gnutls 在当前环境已安装，而 &lt;code class=&#34;verbatim&#34;&gt;make&lt;/code&gt; 后仍报上面的错误，
+另外，如果 GnuTLS 在当前环境已安装，而 &lt;code class=&#34;verbatim&#34;&gt;make&lt;/code&gt; 后仍报上面的错误，
 那么对于 OpenSUSE 的环境则需要一个叫做 &lt;code class=&#34;verbatim&#34;&gt;ncurses-devel&lt;/code&gt; 的包，
 执行下面的语句安装即可。
 &lt;/p&gt;
-&lt;div class=&#34;src src-bash&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  sudo zypper install ncurses-devel&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  sudo zypper install ncurses-devel&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
 &lt;hr class=&#34;footnotes-separatator&#34;&gt;
@@ -1425,7 +1239,7 @@ Fish shell 中定义环境变量的方式为 &lt;code class=&#34;verbatim&#34;&g
 &lt;h2&gt;目录&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#headline-1&#34;&gt;准备一个用于安装Linux Mint的USB设备&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-1&#34;&gt;准备一个用于安装 Linux Mint 的 USB 设备&lt;/a&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#headline-2&#34;&gt;Linux Mint的ISO文件&lt;/a&gt;
 &lt;/li&gt;
@@ -1434,35 +1248,45 @@ Fish shell 中定义环境变量的方式为 &lt;code class=&#34;verbatim&#34;&g
 
 &lt;/p&gt;
 &lt;p&gt;
-*重要*：在开始下面的工作之前，首先确保U盘没有存任何东西，
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;重要&lt;/strong&gt;：在开始下面的工作之前，首先确保U盘没有存任何东西，
 或者里面没有放任何的重要数据（因为烧录会导致数据丢失），
 同时电脑上已经准备好空的分区（安装到的目标分区的数据也会被抹掉）。
+  &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;/p&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
-准备一个用于安装Linux Mint的USB设备
+准备一个用于安装 Linux Mint 的 USB 设备
 &lt;/h2&gt;
 &lt;p&gt;
-首先准备一个USB设备，可以是U盘也可以是USB的移动硬盘，
-之后会在这个上面写入供安装Linux Mint的安装程序。
+首先准备一个 USB 设备，可以是 U 盘也可以是 USB 的移动硬盘，
+之后会在这个上面写入供安装 Linux Mint 的安装程序。
 &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;
-如果使用的是Windows操作系统，那么点击
-&lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0&#34;&gt;这里&lt;/a&gt;来查看Ubuntu官方的教程以创建一个可以安装Linux的USB设备。
+如果使用的是 Windows 操作系统，那么点击
+&lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0&#34;&gt;这里&lt;/a&gt;来查看 Ubuntu 官方的教程以创建一个可以安装Linux的USB设备。
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;
-*注意*：上面的教程是教你如何製作一个用于安装Ubuntu的USB设备， 
-安装Linux Mint的情况下仅需要把涉及到ISO文件的地方换成Linux Mint的iso文件，其他地方完全相同。
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    上面的教程是教你如何制作一个用于安装 Ubuntu 的 USB 设备，
+安装 Linux Mint 的情况下仅需要把涉及到镜像文件的地方换成 Linux Mint 的 ISO 文件，
+其他地方完全相同。
+  &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;
-其中会用到的软件叫做rufus，上面的教程裡面也有提到，点击
-&lt;a href=&#34;https://rufus.akeo.ie/&#34;&gt;这里&lt;/a&gt;打开rufus的官方网站，你也可以点击
-&lt;a href=&#34;https://github.com/pbatard/rufus/releases/download/v3.5/rufus-3.5.exe&#34;&gt;这里&lt;/a&gt;直接下载rufus。
+其中会用到的软件叫做 Rufus，上面的教程裡面也有提到，
+点击&lt;a href=&#34;https://rufus.akeo.ie/&#34;&gt;这里&lt;/a&gt;打开 Rufus 的官方网站，或者也可以点击&lt;a href=&#34;https://github.com/pbatard/rufus/releases/download/v3.5/rufus-3.5.exe&#34;&gt;这里&lt;/a&gt;直接下载 Rufus。
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -1470,9 +1294,8 @@ Fish shell 中定义环境变量的方式为 &lt;code class=&#34;verbatim&#34;&g
 Linux Mint的ISO文件
 &lt;/h2&gt;
 &lt;p&gt;
-前一节提到的linux mint的iso文件需要从下面的地方获取。
-点击&lt;a href=&#34;https://linuxmint.com/&#34;&gt;这里&lt;/a&gt;打开linux mint的官方网站。
-或者也可以点击&lt;a href=&#34;http://mirrors.evowise.com/linuxmint/stable/19.1/linuxmint-19.1-cinnamon-64bit.iso&#34;&gt;这里&lt;/a&gt;直接下载Linux Mint 19.1版本。
+前一节提到的 Linux Mint 的 ISO 文件需要从下面的地方获取。
+点击&lt;a href=&#34;https://linuxmint.com/&#34;&gt;这里&lt;/a&gt;打开 Linux Mint 的官方网站。或者也可以点击&lt;a href=&#34;http://mirrors.evowise.com/linuxmint/stable/19.1/linuxmint-19.1-cinnamon-64bit.iso&#34;&gt;这里&lt;/a&gt;直接下载 Linux Mint 19.1 版本。
 &lt;/p&gt;
 </description>
     </item>
@@ -1487,7 +1310,7 @@ Linux Mint的ISO文件
 &lt;h2&gt;目录&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#headline-1&#34;&gt;安装 Jekyll&lt;sup class=&#34;footnote-reference&#34;&gt;1&lt;/sup&gt;&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-1&#34;&gt;安装 Jekyll&lt;/a&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#headline-2&#34;&gt;发布博客到 Github&lt;/a&gt;
 &lt;/li&gt;
@@ -1496,7 +1319,7 @@ Linux Mint的ISO文件
 
 &lt;/p&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
-安装 Jekyll&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
+安装 Jekyll
 &lt;/h2&gt;
 &lt;p&gt;
 Jekyll 是一个通过 Ruby 语言写的静态网站生成框架，下面是官网介绍。
@@ -1506,7 +1329,7 @@ Jekyll 是一个通过 Ruby 语言写的静态网站生成框架，下面是官�
 Jekyll is a static site generator. You give it text written in your
   favorite markup language and it uses layouts to create a static
   website. You can tweak how you want the site URLs to look, what data
-  gets displayed on the site, and more. –Jekyll&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-2&#34; href=&#34;#footnote-2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
+  gets displayed on the site, and more. –Jekyll&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
 &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;
@@ -1563,7 +1386,7 @@ Jekyll is a static site generator. You give it text written in your
 &lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://xinii.github.io&#34;&gt;本站&lt;/a&gt;现已改用 &lt;code&gt;hugo&lt;/code&gt; 静态网站生成框架创建，
-如需参考原来的站点，请&lt;a href=&#34;https://xinii.github.io/jekyll-blog&#34;&gt;点击这里&lt;/a&gt;访问。
+如需参考原来的站点，请&lt;a href=&#34;https://xinii.github.io/archive-site-c&#34;&gt;点击这里&lt;/a&gt;访问。
 &lt;/p&gt;
 &lt;p&gt;
 欢迎联络并留言。
@@ -1575,15 +1398,7 @@ Jekyll is a static site generator. You give it text written in your
 &lt;sup id=&#34;footnote-1&#34;&gt;&lt;a href=&#34;#footnote-reference-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
 &lt;div class=&#34;footnote-body&#34;&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://raw.githubusercontent.com/jekyll/brand/master/jekyll-logo-black-red-transparent.png&#34;&gt;Jekyll 的 Logo&lt;/a&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;footnote-definition&#34;&gt;
-&lt;sup id=&#34;footnote-2&#34;&gt;&lt;a href=&#34;#footnote-reference-2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
-&lt;div class=&#34;footnote-body&#34;&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://jekyllrb.com/docs/&#34;&gt;jekyllrb.com&lt;/a&gt;
+&lt;a href=&#34;https://jekyllrb.com/docs/&#34;&gt;Jekyll 官方网站&lt;/a&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1625,14 +1440,16 @@ Jekyll is a static site generator. You give it text written in your
     </item>
     
     <item>
-      <title>个人简历</title>
-      <link>https://xinii.cf/zh/cv/</link>
+      <title>李欣</title>
+      <link>https://xinii.cf/zh/cv/xin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xinii.cf/zh/cv/</guid>
+      <guid>https://xinii.cf/zh/cv/xin/</guid>
       <description>
+&lt;blockquote&gt;
 &lt;p&gt;
-李欣，现居日本神奈川县横滨市。欢迎来到我的博客，以下是我的简单介绍。
+现居日本神奈川县横滨市。欢迎来到我的博客，以下是我的个人简历。
 &lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 教育经历
 &lt;/h2&gt;

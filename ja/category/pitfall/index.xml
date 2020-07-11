@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pitfall | xin iDEA iNNATA</title>
+    <link>https://xinii.cf/ja/category/pitfall/</link>
+      <atom:link href="https://xinii.cf/ja/category/pitfall/index.xml" rel="self" type="application/rss+xml" />
+    <description>pitfall</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja-jp</language><copyright>© 2020 xin iDEA iNNATA</copyright><lastBuildDate>Sat, 23 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xinii.cf/images/logo_hu4469573970495a9d28444639a51ce6fc_83092_300x300_fit_lanczos_2.png</url>
+      <title>pitfall</title>
+      <link>https://xinii.cf/ja/category/pitfall/</link>
+    </image>
+    
+    <item>
+      <title>EmacsのOrg-modeにおいてPythonコードブロックを使った時の落とし穴</title>
+      <link>https://xinii.cf/ja/post/single-language/pitfall-while-using-python-code-block-on-emacs-org-mode/</link>
+      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/ja/post/single-language/pitfall-while-using-python-code-block-on-emacs-org-mode/</guid>
+      <description>&lt;p&gt;
+僕は家計簿をOrg-modeで記録していて，
+その中にPythonのコードを書き，実行とかをやっている。
+しかし，以下のエラーになったことがある。
+&lt;/p&gt;
+&lt;div class=&#34;src src-sample&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;File &amp;#34;&amp;lt;stdin&amp;gt;&amp;#34;, line 3
+SyntaxError: Non-UTF-8 code starting with &amp;#39;\xe3&amp;#39; in file &amp;lt;stdin&amp;gt; on line 3, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;
+考えられるのは， &lt;code&gt;# -*- coding: utf-8 -*-&lt;/code&gt; を先頭につけることしかないけど，
+結局 &lt;strong&gt;Org-modeの中のPythonのコードブロック&lt;/strong&gt; なら効かなかった。
+&lt;/p&gt;
+&lt;p&gt;
+解決法は以下のようなコードブロックのヘッダーを，
+&lt;/p&gt;
+&lt;div class=&#34;src src-sample&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;#+begin_src python :results file :var data=test&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;
+以下のように変換する
+&lt;/p&gt;
+&lt;div class=&#34;src src-sample&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;#+begin_src python :results file :var data=test[, 0:2]&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;
+すなわち，必須となる数字や日付などが入っているテーブルの列だけを
+Pythonに転送すると，一時的なエラーを解消できるけど，
+本質的には解決していない。
+&lt;/p&gt;
+&lt;p&gt;
+引き続き調査。
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>pLaTeXを使う際に扱うepsグラフに関する落とし穴</title>
+      <link>https://xinii.cf/ja/post/single-language/pitfall-while-inserting-figure-into-latex-article/</link>
+      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/ja/post/single-language/pitfall-while-inserting-figure-into-latex-article/</guid>
+      <description>&lt;p&gt;
+pLaTeXを使う際に，なぜか特定のepsグラフを文書のソースに入れたらビルドが失敗。
+しかも失敗した時のログをみると，まったく問題を特定できない。
+&lt;/p&gt;
+&lt;p&gt;
+例えば，入れたすべてのfigureの定義が見つからないとかに関するエラー。
+このようなエラーになった時に，
+epsグラフのスケールを正方形に近い形状から矩形にしたら，
+問題解決できた。
+&lt;/p&gt;
+&lt;p&gt;
+原因はまだ不明だけど，また調査してみる。
+たまにハマってしまったので，ここにメモを残っておく。
+&lt;/p&gt;
+&lt;p&gt;
+以上。
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

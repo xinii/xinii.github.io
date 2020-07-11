@@ -1,0 +1,10 @@
+/en/*                           /en/404.html                  404
+/ja/*                           /ja/404.html                  404
+/zh/*                           /zh/404.html                  404
+https://xinii.netlify.com/*     https://xinii.cf/:splat       301!
+https://xinii.tk/*              https://xinii.cf/:splat       301!
+/                               /ja/                          301!           Language=ja
+/                               /ja/                          301!           Country=jp
+/                               /zh/                          301!           Language=zh
+/                               /zh/                          301!           Country=cn
+/*                              /en/:splat                    301

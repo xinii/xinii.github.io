@@ -1,0 +1,1581 @@
+<!DOCTYPE html><html lang="ja-jp" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Xin Li">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="ソースからEmacsをコンパイルする時にGnutlsに関するエラーが出た？一体どういうことかを見てみよう！">
+
+  
+  <link rel="alternate" hreflang="en" href="https://xinii.cf/en/post/install-gnutls-and-compile-emacs-from-source/">
+  
+  <link rel="alternate" hreflang="zh" href="https://xinii.cf/zh/post/install-gnutls-and-compile-emacs-from-source/">
+  
+  <link rel="alternate" hreflang="ja-jp" href="https://xinii.cf/ja/post/install-gnutls-and-compile-emacs-from-source/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169244465-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-169244465-2', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/ja/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_huc6d37f8d5848c4cf0bbdc638499793df_110525_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_huc6d37f8d5848c4cf0bbdc638499793df_110525_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://xinii.cf/ja/post/install-gnutls-and-compile-emacs-from-source/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@xintxt">
+  <meta property="twitter:creator" content="@xintxt">
+  
+  <meta property="og:site_name" content="xin iDEA iNNATA">
+  <meta property="og:url" content="https://xinii.cf/ja/post/install-gnutls-and-compile-emacs-from-source/">
+  <meta property="og:title" content="GnutlsをインストールしてソースからEmacsをコンパイル | xin iDEA iNNATA">
+  <meta property="og:description" content="ソースからEmacsをコンパイルする時にGnutlsに関するエラーが出た？一体どういうことかを見てみよう！"><meta property="og:image" content="https://xinii.cf/ja/post/install-gnutls-and-compile-emacs-from-source/featured.png">
+  <meta property="twitter:image" content="https://xinii.cf/ja/post/install-gnutls-and-compile-emacs-from-source/featured.png"><meta property="og:locale" content="ja-jp">
+  
+    
+      <meta property="article:published_time" content="2019-05-04T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2019-05-04T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://xinii.cf/ja/post/install-gnutls-and-compile-emacs-from-source/"
+  },
+  "headline": "GnutlsをインストールしてソースからEmacsをコンパイル",
+  
+  "image": [
+    "https://xinii.cf/ja/post/install-gnutls-and-compile-emacs-from-source/featured.png"
+  ],
+  
+  "datePublished": "2019-05-04T00:00:00Z",
+  "dateModified": "2019-05-04T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Xin Li"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "xin iDEA iNNATA",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://xinii.cf/images/logo_hu4469573970495a9d28444639a51ce6fc_83092_192x192_fit_lanczos_2.png"
+    }
+  },
+  "description": "ソースからEmacsをコンパイルする時にGnutlsに関するエラーが出た？一体どういうことかを見てみよう！"
+}
+</script>
+
+  
+
+  
+
+
+  
+  
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#2962ff",
+          "text": "#fff"
+        },
+        "button": {
+          "background": "#fff",
+          "text": "#2962ff"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "このウェブサイトはあなたが最高の体験を得るためにクッキーを使用します。",
+        "dismiss": "はい",
+        "link": "詳細を見る",
+        "href": "https://www.cookiesandyou.com"
+      }
+    })});
+  </script>
+
+
+
+  <script data-ad-client="ca-pub-9872583441136696" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+  <title>GnutlsをインストールしてソースからEmacsをコンパイル | xin iDEA iNNATA</title>
+
+</head>
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="検索..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+ .fix-width{
+     width: 25px;
+ }
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/ja/"><img src="/images/logo_hu4469573970495a9d28444639a51ce6fc_83092_0x70_resize_lanczos_2.png" alt="xin iDEA iNNATA"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="ナビゲーションの切り替え">
+      <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/ja/"><img src="/images/logo_hu4469573970495a9d28444639a51ce6fc_83092_0x70_resize_lanczos_2.png" alt="xin iDEA iNNATA"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-center" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/ja/#xinconfig"><span><span class='fas fa-home fix-width'></span>ホーム</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/ja/#about"><span><span class='far fa-address-card fix-width'></span>私について</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/ja/#posts"><span><span class='far fa-newspaper fix-width'></span>最近の投稿</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/ja/#featured"><span><span class='fas fa-book-open fix-width'></span>発表文献</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/ja/#categories"><span><span class='fab fa-hotjar fix-width'></span>人気キーワード</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/ja/#contact"><span><span class='far fa-envelope fix-width'></span>お問い合わせ</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-angle-down" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          
+          <br><center><div class="fas fa-palette"></div></center><br>
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span class="far fa-sun fix-width"></span>ライトモード
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span class="far fa-moon fix-width"></span>ダークモード
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span class="fas fa-robot fix-width"></span>自動設定
+          </a>
+
+          <br><center><div class="fas fa-external-link-alt"></div></center><br>
+          
+          
+          <a href='/ja/authors' class="dropdown-item">
+            <span class="fas fa-user-edit fix-width"></span>作者リスト
+          </a>
+          <a href='/ja/post' class="dropdown-item">
+            <span class="far fa-newspaper fix-width"></span>投稿一覧
+          </a>
+          <a href='/ja/publication' class="dropdown-item">
+            <span class="fas fa-book-open fix-width"></span>発表文献一覧
+          </a>
+          <a href='/ja/' class="dropdown-item">
+            <span class="fas fa-home fix-width"></span>ホームに戻る
+          </a>
+          
+          
+
+          <br><center><div class="fas fa-user"></div></center><br>
+          
+          <a href='/ja/admin' class="dropdown-item">
+            <span class="fas fa-key fix-width"></span>ログイン
+          </a>
+
+        </div>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown i18n-dropdown">
+        <a href="#" class="nav-link " data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-globe mr-1" aria-hidden="true"></i></a>
+        <div class="dropdown-menu">
+          <div class="dropdown-item dropdown-item-active">
+            <span>日本語</span>
+          </div>
+          
+          <a class="dropdown-item" href="https://xinii.cf/en/post/install-gnutls-and-compile-emacs-from-source/">
+            <span>English</span>
+          </a>
+          
+          <a class="dropdown-item" href="https://xinii.cf/zh/post/install-gnutls-and-compile-emacs-from-source/">
+            <span>中文 (简体)</span>
+          </a>
+          
+        </div>
+      </li>
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+<div class="article-container pt-3">
+  <h1>GnutlsをインストールしてソースからEmacsをコンパイル</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Sat, May 4, 2019
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    2 分で読める
+  </span>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/ja/post/install-gnutls-and-compile-emacs-from-source/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/ja/category/emacs/">Emacs</a></span>
+  
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 240px;">
+  <div style="position: relative">
+    <img src="/ja/post/install-gnutls-and-compile-emacs-from-source/featured_huc014b526b919018f525c3a9a3ea26071_73419_720x0_resize_lanczos_2.png" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+<p>
+<h2>目次</h2>
+<nav id="TableOfContents">
+<ul>
+<li><a href="#headline-1">今の環境にGnutlsがない場合</a>
+</li>
+<li><a href="#headline-2">潜在的なリスク</a>
+</li>
+<li><a href="#headline-3">Gnutlsをインストール</a>
+</li>
+<li><a href="#headline-4">その他の問題</a>
+</li>
+</ul>
+</nav>
+
+</p>
+<h2 id="headline-1">
+今の環境にGnutlsがない場合
+</h2>
+<p>
+今の環境にGnutlsがない場合は，ソースからEmacs<sup class="footnote-reference"><a id="footnote-reference-1" href="#footnote-1">1</a></sup>をコンパイルする時に以下の設定が必要。
+</p>
+<div class="src src-bash">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  ./configure --with-gnutls<span style="color:#f92672">=</span>no</code></pre></div>
+</div>
+<p>
+他にも依存されるライブラリーなどが足りない場合は，例えば以下のように設定をする。
+</p>
+<div class="src src-bash">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  bash configure --prefix<span style="color:#f92672">=</span>$HOME/.local --with-gif<span style="color:#f92672">=</span>no --with-gnutls<span style="color:#f92672">=</span>no</code></pre></div>
+</div>
+<p>
+これでデフォルトのパスとかへの権限や，ライブラリーが足りない場合でもソースからインストール出来てしまう。
+</p>
+<h2 id="headline-2">
+潜在的なリスク
+</h2>
+<p>
+以上のようにEmacsを <code class="verbatim">$HOME/.local</code> へのインストールが出来てしまうけど，
+Gnutlsがサポートされないゆえに，Emacsでインターネットが必要となった時にhttpsが使えない。
+</p>
+<p>
+Emacsが初期化される時だけなら，設定ファイルの中のMelpaリンクを全てhttpに変更すれば済ませるが，
+セキュリティ上にあまりお勧めができないし，今後Emacsの拡張機能を使う時のリスクにもなる。
+</p>
+<p>
+例えば， <code class="verbatim">google-translate</code> のEmacs拡張パッケージを使う場合は，
+Emacsのelpaフォルダーにある <code class="verbatim">google-translate</code> の中の全ての <code class="verbatim">*.el</code> にある <code class="verbatim">https</code> を <code class="verbatim">http</code> に書き換えても，
+実際に使う時に一部の機能にとっては <code class="verbatim">https</code> が必須で翻訳が正常に機能しない恐れがある。
+</p>
+<p>
+ここでは， <code class="verbatim">*.el</code> を変更した後に， <code class="verbatim">*.elc</code> を削除しないと変更が反映されない可能性がある。
+</p>
+<h2 id="headline-3">
+Gnutlsをインストール
+</h2>
+<p>
+以上の問題を解決するもっとも簡単な方法としては，
+今の環境にGnutlsをインストールしてからソースからもう一度Emacsをインストールすること。
+</p>
+<p>
+OpenSUSEを例として，以下のコマンドでGnutlsをインストールする。
+</p>
+<div class="src src-bash">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  sudo zypper install gnutls</code></pre></div>
+</div>
+<h2 id="headline-4">
+その他の問題
+</h2>
+<div class="src src-bash">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  checking <span style="color:#66d9ef">for</span> library containing tputs... no
+  configure: error: The required <span style="color:#66d9ef">function</span> <span style="color:#e6db74">&#39;tputs&#39;</span> was not found in any library.
+  The following libraries were tried <span style="color:#f92672">(</span>in order<span style="color:#f92672">)</span>:
+    libtinfo, libncurses, libterminfo, libcurses, libtermcap
+  Please try installing whichever of these libraries is most appropriate
+  <span style="color:#66d9ef">for</span> your system, together with its header files.
+  For example, a libncurses-dev<span style="color:#f92672">(</span>el<span style="color:#f92672">)</span> or similar package.
+  make: *** No targets specified and no makefile found.  Stop.
+  make: *** No rule to make target <span style="color:#e6db74">&#39;install&#39;</span>.  Stop.</code></pre></div>
+</div>
+<p>
+もしすでにGnutlsがインストール済みで， <code class="verbatim">make</code> を叩くと以上のエラーが出てきてしまったら，
+OpenSUSE環境の場合は， <code class="verbatim">ncurses-devel</code> というパッケージが必要だということなので，
+以下のコマンドで入れておこう。
+</p>
+<div class="src src-bash">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  sudo zypper install ncurses-devel</code></pre></div>
+</div>
+<div class="footnotes">
+<hr class="footnotes-separatator">
+<div class="footnote-definitions">
+<div class="footnote-definition">
+<sup id="footnote-1"><a href="#footnote-reference-1">1</a></sup>
+<div class="footnote-body">
+<p>
+<a href="https://ja.wikipedia.org/wiki/Emacs">The logo of Emacs</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+    </div>
+
+    
+
+
+
+
+
+
+  
+  
+
+<p class="edit-page">
+  <a href="https://github.com/xinii/hugo-site-academic/edit/master/content/ja/post/emacs-gnutls/index.org">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/ja/tag/gnutls/">GnuTLS</a>
+  
+  <a class="badge badge-light" href="/ja/tag/compile/">Compile</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://xinii.cf/ja/post/install-gnutls-and-compile-emacs-from-source/&amp;text=Gnutls%e3%82%92%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab%e3%81%97%e3%81%a6%e3%82%bd%e3%83%bc%e3%82%b9%e3%81%8b%e3%82%89Emacs%e3%82%92%e3%82%b3%e3%83%b3%e3%83%91%e3%82%a4%e3%83%ab" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://xinii.cf/ja/post/install-gnutls-and-compile-emacs-from-source/&amp;t=Gnutls%e3%82%92%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab%e3%81%97%e3%81%a6%e3%82%bd%e3%83%bc%e3%82%b9%e3%81%8b%e3%82%89Emacs%e3%82%92%e3%82%b3%e3%83%b3%e3%83%91%e3%82%a4%e3%83%ab" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Gnutls%e3%82%92%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab%e3%81%97%e3%81%a6%e3%82%bd%e3%83%bc%e3%82%b9%e3%81%8b%e3%82%89Emacs%e3%82%92%e3%82%b3%e3%83%b3%e3%83%91%e3%82%a4%e3%83%ab&amp;body=https://xinii.cf/ja/post/install-gnutls-and-compile-emacs-from-source/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://xinii.cf/ja/post/install-gnutls-and-compile-emacs-from-source/&amp;title=Gnutls%e3%82%92%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab%e3%81%97%e3%81%a6%e3%82%bd%e3%83%bc%e3%82%b9%e3%81%8b%e3%82%89Emacs%e3%82%92%e3%82%b3%e3%83%b3%e3%83%91%e3%82%a4%e3%83%ab" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Gnutls%e3%82%92%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab%e3%81%97%e3%81%a6%e3%82%bd%e3%83%bc%e3%82%b9%e3%81%8b%e3%82%89Emacs%e3%82%92%e3%82%b3%e3%83%b3%e3%83%91%e3%82%a4%e3%83%ab%20https://xinii.cf/ja/post/install-gnutls-and-compile-emacs-from-source/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://xinii.cf/ja/post/install-gnutls-and-compile-emacs-from-source/&amp;title=Gnutls%e3%82%92%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab%e3%81%97%e3%81%a6%e3%82%bd%e3%83%bc%e3%82%b9%e3%81%8b%e3%82%89Emacs%e3%82%92%e3%82%b3%e3%83%b3%e3%83%91%e3%82%a4%e3%83%ab" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+<script type="text/javascript">
+ var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
+</script>
+<script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+    
+    
+    
+
+    
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+        
+        <img class="avatar mr-3 avatar-circle" src="/ja/author/xin-li/avatar_hu52a603635ecebd45650b162dadabb4e5_12861_270x270_fill_q90_lanczos_center.jpg" alt="Xin Li">
+      
+
+      <div class="media-body">
+        <h5 class="card-title"><a href="/ja/author/xin-li/">Xin Li</a></h5>
+        <h6 class="card-subtitle">Postdoctoral researcher</h6>
+        <p class="card-text">機械学習及び深層学習の応用に関する研究に従事し，不均一・偏りのあるデータに対するサンプリング手法および学習アルゴリズムに注目している。</p>
+        <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/ja/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/xintxt" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.facebook.com/xintxt" target="_blank" rel="noopener">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/xinii/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/xinii" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://soundcloud.com/user-499505439-644196268" target="_blank" rel="noopener">
+        <i class="fab fa-soundcloud"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/ja/cv" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.mendeley.com/profiles/xin-li399/" target="_blank" rel="noopener">
+        <i class="ai ai-mendeley"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=90BQQdwAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0003-0024-3670" target="_blank" rel="noopener">
+        <i class="fab fa-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Xin_Li514" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </div>
+  
+
+
+
+
+
+
+
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "xinii" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+
+<div class="article-widget">
+  
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">次へ</div>
+    <a href="/ja/post/install-opencv-on-jetson-nano/" rel="next">Jetson NanoにOpenCVをインストール</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">前へ</div>
+    <a href="/ja/post/my-shell-migration-record/" rel="prev">僕のシェル移行記録</a>
+  </div>
+  
+</div>
+
+</div>
+
+
+
+
+
+  
+  
+
+
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/ja/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"結果が見つかりませんでした","placeholder":"検索...","results":"results found"};
+      const content_type = {
+        'post': "投稿",
+        'project': "プロジェクト",
+        'publication' : "発表文献",
+        'talk' : "登壇",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://xinii.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.66c553246b0f279a03be6e5597f72b52.js"></script>
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.js"></script>
+<script>
+ document.addEventListener('DOMContentLoaded', () => {
+     
+     pangu.autoSpacingPage();
+ });
+</script>
+
+
+<script type="text/javascript">
+ var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
+</script>
+<script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script>
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © 2020 xin iDEA iNNATA
+  </p>
+
+  
+  
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">
+      <img src="https://search.creativecommons.org/static/img/cc_icon.svg" alt="CC icon">
+      <img src="https://search.creativecommons.org/static/img/cc-by_icon.svg" alt="CC by icon">
+      
+        <img src="https://search.creativecommons.org/static/img/cc-nc_icon.svg" alt="CC NC icon">
+      
+      
+        <img src="https://search.creativecommons.org/static/img/cc-nd_icon.svg" alt="CC ND icon">
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">引用</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> コピー
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> ダウンロード
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

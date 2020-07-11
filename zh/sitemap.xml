@@ -3,61 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://xinii.cf/zh/slides/</loc>
-    <lastmod>2020-07-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xinii.cf/zh/</loc>
-    <lastmod>2020-07-05T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.cf/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.cf/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://xinii.cf/zh/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.cf/zh/author/xin-li/</loc>
-    <lastmod>2020-07-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xinii.cf/zh/authors/</loc>
-    <lastmod>2020-07-05T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.cf/en/authors/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.cf/authors/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://xinii.cf/zh/authors/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.cf/zh/slides/possible-course/</loc>
-    <lastmod>2020-07-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://xinii.cf/zh/project/xinconfig/</loc>
     <lastmod>2020-06-30T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -68,7 +13,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/project/xinconfig/"
+                href="https://xinii.cf/ja/project/xinconfig/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -88,7 +33,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/bash/"
+                href="https://xinii.cf/ja/tag/bash/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -108,7 +53,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/categories/"
+                href="https://xinii.cf/ja/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -128,7 +73,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/category/configuration-tool/"
+                href="https://xinii.cf/ja/category/configuration-tool/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -148,7 +93,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/emacs/"
+                href="https://xinii.cf/ja/tag/emacs/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -168,7 +113,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/fish-shell/"
+                href="https://xinii.cf/ja/tag/fish-shell/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -188,7 +133,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/project/"
+                href="https://xinii.cf/ja/project/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -208,7 +153,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/script/"
+                href="https://xinii.cf/ja/tag/script/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -228,12 +173,32 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tags/"
+                href="https://xinii.cf/ja/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
                 href="https://xinii.cf/zh/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/zh/</loc>
+    <lastmod>2020-06-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/ja/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/"
                 />
   </url>
   
@@ -248,7 +213,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/activation/"
+                href="https://xinii.cf/ja/tag/activation/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -268,7 +233,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/autohotkey/"
+                href="https://xinii.cf/ja/tag/autohotkey/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -288,7 +253,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/keyboard-layout/"
+                href="https://xinii.cf/ja/tag/keyboard-layout/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -308,7 +273,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/msys2/"
+                href="https://xinii.cf/ja/tag/msys2/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -328,7 +293,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/registry/"
+                href="https://xinii.cf/ja/tag/registry/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -348,7 +313,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/ricty/"
+                href="https://xinii.cf/ja/tag/ricty/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -368,7 +333,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/scancode/"
+                href="https://xinii.cf/ja/tag/scancode/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -388,7 +353,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/category/windows/"
+                href="https://xinii.cf/ja/category/windows/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -408,7 +373,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/post/several-windows-registry-configurations/"
+                href="https://xinii.cf/ja/post/several-windows-registry-configurations/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -428,7 +393,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/post/"
+                href="https://xinii.cf/ja/post/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -448,7 +413,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/post/some-installations-for-windows-10/"
+                href="https://xinii.cf/ja/post/some-installations-for-windows-10/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -468,7 +433,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/android/"
+                href="https://xinii.cf/ja/tag/android/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -488,7 +453,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/apt/"
+                href="https://xinii.cf/ja/tag/apt/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -508,7 +473,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/daemon/"
+                href="https://xinii.cf/ja/tag/daemon/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -528,7 +493,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/keygen/"
+                href="https://xinii.cf/ja/tag/keygen/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -548,7 +513,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/category/linux/"
+                href="https://xinii.cf/ja/category/linux/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -568,7 +533,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/category/ssh/"
+                href="https://xinii.cf/ja/category/ssh/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -588,7 +553,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/termux/"
+                href="https://xinii.cf/ja/tag/termux/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -608,7 +573,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/post/add-apt-repository-for-fish-and-emacs/"
+                href="https://xinii.cf/ja/post/add-apt-repository-for-fish-and-emacs/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -628,7 +593,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/post/several-ssh-configurations/"
+                href="https://xinii.cf/ja/post/several-ssh-configurations/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -648,7 +613,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/publication-type/2/"
+                href="https://xinii.cf/ja/publication-type/2/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -668,7 +633,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/auto-encoder/"
+                href="https://xinii.cf/ja/tag/auto-encoder/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -688,7 +653,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/deep-learning/"
+                href="https://xinii.cf/ja/tag/deep-learning/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -708,7 +673,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/author/hiroshi-arai/"
+                href="https://xinii.cf/ja/author/hiroshi-arai/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -728,7 +693,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/category/journal-article/"
+                href="https://xinii.cf/ja/category/journal-article/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -748,7 +713,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/priority-sampling/"
+                href="https://xinii.cf/ja/tag/priority-sampling/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -768,7 +733,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/publication_types/"
+                href="https://xinii.cf/ja/publication_types/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -788,7 +753,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/author/tomoki-hamagami/"
+                href="https://xinii.cf/ja/author/tomoki-hamagami/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -808,7 +773,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/publication/li2020wave/"
+                href="https://xinii.cf/ja/publication/li2020wave/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -828,12 +793,32 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/author/xin-li/"
+                href="https://xinii.cf/ja/author/xin-li/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
                 href="https://xinii.cf/zh/author/xin-li/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/zh/authors/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/authors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/ja/authors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/authors/"
                 />
   </url>
   
@@ -848,7 +833,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/publication/"
+                href="https://xinii.cf/ja/publication/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -868,7 +853,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/publication-type/1/"
+                href="https://xinii.cf/ja/publication-type/1/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -888,7 +873,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/publication/li2019improved/"
+                href="https://xinii.cf/ja/publication/li2019improved/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -908,7 +893,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/category/conference-paper/"
+                href="https://xinii.cf/ja/category/conference-paper/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -928,7 +913,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/jetson-nano/"
+                href="https://xinii.cf/ja/tag/jetson-nano/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -948,7 +933,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/category/opencv/"
+                href="https://xinii.cf/ja/category/opencv/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -963,7 +948,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/python/"
+                href="https://xinii.cf/ja/tag/python/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -988,7 +973,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/post/install-opencv-on-jetson-nano/"
+                href="https://xinii.cf/ja/post/install-opencv-on-jetson-nano/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1008,7 +993,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/compile/"
+                href="https://xinii.cf/ja/tag/compile/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1028,7 +1013,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/category/emacs/"
+                href="https://xinii.cf/ja/category/emacs/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1048,7 +1033,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/gnutls/"
+                href="https://xinii.cf/ja/tag/gnutls/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1063,7 +1048,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/post/install-gnutls-and-compile-emacs-from-source/"
+                href="https://xinii.cf/ja/post/install-gnutls-and-compile-emacs-from-source/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1083,7 +1068,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/category/shell/"
+                href="https://xinii.cf/ja/category/shell/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1103,7 +1088,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/tmux/"
+                href="https://xinii.cf/ja/tag/tmux/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1123,7 +1108,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/z-shell/"
+                href="https://xinii.cf/ja/tag/z-shell/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1143,7 +1128,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/post/my-shell-migration-record/"
+                href="https://xinii.cf/ja/post/my-shell-migration-record/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1163,7 +1148,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/linux-mint/"
+                href="https://xinii.cf/ja/tag/linux-mint/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1183,7 +1168,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/operating-system/"
+                href="https://xinii.cf/ja/tag/operating-system/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1198,7 +1183,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/rufus/"
+                href="https://xinii.cf/ja/tag/rufus/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1218,7 +1203,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/usb/"
+                href="https://xinii.cf/ja/tag/usb/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1238,7 +1223,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/post/install-linux-mint-from-the-usb-device/"
+                href="https://xinii.cf/ja/post/install-linux-mint-from-the-usb-device/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1258,32 +1243,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/blog/"
+                href="https://xinii.cf/ja/tag/blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
                 href="https://xinii.cf/zh/tag/blog/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.cf/zh/category/cms/</loc>
-    <lastmod>2019-04-02T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.cf/en/category/cms/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.cf/category/cms/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://xinii.cf/zh/category/cms/"
                 />
   </url>
   
@@ -1298,7 +1263,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/github/"
+                href="https://xinii.cf/ja/tag/github/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1318,12 +1283,32 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/jekyll/"
+                href="https://xinii.cf/ja/tag/jekyll/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
                 href="https://xinii.cf/zh/tag/jekyll/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/zh/category/static-site-generator/</loc>
+    <lastmod>2019-04-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/category/static-site-generator/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/ja/category/static-site-generator/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/category/static-site-generator/"
                 />
   </url>
   
@@ -1338,7 +1323,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/post/create-a-blog-by-jekyll-and-publish-to-github/"
+                href="https://xinii.cf/ja/post/create-a-blog-by-jekyll-and-publish-to-github/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1358,7 +1343,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/publication-type/6/"
+                href="https://xinii.cf/ja/publication-type/6/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1378,7 +1363,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/category/book-section/"
+                href="https://xinii.cf/ja/category/book-section/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1398,7 +1383,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/corpus/"
+                href="https://xinii.cf/ja/tag/corpus/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1418,7 +1403,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/don-quixote/"
+                href="https://xinii.cf/ja/tag/don-quixote/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1438,7 +1423,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/author/jinwei-wang/"
+                href="https://xinii.cf/ja/author/jinwei-wang/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1458,7 +1443,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/spanish/"
+                href="https://xinii.cf/ja/tag/spanish/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1478,7 +1463,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/translation/"
+                href="https://xinii.cf/ja/tag/translation/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1498,7 +1483,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/publication/wang2017/"
+                href="https://xinii.cf/ja/publication/wang2017/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1518,7 +1503,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/publication/li2018prioritized/"
+                href="https://xinii.cf/ja/publication/li2018prioritized/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1538,7 +1523,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/publication/li2017research/"
+                href="https://xinii.cf/ja/publication/li2017research/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1558,7 +1543,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/anomaly-detection/"
+                href="https://xinii.cf/ja/tag/anomaly-detection/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1578,7 +1563,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/author/hamatsu-fumiya/"
+                href="https://xinii.cf/ja/author/hamatsu-fumiya/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1598,7 +1583,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/author/masaya-nakata/"
+                href="https://xinii.cf/ja/author/masaya-nakata/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1618,7 +1603,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/multidimensional-data/"
+                href="https://xinii.cf/ja/tag/multidimensional-data/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1638,7 +1623,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/time-series-data/"
+                href="https://xinii.cf/ja/tag/time-series-data/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1658,7 +1643,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/language-education/"
+                href="https://xinii.cf/ja/tag/language-education/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1678,7 +1663,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/oral-communication/"
+                href="https://xinii.cf/ja/tag/oral-communication/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1698,31 +1683,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/publication/wang2016/"
+                href="https://xinii.cf/ja/publication/wang2016/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
                 href="https://xinii.cf/zh/publication/wang2016/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.cf/zh/category/cv/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.cf/en/category/cv/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.cf/category/cv/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://xinii.cf/zh/category/cv/"
                 />
   </url>
   
@@ -1736,7 +1702,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/cv/"
+                href="https://xinii.cf/ja/cv/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1746,21 +1712,21 @@
   </url>
   
   <url>
-    <loc>https://xinii.cf/zh/courses/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.cf/courses/"
-                />
+    <loc>https://xinii.cf/zh/cv/xin/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xinii.cf/en/courses/"
+                href="https://xinii.cf/en/cv/xin/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/ja/cv/xin/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://xinii.cf/zh/courses/"
+                href="https://xinii.cf/zh/cv/xin/"
                 />
   </url>
   

@@ -3,27 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://xinii.cf/courses/software-engineering/</loc>
-    <lastmod>2020-06-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xinii.cf/courses/software-engineering/part1/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xinii.cf/courses/software-engineering/part2/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xinii.cf/courses/software-engineering/part3/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xinii.cf/project/xinconfig/</loc>
+    <loc>https://xinii.cf/ja/project/xinconfig/</loc>
     <lastmod>2020-06-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -38,12 +18,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/project/xinconfig/"
+                href="https://xinii.cf/ja/project/xinconfig/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/bash/</loc>
+    <loc>https://xinii.cf/ja/tag/bash/</loc>
     <lastmod>2020-06-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -58,12 +38,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/bash/"
+                href="https://xinii.cf/ja/tag/bash/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/categories/</loc>
+    <loc>https://xinii.cf/ja/categories/</loc>
     <lastmod>2020-06-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -78,12 +58,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/categories/"
+                href="https://xinii.cf/ja/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/category/configuration-tool/</loc>
+    <loc>https://xinii.cf/ja/category/configuration-tool/</loc>
     <lastmod>2020-06-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -98,12 +78,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/category/configuration-tool/"
+                href="https://xinii.cf/ja/category/configuration-tool/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/emacs/</loc>
+    <loc>https://xinii.cf/ja/tag/emacs/</loc>
     <lastmod>2020-06-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -118,12 +98,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/emacs/"
+                href="https://xinii.cf/ja/tag/emacs/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/fish-shell/</loc>
+    <loc>https://xinii.cf/ja/tag/fish-shell/</loc>
     <lastmod>2020-06-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -138,12 +118,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/fish-shell/"
+                href="https://xinii.cf/ja/tag/fish-shell/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/project/</loc>
+    <loc>https://xinii.cf/ja/project/</loc>
     <lastmod>2020-06-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -158,12 +138,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/project/"
+                href="https://xinii.cf/ja/project/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/script/</loc>
+    <loc>https://xinii.cf/ja/tag/script/</loc>
     <lastmod>2020-06-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -178,12 +158,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/script/"
+                href="https://xinii.cf/ja/tag/script/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tags/</loc>
+    <loc>https://xinii.cf/ja/tags/</loc>
     <lastmod>2020-06-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -198,18 +178,13 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tags/"
+                href="https://xinii.cf/ja/tags/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/</loc>
+    <loc>https://xinii.cf/ja/</loc>
     <lastmod>2020-06-30T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://xinii.cf/zh/"
-                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -217,33 +192,18 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ja"
-                href="https://xinii.cf/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.cf/courses/</loc>
-    <lastmod>2020-06-29T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.cf/en/courses/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="zh"
-                href="https://xinii.cf/zh/courses/"
+                href="https://xinii.cf/zh/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/courses/"
+                href="https://xinii.cf/ja/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/activation/</loc>
+    <loc>https://xinii.cf/ja/tag/activation/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -258,12 +218,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/activation/"
+                href="https://xinii.cf/ja/tag/activation/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/autohotkey/</loc>
+    <loc>https://xinii.cf/ja/tag/autohotkey/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -278,12 +238,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/autohotkey/"
+                href="https://xinii.cf/ja/tag/autohotkey/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/keyboard-layout/</loc>
+    <loc>https://xinii.cf/ja/tag/keyboard-layout/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -298,12 +258,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/keyboard-layout/"
+                href="https://xinii.cf/ja/tag/keyboard-layout/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/msys2/</loc>
+    <loc>https://xinii.cf/ja/tag/msys2/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -318,12 +278,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/msys2/"
+                href="https://xinii.cf/ja/tag/msys2/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/registry/</loc>
+    <loc>https://xinii.cf/ja/tag/registry/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -338,12 +298,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/registry/"
+                href="https://xinii.cf/ja/tag/registry/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/ricty/</loc>
+    <loc>https://xinii.cf/ja/tag/ricty/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -358,12 +318,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/ricty/"
+                href="https://xinii.cf/ja/tag/ricty/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/scancode/</loc>
+    <loc>https://xinii.cf/ja/tag/scancode/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -378,12 +338,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/scancode/"
+                href="https://xinii.cf/ja/tag/scancode/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/category/windows/</loc>
+    <loc>https://xinii.cf/ja/category/windows/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -398,12 +358,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/category/windows/"
+                href="https://xinii.cf/ja/category/windows/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/post/some-installations-for-windows-10/</loc>
+    <loc>https://xinii.cf/ja/post/some-installations-for-windows-10/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -418,12 +378,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/post/some-installations-for-windows-10/"
+                href="https://xinii.cf/ja/post/some-installations-for-windows-10/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/post/several-windows-registry-configurations/</loc>
+    <loc>https://xinii.cf/ja/post/several-windows-registry-configurations/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -438,12 +398,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/post/several-windows-registry-configurations/"
+                href="https://xinii.cf/ja/post/several-windows-registry-configurations/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/post/</loc>
+    <loc>https://xinii.cf/ja/post/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -458,12 +418,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/post/"
+                href="https://xinii.cf/ja/post/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/android/</loc>
+    <loc>https://xinii.cf/ja/tag/android/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -478,12 +438,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/android/"
+                href="https://xinii.cf/ja/tag/android/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/apt/</loc>
+    <loc>https://xinii.cf/ja/tag/apt/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -498,12 +458,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/apt/"
+                href="https://xinii.cf/ja/tag/apt/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/daemon/</loc>
+    <loc>https://xinii.cf/ja/tag/daemon/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -518,12 +478,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/daemon/"
+                href="https://xinii.cf/ja/tag/daemon/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/post/add-apt-repository-for-fish-and-emacs/</loc>
+    <loc>https://xinii.cf/ja/post/add-apt-repository-for-fish-and-emacs/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -538,12 +498,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/post/add-apt-repository-for-fish-and-emacs/"
+                href="https://xinii.cf/ja/post/add-apt-repository-for-fish-and-emacs/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/keygen/</loc>
+    <loc>https://xinii.cf/ja/tag/keygen/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -558,12 +518,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/keygen/"
+                href="https://xinii.cf/ja/tag/keygen/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/category/linux/</loc>
+    <loc>https://xinii.cf/ja/category/linux/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -578,12 +538,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/category/linux/"
+                href="https://xinii.cf/ja/category/linux/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/category/ssh/</loc>
+    <loc>https://xinii.cf/ja/category/ssh/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -598,12 +558,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/category/ssh/"
+                href="https://xinii.cf/ja/category/ssh/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/termux/</loc>
+    <loc>https://xinii.cf/ja/tag/termux/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -618,12 +578,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/termux/"
+                href="https://xinii.cf/ja/tag/termux/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/post/several-ssh-configurations/</loc>
+    <loc>https://xinii.cf/ja/post/several-ssh-configurations/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -638,12 +598,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/post/several-ssh-configurations/"
+                href="https://xinii.cf/ja/post/several-ssh-configurations/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/publication-type/2/</loc>
+    <loc>https://xinii.cf/ja/publication-type/2/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -658,12 +618,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/publication-type/2/"
+                href="https://xinii.cf/ja/publication-type/2/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/auto-encoder/</loc>
+    <loc>https://xinii.cf/ja/tag/auto-encoder/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -678,12 +638,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/auto-encoder/"
+                href="https://xinii.cf/ja/tag/auto-encoder/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/deep-learning/</loc>
+    <loc>https://xinii.cf/ja/tag/deep-learning/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -698,12 +658,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/deep-learning/"
+                href="https://xinii.cf/ja/tag/deep-learning/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/author/hiroshi-arai/</loc>
+    <loc>https://xinii.cf/ja/author/hiroshi-arai/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -718,12 +678,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/author/hiroshi-arai/"
+                href="https://xinii.cf/ja/author/hiroshi-arai/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/category/journal-article/</loc>
+    <loc>https://xinii.cf/ja/category/journal-article/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -738,12 +698,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/category/journal-article/"
+                href="https://xinii.cf/ja/category/journal-article/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/priority-sampling/</loc>
+    <loc>https://xinii.cf/ja/tag/priority-sampling/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -758,12 +718,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/priority-sampling/"
+                href="https://xinii.cf/ja/tag/priority-sampling/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/publication_types/</loc>
+    <loc>https://xinii.cf/ja/publication_types/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -778,12 +738,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/publication_types/"
+                href="https://xinii.cf/ja/publication_types/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/author/tomoki-hamagami/</loc>
+    <loc>https://xinii.cf/ja/author/tomoki-hamagami/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -798,12 +758,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/author/tomoki-hamagami/"
+                href="https://xinii.cf/ja/author/tomoki-hamagami/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/author/xin-li/</loc>
+    <loc>https://xinii.cf/ja/author/xin-li/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -818,18 +778,13 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/author/xin-li/"
+                href="https://xinii.cf/ja/author/xin-li/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/authors/</loc>
+    <loc>https://xinii.cf/ja/authors/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://xinii.cf/zh/authors/"
-                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -837,13 +792,18 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/authors/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/authors/"
+                href="https://xinii.cf/ja/authors/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/publication/</loc>
+    <loc>https://xinii.cf/ja/publication/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -858,12 +818,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/publication/"
+                href="https://xinii.cf/ja/publication/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/publication/li2020wave/</loc>
+    <loc>https://xinii.cf/ja/publication/li2020wave/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -878,12 +838,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/publication/li2020wave/"
+                href="https://xinii.cf/ja/publication/li2020wave/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/publication-type/1/</loc>
+    <loc>https://xinii.cf/ja/publication-type/1/</loc>
     <lastmod>2019-12-05T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -898,12 +858,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/publication-type/1/"
+                href="https://xinii.cf/ja/publication-type/1/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/publication/li2019improved/</loc>
+    <loc>https://xinii.cf/ja/publication/li2019improved/</loc>
     <lastmod>2019-12-05T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -918,12 +878,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/publication/li2019improved/"
+                href="https://xinii.cf/ja/publication/li2019improved/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/category/conference-paper/</loc>
+    <loc>https://xinii.cf/ja/category/conference-paper/</loc>
     <lastmod>2019-12-05T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -938,47 +898,47 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/category/conference-paper/"
+                href="https://xinii.cf/ja/category/conference-paper/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/post/single-language/pitfall-while-using-python-code-block-on-emacs-org-mode/</loc>
+    <loc>https://xinii.cf/ja/post/single-language/pitfall-while-using-python-code-block-on-emacs-org-mode/</loc>
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/eps/</loc>
+    <loc>https://xinii.cf/ja/tag/eps/</loc>
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/latex/</loc>
+    <loc>https://xinii.cf/ja/tag/latex/</loc>
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/org-mode/</loc>
+    <loc>https://xinii.cf/ja/tag/org-mode/</loc>
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xinii.cf/category/pitfall/</loc>
+    <loc>https://xinii.cf/ja/category/pitfall/</loc>
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/platex/</loc>
+    <loc>https://xinii.cf/ja/tag/platex/</loc>
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xinii.cf/post/single-language/pitfall-while-inserting-figure-into-latex-article/</loc>
+    <loc>https://xinii.cf/ja/post/single-language/pitfall-while-inserting-figure-into-latex-article/</loc>
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/python/</loc>
+    <loc>https://xinii.cf/ja/tag/python/</loc>
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -993,42 +953,42 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/python/"
+                href="https://xinii.cf/ja/tag/python/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/post/single-language/generate-sheet-music-with-lilypond-on-emacs/</loc>
+    <loc>https://xinii.cf/ja/post/single-language/generate-sheet-music-with-lilypond-on-emacs/</loc>
     <lastmod>2019-11-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/lilypond/</loc>
+    <loc>https://xinii.cf/ja/tag/lilypond/</loc>
     <lastmod>2019-11-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xinii.cf/category/music/</loc>
+    <loc>https://xinii.cf/ja/category/music/</loc>
     <lastmod>2019-11-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/sheet-music/</loc>
+    <loc>https://xinii.cf/ja/tag/sheet-music/</loc>
     <lastmod>2019-11-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/absolute-pitch/</loc>
+    <loc>https://xinii.cf/ja/tag/absolute-pitch/</loc>
     <lastmod>2019-11-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xinii.cf/post/single-language/about-absolute-pitch/</loc>
+    <loc>https://xinii.cf/ja/post/single-language/about-absolute-pitch/</loc>
     <lastmod>2019-11-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/jetson-nano/</loc>
+    <loc>https://xinii.cf/ja/tag/jetson-nano/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1043,12 +1003,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/jetson-nano/"
+                href="https://xinii.cf/ja/tag/jetson-nano/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/post/install-opencv-on-jetson-nano/</loc>
+    <loc>https://xinii.cf/ja/post/install-opencv-on-jetson-nano/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1063,12 +1023,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/post/install-opencv-on-jetson-nano/"
+                href="https://xinii.cf/ja/post/install-opencv-on-jetson-nano/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/category/opencv/</loc>
+    <loc>https://xinii.cf/ja/category/opencv/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1083,12 +1043,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/category/opencv/"
+                href="https://xinii.cf/ja/category/opencv/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/compile/</loc>
+    <loc>https://xinii.cf/ja/tag/compile/</loc>
     <lastmod>2019-05-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1103,12 +1063,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/compile/"
+                href="https://xinii.cf/ja/tag/compile/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/category/emacs/</loc>
+    <loc>https://xinii.cf/ja/category/emacs/</loc>
     <lastmod>2019-05-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1123,12 +1083,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/category/emacs/"
+                href="https://xinii.cf/ja/category/emacs/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/gnutls/</loc>
+    <loc>https://xinii.cf/ja/tag/gnutls/</loc>
     <lastmod>2019-05-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1143,12 +1103,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/gnutls/"
+                href="https://xinii.cf/ja/tag/gnutls/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/post/install-gnutls-and-compile-emacs-from-source/</loc>
+    <loc>https://xinii.cf/ja/post/install-gnutls-and-compile-emacs-from-source/</loc>
     <lastmod>2019-05-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1163,12 +1123,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/post/install-gnutls-and-compile-emacs-from-source/"
+                href="https://xinii.cf/ja/post/install-gnutls-and-compile-emacs-from-source/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/category/shell/</loc>
+    <loc>https://xinii.cf/ja/category/shell/</loc>
     <lastmod>2019-05-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1178,12 +1138,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/category/shell/"
+                href="https://xinii.cf/ja/category/shell/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/tmux/</loc>
+    <loc>https://xinii.cf/ja/tag/tmux/</loc>
     <lastmod>2019-05-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1198,12 +1158,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/tmux/"
+                href="https://xinii.cf/ja/tag/tmux/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/z-shell/</loc>
+    <loc>https://xinii.cf/ja/tag/z-shell/</loc>
     <lastmod>2019-05-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1218,12 +1178,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/z-shell/"
+                href="https://xinii.cf/ja/tag/z-shell/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/post/my-shell-migration-record/</loc>
+    <loc>https://xinii.cf/ja/post/my-shell-migration-record/</loc>
     <lastmod>2019-05-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1238,12 +1198,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/post/my-shell-migration-record/"
+                href="https://xinii.cf/ja/post/my-shell-migration-record/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/linux-mint/</loc>
+    <loc>https://xinii.cf/ja/tag/linux-mint/</loc>
     <lastmod>2019-04-23T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1258,12 +1218,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/linux-mint/"
+                href="https://xinii.cf/ja/tag/linux-mint/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/operating-system/</loc>
+    <loc>https://xinii.cf/ja/tag/operating-system/</loc>
     <lastmod>2019-04-23T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1278,12 +1238,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/operating-system/"
+                href="https://xinii.cf/ja/tag/operating-system/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/rufus/</loc>
+    <loc>https://xinii.cf/ja/tag/rufus/</loc>
     <lastmod>2019-04-23T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1293,12 +1253,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/rufus/"
+                href="https://xinii.cf/ja/tag/rufus/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/usb/</loc>
+    <loc>https://xinii.cf/ja/tag/usb/</loc>
     <lastmod>2019-04-23T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1313,12 +1273,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/usb/"
+                href="https://xinii.cf/ja/tag/usb/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/post/install-linux-mint-from-the-usb-device/</loc>
+    <loc>https://xinii.cf/ja/post/install-linux-mint-from-the-usb-device/</loc>
     <lastmod>2019-04-23T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1333,12 +1293,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/post/install-linux-mint-from-the-usb-device/"
+                href="https://xinii.cf/ja/post/install-linux-mint-from-the-usb-device/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/blog/</loc>
+    <loc>https://xinii.cf/ja/tag/blog/</loc>
     <lastmod>2019-04-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1353,32 +1313,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/blog/"
+                href="https://xinii.cf/ja/tag/blog/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/category/cms/</loc>
-    <lastmod>2019-04-02T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.cf/en/category/cms/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://xinii.cf/zh/category/cms/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.cf/category/cms/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://xinii.cf/tag/github/</loc>
+    <loc>https://xinii.cf/ja/tag/github/</loc>
     <lastmod>2019-04-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1393,12 +1333,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/github/"
+                href="https://xinii.cf/ja/tag/github/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/jekyll/</loc>
+    <loc>https://xinii.cf/ja/tag/jekyll/</loc>
     <lastmod>2019-04-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1413,12 +1353,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/jekyll/"
+                href="https://xinii.cf/ja/tag/jekyll/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/post/create-a-blog-by-jekyll-and-publish-to-github/</loc>
+    <loc>https://xinii.cf/ja/post/create-a-blog-by-jekyll-and-publish-to-github/</loc>
     <lastmod>2019-04-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1433,12 +1373,32 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/post/create-a-blog-by-jekyll-and-publish-to-github/"
+                href="https://xinii.cf/ja/post/create-a-blog-by-jekyll-and-publish-to-github/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/publication-type/6/</loc>
+    <loc>https://xinii.cf/ja/category/static-site-generator/</loc>
+    <lastmod>2019-04-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/category/static-site-generator/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/category/static-site-generator/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/ja/category/static-site-generator/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/ja/publication-type/6/</loc>
     <lastmod>2018-11-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1453,12 +1413,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/publication-type/6/"
+                href="https://xinii.cf/ja/publication-type/6/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/category/book-section/</loc>
+    <loc>https://xinii.cf/ja/category/book-section/</loc>
     <lastmod>2018-11-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1473,12 +1433,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/category/book-section/"
+                href="https://xinii.cf/ja/category/book-section/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/corpus/</loc>
+    <loc>https://xinii.cf/ja/tag/corpus/</loc>
     <lastmod>2018-11-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1493,12 +1453,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/corpus/"
+                href="https://xinii.cf/ja/tag/corpus/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/don-quixote/</loc>
+    <loc>https://xinii.cf/ja/tag/don-quixote/</loc>
     <lastmod>2018-11-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1513,12 +1473,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/don-quixote/"
+                href="https://xinii.cf/ja/tag/don-quixote/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/author/jinwei-wang/</loc>
+    <loc>https://xinii.cf/ja/author/jinwei-wang/</loc>
     <lastmod>2018-11-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1533,12 +1493,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/author/jinwei-wang/"
+                href="https://xinii.cf/ja/author/jinwei-wang/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/publication/wang2017/</loc>
+    <loc>https://xinii.cf/ja/publication/wang2017/</loc>
     <lastmod>2018-11-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1553,12 +1513,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/publication/wang2017/"
+                href="https://xinii.cf/ja/publication/wang2017/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/spanish/</loc>
+    <loc>https://xinii.cf/ja/tag/spanish/</loc>
     <lastmod>2018-11-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1573,12 +1533,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/spanish/"
+                href="https://xinii.cf/ja/tag/spanish/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/translation/</loc>
+    <loc>https://xinii.cf/ja/tag/translation/</loc>
     <lastmod>2018-11-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1593,12 +1553,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/translation/"
+                href="https://xinii.cf/ja/tag/translation/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/publication/li2018prioritized/</loc>
+    <loc>https://xinii.cf/ja/publication/li2018prioritized/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1613,12 +1573,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/publication/li2018prioritized/"
+                href="https://xinii.cf/ja/publication/li2018prioritized/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/publication/li2017research/</loc>
+    <loc>https://xinii.cf/ja/publication/li2017research/</loc>
     <lastmod>2017-07-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1633,12 +1593,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/publication/li2017research/"
+                href="https://xinii.cf/ja/publication/li2017research/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/anomaly-detection/</loc>
+    <loc>https://xinii.cf/ja/tag/anomaly-detection/</loc>
     <lastmod>2017-07-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1653,12 +1613,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/anomaly-detection/"
+                href="https://xinii.cf/ja/tag/anomaly-detection/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/author/hamatsu-fumiya/</loc>
+    <loc>https://xinii.cf/ja/author/hamatsu-fumiya/</loc>
     <lastmod>2017-07-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1673,12 +1633,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/author/hamatsu-fumiya/"
+                href="https://xinii.cf/ja/author/hamatsu-fumiya/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/author/masaya-nakata/</loc>
+    <loc>https://xinii.cf/ja/author/masaya-nakata/</loc>
     <lastmod>2017-07-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1693,12 +1653,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/author/masaya-nakata/"
+                href="https://xinii.cf/ja/author/masaya-nakata/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/multidimensional-data/</loc>
+    <loc>https://xinii.cf/ja/tag/multidimensional-data/</loc>
     <lastmod>2017-07-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1713,12 +1673,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/multidimensional-data/"
+                href="https://xinii.cf/ja/tag/multidimensional-data/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/time-series-data/</loc>
+    <loc>https://xinii.cf/ja/tag/time-series-data/</loc>
     <lastmod>2017-07-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1733,12 +1693,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/time-series-data/"
+                href="https://xinii.cf/ja/tag/time-series-data/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/publication/wang2016/</loc>
+    <loc>https://xinii.cf/ja/publication/wang2016/</loc>
     <lastmod>2016-09-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1753,12 +1713,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/publication/wang2016/"
+                href="https://xinii.cf/ja/publication/wang2016/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/language-education/</loc>
+    <loc>https://xinii.cf/ja/tag/language-education/</loc>
     <lastmod>2016-09-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1773,12 +1733,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/language-education/"
+                href="https://xinii.cf/ja/tag/language-education/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/tag/oral-communication/</loc>
+    <loc>https://xinii.cf/ja/tag/oral-communication/</loc>
     <lastmod>2016-09-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1793,31 +1753,20 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/tag/oral-communication/"
+                href="https://xinii.cf/ja/tag/oral-communication/"
                 />
   </url>
   
   <url>
-    <loc>https://xinii.cf/category/cv/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xinii.cf/en/category/cv/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://xinii.cf/zh/category/cv/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://xinii.cf/category/cv/"
-                />
+    <loc>https://xinii.cf/ja/draft/</loc>
   </url>
   
   <url>
-    <loc>https://xinii.cf/cv/</loc>
+    <loc>https://xinii.cf/ja/draft/se/</loc>
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/ja/cv/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1831,7 +1780,26 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://xinii.cf/cv/"
+                href="https://xinii.cf/ja/cv/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://xinii.cf/ja/cv/xin/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xinii.cf/en/cv/xin/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://xinii.cf/zh/cv/xin/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://xinii.cf/ja/cv/xin/"
                 />
   </url>
   

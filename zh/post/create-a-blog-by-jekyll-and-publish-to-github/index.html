@@ -32,7 +32,7 @@
   
   <link rel="alternate" hreflang="en" href="https://xinii.cf/en/post/create-a-blog-by-jekyll-and-publish-to-github/">
   
-  <link rel="alternate" hreflang="ja" href="https://xinii.cf/post/create-a-blog-by-jekyll-and-publish-to-github/">
+  <link rel="alternate" hreflang="ja" href="https://xinii.cf/ja/post/create-a-blog-by-jekyll-and-publish-to-github/">
   
   <link rel="alternate" hreflang="zh-cn" href="https://xinii.cf/zh/post/create-a-blog-by-jekyll-and-publish-to-github/">
 
@@ -42,7 +42,7 @@
   
   
   
-  <meta name="theme-color" content="hsl(339, 90%, 68%)">
+  <meta name="theme-color" content="#2962ff">
   
 
   
@@ -196,7 +196,7 @@
     
       
       
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono%7CLora:400,700%7CRoboto:400,700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
     
   
 
@@ -332,7 +332,7 @@
     "name": "xin iDEA iNNATA",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://xinii.cf/images/icon_huc6d37f8d5848c4cf0bbdc638499793df_110525_192x192_fill_lanczos_center_2.png"
+      "url": "https://xinii.cf/images/logo_hu4469573970495a9d28444639a51ce6fc_83092_192x192_fit_lanczos_2.png"
     }
   },
   "description": "希望拥有一个自己的博客但不知如何创建？试试 Github 原生支持的 Jekyll 吧！"
@@ -357,12 +357,12 @@
     window.cookieconsent.initialise({
       "palette": {
         "popup": {
-          "background": "hsl(339, 90%, 68%)",
+          "background": "#2962ff",
           "text": "#fff"
         },
         "button": {
           "background": "#fff",
-          "text": "hsl(339, 90%, 68%)"
+          "text": "#2962ff"
         }
       },
       "theme": "classic",
@@ -383,7 +383,7 @@
   <title>通过 Jekyll 创建博客并发布到 Github | xin iDEA iNNATA</title>
 
 </head>
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="dark">
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -401,7 +401,7 @@
       <div id="search-box">
         
         <input name="q" id="search-query" placeholder="搜索..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
         
       </div>
 
@@ -427,31 +427,39 @@
 
 
 
+
+
+<style type="text/css">
+ .fix-width{
+     width: 25px;
+ }
+</style>
+
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/zh/">xin iDEA iNNATA</a>
+      <a class="navbar-brand" href="/zh/"><img src="/images/logo_hu4469573970495a9d28444639a51ce6fc_83092_0x70_resize_lanczos_2.png" alt="xin iDEA iNNATA"></a>
     </div>
     
 
     
     <button type="button" class="navbar-toggler" data-toggle="collapse"
             data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="切换导航">
-    <span><i class="fas fa-bars"></i></span>
+      <span><i class="fas fa-bars"></i></span>
     </button>
     
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/zh/">xin iDEA iNNATA</a>
+      <a class="navbar-brand" href="/zh/"><img src="/images/logo_hu4469573970495a9d28444639a51ce6fc_83092_0x70_resize_lanczos_2.png" alt="xin iDEA iNNATA"></a>
     </div>
     
 
     
     
-    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+    <div class="navbar-collapse main-menu-item collapse justify-content-center" id="navbar-content">
 
       
       <ul class="navbar-nav d-md-inline-flex">
@@ -462,7 +470,7 @@
         
         
         
-          
+        
         
 
         
@@ -471,16 +479,16 @@
         
         
         
-          
-          
-          
-            
-          
-          
+        
+        
+        
+        
+        
+        
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/zh/#xinconfig"><span>主页</span></a>
+          <a class="nav-link " href="/zh/#xinconfig"><span><span class='fas fa-home fix-width'></span>主页</span></a>
         </li>
 
         
@@ -491,7 +499,7 @@
         
         
         
-          
+        
         
 
         
@@ -500,16 +508,16 @@
         
         
         
-          
-          
-          
-            
-          
-          
+        
+        
+        
+        
+        
+        
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/zh/#about"><span>关于</span></a>
+          <a class="nav-link " href="/zh/#about"><span><span class='far fa-address-card fix-width'></span>关于</span></a>
         </li>
 
         
@@ -520,7 +528,7 @@
         
         
         
-          
+        
         
 
         
@@ -529,16 +537,16 @@
         
         
         
-          
-          
-          
-            
-          
-          
+        
+        
+        
+        
+        
+        
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/zh/#posts"><span>最新博文</span></a>
+          <a class="nav-link " href="/zh/#posts"><span><span class='far fa-newspaper fix-width'></span>最新博文</span></a>
         </li>
 
         
@@ -549,7 +557,7 @@
         
         
         
-          
+        
         
 
         
@@ -558,16 +566,16 @@
         
         
         
-          
-          
-          
-            
-          
-          
+        
+        
+        
+        
+        
+        
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/zh/#featured"><span>研究成果</span></a>
+          <a class="nav-link " href="/zh/#featured"><span><span class='fas fa-book-open fix-width'></span>研究成果</span></a>
         </li>
 
         
@@ -578,7 +586,7 @@
         
         
         
-          
+        
         
 
         
@@ -587,16 +595,16 @@
         
         
         
-          
-          
-          
-            
-          
-          
+        
+        
+        
+        
+        
+        
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/zh/#categories"><span>分类标签</span></a>
+          <a class="nav-link " href="/zh/#categories"><span><span class='fab fa-hotjar fix-width'></span>热门词汇</span></a>
         </li>
 
         
@@ -607,7 +615,7 @@
         
         
         
-          
+        
         
 
         
@@ -616,22 +624,22 @@
         
         
         
-          
-          
-          
-            
-          
-          
+        
+        
+        
+        
+        
+        
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/zh/#contact"><span>取得联系</span></a>
+          <a class="nav-link " href="/zh/#contact"><span><span class='far fa-envelope fix-width'></span>取得联系</span></a>
         </li>
 
         
         
 
-      
+        
 
         
       </ul>
@@ -650,23 +658,40 @@
           <i class="fas fa-angle-down" aria-hidden="true"></i>
         </a>
         <div class="dropdown-menu">
-
-          <a href='/zh/' class="dropdown-item"> <span>返回本站主页</span> </a>
-          <a href='/zh/authors' class="dropdown-item"> <span>查看所有作者</span> </a>
-          <a href='/zh/post' class="dropdown-item"> <span>查看全部博文</span> </a>
-          <a href='/zh/publication' class="dropdown-item"> <span>查看全部出版物</span> </a>
-          <a href='/zh/courses' class="dropdown-item"> <span>课程</span> </a>
-          <a href='/zh/admin' class="dropdown-item"> <span>登录</span> </a>
           
           <br><center><div class="fas fa-palette"></div></center><br>
           <a href="#" class="dropdown-item js-set-theme-light">
-            <span>明亮模式</span>
+            <span class="far fa-sun fix-width"></span>明亮模式
           </a>
           <a href="#" class="dropdown-item js-set-theme-dark">
-            <span>深色模式</span>
+            <span class="far fa-moon fix-width"></span>深色模式
           </a>
           <a href="#" class="dropdown-item js-set-theme-auto">
-            <span>自动设置</span>
+            <span class="fas fa-robot fix-width"></span>自动设置
+          </a>
+
+          <br><center><div class="fas fa-external-link-alt"></div></center><br>
+          
+          
+          <a href='/zh/authors' class="dropdown-item">
+            <span class="fas fa-user-edit fix-width"></span>查看所有作者
+          </a>
+          <a href='/zh/post' class="dropdown-item">
+            <span class="far fa-newspaper fix-width"></span>查看全部博文
+          </a>
+          <a href='/zh/publication' class="dropdown-item">
+            <span class="fas fa-book-open fix-width"></span>查看全部出版物
+          </a>
+          <a href='/zh/' class="dropdown-item">
+            <span class="fas fa-home fix-width"></span>返回本站主页
+          </a>
+          
+          
+
+          <br><center><div class="fas fa-user"></div></center><br>
+          
+          <a href='/zh/admin' class="dropdown-item">
+            <span class="fas fa-key fix-width"></span>登录
           </a>
 
         </div>
@@ -686,7 +711,7 @@
             <span>English</span>
           </a>
           
-          <a class="dropdown-item" href="https://xinii.cf/post/create-a-blog-by-jekyll-and-publish-to-github/">
+          <a class="dropdown-item" href="https://xinii.cf/ja/post/create-a-blog-by-jekyll-and-publish-to-github/">
             <span>日本語</span>
           </a>
           
@@ -772,7 +797,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/zh/category/cms/">CMS</a></span>
+    <i class="fas fa-folder mr-1"></i><a href="/zh/category/static-site-generator/">Static site generator</a></span>
   
 
 </div>
@@ -798,7 +823,7 @@
 <div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 240px;">
   <div style="position: relative">
     <img src="/zh/post/create-a-blog-by-jekyll-and-publish-to-github/featured_hu4ee01d4a249c6e64155ea4f2c1c32745_26983_720x0_resize_lanczos_2.png" alt="" class="featured-image">
-    
+    <span class="article-header-caption">图片来源： <a href="https://github.com/jekyll/brand">Jekyll 的 Logo</a></span>
   </div>
 </div>
 
@@ -812,7 +837,7 @@
 <h2>目录</h2>
 <nav id="TableOfContents">
 <ul>
-<li><a href="#headline-1">安装 Jekyll<sup class="footnote-reference">1</sup></a>
+<li><a href="#headline-1">安装 Jekyll</a>
 </li>
 <li><a href="#headline-2">发布博客到 Github</a>
 </li>
@@ -821,7 +846,7 @@
 
 </p>
 <h2 id="headline-1">
-安装 Jekyll<sup class="footnote-reference"><a id="footnote-reference-1" href="#footnote-1">1</a></sup>
+安装 Jekyll
 </h2>
 <p>
 Jekyll 是一个通过 Ruby 语言写的静态网站生成框架，下面是官网介绍。
@@ -831,7 +856,7 @@ Jekyll 是一个通过 Ruby 语言写的静态网站生成框架，下面是官�
 Jekyll is a static site generator. You give it text written in your
   favorite markup language and it uses layouts to create a static
   website. You can tweak how you want the site URLs to look, what data
-  gets displayed on the site, and more. –Jekyll<sup class="footnote-reference"><a id="footnote-reference-2" href="#footnote-2">2</a></sup>
+  gets displayed on the site, and more. –Jekyll<sup class="footnote-reference"><a id="footnote-reference-1" href="#footnote-1">1</a></sup>
 </p>
 </blockquote>
 <p>
@@ -888,7 +913,7 @@ Jekyll is a static site generator. You give it text written in your
 </p>
 <p>
 <a href="https://xinii.github.io">本站</a>现已改用 <code>hugo</code> 静态网站生成框架创建，
-如需参考原来的站点，请<a href="https://xinii.github.io/jekyll-blog">点击这里</a>访问。
+如需参考原来的站点，请<a href="https://xinii.github.io/archive-site-c">点击这里</a>访问。
 </p>
 <p>
 欢迎联络并留言。
@@ -900,15 +925,7 @@ Jekyll is a static site generator. You give it text written in your
 <sup id="footnote-1"><a href="#footnote-reference-1">1</a></sup>
 <div class="footnote-body">
 <p>
-<a href="https://raw.githubusercontent.com/jekyll/brand/master/jekyll-logo-black-red-transparent.png">Jekyll 的 Logo</a>
-</p>
-</div>
-</div>
-<div class="footnote-definition">
-<sup id="footnote-2"><a href="#footnote-reference-2">2</a></sup>
-<div class="footnote-body">
-<p>
-<a href="https://jekyllrb.com/docs/">jekyllrb.com</a>
+<a href="https://jekyllrb.com/docs/">Jekyll 官方网站</a>
 </p>
 </div>
 </div>
@@ -1035,6 +1052,12 @@ Jekyll is a static site generator. You give it text written in your
 
 
 
+<script type="text/javascript">
+ var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
+</script>
+<script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script>
+
+
 
 
 
@@ -1062,7 +1085,7 @@ Jekyll is a static site generator. You give it text written in your
     <div class="media author-card content-widget-hr">
       
         
-        <img class="avatar mr-3 avatar-circle" src="/zh/author/xin-li/avatar_hu34af9b428ed2b0fcb301e99d35f7cd84_98517_270x270_fill_q90_lanczos_center.jpg" alt="Xin Li">
+        <img class="avatar mr-3 avatar-circle" src="/zh/author/xin-li/avatar_hu52a603635ecebd45650b162dadabb4e5_12861_270x270_fill_q90_lanczos_center.jpg" alt="Xin Li">
       
 
       <div class="media-body">
@@ -1108,6 +1131,104 @@ Jekyll is a static site generator. You give it text written in your
     
     
     
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.facebook.com/xintxt" target="_blank" rel="noopener">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/xinii/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/xinii" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://soundcloud.com/user-499505439-644196268" target="_blank" rel="noopener">
+        <i class="fab fa-soundcloud"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/zh/cv" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.mendeley.com/profiles/xin-li399/" target="_blank" rel="noopener">
+        <i class="ai ai-mendeley"></i>
+      </a>
+    </li>
+  
+    
+    
+    
     
     
     
@@ -1132,8 +1253,8 @@ Jekyll is a static site generator. You give it text written in your
       
     
     <li>
-      <a href="https://github.com/xinii" target="_blank" rel="noopener">
-        <i class="fab fa-github"></i>
+      <a href="https://orcid.org/0000-0003-0024-3670" target="_blank" rel="noopener">
+        <i class="fab fa-orcid"></i>
       </a>
     </li>
   
@@ -1147,8 +1268,8 @@ Jekyll is a static site generator. You give it text written in your
       
     
     <li>
-      <a href="/zh/cv" >
-        <i class="ai ai-cv"></i>
+      <a href="https://www.researchgate.net/profile/Xin_Li514" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
       </a>
     </li>
   
@@ -1259,7 +1380,7 @@ Jekyll is a static site generator. You give it text written in your
 
     
     
-    <script>const isSiteThemeDark = true;</script>
+    <script>const isSiteThemeDark = false;</script>
     
 
     
@@ -1276,7 +1397,7 @@ Jekyll is a static site generator. You give it text written in your
         'project': "项目",
         'publication' : "出版物",
         'talk' : "演讲",
-        'slides' : "演示文稿"
+        'slides' : "Slides"
         };
     </script>
     
@@ -1332,7 +1453,20 @@ Jekyll is a static site generator. You give it text written in your
     
     <script src="/js/academic.min.66c553246b0f279a03be6e5597f72b52.js"></script>
 
-    <script type="text/javascript"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.js"></script>
+<script>
+ document.addEventListener('DOMContentLoaded', () => {
+     
+     pangu.autoSpacingPage();
+ });
+</script>
+
+
+<script type="text/javascript">
+ var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
+</script>
+<script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script>
 
 
 

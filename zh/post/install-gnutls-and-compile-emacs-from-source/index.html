@@ -27,10 +27,10 @@
   
     
   
-  <meta name="description" content="从源码编译 Emacs 时出现有关 Gnutls 的错误？让我我们来具体看看是怎么回事吧！">
+  <meta name="description" content="从源码编译 Emacs 时出现有关 GnuTLS 的错误？让我我们来具体看看是怎么回事吧！">
 
   
-  <link rel="alternate" hreflang="ja" href="https://xinii.cf/post/install-gnutls-and-compile-emacs-from-source/">
+  <link rel="alternate" hreflang="ja" href="https://xinii.cf/ja/post/install-gnutls-and-compile-emacs-from-source/">
   
   <link rel="alternate" hreflang="en" href="https://xinii.cf/en/post/install-gnutls-and-compile-emacs-from-source/">
   
@@ -42,7 +42,7 @@
   
   
   
-  <meta name="theme-color" content="hsl(339, 90%, 68%)">
+  <meta name="theme-color" content="#2962ff">
   
 
   
@@ -196,7 +196,7 @@
     
       
       
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono%7CLora:400,700%7CRoboto:400,700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
     
   
 
@@ -280,8 +280,8 @@
   
   <meta property="og:site_name" content="xin iDEA iNNATA">
   <meta property="og:url" content="https://xinii.cf/zh/post/install-gnutls-and-compile-emacs-from-source/">
-  <meta property="og:title" content="安装 Gnutls 并从源码编译 Emacs | xin iDEA iNNATA">
-  <meta property="og:description" content="从源码编译 Emacs 时出现有关 Gnutls 的错误？让我我们来具体看看是怎么回事吧！"><meta property="og:image" content="https://xinii.cf/zh/post/install-gnutls-and-compile-emacs-from-source/featured.png">
+  <meta property="og:title" content="安装 GnuTLS 并从源码编译 Emacs | xin iDEA iNNATA">
+  <meta property="og:description" content="从源码编译 Emacs 时出现有关 GnuTLS 的错误？让我我们来具体看看是怎么回事吧！"><meta property="og:image" content="https://xinii.cf/zh/post/install-gnutls-and-compile-emacs-from-source/featured.png">
   <meta property="twitter:image" content="https://xinii.cf/zh/post/install-gnutls-and-compile-emacs-from-source/featured.png"><meta property="og:locale" content="zh-cn">
   
     
@@ -313,7 +313,7 @@
     "@type": "WebPage",
     "@id": "https://xinii.cf/zh/post/install-gnutls-and-compile-emacs-from-source/"
   },
-  "headline": "安装 Gnutls 并从源码编译 Emacs",
+  "headline": "安装 GnuTLS 并从源码编译 Emacs",
   
   "image": [
     "https://xinii.cf/zh/post/install-gnutls-and-compile-emacs-from-source/featured.png"
@@ -332,10 +332,10 @@
     "name": "xin iDEA iNNATA",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://xinii.cf/images/icon_huc6d37f8d5848c4cf0bbdc638499793df_110525_192x192_fill_lanczos_center_2.png"
+      "url": "https://xinii.cf/images/logo_hu4469573970495a9d28444639a51ce6fc_83092_192x192_fit_lanczos_2.png"
     }
   },
-  "description": "从源码编译 Emacs 时出现有关 Gnutls 的错误？让我我们来具体看看是怎么回事吧！"
+  "description": "从源码编译 Emacs 时出现有关 GnuTLS 的错误？让我我们来具体看看是怎么回事吧！"
 }
 </script>
 
@@ -357,12 +357,12 @@
     window.cookieconsent.initialise({
       "palette": {
         "popup": {
-          "background": "hsl(339, 90%, 68%)",
+          "background": "#2962ff",
           "text": "#fff"
         },
         "button": {
           "background": "#fff",
-          "text": "hsl(339, 90%, 68%)"
+          "text": "#2962ff"
         }
       },
       "theme": "classic",
@@ -380,10 +380,10 @@
   <script data-ad-client="ca-pub-9872583441136696" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 
-  <title>安装 Gnutls 并从源码编译 Emacs | xin iDEA iNNATA</title>
+  <title>安装 GnuTLS 并从源码编译 Emacs | xin iDEA iNNATA</title>
 
 </head>
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="dark">
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -401,7 +401,7 @@
       <div id="search-box">
         
         <input name="q" id="search-query" placeholder="搜索..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
         
       </div>
 
@@ -427,31 +427,39 @@
 
 
 
+
+
+<style type="text/css">
+ .fix-width{
+     width: 25px;
+ }
+</style>
+
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/zh/">xin iDEA iNNATA</a>
+      <a class="navbar-brand" href="/zh/"><img src="/images/logo_hu4469573970495a9d28444639a51ce6fc_83092_0x70_resize_lanczos_2.png" alt="xin iDEA iNNATA"></a>
     </div>
     
 
     
     <button type="button" class="navbar-toggler" data-toggle="collapse"
             data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="切换导航">
-    <span><i class="fas fa-bars"></i></span>
+      <span><i class="fas fa-bars"></i></span>
     </button>
     
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/zh/">xin iDEA iNNATA</a>
+      <a class="navbar-brand" href="/zh/"><img src="/images/logo_hu4469573970495a9d28444639a51ce6fc_83092_0x70_resize_lanczos_2.png" alt="xin iDEA iNNATA"></a>
     </div>
     
 
     
     
-    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+    <div class="navbar-collapse main-menu-item collapse justify-content-center" id="navbar-content">
 
       
       <ul class="navbar-nav d-md-inline-flex">
@@ -462,7 +470,7 @@
         
         
         
-          
+        
         
 
         
@@ -471,16 +479,16 @@
         
         
         
-          
-          
-          
-            
-          
-          
+        
+        
+        
+        
+        
+        
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/zh/#xinconfig"><span>主页</span></a>
+          <a class="nav-link " href="/zh/#xinconfig"><span><span class='fas fa-home fix-width'></span>主页</span></a>
         </li>
 
         
@@ -491,7 +499,7 @@
         
         
         
-          
+        
         
 
         
@@ -500,16 +508,16 @@
         
         
         
-          
-          
-          
-            
-          
-          
+        
+        
+        
+        
+        
+        
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/zh/#about"><span>关于</span></a>
+          <a class="nav-link " href="/zh/#about"><span><span class='far fa-address-card fix-width'></span>关于</span></a>
         </li>
 
         
@@ -520,7 +528,7 @@
         
         
         
-          
+        
         
 
         
@@ -529,16 +537,16 @@
         
         
         
-          
-          
-          
-            
-          
-          
+        
+        
+        
+        
+        
+        
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/zh/#posts"><span>最新博文</span></a>
+          <a class="nav-link " href="/zh/#posts"><span><span class='far fa-newspaper fix-width'></span>最新博文</span></a>
         </li>
 
         
@@ -549,7 +557,7 @@
         
         
         
-          
+        
         
 
         
@@ -558,16 +566,16 @@
         
         
         
-          
-          
-          
-            
-          
-          
+        
+        
+        
+        
+        
+        
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/zh/#featured"><span>研究成果</span></a>
+          <a class="nav-link " href="/zh/#featured"><span><span class='fas fa-book-open fix-width'></span>研究成果</span></a>
         </li>
 
         
@@ -578,7 +586,7 @@
         
         
         
-          
+        
         
 
         
@@ -587,16 +595,16 @@
         
         
         
-          
-          
-          
-            
-          
-          
+        
+        
+        
+        
+        
+        
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/zh/#categories"><span>分类标签</span></a>
+          <a class="nav-link " href="/zh/#categories"><span><span class='fab fa-hotjar fix-width'></span>热门词汇</span></a>
         </li>
 
         
@@ -607,7 +615,7 @@
         
         
         
-          
+        
         
 
         
@@ -616,22 +624,22 @@
         
         
         
-          
-          
-          
-            
-          
-          
+        
+        
+        
+        
+        
+        
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/zh/#contact"><span>取得联系</span></a>
+          <a class="nav-link " href="/zh/#contact"><span><span class='far fa-envelope fix-width'></span>取得联系</span></a>
         </li>
 
         
         
 
-      
+        
 
         
       </ul>
@@ -650,23 +658,40 @@
           <i class="fas fa-angle-down" aria-hidden="true"></i>
         </a>
         <div class="dropdown-menu">
-
-          <a href='/zh/' class="dropdown-item"> <span>返回本站主页</span> </a>
-          <a href='/zh/authors' class="dropdown-item"> <span>查看所有作者</span> </a>
-          <a href='/zh/post' class="dropdown-item"> <span>查看全部博文</span> </a>
-          <a href='/zh/publication' class="dropdown-item"> <span>查看全部出版物</span> </a>
-          <a href='/zh/courses' class="dropdown-item"> <span>课程</span> </a>
-          <a href='/zh/admin' class="dropdown-item"> <span>登录</span> </a>
           
           <br><center><div class="fas fa-palette"></div></center><br>
           <a href="#" class="dropdown-item js-set-theme-light">
-            <span>明亮模式</span>
+            <span class="far fa-sun fix-width"></span>明亮模式
           </a>
           <a href="#" class="dropdown-item js-set-theme-dark">
-            <span>深色模式</span>
+            <span class="far fa-moon fix-width"></span>深色模式
           </a>
           <a href="#" class="dropdown-item js-set-theme-auto">
-            <span>自动设置</span>
+            <span class="fas fa-robot fix-width"></span>自动设置
+          </a>
+
+          <br><center><div class="fas fa-external-link-alt"></div></center><br>
+          
+          
+          <a href='/zh/authors' class="dropdown-item">
+            <span class="fas fa-user-edit fix-width"></span>查看所有作者
+          </a>
+          <a href='/zh/post' class="dropdown-item">
+            <span class="far fa-newspaper fix-width"></span>查看全部博文
+          </a>
+          <a href='/zh/publication' class="dropdown-item">
+            <span class="fas fa-book-open fix-width"></span>查看全部出版物
+          </a>
+          <a href='/zh/' class="dropdown-item">
+            <span class="fas fa-home fix-width"></span>返回本站主页
+          </a>
+          
+          
+
+          <br><center><div class="fas fa-user"></div></center><br>
+          
+          <a href='/zh/admin' class="dropdown-item">
+            <span class="fas fa-key fix-width"></span>登录
           </a>
 
         </div>
@@ -682,7 +707,7 @@
             <span>中文 (简体)</span>
           </div>
           
-          <a class="dropdown-item" href="https://xinii.cf/post/install-gnutls-and-compile-emacs-from-source/">
+          <a class="dropdown-item" href="https://xinii.cf/ja/post/install-gnutls-and-compile-emacs-from-source/">
             <span>日本語</span>
           </a>
           
@@ -730,7 +755,7 @@
 
 
 <div class="article-container pt-3">
-  <h1>安装 Gnutls 并从源码编译 Emacs</h1>
+  <h1>安装 GnuTLS 并从源码编译 Emacs</h1>
 
   
 
@@ -812,11 +837,11 @@
 <h2>目录</h2>
 <nav id="TableOfContents">
 <ul>
-<li><a href="#headline-1">环境中缺少Gnutls的情况</a>
+<li><a href="#headline-1">环境中缺少GnuTLS的情况</a>
 </li>
 <li><a href="#headline-2">潜在的问题</a>
 </li>
-<li><a href="#headline-3">安装Gnutls</a>
+<li><a href="#headline-3">安装GnuTLS</a>
 </li>
 <li><a href="#headline-4">其他可能的问题</a>
 </li>
@@ -825,10 +850,10 @@
 
 </p>
 <h2 id="headline-1">
-环境中缺少Gnutls的情况
+环境中缺少GnuTLS的情况
 </h2>
 <p>
-若当前环境缺少 Gnutls，那么在对 Emacs<sup class="footnote-reference"><a id="footnote-reference-1" href="#footnote-1">1</a></sup> 的源代码进行编译安装前需要以下配置。
+若当前环境缺少 GnuTLS，那么在对 Emacs<sup class="footnote-reference"><a id="footnote-reference-1" href="#footnote-1">1</a></sup> 的源代码进行编译安装前需要以下配置。
 </p>
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  ./configure --with-gnutls<span style="color:#f92672">=</span>no</code></pre></div>
@@ -847,7 +872,7 @@
 </h2>
 <p>
 以上虽可以达到正常安装 Emacs 到 <code class="verbatim">$HOME/.local</code> 目录的目的， 但由于缺少了
-Gnutls 组件，Emacs 中用到网络传输的时候便只能使用 http 而不能使用 https。
+GnuTLS 组件，Emacs 中用到网络传输的时候便只能使用 http 而不能使用 https。
 </p>
 <p>
 如果只是 Emacs 初始化时需要网络连接，还可以通过将 Melpa 的链接都改为以
@@ -864,14 +889,14 @@ http 开头来解决问题， 但这为今后使用 Emacs
 文件以强制重新编译使修改生效。
 </p>
 <h2 id="headline-3">
-安装Gnutls
+安装GnuTLS
 </h2>
 <p>
-经过以上实际测试我们不难发现，在当前环境中安装好 Gnutls 之后再从源码安装
+经过以上实际测试我们不难发现，在当前环境中安装好 GnuTLS 之后再从源码安装
 Emacs 是一个不错的选择。
 </p>
 <p>
-以 OpenSUSE 为例，在终端运行下面的语句即可安装 Gnutls。
+以 OpenSUSE 为例，在终端运行下面的语句即可安装 GnuTLS。
 </p>
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  sudo zypper install gnutls</code></pre></div>
@@ -891,12 +916,12 @@ Emacs 是一个不错的选择。
   make: *** No rule to make target <span style="color:#e6db74">&#39;install&#39;</span>.  Stop.</code></pre></div>
 </div>
 <p>
-另外，如果 Gnutls 在当前环境已安装，而 <code class="verbatim">make</code> 后仍报上面的错误，
+另外，如果 GnuTLS 在当前环境已安装，而 <code class="verbatim">make</code> 后仍报上面的错误，
 那么对于 OpenSUSE 的环境则需要一个叫做 <code class="verbatim">ncurses-devel</code> 的包，
 执行下面的语句安装即可。
 </p>
-<div class="src src-bash">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  sudo zypper install ncurses-devel</code></pre></div>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  sudo zypper install ncurses-devel</code></pre></div>
 </div>
 <div class="footnotes">
 <hr class="footnotes-separatator">
@@ -955,7 +980,7 @@ Emacs 是一个不错的选择。
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://xinii.cf/zh/post/install-gnutls-and-compile-emacs-from-source/&amp;text=%e5%ae%89%e8%a3%85%20Gnutls%20%e5%b9%b6%e4%bb%8e%e6%ba%90%e7%a0%81%e7%bc%96%e8%af%91%20Emacs" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://xinii.cf/zh/post/install-gnutls-and-compile-emacs-from-source/&amp;text=%e5%ae%89%e8%a3%85%20GnuTLS%20%e5%b9%b6%e4%bb%8e%e6%ba%90%e7%a0%81%e7%bc%96%e8%af%91%20Emacs" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -968,7 +993,7 @@ Emacs 是一个不错的选择。
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://xinii.cf/zh/post/install-gnutls-and-compile-emacs-from-source/&amp;t=%e5%ae%89%e8%a3%85%20Gnutls%20%e5%b9%b6%e4%bb%8e%e6%ba%90%e7%a0%81%e7%bc%96%e8%af%91%20Emacs" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://xinii.cf/zh/post/install-gnutls-and-compile-emacs-from-source/&amp;t=%e5%ae%89%e8%a3%85%20GnuTLS%20%e5%b9%b6%e4%bb%8e%e6%ba%90%e7%a0%81%e7%bc%96%e8%af%91%20Emacs" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -981,7 +1006,7 @@ Emacs 是一个不错的选择。
       
       
       <li>
-        <a href="mailto:?subject=%e5%ae%89%e8%a3%85%20Gnutls%20%e5%b9%b6%e4%bb%8e%e6%ba%90%e7%a0%81%e7%bc%96%e8%af%91%20Emacs&amp;body=https://xinii.cf/zh/post/install-gnutls-and-compile-emacs-from-source/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=%e5%ae%89%e8%a3%85%20GnuTLS%20%e5%b9%b6%e4%bb%8e%e6%ba%90%e7%a0%81%e7%bc%96%e8%af%91%20Emacs&amp;body=https://xinii.cf/zh/post/install-gnutls-and-compile-emacs-from-source/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -994,7 +1019,7 @@ Emacs 是一个不错的选择。
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://xinii.cf/zh/post/install-gnutls-and-compile-emacs-from-source/&amp;title=%e5%ae%89%e8%a3%85%20Gnutls%20%e5%b9%b6%e4%bb%8e%e6%ba%90%e7%a0%81%e7%bc%96%e8%af%91%20Emacs" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://xinii.cf/zh/post/install-gnutls-and-compile-emacs-from-source/&amp;title=%e5%ae%89%e8%a3%85%20GnuTLS%20%e5%b9%b6%e4%bb%8e%e6%ba%90%e7%a0%81%e7%bc%96%e8%af%91%20Emacs" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1007,7 +1032,7 @@ Emacs 是一个不错的选择。
       
       
       <li>
-        <a href="whatsapp://send?text=%e5%ae%89%e8%a3%85%20Gnutls%20%e5%b9%b6%e4%bb%8e%e6%ba%90%e7%a0%81%e7%bc%96%e8%af%91%20Emacs%20https://xinii.cf/zh/post/install-gnutls-and-compile-emacs-from-source/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=%e5%ae%89%e8%a3%85%20GnuTLS%20%e5%b9%b6%e4%bb%8e%e6%ba%90%e7%a0%81%e7%bc%96%e8%af%91%20Emacs%20https://xinii.cf/zh/post/install-gnutls-and-compile-emacs-from-source/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1020,7 +1045,7 @@ Emacs 是一个不错的选择。
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://xinii.cf/zh/post/install-gnutls-and-compile-emacs-from-source/&amp;title=%e5%ae%89%e8%a3%85%20Gnutls%20%e5%b9%b6%e4%bb%8e%e6%ba%90%e7%a0%81%e7%bc%96%e8%af%91%20Emacs" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://xinii.cf/zh/post/install-gnutls-and-compile-emacs-from-source/&amp;title=%e5%ae%89%e8%a3%85%20GnuTLS%20%e5%b9%b6%e4%bb%8e%e6%ba%90%e7%a0%81%e7%bc%96%e8%af%91%20Emacs" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1028,6 +1053,12 @@ Emacs 是一个不错的选择。
   </ul>
 </div>
 
+
+
+<script type="text/javascript">
+ var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
+</script>
+<script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script>
 
 
 
@@ -1057,7 +1088,7 @@ Emacs 是一个不错的选择。
     <div class="media author-card content-widget-hr">
       
         
-        <img class="avatar mr-3 avatar-circle" src="/zh/author/xin-li/avatar_hu34af9b428ed2b0fcb301e99d35f7cd84_98517_270x270_fill_q90_lanczos_center.jpg" alt="Xin Li">
+        <img class="avatar mr-3 avatar-circle" src="/zh/author/xin-li/avatar_hu52a603635ecebd45650b162dadabb4e5_12861_270x270_fill_q90_lanczos_center.jpg" alt="Xin Li">
       
 
       <div class="media-body">
@@ -1103,6 +1134,104 @@ Emacs 是一个不错的选择。
     
     
     
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.facebook.com/xintxt" target="_blank" rel="noopener">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/xinii/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/xinii" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://soundcloud.com/user-499505439-644196268" target="_blank" rel="noopener">
+        <i class="fab fa-soundcloud"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/zh/cv" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.mendeley.com/profiles/xin-li399/" target="_blank" rel="noopener">
+        <i class="ai ai-mendeley"></i>
+      </a>
+    </li>
+  
+    
+    
+    
     
     
     
@@ -1127,8 +1256,8 @@ Emacs 是一个不错的选择。
       
     
     <li>
-      <a href="https://github.com/xinii" target="_blank" rel="noopener">
-        <i class="fab fa-github"></i>
+      <a href="https://orcid.org/0000-0003-0024-3670" target="_blank" rel="noopener">
+        <i class="fab fa-orcid"></i>
       </a>
     </li>
   
@@ -1142,8 +1271,8 @@ Emacs 是一个不错的选择。
       
     
     <li>
-      <a href="/zh/cv" >
-        <i class="ai ai-cv"></i>
+      <a href="https://www.researchgate.net/profile/Xin_Li514" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
       </a>
     </li>
   
@@ -1260,7 +1389,7 @@ Emacs 是一个不错的选择。
 
     
     
-    <script>const isSiteThemeDark = true;</script>
+    <script>const isSiteThemeDark = false;</script>
     
 
     
@@ -1277,7 +1406,7 @@ Emacs 是一个不错的选择。
         'project': "项目",
         'publication' : "出版物",
         'talk' : "演讲",
-        'slides' : "演示文稿"
+        'slides' : "Slides"
         };
     </script>
     
@@ -1333,7 +1462,20 @@ Emacs 是一个不错的选择。
     
     <script src="/js/academic.min.66c553246b0f279a03be6e5597f72b52.js"></script>
 
-    <script type="text/javascript"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.js"></script>
+<script>
+ document.addEventListener('DOMContentLoaded', () => {
+     
+     pangu.autoSpacingPage();
+ });
+</script>
+
+
+<script type="text/javascript">
+ var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
+</script>
+<script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script>
 
 
 

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Priority sampling | xin iDEA iNNATA</title>
+    <link>https://xinii.cf/ja/tag/priority-sampling/</link>
+      <atom:link href="https://xinii.cf/ja/tag/priority-sampling/index.xml" rel="self" type="application/rss+xml" />
+    <description>Priority sampling</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja-jp</language><copyright>© 2020 xin iDEA iNNATA</copyright><lastBuildDate>Sun, 01 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xinii.cf/images/logo_hu4469573970495a9d28444639a51ce6fc_83092_300x300_fit_lanczos_2.png</url>
+      <title>Priority sampling</title>
+      <link>https://xinii.cf/ja/tag/priority-sampling/</link>
+    </image>
+    
+    <item>
+      <title>船型データの分布を考慮した深層学習による造波抵抗推定</title>
+      <link>https://xinii.cf/ja/publication/li2020wave/</link>
+      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/ja/publication/li2020wave/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to copy or download the publication metadata.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An Improved Auto-encoder Based on 2-Level Prioritized Experience Replay for High Dimension Skewed Data</title>
+      <link>https://xinii.cf/ja/publication/li2019improved/</link>
+      <pubDate>Thu, 05 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/ja/publication/li2019improved/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to copy or download the publication metadata.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Prioritized Sampling Method for Autoencoder to Reduce Loss Rate for Skewed Data</title>
+      <link>https://xinii.cf/ja/publication/li2018prioritized/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/ja/publication/li2018prioritized/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

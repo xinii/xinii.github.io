@@ -7,7 +7,7 @@
     <description>博文列表</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-cn</language><copyright>© 2020 xin iDEA iNNATA</copyright><lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://xinii.cf/images/icon_huc6d37f8d5848c4cf0bbdc638499793df_110525_512x512_fill_lanczos_center_2.png</url>
+      <url>https://xinii.cf/images/logo_hu4469573970495a9d28444639a51ce6fc_83092_300x300_fit_lanczos_2.png</url>
       <title>博文列表</title>
       <link>https://xinii.cf/zh/post/</link>
     </image>
@@ -851,7 +851,7 @@ One more thing
     </item>
     
     <item>
-      <title>安装 Gnutls 并从源码编译 Emacs</title>
+      <title>安装 GnuTLS 并从源码编译 Emacs</title>
       <link>https://xinii.cf/zh/post/install-gnutls-and-compile-emacs-from-source/</link>
       <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
       <guid>https://xinii.cf/zh/post/install-gnutls-and-compile-emacs-from-source/</guid>
@@ -860,11 +860,11 @@ One more thing
 &lt;h2&gt;目录&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#headline-1&#34;&gt;环境中缺少Gnutls的情况&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-1&#34;&gt;环境中缺少GnuTLS的情况&lt;/a&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#headline-2&#34;&gt;潜在的问题&lt;/a&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#headline-3&#34;&gt;安装Gnutls&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-3&#34;&gt;安装GnuTLS&lt;/a&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#headline-4&#34;&gt;其他可能的问题&lt;/a&gt;
 &lt;/li&gt;
@@ -873,10 +873,10 @@ One more thing
 
 &lt;/p&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
-环境中缺少Gnutls的情况
+环境中缺少GnuTLS的情况
 &lt;/h2&gt;
 &lt;p&gt;
-若当前环境缺少 Gnutls，那么在对 Emacs&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; 的源代码进行编译安装前需要以下配置。
+若当前环境缺少 GnuTLS，那么在对 Emacs&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; 的源代码进行编译安装前需要以下配置。
 &lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  ./configure --with-gnutls&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;no&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -895,7 +895,7 @@ One more thing
 &lt;/h2&gt;
 &lt;p&gt;
 以上虽可以达到正常安装 Emacs 到 &lt;code class=&#34;verbatim&#34;&gt;$HOME/.local&lt;/code&gt; 目录的目的， 但由于缺少了
-Gnutls 组件，Emacs 中用到网络传输的时候便只能使用 http 而不能使用 https。
+GnuTLS 组件，Emacs 中用到网络传输的时候便只能使用 http 而不能使用 https。
 &lt;/p&gt;
 &lt;p&gt;
 如果只是 Emacs 初始化时需要网络连接，还可以通过将 Melpa 的链接都改为以
@@ -912,14 +912,14 @@ http 开头来解决问题， 但这为今后使用 Emacs
 文件以强制重新编译使修改生效。
 &lt;/p&gt;
 &lt;h2 id=&#34;headline-3&#34;&gt;
-安装Gnutls
+安装GnuTLS
 &lt;/h2&gt;
 &lt;p&gt;
-经过以上实际测试我们不难发现，在当前环境中安装好 Gnutls 之后再从源码安装
+经过以上实际测试我们不难发现，在当前环境中安装好 GnuTLS 之后再从源码安装
 Emacs 是一个不错的选择。
 &lt;/p&gt;
 &lt;p&gt;
-以 OpenSUSE 为例，在终端运行下面的语句即可安装 Gnutls。
+以 OpenSUSE 为例，在终端运行下面的语句即可安装 GnuTLS。
 &lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  sudo zypper install gnutls&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -939,12 +939,12 @@ Emacs 是一个不错的选择。
   make: *** No rule to make target &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;install&amp;#39;&lt;/span&gt;.  Stop.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
-另外，如果 Gnutls 在当前环境已安装，而 &lt;code class=&#34;verbatim&#34;&gt;make&lt;/code&gt; 后仍报上面的错误，
+另外，如果 GnuTLS 在当前环境已安装，而 &lt;code class=&#34;verbatim&#34;&gt;make&lt;/code&gt; 后仍报上面的错误，
 那么对于 OpenSUSE 的环境则需要一个叫做 &lt;code class=&#34;verbatim&#34;&gt;ncurses-devel&lt;/code&gt; 的包，
 执行下面的语句安装即可。
 &lt;/p&gt;
-&lt;div class=&#34;src src-bash&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  sudo zypper install ncurses-devel&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  sudo zypper install ncurses-devel&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
 &lt;hr class=&#34;footnotes-separatator&#34;&gt;
@@ -1199,7 +1199,7 @@ Fish shell 中定义环境变量的方式为 &lt;code class=&#34;verbatim&#34;&g
 &lt;h2&gt;目录&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#headline-1&#34;&gt;准备一个用于安装Linux Mint的USB设备&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-1&#34;&gt;准备一个用于安装 Linux Mint 的 USB 设备&lt;/a&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#headline-2&#34;&gt;Linux Mint的ISO文件&lt;/a&gt;
 &lt;/li&gt;
@@ -1208,35 +1208,45 @@ Fish shell 中定义环境变量的方式为 &lt;code class=&#34;verbatim&#34;&g
 
 &lt;/p&gt;
 &lt;p&gt;
-*重要*：在开始下面的工作之前，首先确保U盘没有存任何东西，
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;重要&lt;/strong&gt;：在开始下面的工作之前，首先确保U盘没有存任何东西，
 或者里面没有放任何的重要数据（因为烧录会导致数据丢失），
 同时电脑上已经准备好空的分区（安装到的目标分区的数据也会被抹掉）。
+  &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;/p&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
-准备一个用于安装Linux Mint的USB设备
+准备一个用于安装 Linux Mint 的 USB 设备
 &lt;/h2&gt;
 &lt;p&gt;
-首先准备一个USB设备，可以是U盘也可以是USB的移动硬盘，
-之后会在这个上面写入供安装Linux Mint的安装程序。
+首先准备一个 USB 设备，可以是 U 盘也可以是 USB 的移动硬盘，
+之后会在这个上面写入供安装 Linux Mint 的安装程序。
 &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;
-如果使用的是Windows操作系统，那么点击
-&lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0&#34;&gt;这里&lt;/a&gt;来查看Ubuntu官方的教程以创建一个可以安装Linux的USB设备。
+如果使用的是 Windows 操作系统，那么点击
+&lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0&#34;&gt;这里&lt;/a&gt;来查看 Ubuntu 官方的教程以创建一个可以安装Linux的USB设备。
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;
-*注意*：上面的教程是教你如何製作一个用于安装Ubuntu的USB设备， 
-安装Linux Mint的情况下仅需要把涉及到ISO文件的地方换成Linux Mint的iso文件，其他地方完全相同。
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    上面的教程是教你如何制作一个用于安装 Ubuntu 的 USB 设备，
+安装 Linux Mint 的情况下仅需要把涉及到镜像文件的地方换成 Linux Mint 的 ISO 文件，
+其他地方完全相同。
+  &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;
-其中会用到的软件叫做rufus，上面的教程裡面也有提到，点击
-&lt;a href=&#34;https://rufus.akeo.ie/&#34;&gt;这里&lt;/a&gt;打开rufus的官方网站，你也可以点击
-&lt;a href=&#34;https://github.com/pbatard/rufus/releases/download/v3.5/rufus-3.5.exe&#34;&gt;这里&lt;/a&gt;直接下载rufus。
+其中会用到的软件叫做 Rufus，上面的教程裡面也有提到，
+点击&lt;a href=&#34;https://rufus.akeo.ie/&#34;&gt;这里&lt;/a&gt;打开 Rufus 的官方网站，或者也可以点击&lt;a href=&#34;https://github.com/pbatard/rufus/releases/download/v3.5/rufus-3.5.exe&#34;&gt;这里&lt;/a&gt;直接下载 Rufus。
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -1244,9 +1254,8 @@ Fish shell 中定义环境变量的方式为 &lt;code class=&#34;verbatim&#34;&g
 Linux Mint的ISO文件
 &lt;/h2&gt;
 &lt;p&gt;
-前一节提到的linux mint的iso文件需要从下面的地方获取。
-点击&lt;a href=&#34;https://linuxmint.com/&#34;&gt;这里&lt;/a&gt;打开linux mint的官方网站。
-或者也可以点击&lt;a href=&#34;http://mirrors.evowise.com/linuxmint/stable/19.1/linuxmint-19.1-cinnamon-64bit.iso&#34;&gt;这里&lt;/a&gt;直接下载Linux Mint 19.1版本。
+前一节提到的 Linux Mint 的 ISO 文件需要从下面的地方获取。
+点击&lt;a href=&#34;https://linuxmint.com/&#34;&gt;这里&lt;/a&gt;打开 Linux Mint 的官方网站。或者也可以点击&lt;a href=&#34;http://mirrors.evowise.com/linuxmint/stable/19.1/linuxmint-19.1-cinnamon-64bit.iso&#34;&gt;这里&lt;/a&gt;直接下载 Linux Mint 19.1 版本。
 &lt;/p&gt;
 </description>
     </item>
@@ -1261,7 +1270,7 @@ Linux Mint的ISO文件
 &lt;h2&gt;目录&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#headline-1&#34;&gt;安装 Jekyll&lt;sup class=&#34;footnote-reference&#34;&gt;1&lt;/sup&gt;&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-1&#34;&gt;安装 Jekyll&lt;/a&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#headline-2&#34;&gt;发布博客到 Github&lt;/a&gt;
 &lt;/li&gt;
@@ -1270,7 +1279,7 @@ Linux Mint的ISO文件
 
 &lt;/p&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
-安装 Jekyll&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
+安装 Jekyll
 &lt;/h2&gt;
 &lt;p&gt;
 Jekyll 是一个通过 Ruby 语言写的静态网站生成框架，下面是官网介绍。
@@ -1280,7 +1289,7 @@ Jekyll 是一个通过 Ruby 语言写的静态网站生成框架，下面是官�
 Jekyll is a static site generator. You give it text written in your
   favorite markup language and it uses layouts to create a static
   website. You can tweak how you want the site URLs to look, what data
-  gets displayed on the site, and more. –Jekyll&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-2&#34; href=&#34;#footnote-2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
+  gets displayed on the site, and more. –Jekyll&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
 &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;
@@ -1337,7 +1346,7 @@ Jekyll is a static site generator. You give it text written in your
 &lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://xinii.github.io&#34;&gt;本站&lt;/a&gt;现已改用 &lt;code&gt;hugo&lt;/code&gt; 静态网站生成框架创建，
-如需参考原来的站点，请&lt;a href=&#34;https://xinii.github.io/jekyll-blog&#34;&gt;点击这里&lt;/a&gt;访问。
+如需参考原来的站点，请&lt;a href=&#34;https://xinii.github.io/archive-site-c&#34;&gt;点击这里&lt;/a&gt;访问。
 &lt;/p&gt;
 &lt;p&gt;
 欢迎联络并留言。
@@ -1349,15 +1358,7 @@ Jekyll is a static site generator. You give it text written in your
 &lt;sup id=&#34;footnote-1&#34;&gt;&lt;a href=&#34;#footnote-reference-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
 &lt;div class=&#34;footnote-body&#34;&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://raw.githubusercontent.com/jekyll/brand/master/jekyll-logo-black-red-transparent.png&#34;&gt;Jekyll 的 Logo&lt;/a&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;footnote-definition&#34;&gt;
-&lt;sup id=&#34;footnote-2&#34;&gt;&lt;a href=&#34;#footnote-reference-2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
-&lt;div class=&#34;footnote-body&#34;&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://jekyllrb.com/docs/&#34;&gt;jekyllrb.com&lt;/a&gt;
+&lt;a href=&#34;https://jekyllrb.com/docs/&#34;&gt;Jekyll 官方网站&lt;/a&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
