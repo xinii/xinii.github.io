@@ -1,0 +1,780 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title>Install Gnutls and compile Emacs from source - xin iDEA iNNATA</title>
+<meta http-equiv="refresh" content="0; url=https://xinii.cf/en/post/install-gnutls-and-compile-emacs-from-source" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/hugo-site-slim-public/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/hugo-site-slim-public/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/hugo-site-slim-public/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/hugo-site-slim-public/favicon/site.webmanifest">
+  
+    <link rel="mask-icon" href="/hugo-site-slim-public/favicon/safari-pinned-tab.svg" color="#ffffff">
+    <link rel="shortcut icon" href="/hugo-site-slim-public/favicon/favicon.ico">
+    <meta name="msapplication-config" content="/hugo-site-slim-public/favicon/browserconfig.xml">
+  
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+<meta name="generator" content="Hugo 0.74.1" /><meta itemprop="name" content="Install Gnutls and compile Emacs from source">
+<meta itemprop="description" content="Gnutls errors when compiling Emacs from source? Let me take a closer look at what is going on!">
+<meta itemprop="datePublished" content="2019-05-04T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-05-04T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="405">
+<meta itemprop="image" content="https://xinii.github.io/hugo-site-slim-public/img/blog/emacs-logo.png">
+
+
+
+<meta itemprop="keywords" content="gnutls,compile," /><meta property="og:title" content="Install Gnutls and compile Emacs from source" />
+<meta property="og:description" content="Gnutls errors when compiling Emacs from source? Let me take a closer look at what is going on!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xinii.github.io/hugo-site-slim-public/blog/emacs/install-gnutls-and-compile-emacs-from-source/" />
+<meta property="og:image" content="https://xinii.github.io/hugo-site-slim-public/img/blog/emacs-logo.png" />
+<meta property="article:published_time" content="2019-05-04T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-05-04T00:00:00+00:00" /><meta property="og:site_name" content="xin iDEA iNNATA" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://xinii.github.io/hugo-site-slim-public/img/blog/emacs-logo.png"/>
+
+<meta name="twitter:title" content="Install Gnutls and compile Emacs from source"/>
+<meta name="twitter:description" content="Gnutls errors when compiling Emacs from source? Let me take a closer look at what is going on!"/>
+<meta name="twitter:site" content="@xintxt"/>
+<link rel="stylesheet" href="/hugo-site-slim-public/css/bundle.min.e0b4f4d471560c894134ee31c2399f5aa7687672a226a2db6013c783c58d4ec7.css" integrity="sha256-4LT01HFWDIlBNO4xwjmfWqdodnKiJqLbYBPHg8WNTsc="><link rel="stylesheet" href="/hugo-site-slim-public/css/add-on.css">
+</head>
+
+  <body>
+    
+
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/hugo-site-slim-public/" class="nav">
+        
+          
+            Blog
+          
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu menu">
+      
+
+      <a href='/hugo-site-slim-public/' class="nav link"><i class='fa fa-home'></i> Home </a>
+      <a href='/hugo-site-slim-public/about/' class="nav link"><i class='far fa-id-card'></i> About </a>
+      <a href='/hugo-site-slim-public/blog/' class="nav link"><i class='far fa-newspaper'></i> Blog </a>
+      <a href='/hugo-site-slim-public/categories/' class="nav link"><i class='fas fa-sitemap'></i> Categories </a>
+      <a href='/hugo-site-slim-public/tags/' class="nav link"><i class='fas fa-tags'></i> Tags </a>
+      <a href='/hugo-site-slim-public/contact/' class="nav link"><i class='far fa-envelope'></i> Contact </a>
+
+      <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+      <a href="#search-input" class="nav search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
+    </menu>
+    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+    <a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
+    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+  <menu id="lang-menu" class="flyout-menu menu">
+  <a href="#" lang="en" class="nav link active">English (en)</a>
+  
+      <a href="https://xinii.github.io/hugo-site-slim-public/ja/blog/emacs/install-gnutls-and-compile-emacs-from-source/" lang="ja" class="nav link">日本語 (ja)</a>
+    
+      <a href="https://xinii.github.io/hugo-site-slim-public/zh-cn/blog/emacs/install-gnutls-and-compile-emacs-from-source/" lang="zh-cn" class="nav link">简体中文 (zh-cn)</a>
+    
+  
+</menu>
+
+  
+    <menu id="share-menu" class="flyout-menu menu">
+      <h1>Share Post</h1>
+      
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=Install%20Gnutls%20and%20compile%20Emacs%20from%20source&amp;url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fblog%2femacs%2finstall-gnutls-and-compile-emacs-from-source%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fblog%2femacs%2finstall-gnutls-and-compile-emacs-from-source%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fblog%2femacs%2finstall-gnutls-and-compile-emacs-from-source%2f&amp;title=Install%20Gnutls%20and%20compile%20Emacs%20from%20source" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fblog%2femacs%2finstall-gnutls-and-compile-emacs-from-source%2f&amp;title=Install%20Gnutls%20and%20compile%20Emacs%20from%20source" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fblog%2femacs%2finstall-gnutls-and-compile-emacs-from-source%2f&amp;description=Install%20Gnutls%20and%20compile%20Emacs%20from%20source" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=Check%20out%20this%20post%20by Xin%20Li&amp;body=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fblog%2femacs%2finstall-gnutls-and-compile-emacs-from-source%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+    </menu>
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" >
+  <a href="/hugo-site-slim-public/"><img src="https://xinii.github.io/hugo-site-slim-public/img/main/logo.jpg" class="circle" width="72px" alt="xin iDEA iNNATA" /></a>
+  <header>
+    <h1>xin iDEA iNNATA</h1>
+  </header>
+  <main>
+    <p>Wellcome to xin iDEA iNNATA!</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/xinii" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/xinii" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+<li><a href="//facebook.com/xintxt" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+
+
+
+
+
+
+<li><a href="weixin://contacts/profile/xin099" target="_blank" rel="noopener" title="WeChat" class="fab fa-weixin"></a></li>
+<li><a href="//wpa.qq.com/msgrd?v=3&amp;uin=78809709&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener" title="QQ" class="fab fa-qq"></a></li>
+
+
+<li><a href="//twitter.com/xintxt" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+<li><a href="skype:xintxt?userinfo" target="_blank" rel="noopener" title="Skype" class="fab fa-skype"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:xinii@msn.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        
+<article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/hugo-site-slim-public/blog/emacs/install-gnutls-and-compile-emacs-from-source/">Install Gnutls and compile Emacs from source</a></h2>
+    
+    
+      <p>Gnutls errors when compiling Emacs from source? Let me take a closer look at what is going on!</p>
+    
+  </div>
+  <div class="meta">
+    <time class="published" datetime="2019-05-04 00:00:00 &#43;0000 UTC">
+      May 4, 2019
+    </time>
+    <span class="author">Xin Li</span>
+    
+      <p>2 minute read</p>
+    
+  </div>
+</header>
+
+  <section id="socnet-share">
+    
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=Install%20Gnutls%20and%20compile%20Emacs%20from%20source&amp;url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fblog%2femacs%2finstall-gnutls-and-compile-emacs-from-source%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fblog%2femacs%2finstall-gnutls-and-compile-emacs-from-source%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fblog%2femacs%2finstall-gnutls-and-compile-emacs-from-source%2f&amp;title=Install%20Gnutls%20and%20compile%20Emacs%20from%20source" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fblog%2femacs%2finstall-gnutls-and-compile-emacs-from-source%2f&amp;title=Install%20Gnutls%20and%20compile%20Emacs%20from%20source" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fblog%2femacs%2finstall-gnutls-and-compile-emacs-from-source%2f&amp;description=Install%20Gnutls%20and%20compile%20Emacs%20from%20source" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=Check%20out%20this%20post%20by Xin%20Li&amp;body=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fblog%2femacs%2finstall-gnutls-and-compile-emacs-from-source%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+  </section>
+  
+  <a href="/hugo-site-slim-public/blog/emacs/install-gnutls-and-compile-emacs-from-source/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/emacs-logo.png" alt="">
+    
+  </a>
+
+
+  <div class="content">
+    <h2>Table of contents</h2>
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#headline-1">The lack of Gnutls in the environment</a>
+</li>
+<li><a href="#headline-2">Potential problems</a>
+</li>
+<li><a href="#headline-3">Install Gnutls</a>
+</li>
+<li><a href="#headline-4">Other possible problems</a>
+</li>
+</ul>
+</nav>
+    <hr>
+    
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+The lack of Gnutls in the environment
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<p>
+If the current environment lacks Gnutls, the following configuration is
+required before compiling and installing the Emacs<sup class="footnote-reference"><a id="footnote-reference-1" href="#footnote-1">1</a></sup> source code.</p>
+<div class="src src-bash">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  ./configure --with-gnutls<span style="color:#f92672">=</span>no</code></pre></div>
+</div>
+<p>
+Or specify the installation directory at the same time, add the option
+to ignore other dependent libraries that are still missing, such as the
+following configuration.</p>
+<div class="src src-bash">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  bash configure --prefix<span style="color:#f92672">=</span>$HOME/.local --with-gif<span style="color:#f92672">=</span>no --with-gnutls<span style="color:#f92672">=</span>no</code></pre></div>
+</div>
+<p>
+In this way, the configuration and installation can be carried out
+smoothly in the absence of permission to the default installation path,
+or the lack of various dependent libraries.</p>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-2">
+<h2 id="headline-2">
+Potential problems
+</h2>
+<div id="outline-text-headline-2" class="outline-text-2">
+<p>
+Although the above can achieve the purpose of normal installation of
+Emacs to the <code class="verbatim">$HOME/.local</code> directory, However, due to the lack of the
+Gnutls component, when using network transmission in Emacs, you can only
+use http instead of https.</p>
+<p>
+If only needs a network connection during Emacs initialization, you can
+solve the problem by changing the Melpa links to start with http, but
+this will cause problems for future extensions that require network
+connectivity in Emacs.</p>
+<p>
+For example, when using <code class="verbatim">google-translate</code>, even if the <code class="verbatim">https</code> in all
+<code class="verbatim">*.el</code> files in the <code class="verbatim">google-translate</code> package are changed to <code class="verbatim">http</code>,
+during actual use, some <code class="verbatim">https</code> services will still be used
+automatically, resulting in abnormal translation.</p>
+<p>
+One thing to note here is that after modifying the <code class="verbatim">*.el</code> file, you need
+to delete all <code class="verbatim">*.elc</code> files to force a recompilation to make the changes
+take effect.</p>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-2">
+<h2 id="headline-3">
+Install Gnutls
+</h2>
+<div id="outline-text-headline-3" class="outline-text-2">
+<p>
+After the above actual tests, it is not difficult to find that it is a
+good choice to install Emacs from the source code after installing
+Gnutls in the current environment.</p>
+<p>
+Taking OpenSUSE as an example, Gnutls can be installed by running the
+following statement on the terminal.</p>
+<div class="src src-bash">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  sudo zypper install gnutls</code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-2">
+<h2 id="headline-4">
+Other possible problems
+</h2>
+<div id="outline-text-headline-4" class="outline-text-2">
+<div class="src src-bash">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  checking <span style="color:#66d9ef">for</span> library containing tputs... no
+  configure: error: The required <span style="color:#66d9ef">function</span> <span style="color:#e6db74">&#39;tputs&#39;</span> was not found in any library.
+  The following libraries were tried <span style="color:#f92672">(</span>in order<span style="color:#f92672">)</span>:
+    libtinfo, libncurses, libterminfo, libcurses, libtermcap
+  Please try installing whichever of these libraries is most appropriate
+  <span style="color:#66d9ef">for</span> your system, together with its header files.
+  For example, a libncurses-dev<span style="color:#f92672">(</span>el<span style="color:#f92672">)</span> or similar package.
+  make: *** No targets specified and no makefile found.  Stop.
+  make: *** No rule to make target <span style="color:#e6db74">&#39;install&#39;</span>.  Stop.</code></pre></div>
+</div>
+<p>
+Besides, if Gnutls is installed in the current environment, and the
+above error is still reported after <code class="verbatim">make</code>, then for OpenSUSE
+environment, you need a package called <code class="verbatim">ncurses-devel</code>, execute the
+following sentence to install.</p>
+<div class="src src-bash">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  sudo zypper install ncurses-devel</code></pre></div>
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr class="footnotes-separatator">
+<div class="footnote-definitions">
+<div class="footnote-definition">
+<sup id="footnote-1"><a href="#footnote-reference-1">1</a></sup>
+<div class="footnote-body">
+<p><a href="https://ja.wikipedia.org/wiki/Emacs">The logo of Emacs</a></p>
+</div>
+</div>
+</div>
+</div>
+
+  </div>
+  <hr>
+  <footer>
+    <ul class="stats">
+  <li class="categories">
+    <ul>
+    
+      
+        
+          <li><a class="article-terms-link" href="/hugo-site-slim-public/categories/emacs/">emacs</a></li>
+        
+      
+    
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+    
+      
+        
+          <li><a class="article-terms-link" href="/hugo-site-slim-public/tags/gnutls/">gnutls</a></li>
+        
+          <li><a class="article-terms-link" href="/hugo-site-slim-public/tags/compile/">compile</a></li>
+        
+      
+    
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+</article>
+
+  <article class="post">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "xinii" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </article>
+
+
+
+
+<div class="pagination">
+  
+    <a href="/hugo-site-slim-public/blog/shell/my-shell-migration-record/" class="button"><div class="previous">Prev post</div></a>
+  
+  
+    <a href="/hugo-site-slim-public/blog/opencv/install-opencv-on-jetson-nano/" class="button"><div class="next">Next post</div></a>
+  
+</div>
+
+
+      </main>
+      <section id="site-sidebar">
+  
+  <section id="recent-posts">
+    <header>
+      <h1>Recent posts</h1>
+    </header>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/blog/windows/several-windows-registry-configurations/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/registry-editor-icon.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/blog/windows/several-windows-registry-configurations/">Some Windows registry settings that can help you work more efficiently</a></h2>
+        <time class="published" datetime="">June 4, 2020</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/blog/windows/some-installations-for-windows-10/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/windows-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/blog/windows/some-installations-for-windows-10/">Some works after Windows 10 clean installation</a></h2>
+        <time class="published" datetime="">June 4, 2020</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/blog/linux/add-apt-repository-for-fish-and-emacs/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/fish-emacs-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/blog/linux/add-apt-repository-for-fish-and-emacs/">Add apt repository for Fish and Emacs</a></h2>
+        <time class="published" datetime="">June 3, 2020</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/blog/ssh/several-ssh-configurations/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/ssh-image.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/blog/ssh/several-ssh-configurations/">Several SSH configurations</a></h2>
+        <time class="published" datetime="">June 3, 2020</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/blog/opencv/install-opencv-on-jetson-nano/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/opencv-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/blog/opencv/install-opencv-on-jetson-nano/">How to install OpenCV on Jetson Nano?</a></h2>
+        <time class="published" datetime="">July 12, 2019</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/blog/emacs/install-gnutls-and-compile-emacs-from-source/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/emacs-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/blog/emacs/install-gnutls-and-compile-emacs-from-source/">Install Gnutls and compile Emacs from source</a></h2>
+        <time class="published" datetime="">May 4, 2019</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/blog/shell/my-shell-migration-record/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/fish-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/blog/shell/my-shell-migration-record/">My shell migration record</a></h2>
+        <time class="published" datetime="">May 3, 2019</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/blog/linux/install-linux-mint-from-the-usb-device/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/linux-mint-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/blog/linux/install-linux-mint-from-the-usb-device/">Install Linux Mint from USB device</a></h2>
+        <time class="published" datetime="">April 23, 2019</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/jekyll-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/">Create a blog via Jekyll and post to Github</a></h2>
+        <time class="published" datetime="">April 2, 2019</time>
+      </header>
+    </article>
+    
+    
+  </section>
+  
+
+  
+  
+  <section id="categories">
+    <header>
+      <h1><a href="/hugo-site-slim-public/categories">Categories</a></h1>
+    </header>
+    <ul>
+      
+      
+      
+      
+      <li>
+        
+        <a href="/hugo-site-slim-public/categories/linux/">linux<span class="count">2</span></a>
+        
+        
+      <li>
+        
+        <a href="/hugo-site-slim-public/categories/windows/">windows<span class="count">2</span></a>
+        
+        
+      <li>
+        
+        <a href="/hugo-site-slim-public/categories/cms/">cms<span class="count">1</span></a>
+        
+        
+      <li>
+        
+        <a href="/hugo-site-slim-public/categories/emacs/">emacs<span class="count">1</span></a>
+        
+        
+      <li>
+        
+        <a href="/hugo-site-slim-public/categories/opencv/">opencv<span class="count">1</span></a>
+        
+        
+      <li>
+        
+        <a href="/hugo-site-slim-public/categories/shell/">shell<span class="count">1</span></a>
+        
+        
+      <li>
+        
+        <a href="/hugo-site-slim-public/categories/ssh/">ssh<span class="count">1</span></a>
+        
+        
+      </li>
+    </ul>
+  </section>
+  
+  
+
+  
+  <section id="mini-bio">
+    <header>
+      <h1>About</h1>
+    </header>
+    <p>                          I believe everyone has their innate ideas and potential,
+                          be sure to accept your inner thoughts and create your ideas,
+                          here is xin iDEA iNNATA.
+                          <br>
+                          Click the button below to get more information about me.
+                          </p>
+    <footer>
+      <a href="/hugo-site-slim-public/about" class="button">Learn More</a>
+    </footer>
+  </section>
+  
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/xinii" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/xinii" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+<li><a href="//facebook.com/xintxt" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+
+
+
+
+
+
+<li><a href="weixin://contacts/profile/xin099" target="_blank" rel="noopener" title="WeChat" class="fab fa-weixin"></a></li>
+<li><a href="//wpa.qq.com/msgrd?v=3&amp;uin=78809709&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener" title="QQ" class="fab fa-qq"></a></li>
+
+
+<li><a href="//twitter.com/xintxt" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+<li><a href="skype:xintxt?userinfo" target="_blank" rel="noopener" title="Skype" class="fab fa-skype"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:xinii@msn.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+  
+  <p class="copyright">
+    
+      &copy; 2020
+      
+        xin iDEA iNNATA
+      
+    . <br>
+    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.74.1' target='_blank' rel='noopener'>Hugo</a>
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      <script src="/hugo-site-slim-public/js/highlight.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script><script src="/hugo-site-slim-public/js/bundle.min.f2442aa1bcc6f779868bf270301b3f5bb97c530c6761ba5cca76bb234ac628ed.js" integrity="sha256-8kQqobzG93mGi/JwMBs/W7l8UwxnYbpcyna7I0rGKO0="></script>
+    <script src="/hugo-site-slim-public/js/add-on.js"></script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-169244465-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script data-ad-client="ca-pub-9872583441136696" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    </div>
+  </body>
+</html>

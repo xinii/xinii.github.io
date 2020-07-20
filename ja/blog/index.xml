@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on xin iDEA iNNATA</title>
+    <link>https://xinii.github.io/hugo-site-slim-public/ja/blog/</link>
+    <description>Recent content in Blog on xin iDEA iNNATA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 26 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://xinii.github.io/hugo-site-slim-public/ja/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ソフトウェア工学コースに関連するいくつかのポイント</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/ja/blog/other/some-points-related-to-software-engineering-courses/</link>
+      <pubDate>Fri, 26 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/ja/blog/other/some-points-related-to-software-engineering-courses/</guid>
+      <description> テスト   LLL
+  テスト   HugoのコンテンツフォーマットにOrgを使うハナシ
+  </description>
+    </item>
+    
+    <item>
+      <title>Windows 10をクリーンインストールした後の作業</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/ja/blog/windows/some-installations-for-windows-10/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/ja/blog/windows/some-installations-for-windows-10/</guid>
+      <description>Windows 10のアクティベーション   cmd を開く
+slmgr -ipk {your product key} slmgr -skms {kms server address of your company} slmgr -ato    いくつか便利のツールをインストールする    Msys2
+  AutoHotKey
+  Ricty
+    msys2を設定する  pacman -S git fish tmux emacs gcc python cd ~ git clone https://github.com/xinii/xinconfig .xinconfig cd .xinconfig ./setenv fish exec fish set_conf tmux set_el auto set_el cn change_emacs xin emacs ssh-keygen -A emacs /etc/ssh/sshd_config #Port **** #PasswordAuthentication no cat {path to your pub key} &amp;gt; ~/.</description>
+    </item>
+    
+    <item>
+      <title>より効率的な作業を行うためのいくつかWindowsのレジストリー設定</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/ja/blog/windows/several-windows-registry-configurations/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/ja/blog/windows/several-windows-registry-configurations/</guid>
+      <description>日本語キーボードのレイアウトに関するレジストリー設定  スキャンコードについて   まずは，ウィキペディアに載せたスキャンコードの定義を見よう
+ スキャンコード (scancode) とは、コンピュータのキーボードのキーが押されたり離されたりしたときに、 キーボードからCPUに送られるコード（符号）のこと。走査コード（そうさコード）ともいう。 - Wikipedia
+   スキャンコードの例1     キー コード     RCtrl 1D E0   LAlt 38 00   RAlt 38 E0   ESC 01 00   Insert 52 E0   Enter 1C 00   Caps 3A 00   Space 39 00   無変換 7B 00   変換 79 00      レジストリーでスキャンコードのマッピングを行うためには    まず， Win key + R を押して regedit を入力したら Enter キーを押す。 そうすると，Windowsのレジストリーエディターが開かれたはず。 そこでレジストリーエディターで以下の場所を開く。</description>
+    </item>
+    
+    <item>
+      <title>FishとEmacsのためのaptリポジトリ追加</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/ja/blog/linux/add-apt-repository-for-fish-and-emacs/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/ja/blog/linux/add-apt-repository-for-fish-and-emacs/</guid>
+      <description> 使う予定のコマンド  add-apt-repository    このコマンドがない？以下のようにコマンドを入れる  apt install software-properties-common    以下のステップに従ってインストール  リポジトリを登録  add-apt-repository ppa:kelleyk/emacs apt-add-repository ppa:fish-shell/release-3    リポジトリを更新  apt update    必要なものをインストール  apt install emacs26 apt install fish      </description>
+    </item>
+    
+    <item>
+      <title>いくつかのssh設定</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/ja/blog/ssh/several-ssh-configurations/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/ja/blog/ssh/several-ssh-configurations/</guid>
+      <description>sshの途切れる現象    sshを使ってリモートサーバーにログインしている時に，一定の時間内に操作がなければ， =Write failed: Broken pipe=というエラーが出てきてしまう可能性がある。
+  以上のことを避けるために，クライアント側やサーバー側のssh設定を変える必要がある。
+やり方     クライアント側で対処する
+  以下の内容を=/etc/ssh/ssh_config=か=~/.ssh/config=に記述する。
+ServerAliveInterval 15 ServerAliveCountMax 10   この設定は，15秒ごとに10回の応答が送信されることを意味する。 それでも応答がなければ接続が切断される。
+  サーバー側で対処する
+  以下の内容を=/etc/ssh/sshd_config=に記述する。
+ClientAliveInterval 30 ClientAliveCountMax 5   この設定は，30秒ごとに5回の応答が送信されることを意味する。 それでも応答がなければ接続が切断される。
+その他   sshを使う際にtmuxやscreenなどを使うことがおすすめ。 これで，リモートへの接続が途切れたとしても， リモートに再びログインした後にすでにあるセッションにattachすれば元の環境が戻ってくる。
+    アンドロイドのtermuxアプリを使ってsshデーモンを立てる  インストール  apt install openssh    キーを設定する  ssh-keygen cat ~/.ssh/id_rsa.pub &amp;gt; ~/.</description>
+    </item>
+    
+    <item>
+      <title>EmacsのOrg-modeにおいてPythonコードブロックを使った時の落とし穴</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/ja/blog/other/pitfall-while-using-python-code-block-on-emacs-org-mode/</link>
+      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/ja/blog/other/pitfall-while-using-python-code-block-on-emacs-org-mode/</guid>
+      <description>僕は家計簿をOrg-modeで記録しています， しかし，以下のエラーが出たことがある。
+File &amp;#34;&amp;lt;stdin&amp;gt;&amp;#34;, line 3 SyntaxError: Non-UTF-8 code starting with &amp;#39;\xe3&amp;#39; in file &amp;lt;stdin&amp;gt; on line 3, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details   例の # -*- coding: utf-8 -*- を先頭につけてもダメです。
+ 解決法は以下のようなコードブロックのヘッダーを，
+#+begin_src python :results file :var data=test   以下のように変換します。
+#+begin_src python :results file :var data=test[, 0:2]   つまり，必要な数字や日付などのorg-modeのtableの列だけを pythonに転送すると，以上の問題が解決できますが， 根本的に # -*- coding: utf-8 -*- をコードブロックの中に 効く方法はまだわかりません。 わかる方は教えていただければありがたいと思います。</description>
+    </item>
+    
+    <item>
+      <title>platexを使う際に扱うepsグラフに関する落とし穴</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/ja/blog/other/pitfall-while-inserting-figure-into-latex-article/</link>
+      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/ja/blog/other/pitfall-while-inserting-figure-into-latex-article/</guid>
+      <description>platexを使う際に，なぜか特定のepsグラフを文書のソースに入れたらビルドが失敗。 しかも失敗した時のログをみると，まったく問題を特定できない。
+ 例えば，入れたすべてのfigureの定義が見つからないとかに関するエラー。 このようなエラーになった時に， epsグラフのスケールを正方形に近い形状から矩形にしたら， 問題解決できた。
+ 原因はまだ不明だけど，また調査してみる。 たまにハマってしまったので，ここにメモを残っておく。
+ 以上。</description>
+    </item>
+    
+    <item>
+      <title>EmacsとLilypondで楽譜生成</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/ja/blog/other/generate-sheet-music-with-lilypond-on-emacs/</link>
+      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/ja/blog/other/generate-sheet-music-with-lilypond-on-emacs/</guid>
+      <description>コード例  \version &amp;#34;2.18.2&amp;#34; \score { \new Staff &amp;lt;&amp;lt; \new Voice \relative c&amp;#39;&amp;#39;&amp;#39; { \set midiInstrument = #&amp;#34;flute&amp;#34; \voiceOne \key g \major \time 2/2 r2 g-&amp;#34;Flute&amp;#34; ~ g fis ~ fis4 g8 fis e2 ~ e4 d8 cis d2 } \new Voice \relative c&amp;#39;&amp;#39; { \set midiInstrument = #&amp;#34;clarinet&amp;#34; \voiceTwo b1-&amp;#34;Clarinet&amp;#34; a2. b8 a g2. fis8 e fis2 r } &amp;gt;&amp;gt; \layout { } \midi { \context { \Staff \remove &amp;#34;Staff_performer&amp;#34; } \context { \Voice \consists &amp;#34;Staff_performer&amp;#34; } \context { \Score tempoWholesPerMinute = #(ly:make-moment 72 2) } } }    出力例   asdf</description>
+    </item>
+    
+    <item>
+      <title>絶対音感について</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/ja/blog/other/about-absolute-pitch/</link>
+      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/ja/blog/other/about-absolute-pitch/</guid>
+      <description>音階と音の周波数   次の表に，ピアノの鍵盤における88のキーに相応する音の周波数を示す。
+   鍵盤番号 周波数(Hz) 階名 音名     1 27.500 ラ A0（イ）   …      37 220.000 ラ A3（イ）   38 233.082  A#3   39 246.942 シ B3（ロ）   40 261.626 ド C4（ハ）   41 277.183  C#4   42 293.665 レ D4（ニ）   43 311.127  D#4   44 329.</description>
+    </item>
+    
+    <item>
+      <title>Jetson NanoにOpenCVをインストール</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/ja/blog/opencv/install-opencv-on-jetson-nano/</link>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/ja/blog/opencv/install-opencv-on-jetson-nano/</guid>
+      <description>swapファイルを生成   コンパイル途中にメモリー不足などの問題を防ぐため， swapという交換用ファイルを任意のパスに生成しておく。 このファイルは，OS再起動の後に自動的に消えるが， 全てのインストールが終わったら，手作業で交換用ファイルを削除しても良い。
+$ fallocate -l 4G swapfile $ chmod 600 swapfile $ mkswap swapfile $ sudo swapon swapfile $ swapon -s    インストールのスクリプトを生成   OpenCV 4.0.0をインストールためのリンク
+ 以上は，OpenCV 4.0.0をインストールためのリンクで，ここでは，OpenCV 4.1.0をインストールしたいため， バージョン番号の部分に少し手を加える。
+#!/bin/bash # # Copyright (c) 2018, NVIDIA CORPORATION. All rights reserved. # # NVIDIA Corporation and its licensors retain all intellectual property # and proprietary rights in and to this software, related documentation # and any modifications thereto.</description>
+    </item>
+    
+    <item>
+      <title>GnutlsをインストールしてソースからEmacsをコンパイル</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/ja/blog/emacs/install-gnutls-and-compile-emacs-from-source/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/ja/blog/emacs/install-gnutls-and-compile-emacs-from-source/</guid>
+      <description>今の環境にGnutlsがない場合   今の環境にGnutlsがない場合は，ソースからEmacs1をコンパイルする時に以下の設定が必要。
+./configure --with-gnutls=no   他にも依存されるライブラリーなどが足りない場合は，例えば以下のように設定をする。
+bash configure --prefix=$HOME/.local --with-gif=no --with-gnutls=no   これでデフォルトのパスとかへの権限や，ライブラリーが足りない場合でもソースからインストール出来てしまう。
+  潜在的なリスク   以上のようにEmacsを $HOME/.local へのインストールが出来てしまうけど， Gnutlsがサポートされないゆえに，Emacsでインターネットが必要となった時にhttpsが使えない。
+ Emacsが初期化される時だけなら，設定ファイルの中のMelpaリンクを全てhttpに変更すれば済ませるが， セキュリティ上にあまりお勧めができないし，今後Emacsの拡張機能を使う時のリスクにもなる。
+ 例えば， google-translate のEmacs拡張パッケージを使う場合は， Emacsのelpaフォルダーにある google-translate の中の全ての *.el にある https を http に書き換えても， 実際に使う時に一部の機能にとっては https が必須で翻訳が正常に機能しない恐れがある。
+ ここでは， *.el を変更した後に， *.elc を削除しないと変更が反映されない可能性がある。
+  Gnutlsをインストール   以上の問題を解決するもっとも簡単な方法としては， 今の環境にGnutlsをインストールしてからソースからもう一度Emacsをインストールすること。
+ OpenSUSEを例として，以下のコマンドでGnutlsをインストールする。
+sudo zypper install gnutls    その他の問題  checking for library containing tputs.</description>
+    </item>
+    
+    <item>
+      <title>僕のシェル移行記録</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/ja/blog/shell/my-shell-migration-record/</link>
+      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/ja/blog/shell/my-shell-migration-record/</guid>
+      <description>bashからzshに   虽然我使用zsh shell两周后就换到fish shell了（关于fish shell下面有专门介绍）， 但这并不否认zsh shell仍然是个很好的shell。 你可以通过下面的方式从任意的shell切换至zsh shell。
+  安装zsh时通过下面的指令：
+  brew install zsh (MacOS) apt install zsh (Ubuntu / Linux Mint)    如果你想要知道现在系统裡已经安装好的shell，输入下面的指令：
+  cat /etc/shells    如何将zsh作为你默认的shell呢？，输入下面的指令：
+  chsh -s /usr/local/bin/zsh    关于配置文件的读取错误
+  shell脚本解释出错时可以查看一下当前所使用的=sh=路径， 比如有可能是=sh=指向了=dash=导致出错。 通过下面的语句查看。
+ls -l `which sh`    脚本解释器在语法上的不同点
+  从传统的bash等shell换到zsh时会发现集合的第一个元素的索引是从1开始的， 如果希望从0开始，在配置文件中配置下面语句即可。
+  Fix array index for zsh:</description>
+    </item>
+    
+    <item>
+      <title>USBデバイスからLinux Mintをインストール</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/ja/blog/linux/install-linux-mint-from-the-usb-device/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/ja/blog/linux/install-linux-mint-from-the-usb-device/</guid>
+      <description>  *重要*：在开始下面的工作之前，首先确保U盘没有存任何东西， 或者里面没有放任何的重要数据（因为烧录会导致数据丢失）， 同时电脑上已经准备好空的分区（安装到的目标分区的数据也会被抹掉）。
+Linux Mint1をインストールするためのUSBデバイスを用意する   首先准备一个usb设备，可以是u盘也可以是usb的移动硬盘， 之后会在这个上面写入供安装linux mint的安装程序。
+  如果使用的是windows操作系统，那么点击 这里 来查看ubuntu官方的教程以创建一个可以安装Linux的USB设备。
+  *注意*：上面的教程是教你如何製作一个用于安装Ubuntu的USB设备， 安装linux mint的情况下仅需要把涉及到iso文件的地方换成Linux Mint的iso文件，其他地方完全相同。
+  其中会用到的软件叫做rufus，上面的教程裡面也有提到，点击 这里 打开rufus的官方网站，你也可以点击 这里 直接下载rufus。
+    Linux MintのISOファイル   前一节提到的linux mint的iso文件需要从下面的地方获取。点击 这里 打开linux mint的官方网站。 或者也可以点击 这里 直接下载Linux Mint 19.1版本。
+  1 Linux MintのLogo
+    </description>
+    </item>
+    
+    <item>
+      <title>Jekyllで作成したブログをGithubに公開</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/ja/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/ja/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/</guid>
+      <description>Jekyll1をインストール   JekyllがRubyで書いた静的なサイトジェネレーター。 以下は公式サイトの紹介文。
+ Jekyll is a static site generator. You give it text written in your favorite markup language and it uses layouts to create a static website. You can tweak how you want the site URLs to look, what data gets displayed on the site, and more. –Jekyll2
+  Jekyllをインストールする際に， まずはRubyのパッケージ管理ツールを入れておくとあとは便利。 よく使われているRubyのパッケージ管理ツールが gem で， Ubuntuなどのシステムにおいて， 以下のコマンドで gem が同時にインストールされる。
+apt install ruby-dev   gem をインストールして， PATH の環境変数にちゃんと gem が入っていれば， gem を使っていろんなRubyのパッケージを入れることが可能になる。 もし rbenv などのバーチャル環境管理ツールを使っていれば， 実行可能な gem があればあとは同じ。 以下のコマンドでJekyllを入れる。簡単だね。</description>
+    </item>
+    
+  </channel>
+</rss>

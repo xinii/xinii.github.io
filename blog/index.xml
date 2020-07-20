@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on xin iDEA iNNATA</title>
+    <link>https://xinii.github.io/hugo-site-slim-public/blog/</link>
+    <description>Recent content in Blog on xin iDEA iNNATA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://xinii.github.io/hugo-site-slim-public/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Some Windows registry settings that can help you work more efficiently</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/blog/windows/several-windows-registry-configurations/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/blog/windows/several-windows-registry-configurations/</guid>
+      <description>Registry settings for Japanese keyboard layout  About keyboard scan code   First, what is the keyboard scan code? Let us look at the definition on Wikipedia.
+ A scancode (or scan code) is the data that most computer keyboards send to a computer to report which keys have been pressed. A number, or sequence of numbers, is assigned to each key on the keyboard. - Wikipedia
+   Example of keyboard scan code1     Key Code     RCtrl 1D E0   LAlt 38 00   RAlt 38 E0   ESC 01 00   Insert 52 E0   Enter 1C 00   Caps 3A 00   Space 39 00   Muhenkan key 7B 00   Henkan key 79 00      Perform keyboard scan code mapping in the registry    First, press the Windows logo key + R, enter regedit and then press Enter to open the Windows Registry Editor.</description>
+    </item>
+    
+    <item>
+      <title>Some works after Windows 10 clean installation</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/blog/windows/some-installations-for-windows-10/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/blog/windows/some-installations-for-windows-10/</guid>
+      <description>Activation of your Windows 10   Open the cmd of Windows.
+slmgr -ipk {your product key} slmgr -skms {kms server address of your company} slmgr -ato    Installation of some useful tools    Msys2
+  AutoHotKey
+  Ricty
+    Configuration of msys2  pacman -S git fish tmux emacs gcc python cd ~ git clone https://github.com/xinii/xinconfig .xinconfig cd .xinconfig .</description>
+    </item>
+    
+    <item>
+      <title>Add apt repository for Fish and Emacs</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/blog/linux/add-apt-repository-for-fish-and-emacs/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/blog/linux/add-apt-repository-for-fish-and-emacs/</guid>
+      <description> Command to be use  add-apt-repository    No this command? Do this first  apt install software-properties-common    Process  Register repository  add-apt-repository ppa:kelleyk/emacs apt-add-repository ppa:fish-shell/release-3    Refresh repository  apt update    Installation  apt install emacs26 apt install fish      </description>
+    </item>
+    
+    <item>
+      <title>Several SSH configurations</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/blog/ssh/several-ssh-configurations/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/blog/ssh/several-ssh-configurations/</guid>
+      <description>SSH interruption phenomenon    When logging in to a remote server with ssh, Write failed: Broken pipe may be displayed and the connection may be broken.
+  It is necessary to change the ssh setting on the client side or the server side, because ssh is automatically disconnected by a timeout if it is not operated for a while.
+Remedy     Deal on the client side</description>
+    </item>
+    
+    <item>
+      <title>How to install OpenCV on Jetson Nano?</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/blog/opencv/install-opencv-on-jetson-nano/</link>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/blog/opencv/install-opencv-on-jetson-nano/</guid>
+      <description>Generate swap file   To prevent errors due to insufficient memory during compilation, create a swap file firstly, and store it to somewhere you know. After OS restarting, the swap space will disappear, or you can manually delete this file after the completion of the following compilation and other work.
+$ fallocate -l 4G swapfile $ chmod 600 swapfile $ mkswap swapfile $ sudo swapon swapfile $ swapon -s    Generate installation script   The original link of the script to install the OpenCV 4.</description>
+    </item>
+    
+    <item>
+      <title>Install Gnutls and compile Emacs from source</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/blog/emacs/install-gnutls-and-compile-emacs-from-source/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/blog/emacs/install-gnutls-and-compile-emacs-from-source/</guid>
+      <description>The lack of Gnutls in the environment   If the current environment lacks Gnutls, the following configuration is required before compiling and installing the Emacs1 source code.
+./configure --with-gnutls=no   Or specify the installation directory at the same time, add the option to ignore other dependent libraries that are still missing, such as the following configuration.
+bash configure --prefix=$HOME/.local --with-gif=no --with-gnutls=no   In this way, the configuration and installation can be carried out smoothly in the absence of permission to the default installation path, or the lack of various dependent libraries.</description>
+    </item>
+    
+    <item>
+      <title>My shell migration record</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/blog/shell/my-shell-migration-record/</link>
+      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/blog/shell/my-shell-migration-record/</guid>
+      <description>From bash to zsh   Although I switched to the fish shell two weeks after using the zsh shell (the fish shell has a special introduction below), this does not deny that the zsh shell is still a good shell. You can switch from any shell to zsh shell in the following way.
+  Use the following instructions when installing zsh,
+  brew install zsh (MacOS) apt install zsh (Ubuntu / Linux Mint)    If you want to know the shell currently installed in the system, enter the following command,</description>
+    </item>
+    
+    <item>
+      <title>Install Linux Mint from USB device</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/blog/linux/install-linux-mint-from-the-usb-device/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/blog/linux/install-linux-mint-from-the-usb-device/</guid>
+      <description>Important: Before starting the following work, first make sure nothing is stored in the USB device, Or there is no important data in it (because burning will cause data loss), At the same time, an empty partition has been prepared on the computer (the data of the target partition installed will also be erased).
+Prepare a USB device for installing Linux Mint1   首先准备一个USB设备，可以是U盘也可以是USB的移动硬盘， 之后会在这个上面写入供安装Linux Mint的安装程序。
+  如果使用的是Windows操作系统，那么点击 这里来查看Ubuntu官方的教程以创建一个可以安装Linux的USB设备。</description>
+    </item>
+    
+    <item>
+      <title>Create a blog via Jekyll and post to Github</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/</guid>
+      <description>Install Jekyll   Jekyll1 is a static website generation framework written in Ruby language. The following is the official website introduction.
+ Jekyll is a static site generator. You give it text written in your favorite markup language and it uses layouts to create a static website. You can tweak how you want the site URLs to look, what data gets displayed on the site, and more. –Jekyll2</description>
+    </item>
+    
+  </channel>
+</rss>
