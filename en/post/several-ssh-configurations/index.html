@@ -377,7 +377,13 @@
 
 
 
-  <script data-ad-client="ca-pub-9872583441136696" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script type="text/javascript">
+ if ( window.location.host != "xinii.cf" ) {
+     window.location.replace("https://xinii.cf" + window.location.pathname);
+ }
+</script>
+
+<script src="https://www.googleoptimize.com/optimize.js?id=OPT-MQBJVR6"></script>
 
 
   <title>Several SSH configurations | xin iDEA iNNATA</title>
@@ -401,7 +407,7 @@
       <div id="search-box">
         
         <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+               autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control" style="font-size: 16px; line-height: 120%;">
         
       </div>
 
@@ -428,12 +434,6 @@
 
 
 
-
-<style type="text/css">
- .fix-width{
-     width: 25px;
- }
-</style>
 
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
@@ -487,7 +487,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/en/#xinconfig"><span><span class='fas fa-home fix-width'></span>Home</span></a>
         </li>
 
@@ -516,7 +516,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/en/#about"><span><span class='far fa-address-card fix-width'></span>About</span></a>
         </li>
 
@@ -545,7 +545,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/en/#posts"><span><span class='far fa-newspaper fix-width'></span>Posts</span></a>
         </li>
 
@@ -574,7 +574,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/en/#featured"><span><span class='fas fa-book-open fix-width'></span>Publications</span></a>
         </li>
 
@@ -603,7 +603,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/en/#categories"><span><span class='fab fa-hotjar fix-width'></span>Popular Topics</span></a>
         </li>
 
@@ -632,7 +632,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/en/#contact"><span><span class='far fa-envelope fix-width'></span>Contact</span></a>
         </li>
 
@@ -692,6 +692,9 @@
           
           <a href='/en/admin' class="dropdown-item">
             <span class="fas fa-key fix-width"></span>Login
+          </a>
+          <a href='https://ise.teracloud.jp/dav/web/notebook/index.html' class="dropdown-item">
+            <span class="far fa-sticky-note fix-width"></span>Notebook
           </a>
 
         </div>
@@ -861,39 +864,34 @@
 </li>
 </ul>
 </nav>
-
 </p>
+<div id="outline-container-headline-1" class="outline-2">
 <h2 id="headline-1">
 SSH interruption phenomenon
 </h2>
+<div id="outline-text-headline-1" class="outline-text-2">
 <ul>
 <li>
-<p>
-When logging in to a remote server with ssh,
+<p>When logging in to a remote server with ssh,
 <code class="verbatim">Write failed: Broken pipe</code> may be displayed and the connection may be
-broken.
-</p>
+broken.</p>
 </li>
 <li>
-<p>
-It is necessary to change the ssh setting on the client side or the
+<p>It is necessary to change the ssh setting on the client side or the
 server side, because ssh is automatically disconnected by a timeout if
-it is not operated for a while.
-</p>
+it is not operated for a while.</p>
+<div id="outline-container-headline-2" class="outline-3">
 <h3 id="headline-2">
 Remedy
 </h3>
+</div>
 </li>
 <li>
-<p>
-Deal on the client side
-</p>
+<p>Deal on the client side</p>
 </li>
 </ul>
-<p>
-Describe the following contents in <code class="verbatim">/etc/ssh/ssh_config</code> or
-<code class="verbatim">~/.ssh/config</code>
-</p>
+<p>Describe the following contents in <code class="verbatim">/etc/ssh/ssh_config</code> or
+<code class="verbatim">~/.ssh/config</code></p>
 <div class="src src-sh">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  ServerAliveInterval <span style="color:#ae81ff">15</span>
   ServerAliveCountMax <span style="color:#ae81ff">10</span></code></pre></div>
@@ -901,72 +899,94 @@ Describe the following contents in <code class="verbatim">/etc/ssh/ssh_config</c
 <p>
 With this setting, 10 times response confirmation will send to the
 server every 15 seconds, and if there is still no response, it times
-out.
-</p>
+out.</p>
 <ul>
 <li>
-<p>
-Deal on the server side
-</p>
+<p>Deal on the server side</p>
 </li>
 </ul>
-<p>
-Describe the following contents in <code class="verbatim">/etc/ssh/sshd_config</code>
-</p>
+<p>Describe the following contents in <code class="verbatim">/etc/ssh/sshd_config</code></p>
 <div class="src src-sh">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  ClientAliveInterval <span style="color:#ae81ff">30</span>
   ClientAliveCountMax <span style="color:#ae81ff">5</span></code></pre></div>
 </div>
 <p>
 With this setting, 5 times response confirmation will send to the client
-every 30 seconds, and if there is still no response, it times out.
-</p>
+every 30 seconds, and if there is still no response, it times out.</p>
+<div id="outline-container-headline-3" class="outline-3">
 <h3 id="headline-3">
 One more thing
 </h3>
+<div id="outline-text-headline-3" class="outline-text-3">
 <p>
 It is recommended to use tools such as tmux or screen, so that even if
 the connection is lost halfway, you can log in to the remote server
-again and attach the previous session.
-</p>
+again and attach the previous session.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-2">
 <h2 id="headline-4">
 SSH daemon on android by termux
 </h2>
+<div id="outline-text-headline-4" class="outline-text-2">
+<div id="outline-container-headline-5" class="outline-3">
 <h3 id="headline-5">
 Installation
 </h3>
+<div id="outline-text-headline-5" class="outline-text-3">
 <div class="src src-sh">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  apt install openssh</code></pre></div>
 </div>
+</div>
+</div>
+<div id="outline-container-headline-6" class="outline-3">
 <h3 id="headline-6">
 Setting the key
 </h3>
+<div id="outline-text-headline-6" class="outline-text-3">
 <div class="src src-sh">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  ssh-keygen
   cat ~/.ssh/id_rsa.pub &gt; ~/.ssh/authorized_keys
   chmod <span style="color:#ae81ff">600</span> ~/.ssh/authorized_keys
   chmod <span style="color:#ae81ff">700</span> ~/.ssh</code></pre></div>
 </div>
+</div>
+</div>
+<div id="outline-container-headline-7" class="outline-3">
 <h3 id="headline-7">
 Start daemon in debug mode
 </h3>
+<div id="outline-text-headline-7" class="outline-text-3">
 <div class="src src-sh">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  sshd -d</code></pre></div>
 </div>
+</div>
+</div>
+<div id="outline-container-headline-8" class="outline-3">
 <h3 id="headline-8">
 Start daemon
 </h3>
+<div id="outline-text-headline-8" class="outline-text-3">
 <div class="src src-sh">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  sshd</code></pre></div>
 </div>
+</div>
+</div>
+<div id="outline-container-headline-9" class="outline-3">
 <h3 id="headline-9">
 Login on the PC side
 </h3>
+<div id="outline-text-headline-9" class="outline-text-3">
 <p>
 Set the private key <code class="verbatim">~/.ssh/id_rsa</code> generated on the android side in the
 SSH client of the PC side, and connect to the server on android with
-specifying IP and port <code class="verbatim">8022</code> and without a username.
-</p>
+specifying IP and port <code class="verbatim">8022</code> and without a username.</p>
+</div>
+</div>
+</div>
+</div>
 
     </div>
 
@@ -981,7 +1001,7 @@ specifying IP and port <code class="verbatim">8022</code> and without a username
   
 
 <p class="edit-page">
-  <a href="https://github.com/xinii/hugo-site-academic/edit/master/content/en/post/ssh/index.org">
+  <a class="btn btn-sm btn-outline-secondary" href="https://github.com/xinii/hugo-site-academic/edit/master/content/en/post/ssh/index.org">
     <i class="fas fa-pen pr-2"></i>Edit this page
   </a>
 </p>
@@ -1088,12 +1108,6 @@ specifying IP and port <code class="verbatim">8022</code> and without a username
   </ul>
 </div>
 
-
-
-<script type="text/javascript">
- var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
-</script>
-<script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script>
 
 
 
@@ -1323,6 +1337,37 @@ specifying IP and port <code class="verbatim">8022</code> and without a username
 
 
 
+<div class="content-widget-hr" style="text-align:center">
+  <script type="text/javascript">
+   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+       
+
+       
+       var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
+       document.write('\x3Cscript type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js">\x3C/script>');
+       document.write('<br>');
+
+       
+       imobile_tag_ver = "0.3";
+       imobile_pid = "73400";
+       imobile_asid = "1711292";
+       imobile_type = "inline";
+       document.write('\x3Cscript type="text/javascript" src="https://spad.i-mobile.co.jp/script/adssp.js?20110215">\x3C/script>');
+       
+   } else {
+       
+
+       
+       imobile_pid = "73400";
+       imobile_asid = "1711291";
+       imobile_width = 468;
+       imobile_height = 60;
+       document.write('\x3Cscript type="text/javascript" src="https://spdeliver.i-mobile.co.jp/script/ads.js?20101001">\x3C/script>');
+   }
+  </script>
+</div>
+
+
 <section id="comments">
   
     
@@ -1353,7 +1398,6 @@ specifying IP and port <code class="verbatim">8022</code> and without a username
 
 
 
-
 <div class="article-widget">
   
 <div class="post-nav">
@@ -1375,7 +1419,6 @@ specifying IP and port <code class="verbatim">8022</code> and without a username
 </div>
 
 </div>
-
 
 
 
@@ -1505,12 +1548,6 @@ specifying IP and port <code class="verbatim">8022</code> and without a username
      pangu.autoSpacingPage();
  });
 </script>
-
-
-<script type="text/javascript">
- var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
-</script>
-<script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script>
 
 
 

@@ -377,7 +377,13 @@
 
 
 
-  <script data-ad-client="ca-pub-9872583441136696" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script type="text/javascript">
+ if ( window.location.host != "xinii.cf" ) {
+     window.location.replace("https://xinii.cf" + window.location.pathname);
+ }
+</script>
+
+<script src="https://www.googleoptimize.com/optimize.js?id=OPT-MQBJVR6"></script>
 
 
   <title>Jekyllで作成したブログをGithubに公開 | xin iDEA iNNATA</title>
@@ -401,7 +407,7 @@
       <div id="search-box">
         
         <input name="q" id="search-query" placeholder="検索..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+               autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control" style="font-size: 16px; line-height: 120%;">
         
       </div>
 
@@ -428,12 +434,6 @@
 
 
 
-
-<style type="text/css">
- .fix-width{
-     width: 25px;
- }
-</style>
 
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
@@ -487,7 +487,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/ja/#xinconfig"><span><span class='fas fa-home fix-width'></span>ホーム</span></a>
         </li>
 
@@ -516,7 +516,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/ja/#about"><span><span class='far fa-address-card fix-width'></span>私について</span></a>
         </li>
 
@@ -545,7 +545,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/ja/#posts"><span><span class='far fa-newspaper fix-width'></span>最近の投稿</span></a>
         </li>
 
@@ -574,7 +574,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/ja/#featured"><span><span class='fas fa-book-open fix-width'></span>発表文献</span></a>
         </li>
 
@@ -603,7 +603,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/ja/#categories"><span><span class='fab fa-hotjar fix-width'></span>人気キーワード</span></a>
         </li>
 
@@ -632,7 +632,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/ja/#contact"><span><span class='far fa-envelope fix-width'></span>お問い合わせ</span></a>
         </li>
 
@@ -692,6 +692,9 @@
           
           <a href='/ja/admin' class="dropdown-item">
             <span class="fas fa-key fix-width"></span>ログイン
+          </a>
+          <a href='https://ise.teracloud.jp/dav/web/notebook/index.html' class="dropdown-item">
+            <span class="far fa-sticky-note fix-width"></span>ノートブック
           </a>
 
         </div>
@@ -843,30 +846,27 @@
 </li>
 </ul>
 </nav>
-
 </p>
+<div id="outline-container-headline-1" class="outline-2">
 <h2 id="headline-1">
 Jekyllをインストール
 </h2>
+<div id="outline-text-headline-1" class="outline-text-2">
 <p>
 JekyllがRubyで書いた静的なサイトジェネレーター。
-以下は公式サイトの紹介文。
-</p>
+以下は公式サイトの紹介文。</p>
 <blockquote>
-<p>
-Jekyll is a static site generator. You give it text written in your
+<p>Jekyll is a static site generator. You give it text written in your
   favorite markup language and it uses layouts to create a static
   website. You can tweak how you want the site URLs to look, what data
-  gets displayed on the site, and more. –Jekyll<sup class="footnote-reference"><a id="footnote-reference-1" href="#footnote-1">1</a></sup>
-</p>
+  gets displayed on the site, and more. –Jekyll<sup class="footnote-reference"><a id="footnote-reference-1" href="#footnote-1">1</a></sup></p>
 </blockquote>
 <p>
 Jekyllをインストールする際に，
 まずはRubyのパッケージ管理ツールを入れておくとあとは便利。
 よく使われているRubyのパッケージ管理ツールが <code>gem</code> で，
 Ubuntuなどのシステムにおいて，
-以下のコマンドで <code>gem</code> が同時にインストールされる。
-</p>
+以下のコマンドで <code>gem</code> が同時にインストールされる。</p>
 <div class="src src-sh">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  apt install ruby-dev</code></pre></div>
 </div>
@@ -875,65 +875,57 @@ Ubuntuなどのシステムにおいて，
  <code>gem</code> を使っていろんなRubyのパッケージを入れることが可能になる。
 もし <code>rbenv</code> などのバーチャル環境管理ツールを使っていれば，
 実行可能な <code>gem</code> があればあとは同じ。
-以下のコマンドでJekyllを入れる。簡単だね。
-</p>
+以下のコマンドでJekyllを入れる。簡単だね。</p>
 <div class="src src-sh">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  gem install jekyll</code></pre></div>
 </div>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-2">
 <h2 id="headline-2">
 Githubに公開
 </h2>
+<div id="outline-text-headline-2" class="outline-text-2">
 <p>
 Jekyllをインストールしたら，
 とりあえずJekyllで作った何かしらをGithubに公開して見てみたいだね。
-気持ちがわかる。
-</p>
+気持ちがわかる。</p>
 <p>
 そうしたら，記事などを色々書き始める前に，空のブログを一旦Githubに公開しよう！
-まずローカルでブログを管理したい場所に以下のコマンドを叩く。
-</p>
+まずローカルでブログを管理したい場所に以下のコマンドを叩く。</p>
 <div class="src src-sh">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  jekyll new folder-name-for-your-blog</code></pre></div>
 </div>
 <p>
-そうすると，カレントフォルダーに <code>folder-name-for-your-blog</code> という名前のサブフォルダーが出来てしまう。
-</p>
+そうすると，カレントフォルダーに <code>folder-name-for-your-blog</code> という名前のサブフォルダーが出来てしまう。</p>
 <p>
 そして，Githubのリポジトリのページにおいて，
-<code>your-user-name-of-github.github.io</code> という名前のリポジトリを作っておく。
-</p>
+<code>your-user-name-of-github.github.io</code> という名前のリポジトリを作っておく。</p>
 <p>
 新しいリポを作ったら， <code>git</code> でどう <code>push</code> するかとかのヒントが出てくると思うので，
-それに従ってさっき作った <code>folder-name-for-your-blog</code> フォルダーの内容を <code>your-user-name-of-github.github.io</code> に <code>push</code> すればおしまい。
-</p>
+それに従ってさっき作った <code>folder-name-for-your-blog</code> フォルダーの内容を <code>your-user-name-of-github.github.io</code> に <code>push</code> すればおしまい。</p>
 <p>
 数分後に，ブラウザを使って <code>your-user-name-of-github.github.io</code> にアクセスしてみれば，
-何かしらのJekyllページが出てくるはず。
-</p>
+何かしらのJekyllページが出てくるはず。</p>
 <p>
-<del>このブログでも以上の方法で作っている。</del>
-</p>
+<del>このブログでも以上の方法で作っている。</del></p>
 <p>
-（2020年6月14日追記）
-</p>
+（2020年6月14日追記）</p>
 <p>
-<a href="https://xinii.github.io">このブログ</a>は現在 <code>hugo</code> という静的なサイトジェネレーターで作っている。
-</p>
+<a href="https://xinii.github.io">このブログ</a>は現在 <code>hugo</code> という静的なサイトジェネレーターで作っている。</p>
 <p>
-古いブログを参考していただく場合は，<a href="https://xinii.github.io/jekyll-blog">ここ</a>をクリックしてください。
-</p>
+古いブログを参考していただく場合は，<a href="https://xinii.github.io/jekyll-blog">ここ</a>をクリックしてください。</p>
 <p>
-それでは。
-</p>
+それでは。</p>
+</div>
+</div>
 <div class="footnotes">
 <hr class="footnotes-separatator">
 <div class="footnote-definitions">
 <div class="footnote-definition">
 <sup id="footnote-1"><a href="#footnote-reference-1">1</a></sup>
 <div class="footnote-body">
-<p>
-<a href="https://jekyllrb.com/docs/">Jekyllのオフィシャルサイト</a>
-</p>
+<p><a href="https://jekyllrb.com/docs/">Jekyllのオフィシャルサイト</a></p>
 </div>
 </div>
 </div>
@@ -952,8 +944,8 @@ Jekyllをインストールしたら，
   
 
 <p class="edit-page">
-  <a href="https://github.com/xinii/hugo-site-academic/edit/master/content/ja/post/jekyll-github/index.org">
-    <i class="fas fa-pen pr-2"></i>Edit this page
+  <a class="btn btn-sm btn-outline-secondary" href="https://github.com/xinii/hugo-site-academic/edit/master/content/ja/post/jekyll-github/index.org">
+    <i class="fas fa-pen pr-2"></i>このページを編集
   </a>
 </p>
 
@@ -1057,12 +1049,6 @@ Jekyllをインストールしたら，
   </ul>
 </div>
 
-
-
-<script type="text/javascript">
- var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
-</script>
-<script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script>
 
 
 
@@ -1292,6 +1278,37 @@ Jekyllをインストールしたら，
 
 
 
+<div class="content-widget-hr" style="text-align:center">
+  <script type="text/javascript">
+   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+       
+
+       
+       var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
+       document.write('\x3Cscript type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js">\x3C/script>');
+       document.write('<br>');
+
+       
+       imobile_tag_ver = "0.3";
+       imobile_pid = "73400";
+       imobile_asid = "1711292";
+       imobile_type = "inline";
+       document.write('\x3Cscript type="text/javascript" src="https://spad.i-mobile.co.jp/script/adssp.js?20110215">\x3C/script>');
+       
+   } else {
+       
+
+       
+       imobile_pid = "73400";
+       imobile_asid = "1711291";
+       imobile_width = 468;
+       imobile_height = 60;
+       document.write('\x3Cscript type="text/javascript" src="https://spdeliver.i-mobile.co.jp/script/ads.js?20101001">\x3C/script>');
+   }
+  </script>
+</div>
+
+
 <section id="comments">
   
     
@@ -1322,7 +1339,6 @@ Jekyllをインストールしたら，
 
 
 
-
 <div class="article-widget">
   
 <div class="post-nav">
@@ -1338,7 +1354,6 @@ Jekyllをインストールしたら，
 </div>
 
 </div>
-
 
 
 
@@ -1468,12 +1483,6 @@ Jekyllをインストールしたら，
      pangu.autoSpacingPage();
  });
 </script>
-
-
-<script type="text/javascript">
- var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
-</script>
-<script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script>
 
 
 

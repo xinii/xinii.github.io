@@ -38,42 +38,44 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 Windows 10のアクティベーション
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
-&lt;code&gt;cmd&lt;/code&gt; を開く
-&lt;/p&gt;
+&lt;code&gt;cmd&lt;/code&gt; を開く&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;slmgr -ipk &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;your product key&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
 slmgr -skms &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;kms server address of your company&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
 slmgr -ato&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-2&#34;&gt;
 いくつか便利のツールをインストールする
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://www.msys2.org/&#34;&gt;Msys2&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.msys2.org/&#34;&gt;Msys2&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://www.autohotkey.com/&#34;&gt;AutoHotKey&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.autohotkey.com/&#34;&gt;AutoHotKey&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://github.com/edihbrandon/RictyDiminished&#34;&gt;Ricty&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/edihbrandon/RictyDiminished&#34;&gt;Ricty&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-3&#34;&gt;
 msys2を設定する
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;pacman -S git fish tmux emacs gcc python
 cd ~
@@ -94,6 +96,8 @@ cat &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;path to your pub key
 chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;600&lt;/span&gt; ~/.ssh/authorized_keys
 chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;700&lt;/span&gt; ~/.ssh
 /usr/bin/sshd&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 </description>
     </item>
@@ -134,27 +138,31 @@ chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;700&lt;/span&gt; ~/.ssh
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 日本語キーボードのレイアウトに関するレジストリー設定
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-2&#34;&gt;
 スキャンコードについて
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
-まずは，ウィキペディアに載せたスキャンコードの定義を見よう
-&lt;/p&gt;
+まずは，ウィキペディアに載せたスキャンコードの定義を見よう&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;
-スキャンコード (scancode)
+&lt;p&gt;スキャンコード (scancode)
   とは、コンピュータのキーボードのキーが押されたり離されたりしたときに、
-  キーボードからCPUに送られるコード（符号）のこと。走査コード（そうさコード）ともいう。 - &lt;a href=&#34;https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89&#34;&gt;Wikipedia&lt;/a&gt;
-&lt;/p&gt;
+  キーボードからCPUに送られるコード（符号）のこと。走査コード（そうさコード）ともいう。 - &lt;a href=&#34;https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89&#34;&gt;Wikipedia&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-3&#34;&gt;
 スキャンコードの例&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -205,36 +213,33 @@ chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;700&lt;/span&gt; ~/.ssh
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-4&#34;&gt;
 レジストリーでスキャンコードのマッピングを行うためには
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-まず， &lt;code class=&#34;verbatim&#34;&gt;Win key&lt;/code&gt; + &lt;code class=&#34;verbatim&#34;&gt;R&lt;/code&gt; を押して &lt;code class=&#34;verbatim&#34;&gt;regedit&lt;/code&gt; を入力したら &lt;code class=&#34;verbatim&#34;&gt;Enter&lt;/code&gt; キーを押す。
+&lt;p&gt;まず， &lt;code class=&#34;verbatim&#34;&gt;Win key&lt;/code&gt; + &lt;code class=&#34;verbatim&#34;&gt;R&lt;/code&gt; を押して &lt;code class=&#34;verbatim&#34;&gt;regedit&lt;/code&gt; を入力したら &lt;code class=&#34;verbatim&#34;&gt;Enter&lt;/code&gt; キーを押す。
 そうすると，Windowsのレジストリーエディターが開かれたはず。
-そこでレジストリーエディターで以下の場所を開く。
-&lt;/p&gt;
+そこでレジストリーエディターで以下の場所を開く。&lt;/p&gt;
 &lt;div class=&#34;src src-sample&#34;&gt;
 &lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;  コンピューター\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-次に，右クリックしたら，「新規 - バイナリ値(B) - Scancode
-Map」の順に「Scancode Map」というバイナリキーを作る。
-&lt;/p&gt;
+&lt;p&gt;次に，右クリックしたら，「新規 - バイナリ値(B) - Scancode
+Map」の順に「Scancode Map」というバイナリキーを作る。&lt;/p&gt;
 &lt;p&gt;
 「Scancode Map」のバリュー（マッピングのルール）については，
 以下のような僕の設定を参考していじってみればいいと思う。
 ただし，「バージョン」，「フラグ」と「終端ヌル値」の部分は残る必要がある。
-あと，「マッピング数」については，「終端ヌル値」も含めて設定したマッピングルールの数を数えて書けば良い。
-&lt;/p&gt;
+あと，「マッピング数」については，「終端ヌル値」も含めて設定したマッピングルールの数を数えて書けば良い。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-Logicool K380のための自分用レイアウト
-&lt;/p&gt;
+&lt;p&gt;Logicool K380のための自分用レイアウト&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -292,9 +297,7 @@ Logicool K380のための自分用レイアウト
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-FILCO Majestouch MINILA Airのための自分用レイアウト
-&lt;/p&gt;
+&lt;p&gt;FILCO Majestouch MINILA Airのための自分用レイアウト&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -359,38 +362,38 @@ FILCO Majestouch MINILA Airのための自分用レイアウト
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-ここで，「Pause/Break」がいつくかのコードで組み合わせたもので，
+&lt;p&gt;ここで，「Pause/Break」がいつくかのコードで組み合わせたもので，
 「NumLock」のコードも入っているため，
-以上のように設定する時に少し工夫をした。 以下も参考
-&lt;/p&gt;
+以上のように設定する時に少し工夫をした。 以下も参考&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;
-Pause &lt;code&gt;0xE1:0x1D:0x45&lt;/code&gt; [ 84key &lt;code&gt;Ctrl&lt;/code&gt; (0x1D) + &lt;code&gt;NumLock&lt;/code&gt; (0x45)], no auto repeat,
-break code &lt;code&gt;0xE1:0x9D:0xC5&lt;/code&gt; - &lt;a href=&#34;https://seesaawiki.jp/w/smnb/d/Keyboard%20Scancode%20Map&#34;&gt;Keyboard Scancode Map&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;Pause &lt;code&gt;0xE1:0x1D:0x45&lt;/code&gt; [ 84key &lt;code&gt;Ctrl&lt;/code&gt; (0x1D) + &lt;code&gt;NumLock&lt;/code&gt; (0x45)], no auto repeat,
+break code &lt;code&gt;0xE1:0x9D:0xC5&lt;/code&gt; - &lt;a href=&#34;https://seesaawiki.jp/w/smnb/d/Keyboard%20Scancode%20Map&#34;&gt;Keyboard Scancode Map&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-5&#34;&gt;
 キーボードレイアウトの種類を変更
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-6&#34;&gt;
 中国語入力において英語配列から日本語配列に
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-まずは，レジストリーエディターで以下の場所を開く
-&lt;/p&gt;
+&lt;p&gt;まずは，レジストリーエディターで以下の場所を開く&lt;/p&gt;
 &lt;div class=&#34;src src-sample&#34;&gt;
 &lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;  コンピューター\HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Keyboard Layouts\00000804&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-次に，以下のように変更をする
-&lt;/p&gt;
+&lt;p&gt;次に，以下のように変更をする&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -409,46 +412,52 @@ break code &lt;code&gt;0xE1:0x9D:0xC5&lt;/code&gt; - &lt;a href=&#34;https://see
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-7&#34;&gt;
 他の言語の入力法において〇〇配列から〇〇配列に
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-他の言語の入力法の場合は，レジストリーのパスの=00000804=のところを変更し，
-変更後の=***.DLL=の部分に適切な内容で入れ替えたら良いと思う。
-&lt;/p&gt;
+&lt;p&gt;他の言語の入力法の場合は，レジストリーのパスの=00000804=のところを変更し，
+変更後の=***.DLL=の部分に適切な内容で入れ替えたら良いと思う。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-8&#34;&gt;
 「マイコンピュータ」や「PC」の画面に不明なアイコンが出た時のレジストリー設定
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-以下のレジストリーのパスに，その不明なものを探して見つけたら見つけたものを削除すれば良い
-&lt;/p&gt;
+&lt;p&gt;以下のレジストリーのパスに，その不明なものを探して見つけたら見つけたものを削除すれば良い&lt;/p&gt;
 &lt;div class=&#34;src src-sample&#34;&gt;
 &lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;  コンピューター\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-9&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-9&#34;&gt;
 どうしてもローカルネットワークのNASとかに繋がらない時のレジストリー設定&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-2&#34; href=&#34;#footnote-2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-9&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-まずは，以下の場所を開く
-&lt;/p&gt;
+&lt;p&gt;まずは，以下の場所を開く&lt;/p&gt;
 &lt;div class=&#34;src src-sample&#34;&gt;
 &lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;  コンピューター\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-次に，下のような変更を行う
-&lt;/p&gt;
+&lt;p&gt;次に，下のような変更を行う&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -467,43 +476,39 @@ break code &lt;code&gt;0xE1:0x9D:0xC5&lt;/code&gt; - &lt;a href=&#34;https://see
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-10&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-10&#34;&gt;
 参考資料
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-10&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://usedoor.jp/howto/digital/pc/windows-uwagaki-keyboard-insert-key-mukouka/&#34;&gt;上書きモードになる『Insert』キーを無効化する方法&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://usedoor.jp/howto/digital/pc/windows-uwagaki-keyboard-insert-key-mukouka/&#34;&gt;上書きモードになる『Insert』キーを無効化する方法&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://tepp91.github.io/contents/misc/remap-keyboard-with-scancode-map.html&#34;&gt;Scancode Mapによるキー割り当ての変更&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://tepp91.github.io/contents/misc/remap-keyboard-with-scancode-map.html&#34;&gt;Scancode Mapによるキー割り当ての変更&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://answers.microsoft.com/en-us/windows/forum/windows_10-files/homegroup-removed-how-to-get-network-sharing-work/01277332-2916-4a68-853a-116696b20743&#34;&gt;Homegroup removed! How to get network sharing work with Windows 10 v1803&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://answers.microsoft.com/en-us/windows/forum/windows_10-files/homegroup-removed-how-to-get-network-sharing-work/01277332-2916-4a68-853a-116696b20743&#34;&gt;Homegroup removed! How to get network sharing work with Windows 10 v1803&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
 &lt;hr class=&#34;footnotes-separatator&#34;&gt;
 &lt;div class=&#34;footnote-definitions&#34;&gt;
 &lt;div class=&#34;footnote-definition&#34;&gt;
 &lt;sup id=&#34;footnote-1&#34;&gt;&lt;a href=&#34;#footnote-reference-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
 &lt;div class=&#34;footnote-body&#34;&gt;
-&lt;p&gt;
-&lt;a href=&#34;http://softwaretechnique.jp/OS_Development/Tips/scan_code_set1.html&#34;&gt;スキャンコード一覧（スキャンコードセット1）&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://softwaretechnique.jp/OS_Development/Tips/scan_code_set1.html&#34;&gt;スキャンコード一覧（スキャンコードセット1）&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;footnote-definition&#34;&gt;
 &lt;sup id=&#34;footnote-2&#34;&gt;&lt;a href=&#34;#footnote-reference-2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
 &lt;div class=&#34;footnote-body&#34;&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://www.nedia.ne.jp/blog/2019/04/02/13919&#34;&gt;NASに接続できない！原因はSMB1.0ではなかった！&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.nedia.ne.jp/blog/2019/04/02/13919&#34;&gt;NASに接続できない！原因はSMB1.0ではなかった！&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -537,42 +542,65 @@ break code &lt;code&gt;0xE1:0x9D:0xC5&lt;/code&gt; - &lt;a href=&#34;https://see
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 使う予定のコマンド
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  add-apt-repository&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-2&#34;&gt;
 このコマンドがない？以下のようにコマンドを入れる
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  apt install software-properties-common&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-3&#34;&gt;
 以下のステップに従ってインストール
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-4&#34;&gt;
 リポジトリを登録
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  add-apt-repository ppa:kelleyk/emacs
   apt-add-repository ppa:fish-shell/release-3&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-5&#34;&gt;
 リポジトリを更新
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  apt update&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-6&#34;&gt;
 必要なものをインストール
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  apt install emacs26
   apt install fish&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 </description>
     </item>
@@ -611,107 +639,124 @@ break code &lt;code&gt;0xE1:0x9D:0xC5&lt;/code&gt; - &lt;a href=&#34;https://see
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 SSHの途切れる現象
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-SSHを使ってリモートサーバーにログインしている時に，一定の時間内に操作がなければ，
-&lt;code class=&#34;verbatim&#34;&gt;Write failed: Broken pipe&lt;/code&gt; というエラーが出てきてしまう可能性がある。
-&lt;/p&gt;
+&lt;p&gt;SSHを使ってリモートサーバーにログインしている時に，一定の時間内に操作がなければ，
+&lt;code class=&#34;verbatim&#34;&gt;Write failed: Broken pipe&lt;/code&gt; というエラーが出てきてしまう可能性がある。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-以上のことを避けるために，クライアント側やサーバー側のSSH設定を変える必要がある。
-&lt;/p&gt;
+&lt;p&gt;以上のことを避けるために，クライアント側やサーバー側のSSH設定を変える必要がある。&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-2&#34;&gt;
 やり方
 &lt;/h3&gt;
+&lt;/div&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-クライアント側で対処する
-&lt;/p&gt;
+&lt;p&gt;クライアント側で対処する&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-&lt;code class=&#34;verbatim&#34;&gt;/etc/ssh/ssh_config&lt;/code&gt; あるいは
-&lt;code class=&#34;verbatim&#34;&gt;~/.ssh/config&lt;/code&gt; に以下の内容を記述する。
-&lt;/p&gt;
+&lt;p&gt;&lt;code class=&#34;verbatim&#34;&gt;/etc/ssh/ssh_config&lt;/code&gt; あるいは
+&lt;code class=&#34;verbatim&#34;&gt;~/.ssh/config&lt;/code&gt; に以下の内容を記述する。&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  ServerAliveInterval &lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;
   ServerAliveCountMax &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 この設定は，15秒ごとに10回の応答が送信されることを意味する。
-それでも応答がなければ接続が切断される。
-&lt;/p&gt;
+それでも応答がなければ接続が切断される。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-サーバー側で対処する
-&lt;/p&gt;
+&lt;p&gt;サーバー側で対処する&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-以下の内容を &lt;code class=&#34;verbatim&#34;&gt;/etc/ssh/sshd_config&lt;/code&gt; に記述する。
-&lt;/p&gt;
+&lt;p&gt;以下の内容を &lt;code class=&#34;verbatim&#34;&gt;/etc/ssh/sshd_config&lt;/code&gt; に記述する。&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  ClientAliveInterval &lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;
   ClientAliveCountMax &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 この設定は，30秒ごとに5回の応答が送信されることを意味する。
-それでも応答がなければ接続が切断される。
-&lt;/p&gt;
+それでも応答がなければ接続が切断される。&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-3&#34;&gt;
 その他
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 SSHを使う際にtmuxやscreenなどを使うことがおすすめ。
 これで，リモートへの接続が途切れたとしても，
-リモートに再びログインした後にすでにあるセッションにattachすれば元の環境が戻ってくる。
-&lt;/p&gt;
+リモートに再びログインした後にすでにあるセッションにattachすれば元の環境が戻ってくる。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-4&#34;&gt;
 アンドロイドのTermuxアプリを使ってSSHデーモンを立てる
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-5&#34;&gt;
 インストール
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  apt install openssh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-6&#34;&gt;
 キーを設定する
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  ssh-keygen
   cat ~/.ssh/id_rsa.pub &amp;gt; ~/.ssh/authorized_keys
   chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;600&lt;/span&gt; ~/.ssh/authorized_keys
   chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;700&lt;/span&gt; ~/.ssh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-7&#34;&gt;
 デバッグモードをデーモンを起動
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  sshd -d&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-8&#34;&gt;
 デーモンを起動
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  sshd&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-9&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-9&#34;&gt;
 パソコンで立てたデーモンにログイン
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-9&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 アンドロイドで生成されたプライベートキー &lt;code class=&#34;verbatim&#34;&gt;~/.ssh/id_rsa&lt;/code&gt; をパソコン側のsshクライアントに設定し，
-アンドロードのIPアドレスにポート &lt;code class=&#34;verbatim&#34;&gt;8022&lt;/code&gt; を加えてユーザ名なしで接続すれば良い。
-&lt;/p&gt;
+アンドロードのIPアドレスにポート &lt;code class=&#34;verbatim&#34;&gt;8022&lt;/code&gt; を加えてユーザ名なしで接続すれば良い。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -726,7 +771,6 @@ SSHを使う際にtmuxやscreenなどを使うことがおすすめ。
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to copy or download the publication metadata.
   &lt;/div&gt;
 &lt;/div&gt;
-
 &lt;/p&gt;
 </description>
     </item>
@@ -742,7 +786,6 @@ SSHを使う際にtmuxやscreenなどを使うことがおすすめ。
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to copy or download the publication metadata.
   &lt;/div&gt;
 &lt;/div&gt;
-
 &lt;/p&gt;
 </description>
     </item>
@@ -755,36 +798,30 @@ SSHを使う際にtmuxやscreenなどを使うことがおすすめ。
       <description>&lt;p&gt;
 僕は家計簿をOrg-modeで記録していて，
 その中にPythonのコードを書き，実行とかをやっている。
-しかし，以下のエラーになったことがある。
-&lt;/p&gt;
+しかし，以下のエラーになったことがある。&lt;/p&gt;
 &lt;div class=&#34;src src-sample&#34;&gt;
 &lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;File &amp;#34;&amp;lt;stdin&amp;gt;&amp;#34;, line 3
 SyntaxError: Non-UTF-8 code starting with &amp;#39;\xe3&amp;#39; in file &amp;lt;stdin&amp;gt; on line 3, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;p&gt;
 考えられるのは， &lt;code&gt;# -*- coding: utf-8 -*-&lt;/code&gt; を先頭につけることしかないけど，
-結局 &lt;strong&gt;Org-modeの中のPythonのコードブロック&lt;/strong&gt; なら効かなかった。
-&lt;/p&gt;
+結局 &lt;strong&gt;Org-modeの中のPythonのコードブロック&lt;/strong&gt; なら効かなかった。&lt;/p&gt;
 &lt;p&gt;
-解決法は以下のようなコードブロックのヘッダーを，
-&lt;/p&gt;
+解決法は以下のようなコードブロックのヘッダーを，&lt;/p&gt;
 &lt;div class=&#34;src src-sample&#34;&gt;
 &lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;#+begin_src python :results file :var data=test&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;p&gt;
-以下のように変換する
-&lt;/p&gt;
+以下のように変換する&lt;/p&gt;
 &lt;div class=&#34;src src-sample&#34;&gt;
 &lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;#+begin_src python :results file :var data=test[, 0:2]&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;p&gt;
 すなわち，必須となる数字や日付などが入っているテーブルの列だけを
 Pythonに転送すると，一時的なエラーを解消できるけど，
-本質的には解決していない。
-&lt;/p&gt;
+本質的には解決していない。&lt;/p&gt;
 &lt;p&gt;
-引き続き調査。
-&lt;/p&gt;
+引き続き調査。&lt;/p&gt;
 </description>
     </item>
     
@@ -795,21 +832,17 @@ Pythonに転送すると，一時的なエラーを解消できるけど，
       <guid>https://xinii.cf/ja/post/single-language/pitfall-while-inserting-figure-into-latex-article/</guid>
       <description>&lt;p&gt;
 pLaTeXを使う際に，なぜか特定のepsグラフを文書のソースに入れたらビルドが失敗。
-しかも失敗した時のログをみると，まったく問題を特定できない。
-&lt;/p&gt;
+しかも失敗した時のログをみると，まったく問題を特定できない。&lt;/p&gt;
 &lt;p&gt;
 例えば，入れたすべてのfigureの定義が見つからないとかに関するエラー。
 このようなエラーになった時に，
 epsグラフのスケールを正方形に近い形状から矩形にしたら，
-問題解決できた。
-&lt;/p&gt;
+問題解決できた。&lt;/p&gt;
 &lt;p&gt;
 原因はまだ不明だけど，また調査してみる。
-たまにハマってしまったので，ここにメモを残っておく。
-&lt;/p&gt;
+たまにハマってしまったので，ここにメモを残っておく。&lt;/p&gt;
 &lt;p&gt;
-以上。
-&lt;/p&gt;
+以上。&lt;/p&gt;
 </description>
     </item>
     
@@ -819,9 +852,11 @@ epsグラフのスケールを正方形に近い形状から矩形にしたら�
       <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
       <guid>https://xinii.cf/ja/post/single-language/generate-sheet-music-with-lilypond-on-emacs/</guid>
       <description>
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 コード例
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;div class=&#34;src src-lilypond&#34;&gt;
 &lt;pre&gt;&lt;code class=&#34;language-lilypond&#34; data-lang=&#34;lilypond&#34;&gt;  \version &amp;#34;2.18.2&amp;#34;
 
@@ -863,12 +898,17 @@ epsグラフのスケールを正方形に近い形状から矩形にしたら�
     }
   }&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-2&#34;&gt;
 出力例
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
-（後で追加）
-&lt;/p&gt;
+（後で追加）&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -878,12 +918,13 @@ epsグラフのスケールを正方形に近い形状から矩形にしたら�
       <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
       <guid>https://xinii.cf/ja/post/single-language/about-absolute-pitch/</guid>
       <description>
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 音階と音の周波数
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
-次の表に，ピアノの鍵盤における88のキーに相応する音の周波数を示す。
-&lt;/p&gt;
+次の表に，ピアノの鍵盤における88のキーに相応する音の周波数を示す。&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -1018,24 +1059,18 @@ epsグラフのスケールを正方形に近い形状から矩形にしたら�
 &lt;/table&gt;
 &lt;p&gt;
 音の周波数を等比数列 $a_0, a_1, a_2 \dots a_{12}$ とし，
-公比を $r$ とすると，以下の関係がある。
-&lt;/p&gt;
+公比を $r$ とすると，以下の関係がある。&lt;/p&gt;
 &lt;p&gt;
-$$a_{12} = a_{0} \times r^{12} = a_0 \times 2$$
-&lt;/p&gt;
+$$a_{12} = a_{0} \times r^{12} = a_0 \times 2$$&lt;/p&gt;
 &lt;p&gt;
 また，1オクターブの二つの音の周波数が2倍の関係なので，
-以下の式によって公比\(r\)がわかるようになる。
-&lt;/p&gt;
+以下の式によって公比\(r\)がわかるようになる。&lt;/p&gt;
 &lt;p&gt;
-$$r^{12} = 2 \Rightarrow r = \sqrt[12]{2} \approx 1.059463094$$
-&lt;/p&gt;
+$$r^{12} = 2 \Rightarrow r = \sqrt[12]{2} \approx 1.059463094$$&lt;/p&gt;
 &lt;p&gt;
-従って，任意の音に対して，\(n\)個半音上の音を計算する方法は以下の式に示す。
-&lt;/p&gt;
+従って，任意の音に対して，\(n\)個半音上の音を計算する方法は以下の式に示す。&lt;/p&gt;
 &lt;p&gt;
-$$a_n = a_0 \times r^n = a_0 \times 2^{\frac{n}{12}}$$
-&lt;/p&gt;
+$$a_n = a_0 \times r^n = a_0 \times 2^{\frac{n}{12}}$$&lt;/p&gt;
 &lt;p&gt;
 以上によると，絶対音感を持っている人が，
 任意の一つの音を聞いて，その周波数がわかる。
@@ -1044,39 +1079,34 @@ $$a_n = a_0 \times r^n = a_0 \times 2^{\frac{n}{12}}$$
 これに対して，相対音感が\(a_0\)が必要である。
 また，音名が固定だが，階名が変化するものである。
 \(a_0\)を任意の音を指定しておく前提なら，
-耳の感覚で，他の音を計算するものである。
-&lt;/p&gt;
+耳の感覚で，他の音を計算するものである。&lt;/p&gt;
 &lt;p&gt;
 絶対音感が，5歳くらいまでにトレーニングしないと，
 身に着けにくくなるとよく言われている。 これはなぜだろうか。
-母国語に似ているものなので， この視点から分析してみる。
-&lt;/p&gt;
+母国語に似ているものなので， この視点から分析してみる。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-2&#34;&gt;
 絶対音感を身に着けるにはなぜ5歳までトレーニングする必要があるか
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
-ここで，まずいくつかの言語の例をあげてみたい。
-&lt;/p&gt;
+ここで，まずいくつかの言語の例をあげてみたい。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-言語に関する時間
-&lt;/p&gt;
+&lt;p&gt;言語に関する時間&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-言語に関する意味
-&lt;/p&gt;
+&lt;p&gt;言語に関する意味&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-言語に関する発音
-&lt;/p&gt;
+&lt;p&gt;言語に関する発音&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-（未完成… 時間がある時に続いて書く）
-&lt;/p&gt;
+&lt;p&gt;（未完成… 時間がある時に続いて書く）&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -1100,17 +1130,17 @@ $$a_n = a_0 \times r^n = a_0 \times 2^{\frac{n}{12}}$$
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 swapファイルを生成
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 コンパイル途中にメモリー不足などの問題を防ぐため，
 swapという交換用ファイルを任意のパスに生成しておく。
 このファイルは，OS再起動の後に自動的に消えるが，
-全てのインストールが終わったら，手作業で交換用ファイルを削除しても良い。
-&lt;/p&gt;
+全てのインストールが終わったら，手作業で交換用ファイルを削除しても良い。&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  $ fallocate -l 4G swapfile
   $ chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;600&lt;/span&gt; swapfile
@@ -1118,16 +1148,18 @@ swapという交換用ファイルを任意のパスに生成しておく。
   $ sudo swapon swapfile
   $ swapon -s&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-2&#34;&gt;
 インストールのスクリプトを生成
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://github.com/AastaNV/JEP/blob/master/script/install_opencv4.0.0_Nano.sh&#34;&gt;OpenCV 4.0.0をインストールためのリンク&lt;/a&gt;
-&lt;/p&gt;
+&lt;a href=&#34;https://github.com/AastaNV/JEP/blob/master/script/install_opencv4.0.0_Nano.sh&#34;&gt;OpenCV 4.0.0をインストールためのリンク&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 以上は，OpenCV 4.0.0をインストールためのリンクで，ここでは，OpenCV
-4.1.0をインストールしたいため， バージョン番号の部分に少し手を加える。
-&lt;/p&gt;
+4.1.0をインストールしたいため， バージョン番号の部分に少し手を加える。&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash&lt;/span&gt;
   #
@@ -1179,45 +1211,46 @@ swapという交換用ファイルを任意のパスに生成しておく。
   echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** Bye :)&amp;#34;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
-以上のスクリプトを &lt;code&gt;sh&lt;/code&gt; のフォーマットで保存する。例えば &lt;code class=&#34;verbatim&#34;&gt;install_opencv4.1.0_Nano.sh&lt;/code&gt; 。
-&lt;/p&gt;
+以上のスクリプトを &lt;code&gt;sh&lt;/code&gt; のフォーマットで保存する。例えば &lt;code class=&#34;verbatim&#34;&gt;install_opencv4.1.0_Nano.sh&lt;/code&gt; 。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-3&#34;&gt;
 スクリプトを実行する
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  mkdir opencv
   sh install_opencv4.1.0_Nano.sh opencv&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 インストールのプロセスが割と時間かかるため，インストールが終わるまで待つ。
-ここで，tmuxとかに任せてバックグラウンドでやれば，なんかあった時にattachすれば済むのでおすすめ。
-&lt;/p&gt;
+ここで，tmuxとかに任せてバックグラウンドでやれば，なんかあった時にattachすれば済むのでおすすめ。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-4&#34;&gt;
 インストールされたOpenCVをテスト
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
-コマンドラインに &lt;code class=&#34;verbatim&#34;&gt;python&lt;/code&gt; を叩くと &lt;code class=&#34;verbatim&#34;&gt;import cv2&lt;/code&gt; をためしたらエラーがなければ終わり。
-&lt;/p&gt;
+コマンドラインに &lt;code class=&#34;verbatim&#34;&gt;python&lt;/code&gt; を叩くと &lt;code class=&#34;verbatim&#34;&gt;import cv2&lt;/code&gt; をためしたらエラーがなければ終わり。&lt;/p&gt;
 &lt;p&gt;
 ただ，pyenvなどのpython環境管理ツールを使っている方なら，
 pyenvを使って入れたpythonにおいてはOpenCVを読み込めない場合がある。
-解決案としては，OpenCVのライブラーのソフトリンクをpyenvのpythonの下に置くこと。
-&lt;/p&gt;
+解決案としては，OpenCVのライブラーのソフトリンクをpyenvのpythonの下に置くこと。&lt;/p&gt;
 &lt;p&gt;
-例えば，以下のようなpyenvのpythonのライブラリーのパスがある。
-&lt;/p&gt;
+例えば，以下のようなpyenvのpythonのライブラリーのパスがある。&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  /home/&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;username&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;/.anyenv/envs/pyenv/versions/3.6.8/lib/python3.6/site-packages&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
-また，インストールされたOpenCVのライブラリーのパスが以下となる。
-&lt;/p&gt;
+また，インストールされたOpenCVのライブラリーのパスが以下となる。&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  /usr/local/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-linux-gnu.so&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
-この場合は，以下のコマンドでソフトリンクを作れる。
-&lt;/p&gt;
+この場合は，以下のコマンドでソフトリンクを作れる。&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  cd /home/&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;username&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;/.anyenv/envs/pyenv/versions/3.6.8/lib/python3.6/site-packages
   ln -s /usr/local/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-linux-gnu.so ./&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -1225,8 +1258,9 @@ pyenvを使って入れたpythonにおいてはOpenCVを読み込めない場合
 &lt;p&gt;
 また，事前にpyenvのpythonのpipを使って，
 &lt;code class=&#34;verbatim&#34;&gt;pip install numpy&lt;/code&gt; でnumpyを入れておくと
-さっきのように &lt;code class=&#34;verbatim&#34;&gt;import cv2&lt;/code&gt; でテストしてエラーがなければおしまい。
-&lt;/p&gt;
+さっきのように &lt;code class=&#34;verbatim&#34;&gt;import cv2&lt;/code&gt; でテストしてエラーがなければおしまい。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -1250,61 +1284,65 @@ pyenvを使って入れたpythonにおいてはOpenCVを読み込めない場合
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 今の環境にGnutlsがない場合
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
-今の環境にGnutlsがない場合は，ソースからEmacs&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;をコンパイルする時に以下の設定が必要。
-&lt;/p&gt;
+今の環境にGnutlsがない場合は，ソースからEmacs&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;をコンパイルする時に以下の設定が必要。&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  ./configure --with-gnutls&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;no&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
-他にも依存されるライブラリーなどが足りない場合は，例えば以下のように設定をする。
-&lt;/p&gt;
+他にも依存されるライブラリーなどが足りない場合は，例えば以下のように設定をする。&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  bash configure --prefix&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;$HOME/.local --with-gif&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;no --with-gnutls&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;no&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
-これでデフォルトのパスとかへの権限や，ライブラリーが足りない場合でもソースからインストール出来てしまう。
-&lt;/p&gt;
+これでデフォルトのパスとかへの権限や，ライブラリーが足りない場合でもソースからインストール出来てしまう。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-2&#34;&gt;
 潜在的なリスク
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 以上のようにEmacsを &lt;code class=&#34;verbatim&#34;&gt;$HOME/.local&lt;/code&gt; へのインストールが出来てしまうけど，
-Gnutlsがサポートされないゆえに，Emacsでインターネットが必要となった時にhttpsが使えない。
-&lt;/p&gt;
+Gnutlsがサポートされないゆえに，Emacsでインターネットが必要となった時にhttpsが使えない。&lt;/p&gt;
 &lt;p&gt;
 Emacsが初期化される時だけなら，設定ファイルの中のMelpaリンクを全てhttpに変更すれば済ませるが，
-セキュリティ上にあまりお勧めができないし，今後Emacsの拡張機能を使う時のリスクにもなる。
-&lt;/p&gt;
+セキュリティ上にあまりお勧めができないし，今後Emacsの拡張機能を使う時のリスクにもなる。&lt;/p&gt;
 &lt;p&gt;
 例えば， &lt;code class=&#34;verbatim&#34;&gt;google-translate&lt;/code&gt; のEmacs拡張パッケージを使う場合は，
 Emacsのelpaフォルダーにある &lt;code class=&#34;verbatim&#34;&gt;google-translate&lt;/code&gt; の中の全ての &lt;code class=&#34;verbatim&#34;&gt;*.el&lt;/code&gt; にある &lt;code class=&#34;verbatim&#34;&gt;https&lt;/code&gt; を &lt;code class=&#34;verbatim&#34;&gt;http&lt;/code&gt; に書き換えても，
-実際に使う時に一部の機能にとっては &lt;code class=&#34;verbatim&#34;&gt;https&lt;/code&gt; が必須で翻訳が正常に機能しない恐れがある。
-&lt;/p&gt;
+実際に使う時に一部の機能にとっては &lt;code class=&#34;verbatim&#34;&gt;https&lt;/code&gt; が必須で翻訳が正常に機能しない恐れがある。&lt;/p&gt;
 &lt;p&gt;
-ここでは， &lt;code class=&#34;verbatim&#34;&gt;*.el&lt;/code&gt; を変更した後に， &lt;code class=&#34;verbatim&#34;&gt;*.elc&lt;/code&gt; を削除しないと変更が反映されない可能性がある。
-&lt;/p&gt;
+ここでは， &lt;code class=&#34;verbatim&#34;&gt;*.el&lt;/code&gt; を変更した後に， &lt;code class=&#34;verbatim&#34;&gt;*.elc&lt;/code&gt; を削除しないと変更が反映されない可能性がある。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-3&#34;&gt;
 Gnutlsをインストール
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 以上の問題を解決するもっとも簡単な方法としては，
-今の環境にGnutlsをインストールしてからソースからもう一度Emacsをインストールすること。
-&lt;/p&gt;
+今の環境にGnutlsをインストールしてからソースからもう一度Emacsをインストールすること。&lt;/p&gt;
 &lt;p&gt;
-OpenSUSEを例として，以下のコマンドでGnutlsをインストールする。
-&lt;/p&gt;
+OpenSUSEを例として，以下のコマンドでGnutlsをインストールする。&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  sudo zypper install gnutls&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-4&#34;&gt;
 その他の問題
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  checking &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; library containing tputs... no
   configure: error: The required &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;tputs&amp;#39;&lt;/span&gt; was not found in any library.
@@ -1319,10 +1357,11 @@ OpenSUSEを例として，以下のコマンドでGnutlsをインストールす
 &lt;p&gt;
 もしすでにGnutlsがインストール済みで， &lt;code class=&#34;verbatim&#34;&gt;make&lt;/code&gt; を叩くと以上のエラーが出てきてしまったら，
 OpenSUSE環境の場合は， &lt;code class=&#34;verbatim&#34;&gt;ncurses-devel&lt;/code&gt; というパッケージが必要だということなので，
-以下のコマンドで入れておこう。
-&lt;/p&gt;
+以下のコマンドで入れておこう。&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  sudo zypper install ncurses-devel&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
 &lt;hr class=&#34;footnotes-separatator&#34;&gt;
@@ -1330,9 +1369,7 @@ OpenSUSE環境の場合は， &lt;code class=&#34;verbatim&#34;&gt;ncurses-devel
 &lt;div class=&#34;footnote-definition&#34;&gt;
 &lt;sup id=&#34;footnote-1&#34;&gt;&lt;a href=&#34;#footnote-reference-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
 &lt;div class=&#34;footnote-body&#34;&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://ja.wikipedia.org/wiki/Emacs&#34;&gt;The logo of Emacs&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ja.wikipedia.org/wiki/Emacs&#34;&gt;The logo of Emacs&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1374,27 +1411,26 @@ OpenSUSE環境の場合は， &lt;code class=&#34;verbatim&#34;&gt;ncurses-devel
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 BashからZ shell（zsh）に
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 zshを使って二週間くらい経ったらFish shellに乗り換えた。
 理由については後述するけど，
-zshが素晴らしいシェルで使いにくいなどの理由で乗り換えたわけでもない。
-&lt;/p&gt;
+zshが素晴らしいシェルで使いにくいなどの理由で乗り換えたわけでもない。&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-2&#34;&gt;
 インストール作業
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
-zshをインストールするには，以下のコマンドを使う。
-&lt;/p&gt;
+zshをインストールするには，以下のコマンドを使う。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-macOS
-&lt;/p&gt;
+&lt;p&gt;macOS&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
@@ -1402,89 +1438,89 @@ macOS
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-UbuntuやLinux Mint
-&lt;/p&gt;
+&lt;p&gt;UbuntuやLinux Mint&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  apt install zsh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
-現在のシステムにインストールされているシェルを確認したい場合は以下のコマンドを使う。
-&lt;/p&gt;
+現在のシステムにインストールされているシェルを確認したい場合は以下のコマンドを使う。&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  cat /etc/shells&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
-システムのデフォルトシェルをzshに変更するには，以下のコマンドを使う。
-&lt;/p&gt;
+システムのデフォルトシェルをzshに変更するには，以下のコマンドを使う。&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  chsh -s /usr/local/bin/zsh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-3&#34;&gt;
 注意点
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-コンフィグレーションの読み込みエラーについて
-&lt;/p&gt;
+&lt;p&gt;コンフィグレーションの読み込みエラーについて&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-シェルスクリプトが時々エラーになったときに，
+&lt;p&gt;シェルスクリプトが時々エラーになったときに，
 現在の環境の &lt;code class=&#34;verbatim&#34;&gt;sh&lt;/code&gt; のパスを確認しおいたほうが良いかも。
 例えば， &lt;code class=&#34;verbatim&#34;&gt;sh&lt;/code&gt; が &lt;code class=&#34;verbatim&#34;&gt;dash&lt;/code&gt; にリンクされている原因でエラーになった可能性がある。
-以下のコマンドで確認する。
-&lt;/p&gt;
+以下のコマンドで確認する。&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  ls -l &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;which sh&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-スクリプトのコンパイラーにおけるBashの文法との相違点
-&lt;/p&gt;
+&lt;p&gt;スクリプトのコンパイラーにおけるBashの文法との相違点&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-配列のインデックスにおける文法的なルールについては，
+&lt;p&gt;配列のインデックスにおける文法的なルールについては，
 Bashの場合は，配列にある最初の要素が0から始まり，
 zshの場合は，1から始まる。
 zshに乗り換えたらなかなか慣れられない場合は，
 以下のような内容をコンフィグレーションファイルに設定しておけば，
-Bashの文法のように，配列が0から始まるようになる。
-&lt;/p&gt;
+Bashの文法のように，配列が0から始まるようになる。&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$ZSH_NAME&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;zsh&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
       setopt localoptions ksharrays
   &lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-4&#34;&gt;
 zshのコンフィグレーションについて
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 Bashの &lt;code class=&#34;verbatim&#34;&gt;.bashrc&lt;/code&gt; と同じ， zshもコンフィグレーションファイルが必要。
 デフォルトでは，ホームディレクトリにある &lt;code class=&#34;verbatim&#34;&gt;.zshrc&lt;/code&gt; のファイルになる。
-&lt;a href=&#34;https://github.com/xinii/xinconfig/blob/master/profile/core/zsh.sh&#34;&gt;ここをクリック&lt;/a&gt;することで，僕がGithubにアップロードしたコンフィグレーションファイルを参照する。
-&lt;/p&gt;
+&lt;a href=&#34;https://github.com/xinii/xinconfig/blob/master/profile/core/zsh.sh&#34;&gt;ここをクリック&lt;/a&gt;することで，僕がGithubにアップロードしたコンフィグレーションファイルを参照する。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-5&#34;&gt;
 zshからFish shell（fish）に
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 前述のように，zshを使用して二週間の後にfishに乗り換えた。
 その理由は，fishに設定とかなにもやらなくてもデフォルトで十分使える。
-fishに乗り換えたら，シェルの移行が一段落になり，以下はその記録。
-&lt;/p&gt;
+fishに乗り換えたら，シェルの移行が一段落になり，以下はその記録。&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-6&#34;&gt;
 fishのインストール作業
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-macOS:
-&lt;/p&gt;
+&lt;p&gt;macOS:&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
@@ -1492,9 +1528,7 @@ macOS:
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-UbuntuやLinux Mint:
-&lt;/p&gt;
+&lt;p&gt;UbuntuやLinux Mint:&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
@@ -1502,9 +1536,7 @@ UbuntuやLinux Mint:
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-openSUSE:
-&lt;/p&gt;
+&lt;p&gt;openSUSE:&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
@@ -1512,77 +1544,73 @@ openSUSE:
 &lt;/div&gt;
 &lt;p&gt;
 ここで，WindowsのLinuxサブシステムであるopenSUSE環境の場合は，
-デフォルトで &lt;code&gt;root&lt;/code&gt; の権限が必要なので，コマンドの最初に &lt;code&gt;sudo&lt;/code&gt; をつけておく。
-&lt;/p&gt;
+デフォルトで &lt;code&gt;root&lt;/code&gt; の権限が必要なので，コマンドの最初に &lt;code&gt;sudo&lt;/code&gt; をつけておく。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-7&#34;&gt;
 フォルトシェルの変更
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
-以下のコマンドで行う。パーミッションが足りない場合は &lt;code&gt;sudo&lt;/code&gt; を使う。
-&lt;/p&gt;
+以下のコマンドで行う。パーミッションが足りない場合は &lt;code&gt;sudo&lt;/code&gt; を使う。&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  chsh -s /usr/bin/fish&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 これで，デフォルトシェルの切り替えができた。
-いったん現在のセッションをログアウトし，再ログインするとfishに入るはず。
-&lt;/p&gt;
+いったん現在のセッションをログアウトし，再ログインするとfishに入るはず。&lt;/p&gt;
 &lt;p&gt;
 ここで，もしfishに入ったら， &lt;code class=&#34;verbatim&#34;&gt;hostname&lt;/code&gt; などのエラーがたくさん出た場合は，
 現在の環境に &lt;code class=&#34;verbatim&#34;&gt;hostname&lt;/code&gt; というパッケージが足りないということがわかる。
 ソースからコンパイルするか，
-使われているLinuxディストリビューションのパッケージマネージャを使って &lt;code class=&#34;verbatim&#34;&gt;hostname&lt;/code&gt; を入れる。
-&lt;/p&gt;
+使われているLinuxディストリビューションのパッケージマネージャを使って &lt;code class=&#34;verbatim&#34;&gt;hostname&lt;/code&gt; を入れる。&lt;/p&gt;
 &lt;p&gt;
-例えば，openSUSEの場合は以下のコマンドを使う。
-&lt;/p&gt;
+例えば，openSUSEの場合は以下のコマンドを使う。&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  sudo zypper install hostname&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-8&#34;&gt;
 fishのコンフィグレーションファイル
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 zshと同じ，僕が書いたコンフィグレーションファイルをGithubにアップロードしてあるので，
-&lt;a href=&#34;https://github.com/xinii/xinconfig/tree/master/profile/fish&#34;&gt;ここをクリック&lt;/a&gt;することで参照しよう。
-&lt;/p&gt;
+&lt;a href=&#34;https://github.com/xinii/xinconfig/tree/master/profile/fish&#34;&gt;ここをクリック&lt;/a&gt;することで参照しよう。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-9&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-9&#34;&gt;
 fishを使うときに出てきたPythonに関する環境変数の関連問題
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-9&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
-僕がはまったところが以下二点がある。
-&lt;/p&gt;
+僕がはまったところが以下二点がある。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-tmux
-&lt;/p&gt;
+&lt;p&gt;tmux&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-tmuxがバックグラウンドで動いているセッションがある場合は，
+&lt;p&gt;tmuxがバックグラウンドで動いているセッションがある場合は，
 &lt;code class=&#34;verbatim&#34;&gt;PYTHONPATH&lt;/code&gt; の環境変数を変更しても更新されない。
 このときに，すべてのtmuxセッションを閉じてから環境変数の変更が有効になる。
 fishシェル以外もこの問題に遭遇されると想定できるが，
-僕は今回fishにおいて初めてはまったので記録を残す。
-&lt;/p&gt;
+僕は今回fishにおいて初めてはまったので記録を残す。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;code class=&#34;verbatim&#34;&gt;PYTHONPATH&lt;/code&gt; について
-&lt;/p&gt;
+&lt;p&gt;&lt;code class=&#34;verbatim&#34;&gt;PYTHONPATH&lt;/code&gt; について&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-fishにおいて環境変数を定義する時にやり方は以下に示された。
-&lt;/p&gt;
+&lt;p&gt;fishにおいて環境変数を定義する時にやり方は以下に示された。&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;set &amp;lt;variable_name&amp;gt; &amp;lt;parameter_1&amp;gt; &amp;lt;parameter_2&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 このやり方はとても便利で優越性がある。
-ただし， &lt;code class=&#34;verbatim&#34;&gt;PYTHONPATH&lt;/code&gt; を設定する場合は，以下のように行ったほうが良い。
-&lt;/p&gt;
+ただし， &lt;code class=&#34;verbatim&#34;&gt;PYTHONPATH&lt;/code&gt; を設定する場合は，以下のように行ったほうが良い。&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;set PYTHONPATH &amp;lt;parameter_1&amp;gt;:&amp;lt;parameter_2&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -1593,8 +1621,11 @@ Jetson Nanoに動いているUbuntuでは，二番目の方法しか機能しな
 具体的な原因は確認しなかったが，
 OSが異なって，Pythonのバージョンが同じでも，
 CPUがx86かarmかによってコンパイル方法が異なったことでエラーになるかと考えている。
-いったんここに記録し，引き続き調査。
-&lt;/p&gt;
+いったんここに記録し，引き続き調査。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -1614,7 +1645,6 @@ CPUがx86かarmかによってコンパイル方法が異なったことでエ�
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
@@ -1627,25 +1657,22 @@ CPUがx86かarmかによってコンパイル方法が異なったことでエ�
 Cドライブでもよいが，中に重要なデータは何も入っていないことを事前に確認する。
   &lt;/div&gt;
 &lt;/div&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 Linux MintをインストールするためのUSBメモリーを用意する
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 用意するのはUSBメモリーと書いているが，
 USBメモリーがなかったらUSBのHDDやSSDなどでも良い。
 後で用意されたUSBデバイスにインストーラを書き込むので，
-バックアップをちゃんと取っておいたほうが良いかも。
-&lt;/p&gt;
+バックアップをちゃんと取っておいたほうが良いかも。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-Windowsを使っている場合は，&lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0&#34;&gt;ここをクリック&lt;/a&gt;してUbuntuのオフィシャルマニュアルを参照できる。
-&lt;/p&gt;
+&lt;p&gt;Windowsを使っている場合は，&lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0&#34;&gt;ここをクリック&lt;/a&gt;してUbuntuのオフィシャルマニュアルを参照できる。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     以上のマニュアルはUbuntuをインストールする目的だが，
@@ -1655,24 +1682,26 @@ Linux Mintをインストールするのも大体同じ。
   &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-Linux Mintのインストーラを作成するのに使うツールがRufusというソフトウェアで，
+&lt;p&gt;Linux Mintのインストーラを作成するのに使うツールがRufusというソフトウェアで，
 &lt;a href=&#34;https://rufus.akeo.ie/&#34;&gt;ここをクリック&lt;/a&gt;することでRufusのオフィシャルサイトが開ける。
-あるいは&lt;a href=&#34;https://github.com/pbatard/rufus/releases/download/v3.5/rufus-3.5.exe&#34;&gt;ここをクリック&lt;/a&gt;することで直接Rufusをダウンロードできる。
-&lt;/p&gt;
+あるいは&lt;a href=&#34;https://github.com/pbatard/rufus/releases/download/v3.5/rufus-3.5.exe&#34;&gt;ここをクリック&lt;/a&gt;することで直接Rufusをダウンロードできる。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-2&#34;&gt;
 Linux MintのISOファイル
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 Linux MintのISOイメージについては，以下の場所からダウンロードできる。
 &lt;a href=&#34;https://linuxmint.com/&#34;&gt;ここをクリック&lt;/a&gt;することでLinux Mintのオフィシャルサイトを開く。
-また，&lt;a href=&#34;http://mirrors.evowise.com/linuxmint/stable/19.1/linuxmint-19.1-cinnamon-64bit.iso&#34;&gt;ここをクリック&lt;/a&gt;することで直接Linux Mint 19.1のバージョンをダウンロードできる。
-&lt;/p&gt;
+また，&lt;a href=&#34;http://mirrors.evowise.com/linuxmint/stable/19.1/linuxmint-19.1-cinnamon-64bit.iso&#34;&gt;ここをクリック&lt;/a&gt;することで直接Linux Mint 19.1のバージョンをダウンロードできる。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -1692,30 +1721,27 @@ Linux MintのISOイメージについては，以下の場所からダウンロ�
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 Jekyllをインストール
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 JekyllがRubyで書いた静的なサイトジェネレーター。
-以下は公式サイトの紹介文。
-&lt;/p&gt;
+以下は公式サイトの紹介文。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;
-Jekyll is a static site generator. You give it text written in your
+&lt;p&gt;Jekyll is a static site generator. You give it text written in your
   favorite markup language and it uses layouts to create a static
   website. You can tweak how you want the site URLs to look, what data
-  gets displayed on the site, and more. –Jekyll&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
-&lt;/p&gt;
+  gets displayed on the site, and more. –Jekyll&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;
 Jekyllをインストールする際に，
 まずはRubyのパッケージ管理ツールを入れておくとあとは便利。
 よく使われているRubyのパッケージ管理ツールが &lt;code&gt;gem&lt;/code&gt; で，
 Ubuntuなどのシステムにおいて，
-以下のコマンドで &lt;code&gt;gem&lt;/code&gt; が同時にインストールされる。
-&lt;/p&gt;
+以下のコマンドで &lt;code&gt;gem&lt;/code&gt; が同時にインストールされる。&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  apt install ruby-dev&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -1724,65 +1750,57 @@ Ubuntuなどのシステムにおいて，
  &lt;code&gt;gem&lt;/code&gt; を使っていろんなRubyのパッケージを入れることが可能になる。
 もし &lt;code&gt;rbenv&lt;/code&gt; などのバーチャル環境管理ツールを使っていれば，
 実行可能な &lt;code&gt;gem&lt;/code&gt; があればあとは同じ。
-以下のコマンドでJekyllを入れる。簡単だね。
-&lt;/p&gt;
+以下のコマンドでJekyllを入れる。簡単だね。&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  gem install jekyll&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-2&#34;&gt;
 Githubに公開
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 Jekyllをインストールしたら，
 とりあえずJekyllで作った何かしらをGithubに公開して見てみたいだね。
-気持ちがわかる。
-&lt;/p&gt;
+気持ちがわかる。&lt;/p&gt;
 &lt;p&gt;
 そうしたら，記事などを色々書き始める前に，空のブログを一旦Githubに公開しよう！
-まずローカルでブログを管理したい場所に以下のコマンドを叩く。
-&lt;/p&gt;
+まずローカルでブログを管理したい場所に以下のコマンドを叩く。&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  jekyll new folder-name-for-your-blog&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
-そうすると，カレントフォルダーに &lt;code&gt;folder-name-for-your-blog&lt;/code&gt; という名前のサブフォルダーが出来てしまう。
-&lt;/p&gt;
+そうすると，カレントフォルダーに &lt;code&gt;folder-name-for-your-blog&lt;/code&gt; という名前のサブフォルダーが出来てしまう。&lt;/p&gt;
 &lt;p&gt;
 そして，Githubのリポジトリのページにおいて，
-&lt;code&gt;your-user-name-of-github.github.io&lt;/code&gt; という名前のリポジトリを作っておく。
-&lt;/p&gt;
+&lt;code&gt;your-user-name-of-github.github.io&lt;/code&gt; という名前のリポジトリを作っておく。&lt;/p&gt;
 &lt;p&gt;
 新しいリポを作ったら， &lt;code&gt;git&lt;/code&gt; でどう &lt;code&gt;push&lt;/code&gt; するかとかのヒントが出てくると思うので，
-それに従ってさっき作った &lt;code&gt;folder-name-for-your-blog&lt;/code&gt; フォルダーの内容を &lt;code&gt;your-user-name-of-github.github.io&lt;/code&gt; に &lt;code&gt;push&lt;/code&gt; すればおしまい。
-&lt;/p&gt;
+それに従ってさっき作った &lt;code&gt;folder-name-for-your-blog&lt;/code&gt; フォルダーの内容を &lt;code&gt;your-user-name-of-github.github.io&lt;/code&gt; に &lt;code&gt;push&lt;/code&gt; すればおしまい。&lt;/p&gt;
 &lt;p&gt;
 数分後に，ブラウザを使って &lt;code&gt;your-user-name-of-github.github.io&lt;/code&gt; にアクセスしてみれば，
-何かしらのJekyllページが出てくるはず。
-&lt;/p&gt;
+何かしらのJekyllページが出てくるはず。&lt;/p&gt;
 &lt;p&gt;
-&lt;del&gt;このブログでも以上の方法で作っている。&lt;/del&gt;
-&lt;/p&gt;
+&lt;del&gt;このブログでも以上の方法で作っている。&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;
-（2020年6月14日追記）
-&lt;/p&gt;
+（2020年6月14日追記）&lt;/p&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://xinii.github.io&#34;&gt;このブログ&lt;/a&gt;は現在 &lt;code&gt;hugo&lt;/code&gt; という静的なサイトジェネレーターで作っている。
-&lt;/p&gt;
+&lt;a href=&#34;https://xinii.github.io&#34;&gt;このブログ&lt;/a&gt;は現在 &lt;code&gt;hugo&lt;/code&gt; という静的なサイトジェネレーターで作っている。&lt;/p&gt;
 &lt;p&gt;
-古いブログを参考していただく場合は，&lt;a href=&#34;https://xinii.github.io/jekyll-blog&#34;&gt;ここ&lt;/a&gt;をクリックしてください。
-&lt;/p&gt;
+古いブログを参考していただく場合は，&lt;a href=&#34;https://xinii.github.io/jekyll-blog&#34;&gt;ここ&lt;/a&gt;をクリックしてください。&lt;/p&gt;
 &lt;p&gt;
-それでは。
-&lt;/p&gt;
+それでは。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
 &lt;hr class=&#34;footnotes-separatator&#34;&gt;
 &lt;div class=&#34;footnote-definitions&#34;&gt;
 &lt;div class=&#34;footnote-definition&#34;&gt;
 &lt;sup id=&#34;footnote-1&#34;&gt;&lt;a href=&#34;#footnote-reference-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
 &lt;div class=&#34;footnote-body&#34;&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://jekyllrb.com/docs/&#34;&gt;Jekyllのオフィシャルサイト&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://jekyllrb.com/docs/&#34;&gt;Jekyllのオフィシャルサイト&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1880,169 +1898,155 @@ Jekyllをインストールしたら，
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
 &lt;p&gt;
 みなさんは，現在ソフトウェア工学について勉強していて，
 ソフトウェアシステムの設計・生産・管理する基本的な方法論と，
-実践的な技術について学んでいると思います。
-&lt;/p&gt;
+実践的な技術について学んでいると思います。&lt;/p&gt;
 &lt;p&gt;
 今回は，これらのことに関して，
 その周りのいくつかのポイントについて紹介した上，
 皆さんはソフトウェア設計などに対する興味を引き出し，
-このコースの勉強とこれからソフトウェア開発のチームワークに役立てれば幸いです。
-&lt;/p&gt;
+このコースの勉強とこれからソフトウェア開発のチームワークに役立てれば幸いです。&lt;/p&gt;
 &lt;p&gt;
 また，将来仕事に繋がっていく時に，
 たとえIT関連の仕事にならなかったとしても，
 現在の時代ではどの産業においても必ずシステムに関する運用がありますので，
-システム開発の周りをしておくといつか必ず役に立つと思います。
-&lt;/p&gt;
+システム開発の周りをしておくといつか必ず役に立つと思います。&lt;/p&gt;
 &lt;p&gt;
-それでは，まず，ソフトウェア開発のプロセスから見てみましょう。
-&lt;/p&gt;
+それでは，まず，ソフトウェア開発のプロセスから見てみましょう。&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 ソフトウェア開発のプロセスについて
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 プロジェクト開発する際に，どのようなソフトウェア開発手法を使っているかにもよりますが，
 例えば，伝統的なウォーターフォール型開発手法の場合は，
-開発プロセスが，需要分析，ソフトウェア設計，実装，テスト，メンテナンスになります。
-&lt;/p&gt;
+開発プロセスが，需要分析，ソフトウェア設計，実装，テスト，メンテナンスになります。&lt;/p&gt;
 &lt;p&gt;
 これによって，大学一年から身につけていたプログラミングの能力，
 それから，今期のソフトウェア工学の講義で勉強されているソフトウェア設計の基準と方法，
 また，それ以外も多くの授業から学んできたITに関連する知識など，
-どんどん活用すると皆さんのプロジェクトの周りの能力も高まります。
-&lt;/p&gt;
+どんどん活用すると皆さんのプロジェクトの周りの能力も高まります。&lt;/p&gt;
 &lt;p&gt;
 プロジェクトよって他のアジャイル開発手法などが採用される場合はプロセスが異なりますが，
-開発者やプロジェクトマネージャーに対して要求される能力はそれほど変わらないと思います。
-&lt;/p&gt;
+開発者やプロジェクトマネージャーに対して要求される能力はそれほど変わらないと思います。&lt;/p&gt;
 &lt;p&gt;
 また，技術の発展が迅速であり，プロジェクト開発の際に，
 授業を受けて勉強した知識以外も色んな技術が必要とされる時がたくさんあります。
 その時に，必要に応じてプロジェクト開発と同時に，
-興味を持って新しい技術を自分で勉強する必要があります。
-&lt;/p&gt;
+興味を持って新しい技術を自分で勉強する必要があります。&lt;/p&gt;
 &lt;p&gt;
-そんな時に，
-&lt;/p&gt;
+そんな時に，&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-なんのために勉強する（Why）
-&lt;/p&gt;
+&lt;p&gt;なんのために勉強する（Why）&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-何を勉強する（What）
-&lt;/p&gt;
+&lt;p&gt;何を勉強する（What）&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-どのように効率よく勉強できる（How）
-&lt;/p&gt;
+&lt;p&gt;どのように効率よく勉強できる（How）&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-を考えながら勉強することが大事になります。
-&lt;/p&gt;
+&lt;p&gt;を考えながら勉強することが大事になります。&lt;/p&gt;
 &lt;p&gt;
 以下では，自分のある経験から，プロジェクト開発の際に，
-必要とされる能力や気をつけた方が良いポイントについて話します。
-&lt;/p&gt;
+必要とされる能力や気をつけた方が良いポイントについて話します。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-2&#34;&gt;
 &lt;span class=&#34;todo&#34;&gt;TODO&lt;/span&gt;
 プロジェクトのバージョン管理
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
-（また具体的な内容を追加）
-&lt;/p&gt;
+（また具体的な内容を追加）&lt;/p&gt;
 &lt;p&gt;
 プロジェクトを始める前に，プロジェクトの需要やチームワークの構成によって，
 開発言語を何にするか，開発に何のフレームワークを使うか，
-何のデータベースを使うかなどを最初に決めなければなりません。
-&lt;/p&gt;
+何のデータベースを使うかなどを最初に決めなければなりません。&lt;/p&gt;
 &lt;p&gt;
 これらを決めれば，実際にいろいろをやる前に，
-共同開発・統一管理のできる環境を構築する必要があります。
-&lt;/p&gt;
+共同開発・統一管理のできる環境を構築する必要があります。&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-3&#34;&gt;
 バージョン管理とは
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
-まずは，「バージョン管理システム」についてウィキペディアに以下のように定義されています。
-&lt;/p&gt;
+まずは，「バージョン管理システム」についてウィキペディアに以下のように定義されています。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;
-バージョン管理システム（英: version control system、VCS）とは、
+&lt;p&gt;バージョン管理システム（英: version control system、VCS）とは、
 コンピュータ上で作成および編集されるファイルの変更履歴を管理するためのシステム。
-特にソフトウェア開発においてソースコードの管理に用いられることが多い。 - ウィキペディア&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
-&lt;/p&gt;
+特にソフトウェア開発においてソースコードの管理に用いられることが多い。 - ウィキペディア&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;
 すなわち，バックアップに似ているものです。
 ただし，バックアップだけの作業よりは，バージョン管理のほうがもっと繊細なもので，
 誰が変更を行ったのか，いつに何を変更をしたのか，なぜ変更をしたかなどまできちんと記録されます。
-これは，ソフトウェア開発のライフサイクルにおいても，とても重要なものです。
-&lt;/p&gt;
+これは，ソフトウェア開発のライフサイクルにおいても，とても重要なものです。&lt;/p&gt;
 &lt;p&gt;
 バージョン管理のツールとしてよく知られているのはGitです。
 Github，Gitlab或いはBitbucketなどを一度使ったことがあれば，多分Gitを触ったことがあるかと思います。
 チームワークにおいてよくGitを利用できれば，
-チーム全体の開発作業がよくスムーズに進めると思われます。
-&lt;/p&gt;
+チーム全体の開発作業がよくスムーズに進めると思われます。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-4&#34;&gt;
 &lt;span class=&#34;todo&#34;&gt;TODO&lt;/span&gt;
 バージョン管理の必要性
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 バージョン管理はなぜ重要なのかと言いますと，
 プロジェクト開発する際にチームワークの知的財産である
-コードの有効的な管理・安全性を確保することができるからです。
-&lt;/p&gt;
+コードの有効的な管理・安全性を確保することができるからです。&lt;/p&gt;
 &lt;p&gt;
 規模の小さいプロジェクトやプログラミング練習だけならば，
 バージョン管理をしなくても良いと思われるかもしれませんが，
 確かに場合によってしなくても達成する目的には影響を及ぼしませんが，
 プロジェクトの規模を問わずバージョン管理をして，
 習慣として身に付けておくと，
-実際のプロジェクトにおいてはスムーズに運用できます。
-&lt;/p&gt;
+実際のプロジェクトにおいてはスムーズに運用できます。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-5&#34;&gt;
 &lt;span class=&#34;todo&#34;&gt;TODO&lt;/span&gt;
 プログラミングについて
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-6&#34;&gt;
 ドキュメントを活用する
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 皆さんは，C言語などのプログラミング言語は学部一年の時に勉強したことがあると思います。
 C言語でなんかのプログラムを書いたら，
-コンパイルが失敗したとかエラーになったとかの経験は誰でもあると思います。
-&lt;/p&gt;
+コンパイルが失敗したとかエラーになったとかの経験は誰でもあると思います。&lt;/p&gt;
 &lt;p&gt;
 その時に，とてもシンプルな方法としては，そのエラーをネットで検索することで，
 答えやヒントが得られる場合はあります。
-ただし，ネットで調べても，なかなか自分のエラーに特定できない場合もあります。
-&lt;/p&gt;
+ただし，ネットで調べても，なかなか自分のエラーに特定できない場合もあります。&lt;/p&gt;
 &lt;p&gt;
 そんな時に，使われている言語のドキュメントにある関連な関数の定義・クラスの定義などを読むことで，
-技術的にもどんどん重ねていき，問題の解決にも近づけます。
-&lt;/p&gt;
+技術的にもどんどん重ねていき，問題の解決にも近づけます。&lt;/p&gt;
 &lt;p&gt;
 ソフトウェア開発やプロジェクト開発においては，
-必ずたくさんのツールやフレームワークを使うことになります。
-&lt;/p&gt;
+必ずたくさんのツールやフレームワークを使うことになります。&lt;/p&gt;
 &lt;p&gt;
 また，技術の迅速な発展に伴い，ツールやフレームワークを入れ替える時も常にあります。
 この時に，ネットで検索しても，あなたがその問題に遭遇した最初の一人である可能性もあり，
 なかなか問題の解決にたどり着けない場合があります。
 誰かに聞くか，開発者のコミュニティに質問を出すなども一つの方法ですが，
-これ以外もう一つ重要なのは，公式のドキュメントをうまく利用することです。
-&lt;/p&gt;
+これ以外もう一つ重要なのは，公式のドキュメントをうまく利用することです。&lt;/p&gt;
 &lt;p&gt;
 ドキュメントを活用する習慣を身に着けると，
 実際に開発の問題を解決することだけでなく，
@@ -2051,12 +2055,15 @@ C言語でなんかのプログラムを書いたら，
 もしかしたらフレームワークのバグによるもので，
 この時に，使われているフレームワークがオープンソースで公開されているのであれば，
 このオープンソースプロジェクトチームの協力者の一員として活躍できます。
-将来，会社で働いたら，会社に対しても貴重なチームワークの経験になります。
-&lt;/p&gt;
+将来，会社で働いたら，会社に対しても貴重なチームワークの経験になります。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-7&#34;&gt;
 &lt;span class=&#34;todo&#34;&gt;TODO&lt;/span&gt;
 注釈を書く習慣をつける
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 コードを書くときに注釈を書くことが重要です。
 良いプロジェクトの開発者たちは，通常では高凝集・低結合の理念で仕事を分けています。
@@ -2064,173 +2071,179 @@ C言語でなんかのプログラムを書いたら，
 それぞれの開発とメンテナンス作業ができます。
 また，システムをアップグレードするときに，
 古いモジュールや継続な開発しにくいモジュールを新しいもので入れ替えても全体に影響を及ぼすことはありません。
-しかし，どうしても代替品がなく，古いモジュールの上で開発を続く必要がある場合があります。
-&lt;/p&gt;
+しかし，どうしても代替品がなく，古いモジュールの上で開発を続く必要がある場合があります。&lt;/p&gt;
 &lt;p&gt;
 この時，コードを書いたメンバーがすでに離職や連絡を取れない場合でも，
 他のチームメンバーが続いて開発できるようにするのは注釈です。
 現在あるプロジェクトをアップグレードするときに，
 すべてのコードを理解する必要がありませんが，
-重要なアルゴリズムや関数の箇所の修正は必ずコードを読んで理解した上で行う必要があります。
-&lt;/p&gt;
+重要なアルゴリズムや関数の箇所の修正は必ずコードを読んで理解した上で行う必要があります。&lt;/p&gt;
 &lt;p&gt;
 コードを書くときに常に注釈をつけることが面倒だと思うのかもしれませんが，
 プロジェクトの将来のメンテナンスを考慮すると，
-つけたほうが将来が楽になりますし，チームワークにとっても効率的です。
-&lt;/p&gt;
+つけたほうが将来が楽になりますし，チームワークにとっても効率的です。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-8&#34;&gt;
 &lt;span class=&#34;todo&#34;&gt;TODO&lt;/span&gt;
 プログラミング言語
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 プログラミング言語がたくさんあります。
 人によっては，興味のある言語と得意な言語，あるいはあまり慣れていない言語は必ず存在します。
 しかし，ソフトウェア工学とプロジェクトの開発において，
-言語の得意さにはそれほど気になる必要はありません。
-&lt;/p&gt;
+言語の得意さにはそれほど気になる必要はありません。&lt;/p&gt;
 &lt;p&gt;
 学部一年で学んできたC言語の基礎があれば，
 あとはプログラミング言語をツールとして使い，
-ソフトウェア工学を生かせることです。
-&lt;/p&gt;
+ソフトウェア工学を生かせることです。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-9&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-9&#34;&gt;
 &lt;span class=&#34;todo&#34;&gt;TODO&lt;/span&gt;
 サーバーの運用
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-9&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-10&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-10&#34;&gt;
 &lt;span class=&#34;todo&#34;&gt;TODO&lt;/span&gt;
 自分のパソコンからサーバーのイメージを立てる
 &lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-11&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-11&#34;&gt;
 &lt;span class=&#34;todo&#34;&gt;TODO&lt;/span&gt;
 セキュリティについて
 &lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-12&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-12&#34;&gt;
 &lt;span class=&#34;todo&#34;&gt;TODO&lt;/span&gt;
 ウェブ開発
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-12&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-13&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-13&#34;&gt;
 &lt;span class=&#34;todo&#34;&gt;TODO&lt;/span&gt;
 ユーザインタフェース
 &lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-14&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-14&#34;&gt;
 &lt;span class=&#34;todo&#34;&gt;TODO&lt;/span&gt;
 ユーザーフレンドリーについて
 &lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-15&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-15&#34;&gt;
 &lt;span class=&#34;todo&#34;&gt;TODO&lt;/span&gt;
 バックエンドへの繋がり
 &lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-16&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-16&#34;&gt;
 プロジェクト開発ツールを活用する
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-16&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-17&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-17&#34;&gt;
 開発環境に関するツール
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-17&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 開発環境としては，現在統合開発環境（IDE）&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-2&#34; href=&#34;#footnote-2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;の製品がたくさんあります。
-マイクロソフトのVisual Studio，あるいはよく知られているEclipseなどがあります。
-&lt;/p&gt;
+マイクロソフトのVisual Studio，あるいはよく知られているEclipseなどがあります。&lt;/p&gt;
 &lt;p&gt;
 また，エディターにいろんなアドオンをインストールすることで，
-いろんなプログラミング言語のためのIDEにもなります。
-&lt;/p&gt;
+いろんなプログラミング言語のためのIDEにもなります。&lt;/p&gt;
 &lt;p&gt;
 どんなIDEを使うは別として，開発を行う時にIDEがいろんな機能を提供してくるので，
-慣れたら効率よくソフトウェア開発ができます。
-&lt;/p&gt;
+慣れたら効率よくソフトウェア開発ができます。&lt;/p&gt;
 &lt;p&gt;
 しかし，IDEに依存しすぎても良くないと思われます。
 IDEは，プログラミング言語で書いたコードに対して，
-コンパイル・ビルド・デバッグの一連なことができます。
-&lt;/p&gt;
+コンパイル・ビルド・デバッグの一連なことができます。&lt;/p&gt;
 &lt;p&gt;
 その中に，コンパイルに対して，何のコンパイラーを内部で使われているか，
 ビルドに対して，何の設定で行なっているか，
 デバッグに対して，想定される動きになっているのかなどについては，
-IDEを使う場合は，わからないままに終わっている可能性があります。
-&lt;/p&gt;
+IDEを使う場合は，わからないままに終わっている可能性があります。&lt;/p&gt;
 &lt;p&gt;
 もちろん内部で何があったのかは分からなくても，
 書いたプログラムがちゃんと働く場合が多いと思いますが，
-問題はなんかあった場合です。
-&lt;/p&gt;
+問題はなんかあった場合です。&lt;/p&gt;
 &lt;p&gt;
 例えば，チームメンバーが異なるバージョンのIDEを使っているとします。
 IDEにデフォルトでインストールされているプログラミング言語のコンパイラーも異なるバージョンの場合は，
 プログラミング言語の公式サイトで，すでに現在プロジェクトに使われているたくさんの関数をアップデートしたら，
-チームのメンバーの開発に支障が出てくる可能性が非常に高いです。
-&lt;/p&gt;
+チームのメンバーの開発に支障が出てくる可能性が非常に高いです。&lt;/p&gt;
 &lt;p&gt;
 これによって，チームワークにおいて開発環境を最新バージョンに統一するか，
 IDEが内部を行なっていることを理解した上，適切な設定を行う必要があります。
 開発環境を揃えてうまく活用するとプロジェクトの開発効率がよくなりますが，
 環境に依存しすぎてもダメです。
-エディターとコンパイラーを分けて，それぞれ適切に管理するのもおすすめです。
-&lt;/p&gt;
+エディターとコンパイラーを分けて，それぞれ適切に管理するのもおすすめです。&lt;/p&gt;
 &lt;p&gt;
 IDEやエディターは他のチームメンバーに使われているものを参照して選んでもよいですが，
 個人の好みで自分が好きなものを使っても良いです。
-この辺は例えばEmacsやVimなどがあります。
-&lt;/p&gt;
+この辺は例えばEmacsやVimなどがあります。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-18&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-18&#34;&gt;
 &lt;span class=&#34;todo&#34;&gt;TODO&lt;/span&gt;
 その他
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-18&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
 &lt;li class=&#34;unchecked&#34;&gt;
-&lt;p&gt;
-WindowsやmacOSのGUIだけではなくLinuxのコマンドも日常で触ること
-&lt;/p&gt;
+&lt;p&gt;WindowsやmacOSのGUIだけではなくLinuxのコマンドも日常で触ること&lt;/p&gt;
 &lt;/li&gt;
 &lt;li class=&#34;unchecked&#34;&gt;
-&lt;p&gt;
-一連の作業を自動化するためのスクリプトを作成してみること
-&lt;/p&gt;
+&lt;p&gt;一連の作業を自動化するためのスクリプトを作成してみること&lt;/p&gt;
 &lt;/li&gt;
 &lt;li class=&#34;unchecked&#34;&gt;
-&lt;p&gt;
-ショットカットをカスタマイズ・活用すること
-&lt;/p&gt;
+&lt;p&gt;ショットカットをカスタマイズ・活用すること&lt;/p&gt;
 &lt;/li&gt;
 &lt;li class=&#34;unchecked&#34;&gt;
-&lt;p&gt;
-プロジェクトの進捗を何かのツールで管理すること
-&lt;/p&gt;
+&lt;p&gt;プロジェクトの進捗を何かのツールで管理すること&lt;/p&gt;
 &lt;/li&gt;
 &lt;li class=&#34;unchecked&#34;&gt;
-&lt;p&gt;
-プロジェクト開発の際に遭遇された問題点などログとして保存すること
-&lt;/p&gt;
+&lt;p&gt;プロジェクト開発の際に遭遇された問題点などログとして保存すること&lt;/p&gt;
 &lt;/li&gt;
 &lt;li class=&#34;unchecked&#34;&gt;
-&lt;p&gt;
-クラウドサービスを活用すること
-&lt;/p&gt;
+&lt;p&gt;クラウドサービスを活用すること&lt;/p&gt;
 &lt;/li&gt;
 &lt;li class=&#34;unchecked&#34;&gt;
-&lt;p&gt;
-バックアップやバージョン管理を習慣として身につけること
-&lt;/p&gt;
+&lt;p&gt;バックアップやバージョン管理を習慣として身につけること&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
 &lt;hr class=&#34;footnotes-separatator&#34;&gt;
 &lt;div class=&#34;footnote-definitions&#34;&gt;
 &lt;div class=&#34;footnote-definition&#34;&gt;
 &lt;sup id=&#34;footnote-1&#34;&gt;&lt;a href=&#34;#footnote-reference-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
 &lt;div class=&#34;footnote-body&#34;&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E7%AE%A1%E7%90%86%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0&#34;&gt;バージョン管理システム - ウィキペディア&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E7%AE%A1%E7%90%86%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0&#34;&gt;バージョン管理システム - ウィキペディア&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;footnote-definition&#34;&gt;
 &lt;sup id=&#34;footnote-2&#34;&gt;&lt;a href=&#34;#footnote-reference-2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
 &lt;div class=&#34;footnote-body&#34;&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://ja.wikipedia.org/wiki/%E7%B5%B1%E5%90%88%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83&#34;&gt;統合開発環境 - ウィキペディア&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ja.wikipedia.org/wiki/%E7%B5%B1%E5%90%88%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83&#34;&gt;統合開発環境 - ウィキペディア&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2245,84 +2258,86 @@ WindowsやmacOSのGUIだけではなくLinuxのコマンドも日常で触るこ
       <guid>https://xinii.cf/ja/cv/xin/</guid>
       <description>
 &lt;blockquote&gt;
-&lt;p&gt;
-横浜市に住んでいます。僕のブログに来てくれて誠にありがとうございます。僕の履歴に興味がある方はこのページの紹介をご覧ください。
-&lt;/p&gt;
+&lt;p&gt;横浜市に住んでいます。僕のブログに来てくれて誠にありがとうございます。僕の履歴に興味がある方はこのページの紹介をご覧ください。&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 学歴
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-2&#34;&gt;
 横浜国立大学
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
+&lt;p&gt;&lt;strong&gt;2016 年 10 月 - 2020 年 3 月&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;
-&lt;strong&gt;2016 年 10 月 - 2020 年 3 月&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p&gt;
-&lt;em&gt;2016 年 5 月&lt;/em&gt; に中国政府留学基金委員会による国費留学プログラムの資格を取得，
-&lt;/p&gt;
+&lt;em&gt;2016 年 5 月&lt;/em&gt; に中国政府留学基金委員会による国費留学プログラムの資格を取得，&lt;/p&gt;
 &lt;p&gt;
 &lt;em&gt;2016 年 10 月&lt;/em&gt; に&lt;a href=&#34;http://gakufu.eng.ynu.ac.jp&#34;&gt;横浜国立大学大学院工学府&lt;/a&gt; 博士課程後期 &lt;a href=&#34;https://gakufu.eng.ynu.ac.jp/exam/dep/physicalinformation/index.html&#34;&gt;物理情報工学専攻電気電子ネットワークコース&lt;/a&gt;
-に入学し，機械学習及び深層学習の応用に関する研究に従事，
-&lt;/p&gt;
+に入学し，機械学習及び深層学習の応用に関する研究に従事，&lt;/p&gt;
 &lt;p&gt;
-&lt;em&gt;2020 年 3 月&lt;/em&gt; に博士（工学）の学位を取得。
-&lt;/p&gt;
+&lt;em&gt;2020 年 3 月&lt;/em&gt; に博士（工学）の学位を取得。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-3&#34;&gt;
 東京国際大学
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
+&lt;p&gt;&lt;strong&gt;2014 年 4 月 - 2015 年 3 月&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;
-&lt;strong&gt;2014 年 4 月 - 2015 年 3 月&lt;/strong&gt;
-&lt;/p&gt;
+&lt;em&gt;2014 年 4 月&lt;/em&gt; に交換留学生として&lt;a href=&#34;https://www.tiu.ac.jp/department/commercial_g/&#34;&gt;東京国際大学商学研究科&lt;/a&gt; 博士課程前期に入学し経営情報を専攻。&lt;/p&gt;
 &lt;p&gt;
-&lt;em&gt;2014 年 4 月&lt;/em&gt; に交換留学生として&lt;a href=&#34;https://www.tiu.ac.jp/department/commercial_g/&#34;&gt;東京国際大学商学研究科&lt;/a&gt; 博士課程前期に入学し経営情報を専攻。
-&lt;/p&gt;
-&lt;p&gt;
-&lt;em&gt;2015 年 3 月&lt;/em&gt; に単位取得。
-&lt;/p&gt;
+&lt;em&gt;2015 年 3 月&lt;/em&gt; に単位取得。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-4&#34;&gt;
 山西大学（中国）
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;strong&gt;2009 年 9 月 - 2016 年 7 月&lt;/strong&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2009 年 9 月 - 2016 年 7 月&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;em&gt;2009 年 9 月&lt;/em&gt; に&lt;a href=&#34;https://www.sxu.edu.cn/&#34;&gt;山西大学&lt;/a&gt;に入学，
 &lt;a href=&#34;http://cs.sxu.edu.cn/&#34;&gt;計算機情報技術学部&lt;/a&gt;でソフトウェアエンジニアリングを専攻し，
-&lt;a href=&#34;http://jgxy.sxu.edu.cn/&#34;&gt;経済管理学部&lt;/a&gt;で工商管理を専攻。
-&lt;/p&gt;
+&lt;a href=&#34;http://jgxy.sxu.edu.cn/&#34;&gt;経済管理学部&lt;/a&gt;で工商管理を専攻。&lt;/p&gt;
 &lt;p&gt;
-&lt;em&gt;2013 年 7 月&lt;/em&gt; に工学・管理学学士学位取得。
-&lt;/p&gt;
+&lt;em&gt;2013 年 7 月&lt;/em&gt; に工学・管理学学士学位取得。&lt;/p&gt;
 &lt;p&gt;
 &lt;em&gt;2013 年 9 月&lt;/em&gt; に&lt;a href=&#34;http://cs.sxu.edu.cn/&#34;&gt;山西大学大学院計算機情報技術研究科&lt;/a&gt;に入学，
-&lt;em&gt;2016 年 7 月&lt;/em&gt; に工学修士学位取得。
-&lt;/p&gt;
+&lt;em&gt;2016 年 7 月&lt;/em&gt; に工学修士学位取得。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-5&#34;&gt;
 研究及びソフトウェア開発
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-6&#34;&gt;
 論文発表
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;strong&gt;李 欣&lt;/strong&gt;, 新井 洋, and 濱上 知樹.
+&lt;p&gt;&lt;strong&gt;李 欣&lt;/strong&gt;, 新井 洋, and 濱上 知樹.
 船型データの分布を考慮した深層学習による造波抵抗推定.
-&lt;em&gt;電気学会論文誌Ｃ（電子・情報・システム部門誌）&lt;/em&gt;, 140(3):391–397, 2020.
-&lt;/p&gt;
+&lt;em&gt;電気学会論文誌Ｃ（電子・情報・システム部門誌）&lt;/em&gt;, 140(3):391–397, 2020.&lt;/p&gt;
 &lt;table&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
@@ -2336,11 +2351,9 @@ WindowsやmacOSのGUIだけではなくLinuxのコマンドも日常で触るこ
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;strong&gt;Xin Li&lt;/strong&gt; and Tomoki Hamagami.
+&lt;p&gt;&lt;strong&gt;Xin Li&lt;/strong&gt; and Tomoki Hamagami.
 An improved auto-encoder based on 2-level prioritized experience replay for high dimension skewed data.
-&lt;em&gt;Proceedings in Adaptation, Learning and Optimization&lt;/em&gt;, 12:93–105, 2020. （本文言語が英語）
-&lt;/p&gt;
+&lt;em&gt;Proceedings in Adaptation, Learning and Optimization&lt;/em&gt;, 12:93–105, 2020. （本文言語が英語）&lt;/p&gt;
 &lt;table&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
@@ -2352,11 +2365,9 @@ An improved auto-encoder based on 2-level prioritized experience replay for high
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;strong&gt;Xin Li&lt;/strong&gt; and Tomoki Hamagami.
+&lt;p&gt;&lt;strong&gt;Xin Li&lt;/strong&gt; and Tomoki Hamagami.
 Prioritized sampling method for autoencoder to reduce loss rate for skewed data.
-&lt;em&gt;The papers of technical meeting on systems, IEE Japan&lt;/em&gt;, 2018(39):199–203, 2018. （本文言語が英語）
-&lt;/p&gt;
+&lt;em&gt;The papers of technical meeting on systems, IEE Japan&lt;/em&gt;, 2018(39):199–203, 2018. （本文言語が英語）&lt;/p&gt;
 &lt;table&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
@@ -2368,12 +2379,10 @@ Prioritized sampling method for autoencoder to reduce loss rate for skewed data.
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-Jinwei Wang and &lt;strong&gt;Xin Li&lt;/strong&gt;.
+&lt;p&gt;Jinwei Wang and &lt;strong&gt;Xin Li&lt;/strong&gt;.
 Multi-translation parallel corpus construction of don quixote.
 In &lt;em&gt;Spanish Paper Series 2017&lt;/em&gt;, pages 4250–4423.
-Foreign Language Teaching and Researching Press, Beijing, 11 2018. （本文言語が中国語簡体字）
-&lt;/p&gt;
+Foreign Language Teaching and Researching Press, Beijing, 11 2018. （本文言語が中国語簡体字）&lt;/p&gt;
 &lt;table&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
@@ -2384,12 +2393,10 @@ Foreign Language Teaching and Researching Press, Beijing, 11 2018. （本文言�
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-Jinwei Wang and &lt;strong&gt;Xin Li&lt;/strong&gt;.
+&lt;p&gt;Jinwei Wang and &lt;strong&gt;Xin Li&lt;/strong&gt;.
 An empirical study of oral communication strategies for foreign language students - taking spanish as an example.
 In &lt;em&gt;Proceedings of the 11th Cross-Strait Foreign Language Teaching Symposium&lt;/em&gt;, pages 1–11.
-Fu Jen Catholic University Press, Taibei, 9 2016. （本文言語が中国語繁体字）
-&lt;/p&gt;
+Fu Jen Catholic University Press, Taibei, 9 2016. （本文言語が中国語繁体字）&lt;/p&gt;
 &lt;table&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
@@ -2400,134 +2407,133 @@ Fu Jen Catholic University Press, Taibei, 9 2016. （本文言語が中国語繁
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-7&#34;&gt;
 国際学会及び国内シンポジウム
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;strong&gt;Xin Li&lt;/strong&gt; and Tomoki Hamagami.
+&lt;p&gt;&lt;strong&gt;Xin Li&lt;/strong&gt; and Tomoki Hamagami.
 An improved auto-encoder based on 2-level prioritized experience replay for high dimension skewed data.
-In &lt;em&gt;Proceedings of the 23rd Asia Pacific Symposium on Intelligent and Evolutionary Systems&lt;/em&gt;, 2019.
-&lt;/p&gt;
+In &lt;em&gt;Proceedings of the 23rd Asia Pacific Symposium on Intelligent and Evolutionary Systems&lt;/em&gt;, 2019.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;strong&gt;Xin Li&lt;/strong&gt; and Tomoki Hamagami.
+&lt;p&gt;&lt;strong&gt;Xin Li&lt;/strong&gt; and Tomoki Hamagami.
 Prioritized sampling method for autoencoder to reduce loss rate for skewed data.
-In &lt;em&gt;The 28th Fuzzy, Artificial Intelligence, Neural Networks and Computational Intelligence&lt;/em&gt;, 2018.
-&lt;/p&gt;
+In &lt;em&gt;The 28th Fuzzy, Artificial Intelligence, Neural Networks and Computational Intelligence&lt;/em&gt;, 2018.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;strong&gt;Xin Li&lt;/strong&gt;, Masaya Nakata, Hamatsu Fumiya, and Tomoki Hamagami.
+&lt;p&gt;&lt;strong&gt;Xin Li&lt;/strong&gt;, Masaya Nakata, Hamatsu Fumiya, and Tomoki Hamagami.
 A research about anomaly detection method for multidimensional time series data.
-In &lt;em&gt;The International Conference on Electrical Engineering&lt;/em&gt;, 2017.
-&lt;/p&gt;
+In &lt;em&gt;The International Conference on Electrical Engineering&lt;/em&gt;, 2017.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-8&#34;&gt;
 ソフトウェア開発
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;
-2014 年 11 月：「顔認識及び音声認識に基づいた目の練習アプリ」中国国家特許局ソフトウェア著作権取得。
-（記録番号：2014SR177728，ファイル番号：軟著登字第0846964号）
-&lt;/p&gt;
+&lt;p&gt;2014 年 11 月：「顔認識及び音声認識に基づいた目の練習アプリ」中国国家特許局ソフトウェア著作権取得。
+（記録番号：2014SR177728，ファイル番号：軟著登字第0846964号）&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-2014 年 9 月：「Bag-of-wordsに基づいた画像検索分類システム」中国国家特許局ソフトウェア著作権取得。
-（記録番号：2014SR136257，ファイル番号：軟著登字第0805497号）
-&lt;/p&gt;
+&lt;p&gt;2014 年 9 月：「Bag-of-wordsに基づいた画像検索分類システム」中国国家特許局ソフトウェア著作権取得。
+（記録番号：2014SR136257，ファイル番号：軟著登字第0805497号）&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-2014 年 5 月：「Androidに基づいた高解像度画像生成システム」中国国家特許局ソフトウェア著作権取得。
-（記録番号：2014SR052862，ファイル番号：軟著登字第0722106号）
-&lt;/p&gt;
+&lt;p&gt;2014 年 5 月：「Androidに基づいた高解像度画像生成システム」中国国家特許局ソフトウェア著作権取得。
+（記録番号：2014SR052862，ファイル番号：軟著登字第0722106号）&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-9&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-9&#34;&gt;
 職歴及びインターンシップ
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-9&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-10&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-10&#34;&gt;
 神奈川県横浜市
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-10&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
+&lt;p&gt;&lt;strong&gt;2020 年 4 月 - 現在&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;
-&lt;strong&gt;2020 年 4 月 - 現在&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p&gt;
-横浜国立大学大学院工学研究院，非常勤教員（ポスドク研究員）。
-&lt;/p&gt;
+横浜国立大学大学院工学研究院，非常勤教員（ポスドク研究員）。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
+&lt;p&gt;&lt;strong&gt;2019 年 4 月 - 2020 年 3 月&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;
-&lt;strong&gt;2019 年 4 月 - 2020 年 3 月&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p&gt;
-横浜国立大学理工学部，非常勤講師（電子情報システム基礎実験I，II）。
-&lt;/p&gt;
+横浜国立大学理工学部，非常勤講師（電子情報システム基礎実験I，II）。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
+&lt;p&gt;&lt;strong&gt;2017 年 4 月 - 2017 年 7 月&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;
-&lt;strong&gt;2017 年 4 月 - 2017 年 7 月&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p&gt;
-横浜国立大学大学院工学府，TA（プログラミング演習I）。
-&lt;/p&gt;
+横浜国立大学大学院工学府，TA（プログラミング演習I）。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-11&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-11&#34;&gt;
 埼玉県川越市
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-11&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
+&lt;p&gt;&lt;strong&gt;2014 年 6 月 - 2015 年 2 月&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;
-&lt;strong&gt;2014 年 6 月 - 2015 年 2 月&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p&gt;
-株式会社セリア東武霞ヶ関店，アルバイト。
-&lt;/p&gt;
+株式会社セリア東武霞ヶ関店，アルバイト。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-12&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-12&#34;&gt;
 北京（中国）
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-12&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
+&lt;p&gt;&lt;strong&gt;2012 年 7 月 - 2012 年 9 月&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;
-&lt;strong&gt;2012 年 7 月 - 2012 年 9 月&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p&gt;
-中軟国際有限公司，インターンシップ。
-&lt;/p&gt;
+中軟国際有限公司，インターンシップ。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-13&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-13&#34;&gt;
 山西省太原市（中国）
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-13&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
+&lt;p&gt;&lt;strong&gt;2013 年 4 月 - 2014 年 3 月&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;
-&lt;strong&gt;2013 年 4 月 - 2014 年 3 月&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p&gt;
-太原創成煥新科技有限公司，ソフトウェアプロジェクト及び業務管理。
-&lt;/p&gt;
+太原創成煥新科技有限公司，ソフトウェアプロジェクト及び業務管理。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
+&lt;p&gt;&lt;strong&gt;2010 年 6 月 - 2010 年 8 月&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;
-&lt;strong&gt;2010 年 6 月 - 2010 年 8 月&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p&gt;
-太原優連科技有限公司，インターンシップ。
-&lt;/p&gt;
+太原優連科技有限公司，インターンシップ。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     

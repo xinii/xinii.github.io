@@ -373,7 +373,13 @@
 
 
 
-  <script data-ad-client="ca-pub-9872583441136696" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script type="text/javascript">
+ if ( window.location.host != "xinii.cf" ) {
+     window.location.replace("https://xinii.cf" + window.location.pathname);
+ }
+</script>
+
+<script src="https://www.googleoptimize.com/optimize.js?id=OPT-MQBJVR6"></script>
 
 
   <title>絶対音感について | xin iDEA iNNATA</title>
@@ -397,7 +403,7 @@
       <div id="search-box">
         
         <input name="q" id="search-query" placeholder="検索..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+               autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control" style="font-size: 16px; line-height: 120%;">
         
       </div>
 
@@ -424,12 +430,6 @@
 
 
 
-
-<style type="text/css">
- .fix-width{
-     width: 25px;
- }
-</style>
 
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
@@ -483,7 +483,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/ja/#xinconfig"><span><span class='fas fa-home fix-width'></span>ホーム</span></a>
         </li>
 
@@ -512,7 +512,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/ja/#about"><span><span class='far fa-address-card fix-width'></span>私について</span></a>
         </li>
 
@@ -541,7 +541,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/ja/#posts"><span><span class='far fa-newspaper fix-width'></span>最近の投稿</span></a>
         </li>
 
@@ -570,7 +570,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/ja/#featured"><span><span class='fas fa-book-open fix-width'></span>発表文献</span></a>
         </li>
 
@@ -599,7 +599,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/ja/#categories"><span><span class='fab fa-hotjar fix-width'></span>人気キーワード</span></a>
         </li>
 
@@ -628,7 +628,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/ja/#contact"><span><span class='far fa-envelope fix-width'></span>お問い合わせ</span></a>
         </li>
 
@@ -688,6 +688,9 @@
           
           <a href='/ja/admin' class="dropdown-item">
             <span class="fas fa-key fix-width"></span>ログイン
+          </a>
+          <a href='https://ise.teracloud.jp/dav/web/notebook/index.html' class="dropdown-item">
+            <span class="far fa-sticky-note fix-width"></span>ノートブック
           </a>
 
         </div>
@@ -795,12 +798,13 @@
 
     <div class="article-style">
       
+<div id="outline-container-headline-1" class="outline-2">
 <h2 id="headline-1">
 音階と音の周波数
 </h2>
+<div id="outline-text-headline-1" class="outline-text-2">
 <p>
-次の表に，ピアノの鍵盤における88のキーに相応する音の周波数を示す。
-</p>
+次の表に，ピアノの鍵盤における88のキーに相応する音の周波数を示す。</p>
 <table>
 <thead>
 <tr>
@@ -935,24 +939,18 @@
 </table>
 <p>
 音の周波数を等比数列 $a_0, a_1, a_2 \dots a_{12}$ とし，
-公比を $r$ とすると，以下の関係がある。
-</p>
+公比を $r$ とすると，以下の関係がある。</p>
 <p>
-$$a_{12} = a_{0} \times r^{12} = a_0 \times 2$$
-</p>
+$$a_{12} = a_{0} \times r^{12} = a_0 \times 2$$</p>
 <p>
 また，1オクターブの二つの音の周波数が2倍の関係なので，
-以下の式によって公比\(r\)がわかるようになる。
-</p>
+以下の式によって公比\(r\)がわかるようになる。</p>
 <p>
-$$r^{12} = 2 \Rightarrow r = \sqrt[12]{2} \approx 1.059463094$$
-</p>
+$$r^{12} = 2 \Rightarrow r = \sqrt[12]{2} \approx 1.059463094$$</p>
 <p>
-従って，任意の音に対して，\(n\)個半音上の音を計算する方法は以下の式に示す。
-</p>
+従って，任意の音に対して，\(n\)個半音上の音を計算する方法は以下の式に示す。</p>
 <p>
-$$a_n = a_0 \times r^n = a_0 \times 2^{\frac{n}{12}}$$
-</p>
+$$a_n = a_0 \times r^n = a_0 \times 2^{\frac{n}{12}}$$</p>
 <p>
 以上によると，絶対音感を持っている人が，
 任意の一つの音を聞いて，その周波数がわかる。
@@ -961,39 +959,34 @@ $$a_n = a_0 \times r^n = a_0 \times 2^{\frac{n}{12}}$$
 これに対して，相対音感が\(a_0\)が必要である。
 また，音名が固定だが，階名が変化するものである。
 \(a_0\)を任意の音を指定しておく前提なら，
-耳の感覚で，他の音を計算するものである。
-</p>
+耳の感覚で，他の音を計算するものである。</p>
 <p>
 絶対音感が，5歳くらいまでにトレーニングしないと，
 身に着けにくくなるとよく言われている。 これはなぜだろうか。
-母国語に似ているものなので， この視点から分析してみる。
-</p>
+母国語に似ているものなので， この視点から分析してみる。</p>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-2">
 <h2 id="headline-2">
 絶対音感を身に着けるにはなぜ5歳までトレーニングする必要があるか
 </h2>
+<div id="outline-text-headline-2" class="outline-text-2">
 <p>
-ここで，まずいくつかの言語の例をあげてみたい。
-</p>
+ここで，まずいくつかの言語の例をあげてみたい。</p>
 <ul>
 <li>
-<p>
-言語に関する時間
-</p>
+<p>言語に関する時間</p>
 </li>
 <li>
-<p>
-言語に関する意味
-</p>
+<p>言語に関する意味</p>
 </li>
 <li>
-<p>
-言語に関する発音
-</p>
+<p>言語に関する発音</p>
 </li>
 </ul>
-<p>
-（未完成… 時間がある時に続いて書く）
-</p>
+<p>（未完成… 時間がある時に続いて書く）</p>
+</div>
+</div>
 
     </div>
 
@@ -1008,8 +1001,8 @@ $$a_n = a_0 \times r^n = a_0 \times 2^{\frac{n}{12}}$$
   
 
 <p class="edit-page">
-  <a href="https://github.com/xinii/hugo-site-academic/edit/master/content/ja/post/single-language/absolute-pitch.ja.org">
-    <i class="fas fa-pen pr-2"></i>Edit this page
+  <a class="btn btn-sm btn-outline-secondary" href="https://github.com/xinii/hugo-site-academic/edit/master/content/ja/post/single-language/absolute-pitch.ja.org">
+    <i class="fas fa-pen pr-2"></i>このページを編集
   </a>
 </p>
 
@@ -1109,12 +1102,6 @@ $$a_n = a_0 \times r^n = a_0 \times 2^{\frac{n}{12}}$$
   </ul>
 </div>
 
-
-
-<script type="text/javascript">
- var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
-</script>
-<script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script>
 
 
 
@@ -1344,6 +1331,37 @@ $$a_n = a_0 \times r^n = a_0 \times 2^{\frac{n}{12}}$$
 
 
 
+<div class="content-widget-hr" style="text-align:center">
+  <script type="text/javascript">
+   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+       
+
+       
+       var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
+       document.write('\x3Cscript type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js">\x3C/script>');
+       document.write('<br>');
+
+       
+       imobile_tag_ver = "0.3";
+       imobile_pid = "73400";
+       imobile_asid = "1711292";
+       imobile_type = "inline";
+       document.write('\x3Cscript type="text/javascript" src="https://spad.i-mobile.co.jp/script/adssp.js?20110215">\x3C/script>');
+       
+   } else {
+       
+
+       
+       imobile_pid = "73400";
+       imobile_asid = "1711291";
+       imobile_width = 468;
+       imobile_height = 60;
+       document.write('\x3Cscript type="text/javascript" src="https://spdeliver.i-mobile.co.jp/script/ads.js?20101001">\x3C/script>');
+   }
+  </script>
+</div>
+
+
 <section id="comments">
   
     
@@ -1374,7 +1392,6 @@ $$a_n = a_0 \times r^n = a_0 \times 2^{\frac{n}{12}}$$
 
 
 
-
 <div class="article-widget">
   
 <div class="post-nav">
@@ -1396,7 +1413,6 @@ $$a_n = a_0 \times r^n = a_0 \times 2^{\frac{n}{12}}$$
 </div>
 
 </div>
-
 
 
 
@@ -1535,12 +1551,6 @@ $$a_n = a_0 \times r^n = a_0 \times 2^{\frac{n}{12}}$$
      pangu.autoSpacingPage();
  });
 </script>
-
-
-<script type="text/javascript">
- var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
-</script>
-<script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script>
 
 
 

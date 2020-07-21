@@ -377,7 +377,13 @@
 
 
 
-  <script data-ad-client="ca-pub-9872583441136696" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script type="text/javascript">
+ if ( window.location.host != "xinii.cf" ) {
+     window.location.replace("https://xinii.cf" + window.location.pathname);
+ }
+</script>
+
+<script src="https://www.googleoptimize.com/optimize.js?id=OPT-MQBJVR6"></script>
 
 
   <title>安装 GnuTLS 并从源码编译 Emacs | xin iDEA iNNATA</title>
@@ -401,7 +407,7 @@
       <div id="search-box">
         
         <input name="q" id="search-query" placeholder="搜索..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+               autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control" style="font-size: 16px; line-height: 120%;">
         
       </div>
 
@@ -428,12 +434,6 @@
 
 
 
-
-<style type="text/css">
- .fix-width{
-     width: 25px;
- }
-</style>
 
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
@@ -487,7 +487,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/zh/#xinconfig"><span><span class='fas fa-home fix-width'></span>主页</span></a>
         </li>
 
@@ -516,7 +516,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/zh/#about"><span><span class='far fa-address-card fix-width'></span>关于</span></a>
         </li>
 
@@ -545,7 +545,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/zh/#posts"><span><span class='far fa-newspaper fix-width'></span>最新博文</span></a>
         </li>
 
@@ -574,7 +574,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/zh/#featured"><span><span class='fas fa-book-open fix-width'></span>研究成果</span></a>
         </li>
 
@@ -603,7 +603,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/zh/#categories"><span><span class='fab fa-hotjar fix-width'></span>热门词汇</span></a>
         </li>
 
@@ -632,7 +632,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/zh/#contact"><span><span class='far fa-envelope fix-width'></span>取得联系</span></a>
         </li>
 
@@ -692,6 +692,9 @@
           
           <a href='/zh/admin' class="dropdown-item">
             <span class="fas fa-key fix-width"></span>登录
+          </a>
+          <a href='https://ise.teracloud.jp/dav/web/notebook/index.html' class="dropdown-item">
+            <span class="far fa-sticky-note fix-width"></span>笔记
           </a>
 
         </div>
@@ -847,63 +850,67 @@
 </li>
 </ul>
 </nav>
-
 </p>
+<div id="outline-container-headline-1" class="outline-2">
 <h2 id="headline-1">
 环境中缺少GnuTLS的情况
 </h2>
+<div id="outline-text-headline-1" class="outline-text-2">
 <p>
-若当前环境缺少 GnuTLS，那么在对 Emacs<sup class="footnote-reference"><a id="footnote-reference-1" href="#footnote-1">1</a></sup> 的源代码进行编译安装前需要以下配置。
-</p>
+若当前环境缺少 GnuTLS，那么在对 Emacs<sup class="footnote-reference"><a id="footnote-reference-1" href="#footnote-1">1</a></sup> 的源代码进行编译安装前需要以下配置。</p>
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  ./configure --with-gnutls<span style="color:#f92672">=</span>no</code></pre></div>
 </div>
 <p>
-或者同时指定安装目录、添加忽略其他仍缺少的依赖库的选项等，例如以下配置。
-</p>
+或者同时指定安装目录、添加忽略其他仍缺少的依赖库的选项等，例如以下配置。</p>
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  bash configure --prefix<span style="color:#f92672">=</span>$HOME/.local --with-gif<span style="color:#f92672">=</span>no --with-gnutls<span style="color:#f92672">=</span>no</code></pre></div>
 </div>
 <p>
-这样可以在缺少对默认安装路径权限，或者缺少各种依赖库的情况下使配置及安装得以顺利进行。
-</p>
+这样可以在缺少对默认安装路径权限，或者缺少各种依赖库的情况下使配置及安装得以顺利进行。</p>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-2">
 <h2 id="headline-2">
 潜在的问题
 </h2>
+<div id="outline-text-headline-2" class="outline-text-2">
 <p>
 以上虽可以达到正常安装 Emacs 到 <code class="verbatim">$HOME/.local</code> 目录的目的， 但由于缺少了
-GnuTLS 组件，Emacs 中用到网络传输的时候便只能使用 http 而不能使用 https。
-</p>
+GnuTLS 组件，Emacs 中用到网络传输的时候便只能使用 http 而不能使用 https。</p>
 <p>
 如果只是 Emacs 初始化时需要网络连接，还可以通过将 Melpa 的链接都改为以
 http 开头来解决问题， 但这为今后使用 Emacs
-中需要网络连接的各种扩展带来问题。
-</p>
+中需要网络连接的各种扩展带来问题。</p>
 <p>
 例如使用 <code class="verbatim">google-translate</code> 时，即使将 Emacs 配置文件夹中 elpa 文件夹下的
 <code class="verbatim">google-translate</code> 包内的所有 <code class="verbatim">*.el</code> 文件中出现的 <code class="verbatim">https</code> 改为 <code class="verbatim">http</code> ，
-在实际使用的途中仍会出现自动使用某些 <code class="verbatim">https</code> 服务的情况，从而导致翻译异常。
-</p>
+在实际使用的途中仍会出现自动使用某些 <code class="verbatim">https</code> 服务的情况，从而导致翻译异常。</p>
 <p>
 这里有一点需要注意的是，修改 <code class="verbatim">*.el</code> 文件后需删除所有 <code class="verbatim">*.elc</code>
-文件以强制重新编译使修改生效。
-</p>
+文件以强制重新编译使修改生效。</p>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-2">
 <h2 id="headline-3">
 安装GnuTLS
 </h2>
+<div id="outline-text-headline-3" class="outline-text-2">
 <p>
 经过以上实际测试我们不难发现，在当前环境中安装好 GnuTLS 之后再从源码安装
-Emacs 是一个不错的选择。
-</p>
+Emacs 是一个不错的选择。</p>
 <p>
-以 OpenSUSE 为例，在终端运行下面的语句即可安装 GnuTLS。
-</p>
+以 OpenSUSE 为例，在终端运行下面的语句即可安装 GnuTLS。</p>
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  sudo zypper install gnutls</code></pre></div>
 </div>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-2">
 <h2 id="headline-4">
 其他可能的问题
 </h2>
+<div id="outline-text-headline-4" class="outline-text-2">
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  checking <span style="color:#66d9ef">for</span> library containing tputs... no
   configure: error: The required <span style="color:#66d9ef">function</span> <span style="color:#e6db74">&#39;tputs&#39;</span> was not found in any library.
@@ -918,10 +925,11 @@ Emacs 是一个不错的选择。
 <p>
 另外，如果 GnuTLS 在当前环境已安装，而 <code class="verbatim">make</code> 后仍报上面的错误，
 那么对于 OpenSUSE 的环境则需要一个叫做 <code class="verbatim">ncurses-devel</code> 的包，
-执行下面的语句安装即可。
-</p>
+执行下面的语句安装即可。</p>
 <div class="src src-sh">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  sudo zypper install ncurses-devel</code></pre></div>
+</div>
+</div>
 </div>
 <div class="footnotes">
 <hr class="footnotes-separatator">
@@ -929,9 +937,7 @@ Emacs 是一个不错的选择。
 <div class="footnote-definition">
 <sup id="footnote-1"><a href="#footnote-reference-1">1</a></sup>
 <div class="footnote-body">
-<p>
-<a href="https://ja.wikipedia.org/wiki/Emacs">Emacs 的 Logo</a>
-</p>
+<p><a href="https://ja.wikipedia.org/wiki/Emacs">Emacs 的 Logo</a></p>
 </div>
 </div>
 </div>
@@ -950,7 +956,7 @@ Emacs 是一个不错的选择。
   
 
 <p class="edit-page">
-  <a href="https://github.com/xinii/hugo-site-academic/edit/master/content/zh/post/emacs-gnutls/index.org">
+  <a class="btn btn-sm btn-outline-secondary" href="https://github.com/xinii/hugo-site-academic/edit/master/content/zh/post/emacs-gnutls/index.org">
     <i class="fas fa-pen pr-2"></i>编辑本页
   </a>
 </p>
@@ -1053,12 +1059,6 @@ Emacs 是一个不错的选择。
   </ul>
 </div>
 
-
-
-<script type="text/javascript">
- var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
-</script>
-<script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script>
 
 
 
@@ -1288,6 +1288,37 @@ Emacs 是一个不错的选择。
 
 
 
+<div class="content-widget-hr" style="text-align:center">
+  <script type="text/javascript">
+   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+       
+
+       
+       var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
+       document.write('\x3Cscript type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js">\x3C/script>');
+       document.write('<br>');
+
+       
+       imobile_tag_ver = "0.3";
+       imobile_pid = "73400";
+       imobile_asid = "1711292";
+       imobile_type = "inline";
+       document.write('\x3Cscript type="text/javascript" src="https://spad.i-mobile.co.jp/script/adssp.js?20110215">\x3C/script>');
+       
+   } else {
+       
+
+       
+       imobile_pid = "73400";
+       imobile_asid = "1711291";
+       imobile_width = 468;
+       imobile_height = 60;
+       document.write('\x3Cscript type="text/javascript" src="https://spdeliver.i-mobile.co.jp/script/ads.js?20101001">\x3C/script>');
+   }
+  </script>
+</div>
+
+
 <section id="comments">
   
     
@@ -1318,7 +1349,6 @@ Emacs 是一个不错的选择。
 
 
 
-
 <div class="article-widget">
   
 <div class="post-nav">
@@ -1340,7 +1370,6 @@ Emacs 是一个不错的选择。
 </div>
 
 </div>
-
 
 
 
@@ -1470,12 +1499,6 @@ Emacs 是一个不错的选择。
      pangu.autoSpacingPage();
  });
 </script>
-
-
-<script type="text/javascript">
- var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
-</script>
-<script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script>
 
 
 

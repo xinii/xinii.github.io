@@ -70,169 +70,155 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
 &lt;p&gt;
 みなさんは，現在ソフトウェア工学について勉強していて，
 ソフトウェアシステムの設計・生産・管理する基本的な方法論と，
-実践的な技術について学んでいると思います。
-&lt;/p&gt;
+実践的な技術について学んでいると思います。&lt;/p&gt;
 &lt;p&gt;
 今回は，これらのことに関して，
 その周りのいくつかのポイントについて紹介した上，
 皆さんはソフトウェア設計などに対する興味を引き出し，
-このコースの勉強とこれからソフトウェア開発のチームワークに役立てれば幸いです。
-&lt;/p&gt;
+このコースの勉強とこれからソフトウェア開発のチームワークに役立てれば幸いです。&lt;/p&gt;
 &lt;p&gt;
 また，将来仕事に繋がっていく時に，
 たとえIT関連の仕事にならなかったとしても，
 現在の時代ではどの産業においても必ずシステムに関する運用がありますので，
-システム開発の周りをしておくといつか必ず役に立つと思います。
-&lt;/p&gt;
+システム開発の周りをしておくといつか必ず役に立つと思います。&lt;/p&gt;
 &lt;p&gt;
-それでは，まず，ソフトウェア開発のプロセスから見てみましょう。
-&lt;/p&gt;
+それでは，まず，ソフトウェア開発のプロセスから見てみましょう。&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 ソフトウェア開発のプロセスについて
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 プロジェクト開発する際に，どのようなソフトウェア開発手法を使っているかにもよりますが，
 例えば，伝統的なウォーターフォール型開発手法の場合は，
-開発プロセスが，需要分析，ソフトウェア設計，実装，テスト，メンテナンスになります。
-&lt;/p&gt;
+開発プロセスが，需要分析，ソフトウェア設計，実装，テスト，メンテナンスになります。&lt;/p&gt;
 &lt;p&gt;
 これによって，大学一年から身につけていたプログラミングの能力，
 それから，今期のソフトウェア工学の講義で勉強されているソフトウェア設計の基準と方法，
 また，それ以外も多くの授業から学んできたITに関連する知識など，
-どんどん活用すると皆さんのプロジェクトの周りの能力も高まります。
-&lt;/p&gt;
+どんどん活用すると皆さんのプロジェクトの周りの能力も高まります。&lt;/p&gt;
 &lt;p&gt;
 プロジェクトよって他のアジャイル開発手法などが採用される場合はプロセスが異なりますが，
-開発者やプロジェクトマネージャーに対して要求される能力はそれほど変わらないと思います。
-&lt;/p&gt;
+開発者やプロジェクトマネージャーに対して要求される能力はそれほど変わらないと思います。&lt;/p&gt;
 &lt;p&gt;
 また，技術の発展が迅速であり，プロジェクト開発の際に，
 授業を受けて勉強した知識以外も色んな技術が必要とされる時がたくさんあります。
 その時に，必要に応じてプロジェクト開発と同時に，
-興味を持って新しい技術を自分で勉強する必要があります。
-&lt;/p&gt;
+興味を持って新しい技術を自分で勉強する必要があります。&lt;/p&gt;
 &lt;p&gt;
-そんな時に，
-&lt;/p&gt;
+そんな時に，&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-なんのために勉強する（Why）
-&lt;/p&gt;
+&lt;p&gt;なんのために勉強する（Why）&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-何を勉強する（What）
-&lt;/p&gt;
+&lt;p&gt;何を勉強する（What）&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-どのように効率よく勉強できる（How）
-&lt;/p&gt;
+&lt;p&gt;どのように効率よく勉強できる（How）&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-を考えながら勉強することが大事になります。
-&lt;/p&gt;
+&lt;p&gt;を考えながら勉強することが大事になります。&lt;/p&gt;
 &lt;p&gt;
 以下では，自分のある経験から，プロジェクト開発の際に，
-必要とされる能力や気をつけた方が良いポイントについて話します。
-&lt;/p&gt;
+必要とされる能力や気をつけた方が良いポイントについて話します。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-2&#34;&gt;
 &lt;span class=&#34;todo&#34;&gt;TODO&lt;/span&gt;
 プロジェクトのバージョン管理
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
-（また具体的な内容を追加）
-&lt;/p&gt;
+（また具体的な内容を追加）&lt;/p&gt;
 &lt;p&gt;
 プロジェクトを始める前に，プロジェクトの需要やチームワークの構成によって，
 開発言語を何にするか，開発に何のフレームワークを使うか，
-何のデータベースを使うかなどを最初に決めなければなりません。
-&lt;/p&gt;
+何のデータベースを使うかなどを最初に決めなければなりません。&lt;/p&gt;
 &lt;p&gt;
 これらを決めれば，実際にいろいろをやる前に，
-共同開発・統一管理のできる環境を構築する必要があります。
-&lt;/p&gt;
+共同開発・統一管理のできる環境を構築する必要があります。&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-3&#34;&gt;
 バージョン管理とは
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
-まずは，「バージョン管理システム」についてウィキペディアに以下のように定義されています。
-&lt;/p&gt;
+まずは，「バージョン管理システム」についてウィキペディアに以下のように定義されています。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;
-バージョン管理システム（英: version control system、VCS）とは、
+&lt;p&gt;バージョン管理システム（英: version control system、VCS）とは、
 コンピュータ上で作成および編集されるファイルの変更履歴を管理するためのシステム。
-特にソフトウェア開発においてソースコードの管理に用いられることが多い。 - ウィキペディア&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
-&lt;/p&gt;
+特にソフトウェア開発においてソースコードの管理に用いられることが多い。 - ウィキペディア&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;
 すなわち，バックアップに似ているものです。
 ただし，バックアップだけの作業よりは，バージョン管理のほうがもっと繊細なもので，
 誰が変更を行ったのか，いつに何を変更をしたのか，なぜ変更をしたかなどまできちんと記録されます。
-これは，ソフトウェア開発のライフサイクルにおいても，とても重要なものです。
-&lt;/p&gt;
+これは，ソフトウェア開発のライフサイクルにおいても，とても重要なものです。&lt;/p&gt;
 &lt;p&gt;
 バージョン管理のツールとしてよく知られているのはGitです。
 Github，Gitlab或いはBitbucketなどを一度使ったことがあれば，多分Gitを触ったことがあるかと思います。
 チームワークにおいてよくGitを利用できれば，
-チーム全体の開発作業がよくスムーズに進めると思われます。
-&lt;/p&gt;
+チーム全体の開発作業がよくスムーズに進めると思われます。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-4&#34;&gt;
 &lt;span class=&#34;todo&#34;&gt;TODO&lt;/span&gt;
 バージョン管理の必要性
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 バージョン管理はなぜ重要なのかと言いますと，
 プロジェクト開発する際にチームワークの知的財産である
-コードの有効的な管理・安全性を確保することができるからです。
-&lt;/p&gt;
+コードの有効的な管理・安全性を確保することができるからです。&lt;/p&gt;
 &lt;p&gt;
 規模の小さいプロジェクトやプログラミング練習だけならば，
 バージョン管理をしなくても良いと思われるかもしれませんが，
 確かに場合によってしなくても達成する目的には影響を及ぼしませんが，
 プロジェクトの規模を問わずバージョン管理をして，
 習慣として身に付けておくと，
-実際のプロジェクトにおいてはスムーズに運用できます。
-&lt;/p&gt;
+実際のプロジェクトにおいてはスムーズに運用できます。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-5&#34;&gt;
 &lt;span class=&#34;todo&#34;&gt;TODO&lt;/span&gt;
 プログラミングについて
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-6&#34;&gt;
 ドキュメントを活用する
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 皆さんは，C言語などのプログラミング言語は学部一年の時に勉強したことがあると思います。
 C言語でなんかのプログラムを書いたら，
-コンパイルが失敗したとかエラーになったとかの経験は誰でもあると思います。
-&lt;/p&gt;
+コンパイルが失敗したとかエラーになったとかの経験は誰でもあると思います。&lt;/p&gt;
 &lt;p&gt;
 その時に，とてもシンプルな方法としては，そのエラーをネットで検索することで，
 答えやヒントが得られる場合はあります。
-ただし，ネットで調べても，なかなか自分のエラーに特定できない場合もあります。
-&lt;/p&gt;
+ただし，ネットで調べても，なかなか自分のエラーに特定できない場合もあります。&lt;/p&gt;
 &lt;p&gt;
 そんな時に，使われている言語のドキュメントにある関連な関数の定義・クラスの定義などを読むことで，
-技術的にもどんどん重ねていき，問題の解決にも近づけます。
-&lt;/p&gt;
+技術的にもどんどん重ねていき，問題の解決にも近づけます。&lt;/p&gt;
 &lt;p&gt;
 ソフトウェア開発やプロジェクト開発においては，
-必ずたくさんのツールやフレームワークを使うことになります。
-&lt;/p&gt;
+必ずたくさんのツールやフレームワークを使うことになります。&lt;/p&gt;
 &lt;p&gt;
 また，技術の迅速な発展に伴い，ツールやフレームワークを入れ替える時も常にあります。
 この時に，ネットで検索しても，あなたがその問題に遭遇した最初の一人である可能性もあり，
 なかなか問題の解決にたどり着けない場合があります。
 誰かに聞くか，開発者のコミュニティに質問を出すなども一つの方法ですが，
-これ以外もう一つ重要なのは，公式のドキュメントをうまく利用することです。
-&lt;/p&gt;
+これ以外もう一つ重要なのは，公式のドキュメントをうまく利用することです。&lt;/p&gt;
 &lt;p&gt;
 ドキュメントを活用する習慣を身に着けると，
 実際に開発の問題を解決することだけでなく，
@@ -241,12 +227,15 @@ C言語でなんかのプログラムを書いたら，
 もしかしたらフレームワークのバグによるもので，
 この時に，使われているフレームワークがオープンソースで公開されているのであれば，
 このオープンソースプロジェクトチームの協力者の一員として活躍できます。
-将来，会社で働いたら，会社に対しても貴重なチームワークの経験になります。
-&lt;/p&gt;
+将来，会社で働いたら，会社に対しても貴重なチームワークの経験になります。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-7&#34;&gt;
 &lt;span class=&#34;todo&#34;&gt;TODO&lt;/span&gt;
 注釈を書く習慣をつける
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 コードを書くときに注釈を書くことが重要です。
 良いプロジェクトの開発者たちは，通常では高凝集・低結合の理念で仕事を分けています。
@@ -254,173 +243,179 @@ C言語でなんかのプログラムを書いたら，
 それぞれの開発とメンテナンス作業ができます。
 また，システムをアップグレードするときに，
 古いモジュールや継続な開発しにくいモジュールを新しいもので入れ替えても全体に影響を及ぼすことはありません。
-しかし，どうしても代替品がなく，古いモジュールの上で開発を続く必要がある場合があります。
-&lt;/p&gt;
+しかし，どうしても代替品がなく，古いモジュールの上で開発を続く必要がある場合があります。&lt;/p&gt;
 &lt;p&gt;
 この時，コードを書いたメンバーがすでに離職や連絡を取れない場合でも，
 他のチームメンバーが続いて開発できるようにするのは注釈です。
 現在あるプロジェクトをアップグレードするときに，
 すべてのコードを理解する必要がありませんが，
-重要なアルゴリズムや関数の箇所の修正は必ずコードを読んで理解した上で行う必要があります。
-&lt;/p&gt;
+重要なアルゴリズムや関数の箇所の修正は必ずコードを読んで理解した上で行う必要があります。&lt;/p&gt;
 &lt;p&gt;
 コードを書くときに常に注釈をつけることが面倒だと思うのかもしれませんが，
 プロジェクトの将来のメンテナンスを考慮すると，
-つけたほうが将来が楽になりますし，チームワークにとっても効率的です。
-&lt;/p&gt;
+つけたほうが将来が楽になりますし，チームワークにとっても効率的です。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-8&#34;&gt;
 &lt;span class=&#34;todo&#34;&gt;TODO&lt;/span&gt;
 プログラミング言語
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 プログラミング言語がたくさんあります。
 人によっては，興味のある言語と得意な言語，あるいはあまり慣れていない言語は必ず存在します。
 しかし，ソフトウェア工学とプロジェクトの開発において，
-言語の得意さにはそれほど気になる必要はありません。
-&lt;/p&gt;
+言語の得意さにはそれほど気になる必要はありません。&lt;/p&gt;
 &lt;p&gt;
 学部一年で学んできたC言語の基礎があれば，
 あとはプログラミング言語をツールとして使い，
-ソフトウェア工学を生かせることです。
-&lt;/p&gt;
+ソフトウェア工学を生かせることです。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-9&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-9&#34;&gt;
 &lt;span class=&#34;todo&#34;&gt;TODO&lt;/span&gt;
 サーバーの運用
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-9&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-10&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-10&#34;&gt;
 &lt;span class=&#34;todo&#34;&gt;TODO&lt;/span&gt;
 自分のパソコンからサーバーのイメージを立てる
 &lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-11&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-11&#34;&gt;
 &lt;span class=&#34;todo&#34;&gt;TODO&lt;/span&gt;
 セキュリティについて
 &lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-12&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-12&#34;&gt;
 &lt;span class=&#34;todo&#34;&gt;TODO&lt;/span&gt;
 ウェブ開発
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-12&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-13&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-13&#34;&gt;
 &lt;span class=&#34;todo&#34;&gt;TODO&lt;/span&gt;
 ユーザインタフェース
 &lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-14&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-14&#34;&gt;
 &lt;span class=&#34;todo&#34;&gt;TODO&lt;/span&gt;
 ユーザーフレンドリーについて
 &lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-15&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-15&#34;&gt;
 &lt;span class=&#34;todo&#34;&gt;TODO&lt;/span&gt;
 バックエンドへの繋がり
 &lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-16&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-16&#34;&gt;
 プロジェクト開発ツールを活用する
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-16&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-17&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-17&#34;&gt;
 開発環境に関するツール
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-17&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 開発環境としては，現在統合開発環境（IDE）&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-2&#34; href=&#34;#footnote-2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;の製品がたくさんあります。
-マイクロソフトのVisual Studio，あるいはよく知られているEclipseなどがあります。
-&lt;/p&gt;
+マイクロソフトのVisual Studio，あるいはよく知られているEclipseなどがあります。&lt;/p&gt;
 &lt;p&gt;
 また，エディターにいろんなアドオンをインストールすることで，
-いろんなプログラミング言語のためのIDEにもなります。
-&lt;/p&gt;
+いろんなプログラミング言語のためのIDEにもなります。&lt;/p&gt;
 &lt;p&gt;
 どんなIDEを使うは別として，開発を行う時にIDEがいろんな機能を提供してくるので，
-慣れたら効率よくソフトウェア開発ができます。
-&lt;/p&gt;
+慣れたら効率よくソフトウェア開発ができます。&lt;/p&gt;
 &lt;p&gt;
 しかし，IDEに依存しすぎても良くないと思われます。
 IDEは，プログラミング言語で書いたコードに対して，
-コンパイル・ビルド・デバッグの一連なことができます。
-&lt;/p&gt;
+コンパイル・ビルド・デバッグの一連なことができます。&lt;/p&gt;
 &lt;p&gt;
 その中に，コンパイルに対して，何のコンパイラーを内部で使われているか，
 ビルドに対して，何の設定で行なっているか，
 デバッグに対して，想定される動きになっているのかなどについては，
-IDEを使う場合は，わからないままに終わっている可能性があります。
-&lt;/p&gt;
+IDEを使う場合は，わからないままに終わっている可能性があります。&lt;/p&gt;
 &lt;p&gt;
 もちろん内部で何があったのかは分からなくても，
 書いたプログラムがちゃんと働く場合が多いと思いますが，
-問題はなんかあった場合です。
-&lt;/p&gt;
+問題はなんかあった場合です。&lt;/p&gt;
 &lt;p&gt;
 例えば，チームメンバーが異なるバージョンのIDEを使っているとします。
 IDEにデフォルトでインストールされているプログラミング言語のコンパイラーも異なるバージョンの場合は，
 プログラミング言語の公式サイトで，すでに現在プロジェクトに使われているたくさんの関数をアップデートしたら，
-チームのメンバーの開発に支障が出てくる可能性が非常に高いです。
-&lt;/p&gt;
+チームのメンバーの開発に支障が出てくる可能性が非常に高いです。&lt;/p&gt;
 &lt;p&gt;
 これによって，チームワークにおいて開発環境を最新バージョンに統一するか，
 IDEが内部を行なっていることを理解した上，適切な設定を行う必要があります。
 開発環境を揃えてうまく活用するとプロジェクトの開発効率がよくなりますが，
 環境に依存しすぎてもダメです。
-エディターとコンパイラーを分けて，それぞれ適切に管理するのもおすすめです。
-&lt;/p&gt;
+エディターとコンパイラーを分けて，それぞれ適切に管理するのもおすすめです。&lt;/p&gt;
 &lt;p&gt;
 IDEやエディターは他のチームメンバーに使われているものを参照して選んでもよいですが，
 個人の好みで自分が好きなものを使っても良いです。
-この辺は例えばEmacsやVimなどがあります。
-&lt;/p&gt;
+この辺は例えばEmacsやVimなどがあります。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-18&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-18&#34;&gt;
 &lt;span class=&#34;todo&#34;&gt;TODO&lt;/span&gt;
 その他
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-18&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
 &lt;li class=&#34;unchecked&#34;&gt;
-&lt;p&gt;
-WindowsやmacOSのGUIだけではなくLinuxのコマンドも日常で触ること
-&lt;/p&gt;
+&lt;p&gt;WindowsやmacOSのGUIだけではなくLinuxのコマンドも日常で触ること&lt;/p&gt;
 &lt;/li&gt;
 &lt;li class=&#34;unchecked&#34;&gt;
-&lt;p&gt;
-一連の作業を自動化するためのスクリプトを作成してみること
-&lt;/p&gt;
+&lt;p&gt;一連の作業を自動化するためのスクリプトを作成してみること&lt;/p&gt;
 &lt;/li&gt;
 &lt;li class=&#34;unchecked&#34;&gt;
-&lt;p&gt;
-ショットカットをカスタマイズ・活用すること
-&lt;/p&gt;
+&lt;p&gt;ショットカットをカスタマイズ・活用すること&lt;/p&gt;
 &lt;/li&gt;
 &lt;li class=&#34;unchecked&#34;&gt;
-&lt;p&gt;
-プロジェクトの進捗を何かのツールで管理すること
-&lt;/p&gt;
+&lt;p&gt;プロジェクトの進捗を何かのツールで管理すること&lt;/p&gt;
 &lt;/li&gt;
 &lt;li class=&#34;unchecked&#34;&gt;
-&lt;p&gt;
-プロジェクト開発の際に遭遇された問題点などログとして保存すること
-&lt;/p&gt;
+&lt;p&gt;プロジェクト開発の際に遭遇された問題点などログとして保存すること&lt;/p&gt;
 &lt;/li&gt;
 &lt;li class=&#34;unchecked&#34;&gt;
-&lt;p&gt;
-クラウドサービスを活用すること
-&lt;/p&gt;
+&lt;p&gt;クラウドサービスを活用すること&lt;/p&gt;
 &lt;/li&gt;
 &lt;li class=&#34;unchecked&#34;&gt;
-&lt;p&gt;
-バックアップやバージョン管理を習慣として身につけること
-&lt;/p&gt;
+&lt;p&gt;バックアップやバージョン管理を習慣として身につけること&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
 &lt;hr class=&#34;footnotes-separatator&#34;&gt;
 &lt;div class=&#34;footnote-definitions&#34;&gt;
 &lt;div class=&#34;footnote-definition&#34;&gt;
 &lt;sup id=&#34;footnote-1&#34;&gt;&lt;a href=&#34;#footnote-reference-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
 &lt;div class=&#34;footnote-body&#34;&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E7%AE%A1%E7%90%86%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0&#34;&gt;バージョン管理システム - ウィキペディア&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E7%AE%A1%E7%90%86%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0&#34;&gt;バージョン管理システム - ウィキペディア&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;footnote-definition&#34;&gt;
 &lt;sup id=&#34;footnote-2&#34;&gt;&lt;a href=&#34;#footnote-reference-2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
 &lt;div class=&#34;footnote-body&#34;&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://ja.wikipedia.org/wiki/%E7%B5%B1%E5%90%88%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83&#34;&gt;統合開発環境 - ウィキペディア&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ja.wikipedia.org/wiki/%E7%B5%B1%E5%90%88%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83&#34;&gt;統合開発環境 - ウィキペディア&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;

@@ -56,26 +56,30 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 有关日语键盘布局的注册表设置
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-2&#34;&gt;
 关于键盘扫描码
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
-首先，键盘扫描码是什么呢？让我们看看维基百科上的定义。
-&lt;/p&gt;
+首先，键盘扫描码是什么呢？让我们看看维基百科上的定义。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;
-键盘扫描码（英語：scancode 或 scan code）是绝大多数电脑键盘向计算机发送的一项数据，
-用以报告哪些键被按下。它使用一个数字或数字序列来表示分配到键盘上的每个按键。 - &lt;a href=&#34;https://zh.wikipedia.org/wiki/%E9%94%AE%E7%9B%98%E6%89%AB%E6%8F%8F%E7%A0%81&#34;&gt;Wikipedia&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;键盘扫描码（英語：scancode 或 scan code）是绝大多数电脑键盘向计算机发送的一项数据，
+用以报告哪些键被按下。它使用一个数字或数字序列来表示分配到键盘上的每个按键。 - &lt;a href=&#34;https://zh.wikipedia.org/wiki/%E9%94%AE%E7%9B%98%E6%89%AB%E6%8F%8F%E7%A0%81&#34;&gt;Wikipedia&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-3&#34;&gt;
 键盘扫描码的例子&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -126,32 +130,30 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-4&#34;&gt;
 在注册表中进行键盘扫描码映射
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-首先，按 Windows 徽标键 + &lt;code class=&#34;verbatim&#34;&gt;R&lt;/code&gt; ，输入 &lt;code class=&#34;verbatim&#34;&gt;regedit&lt;/code&gt; 后然后按 &lt;code class=&#34;verbatim&#34;&gt;Enter&lt;/code&gt; 键打开
-Windows 注册表编辑器。 然后在注册表编辑器中打开以下位置。
-&lt;/p&gt;
+&lt;p&gt;首先，按 Windows 徽标键 + &lt;code class=&#34;verbatim&#34;&gt;R&lt;/code&gt; ，输入 &lt;code class=&#34;verbatim&#34;&gt;regedit&lt;/code&gt; 后然后按 &lt;code class=&#34;verbatim&#34;&gt;Enter&lt;/code&gt; 键打开
+Windows 注册表编辑器。 然后在注册表编辑器中打开以下位置。&lt;/p&gt;
 &lt;div class=&#34;src src-sample&#34;&gt;
 &lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-接下来，右击空白处，按照「新建 - 二进制值(B) - Scancode
+&lt;p&gt;接下来，右击空白处，按照「新建 - 二进制值(B) - Scancode
 Map」的顺序创建一个叫做「Scancode Map」的二进制 Key，双击即可编辑。
 关于「Scancode Map」的值（也就是映射的规则），以我的设定为例下面列出表格供参考。
 这里，「版本」，「标记」和「终端空值」的部分需保留原样。
-另外，关于「映射数」的部分，需要设定为映射规则的数量和「终端空值」的数量之和。
-&lt;/p&gt;
+另外，关于「映射数」的部分，需要设定为映射规则的数量和「终端空值」的数量之和。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-我所使用的 Logicool K380 键盘（日语布局）映射关系
-&lt;/p&gt;
+&lt;p&gt;我所使用的 Logicool K380 键盘（日语布局）映射关系&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -209,9 +211,7 @@ Map」的顺序创建一个叫做「Scancode Map」的二进制 Key，双击即�
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-我所使用的 FILCO Majestouch MINILA Air 键盘（日语布局）的映射关系
-&lt;/p&gt;
+&lt;p&gt;我所使用的 FILCO Majestouch MINILA Air 键盘（日语布局）的映射关系&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -276,38 +276,38 @@ Map」的顺序创建一个叫做「Scancode Map」的二进制 Key，双击即�
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-在这里需要注意，「Pause/Break」键并非单一扫描码构成，
+&lt;p&gt;在这里需要注意，「Pause/Break」键并非单一扫描码构成，
 「NumLock」的扫描码也在其中，在设定时需根据情况灵活设定。
-可以参考下面的描述。
-&lt;/p&gt;
+可以参考下面的描述。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;
-Pause &lt;code&gt;0xE1:0x1D:0x45&lt;/code&gt; [ 84key &lt;code&gt;Ctrl&lt;/code&gt; (0x1D) + &lt;code&gt;NumLock&lt;/code&gt; (0x45)], no auto repeat,
-break code &lt;code&gt;0xE1:0x9D:0xC5&lt;/code&gt; - &lt;a href=&#34;https://seesaawiki.jp/w/smnb/d/Keyboard%20Scancode%20Map&#34;&gt;Keyboard Scancode Map&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;Pause &lt;code&gt;0xE1:0x1D:0x45&lt;/code&gt; [ 84key &lt;code&gt;Ctrl&lt;/code&gt; (0x1D) + &lt;code&gt;NumLock&lt;/code&gt; (0x45)], no auto repeat,
+break code &lt;code&gt;0xE1:0x9D:0xC5&lt;/code&gt; - &lt;a href=&#34;https://seesaawiki.jp/w/smnb/d/Keyboard%20Scancode%20Map&#34;&gt;Keyboard Scancode Map&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-5&#34;&gt;
 更改键盘布局类型
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-6&#34;&gt;
 中文输入法的英文布局改为日语键盘布局
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-首先，打开注册表的下面位置。
-&lt;/p&gt;
+&lt;p&gt;首先，打开注册表的下面位置。&lt;/p&gt;
 &lt;div class=&#34;src src-sample&#34;&gt;
 &lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Keyboard Layouts\00000804&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-然后做以下调整。
-&lt;/p&gt;
+&lt;p&gt;然后做以下调整。&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -326,47 +326,53 @@ break code &lt;code&gt;0xE1:0x9D:0xC5&lt;/code&gt; - &lt;a href=&#34;https://see
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-7&#34;&gt;
 其他语言的输入法的键盘布局更改
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-其他的语言的情况下，只需变更注册表路径的 &lt;code class=&#34;verbatim&#34;&gt;00000804&lt;/code&gt;
+&lt;p&gt;其他的语言的情况下，只需变更注册表路径的 &lt;code class=&#34;verbatim&#34;&gt;00000804&lt;/code&gt;
 的地方到对应的语言的输入法， 然后改变 &lt;code class=&#34;verbatim&#34;&gt;***.DLL&lt;/code&gt;
-的部分到对应语言的动态链接库文件的名称即可。
-&lt;/p&gt;
+的部分到对应语言的动态链接库文件的名称即可。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-8&#34;&gt;
 当资源管理器的「我的电脑」或「PC」中出现未知图标时的注册表设置
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-通过定位到下面的注册表路径，找到位置图标对应的项删除即可。
-&lt;/p&gt;
+&lt;p&gt;通过定位到下面的注册表路径，找到位置图标对应的项删除即可。&lt;/p&gt;
 &lt;div class=&#34;src src-sample&#34;&gt;
 &lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-9&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-9&#34;&gt;
 无法连接到本地网络上的 NAS 时的注册表设置&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-2&#34; href=&#34;#footnote-2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-9&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-首先打开以下注册表位置
-&lt;/p&gt;
+&lt;p&gt;首先打开以下注册表位置&lt;/p&gt;
 &lt;div class=&#34;src src-sample&#34;&gt;
 &lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-然后进行下面的变更
-&lt;/p&gt;
+&lt;p&gt;然后进行下面的变更&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -385,43 +391,39 @@ break code &lt;code&gt;0xE1:0x9D:0xC5&lt;/code&gt; - &lt;a href=&#34;https://see
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-10&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-10&#34;&gt;
 参考资料
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-10&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://usedoor.jp/howto/digital/pc/windows-uwagaki-keyboard-insert-key-mukouka/&#34;&gt;将 Insert 无效化的方法（原文为日语）&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://usedoor.jp/howto/digital/pc/windows-uwagaki-keyboard-insert-key-mukouka/&#34;&gt;将 Insert 无效化的方法（原文为日语）&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://tepp91.github.io/contents/misc/remap-keyboard-with-scancode-map.html&#34;&gt;通过 Scancode Map 改变键的分配（原文为日语）&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://tepp91.github.io/contents/misc/remap-keyboard-with-scancode-map.html&#34;&gt;通过 Scancode Map 改变键的分配（原文为日语）&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://answers.microsoft.com/en-us/windows/forum/windows_10-files/homegroup-removed-how-to-get-network-sharing-work/01277332-2916-4a68-853a-116696b20743&#34;&gt;Homegroup removed! How to get network sharing work with Windows 10 v1803&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://answers.microsoft.com/en-us/windows/forum/windows_10-files/homegroup-removed-how-to-get-network-sharing-work/01277332-2916-4a68-853a-116696b20743&#34;&gt;Homegroup removed! How to get network sharing work with Windows 10 v1803&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
 &lt;hr class=&#34;footnotes-separatator&#34;&gt;
 &lt;div class=&#34;footnote-definitions&#34;&gt;
 &lt;div class=&#34;footnote-definition&#34;&gt;
 &lt;sup id=&#34;footnote-1&#34;&gt;&lt;a href=&#34;#footnote-reference-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
 &lt;div class=&#34;footnote-body&#34;&gt;
-&lt;p&gt;
-&lt;a href=&#34;http://softwaretechnique.jp/OS_Development/Tips/scan_code_set1.html&#34;&gt;键盘扫描码一览表（原文为日语）&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://softwaretechnique.jp/OS_Development/Tips/scan_code_set1.html&#34;&gt;键盘扫描码一览表（原文为日语）&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;footnote-definition&#34;&gt;
 &lt;sup id=&#34;footnote-2&#34;&gt;&lt;a href=&#34;#footnote-reference-2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
 &lt;div class=&#34;footnote-body&#34;&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://www.nedia.ne.jp/blog/2019/04/02/13919&#34;&gt;无法连接 NAS！原来原因并不是 SMB1.0！（原文为日语）&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.nedia.ne.jp/blog/2019/04/02/13919&#34;&gt;无法连接 NAS！原来原因并不是 SMB1.0！（原文为日语）&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -447,42 +449,44 @@ break code &lt;code&gt;0xE1:0x9D:0xC5&lt;/code&gt; - &lt;a href=&#34;https://see
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 激活 Windows 10
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
-打开 &lt;code&gt;cmd&lt;/code&gt; ，输入下面语句。
-&lt;/p&gt;
+打开 &lt;code&gt;cmd&lt;/code&gt; ，输入下面语句。&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;slmgr -ipk &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;your product key&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
 slmgr -skms &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;kms server address of your company&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
 slmgr -ato&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-2&#34;&gt;
 安装一些有用的工具
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://www.msys2.org/&#34;&gt;Msys2&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.msys2.org/&#34;&gt;Msys2&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://www.autohotkey.com/&#34;&gt;AutoHotKey&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.autohotkey.com/&#34;&gt;AutoHotKey&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://github.com/edihbrandon/RictyDiminished&#34;&gt;Ricty&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/edihbrandon/RictyDiminished&#34;&gt;Ricty&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-3&#34;&gt;
 配置msys2
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;pacman -S git fish tmux emacs gcc python
 cd ~
@@ -503,6 +507,8 @@ cat &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;path to your pub key
 chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;600&lt;/span&gt; ~/.ssh/authorized_keys
 chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;700&lt;/span&gt; ~/.ssh
 /usr/bin/sshd&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 </description>
     </item>
@@ -533,42 +539,65 @@ chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;700&lt;/span&gt; ~/.ssh
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 将要使用的命令
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  add-apt-repository&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-2&#34;&gt;
 没这个命令？先试试这个
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  apt install software-properties-common&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-3&#34;&gt;
 安装过程
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-4&#34;&gt;
 注册仓库
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  add-apt-repository ppa:kelleyk/emacs
   apt-add-repository ppa:fish-shell/release-3&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-5&#34;&gt;
 刷新仓库
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  apt update&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-6&#34;&gt;
 安装
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  apt install emacs26
   apt install fish&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 </description>
     </item>
@@ -607,106 +636,123 @@ chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;700&lt;/span&gt; ~/.ssh
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 ssh 连接中断的现象
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-当通过 ssh 进行远程登录的时候，如果长时间没有操作，则会出现
-&lt;code class=&#34;verbatim&#34;&gt;Write failed: Broken pipe&lt;/code&gt; 的错误提示并连接中断。
-&lt;/p&gt;
+&lt;p&gt;当通过 ssh 进行远程登录的时候，如果长时间没有操作，则会出现
+&lt;code class=&#34;verbatim&#34;&gt;Write failed: Broken pipe&lt;/code&gt; 的错误提示并连接中断。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-这是因为在一定时间内没有数据交换的情况下 ssh
-连接默认会自动断开。要解决这个问题需要从客户端或者服务器端来改变设置。
-&lt;/p&gt;
+&lt;p&gt;这是因为在一定时间内没有数据交换的情况下 ssh
+连接默认会自动断开。要解决这个问题需要从客户端或者服务器端来改变设置。&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-2&#34;&gt;
 解决方法
 &lt;/h3&gt;
+&lt;/div&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-从客户端解决
-&lt;/p&gt;
+&lt;p&gt;从客户端解决&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-将下面的内容配置在 &lt;code class=&#34;verbatim&#34;&gt;/etc/ssh/ssh_config&lt;/code&gt; 或 &lt;code class=&#34;verbatim&#34;&gt;~/.ssh/config&lt;/code&gt; 中。
-&lt;/p&gt;
+&lt;p&gt;将下面的内容配置在 &lt;code class=&#34;verbatim&#34;&gt;/etc/ssh/ssh_config&lt;/code&gt; 或 &lt;code class=&#34;verbatim&#34;&gt;~/.ssh/config&lt;/code&gt; 中。&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  ServerAliveInterval &lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;
   ServerAliveCountMax &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 通过以上的设定，每 15 秒会进行 10
-次应答确认，仍然没有应答的情况下才会断开连接。
-&lt;/p&gt;
+次应答确认，仍然没有应答的情况下才会断开连接。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-从服务器端解决
-&lt;/p&gt;
+&lt;p&gt;从服务器端解决&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-将下面的内容配置在 &lt;code class=&#34;verbatim&#34;&gt;/etc/ssh/sshd_config&lt;/code&gt; 中。
-&lt;/p&gt;
+&lt;p&gt;将下面的内容配置在 &lt;code class=&#34;verbatim&#34;&gt;/etc/ssh/sshd_config&lt;/code&gt; 中。&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  ClientAliveInterval &lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;
   ClientAliveCountMax &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 通过以上的设定，每 30 秒会进行 5
-次应答确认，仍然没有应答的情况下才会断开连接。
-&lt;/p&gt;
+次应答确认，仍然没有应答的情况下才会断开连接。&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-3&#34;&gt;
 One more thing
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 这里非常推荐使用 tmux 或者 screen 之类的工具，
-这样即使丢失连接，也可以在重新连接服务器后快速通过挂载原先的会话的方式迅速恢复工作环境。
-&lt;/p&gt;
+这样即使丢失连接，也可以在重新连接服务器后快速通过挂载原先的会话的方式迅速恢复工作环境。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-4&#34;&gt;
 通过 Termux 应用开启安卓 SSH 服务
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-5&#34;&gt;
 安装
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  apt install openssh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-6&#34;&gt;
 设置密钥文件
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  ssh-keygen
   cat ~/.ssh/id_rsa.pub &amp;gt; ~/.ssh/authorized_keys
   chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;600&lt;/span&gt; ~/.ssh/authorized_keys
   chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;700&lt;/span&gt; ~/.ssh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-7&#34;&gt;
 在调试模式下启动服务
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  sshd -d&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-8&#34;&gt;
 启动服务
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  sshd&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-9&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-9&#34;&gt;
 在电脑端登录设置好的服务
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-9&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 将在安卓端取得的私有密钥 &lt;code class=&#34;verbatim&#34;&gt;~/.ssh/id_rsa&lt;/code&gt; 配置到电脑端的 ssh 客户端，
-然后通过空用户名连接安卓端的 ip 地址及端口号 &lt;code class=&#34;verbatim&#34;&gt;8022&lt;/code&gt; 即可。
-&lt;/p&gt;
+然后通过空用户名连接安卓端的 ip 地址及端口号 &lt;code class=&#34;verbatim&#34;&gt;8022&lt;/code&gt; 即可。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -721,7 +767,6 @@ One more thing
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to copy or download the publication metadata.
   &lt;/div&gt;
 &lt;/div&gt;
-
 &lt;/p&gt;
 </description>
     </item>
@@ -737,7 +782,6 @@ One more thing
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to copy or download the publication metadata.
   &lt;/div&gt;
 &lt;/div&gt;
-
 &lt;/p&gt;
 </description>
     </item>
@@ -762,16 +806,16 @@ One more thing
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 生成 swap 文件
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 为防止编译途中由于内存不足等问题报错，
 这里首先提前创建一个swap文件，存放路径任意。 重启后swap空间会消失，
-以下编译等全部工作完成后可以手动删除这个文件。
-&lt;/p&gt;
+以下编译等全部工作完成后可以手动删除这个文件。&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  $ fallocate -l 4G swapfile
   $ chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;600&lt;/span&gt; swapfile
@@ -779,16 +823,18 @@ One more thing
   $ sudo swapon swapfile
   $ swapon -s&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-2&#34;&gt;
 生成安装脚本
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://github.com/AastaNV/JEP/blob/master/script/install_opencv4.0.0_Nano.sh&#34;&gt;安装opencv 4.0.0版本的脚本原始链接&lt;/a&gt;
-&lt;/p&gt;
+&lt;a href=&#34;https://github.com/AastaNV/JEP/blob/master/script/install_opencv4.0.0_Nano.sh&#34;&gt;安装opencv 4.0.0版本的脚本原始链接&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 以上是安装opencv
-4.0.0的版本，在这里我们希望安装较新的4.1.0版本，将上面的代码中版本号的部分稍作改动。
-&lt;/p&gt;
+4.0.0的版本，在这里我们希望安装较新的4.1.0版本，将上面的代码中版本号的部分稍作改动。&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash&lt;/span&gt;
   #
@@ -840,44 +886,45 @@ One more thing
   echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** Bye :)&amp;#34;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
-将上面的脚本保存为 &lt;code class=&#34;verbatim&#34;&gt;sh&lt;/code&gt; 文件，例如 &lt;code class=&#34;verbatim&#34;&gt;install_opencv4.1.0_Nano.sh&lt;/code&gt; 。
-&lt;/p&gt;
+将上面的脚本保存为 &lt;code class=&#34;verbatim&#34;&gt;sh&lt;/code&gt; 文件，例如 &lt;code class=&#34;verbatim&#34;&gt;install_opencv4.1.0_Nano.sh&lt;/code&gt; 。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-3&#34;&gt;
 运行脚本
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  mkdir opencv
   sh install_opencv4.1.0_Nano.sh opencv&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
-安装会比较花时间，耐心等待安装结束，建议使用tmux等挂在后台执行。
-&lt;/p&gt;
+安装会比较花时间，耐心等待安装结束，建议使用tmux等挂在后台执行。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-4&#34;&gt;
 测试安装好的 OpenCV
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
-通过 Python 的交互界面测试语句 &lt;code class=&#34;verbatim&#34;&gt;import cv2&lt;/code&gt; ，不报错则安装完成。
-&lt;/p&gt;
+通过 Python 的交互界面测试语句 &lt;code class=&#34;verbatim&#34;&gt;import cv2&lt;/code&gt; ，不报错则安装完成。&lt;/p&gt;
 &lt;p&gt;
 不过，考虑到使用 Pyenv 等工具进行 Python 版本管理的用户，
 此时如果切换到pyenv下安装的 Python 版本可能无法检测到已安装的 OpenCV，
-作为解决版本是创建一个 OpenCV 库的软链接到pyenv中python版本的库目录下。
-&lt;/p&gt;
+作为解决版本是创建一个 OpenCV 库的软链接到pyenv中python版本的库目录下。&lt;/p&gt;
 &lt;p&gt;
-假设 Pyenv 下已安装的 Python 版本对应的库文件目录如下。
-&lt;/p&gt;
+假设 Pyenv 下已安装的 Python 版本对应的库文件目录如下。&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  /home/&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;username&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;/.anyenv/envs/pyenv/versions/3.6.8/lib/python3.6/site-packages&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
-安装完成的 OpenCV 的库文件路径如下。
-&lt;/p&gt;
+安装完成的 OpenCV 的库文件路径如下。&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  /usr/local/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-linux-gnu.so&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
-执行下面的语句即可创建软链接。
-&lt;/p&gt;
+执行下面的语句即可创建软链接。&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  cd /home/&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;username&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;/.anyenv/envs/pyenv/versions/3.6.8/lib/python3.6/site-packages
   ln -s /usr/local/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-linux-gnu.so ./&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -885,8 +932,9 @@ One more thing
 &lt;p&gt;
 另外提前使用 Pyenv 下的 Python 版本对应的 pip 工具执行 
 &lt;code class=&#34;verbatim&#34;&gt;pip install numpy&lt;/code&gt; 语句安装好 Numpy，
-去交互界面测试 &lt;code class=&#34;verbatim&#34;&gt;import cv2&lt;/code&gt; 后如无错误显示则安装完成。
-&lt;/p&gt;
+去交互界面测试 &lt;code class=&#34;verbatim&#34;&gt;import cv2&lt;/code&gt; 后如无错误显示则安装完成。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -910,63 +958,67 @@ One more thing
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 环境中缺少GnuTLS的情况
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
-若当前环境缺少 GnuTLS，那么在对 Emacs&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; 的源代码进行编译安装前需要以下配置。
-&lt;/p&gt;
+若当前环境缺少 GnuTLS，那么在对 Emacs&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; 的源代码进行编译安装前需要以下配置。&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  ./configure --with-gnutls&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;no&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
-或者同时指定安装目录、添加忽略其他仍缺少的依赖库的选项等，例如以下配置。
-&lt;/p&gt;
+或者同时指定安装目录、添加忽略其他仍缺少的依赖库的选项等，例如以下配置。&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  bash configure --prefix&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;$HOME/.local --with-gif&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;no --with-gnutls&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;no&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
-这样可以在缺少对默认安装路径权限，或者缺少各种依赖库的情况下使配置及安装得以顺利进行。
-&lt;/p&gt;
+这样可以在缺少对默认安装路径权限，或者缺少各种依赖库的情况下使配置及安装得以顺利进行。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-2&#34;&gt;
 潜在的问题
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 以上虽可以达到正常安装 Emacs 到 &lt;code class=&#34;verbatim&#34;&gt;$HOME/.local&lt;/code&gt; 目录的目的， 但由于缺少了
-GnuTLS 组件，Emacs 中用到网络传输的时候便只能使用 http 而不能使用 https。
-&lt;/p&gt;
+GnuTLS 组件，Emacs 中用到网络传输的时候便只能使用 http 而不能使用 https。&lt;/p&gt;
 &lt;p&gt;
 如果只是 Emacs 初始化时需要网络连接，还可以通过将 Melpa 的链接都改为以
 http 开头来解决问题， 但这为今后使用 Emacs
-中需要网络连接的各种扩展带来问题。
-&lt;/p&gt;
+中需要网络连接的各种扩展带来问题。&lt;/p&gt;
 &lt;p&gt;
 例如使用 &lt;code class=&#34;verbatim&#34;&gt;google-translate&lt;/code&gt; 时，即使将 Emacs 配置文件夹中 elpa 文件夹下的
 &lt;code class=&#34;verbatim&#34;&gt;google-translate&lt;/code&gt; 包内的所有 &lt;code class=&#34;verbatim&#34;&gt;*.el&lt;/code&gt; 文件中出现的 &lt;code class=&#34;verbatim&#34;&gt;https&lt;/code&gt; 改为 &lt;code class=&#34;verbatim&#34;&gt;http&lt;/code&gt; ，
-在实际使用的途中仍会出现自动使用某些 &lt;code class=&#34;verbatim&#34;&gt;https&lt;/code&gt; 服务的情况，从而导致翻译异常。
-&lt;/p&gt;
+在实际使用的途中仍会出现自动使用某些 &lt;code class=&#34;verbatim&#34;&gt;https&lt;/code&gt; 服务的情况，从而导致翻译异常。&lt;/p&gt;
 &lt;p&gt;
 这里有一点需要注意的是，修改 &lt;code class=&#34;verbatim&#34;&gt;*.el&lt;/code&gt; 文件后需删除所有 &lt;code class=&#34;verbatim&#34;&gt;*.elc&lt;/code&gt;
-文件以强制重新编译使修改生效。
-&lt;/p&gt;
+文件以强制重新编译使修改生效。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-3&#34;&gt;
 安装GnuTLS
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 经过以上实际测试我们不难发现，在当前环境中安装好 GnuTLS 之后再从源码安装
-Emacs 是一个不错的选择。
-&lt;/p&gt;
+Emacs 是一个不错的选择。&lt;/p&gt;
 &lt;p&gt;
-以 OpenSUSE 为例，在终端运行下面的语句即可安装 GnuTLS。
-&lt;/p&gt;
+以 OpenSUSE 为例，在终端运行下面的语句即可安装 GnuTLS。&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  sudo zypper install gnutls&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-4&#34;&gt;
 其他可能的问题
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  checking &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; library containing tputs... no
   configure: error: The required &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;tputs&amp;#39;&lt;/span&gt; was not found in any library.
@@ -981,10 +1033,11 @@ Emacs 是一个不错的选择。
 &lt;p&gt;
 另外，如果 GnuTLS 在当前环境已安装，而 &lt;code class=&#34;verbatim&#34;&gt;make&lt;/code&gt; 后仍报上面的错误，
 那么对于 OpenSUSE 的环境则需要一个叫做 &lt;code class=&#34;verbatim&#34;&gt;ncurses-devel&lt;/code&gt; 的包，
-执行下面的语句安装即可。
-&lt;/p&gt;
+执行下面的语句安装即可。&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  sudo zypper install ncurses-devel&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
 &lt;hr class=&#34;footnotes-separatator&#34;&gt;
@@ -992,9 +1045,7 @@ Emacs 是一个不错的选择。
 &lt;div class=&#34;footnote-definition&#34;&gt;
 &lt;sup id=&#34;footnote-1&#34;&gt;&lt;a href=&#34;#footnote-reference-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
 &lt;div class=&#34;footnote-body&#34;&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://ja.wikipedia.org/wiki/Emacs&#34;&gt;Emacs 的 Logo&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ja.wikipedia.org/wiki/Emacs&#34;&gt;Emacs 的 Logo&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1030,21 +1081,19 @@ Emacs 是一个不错的选择。
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 从bash到zsh
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 虽然我使用zsh shell两周后就换到fish shell了（关于fish
 shell下面有专门介绍）， 但这并不否认zsh shell仍然是个很好的shell。
-你可以通过下面的方式从任意的shell切换至zsh shell。
-&lt;/p&gt;
+你可以通过下面的方式从任意的shell切换至zsh shell。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-安装zsh时通过下面的指令：
-&lt;/p&gt;
+&lt;p&gt;安装zsh时通过下面的指令：&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
@@ -1053,9 +1102,7 @@ shell下面有专门介绍）， 但这并不否认zsh shell仍然是个很好�
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-如果你想要知道现在系统裡已经安装好的shell，输入下面的指令：
-&lt;/p&gt;
+&lt;p&gt;如果你想要知道现在系统裡已经安装好的shell，输入下面的指令：&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
@@ -1063,9 +1110,7 @@ shell下面有专门介绍）， 但这并不否认zsh shell仍然是个很好�
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-如何将zsh作为你默认的shell呢？，输入下面的指令：
-&lt;/p&gt;
+&lt;p&gt;如何将zsh作为你默认的shell呢？，输入下面的指令：&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
@@ -1073,34 +1118,24 @@ shell下面有专门介绍）， 但这并不否认zsh shell仍然是个很好�
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-关于配置文件的读取错误
-&lt;/p&gt;
+&lt;p&gt;关于配置文件的读取错误&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-Shell 脚本解释出错时可以查看一下当前所使用的 &lt;code class=&#34;verbatim&#34;&gt;sh&lt;/code&gt; 路径，
-比如有可能是 &lt;code class=&#34;verbatim&#34;&gt;sh&lt;/code&gt; 指向了 &lt;code class=&#34;verbatim&#34;&gt;dash&lt;/code&gt; 导致出错。 通过下面的语句查看。
-&lt;/p&gt;
+&lt;p&gt;Shell 脚本解释出错时可以查看一下当前所使用的 &lt;code class=&#34;verbatim&#34;&gt;sh&lt;/code&gt; 路径，
+比如有可能是 &lt;code class=&#34;verbatim&#34;&gt;sh&lt;/code&gt; 指向了 &lt;code class=&#34;verbatim&#34;&gt;dash&lt;/code&gt; 导致出错。 通过下面的语句查看。&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  ls -l &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;which sh&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-脚本解释器在语法上的不同点
-&lt;/p&gt;
+&lt;p&gt;脚本解释器在语法上的不同点&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-从传统的 bash 等 shell 换到 zsh 时会发现集合的第一个元素的索引是从 &lt;code&gt;1&lt;/code&gt; 开始的，
-如果希望从 &lt;code&gt;0&lt;/code&gt; 开始，在配置文件中配置下面语句即可。
-&lt;/p&gt;
+&lt;p&gt;从传统的 bash 等 shell 换到 zsh 时会发现集合的第一个元素的索引是从 &lt;code&gt;1&lt;/code&gt; 开始的，
+如果希望从 &lt;code&gt;0&lt;/code&gt; 开始，在配置文件中配置下面语句即可。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-Fix array index for zsh:
-&lt;/p&gt;
+&lt;p&gt;Fix array index for zsh:&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
@@ -1108,33 +1143,38 @@ Fix array index for zsh:
       setopt localoptions ksharrays
   &lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-2&#34;&gt;
 配置 zsh shell
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 与 bash 的 &lt;code class=&#34;verbatim&#34;&gt;.bashrc&lt;/code&gt; 类似， &lt;code class=&#34;verbatim&#34;&gt;zsh&lt;/code&gt; 的配置也需要一个配置文件，
 这个文件是在用户目录下的 &lt;code class=&#34;verbatim&#34;&gt;.zshrc&lt;/code&gt; 文件，
-如果你不想自己写配置，点击&lt;a href=&#34;https://github.com/xinii/xinconfig/blob/master/profile/core/zsh.sh&#34;&gt;这里&lt;/a&gt;打开我上传到 Github 的配置文件下载使用。
-&lt;/p&gt;
+如果你不想自己写配置，点击&lt;a href=&#34;https://github.com/xinii/xinconfig/blob/master/profile/core/zsh.sh&#34;&gt;这里&lt;/a&gt;打开我上传到 Github 的配置文件下载使用。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-3&#34;&gt;
 从zsh到fish
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 使用zsh shell之后大概两週我就换到fish shell了，
 这不是因为zsh不好，而是fish天然的完成度和易用性吸引了我，
-转移到fish环境后，有关shell折腾算是告一段落，以下对该过程纪录。
-&lt;/p&gt;
+转移到fish环境后，有关shell折腾算是告一段落，以下对该过程纪录。&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-4&#34;&gt;
 fish shell的安装以及默认shell的切换
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
-这个上面提到过，这里具体针对不同的操作系统所需要执行的指令进行介绍。
-&lt;/p&gt;
+这个上面提到过，这里具体针对不同的操作系统所需要执行的指令进行介绍。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-MacOS:
-&lt;/p&gt;
+&lt;p&gt;MacOS:&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
@@ -1142,9 +1182,7 @@ MacOS:
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-Ubuntu/Linux Mint:
-&lt;/p&gt;
+&lt;p&gt;Ubuntu/Linux Mint:&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
@@ -1152,9 +1190,7 @@ Ubuntu/Linux Mint:
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-OpenSUSE:
-&lt;/p&gt;
+&lt;p&gt;OpenSUSE:&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
@@ -1163,15 +1199,13 @@ OpenSUSE:
 &lt;p&gt;
 如果是运行在 Windows 下的 OpenSUSE 环境，
 则可能需要 &lt;code class=&#34;verbatim&#34;&gt;root&lt;/code&gt; 权限，这时在命令前面加上 &lt;code class=&#34;verbatim&#34;&gt;sudo&lt;/code&gt; 。
-通过下面的语句查看当前系统所使用的 Shell。
-&lt;/p&gt;
+通过下面的语句查看当前系统所使用的 Shell。&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  cat /etc/shells&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 如果显示你的fish shell在 &lt;code class=&#34;verbatim&#34;&gt;/usr/bin/fish&lt;/code&gt; ，
-那么执行下面的语句切换其为默认shell（权限不足则补充 &lt;code class=&#34;verbatim&#34;&gt;sudo&lt;/code&gt; ）：
-&lt;/p&gt;
+那么执行下面的语句切换其为默认shell（权限不足则补充 &lt;code class=&#34;verbatim&#34;&gt;sudo&lt;/code&gt; ）：&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  chsh -s /usr/bin/fish&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -1180,52 +1214,53 @@ OpenSUSE:
 如果打开 Fish shell 后马上报很多关于 hostname 的错误，
 说明当前环境缺少一个叫做 hostname 的包，
 那么使用当前 Linux 发行版的包管理器安装 &lt;code class=&#34;verbatim&#34;&gt;hostname&lt;/code&gt; ，
-例如在 OpenSUSE 下使用：
-&lt;/p&gt;
+例如在 OpenSUSE 下使用：&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  sudo zypper install hostname&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-5&#34;&gt;
 Fish shell 的配置
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
-我写好的配置上传在了Github，点击&lt;a href=&#34;https://github.com/xinii/xinconfig/tree/master/profile/fish&#34;&gt;这里&lt;/a&gt;查看我的配置。
-&lt;/p&gt;
+我写好的配置上传在了Github，点击&lt;a href=&#34;https://github.com/xinii/xinconfig/tree/master/profile/fish&#34;&gt;这里&lt;/a&gt;查看我的配置。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-6&#34;&gt;
 在fish shell下使用python时的常见问题
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
-目前我遇到的比较需要注意的问题有下面两点：
-&lt;/p&gt;
+目前我遇到的比较需要注意的问题有下面两点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-关于 tmux
-&lt;/p&gt;
+&lt;p&gt;关于 tmux&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-tmux在后台存在session的时候， 即使更新=PYTHONPATH=环境变量也不会生效，
+&lt;p&gt;tmux在后台存在session的时候， 即使更新=PYTHONPATH=环境变量也不会生效，
 此时需要关闭tmux的所有进程，更新才会生效。
-除fish以外其他shell环境应该也会遇到， 我是在fish首次出现，留作纪录。
-&lt;/p&gt;
+除fish以外其他shell环境应该也会遇到， 我是在fish首次出现，留作纪录。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-关于 &lt;code&gt;PYTHONPATH&lt;/code&gt;
-&lt;/p&gt;
+&lt;p&gt;关于 &lt;code&gt;PYTHONPATH&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-Fish shell 中定义环境变量的方式为 &lt;code class=&#34;verbatim&#34;&gt;set &amp;lt;variable_name&amp;gt; &amp;lt;parameter_1&amp;gt; &amp;lt;parameter_2&amp;gt;&lt;/code&gt;
+&lt;p&gt;Fish shell 中定义环境变量的方式为 &lt;code class=&#34;verbatim&#34;&gt;set &amp;lt;variable_name&amp;gt; &amp;lt;parameter_1&amp;gt; &amp;lt;parameter_2&amp;gt;&lt;/code&gt;
 这种方式有很大的优越性而且非常方便， 然而对于 &lt;code class=&#34;verbatim&#34;&gt;PYTHONPATH&lt;/code&gt; ，
 则 &lt;code class=&#34;verbatim&#34;&gt;set PYTHONPATH &amp;lt;parameter_1&amp;gt;:&amp;lt;parameter_2&amp;gt;&lt;/code&gt; 的方式更具有通用性。
 原因为，经过测试在 MacOS 下两种方式均可正常使用， 
 但在运行在 Jetson Nano 上的 Ubuntu 下测试时，只有第二种方式可用。
 具体原因尚未明确，有可能时操作系统不同的原因，
 也可能是 Python 版本不同造成的
-（比如版本号相同，但处理器架构不同造成了编译方式的差异导致该问题）。
-&lt;/p&gt;
+（比如版本号相同，但处理器架构不同造成了编译方式的差异导致该问题）。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -1245,7 +1280,6 @@ Fish shell 中定义环境变量的方式为 &lt;code class=&#34;verbatim&#34;&g
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
@@ -1255,24 +1289,21 @@ Fish shell 中定义环境变量的方式为 &lt;code class=&#34;verbatim&#34;&g
 同时电脑上已经准备好空的分区（安装到的目标分区的数据也会被抹掉）。
   &lt;/div&gt;
 &lt;/div&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 准备一个用于安装 Linux Mint 的 USB 设备
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 首先准备一个 USB 设备，可以是 U 盘也可以是 USB 的移动硬盘，
-之后会在这个上面写入供安装 Linux Mint 的安装程序。
-&lt;/p&gt;
+之后会在这个上面写入供安装 Linux Mint 的安装程序。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-如果使用的是 Windows 操作系统，那么点击
-&lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0&#34;&gt;这里&lt;/a&gt;来查看 Ubuntu 官方的教程以创建一个可以安装Linux的USB设备。
-&lt;/p&gt;
+&lt;p&gt;如果使用的是 Windows 操作系统，那么点击
+&lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0&#34;&gt;这里&lt;/a&gt;来查看 Ubuntu 官方的教程以创建一个可以安装Linux的USB设备。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     上面的教程是教你如何制作一个用于安装 Ubuntu 的 USB 设备，
@@ -1281,22 +1312,24 @@ Fish shell 中定义环境变量的方式为 &lt;code class=&#34;verbatim&#34;&g
   &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-其中会用到的软件叫做 Rufus，上面的教程裡面也有提到，
-点击&lt;a href=&#34;https://rufus.akeo.ie/&#34;&gt;这里&lt;/a&gt;打开 Rufus 的官方网站，或者也可以点击&lt;a href=&#34;https://github.com/pbatard/rufus/releases/download/v3.5/rufus-3.5.exe&#34;&gt;这里&lt;/a&gt;直接下载 Rufus。
-&lt;/p&gt;
+&lt;p&gt;其中会用到的软件叫做 Rufus，上面的教程裡面也有提到，
+点击&lt;a href=&#34;https://rufus.akeo.ie/&#34;&gt;这里&lt;/a&gt;打开 Rufus 的官方网站，或者也可以点击&lt;a href=&#34;https://github.com/pbatard/rufus/releases/download/v3.5/rufus-3.5.exe&#34;&gt;这里&lt;/a&gt;直接下载 Rufus。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-2&#34;&gt;
 Linux Mint的ISO文件
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 前一节提到的 Linux Mint 的 ISO 文件需要从下面的地方获取。
-点击&lt;a href=&#34;https://linuxmint.com/&#34;&gt;这里&lt;/a&gt;打开 Linux Mint 的官方网站。或者也可以点击&lt;a href=&#34;http://mirrors.evowise.com/linuxmint/stable/19.1/linuxmint-19.1-cinnamon-64bit.iso&#34;&gt;这里&lt;/a&gt;直接下载 Linux Mint 19.1 版本。
-&lt;/p&gt;
+点击&lt;a href=&#34;https://linuxmint.com/&#34;&gt;这里&lt;/a&gt;打开 Linux Mint 的官方网站。或者也可以点击&lt;a href=&#34;http://mirrors.evowise.com/linuxmint/stable/19.1/linuxmint-19.1-cinnamon-64bit.iso&#34;&gt;这里&lt;/a&gt;直接下载 Linux Mint 19.1 版本。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -1316,27 +1349,24 @@ Linux Mint的ISO文件
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 安装 Jekyll
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
-Jekyll 是一个通过 Ruby 语言写的静态网站生成框架，下面是官网介绍。
-&lt;/p&gt;
+Jekyll 是一个通过 Ruby 语言写的静态网站生成框架，下面是官网介绍。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;
-Jekyll is a static site generator. You give it text written in your
+&lt;p&gt;Jekyll is a static site generator. You give it text written in your
   favorite markup language and it uses layouts to create a static
   website. You can tweak how you want the site URLs to look, what data
-  gets displayed on the site, and more. –Jekyll&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
-&lt;/p&gt;
+  gets displayed on the site, and more. –Jekyll&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;
 安装 Jekyll 时，首先需要一个 Ruby 的包管理环境， Ruby
 编程环境的常用包管理器为 &lt;code&gt;gem&lt;/code&gt; ， 例如 Ubuntu
-中执行下面的语句则会同时安装 &lt;code&gt;gem&lt;/code&gt; 。
-&lt;/p&gt;
+中执行下面的语句则会同时安装 &lt;code&gt;gem&lt;/code&gt; 。&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  apt install ruby-dev&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -1344,62 +1374,56 @@ Jekyll is a static site generator. You give it text written in your
 安装好 &lt;code class=&#34;verbatim&#34;&gt;gem&lt;/code&gt; 之后，确保它的执行路径在我们的 &lt;code class=&#34;verbatim&#34;&gt;PATH&lt;/code&gt; 环境变量中。
 如果不上采用上述方式，而是使用了 &lt;code class=&#34;verbatim&#34;&gt;rbenv&lt;/code&gt; 等虚拟环境管理工具的话，
 只要调用虚拟环境下配置好的 &lt;code class=&#34;verbatim&#34;&gt;gem&lt;/code&gt; 就可以了。
-随后便可以通过执行下面的语句来安装Jekyll，是不是很简单呢？
-&lt;/p&gt;
+随后便可以通过执行下面的语句来安装Jekyll，是不是很简单呢？&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  gem install jekyll&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-2&#34;&gt;
 发布博客到 Github
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 安装好 Jekyll 之后， 一定是希望先把随便什么内容发布到 Github
-上看看效果的哈， 特别能理解这种心情。
-&lt;/p&gt;
+上看看效果的哈， 特别能理解这种心情。&lt;/p&gt;
 &lt;p&gt;
 那么接下来，在实际写博客之前， 我们首先用安装好的 Jekyll
 生成一个默认站点并将其发布到 Github。
-在希望在本地管理博客的路径下执行下面的语句。
-&lt;/p&gt;
+在希望在本地管理博客的路径下执行下面的语句。&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  jekyll new folder-name-for-your-blog&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 随后在当前路径下会生成一个叫做 &lt;code class=&#34;verbatim&#34;&gt;folder-name-for-your-blog&lt;/code&gt; 的文件夹，
-这里面便是 Jekyll 新建的博客源码。
-&lt;/p&gt;
+这里面便是 Jekyll 新建的博客源码。&lt;/p&gt;
 &lt;p&gt;
 然后在 Github 上创建一个叫做 &lt;code class=&#34;verbatim&#34;&gt;your-user-name-of-github.github.io&lt;/code&gt;
 的仓库。 创建好新的仓库后，Github 会提示如何通过 &lt;code class=&#34;verbatim&#34;&gt;git&lt;/code&gt; 来 &lt;code class=&#34;verbatim&#34;&gt;push&lt;/code&gt;
 本地内容到该仓库。 按着所提示的向导将刚创建好的
-&lt;code class=&#34;verbatim&#34;&gt;folder-name-for-your-blog&lt;/code&gt; 的内容 &lt;code class=&#34;verbatim&#34;&gt;push&lt;/code&gt; 到这个仓库。
-&lt;/p&gt;
+&lt;code class=&#34;verbatim&#34;&gt;folder-name-for-your-blog&lt;/code&gt; 的内容 &lt;code class=&#34;verbatim&#34;&gt;push&lt;/code&gt; 到这个仓库。&lt;/p&gt;
 &lt;p&gt;
 随后等几分钟通过浏览器打开 &lt;code class=&#34;verbatim&#34;&gt;your-user-name-of-github.github.io&lt;/code&gt; ，
-不出意外的话即可看到 Jekyll 的欢迎页面。
-&lt;/p&gt;
+不出意外的话即可看到 Jekyll 的欢迎页面。&lt;/p&gt;
 &lt;p&gt;
-&lt;del&gt;本站也是通过以上方式创建。&lt;/del&gt;
-&lt;/p&gt;
+&lt;del&gt;本站也是通过以上方式创建。&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;
-（2020年6月14日追记）
-&lt;/p&gt;
+（2020年6月14日追记）&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://xinii.github.io&#34;&gt;本站&lt;/a&gt;现已改用 &lt;code&gt;hugo&lt;/code&gt; 静态网站生成框架创建，
-如需参考原来的站点，请&lt;a href=&#34;https://xinii.github.io/archive-site-c&#34;&gt;点击这里&lt;/a&gt;访问。
-&lt;/p&gt;
+如需参考原来的站点，请&lt;a href=&#34;https://xinii.github.io/archive-site-c&#34;&gt;点击这里&lt;/a&gt;访问。&lt;/p&gt;
 &lt;p&gt;
-欢迎联络并留言。
-&lt;/p&gt;
+欢迎联络并留言。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
 &lt;hr class=&#34;footnotes-separatator&#34;&gt;
 &lt;div class=&#34;footnote-definitions&#34;&gt;
 &lt;div class=&#34;footnote-definition&#34;&gt;
 &lt;sup id=&#34;footnote-1&#34;&gt;&lt;a href=&#34;#footnote-reference-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
 &lt;div class=&#34;footnote-body&#34;&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://jekyllrb.com/docs/&#34;&gt;Jekyll 官方网站&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://jekyllrb.com/docs/&#34;&gt;Jekyll 官方网站&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1446,85 +1470,87 @@ Jekyll is a static site generator. You give it text written in your
       <guid>https://xinii.cf/zh/cv/xin/</guid>
       <description>
 &lt;blockquote&gt;
-&lt;p&gt;
-现居日本神奈川县横滨市。欢迎来到我的博客，以下是我的个人简历。
-&lt;/p&gt;
+&lt;p&gt;现居日本神奈川县横滨市。欢迎来到我的博客，以下是我的个人简历。&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 教育经历
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-2&#34;&gt;
 日本横滨国立大学
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
+&lt;p&gt;&lt;strong&gt;2016 年 10 月 - 2020 年 3 月&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;
-&lt;strong&gt;2016 年 10 月 - 2020 年 3 月&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p&gt;
-&lt;em&gt;2016 年 5 月&lt;/em&gt; 获国家留学基金管理委员会「国家建设高水平大学公派研究生项目」公派留学资格。
-&lt;/p&gt;
+&lt;em&gt;2016 年 5 月&lt;/em&gt; 获国家留学基金管理委员会「国家建设高水平大学公派研究生项目」公派留学资格。&lt;/p&gt;
 &lt;p&gt;
 &lt;em&gt;同年 10 月&lt;/em&gt; 入学&lt;a href=&#34;http://gakufu.eng.ynu.ac.jp&#34;&gt;横滨国立大学大学院工学府&lt;/a&gt; 博士后期课程 &lt;a href=&#34;https://gakufu.eng.ynu.ac.jp/english/dep/physicalinformation/index.html&#34;&gt;物理信息工程&lt;/a&gt;专业，
-研究机器学习、深度学习与人工智能应用等领域。
-&lt;/p&gt;
+研究机器学习、深度学习与人工智能应用等领域。&lt;/p&gt;
 &lt;p&gt;
-&lt;em&gt;2020 年 3 月&lt;/em&gt; 毕业并获 &lt;strong&gt;工学博士&lt;/strong&gt; 学位。
-&lt;/p&gt;
+&lt;em&gt;2020 年 3 月&lt;/em&gt; 毕业并获 &lt;strong&gt;工学博士&lt;/strong&gt; 学位。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-3&#34;&gt;
 日本东京国际大学
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;strong&gt;2014 年 4 月 - 2015 年 3 月&lt;/strong&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2014 年 4 月 - 2015 年 3 月&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;em&gt;2014 年 4 月&lt;/em&gt; 以交换留学生身份入学&lt;a href=&#34;https://www.tiu.ac.jp/department/commercial_g/&#34;&gt;东京国际大学大学院商学研究科&lt;/a&gt;
-进行经营信息专业博士前期课程的学习，
-&lt;/p&gt;
+进行经营信息专业博士前期课程的学习，&lt;/p&gt;
 &lt;p&gt;
-&lt;em&gt;2015 年 3 月&lt;/em&gt; 完成交换留学项目。
-&lt;/p&gt;
+&lt;em&gt;2015 年 3 月&lt;/em&gt; 完成交换留学项目。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-4&#34;&gt;
 中国山西大学
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;strong&gt;2009 年 9 月 - 2016 年 7 月&lt;/strong&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2009 年 9 月 - 2016 年 7 月&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;em&gt;2009 年 9 月&lt;/em&gt; 入学&lt;a href=&#34;https://www.sxu.edu.cn/&#34;&gt;山西大学&lt;/a&gt;本科，
 在学期间于&lt;a href=&#34;http://cs.sxu.edu.cn/&#34;&gt;计算机与信息技术学院&lt;/a&gt;主修软件工程专业、
-于&lt;a href=&#34;http://jgxy.sxu.edu.cn/&#34;&gt;经济与管理学院&lt;/a&gt;辅修工商管理专业，
-&lt;/p&gt;
+于&lt;a href=&#34;http://jgxy.sxu.edu.cn/&#34;&gt;经济与管理学院&lt;/a&gt;辅修工商管理专业，&lt;/p&gt;
 &lt;p&gt;
-&lt;em&gt;2013 年 7 月&lt;/em&gt; 毕业并获 &lt;strong&gt;工学、管理学学士&lt;/strong&gt; 学位。
-&lt;/p&gt;
+&lt;em&gt;2013 年 7 月&lt;/em&gt; 毕业并获 &lt;strong&gt;工学、管理学学士&lt;/strong&gt; 学位。&lt;/p&gt;
 &lt;p&gt;
 &lt;em&gt;同年 9 月&lt;/em&gt; 保送本校硕士研究生， &lt;em&gt;2016 年 7 月&lt;/em&gt; 毕业并获
-&lt;strong&gt;软件工程专业硕士&lt;/strong&gt; 学位。
-&lt;/p&gt;
+&lt;strong&gt;软件工程专业硕士&lt;/strong&gt; 学位。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-5&#34;&gt;
 科研及软件著作
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-6&#34;&gt;
 期刊及论文出版情况
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;strong&gt;Xin Li&lt;/strong&gt;, Hiroshi Arai, and Tomoki Hamagami.
+&lt;p&gt;&lt;strong&gt;Xin Li&lt;/strong&gt;, Hiroshi Arai, and Tomoki Hamagami.
 Wave-making resistance estimation through deep learning considering the distribution of ship figure.
-&lt;em&gt;IEEJ Transactions on Electronics, Information and Systems&lt;/em&gt;, 140(3):391–397, 2020. （论文正文为日语）
-&lt;/p&gt;
+&lt;em&gt;IEEJ Transactions on Electronics, Information and Systems&lt;/em&gt;, 140(3):391–397, 2020. （论文正文为日语）&lt;/p&gt;
 &lt;table&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
@@ -1538,11 +1564,9 @@ Wave-making resistance estimation through deep learning considering the distribu
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;strong&gt;Xin Li&lt;/strong&gt; and Tomoki Hamagami. An improved auto-encoder based on
+&lt;p&gt;&lt;strong&gt;Xin Li&lt;/strong&gt; and Tomoki Hamagami. An improved auto-encoder based on
 2-level prioritized experience replay for high dimension skewed data.
-&lt;em&gt;Proceedings in Adaptation, Learning and Optimization&lt;/em&gt;, 12:93–105, 2020. （论文正文为英语）
-&lt;/p&gt;
+&lt;em&gt;Proceedings in Adaptation, Learning and Optimization&lt;/em&gt;, 12:93–105, 2020. （论文正文为英语）&lt;/p&gt;
 &lt;table&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
@@ -1554,11 +1578,9 @@ Wave-making resistance estimation through deep learning considering the distribu
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;strong&gt;Xin Li&lt;/strong&gt; and Tomoki Hamagami.
+&lt;p&gt;&lt;strong&gt;Xin Li&lt;/strong&gt; and Tomoki Hamagami.
 Prioritized sampling method for autoencoder to reduce loss rate for skewed data.
-&lt;em&gt;The papers of technical meeting on systems, IEE Japan&lt;/em&gt;, 2018(39):199–203, 2018. （论文正文为英语）
-&lt;/p&gt;
+&lt;em&gt;The papers of technical meeting on systems, IEE Japan&lt;/em&gt;, 2018(39):199–203, 2018. （论文正文为英语）&lt;/p&gt;
 &lt;table&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
@@ -1570,12 +1592,10 @@ Prioritized sampling method for autoencoder to reduce loss rate for skewed data.
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-王 晋炜 and &lt;strong&gt;李 欣&lt;/strong&gt;.
+&lt;p&gt;王 晋炜 and &lt;strong&gt;李 欣&lt;/strong&gt;.
 《唐吉诃德》一语多译平行语料库构建设想.
 In &lt;em&gt;西班牙语论丛2017&lt;/em&gt;, pages 4250–4423.
-外语教学与研究出版社, 北京, 11 2018.
-&lt;/p&gt;
+外语教学与研究出版社, 北京, 11 2018.&lt;/p&gt;
 &lt;table&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
@@ -1586,12 +1606,10 @@ In &lt;em&gt;西班牙语论丛2017&lt;/em&gt;, pages 4250–4423.
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-王 晋炜 and &lt;strong&gt;李 欣&lt;/strong&gt;.
+&lt;p&gt;王 晋炜 and &lt;strong&gt;李 欣&lt;/strong&gt;.
 外語專業學生口語交際策略實證研究-以西班牙語為例.
 In &lt;em&gt;第十一屆海峽兩岸外語教學研討會論文集&lt;/em&gt;, pages 1–11.
-輔大書坊, 台北, 9 2016. （论文正文为繁体中文）
-&lt;/p&gt;
+輔大書坊, 台北, 9 2016. （论文正文为繁体中文）&lt;/p&gt;
 &lt;table&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
@@ -1602,134 +1620,133 @@ In &lt;em&gt;第十一屆海峽兩岸外語教學研討會論文集&lt;/em&gt;, 
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-7&#34;&gt;
 学术会议
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;strong&gt;Xin Li&lt;/strong&gt; and Tomoki Hamagami.
+&lt;p&gt;&lt;strong&gt;Xin Li&lt;/strong&gt; and Tomoki Hamagami.
 An improved auto-encoder based on 2-level prioritized experience replay for high dimension skewed data.
-In &lt;em&gt;Proceedings of the 23rd Asia Pacific Symposium on Intelligent and Evolutionary Systems&lt;/em&gt;, 2019.
-&lt;/p&gt;
+In &lt;em&gt;Proceedings of the 23rd Asia Pacific Symposium on Intelligent and Evolutionary Systems&lt;/em&gt;, 2019.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;strong&gt;Xin Li&lt;/strong&gt; and Tomoki Hamagami.
+&lt;p&gt;&lt;strong&gt;Xin Li&lt;/strong&gt; and Tomoki Hamagami.
 Prioritized sampling method for autoencoder to reduce loss rate for skewed data.
-In &lt;em&gt;The 28th Fuzzy, Artificial Intelligence, Neural Networks and Computational Intelligence&lt;/em&gt;, 2018.
-&lt;/p&gt;
+In &lt;em&gt;The 28th Fuzzy, Artificial Intelligence, Neural Networks and Computational Intelligence&lt;/em&gt;, 2018.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;strong&gt;Xin Li&lt;/strong&gt;, Masaya Nakata, Hamatsu Fumiya, and Tomoki Hamagami.
+&lt;p&gt;&lt;strong&gt;Xin Li&lt;/strong&gt;, Masaya Nakata, Hamatsu Fumiya, and Tomoki Hamagami.
 A research about anomaly detection method for multidimensional time series data.
-In &lt;em&gt;The International Conference on Electrical Engineering&lt;/em&gt;, 2017.
-&lt;/p&gt;
+In &lt;em&gt;The International Conference on Electrical Engineering&lt;/em&gt;, 2017.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-8&#34;&gt;
 软件著作
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;
-2014 年 11 月：软件「基于人脸识别和语音识别的眼保健操软件」获国家版权局计算机软件著作权登记证书。
-（登记号：2014SR177728，证书号：软著登字第0846964号）
-&lt;/p&gt;
+&lt;p&gt;2014 年 11 月：软件「基于人脸识别和语音识别的眼保健操软件」获国家版权局计算机软件著作权登记证书。
+（登记号：2014SR177728，证书号：软著登字第0846964号）&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-2014 年 9 月：软件「基于词袋模型的图像检索与分类系统」获国家版权局计算机软件著作权登记证书。
-（登记号：2014SR136257，证书号：软著登字第0805497号）
-&lt;/p&gt;
+&lt;p&gt;2014 年 9 月：软件「基于词袋模型的图像检索与分类系统」获国家版权局计算机软件著作权登记证书。
+（登记号：2014SR136257，证书号：软著登字第0805497号）&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-2014 年 5 月：软件「基于Android的高清图像生成系统」获国家版权局计算机软件著作权登记证书。
-（登记号：2014SR052862，证书号：软著登字第0722106号）
-&lt;/p&gt;
+&lt;p&gt;2014 年 5 月：软件「基于Android的高清图像生成系统」获国家版权局计算机软件著作权登记证书。
+（登记号：2014SR052862，证书号：软著登字第0722106号）&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-9&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-9&#34;&gt;
 职务经历与实习
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-9&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-10&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-10&#34;&gt;
 在日本神奈川县横滨市
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-10&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
+&lt;p&gt;&lt;strong&gt;2020 年 4 月至今&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;
-&lt;strong&gt;2020 年 4 月至今&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p&gt;
-横滨国立大学大学院工学研究院，非常勤教员（博士后研究）。
-&lt;/p&gt;
+横滨国立大学大学院工学研究院，非常勤教员（博士后研究）。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
+&lt;p&gt;&lt;strong&gt;2019 年 4 月 - 2020 年 3 月&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;
-&lt;strong&gt;2019 年 4 月 - 2020 年 3 月&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p&gt;
-横滨国立大学理工学部，非常勤讲师（信息系统基础实验课I，II）。
-&lt;/p&gt;
+横滨国立大学理工学部，非常勤讲师（信息系统基础实验课I，II）。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
+&lt;p&gt;&lt;strong&gt;2017 年 4 月 - 2017 年 7 月&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;
-&lt;strong&gt;2017 年 4 月 - 2017 年 7 月&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p&gt;
-横滨国立大学大学院工学府，教学助手（C语言编程实验课I）。
-&lt;/p&gt;
+横滨国立大学大学院工学府，教学助手（C语言编程实验课I）。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-11&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-11&#34;&gt;
 在日本埼玉县川越市
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-11&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
+&lt;p&gt;&lt;strong&gt;2014 年 6 月 - 2015 年 2 月&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;
-&lt;strong&gt;2014 年 6 月 - 2015 年 2 月&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p&gt;
-株式会社セリア東武霞ヶ関店，兼职。
-&lt;/p&gt;
+株式会社セリア東武霞ヶ関店，兼职。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-12&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-12&#34;&gt;
 在中国北京市
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-12&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
+&lt;p&gt;&lt;strong&gt;2012 年 7 月 - 2012 年 9 月&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;
-&lt;strong&gt;2012 年 7 月 - 2012 年 9 月&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p&gt;
-中软国际，实训。
-&lt;/p&gt;
+中软国际，实训。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-13&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-13&#34;&gt;
 在中国山西省太原市
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-13&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
+&lt;p&gt;&lt;strong&gt;2013 年 4 月 - 2014 年 3 月&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;
-&lt;strong&gt;2013 年 4 月 - 2014 年 3 月&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p&gt;
-太原创成焕新科技有限公司，软件及业务管理。
-&lt;/p&gt;
+太原创成焕新科技有限公司，软件及业务管理。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
+&lt;p&gt;&lt;strong&gt;2010 年 6 月 - 2010 年 8 月&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;
-&lt;strong&gt;2010 年 6 月 - 2010 年 8 月&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p&gt;
-太原优联科技有限公司，实习。
-&lt;/p&gt;
+太原优联科技有限公司，实习。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     

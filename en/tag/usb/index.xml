@@ -28,7 +28,6 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
@@ -40,25 +39,21 @@ At the same time, an empty partition where the OS will be installed needs to be 
 if not, the data in the partition may also be lost after the installation.
   &lt;/div&gt;
 &lt;/div&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 Prepare the USB media for installing Linux Mint
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 Firstly, prepare the USB media, it can be a U disk or a USB mobile hard disk,
-and then, the installer for the installation of Linux Mint will be burning on this.
-&lt;/p&gt;
+and then, the installer for the installation of Linux Mint will be burning on this.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-If you are using Windows, please &lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0&#34;&gt;click here&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;If you are using Windows, please &lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0&#34;&gt;click here&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-to follow the official manual of Ubuntu to make a USB media for Linux installing.
-&lt;/p&gt;
+&lt;p&gt;to follow the official manual of Ubuntu to make a USB media for Linux installing.&lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
@@ -67,26 +62,28 @@ When installing Linux Mint, you only thing you need to do is change the ISO path
 the others are exactly the same.
   &lt;/div&gt;
 &lt;/div&gt;
-
 &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-Here will use a software called Rufus,
+&lt;p&gt;Here will use a software called Rufus,
 &lt;a href=&#34;https://rufus.akeo.ie/&#34;&gt;click here&lt;/a&gt; to open the official site of Rufus,
 also, you can 
-&lt;a href=&#34;https://github.com/pbatard/rufus/releases/download/v3.5/rufus-3.5.exe&#34;&gt;click here&lt;/a&gt; to download Rufus directly.
-&lt;/p&gt;
+&lt;a href=&#34;https://github.com/pbatard/rufus/releases/download/v3.5/rufus-3.5.exe&#34;&gt;click here&lt;/a&gt; to download Rufus directly.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-2&#34;&gt;
 About the ISO image of Linux Mint
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 You can get the ISO image from the official site of Linux Mint.
 &lt;a href=&#34;https://linuxmint.com/&#34;&gt;Click here&lt;/a&gt; to open the official site of Linux Mint
-or &lt;a href=&#34;http://mirrors.evowise.com/linuxmint/stable/19.1/linuxmint-19.1-cinnamon-64bit.iso&#34;&gt;click here&lt;/a&gt; to download the Linux Mint 19.1.
-&lt;/p&gt;
+or &lt;a href=&#34;http://mirrors.evowise.com/linuxmint/stable/19.1/linuxmint-19.1-cinnamon-64bit.iso&#34;&gt;click here&lt;/a&gt; to download the Linux Mint 19.1.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     

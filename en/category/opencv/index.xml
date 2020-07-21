@@ -32,18 +32,18 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 Generate swap file
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 To prevent errors due to insufficient memory during compilation, create
 a swap file firstly, and store it to somewhere you know. After OS
 restarting, the swap space will disappear, or you can manually delete
 this file after the completion of the following compilation and other
-work.
-&lt;/p&gt;
+work.&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  $ fallocate -l 4G swapfile
   $ chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;600&lt;/span&gt; swapfile
@@ -51,17 +51,19 @@ work.
   $ sudo swapon swapfile
   $ swapon -s&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-2&#34;&gt;
 Generate installation script
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://github.com/AastaNV/JEP/blob/master/script/install_opencv4.0.0_Nano.sh&#34;&gt;The original link of the script to install the OpenCV 4.0.0 version&lt;/a&gt;
-&lt;/p&gt;
+&lt;a href=&#34;https://github.com/AastaNV/JEP/blob/master/script/install_opencv4.0.0_Nano.sh&#34;&gt;The original link of the script to install the OpenCV 4.0.0 version&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 The above is the version used to install OpenCV 4.0.0, here we want to
 install the newer version 4.1.0, so change the version number part of
-the above code.
-&lt;/p&gt;
+the above code.&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash&lt;/span&gt;
   #
@@ -114,11 +116,14 @@ the above code.
 &lt;/div&gt;
 &lt;p&gt;
 Save the above script as a &lt;code class=&#34;verbatim&#34;&gt;sh&lt;/code&gt; file, for example,
-&lt;code class=&#34;verbatim&#34;&gt;install_opencv4.1.0_Nano.sh&lt;/code&gt;.
-&lt;/p&gt;
+&lt;code class=&#34;verbatim&#34;&gt;install_opencv4.1.0_Nano.sh&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-3&#34;&gt;
 Run the script
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  mkdir opencv
   sh install_opencv4.1.0_Nano.sh opencv&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -126,38 +131,36 @@ Run the script
 &lt;p&gt;
 The installation may take a lot of time, please be patient and wait for
 the installation to end. It is recommended to use tmux to hang in the
-background.
-&lt;/p&gt;
+background.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-4&#34;&gt;
 Test the installed OpenCV
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 Test the statement &lt;code class=&#34;verbatim&#34;&gt;import cv2&lt;/code&gt; through the interactive interface of
-python, it is good if no error is reported.
-&lt;/p&gt;
+python, it is good if no error is reported.&lt;/p&gt;
 &lt;p&gt;
 However, considering that users who use tools such as pyenv for python
 version management, if they switch to the python version installed under
 pyenv, the installed OpenCV may not be recognized. The solution is to
 create a soft link to the OpenCV library and link it to the python
-library directory under the management of pyenv.
-&lt;/p&gt;
+library directory under the management of pyenv.&lt;/p&gt;
 &lt;p&gt;
 For example, suppose the library directory of the python version in
-pyenv is,
-&lt;/p&gt;
+pyenv is,&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  /home/&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;username&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;/.anyenv/envs/pyenv/versions/3.6.8/lib/python3.6/site-packages&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
-And the installed OpenCV library path is,
-&lt;/p&gt;
+And the installed OpenCV library path is,&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  /usr/local/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-linux-gnu.so&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
-Then execute the following statement to create a soft link,
-&lt;/p&gt;
+Then execute the following statement to create a soft link,&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  cd /home/&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;username&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;/.anyenv/envs/pyenv/versions/3.6.8/lib/python3.6/site-packages
   ln -s /usr/local/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-linux-gnu.so ./&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -166,8 +169,9 @@ Then execute the following statement to create a soft link,
 Besides, use the python version of pip in pyenv to install numpy through
 the &lt;code class=&#34;verbatim&#34;&gt;pip install numpy&lt;/code&gt; statement, and go to the interactive interface
 to test &lt;code class=&#34;verbatim&#34;&gt;import cv2&lt;/code&gt;. If no error is displayed, the installation is
-complete.
-&lt;/p&gt;
+complete.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     

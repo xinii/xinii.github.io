@@ -48,26 +48,30 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 有关日语键盘布局的注册表设置
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-2&#34;&gt;
 关于键盘扫描码
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
-首先，键盘扫描码是什么呢？让我们看看维基百科上的定义。
-&lt;/p&gt;
+首先，键盘扫描码是什么呢？让我们看看维基百科上的定义。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;
-键盘扫描码（英語：scancode 或 scan code）是绝大多数电脑键盘向计算机发送的一项数据，
-用以报告哪些键被按下。它使用一个数字或数字序列来表示分配到键盘上的每个按键。 - &lt;a href=&#34;https://zh.wikipedia.org/wiki/%E9%94%AE%E7%9B%98%E6%89%AB%E6%8F%8F%E7%A0%81&#34;&gt;Wikipedia&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;键盘扫描码（英語：scancode 或 scan code）是绝大多数电脑键盘向计算机发送的一项数据，
+用以报告哪些键被按下。它使用一个数字或数字序列来表示分配到键盘上的每个按键。 - &lt;a href=&#34;https://zh.wikipedia.org/wiki/%E9%94%AE%E7%9B%98%E6%89%AB%E6%8F%8F%E7%A0%81&#34;&gt;Wikipedia&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-3&#34;&gt;
 键盘扫描码的例子&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -118,32 +122,30 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-4&#34;&gt;
 在注册表中进行键盘扫描码映射
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-首先，按 Windows 徽标键 + &lt;code class=&#34;verbatim&#34;&gt;R&lt;/code&gt; ，输入 &lt;code class=&#34;verbatim&#34;&gt;regedit&lt;/code&gt; 后然后按 &lt;code class=&#34;verbatim&#34;&gt;Enter&lt;/code&gt; 键打开
-Windows 注册表编辑器。 然后在注册表编辑器中打开以下位置。
-&lt;/p&gt;
+&lt;p&gt;首先，按 Windows 徽标键 + &lt;code class=&#34;verbatim&#34;&gt;R&lt;/code&gt; ，输入 &lt;code class=&#34;verbatim&#34;&gt;regedit&lt;/code&gt; 后然后按 &lt;code class=&#34;verbatim&#34;&gt;Enter&lt;/code&gt; 键打开
+Windows 注册表编辑器。 然后在注册表编辑器中打开以下位置。&lt;/p&gt;
 &lt;div class=&#34;src src-sample&#34;&gt;
 &lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-接下来，右击空白处，按照「新建 - 二进制值(B) - Scancode
+&lt;p&gt;接下来，右击空白处，按照「新建 - 二进制值(B) - Scancode
 Map」的顺序创建一个叫做「Scancode Map」的二进制 Key，双击即可编辑。
 关于「Scancode Map」的值（也就是映射的规则），以我的设定为例下面列出表格供参考。
 这里，「版本」，「标记」和「终端空值」的部分需保留原样。
-另外，关于「映射数」的部分，需要设定为映射规则的数量和「终端空值」的数量之和。
-&lt;/p&gt;
+另外，关于「映射数」的部分，需要设定为映射规则的数量和「终端空值」的数量之和。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-我所使用的 Logicool K380 键盘（日语布局）映射关系
-&lt;/p&gt;
+&lt;p&gt;我所使用的 Logicool K380 键盘（日语布局）映射关系&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -201,9 +203,7 @@ Map」的顺序创建一个叫做「Scancode Map」的二进制 Key，双击即�
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-我所使用的 FILCO Majestouch MINILA Air 键盘（日语布局）的映射关系
-&lt;/p&gt;
+&lt;p&gt;我所使用的 FILCO Majestouch MINILA Air 键盘（日语布局）的映射关系&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -268,38 +268,38 @@ Map」的顺序创建一个叫做「Scancode Map」的二进制 Key，双击即�
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-在这里需要注意，「Pause/Break」键并非单一扫描码构成，
+&lt;p&gt;在这里需要注意，「Pause/Break」键并非单一扫描码构成，
 「NumLock」的扫描码也在其中，在设定时需根据情况灵活设定。
-可以参考下面的描述。
-&lt;/p&gt;
+可以参考下面的描述。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;
-Pause &lt;code&gt;0xE1:0x1D:0x45&lt;/code&gt; [ 84key &lt;code&gt;Ctrl&lt;/code&gt; (0x1D) + &lt;code&gt;NumLock&lt;/code&gt; (0x45)], no auto repeat,
-break code &lt;code&gt;0xE1:0x9D:0xC5&lt;/code&gt; - &lt;a href=&#34;https://seesaawiki.jp/w/smnb/d/Keyboard%20Scancode%20Map&#34;&gt;Keyboard Scancode Map&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;Pause &lt;code&gt;0xE1:0x1D:0x45&lt;/code&gt; [ 84key &lt;code&gt;Ctrl&lt;/code&gt; (0x1D) + &lt;code&gt;NumLock&lt;/code&gt; (0x45)], no auto repeat,
+break code &lt;code&gt;0xE1:0x9D:0xC5&lt;/code&gt; - &lt;a href=&#34;https://seesaawiki.jp/w/smnb/d/Keyboard%20Scancode%20Map&#34;&gt;Keyboard Scancode Map&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-5&#34;&gt;
 更改键盘布局类型
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-6&#34;&gt;
 中文输入法的英文布局改为日语键盘布局
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-首先，打开注册表的下面位置。
-&lt;/p&gt;
+&lt;p&gt;首先，打开注册表的下面位置。&lt;/p&gt;
 &lt;div class=&#34;src src-sample&#34;&gt;
 &lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Keyboard Layouts\00000804&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-然后做以下调整。
-&lt;/p&gt;
+&lt;p&gt;然后做以下调整。&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -318,47 +318,53 @@ break code &lt;code&gt;0xE1:0x9D:0xC5&lt;/code&gt; - &lt;a href=&#34;https://see
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-7&#34;&gt;
 其他语言的输入法的键盘布局更改
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-其他的语言的情况下，只需变更注册表路径的 &lt;code class=&#34;verbatim&#34;&gt;00000804&lt;/code&gt;
+&lt;p&gt;其他的语言的情况下，只需变更注册表路径的 &lt;code class=&#34;verbatim&#34;&gt;00000804&lt;/code&gt;
 的地方到对应的语言的输入法， 然后改变 &lt;code class=&#34;verbatim&#34;&gt;***.DLL&lt;/code&gt;
-的部分到对应语言的动态链接库文件的名称即可。
-&lt;/p&gt;
+的部分到对应语言的动态链接库文件的名称即可。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-8&#34;&gt;
 当资源管理器的「我的电脑」或「PC」中出现未知图标时的注册表设置
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-通过定位到下面的注册表路径，找到位置图标对应的项删除即可。
-&lt;/p&gt;
+&lt;p&gt;通过定位到下面的注册表路径，找到位置图标对应的项删除即可。&lt;/p&gt;
 &lt;div class=&#34;src src-sample&#34;&gt;
 &lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-9&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-9&#34;&gt;
 无法连接到本地网络上的 NAS 时的注册表设置&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-2&#34; href=&#34;#footnote-2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-9&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-首先打开以下注册表位置
-&lt;/p&gt;
+&lt;p&gt;首先打开以下注册表位置&lt;/p&gt;
 &lt;div class=&#34;src src-sample&#34;&gt;
 &lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-然后进行下面的变更
-&lt;/p&gt;
+&lt;p&gt;然后进行下面的变更&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -377,43 +383,39 @@ break code &lt;code&gt;0xE1:0x9D:0xC5&lt;/code&gt; - &lt;a href=&#34;https://see
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-10&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-10&#34;&gt;
 参考资料
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-10&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://usedoor.jp/howto/digital/pc/windows-uwagaki-keyboard-insert-key-mukouka/&#34;&gt;将 Insert 无效化的方法（原文为日语）&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://usedoor.jp/howto/digital/pc/windows-uwagaki-keyboard-insert-key-mukouka/&#34;&gt;将 Insert 无效化的方法（原文为日语）&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://tepp91.github.io/contents/misc/remap-keyboard-with-scancode-map.html&#34;&gt;通过 Scancode Map 改变键的分配（原文为日语）&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://tepp91.github.io/contents/misc/remap-keyboard-with-scancode-map.html&#34;&gt;通过 Scancode Map 改变键的分配（原文为日语）&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://answers.microsoft.com/en-us/windows/forum/windows_10-files/homegroup-removed-how-to-get-network-sharing-work/01277332-2916-4a68-853a-116696b20743&#34;&gt;Homegroup removed! How to get network sharing work with Windows 10 v1803&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://answers.microsoft.com/en-us/windows/forum/windows_10-files/homegroup-removed-how-to-get-network-sharing-work/01277332-2916-4a68-853a-116696b20743&#34;&gt;Homegroup removed! How to get network sharing work with Windows 10 v1803&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
 &lt;hr class=&#34;footnotes-separatator&#34;&gt;
 &lt;div class=&#34;footnote-definitions&#34;&gt;
 &lt;div class=&#34;footnote-definition&#34;&gt;
 &lt;sup id=&#34;footnote-1&#34;&gt;&lt;a href=&#34;#footnote-reference-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
 &lt;div class=&#34;footnote-body&#34;&gt;
-&lt;p&gt;
-&lt;a href=&#34;http://softwaretechnique.jp/OS_Development/Tips/scan_code_set1.html&#34;&gt;键盘扫描码一览表（原文为日语）&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://softwaretechnique.jp/OS_Development/Tips/scan_code_set1.html&#34;&gt;键盘扫描码一览表（原文为日语）&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;footnote-definition&#34;&gt;
 &lt;sup id=&#34;footnote-2&#34;&gt;&lt;a href=&#34;#footnote-reference-2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
 &lt;div class=&#34;footnote-body&#34;&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://www.nedia.ne.jp/blog/2019/04/02/13919&#34;&gt;无法连接 NAS！原来原因并不是 SMB1.0！（原文为日语）&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.nedia.ne.jp/blog/2019/04/02/13919&#34;&gt;无法连接 NAS！原来原因并不是 SMB1.0！（原文为日语）&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;

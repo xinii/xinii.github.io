@@ -32,75 +32,79 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 The lack of Gnutls in the environment
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 If the current environment lacks Gnutls, the following configuration is
-required before compiling and installing the Emacs&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; source code.
-&lt;/p&gt;
+required before compiling and installing the Emacs&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; source code.&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  ./configure --with-gnutls&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;no&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 Or specify the installation directory at the same time, add the option
 to ignore other dependent libraries that are still missing, such as the
-following configuration.
-&lt;/p&gt;
+following configuration.&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  bash configure --prefix&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;$HOME/.local --with-gif&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;no --with-gnutls&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;no&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 In this way, the configuration and installation can be carried out
 smoothly in the absence of permission to the default installation path,
-or the lack of various dependent libraries.
-&lt;/p&gt;
+or the lack of various dependent libraries.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-2&#34;&gt;
 Potential problems
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 Although the above can achieve the purpose of normal installation of
 Emacs to the &lt;code class=&#34;verbatim&#34;&gt;$HOME/.local&lt;/code&gt; directory, However, due to the lack of the
 Gnutls component, when using network transmission in Emacs, you can only
-use http instead of https.
-&lt;/p&gt;
+use http instead of https.&lt;/p&gt;
 &lt;p&gt;
 If only needs a network connection during Emacs initialization, you can
 solve the problem by changing the Melpa links to start with http, but
 this will cause problems for future extensions that require network
-connectivity in Emacs.
-&lt;/p&gt;
+connectivity in Emacs.&lt;/p&gt;
 &lt;p&gt;
 For example, when using &lt;code class=&#34;verbatim&#34;&gt;google-translate&lt;/code&gt;, even if the &lt;code class=&#34;verbatim&#34;&gt;https&lt;/code&gt; in all
 &lt;code class=&#34;verbatim&#34;&gt;*.el&lt;/code&gt; files in the &lt;code class=&#34;verbatim&#34;&gt;google-translate&lt;/code&gt; package are changed to &lt;code class=&#34;verbatim&#34;&gt;http&lt;/code&gt;,
 during actual use, some &lt;code class=&#34;verbatim&#34;&gt;https&lt;/code&gt; services will still be used
-automatically, resulting in abnormal translation.
-&lt;/p&gt;
+automatically, resulting in abnormal translation.&lt;/p&gt;
 &lt;p&gt;
 One thing to note here is that after modifying the &lt;code class=&#34;verbatim&#34;&gt;*.el&lt;/code&gt; file, you need
 to delete all &lt;code class=&#34;verbatim&#34;&gt;*.elc&lt;/code&gt; files to force a recompilation to make the changes
-take effect.
-&lt;/p&gt;
+take effect.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-3&#34;&gt;
 Install Gnutls
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 After the above actual tests, it is not difficult to find that it is a
 good choice to install Emacs from the source code after installing
-Gnutls in the current environment.
-&lt;/p&gt;
+Gnutls in the current environment.&lt;/p&gt;
 &lt;p&gt;
 Taking OpenSUSE as an example, Gnutls can be installed by running the
-following statement on the terminal.
-&lt;/p&gt;
+following statement on the terminal.&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  sudo zypper install gnutls&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-4&#34;&gt;
 Other possible problems
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  checking &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; library containing tputs... no
   configure: error: The required &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;tputs&amp;#39;&lt;/span&gt; was not found in any library.
@@ -116,10 +120,11 @@ Other possible problems
 Besides, if Gnutls is installed in the current environment, and the
 above error is still reported after &lt;code class=&#34;verbatim&#34;&gt;make&lt;/code&gt;, then for OpenSUSE
 environment, you need a package called &lt;code class=&#34;verbatim&#34;&gt;ncurses-devel&lt;/code&gt;, execute the
-following sentence to install.
-&lt;/p&gt;
+following sentence to install.&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  sudo zypper install ncurses-devel&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
 &lt;hr class=&#34;footnotes-separatator&#34;&gt;
@@ -127,9 +132,7 @@ following sentence to install.
 &lt;div class=&#34;footnote-definition&#34;&gt;
 &lt;sup id=&#34;footnote-1&#34;&gt;&lt;a href=&#34;#footnote-reference-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
 &lt;div class=&#34;footnote-body&#34;&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://ja.wikipedia.org/wiki/Emacs&#34;&gt;The logo of Emacs&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ja.wikipedia.org/wiki/Emacs&#34;&gt;The logo of Emacs&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;

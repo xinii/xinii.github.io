@@ -48,26 +48,30 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 Registry settings for Japanese keyboard layout
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-2&#34;&gt;
 About keyboard scan code
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
-First, what is the keyboard scan code? Let us look at the definition on Wikipedia.
-&lt;/p&gt;
+First, what is the keyboard scan code? Let us look at the definition on Wikipedia.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;
-A scancode (or scan code) is the data that most computer keyboards send to a computer to report which keys have been pressed.
-A number, or sequence of numbers, is assigned to each key on the keyboard. - &lt;a href=&#34;https://en.wikipedia.org/wiki/Scancode&#34;&gt;Wikipedia&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;A scancode (or scan code) is the data that most computer keyboards send to a computer to report which keys have been pressed.
+A number, or sequence of numbers, is assigned to each key on the keyboard. - &lt;a href=&#34;https://en.wikipedia.org/wiki/Scancode&#34;&gt;Wikipedia&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-3&#34;&gt;
 Example of keyboard scan code&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -118,36 +122,33 @@ Example of keyboard scan code&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-4&#34;&gt;
 Perform keyboard scan code mapping in the registry
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-First, press the Windows logo key + &lt;code&gt;R&lt;/code&gt;, enter &lt;code&gt;regedit&lt;/code&gt; and then press &lt;code&gt;Enter&lt;/code&gt; to open the Windows Registry Editor.
-Then open the following location in the registry editor.
-&lt;/p&gt;
+&lt;p&gt;First, press the Windows logo key + &lt;code&gt;R&lt;/code&gt;, enter &lt;code&gt;regedit&lt;/code&gt; and then press &lt;code&gt;Enter&lt;/code&gt; to open the Windows Registry Editor.
+Then open the following location in the registry editor.&lt;/p&gt;
 &lt;div class=&#34;src src-sample&#34;&gt;
 &lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-Next, right-click on the blank space and create a binary key called &amp;#34;Scancode Map&amp;#34;
-in the order of &amp;#34;New-Binary Value (B)-Scancode Map&amp;#34;. Double-click to edit.
-&lt;/p&gt;
+&lt;p&gt;Next, right-click on the blank space and create a binary key called &amp;#34;Scancode Map&amp;#34;
+in the order of &amp;#34;New-Binary Value (B)-Scancode Map&amp;#34;. Double-click to edit.&lt;/p&gt;
 &lt;p&gt;
 Regarding the value of &amp;#34;Scancode Map&amp;#34; (that is, the mapping rule), taking my settings as an example,
 the following table is listed for reference.
 Here, the parts of &amp;#34;version&amp;#34;, &amp;#34;flag&amp;#34; and &amp;#34;terminal null value&amp;#34; should be left as they are.
 In addition, regarding the &amp;#34;number of mappings&amp;#34;,
-it is necessary to set the sum of the number of mapping rules and the number of &amp;#34;terminal null values&amp;#34;.
-&lt;/p&gt;
+it is necessary to set the sum of the number of mapping rules and the number of &amp;#34;terminal null values&amp;#34;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-The mapping of my Logicool K380 keyboard (Japanese layout)
-&lt;/p&gt;
+&lt;p&gt;The mapping of my Logicool K380 keyboard (Japanese layout)&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -205,9 +206,7 @@ The mapping of my Logicool K380 keyboard (Japanese layout)
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-The mapping of my FILCO Majestouch MINILA Air keyboard (Japanese layout)
-&lt;/p&gt;
+&lt;p&gt;The mapping of my FILCO Majestouch MINILA Air keyboard (Japanese layout)&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -272,38 +271,38 @@ The mapping of my FILCO Majestouch MINILA Air keyboard (Japanese layout)
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-It should be noted here that the &amp;#34;Pause/Break&amp;#34; key is not composed of a single scan code,
+&lt;p&gt;It should be noted here that the &amp;#34;Pause/Break&amp;#34; key is not composed of a single scan code,
 The scan code of &amp;#34;NumLock&amp;#34; is also included, and it needs to be flexibly set according to the situation.
-You can refer to the following description.
-&lt;/p&gt;
+You can refer to the following description.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;
-Pause &lt;code&gt;0xE1:0x1D:0x45&lt;/code&gt; [ 84key &lt;code&gt;Ctrl&lt;/code&gt; (0x1D) + &lt;code&gt;NumLock&lt;/code&gt; (0x45)], no auto repeat,
-break code &lt;code&gt;0xE1:0x9D:0xC5&lt;/code&gt; - &lt;a href=&#34;https://seesaawiki.jp/w/smnb/d/Keyboard%20Scancode%20Map&#34;&gt;Keyboard Scancode Map&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;Pause &lt;code&gt;0xE1:0x1D:0x45&lt;/code&gt; [ 84key &lt;code&gt;Ctrl&lt;/code&gt; (0x1D) + &lt;code&gt;NumLock&lt;/code&gt; (0x45)], no auto repeat,
+break code &lt;code&gt;0xE1:0x9D:0xC5&lt;/code&gt; - &lt;a href=&#34;https://seesaawiki.jp/w/smnb/d/Keyboard%20Scancode%20Map&#34;&gt;Keyboard Scancode Map&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-5&#34;&gt;
 Change keyboard layout for IME
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-6&#34;&gt;
 Change Chinese input method English layout to Japanese keyboard layout
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-First, open the following location of the registry.
-&lt;/p&gt;
+&lt;p&gt;First, open the following location of the registry.&lt;/p&gt;
 &lt;div class=&#34;src src-sample&#34;&gt;
 &lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Keyboard Layouts\00000804&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-Then make the following adjustment.
-&lt;/p&gt;
+&lt;p&gt;Then make the following adjustment.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -322,47 +321,53 @@ Then make the following adjustment.
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-7&#34;&gt;
 Change the keyboard layout of input methods in other languages
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-In the case of other languages, you only need to change the entry method of the registry path &lt;code&gt;00000804&lt;/code&gt;
+&lt;p&gt;In the case of other languages, you only need to change the entry method of the registry path &lt;code&gt;00000804&lt;/code&gt;
 to the corresponding language input method,
-then change the part of &lt;code&gt;***.DLL&lt;/code&gt; to the name of the dynamic link library file in the corresponding language.
-&lt;/p&gt;
+then change the part of &lt;code&gt;***.DLL&lt;/code&gt; to the name of the dynamic link library file in the corresponding language.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-8&#34;&gt;
 Registry settings when an unknown icon appears in &amp;#34;My Computer&amp;#34; or &amp;#34;PC&amp;#34; in Explorer
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-You can delete the item corresponding to the location icon by locating the following registry path.
-&lt;/p&gt;
+&lt;p&gt;You can delete the item corresponding to the location icon by locating the following registry path.&lt;/p&gt;
 &lt;div class=&#34;src src-sample&#34;&gt;
 &lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-9&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-9&#34;&gt;
 Registry settings when unable to connect to the NAS on the local network&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-2&#34; href=&#34;#footnote-2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-9&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-First open the following registry location
-&lt;/p&gt;
+&lt;p&gt;First open the following registry location&lt;/p&gt;
 &lt;div class=&#34;src src-sample&#34;&gt;
 &lt;pre&gt;&lt;code class=&#34;language-sample&#34; data-lang=&#34;sample&#34;&gt;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-Then make the following change
-&lt;/p&gt;
+&lt;p&gt;Then make the following change&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -381,43 +386,39 @@ Then make the following change
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-10&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-10&#34;&gt;
 References
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-10&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://usedoor.jp/howto/digital/pc/windows-uwagaki-keyboard-insert-key-mukouka/&#34;&gt;How to invalidate the Insert key (Originally in Japanese)&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://usedoor.jp/howto/digital/pc/windows-uwagaki-keyboard-insert-key-mukouka/&#34;&gt;How to invalidate the Insert key (Originally in Japanese)&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://tepp91.github.io/contents/misc/remap-keyboard-with-scancode-map.html&#34;&gt;Change the key assignment via Scancode Map (Originally in Japanese)&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://tepp91.github.io/contents/misc/remap-keyboard-with-scancode-map.html&#34;&gt;Change the key assignment via Scancode Map (Originally in Japanese)&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://answers.microsoft.com/en-us/windows/forum/windows_10-files/homegroup-removed-how-to-get-network-sharing-work/01277332-2916-4a68-853a-116696b20743&#34;&gt;Homegroup removed! How to get network sharing work with Windows 10 v1803&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://answers.microsoft.com/en-us/windows/forum/windows_10-files/homegroup-removed-how-to-get-network-sharing-work/01277332-2916-4a68-853a-116696b20743&#34;&gt;Homegroup removed! How to get network sharing work with Windows 10 v1803&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
 &lt;hr class=&#34;footnotes-separatator&#34;&gt;
 &lt;div class=&#34;footnote-definitions&#34;&gt;
 &lt;div class=&#34;footnote-definition&#34;&gt;
 &lt;sup id=&#34;footnote-1&#34;&gt;&lt;a href=&#34;#footnote-reference-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
 &lt;div class=&#34;footnote-body&#34;&gt;
-&lt;p&gt;
-&lt;a href=&#34;http://softwaretechnique.jp/OS_Development/Tips/scan_code_set1.html&#34;&gt;Keyboard scan code list (Originally in Japanese)&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://softwaretechnique.jp/OS_Development/Tips/scan_code_set1.html&#34;&gt;Keyboard scan code list (Originally in Japanese)&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;footnote-definition&#34;&gt;
 &lt;sup id=&#34;footnote-2&#34;&gt;&lt;a href=&#34;#footnote-reference-2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
 &lt;div class=&#34;footnote-body&#34;&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://www.nedia.ne.jp/blog/2019/04/02/13919&#34;&gt;Unable to connect to NAS! The original reason is not SMB1.0! (Originally in Japanese)&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.nedia.ne.jp/blog/2019/04/02/13919&#34;&gt;Unable to connect to NAS! The original reason is not SMB1.0! (Originally in Japanese)&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -443,42 +444,44 @@ References
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 Activation of your Windows 10
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
-Open the &lt;code&gt;cmd&lt;/code&gt; of Windows.
-&lt;/p&gt;
+Open the &lt;code&gt;cmd&lt;/code&gt; of Windows.&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;slmgr -ipk &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;your product key&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
 slmgr -skms &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;kms server address of your company&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
 slmgr -ato&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-2&#34;&gt;
 Installation of some useful tools
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://www.msys2.org/&#34;&gt;Msys2&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.msys2.org/&#34;&gt;Msys2&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://www.autohotkey.com/&#34;&gt;AutoHotKey&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.autohotkey.com/&#34;&gt;AutoHotKey&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://github.com/edihbrandon/RictyDiminished&#34;&gt;Ricty&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/edihbrandon/RictyDiminished&#34;&gt;Ricty&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-3&#34;&gt;
 Configuration of msys2
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;pacman -S git fish tmux emacs gcc python
 cd ~
@@ -499,6 +502,8 @@ cat &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;path to your pub key
 chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;600&lt;/span&gt; ~/.ssh/authorized_keys
 chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;700&lt;/span&gt; ~/.ssh
 /usr/bin/sshd&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 </description>
     </item>
@@ -529,42 +534,65 @@ chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;700&lt;/span&gt; ~/.ssh
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 Command to be use
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  add-apt-repository&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-2&#34;&gt;
 No this command? Do this first
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  apt install software-properties-common&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-3&#34;&gt;
 Process
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-4&#34;&gt;
 Register repository
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  add-apt-repository ppa:kelleyk/emacs
   apt-add-repository ppa:fish-shell/release-3&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-5&#34;&gt;
 Refresh repository
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  apt update&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-6&#34;&gt;
 Installation
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  apt install emacs26
   apt install fish&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 </description>
     </item>
@@ -603,39 +631,34 @@ Installation
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 SSH interruption phenomenon
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-When logging in to a remote server with ssh,
+&lt;p&gt;When logging in to a remote server with ssh,
 &lt;code class=&#34;verbatim&#34;&gt;Write failed: Broken pipe&lt;/code&gt; may be displayed and the connection may be
-broken.
-&lt;/p&gt;
+broken.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-It is necessary to change the ssh setting on the client side or the
+&lt;p&gt;It is necessary to change the ssh setting on the client side or the
 server side, because ssh is automatically disconnected by a timeout if
-it is not operated for a while.
-&lt;/p&gt;
+it is not operated for a while.&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-2&#34;&gt;
 Remedy
 &lt;/h3&gt;
+&lt;/div&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;
-Deal on the client side
-&lt;/p&gt;
+&lt;p&gt;Deal on the client side&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-Describe the following contents in &lt;code class=&#34;verbatim&#34;&gt;/etc/ssh/ssh_config&lt;/code&gt; or
-&lt;code class=&#34;verbatim&#34;&gt;~/.ssh/config&lt;/code&gt;
-&lt;/p&gt;
+&lt;p&gt;Describe the following contents in &lt;code class=&#34;verbatim&#34;&gt;/etc/ssh/ssh_config&lt;/code&gt; or
+&lt;code class=&#34;verbatim&#34;&gt;~/.ssh/config&lt;/code&gt;&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  ServerAliveInterval &lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;
   ServerAliveCountMax &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -643,72 +666,94 @@ Describe the following contents in &lt;code class=&#34;verbatim&#34;&gt;/etc/ssh
 &lt;p&gt;
 With this setting, 10 times response confirmation will send to the
 server every 15 seconds, and if there is still no response, it times
-out.
-&lt;/p&gt;
+out.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-Deal on the server side
-&lt;/p&gt;
+&lt;p&gt;Deal on the server side&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-Describe the following contents in &lt;code class=&#34;verbatim&#34;&gt;/etc/ssh/sshd_config&lt;/code&gt;
-&lt;/p&gt;
+&lt;p&gt;Describe the following contents in &lt;code class=&#34;verbatim&#34;&gt;/etc/ssh/sshd_config&lt;/code&gt;&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  ClientAliveInterval &lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;
   ClientAliveCountMax &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 With this setting, 5 times response confirmation will send to the client
-every 30 seconds, and if there is still no response, it times out.
-&lt;/p&gt;
+every 30 seconds, and if there is still no response, it times out.&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-3&#34;&gt;
 One more thing
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 It is recommended to use tools such as tmux or screen, so that even if
 the connection is lost halfway, you can log in to the remote server
-again and attach the previous session.
-&lt;/p&gt;
+again and attach the previous session.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-4&#34;&gt;
 SSH daemon on android by termux
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-5&#34;&gt;
 Installation
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  apt install openssh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-6&#34;&gt;
 Setting the key
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  ssh-keygen
   cat ~/.ssh/id_rsa.pub &amp;gt; ~/.ssh/authorized_keys
   chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;600&lt;/span&gt; ~/.ssh/authorized_keys
   chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;700&lt;/span&gt; ~/.ssh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-7&#34;&gt;
 Start daemon in debug mode
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  sshd -d&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-8&#34;&gt;
 Start daemon
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  sshd&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-9&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-9&#34;&gt;
 Login on the PC side
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-9&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 Set the private key &lt;code class=&#34;verbatim&#34;&gt;~/.ssh/id_rsa&lt;/code&gt; generated on the android side in the
 SSH client of the PC side, and connect to the server on android with
-specifying IP and port &lt;code class=&#34;verbatim&#34;&gt;8022&lt;/code&gt; and without a username.
-&lt;/p&gt;
+specifying IP and port &lt;code class=&#34;verbatim&#34;&gt;8022&lt;/code&gt; and without a username.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -732,18 +777,18 @@ specifying IP and port &lt;code class=&#34;verbatim&#34;&gt;8022&lt;/code&gt; an
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 Generate swap file
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 To prevent errors due to insufficient memory during compilation, create
 a swap file firstly, and store it to somewhere you know. After OS
 restarting, the swap space will disappear, or you can manually delete
 this file after the completion of the following compilation and other
-work.
-&lt;/p&gt;
+work.&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  $ fallocate -l 4G swapfile
   $ chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;600&lt;/span&gt; swapfile
@@ -751,17 +796,19 @@ work.
   $ sudo swapon swapfile
   $ swapon -s&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-2&#34;&gt;
 Generate installation script
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://github.com/AastaNV/JEP/blob/master/script/install_opencv4.0.0_Nano.sh&#34;&gt;The original link of the script to install the OpenCV 4.0.0 version&lt;/a&gt;
-&lt;/p&gt;
+&lt;a href=&#34;https://github.com/AastaNV/JEP/blob/master/script/install_opencv4.0.0_Nano.sh&#34;&gt;The original link of the script to install the OpenCV 4.0.0 version&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 The above is the version used to install OpenCV 4.0.0, here we want to
 install the newer version 4.1.0, so change the version number part of
-the above code.
-&lt;/p&gt;
+the above code.&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash&lt;/span&gt;
   #
@@ -814,11 +861,14 @@ the above code.
 &lt;/div&gt;
 &lt;p&gt;
 Save the above script as a &lt;code class=&#34;verbatim&#34;&gt;sh&lt;/code&gt; file, for example,
-&lt;code class=&#34;verbatim&#34;&gt;install_opencv4.1.0_Nano.sh&lt;/code&gt;.
-&lt;/p&gt;
+&lt;code class=&#34;verbatim&#34;&gt;install_opencv4.1.0_Nano.sh&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-3&#34;&gt;
 Run the script
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  mkdir opencv
   sh install_opencv4.1.0_Nano.sh opencv&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -826,38 +876,36 @@ Run the script
 &lt;p&gt;
 The installation may take a lot of time, please be patient and wait for
 the installation to end. It is recommended to use tmux to hang in the
-background.
-&lt;/p&gt;
+background.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-4&#34;&gt;
 Test the installed OpenCV
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 Test the statement &lt;code class=&#34;verbatim&#34;&gt;import cv2&lt;/code&gt; through the interactive interface of
-python, it is good if no error is reported.
-&lt;/p&gt;
+python, it is good if no error is reported.&lt;/p&gt;
 &lt;p&gt;
 However, considering that users who use tools such as pyenv for python
 version management, if they switch to the python version installed under
 pyenv, the installed OpenCV may not be recognized. The solution is to
 create a soft link to the OpenCV library and link it to the python
-library directory under the management of pyenv.
-&lt;/p&gt;
+library directory under the management of pyenv.&lt;/p&gt;
 &lt;p&gt;
 For example, suppose the library directory of the python version in
-pyenv is,
-&lt;/p&gt;
+pyenv is,&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  /home/&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;username&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;/.anyenv/envs/pyenv/versions/3.6.8/lib/python3.6/site-packages&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
-And the installed OpenCV library path is,
-&lt;/p&gt;
+And the installed OpenCV library path is,&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  /usr/local/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-linux-gnu.so&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
-Then execute the following statement to create a soft link,
-&lt;/p&gt;
+Then execute the following statement to create a soft link,&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  cd /home/&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;username&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;/.anyenv/envs/pyenv/versions/3.6.8/lib/python3.6/site-packages
   ln -s /usr/local/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-linux-gnu.so ./&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -866,8 +914,9 @@ Then execute the following statement to create a soft link,
 Besides, use the python version of pip in pyenv to install numpy through
 the &lt;code class=&#34;verbatim&#34;&gt;pip install numpy&lt;/code&gt; statement, and go to the interactive interface
 to test &lt;code class=&#34;verbatim&#34;&gt;import cv2&lt;/code&gt;. If no error is displayed, the installation is
-complete.
-&lt;/p&gt;
+complete.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -891,75 +940,79 @@ complete.
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 The lack of Gnutls in the environment
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 If the current environment lacks Gnutls, the following configuration is
-required before compiling and installing the Emacs&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; source code.
-&lt;/p&gt;
+required before compiling and installing the Emacs&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; source code.&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  ./configure --with-gnutls&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;no&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 Or specify the installation directory at the same time, add the option
 to ignore other dependent libraries that are still missing, such as the
-following configuration.
-&lt;/p&gt;
+following configuration.&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  bash configure --prefix&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;$HOME/.local --with-gif&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;no --with-gnutls&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;no&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 In this way, the configuration and installation can be carried out
 smoothly in the absence of permission to the default installation path,
-or the lack of various dependent libraries.
-&lt;/p&gt;
+or the lack of various dependent libraries.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-2&#34;&gt;
 Potential problems
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 Although the above can achieve the purpose of normal installation of
 Emacs to the &lt;code class=&#34;verbatim&#34;&gt;$HOME/.local&lt;/code&gt; directory, However, due to the lack of the
 Gnutls component, when using network transmission in Emacs, you can only
-use http instead of https.
-&lt;/p&gt;
+use http instead of https.&lt;/p&gt;
 &lt;p&gt;
 If only needs a network connection during Emacs initialization, you can
 solve the problem by changing the Melpa links to start with http, but
 this will cause problems for future extensions that require network
-connectivity in Emacs.
-&lt;/p&gt;
+connectivity in Emacs.&lt;/p&gt;
 &lt;p&gt;
 For example, when using &lt;code class=&#34;verbatim&#34;&gt;google-translate&lt;/code&gt;, even if the &lt;code class=&#34;verbatim&#34;&gt;https&lt;/code&gt; in all
 &lt;code class=&#34;verbatim&#34;&gt;*.el&lt;/code&gt; files in the &lt;code class=&#34;verbatim&#34;&gt;google-translate&lt;/code&gt; package are changed to &lt;code class=&#34;verbatim&#34;&gt;http&lt;/code&gt;,
 during actual use, some &lt;code class=&#34;verbatim&#34;&gt;https&lt;/code&gt; services will still be used
-automatically, resulting in abnormal translation.
-&lt;/p&gt;
+automatically, resulting in abnormal translation.&lt;/p&gt;
 &lt;p&gt;
 One thing to note here is that after modifying the &lt;code class=&#34;verbatim&#34;&gt;*.el&lt;/code&gt; file, you need
 to delete all &lt;code class=&#34;verbatim&#34;&gt;*.elc&lt;/code&gt; files to force a recompilation to make the changes
-take effect.
-&lt;/p&gt;
+take effect.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-3&#34;&gt;
 Install Gnutls
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 After the above actual tests, it is not difficult to find that it is a
 good choice to install Emacs from the source code after installing
-Gnutls in the current environment.
-&lt;/p&gt;
+Gnutls in the current environment.&lt;/p&gt;
 &lt;p&gt;
 Taking OpenSUSE as an example, Gnutls can be installed by running the
-following statement on the terminal.
-&lt;/p&gt;
+following statement on the terminal.&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  sudo zypper install gnutls&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-4&#34;&gt;
 Other possible problems
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  checking &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; library containing tputs... no
   configure: error: The required &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;tputs&amp;#39;&lt;/span&gt; was not found in any library.
@@ -975,10 +1028,11 @@ Other possible problems
 Besides, if Gnutls is installed in the current environment, and the
 above error is still reported after &lt;code class=&#34;verbatim&#34;&gt;make&lt;/code&gt;, then for OpenSUSE
 environment, you need a package called &lt;code class=&#34;verbatim&#34;&gt;ncurses-devel&lt;/code&gt;, execute the
-following sentence to install.
-&lt;/p&gt;
+following sentence to install.&lt;/p&gt;
 &lt;div class=&#34;src src-bash&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  sudo zypper install ncurses-devel&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
 &lt;hr class=&#34;footnotes-separatator&#34;&gt;
@@ -986,9 +1040,7 @@ following sentence to install.
 &lt;div class=&#34;footnote-definition&#34;&gt;
 &lt;sup id=&#34;footnote-1&#34;&gt;&lt;a href=&#34;#footnote-reference-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
 &lt;div class=&#34;footnote-body&#34;&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://ja.wikipedia.org/wiki/Emacs&#34;&gt;The logo of Emacs&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ja.wikipedia.org/wiki/Emacs&#34;&gt;The logo of Emacs&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1024,22 +1076,20 @@ following sentence to install.
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 From bash to zsh
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 Although I switched to the fish shell two weeks after using the zsh shell
 (the fish shell has a special introduction below),
 this does not deny that the zsh shell is still a good shell.
-You can switch from any shell to zsh shell in the following way.
-&lt;/p&gt;
+You can switch from any shell to zsh shell in the following way.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-Use the following instructions when installing zsh,
-&lt;/p&gt;
+&lt;p&gt;Use the following instructions when installing zsh,&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
@@ -1048,9 +1098,7 @@ Use the following instructions when installing zsh,
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-If you want to know the shell currently installed in the system, enter the following command,
-&lt;/p&gt;
+&lt;p&gt;If you want to know the shell currently installed in the system, enter the following command,&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
@@ -1058,9 +1106,7 @@ If you want to know the shell currently installed in the system, enter the follo
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-How to use zsh as your default shell? Enter the following command,
-&lt;/p&gt;
+&lt;p&gt;How to use zsh as your default shell? Enter the following command,&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
@@ -1068,37 +1114,27 @@ How to use zsh as your default shell? Enter the following command,
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-Error reading about the configuration file
-&lt;/p&gt;
+&lt;p&gt;Error reading about the configuration file&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-When the shell script explains the error,
+&lt;p&gt;When the shell script explains the error,
 you can check the currently used &lt;code class=&#34;verbatim&#34;&gt;sh&lt;/code&gt; path.
 For example, it may be that &lt;code class=&#34;verbatim&#34;&gt;sh&lt;/code&gt; points to &lt;code class=&#34;verbatim&#34;&gt;dash&lt;/code&gt;, which causes an error.
-View through the following statement.
-&lt;/p&gt;
+View through the following statement.&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  ls -l &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;which sh&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-Script interpreter differences in syntax
-&lt;/p&gt;
+&lt;p&gt;Script interpreter differences in syntax&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-When switching from traditional bash and other shells to zsh,
+&lt;p&gt;When switching from traditional bash and other shells to zsh,
 you will find that the index of the first element of the collection starts from 1.
-If you want to start from 0, configure the following statement in the configuration file.
-&lt;/p&gt;
+If you want to start from 0, configure the following statement in the configuration file.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-Fix array index for zsh:
-&lt;/p&gt;
+&lt;p&gt;Fix array index for zsh:&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
@@ -1106,36 +1142,41 @@ Fix array index for zsh:
       setopt localoptions ksharrays
   &lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-2&#34;&gt;
 Configure zsh
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 Similar to the bash shell&amp;#39;s &lt;code class=&#34;verbatim&#34;&gt;.bashrc&lt;/code&gt;,
 the configuration of &lt;code class=&#34;verbatim&#34;&gt;zsh&lt;/code&gt; also requires a configuration file.
 This file is the &lt;code class=&#34;verbatim&#34;&gt;.zshrc&lt;/code&gt; file in the user directory.
-&lt;a href=&#34;https://github.com/xinii/xinconfig/blob/master/profile/core/zsh.sh&#34;&gt;Click here&lt;/a&gt; to open the configuration file I uploaded to Github to download and use.
-&lt;/p&gt;
+&lt;a href=&#34;https://github.com/xinii/xinconfig/blob/master/profile/core/zsh.sh&#34;&gt;Click here&lt;/a&gt; to open the configuration file I uploaded to Github to download and use.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-3&#34;&gt;
 From zsh to fish-shell
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 After using the zsh shell,
 I switched to the fish shell in about two weeks.
 This is not because zsh is not good, but the natural completion and ease of use of fish attracted me.
-After moving to the fish environment, the shell toss is a conclusion. The following records of the process.
-&lt;/p&gt;
+After moving to the fish environment, the shell toss is a conclusion. The following records of the process.&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-4&#34;&gt;
 fish shell installation and default shell switch
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 This was mentioned above.
-Now we will introduce the instructions that different operating systems need to execute.
-&lt;/p&gt;
+Now we will introduce the instructions that different operating systems need to execute.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-MacOS:
-&lt;/p&gt;
+&lt;p&gt;MacOS:&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
@@ -1143,9 +1184,7 @@ MacOS:
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-Ubuntu/Linux Mint:
-&lt;/p&gt;
+&lt;p&gt;Ubuntu/Linux Mint:&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
@@ -1153,9 +1192,7 @@ Ubuntu/Linux Mint:
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-OpenSUSE:
-&lt;/p&gt;
+&lt;p&gt;OpenSUSE:&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
@@ -1164,16 +1201,14 @@ OpenSUSE:
 &lt;p&gt;
 If it is an OpenSUSE environment running under Windows,
 you may need &lt;code class=&#34;verbatim&#34;&gt;root&lt;/code&gt; permission, then add &lt;code class=&#34;verbatim&#34;&gt;sudo&lt;/code&gt; in front of the command.
-Use the following statement to view the shell used by the current system.
-&lt;/p&gt;
+Use the following statement to view the shell used by the current system.&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  cat /etc/shells&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 If your fish shell is displayed at &lt;code class=&#34;verbatim&#34;&gt;/usr/bin/fish&lt;/code&gt;,
 Then execute the following statement to switch it to the default shell
-(add &lt;code class=&#34;verbatim&#34;&gt;sudo&lt;/code&gt; if you have insufficient permissions).
-&lt;/p&gt;
+(add &lt;code class=&#34;verbatim&#34;&gt;sudo&lt;/code&gt; if you have insufficient permissions).&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  chsh -s /usr/bin/fish&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -1181,54 +1216,55 @@ Then execute the following statement to switch it to the default shell
 Now reopen a terminal session and you will find that the default shell has been switched to fish.
 If it reports a lot of errors about hostname immediately after opening the fish shell,
 that is to say, the current environment lacks a package called hostname,
-then use the package manager of the distribution you are using to install &lt;code class=&#34;verbatim&#34;&gt;hostname&lt;/code&gt;, for example, under OpenSUSE,
-&lt;/p&gt;
+then use the package manager of the distribution you are using to install &lt;code class=&#34;verbatim&#34;&gt;hostname&lt;/code&gt;, for example, under OpenSUSE,&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  sudo zypper install hostname&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-5&#34;&gt;
 Configuration of Fish shell
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
-The configuration I wrote was uploaded on Github, &lt;a href=&#34;https://github.com/xinii/xinconfig/tree/master/profile/fish&#34;&gt;click here&lt;/a&gt; to view my configuration.
-&lt;/p&gt;
+The configuration I wrote was uploaded on Github, &lt;a href=&#34;https://github.com/xinii/xinconfig/tree/master/profile/fish&#34;&gt;click here&lt;/a&gt; to view my configuration.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-6&#34;&gt;
 Common problems when using python under the fish shell
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
-There are two issues that I need to pay attention to at present,
-&lt;/p&gt;
+There are two issues that I need to pay attention to at present,&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-About tmux
-&lt;/p&gt;
+&lt;p&gt;About tmux&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-When tmux has a session in the background,
+&lt;p&gt;When tmux has a session in the background,
 even if the update &lt;code class=&#34;verbatim&#34;&gt;PYTHONPATH&lt;/code&gt; environment variable will not take effect,
 then all processes of tmux need to be closed before the update will take effect.
 In addition to fish, other shell environments should also be encountered.
-I first appeared in fish and kept it as a record.
-&lt;/p&gt;
+I first appeared in fish and kept it as a record.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-About &lt;code class=&#34;verbatim&#34;&gt;PYTHONPATH&lt;/code&gt;
-&lt;/p&gt;
+&lt;p&gt;About &lt;code class=&#34;verbatim&#34;&gt;PYTHONPATH&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-The way to define environment variables in fish shell is &lt;code class=&#34;verbatim&#34;&gt;set &amp;lt;variable_name&amp;gt; &amp;lt;parameter_1&amp;gt; &amp;lt;parameter_2&amp;gt;&lt;/code&gt;
+&lt;p&gt;The way to define environment variables in fish shell is &lt;code class=&#34;verbatim&#34;&gt;set &amp;lt;variable_name&amp;gt; &amp;lt;parameter_1&amp;gt; &amp;lt;parameter_2&amp;gt;&lt;/code&gt;
 This method has great advantages and is very convenient, but for &lt;code class=&#34;verbatim&#34;&gt;PYTHONPATH&lt;/code&gt;,
 then &lt;code class=&#34;verbatim&#34;&gt;set PYTHONPATH &amp;lt;parameter_1&amp;gt;:&amp;lt;parameter_2&amp;gt;&lt;/code&gt; is more versatile.
 The reason is that after testing, both methods can be used normally under MacOS, but it is running on Jetson
 When testing under Ubuntu on Nano, only the second method is available.
 The specific reason is not yet clear, there may be different reasons for the operating system,
 It may also be caused by different python versions
-(For example, the version number is the same, but the different processor architectures cause differences in compilation methods and cause this problem).
-&lt;/p&gt;
+(For example, the version number is the same, but the different processor architectures cause differences in compilation methods and cause this problem).&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -1248,7 +1284,6 @@ It may also be caused by different python versions
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
@@ -1260,25 +1295,21 @@ At the same time, an empty partition where the OS will be installed needs to be 
 if not, the data in the partition may also be lost after the installation.
   &lt;/div&gt;
 &lt;/div&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 Prepare the USB media for installing Linux Mint
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 Firstly, prepare the USB media, it can be a U disk or a USB mobile hard disk,
-and then, the installer for the installation of Linux Mint will be burning on this.
-&lt;/p&gt;
+and then, the installer for the installation of Linux Mint will be burning on this.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-If you are using Windows, please &lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0&#34;&gt;click here&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;If you are using Windows, please &lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0&#34;&gt;click here&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-to follow the official manual of Ubuntu to make a USB media for Linux installing.
-&lt;/p&gt;
+&lt;p&gt;to follow the official manual of Ubuntu to make a USB media for Linux installing.&lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
@@ -1287,26 +1318,28 @@ When installing Linux Mint, you only thing you need to do is change the ISO path
 the others are exactly the same.
   &lt;/div&gt;
 &lt;/div&gt;
-
 &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-Here will use a software called Rufus,
+&lt;p&gt;Here will use a software called Rufus,
 &lt;a href=&#34;https://rufus.akeo.ie/&#34;&gt;click here&lt;/a&gt; to open the official site of Rufus,
 also, you can 
-&lt;a href=&#34;https://github.com/pbatard/rufus/releases/download/v3.5/rufus-3.5.exe&#34;&gt;click here&lt;/a&gt; to download Rufus directly.
-&lt;/p&gt;
+&lt;a href=&#34;https://github.com/pbatard/rufus/releases/download/v3.5/rufus-3.5.exe&#34;&gt;click here&lt;/a&gt; to download Rufus directly.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-2&#34;&gt;
 About the ISO image of Linux Mint
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 You can get the ISO image from the official site of Linux Mint.
 &lt;a href=&#34;https://linuxmint.com/&#34;&gt;Click here&lt;/a&gt; to open the official site of Linux Mint
-or &lt;a href=&#34;http://mirrors.evowise.com/linuxmint/stable/19.1/linuxmint-19.1-cinnamon-64bit.iso&#34;&gt;click here&lt;/a&gt; to download the Linux Mint 19.1.
-&lt;/p&gt;
+or &lt;a href=&#34;http://mirrors.evowise.com/linuxmint/stable/19.1/linuxmint-19.1-cinnamon-64bit.iso&#34;&gt;click here&lt;/a&gt; to download the Linux Mint 19.1.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -1326,29 +1359,26 @@ or &lt;a href=&#34;http://mirrors.evowise.com/linuxmint/stable/19.1/linuxmint-19
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 Install Jekyll
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 Jekyll is a static website generation framework written in Ruby
-language. The following is the official website introduction.
-&lt;/p&gt;
+language. The following is the official website introduction.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;
-Jekyll is a static site generator. You give it text written in your
+&lt;p&gt;Jekyll is a static site generator. You give it text written in your
   favorite markup language and it uses layouts to create a static
   website. You can tweak how you want the site URLs to look, what data
-  gets displayed on the site, and more. –Jekyll&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
-&lt;/p&gt;
+  gets displayed on the site, and more. –Jekyll&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;
 When installing Jekyll, you first need a Ruby package management
 environment. The commonly used package manager of the Ruby programming
 environment is &lt;code class=&#34;verbatim&#34;&gt;gem&lt;/code&gt;. For example, executing the following statement in
-Ubuntu will also install &lt;code class=&#34;verbatim&#34;&gt;gem&lt;/code&gt;.
-&lt;/p&gt;
+Ubuntu will also install &lt;code class=&#34;verbatim&#34;&gt;gem&lt;/code&gt;.&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  apt install ruby-dev&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -1357,65 +1387,59 @@ After installing &lt;code class=&#34;verbatim&#34;&gt;gem&lt;/code&gt;, make sur
 environment variable. If you do not use the above method, but use
 virtual environment management tools such as &lt;code class=&#34;verbatim&#34;&gt;rbenv&lt;/code&gt;, just call the
 &lt;code class=&#34;verbatim&#34;&gt;gem&lt;/code&gt; configured in the virtual environment. Then you can install Jekyll
-by executing the following statement.
-&lt;/p&gt;
+by executing the following statement.&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  gem install jekyll&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-2&#34;&gt;
 Publish blog to Github
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 After installing Jekyll, you must hope to post something to Github first
-to see the effect. Especially understand this mood.
-&lt;/p&gt;
+to see the effect. Especially understand this mood.&lt;/p&gt;
 &lt;p&gt;
 Then next, before blogging, let&amp;#39;s firstly use Jekyll installed to
 generate a default site and publish it to Github. Execute the following
-command in the current path where you want to manage the blog locally.
-&lt;/p&gt;
+command in the current path where you want to manage the blog locally.&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  jekyll new folder-name-for-your-blog&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 Then a folder called &lt;code class=&#34;verbatim&#34;&gt;folder-name-for-your-blog&lt;/code&gt; will be generated under
-the current path, which is the new blog source code created by Jekyll.
-&lt;/p&gt;
+the current path, which is the new blog source code created by Jekyll.&lt;/p&gt;
 &lt;p&gt;
 Then create a repository called &lt;code class=&#34;verbatim&#34;&gt;your-user-name-of-github.github.io&lt;/code&gt; on
 Github. After creating the repository, Github will prompt how to use
 &lt;code class=&#34;verbatim&#34;&gt;git&lt;/code&gt; to &lt;code class=&#34;verbatim&#34;&gt;push&lt;/code&gt; local content to the repository. Follow the wizard to
 &lt;code class=&#34;verbatim&#34;&gt;push&lt;/code&gt; the contents of the &lt;code class=&#34;verbatim&#34;&gt;folder-name-for-your-blog&lt;/code&gt; folder you just
-created to this repository.
-&lt;/p&gt;
+created to this repository.&lt;/p&gt;
 &lt;p&gt;
 Then wait a few minutes to open &lt;code class=&#34;verbatim&#34;&gt;your-user-name-of-github.github.io&lt;/code&gt;
 through your browser, and you can see Jekyll&amp;#39;s welcome page if nothing
-unexpected happens.
-&lt;/p&gt;
+unexpected happens.&lt;/p&gt;
 &lt;p&gt;
-&lt;del&gt;This site is also created by the above method.&lt;/del&gt;
-&lt;/p&gt;
+&lt;del&gt;This site is also created by the above method.&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;
-(Postscript on June 14, 2020)
-&lt;/p&gt;
+(Postscript on June 14, 2020)&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://xinii.github.io&#34;&gt;This site&lt;/a&gt; has now been created using the
 &lt;code class=&#34;verbatim&#34;&gt;hugo&lt;/code&gt; static website generation framework, To refer to the original
-site, please &lt;a href=&#34;https://xinii.github.io/archive-site-c&#34;&gt;click here&lt;/a&gt; to visit.
-&lt;/p&gt;
+site, please &lt;a href=&#34;https://xinii.github.io/archive-site-c&#34;&gt;click here&lt;/a&gt; to visit.&lt;/p&gt;
 &lt;p&gt;
-Welcome to contact and leave a message.
-&lt;/p&gt;
+Welcome to contact and leave a message.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
 &lt;hr class=&#34;footnotes-separatator&#34;&gt;
 &lt;div class=&#34;footnote-definitions&#34;&gt;
 &lt;div class=&#34;footnote-definition&#34;&gt;
 &lt;sup id=&#34;footnote-1&#34;&gt;&lt;a href=&#34;#footnote-reference-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
 &lt;div class=&#34;footnote-body&#34;&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://jekyllrb.com/docs/&#34;&gt;jekyllrb.com&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://jekyllrb.com/docs/&#34;&gt;jekyllrb.com&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;

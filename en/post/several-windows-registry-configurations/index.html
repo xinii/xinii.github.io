@@ -377,7 +377,13 @@
 
 
 
-  <script data-ad-client="ca-pub-9872583441136696" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script type="text/javascript">
+ if ( window.location.host != "xinii.cf" ) {
+     window.location.replace("https://xinii.cf" + window.location.pathname);
+ }
+</script>
+
+<script src="https://www.googleoptimize.com/optimize.js?id=OPT-MQBJVR6"></script>
 
 
   <title>Some Windows registry settings that can help you work more efficiently | xin iDEA iNNATA</title>
@@ -401,7 +407,7 @@
       <div id="search-box">
         
         <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+               autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control" style="font-size: 16px; line-height: 120%;">
         
       </div>
 
@@ -428,12 +434,6 @@
 
 
 
-
-<style type="text/css">
- .fix-width{
-     width: 25px;
- }
-</style>
 
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
@@ -487,7 +487,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/en/#xinconfig"><span><span class='fas fa-home fix-width'></span>Home</span></a>
         </li>
 
@@ -516,7 +516,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/en/#about"><span><span class='far fa-address-card fix-width'></span>About</span></a>
         </li>
 
@@ -545,7 +545,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/en/#posts"><span><span class='far fa-newspaper fix-width'></span>Posts</span></a>
         </li>
 
@@ -574,7 +574,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/en/#featured"><span><span class='fas fa-book-open fix-width'></span>Publications</span></a>
         </li>
 
@@ -603,7 +603,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/en/#categories"><span><span class='fab fa-hotjar fix-width'></span>Popular Topics</span></a>
         </li>
 
@@ -632,7 +632,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/en/#contact"><span><span class='far fa-envelope fix-width'></span>Contact</span></a>
         </li>
 
@@ -692,6 +692,9 @@
           
           <a href='/en/admin' class="dropdown-item">
             <span class="fas fa-key fix-width"></span>Login
+          </a>
+          <a href='https://ise.teracloud.jp/dav/web/notebook/index.html' class="dropdown-item">
+            <span class="far fa-sticky-note fix-width"></span>Notebook
           </a>
 
         </div>
@@ -863,26 +866,30 @@
 </li>
 </ul>
 </nav>
-
 </p>
+<div id="outline-container-headline-1" class="outline-2">
 <h2 id="headline-1">
 Registry settings for Japanese keyboard layout
 </h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<div id="outline-container-headline-2" class="outline-3">
 <h3 id="headline-2">
 About keyboard scan code
 </h3>
+<div id="outline-text-headline-2" class="outline-text-3">
 <p>
-First, what is the keyboard scan code? Let us look at the definition on Wikipedia.
-</p>
+First, what is the keyboard scan code? Let us look at the definition on Wikipedia.</p>
 <blockquote>
-<p>
-A scancode (or scan code) is the data that most computer keyboards send to a computer to report which keys have been pressed.
-A number, or sequence of numbers, is assigned to each key on the keyboard. - <a href="https://en.wikipedia.org/wiki/Scancode">Wikipedia</a>
-</p>
+<p>A scancode (or scan code) is the data that most computer keyboards send to a computer to report which keys have been pressed.
+A number, or sequence of numbers, is assigned to each key on the keyboard. - <a href="https://en.wikipedia.org/wiki/Scancode">Wikipedia</a></p>
 </blockquote>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-3">
 <h3 id="headline-3">
 Example of keyboard scan code<sup class="footnote-reference"><a id="footnote-reference-1" href="#footnote-1">1</a></sup>
 </h3>
+<div id="outline-text-headline-3" class="outline-text-3">
 <table>
 <thead>
 <tr>
@@ -933,36 +940,33 @@ Example of keyboard scan code<sup class="footnote-reference"><a id="footnote-ref
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-3">
 <h3 id="headline-4">
 Perform keyboard scan code mapping in the registry
 </h3>
+<div id="outline-text-headline-4" class="outline-text-3">
 <ul>
 <li>
-<p>
-First, press the Windows logo key + <code>R</code>, enter <code>regedit</code> and then press <code>Enter</code> to open the Windows Registry Editor.
-Then open the following location in the registry editor.
-</p>
+<p>First, press the Windows logo key + <code>R</code>, enter <code>regedit</code> and then press <code>Enter</code> to open the Windows Registry Editor.
+Then open the following location in the registry editor.</p>
 <div class="src src-sample">
 <pre><code class="language-sample" data-lang="sample">HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout</code></pre>
 </div>
 </li>
 <li>
-<p>
-Next, right-click on the blank space and create a binary key called &#34;Scancode Map&#34;
-in the order of &#34;New-Binary Value (B)-Scancode Map&#34;. Double-click to edit.
-</p>
+<p>Next, right-click on the blank space and create a binary key called &#34;Scancode Map&#34;
+in the order of &#34;New-Binary Value (B)-Scancode Map&#34;. Double-click to edit.</p>
 <p>
 Regarding the value of &#34;Scancode Map&#34; (that is, the mapping rule), taking my settings as an example,
 the following table is listed for reference.
 Here, the parts of &#34;version&#34;, &#34;flag&#34; and &#34;terminal null value&#34; should be left as they are.
 In addition, regarding the &#34;number of mappings&#34;,
-it is necessary to set the sum of the number of mapping rules and the number of &#34;terminal null values&#34;.
-</p>
+it is necessary to set the sum of the number of mapping rules and the number of &#34;terminal null values&#34;.</p>
 </li>
 <li>
-<p>
-The mapping of my Logicool K380 keyboard (Japanese layout)
-</p>
+<p>The mapping of my Logicool K380 keyboard (Japanese layout)</p>
 <table>
 <thead>
 <tr>
@@ -1020,9 +1024,7 @@ The mapping of my Logicool K380 keyboard (Japanese layout)
 </table>
 </li>
 <li>
-<p>
-The mapping of my FILCO Majestouch MINILA Air keyboard (Japanese layout)
-</p>
+<p>The mapping of my FILCO Majestouch MINILA Air keyboard (Japanese layout)</p>
 <table>
 <thead>
 <tr>
@@ -1087,38 +1089,38 @@ The mapping of my FILCO Majestouch MINILA Air keyboard (Japanese layout)
 </table>
 </li>
 <li>
-<p>
-It should be noted here that the &#34;Pause/Break&#34; key is not composed of a single scan code,
+<p>It should be noted here that the &#34;Pause/Break&#34; key is not composed of a single scan code,
 The scan code of &#34;NumLock&#34; is also included, and it needs to be flexibly set according to the situation.
-You can refer to the following description.
-</p>
+You can refer to the following description.</p>
 <blockquote>
-<p>
-Pause <code>0xE1:0x1D:0x45</code> [ 84key <code>Ctrl</code> (0x1D) + <code>NumLock</code> (0x45)], no auto repeat,
-break code <code>0xE1:0x9D:0xC5</code> - <a href="https://seesaawiki.jp/w/smnb/d/Keyboard%20Scancode%20Map">Keyboard Scancode Map</a>
-</p>
+<p>Pause <code>0xE1:0x1D:0x45</code> [ 84key <code>Ctrl</code> (0x1D) + <code>NumLock</code> (0x45)], no auto repeat,
+break code <code>0xE1:0x9D:0xC5</code> - <a href="https://seesaawiki.jp/w/smnb/d/Keyboard%20Scancode%20Map">Keyboard Scancode Map</a></p>
 </blockquote>
 </li>
 </ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-2">
 <h2 id="headline-5">
 Change keyboard layout for IME
 </h2>
+<div id="outline-text-headline-5" class="outline-text-2">
+<div id="outline-container-headline-6" class="outline-3">
 <h3 id="headline-6">
 Change Chinese input method English layout to Japanese keyboard layout
 </h3>
+<div id="outline-text-headline-6" class="outline-text-3">
 <ul>
 <li>
-<p>
-First, open the following location of the registry.
-</p>
+<p>First, open the following location of the registry.</p>
 <div class="src src-sample">
 <pre><code class="language-sample" data-lang="sample">HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Keyboard Layouts\00000804</code></pre>
 </div>
 </li>
 <li>
-<p>
-Then make the following adjustment.
-</p>
+<p>Then make the following adjustment.</p>
 <table>
 <thead>
 <tr>
@@ -1137,47 +1139,53 @@ Then make the following adjustment.
 </table>
 </li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-7" class="outline-3">
 <h3 id="headline-7">
 Change the keyboard layout of input methods in other languages
 </h3>
+<div id="outline-text-headline-7" class="outline-text-3">
 <ul>
 <li>
-<p>
-In the case of other languages, you only need to change the entry method of the registry path <code>00000804</code>
+<p>In the case of other languages, you only need to change the entry method of the registry path <code>00000804</code>
 to the corresponding language input method,
-then change the part of <code>***.DLL</code> to the name of the dynamic link library file in the corresponding language.
-</p>
+then change the part of <code>***.DLL</code> to the name of the dynamic link library file in the corresponding language.</p>
 </li>
 </ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-8" class="outline-2">
 <h2 id="headline-8">
 Registry settings when an unknown icon appears in &#34;My Computer&#34; or &#34;PC&#34; in Explorer
 </h2>
+<div id="outline-text-headline-8" class="outline-text-2">
 <ul>
 <li>
-<p>
-You can delete the item corresponding to the location icon by locating the following registry path.
-</p>
+<p>You can delete the item corresponding to the location icon by locating the following registry path.</p>
 <div class="src src-sample">
 <pre><code class="language-sample" data-lang="sample">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace</code></pre>
 </div>
 </li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-9" class="outline-2">
 <h2 id="headline-9">
 Registry settings when unable to connect to the NAS on the local network<sup class="footnote-reference"><a id="footnote-reference-2" href="#footnote-2">2</a></sup>
 </h2>
+<div id="outline-text-headline-9" class="outline-text-2">
 <ul>
 <li>
-<p>
-First open the following registry location
-</p>
+<p>First open the following registry location</p>
 <div class="src src-sample">
 <pre><code class="language-sample" data-lang="sample">HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters</code></pre>
 </div>
 </li>
 <li>
-<p>
-Then make the following change
-</p>
+<p>Then make the following change</p>
 <table>
 <thead>
 <tr>
@@ -1196,43 +1204,39 @@ Then make the following change
 </table>
 </li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-10" class="outline-2">
 <h2 id="headline-10">
 References
 </h2>
+<div id="outline-text-headline-10" class="outline-text-2">
 <ul>
 <li>
-<p>
-<a href="https://usedoor.jp/howto/digital/pc/windows-uwagaki-keyboard-insert-key-mukouka/">How to invalidate the Insert key (Originally in Japanese)</a>
-</p>
+<p><a href="https://usedoor.jp/howto/digital/pc/windows-uwagaki-keyboard-insert-key-mukouka/">How to invalidate the Insert key (Originally in Japanese)</a></p>
 </li>
 <li>
-<p>
-<a href="https://tepp91.github.io/contents/misc/remap-keyboard-with-scancode-map.html">Change the key assignment via Scancode Map (Originally in Japanese)</a>
-</p>
+<p><a href="https://tepp91.github.io/contents/misc/remap-keyboard-with-scancode-map.html">Change the key assignment via Scancode Map (Originally in Japanese)</a></p>
 </li>
 <li>
-<p>
-<a href="https://answers.microsoft.com/en-us/windows/forum/windows_10-files/homegroup-removed-how-to-get-network-sharing-work/01277332-2916-4a68-853a-116696b20743">Homegroup removed! How to get network sharing work with Windows 10 v1803</a>
-</p>
+<p><a href="https://answers.microsoft.com/en-us/windows/forum/windows_10-files/homegroup-removed-how-to-get-network-sharing-work/01277332-2916-4a68-853a-116696b20743">Homegroup removed! How to get network sharing work with Windows 10 v1803</a></p>
 </li>
 </ul>
+</div>
+</div>
 <div class="footnotes">
 <hr class="footnotes-separatator">
 <div class="footnote-definitions">
 <div class="footnote-definition">
 <sup id="footnote-1"><a href="#footnote-reference-1">1</a></sup>
 <div class="footnote-body">
-<p>
-<a href="http://softwaretechnique.jp/OS_Development/Tips/scan_code_set1.html">Keyboard scan code list (Originally in Japanese)</a>
-</p>
+<p><a href="http://softwaretechnique.jp/OS_Development/Tips/scan_code_set1.html">Keyboard scan code list (Originally in Japanese)</a></p>
 </div>
 </div>
 <div class="footnote-definition">
 <sup id="footnote-2"><a href="#footnote-reference-2">2</a></sup>
 <div class="footnote-body">
-<p>
-<a href="https://www.nedia.ne.jp/blog/2019/04/02/13919">Unable to connect to NAS! The original reason is not SMB1.0! (Originally in Japanese)</a>
-</p>
+<p><a href="https://www.nedia.ne.jp/blog/2019/04/02/13919">Unable to connect to NAS! The original reason is not SMB1.0! (Originally in Japanese)</a></p>
 </div>
 </div>
 </div>
@@ -1251,7 +1255,7 @@ References
   
 
 <p class="edit-page">
-  <a href="https://github.com/xinii/hugo-site-academic/edit/master/content/en/post/windows-registry/index.org">
+  <a class="btn btn-sm btn-outline-secondary" href="https://github.com/xinii/hugo-site-academic/edit/master/content/en/post/windows-registry/index.org">
     <i class="fas fa-pen pr-2"></i>Edit this page
   </a>
 </p>
@@ -1356,12 +1360,6 @@ References
   </ul>
 </div>
 
-
-
-<script type="text/javascript">
- var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
-</script>
-<script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script>
 
 
 
@@ -1591,6 +1589,37 @@ References
 
 
 
+<div class="content-widget-hr" style="text-align:center">
+  <script type="text/javascript">
+   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+       
+
+       
+       var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
+       document.write('\x3Cscript type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js">\x3C/script>');
+       document.write('<br>');
+
+       
+       imobile_tag_ver = "0.3";
+       imobile_pid = "73400";
+       imobile_asid = "1711292";
+       imobile_type = "inline";
+       document.write('\x3Cscript type="text/javascript" src="https://spad.i-mobile.co.jp/script/adssp.js?20110215">\x3C/script>');
+       
+   } else {
+       
+
+       
+       imobile_pid = "73400";
+       imobile_asid = "1711291";
+       imobile_width = 468;
+       imobile_height = 60;
+       document.write('\x3Cscript type="text/javascript" src="https://spdeliver.i-mobile.co.jp/script/ads.js?20101001">\x3C/script>');
+   }
+  </script>
+</div>
+
+
 <section id="comments">
   
     
@@ -1621,7 +1650,6 @@ References
 
 
 
-
 <div class="article-widget">
   
 <div class="post-nav">
@@ -1636,7 +1664,6 @@ References
 </div>
 
 </div>
-
 
 
 
@@ -1775,12 +1802,6 @@ References
      pangu.autoSpacingPage();
  });
 </script>
-
-
-<script type="text/javascript">
- var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
-</script>
-<script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script>
 
 
 

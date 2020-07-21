@@ -377,7 +377,13 @@
 
 
 
-  <script data-ad-client="ca-pub-9872583441136696" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script type="text/javascript">
+ if ( window.location.host != "xinii.cf" ) {
+     window.location.replace("https://xinii.cf" + window.location.pathname);
+ }
+</script>
+
+<script src="https://www.googleoptimize.com/optimize.js?id=OPT-MQBJVR6"></script>
 
 
   <title>Jetson NanoにOpenCVをインストール | xin iDEA iNNATA</title>
@@ -401,7 +407,7 @@
       <div id="search-box">
         
         <input name="q" id="search-query" placeholder="検索..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+               autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control" style="font-size: 16px; line-height: 120%;">
         
       </div>
 
@@ -428,12 +434,6 @@
 
 
 
-
-<style type="text/css">
- .fix-width{
-     width: 25px;
- }
-</style>
 
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
@@ -487,7 +487,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/ja/#xinconfig"><span><span class='fas fa-home fix-width'></span>ホーム</span></a>
         </li>
 
@@ -516,7 +516,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/ja/#about"><span><span class='far fa-address-card fix-width'></span>私について</span></a>
         </li>
 
@@ -545,7 +545,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/ja/#posts"><span><span class='far fa-newspaper fix-width'></span>最近の投稿</span></a>
         </li>
 
@@ -574,7 +574,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/ja/#featured"><span><span class='fas fa-book-open fix-width'></span>発表文献</span></a>
         </li>
 
@@ -603,7 +603,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/ja/#categories"><span><span class='fab fa-hotjar fix-width'></span>人気キーワード</span></a>
         </li>
 
@@ -632,7 +632,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/ja/#contact"><span><span class='far fa-envelope fix-width'></span>お問い合わせ</span></a>
         </li>
 
@@ -692,6 +692,9 @@
           
           <a href='/ja/admin' class="dropdown-item">
             <span class="fas fa-key fix-width"></span>ログイン
+          </a>
+          <a href='https://ise.teracloud.jp/dav/web/notebook/index.html' class="dropdown-item">
+            <span class="far fa-sticky-note fix-width"></span>ノートブック
           </a>
 
         </div>
@@ -847,17 +850,17 @@
 </li>
 </ul>
 </nav>
-
 </p>
+<div id="outline-container-headline-1" class="outline-2">
 <h2 id="headline-1">
 swapファイルを生成
 </h2>
+<div id="outline-text-headline-1" class="outline-text-2">
 <p>
 コンパイル途中にメモリー不足などの問題を防ぐため，
 swapという交換用ファイルを任意のパスに生成しておく。
 このファイルは，OS再起動の後に自動的に消えるが，
-全てのインストールが終わったら，手作業で交換用ファイルを削除しても良い。
-</p>
+全てのインストールが終わったら，手作業で交換用ファイルを削除しても良い。</p>
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  $ fallocate -l 4G swapfile
   $ chmod <span style="color:#ae81ff">600</span> swapfile
@@ -865,16 +868,18 @@ swapという交換用ファイルを任意のパスに生成しておく。
   $ sudo swapon swapfile
   $ swapon -s</code></pre></div>
 </div>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-2">
 <h2 id="headline-2">
 インストールのスクリプトを生成
 </h2>
+<div id="outline-text-headline-2" class="outline-text-2">
 <p>
-<a href="https://github.com/AastaNV/JEP/blob/master/script/install_opencv4.0.0_Nano.sh">OpenCV 4.0.0をインストールためのリンク</a>
-</p>
+<a href="https://github.com/AastaNV/JEP/blob/master/script/install_opencv4.0.0_Nano.sh">OpenCV 4.0.0をインストールためのリンク</a></p>
 <p>
 以上は，OpenCV 4.0.0をインストールためのリンクで，ここでは，OpenCV
-4.1.0をインストールしたいため， バージョン番号の部分に少し手を加える。
-</p>
+4.1.0をインストールしたいため， バージョン番号の部分に少し手を加える。</p>
 <div class="src src-sh">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  <span style="color:#75715e">#!/bin/bash</span>
   #
@@ -926,45 +931,46 @@ swapという交換用ファイルを任意のパスに生成しておく。
   echo <span style="color:#e6db74">&#34;** Bye :)&#34;</span></code></pre></div>
 </div>
 <p>
-以上のスクリプトを <code>sh</code> のフォーマットで保存する。例えば <code class="verbatim">install_opencv4.1.0_Nano.sh</code> 。
-</p>
+以上のスクリプトを <code>sh</code> のフォーマットで保存する。例えば <code class="verbatim">install_opencv4.1.0_Nano.sh</code> 。</p>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-2">
 <h2 id="headline-3">
 スクリプトを実行する
 </h2>
+<div id="outline-text-headline-3" class="outline-text-2">
 <div class="src src-sh">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  mkdir opencv
   sh install_opencv4.1.0_Nano.sh opencv</code></pre></div>
 </div>
 <p>
 インストールのプロセスが割と時間かかるため，インストールが終わるまで待つ。
-ここで，tmuxとかに任せてバックグラウンドでやれば，なんかあった時にattachすれば済むのでおすすめ。
-</p>
+ここで，tmuxとかに任せてバックグラウンドでやれば，なんかあった時にattachすれば済むのでおすすめ。</p>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-2">
 <h2 id="headline-4">
 インストールされたOpenCVをテスト
 </h2>
+<div id="outline-text-headline-4" class="outline-text-2">
 <p>
-コマンドラインに <code class="verbatim">python</code> を叩くと <code class="verbatim">import cv2</code> をためしたらエラーがなければ終わり。
-</p>
+コマンドラインに <code class="verbatim">python</code> を叩くと <code class="verbatim">import cv2</code> をためしたらエラーがなければ終わり。</p>
 <p>
 ただ，pyenvなどのpython環境管理ツールを使っている方なら，
 pyenvを使って入れたpythonにおいてはOpenCVを読み込めない場合がある。
-解決案としては，OpenCVのライブラーのソフトリンクをpyenvのpythonの下に置くこと。
-</p>
+解決案としては，OpenCVのライブラーのソフトリンクをpyenvのpythonの下に置くこと。</p>
 <p>
-例えば，以下のようなpyenvのpythonのライブラリーのパスがある。
-</p>
+例えば，以下のようなpyenvのpythonのライブラリーのパスがある。</p>
 <div class="src src-sh">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  /home/<span style="color:#f92672">{</span>username<span style="color:#f92672">}</span>/.anyenv/envs/pyenv/versions/3.6.8/lib/python3.6/site-packages</code></pre></div>
 </div>
 <p>
-また，インストールされたOpenCVのライブラリーのパスが以下となる。
-</p>
+また，インストールされたOpenCVのライブラリーのパスが以下となる。</p>
 <div class="src src-sh">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  /usr/local/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-linux-gnu.so</code></pre></div>
 </div>
 <p>
-この場合は，以下のコマンドでソフトリンクを作れる。
-</p>
+この場合は，以下のコマンドでソフトリンクを作れる。</p>
 <div class="src src-sh">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  cd /home/<span style="color:#f92672">{</span>username<span style="color:#f92672">}</span>/.anyenv/envs/pyenv/versions/3.6.8/lib/python3.6/site-packages
   ln -s /usr/local/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-linux-gnu.so ./</code></pre></div>
@@ -972,8 +978,9 @@ pyenvを使って入れたpythonにおいてはOpenCVを読み込めない場合
 <p>
 また，事前にpyenvのpythonのpipを使って，
 <code class="verbatim">pip install numpy</code> でnumpyを入れておくと
-さっきのように <code class="verbatim">import cv2</code> でテストしてエラーがなければおしまい。
-</p>
+さっきのように <code class="verbatim">import cv2</code> でテストしてエラーがなければおしまい。</p>
+</div>
+</div>
 
     </div>
 
@@ -988,8 +995,8 @@ pyenvを使って入れたpythonにおいてはOpenCVを読み込めない場合
   
 
 <p class="edit-page">
-  <a href="https://github.com/xinii/hugo-site-academic/edit/master/content/ja/post/opencv-jetson-nano/index.org">
-    <i class="fas fa-pen pr-2"></i>Edit this page
+  <a class="btn btn-sm btn-outline-secondary" href="https://github.com/xinii/hugo-site-academic/edit/master/content/ja/post/opencv-jetson-nano/index.org">
+    <i class="fas fa-pen pr-2"></i>このページを編集
   </a>
 </p>
 
@@ -1091,12 +1098,6 @@ pyenvを使って入れたpythonにおいてはOpenCVを読み込めない場合
   </ul>
 </div>
 
-
-
-<script type="text/javascript">
- var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
-</script>
-<script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script>
 
 
 
@@ -1326,6 +1327,37 @@ pyenvを使って入れたpythonにおいてはOpenCVを読み込めない場合
 
 
 
+<div class="content-widget-hr" style="text-align:center">
+  <script type="text/javascript">
+   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+       
+
+       
+       var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
+       document.write('\x3Cscript type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js">\x3C/script>');
+       document.write('<br>');
+
+       
+       imobile_tag_ver = "0.3";
+       imobile_pid = "73400";
+       imobile_asid = "1711292";
+       imobile_type = "inline";
+       document.write('\x3Cscript type="text/javascript" src="https://spad.i-mobile.co.jp/script/adssp.js?20110215">\x3C/script>');
+       
+   } else {
+       
+
+       
+       imobile_pid = "73400";
+       imobile_asid = "1711291";
+       imobile_width = 468;
+       imobile_height = 60;
+       document.write('\x3Cscript type="text/javascript" src="https://spdeliver.i-mobile.co.jp/script/ads.js?20101001">\x3C/script>');
+   }
+  </script>
+</div>
+
+
 <section id="comments">
   
     
@@ -1356,7 +1388,6 @@ pyenvを使って入れたpythonにおいてはOpenCVを読み込めない場合
 
 
 
-
 <div class="article-widget">
   
 <div class="post-nav">
@@ -1378,7 +1409,6 @@ pyenvを使って入れたpythonにおいてはOpenCVを読み込めない場合
 </div>
 
 </div>
-
 
 
 
@@ -1517,12 +1547,6 @@ pyenvを使って入れたpythonにおいてはOpenCVを読み込めない場合
      pangu.autoSpacingPage();
  });
 </script>
-
-
-<script type="text/javascript">
- var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
-</script>
-<script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script>
 
 
 

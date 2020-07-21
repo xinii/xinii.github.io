@@ -377,7 +377,13 @@
 
 
 
-  <script data-ad-client="ca-pub-9872583441136696" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script type="text/javascript">
+ if ( window.location.host != "xinii.cf" ) {
+     window.location.replace("https://xinii.cf" + window.location.pathname);
+ }
+</script>
+
+<script src="https://www.googleoptimize.com/optimize.js?id=OPT-MQBJVR6"></script>
 
 
   <title>How to install OpenCV on Jetson Nano? | xin iDEA iNNATA</title>
@@ -401,7 +407,7 @@
       <div id="search-box">
         
         <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+               autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control" style="font-size: 16px; line-height: 120%;">
         
       </div>
 
@@ -428,12 +434,6 @@
 
 
 
-
-<style type="text/css">
- .fix-width{
-     width: 25px;
- }
-</style>
 
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
@@ -487,7 +487,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/en/#xinconfig"><span><span class='fas fa-home fix-width'></span>Home</span></a>
         </li>
 
@@ -516,7 +516,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/en/#about"><span><span class='far fa-address-card fix-width'></span>About</span></a>
         </li>
 
@@ -545,7 +545,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/en/#posts"><span><span class='far fa-newspaper fix-width'></span>Posts</span></a>
         </li>
 
@@ -574,7 +574,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/en/#featured"><span><span class='fas fa-book-open fix-width'></span>Publications</span></a>
         </li>
 
@@ -603,7 +603,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/en/#categories"><span><span class='fab fa-hotjar fix-width'></span>Popular Topics</span></a>
         </li>
 
@@ -632,7 +632,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/en/#contact"><span><span class='far fa-envelope fix-width'></span>Contact</span></a>
         </li>
 
@@ -692,6 +692,9 @@
           
           <a href='/en/admin' class="dropdown-item">
             <span class="fas fa-key fix-width"></span>Login
+          </a>
+          <a href='https://ise.teracloud.jp/dav/web/notebook/index.html' class="dropdown-item">
+            <span class="far fa-sticky-note fix-width"></span>Notebook
           </a>
 
         </div>
@@ -847,18 +850,18 @@
 </li>
 </ul>
 </nav>
-
 </p>
+<div id="outline-container-headline-1" class="outline-2">
 <h2 id="headline-1">
 Generate swap file
 </h2>
+<div id="outline-text-headline-1" class="outline-text-2">
 <p>
 To prevent errors due to insufficient memory during compilation, create
 a swap file firstly, and store it to somewhere you know. After OS
 restarting, the swap space will disappear, or you can manually delete
 this file after the completion of the following compilation and other
-work.
-</p>
+work.</p>
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  $ fallocate -l 4G swapfile
   $ chmod <span style="color:#ae81ff">600</span> swapfile
@@ -866,17 +869,19 @@ work.
   $ sudo swapon swapfile
   $ swapon -s</code></pre></div>
 </div>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-2">
 <h2 id="headline-2">
 Generate installation script
 </h2>
+<div id="outline-text-headline-2" class="outline-text-2">
 <p>
-<a href="https://github.com/AastaNV/JEP/blob/master/script/install_opencv4.0.0_Nano.sh">The original link of the script to install the OpenCV 4.0.0 version</a>
-</p>
+<a href="https://github.com/AastaNV/JEP/blob/master/script/install_opencv4.0.0_Nano.sh">The original link of the script to install the OpenCV 4.0.0 version</a></p>
 <p>
 The above is the version used to install OpenCV 4.0.0, here we want to
 install the newer version 4.1.0, so change the version number part of
-the above code.
-</p>
+the above code.</p>
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  <span style="color:#75715e">#!/bin/bash</span>
   #
@@ -929,11 +934,14 @@ the above code.
 </div>
 <p>
 Save the above script as a <code class="verbatim">sh</code> file, for example,
-<code class="verbatim">install_opencv4.1.0_Nano.sh</code>.
-</p>
+<code class="verbatim">install_opencv4.1.0_Nano.sh</code>.</p>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-2">
 <h2 id="headline-3">
 Run the script
 </h2>
+<div id="outline-text-headline-3" class="outline-text-2">
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  mkdir opencv
   sh install_opencv4.1.0_Nano.sh opencv</code></pre></div>
@@ -941,38 +949,36 @@ Run the script
 <p>
 The installation may take a lot of time, please be patient and wait for
 the installation to end. It is recommended to use tmux to hang in the
-background.
-</p>
+background.</p>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-2">
 <h2 id="headline-4">
 Test the installed OpenCV
 </h2>
+<div id="outline-text-headline-4" class="outline-text-2">
 <p>
 Test the statement <code class="verbatim">import cv2</code> through the interactive interface of
-python, it is good if no error is reported.
-</p>
+python, it is good if no error is reported.</p>
 <p>
 However, considering that users who use tools such as pyenv for python
 version management, if they switch to the python version installed under
 pyenv, the installed OpenCV may not be recognized. The solution is to
 create a soft link to the OpenCV library and link it to the python
-library directory under the management of pyenv.
-</p>
+library directory under the management of pyenv.</p>
 <p>
 For example, suppose the library directory of the python version in
-pyenv is,
-</p>
+pyenv is,</p>
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  /home/<span style="color:#f92672">{</span>username<span style="color:#f92672">}</span>/.anyenv/envs/pyenv/versions/3.6.8/lib/python3.6/site-packages</code></pre></div>
 </div>
 <p>
-And the installed OpenCV library path is,
-</p>
+And the installed OpenCV library path is,</p>
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  /usr/local/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-linux-gnu.so</code></pre></div>
 </div>
 <p>
-Then execute the following statement to create a soft link,
-</p>
+Then execute the following statement to create a soft link,</p>
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  cd /home/<span style="color:#f92672">{</span>username<span style="color:#f92672">}</span>/.anyenv/envs/pyenv/versions/3.6.8/lib/python3.6/site-packages
   ln -s /usr/local/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-linux-gnu.so ./</code></pre></div>
@@ -981,8 +987,9 @@ Then execute the following statement to create a soft link,
 Besides, use the python version of pip in pyenv to install numpy through
 the <code class="verbatim">pip install numpy</code> statement, and go to the interactive interface
 to test <code class="verbatim">import cv2</code>. If no error is displayed, the installation is
-complete.
-</p>
+complete.</p>
+</div>
+</div>
 
     </div>
 
@@ -997,7 +1004,7 @@ complete.
   
 
 <p class="edit-page">
-  <a href="https://github.com/xinii/hugo-site-academic/edit/master/content/en/post/opencv-jetson-nano/index.org">
+  <a class="btn btn-sm btn-outline-secondary" href="https://github.com/xinii/hugo-site-academic/edit/master/content/en/post/opencv-jetson-nano/index.org">
     <i class="fas fa-pen pr-2"></i>Edit this page
   </a>
 </p>
@@ -1100,12 +1107,6 @@ complete.
   </ul>
 </div>
 
-
-
-<script type="text/javascript">
- var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
-</script>
-<script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script>
 
 
 
@@ -1335,6 +1336,37 @@ complete.
 
 
 
+<div class="content-widget-hr" style="text-align:center">
+  <script type="text/javascript">
+   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+       
+
+       
+       var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
+       document.write('\x3Cscript type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js">\x3C/script>');
+       document.write('<br>');
+
+       
+       imobile_tag_ver = "0.3";
+       imobile_pid = "73400";
+       imobile_asid = "1711292";
+       imobile_type = "inline";
+       document.write('\x3Cscript type="text/javascript" src="https://spad.i-mobile.co.jp/script/adssp.js?20110215">\x3C/script>');
+       
+   } else {
+       
+
+       
+       imobile_pid = "73400";
+       imobile_asid = "1711291";
+       imobile_width = 468;
+       imobile_height = 60;
+       document.write('\x3Cscript type="text/javascript" src="https://spdeliver.i-mobile.co.jp/script/ads.js?20101001">\x3C/script>');
+   }
+  </script>
+</div>
+
+
 <section id="comments">
   
     
@@ -1365,7 +1397,6 @@ complete.
 
 
 
-
 <div class="article-widget">
   
 <div class="post-nav">
@@ -1387,7 +1418,6 @@ complete.
 </div>
 
 </div>
-
 
 
 
@@ -1517,12 +1547,6 @@ complete.
      pangu.autoSpacingPage();
  });
 </script>
-
-
-<script type="text/javascript">
- var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
-</script>
-<script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script>
 
 
 

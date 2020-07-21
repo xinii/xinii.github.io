@@ -377,7 +377,13 @@
 
 
 
-  <script data-ad-client="ca-pub-9872583441136696" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script type="text/javascript">
+ if ( window.location.host != "xinii.cf" ) {
+     window.location.replace("https://xinii.cf" + window.location.pathname);
+ }
+</script>
+
+<script src="https://www.googleoptimize.com/optimize.js?id=OPT-MQBJVR6"></script>
 
 
   <title>通过 Jekyll 创建博客并发布到 Github | xin iDEA iNNATA</title>
@@ -401,7 +407,7 @@
       <div id="search-box">
         
         <input name="q" id="search-query" placeholder="搜索..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+               autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control" style="font-size: 16px; line-height: 120%;">
         
       </div>
 
@@ -428,12 +434,6 @@
 
 
 
-
-<style type="text/css">
- .fix-width{
-     width: 25px;
- }
-</style>
 
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
@@ -487,7 +487,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/zh/#xinconfig"><span><span class='fas fa-home fix-width'></span>主页</span></a>
         </li>
 
@@ -516,7 +516,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/zh/#about"><span><span class='far fa-address-card fix-width'></span>关于</span></a>
         </li>
 
@@ -545,7 +545,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/zh/#posts"><span><span class='far fa-newspaper fix-width'></span>最新博文</span></a>
         </li>
 
@@ -574,7 +574,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/zh/#featured"><span><span class='fas fa-book-open fix-width'></span>研究成果</span></a>
         </li>
 
@@ -603,7 +603,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/zh/#categories"><span><span class='fab fa-hotjar fix-width'></span>热门词汇</span></a>
         </li>
 
@@ -632,7 +632,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/zh/#contact"><span><span class='far fa-envelope fix-width'></span>取得联系</span></a>
         </li>
 
@@ -692,6 +692,9 @@
           
           <a href='/zh/admin' class="dropdown-item">
             <span class="fas fa-key fix-width"></span>登录
+          </a>
+          <a href='https://ise.teracloud.jp/dav/web/notebook/index.html' class="dropdown-item">
+            <span class="far fa-sticky-note fix-width"></span>笔记
           </a>
 
         </div>
@@ -843,27 +846,24 @@
 </li>
 </ul>
 </nav>
-
 </p>
+<div id="outline-container-headline-1" class="outline-2">
 <h2 id="headline-1">
 安装 Jekyll
 </h2>
+<div id="outline-text-headline-1" class="outline-text-2">
 <p>
-Jekyll 是一个通过 Ruby 语言写的静态网站生成框架，下面是官网介绍。
-</p>
+Jekyll 是一个通过 Ruby 语言写的静态网站生成框架，下面是官网介绍。</p>
 <blockquote>
-<p>
-Jekyll is a static site generator. You give it text written in your
+<p>Jekyll is a static site generator. You give it text written in your
   favorite markup language and it uses layouts to create a static
   website. You can tweak how you want the site URLs to look, what data
-  gets displayed on the site, and more. –Jekyll<sup class="footnote-reference"><a id="footnote-reference-1" href="#footnote-1">1</a></sup>
-</p>
+  gets displayed on the site, and more. –Jekyll<sup class="footnote-reference"><a id="footnote-reference-1" href="#footnote-1">1</a></sup></p>
 </blockquote>
 <p>
 安装 Jekyll 时，首先需要一个 Ruby 的包管理环境， Ruby
 编程环境的常用包管理器为 <code>gem</code> ， 例如 Ubuntu
-中执行下面的语句则会同时安装 <code>gem</code> 。
-</p>
+中执行下面的语句则会同时安装 <code>gem</code> 。</p>
 <div class="src src-sh">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  apt install ruby-dev</code></pre></div>
 </div>
@@ -871,62 +871,56 @@ Jekyll is a static site generator. You give it text written in your
 安装好 <code class="verbatim">gem</code> 之后，确保它的执行路径在我们的 <code class="verbatim">PATH</code> 环境变量中。
 如果不上采用上述方式，而是使用了 <code class="verbatim">rbenv</code> 等虚拟环境管理工具的话，
 只要调用虚拟环境下配置好的 <code class="verbatim">gem</code> 就可以了。
-随后便可以通过执行下面的语句来安装Jekyll，是不是很简单呢？
-</p>
+随后便可以通过执行下面的语句来安装Jekyll，是不是很简单呢？</p>
 <div class="src src-sh">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  gem install jekyll</code></pre></div>
 </div>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-2">
 <h2 id="headline-2">
 发布博客到 Github
 </h2>
+<div id="outline-text-headline-2" class="outline-text-2">
 <p>
 安装好 Jekyll 之后， 一定是希望先把随便什么内容发布到 Github
-上看看效果的哈， 特别能理解这种心情。
-</p>
+上看看效果的哈， 特别能理解这种心情。</p>
 <p>
 那么接下来，在实际写博客之前， 我们首先用安装好的 Jekyll
 生成一个默认站点并将其发布到 Github。
-在希望在本地管理博客的路径下执行下面的语句。
-</p>
+在希望在本地管理博客的路径下执行下面的语句。</p>
 <div class="src src-sh">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  jekyll new folder-name-for-your-blog</code></pre></div>
 </div>
 <p>
 随后在当前路径下会生成一个叫做 <code class="verbatim">folder-name-for-your-blog</code> 的文件夹，
-这里面便是 Jekyll 新建的博客源码。
-</p>
+这里面便是 Jekyll 新建的博客源码。</p>
 <p>
 然后在 Github 上创建一个叫做 <code class="verbatim">your-user-name-of-github.github.io</code>
 的仓库。 创建好新的仓库后，Github 会提示如何通过 <code class="verbatim">git</code> 来 <code class="verbatim">push</code>
 本地内容到该仓库。 按着所提示的向导将刚创建好的
-<code class="verbatim">folder-name-for-your-blog</code> 的内容 <code class="verbatim">push</code> 到这个仓库。
-</p>
+<code class="verbatim">folder-name-for-your-blog</code> 的内容 <code class="verbatim">push</code> 到这个仓库。</p>
 <p>
 随后等几分钟通过浏览器打开 <code class="verbatim">your-user-name-of-github.github.io</code> ，
-不出意外的话即可看到 Jekyll 的欢迎页面。
-</p>
+不出意外的话即可看到 Jekyll 的欢迎页面。</p>
 <p>
-<del>本站也是通过以上方式创建。</del>
-</p>
+<del>本站也是通过以上方式创建。</del></p>
 <p>
-（2020年6月14日追记）
-</p>
+（2020年6月14日追记）</p>
 <p>
 <a href="https://xinii.github.io">本站</a>现已改用 <code>hugo</code> 静态网站生成框架创建，
-如需参考原来的站点，请<a href="https://xinii.github.io/archive-site-c">点击这里</a>访问。
-</p>
+如需参考原来的站点，请<a href="https://xinii.github.io/archive-site-c">点击这里</a>访问。</p>
 <p>
-欢迎联络并留言。
-</p>
+欢迎联络并留言。</p>
+</div>
+</div>
 <div class="footnotes">
 <hr class="footnotes-separatator">
 <div class="footnote-definitions">
 <div class="footnote-definition">
 <sup id="footnote-1"><a href="#footnote-reference-1">1</a></sup>
 <div class="footnote-body">
-<p>
-<a href="https://jekyllrb.com/docs/">Jekyll 官方网站</a>
-</p>
+<p><a href="https://jekyllrb.com/docs/">Jekyll 官方网站</a></p>
 </div>
 </div>
 </div>
@@ -945,7 +939,7 @@ Jekyll is a static site generator. You give it text written in your
   
 
 <p class="edit-page">
-  <a href="https://github.com/xinii/hugo-site-academic/edit/master/content/zh/post/jekyll-github/index.org">
+  <a class="btn btn-sm btn-outline-secondary" href="https://github.com/xinii/hugo-site-academic/edit/master/content/zh/post/jekyll-github/index.org">
     <i class="fas fa-pen pr-2"></i>编辑本页
   </a>
 </p>
@@ -1050,12 +1044,6 @@ Jekyll is a static site generator. You give it text written in your
   </ul>
 </div>
 
-
-
-<script type="text/javascript">
- var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
-</script>
-<script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script>
 
 
 
@@ -1285,6 +1273,37 @@ Jekyll is a static site generator. You give it text written in your
 
 
 
+<div class="content-widget-hr" style="text-align:center">
+  <script type="text/javascript">
+   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+       
+
+       
+       var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
+       document.write('\x3Cscript type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js">\x3C/script>');
+       document.write('<br>');
+
+       
+       imobile_tag_ver = "0.3";
+       imobile_pid = "73400";
+       imobile_asid = "1711292";
+       imobile_type = "inline";
+       document.write('\x3Cscript type="text/javascript" src="https://spad.i-mobile.co.jp/script/adssp.js?20110215">\x3C/script>');
+       
+   } else {
+       
+
+       
+       imobile_pid = "73400";
+       imobile_asid = "1711291";
+       imobile_width = 468;
+       imobile_height = 60;
+       document.write('\x3Cscript type="text/javascript" src="https://spdeliver.i-mobile.co.jp/script/ads.js?20101001">\x3C/script>');
+   }
+  </script>
+</div>
+
+
 <section id="comments">
   
     
@@ -1315,7 +1334,6 @@ Jekyll is a static site generator. You give it text written in your
 
 
 
-
 <div class="article-widget">
   
 <div class="post-nav">
@@ -1331,7 +1349,6 @@ Jekyll is a static site generator. You give it text written in your
 </div>
 
 </div>
-
 
 
 
@@ -1461,12 +1478,6 @@ Jekyll is a static site generator. You give it text written in your
      pangu.autoSpacingPage();
  });
 </script>
-
-
-<script type="text/javascript">
- var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
-</script>
-<script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script>
 
 
 

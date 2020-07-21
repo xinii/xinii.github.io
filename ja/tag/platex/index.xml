@@ -19,21 +19,17 @@
       <guid>https://xinii.cf/ja/post/single-language/pitfall-while-inserting-figure-into-latex-article/</guid>
       <description>&lt;p&gt;
 pLaTeXを使う際に，なぜか特定のepsグラフを文書のソースに入れたらビルドが失敗。
-しかも失敗した時のログをみると，まったく問題を特定できない。
-&lt;/p&gt;
+しかも失敗した時のログをみると，まったく問題を特定できない。&lt;/p&gt;
 &lt;p&gt;
 例えば，入れたすべてのfigureの定義が見つからないとかに関するエラー。
 このようなエラーになった時に，
 epsグラフのスケールを正方形に近い形状から矩形にしたら，
-問題解決できた。
-&lt;/p&gt;
+問題解決できた。&lt;/p&gt;
 &lt;p&gt;
 原因はまだ不明だけど，また調査してみる。
-たまにハマってしまったので，ここにメモを残っておく。
-&lt;/p&gt;
+たまにハマってしまったので，ここにメモを残っておく。&lt;/p&gt;
 &lt;p&gt;
-以上。
-&lt;/p&gt;
+以上。&lt;/p&gt;
 </description>
     </item>
     

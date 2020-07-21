@@ -377,7 +377,13 @@
 
 
 
-  <script data-ad-client="ca-pub-9872583441136696" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script type="text/javascript">
+ if ( window.location.host != "xinii.cf" ) {
+     window.location.replace("https://xinii.cf" + window.location.pathname);
+ }
+</script>
+
+<script src="https://www.googleoptimize.com/optimize.js?id=OPT-MQBJVR6"></script>
 
 
   <title>GnutlsをインストールしてソースからEmacsをコンパイル | xin iDEA iNNATA</title>
@@ -401,7 +407,7 @@
       <div id="search-box">
         
         <input name="q" id="search-query" placeholder="検索..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+               autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control" style="font-size: 16px; line-height: 120%;">
         
       </div>
 
@@ -428,12 +434,6 @@
 
 
 
-
-<style type="text/css">
- .fix-width{
-     width: 25px;
- }
-</style>
 
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
@@ -487,7 +487,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/ja/#xinconfig"><span><span class='fas fa-home fix-width'></span>ホーム</span></a>
         </li>
 
@@ -516,7 +516,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/ja/#about"><span><span class='far fa-address-card fix-width'></span>私について</span></a>
         </li>
 
@@ -545,7 +545,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/ja/#posts"><span><span class='far fa-newspaper fix-width'></span>最近の投稿</span></a>
         </li>
 
@@ -574,7 +574,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/ja/#featured"><span><span class='fas fa-book-open fix-width'></span>発表文献</span></a>
         </li>
 
@@ -603,7 +603,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/ja/#categories"><span><span class='fab fa-hotjar fix-width'></span>人気キーワード</span></a>
         </li>
 
@@ -632,7 +632,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/ja/#contact"><span><span class='far fa-envelope fix-width'></span>お問い合わせ</span></a>
         </li>
 
@@ -692,6 +692,9 @@
           
           <a href='/ja/admin' class="dropdown-item">
             <span class="fas fa-key fix-width"></span>ログイン
+          </a>
+          <a href='https://ise.teracloud.jp/dav/web/notebook/index.html' class="dropdown-item">
+            <span class="far fa-sticky-note fix-width"></span>ノートブック
           </a>
 
         </div>
@@ -847,61 +850,65 @@
 </li>
 </ul>
 </nav>
-
 </p>
+<div id="outline-container-headline-1" class="outline-2">
 <h2 id="headline-1">
 今の環境にGnutlsがない場合
 </h2>
+<div id="outline-text-headline-1" class="outline-text-2">
 <p>
-今の環境にGnutlsがない場合は，ソースからEmacs<sup class="footnote-reference"><a id="footnote-reference-1" href="#footnote-1">1</a></sup>をコンパイルする時に以下の設定が必要。
-</p>
+今の環境にGnutlsがない場合は，ソースからEmacs<sup class="footnote-reference"><a id="footnote-reference-1" href="#footnote-1">1</a></sup>をコンパイルする時に以下の設定が必要。</p>
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  ./configure --with-gnutls<span style="color:#f92672">=</span>no</code></pre></div>
 </div>
 <p>
-他にも依存されるライブラリーなどが足りない場合は，例えば以下のように設定をする。
-</p>
+他にも依存されるライブラリーなどが足りない場合は，例えば以下のように設定をする。</p>
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  bash configure --prefix<span style="color:#f92672">=</span>$HOME/.local --with-gif<span style="color:#f92672">=</span>no --with-gnutls<span style="color:#f92672">=</span>no</code></pre></div>
 </div>
 <p>
-これでデフォルトのパスとかへの権限や，ライブラリーが足りない場合でもソースからインストール出来てしまう。
-</p>
+これでデフォルトのパスとかへの権限や，ライブラリーが足りない場合でもソースからインストール出来てしまう。</p>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-2">
 <h2 id="headline-2">
 潜在的なリスク
 </h2>
+<div id="outline-text-headline-2" class="outline-text-2">
 <p>
 以上のようにEmacsを <code class="verbatim">$HOME/.local</code> へのインストールが出来てしまうけど，
-Gnutlsがサポートされないゆえに，Emacsでインターネットが必要となった時にhttpsが使えない。
-</p>
+Gnutlsがサポートされないゆえに，Emacsでインターネットが必要となった時にhttpsが使えない。</p>
 <p>
 Emacsが初期化される時だけなら，設定ファイルの中のMelpaリンクを全てhttpに変更すれば済ませるが，
-セキュリティ上にあまりお勧めができないし，今後Emacsの拡張機能を使う時のリスクにもなる。
-</p>
+セキュリティ上にあまりお勧めができないし，今後Emacsの拡張機能を使う時のリスクにもなる。</p>
 <p>
 例えば， <code class="verbatim">google-translate</code> のEmacs拡張パッケージを使う場合は，
 Emacsのelpaフォルダーにある <code class="verbatim">google-translate</code> の中の全ての <code class="verbatim">*.el</code> にある <code class="verbatim">https</code> を <code class="verbatim">http</code> に書き換えても，
-実際に使う時に一部の機能にとっては <code class="verbatim">https</code> が必須で翻訳が正常に機能しない恐れがある。
-</p>
+実際に使う時に一部の機能にとっては <code class="verbatim">https</code> が必須で翻訳が正常に機能しない恐れがある。</p>
 <p>
-ここでは， <code class="verbatim">*.el</code> を変更した後に， <code class="verbatim">*.elc</code> を削除しないと変更が反映されない可能性がある。
-</p>
+ここでは， <code class="verbatim">*.el</code> を変更した後に， <code class="verbatim">*.elc</code> を削除しないと変更が反映されない可能性がある。</p>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-2">
 <h2 id="headline-3">
 Gnutlsをインストール
 </h2>
+<div id="outline-text-headline-3" class="outline-text-2">
 <p>
 以上の問題を解決するもっとも簡単な方法としては，
-今の環境にGnutlsをインストールしてからソースからもう一度Emacsをインストールすること。
-</p>
+今の環境にGnutlsをインストールしてからソースからもう一度Emacsをインストールすること。</p>
 <p>
-OpenSUSEを例として，以下のコマンドでGnutlsをインストールする。
-</p>
+OpenSUSEを例として，以下のコマンドでGnutlsをインストールする。</p>
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  sudo zypper install gnutls</code></pre></div>
 </div>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-2">
 <h2 id="headline-4">
 その他の問題
 </h2>
+<div id="outline-text-headline-4" class="outline-text-2">
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  checking <span style="color:#66d9ef">for</span> library containing tputs... no
   configure: error: The required <span style="color:#66d9ef">function</span> <span style="color:#e6db74">&#39;tputs&#39;</span> was not found in any library.
@@ -916,10 +923,11 @@ OpenSUSEを例として，以下のコマンドでGnutlsをインストールす
 <p>
 もしすでにGnutlsがインストール済みで， <code class="verbatim">make</code> を叩くと以上のエラーが出てきてしまったら，
 OpenSUSE環境の場合は， <code class="verbatim">ncurses-devel</code> というパッケージが必要だということなので，
-以下のコマンドで入れておこう。
-</p>
+以下のコマンドで入れておこう。</p>
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  sudo zypper install ncurses-devel</code></pre></div>
+</div>
+</div>
 </div>
 <div class="footnotes">
 <hr class="footnotes-separatator">
@@ -927,9 +935,7 @@ OpenSUSE環境の場合は， <code class="verbatim">ncurses-devel</code> とい
 <div class="footnote-definition">
 <sup id="footnote-1"><a href="#footnote-reference-1">1</a></sup>
 <div class="footnote-body">
-<p>
-<a href="https://ja.wikipedia.org/wiki/Emacs">The logo of Emacs</a>
-</p>
+<p><a href="https://ja.wikipedia.org/wiki/Emacs">The logo of Emacs</a></p>
 </div>
 </div>
 </div>
@@ -948,8 +954,8 @@ OpenSUSE環境の場合は， <code class="verbatim">ncurses-devel</code> とい
   
 
 <p class="edit-page">
-  <a href="https://github.com/xinii/hugo-site-academic/edit/master/content/ja/post/emacs-gnutls/index.org">
-    <i class="fas fa-pen pr-2"></i>Edit this page
+  <a class="btn btn-sm btn-outline-secondary" href="https://github.com/xinii/hugo-site-academic/edit/master/content/ja/post/emacs-gnutls/index.org">
+    <i class="fas fa-pen pr-2"></i>このページを編集
   </a>
 </p>
 
@@ -1051,12 +1057,6 @@ OpenSUSE環境の場合は， <code class="verbatim">ncurses-devel</code> とい
   </ul>
 </div>
 
-
-
-<script type="text/javascript">
- var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
-</script>
-<script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script>
 
 
 
@@ -1286,6 +1286,37 @@ OpenSUSE環境の場合は， <code class="verbatim">ncurses-devel</code> とい
 
 
 
+<div class="content-widget-hr" style="text-align:center">
+  <script type="text/javascript">
+   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+       
+
+       
+       var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
+       document.write('\x3Cscript type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js">\x3C/script>');
+       document.write('<br>');
+
+       
+       imobile_tag_ver = "0.3";
+       imobile_pid = "73400";
+       imobile_asid = "1711292";
+       imobile_type = "inline";
+       document.write('\x3Cscript type="text/javascript" src="https://spad.i-mobile.co.jp/script/adssp.js?20110215">\x3C/script>');
+       
+   } else {
+       
+
+       
+       imobile_pid = "73400";
+       imobile_asid = "1711291";
+       imobile_width = 468;
+       imobile_height = 60;
+       document.write('\x3Cscript type="text/javascript" src="https://spdeliver.i-mobile.co.jp/script/ads.js?20101001">\x3C/script>');
+   }
+  </script>
+</div>
+
+
 <section id="comments">
   
     
@@ -1316,7 +1347,6 @@ OpenSUSE環境の場合は， <code class="verbatim">ncurses-devel</code> とい
 
 
 
-
 <div class="article-widget">
   
 <div class="post-nav">
@@ -1338,7 +1368,6 @@ OpenSUSE環境の場合は， <code class="verbatim">ncurses-devel</code> とい
 </div>
 
 </div>
-
 
 
 
@@ -1468,12 +1497,6 @@ OpenSUSE環境の場合は， <code class="verbatim">ncurses-devel</code> とい
      pangu.autoSpacingPage();
  });
 </script>
-
-
-<script type="text/javascript">
- var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
-</script>
-<script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script>
 
 
 

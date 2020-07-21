@@ -377,7 +377,13 @@
 
 
 
-  <script data-ad-client="ca-pub-9872583441136696" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script type="text/javascript">
+ if ( window.location.host != "xinii.cf" ) {
+     window.location.replace("https://xinii.cf" + window.location.pathname);
+ }
+</script>
+
+<script src="https://www.googleoptimize.com/optimize.js?id=OPT-MQBJVR6"></script>
 
 
   <title>Install Gnutls and compile Emacs from source | xin iDEA iNNATA</title>
@@ -401,7 +407,7 @@
       <div id="search-box">
         
         <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+               autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control" style="font-size: 16px; line-height: 120%;">
         
       </div>
 
@@ -428,12 +434,6 @@
 
 
 
-
-<style type="text/css">
- .fix-width{
-     width: 25px;
- }
-</style>
 
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
@@ -487,7 +487,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/en/#xinconfig"><span><span class='fas fa-home fix-width'></span>Home</span></a>
         </li>
 
@@ -516,7 +516,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/en/#about"><span><span class='far fa-address-card fix-width'></span>About</span></a>
         </li>
 
@@ -545,7 +545,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/en/#posts"><span><span class='far fa-newspaper fix-width'></span>Posts</span></a>
         </li>
 
@@ -574,7 +574,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/en/#featured"><span><span class='fas fa-book-open fix-width'></span>Publications</span></a>
         </li>
 
@@ -603,7 +603,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/en/#categories"><span><span class='fab fa-hotjar fix-width'></span>Popular Topics</span></a>
         </li>
 
@@ -632,7 +632,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/en/#contact"><span><span class='far fa-envelope fix-width'></span>Contact</span></a>
         </li>
 
@@ -692,6 +692,9 @@
           
           <a href='/en/admin' class="dropdown-item">
             <span class="fas fa-key fix-width"></span>Login
+          </a>
+          <a href='https://ise.teracloud.jp/dav/web/notebook/index.html' class="dropdown-item">
+            <span class="far fa-sticky-note fix-width"></span>Notebook
           </a>
 
         </div>
@@ -847,75 +850,79 @@
 </li>
 </ul>
 </nav>
-
 </p>
+<div id="outline-container-headline-1" class="outline-2">
 <h2 id="headline-1">
 The lack of Gnutls in the environment
 </h2>
+<div id="outline-text-headline-1" class="outline-text-2">
 <p>
 If the current environment lacks Gnutls, the following configuration is
-required before compiling and installing the Emacs<sup class="footnote-reference"><a id="footnote-reference-1" href="#footnote-1">1</a></sup> source code.
-</p>
+required before compiling and installing the Emacs<sup class="footnote-reference"><a id="footnote-reference-1" href="#footnote-1">1</a></sup> source code.</p>
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  ./configure --with-gnutls<span style="color:#f92672">=</span>no</code></pre></div>
 </div>
 <p>
 Or specify the installation directory at the same time, add the option
 to ignore other dependent libraries that are still missing, such as the
-following configuration.
-</p>
+following configuration.</p>
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  bash configure --prefix<span style="color:#f92672">=</span>$HOME/.local --with-gif<span style="color:#f92672">=</span>no --with-gnutls<span style="color:#f92672">=</span>no</code></pre></div>
 </div>
 <p>
 In this way, the configuration and installation can be carried out
 smoothly in the absence of permission to the default installation path,
-or the lack of various dependent libraries.
-</p>
+or the lack of various dependent libraries.</p>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-2">
 <h2 id="headline-2">
 Potential problems
 </h2>
+<div id="outline-text-headline-2" class="outline-text-2">
 <p>
 Although the above can achieve the purpose of normal installation of
 Emacs to the <code class="verbatim">$HOME/.local</code> directory, However, due to the lack of the
 Gnutls component, when using network transmission in Emacs, you can only
-use http instead of https.
-</p>
+use http instead of https.</p>
 <p>
 If only needs a network connection during Emacs initialization, you can
 solve the problem by changing the Melpa links to start with http, but
 this will cause problems for future extensions that require network
-connectivity in Emacs.
-</p>
+connectivity in Emacs.</p>
 <p>
 For example, when using <code class="verbatim">google-translate</code>, even if the <code class="verbatim">https</code> in all
 <code class="verbatim">*.el</code> files in the <code class="verbatim">google-translate</code> package are changed to <code class="verbatim">http</code>,
 during actual use, some <code class="verbatim">https</code> services will still be used
-automatically, resulting in abnormal translation.
-</p>
+automatically, resulting in abnormal translation.</p>
 <p>
 One thing to note here is that after modifying the <code class="verbatim">*.el</code> file, you need
 to delete all <code class="verbatim">*.elc</code> files to force a recompilation to make the changes
-take effect.
-</p>
+take effect.</p>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-2">
 <h2 id="headline-3">
 Install Gnutls
 </h2>
+<div id="outline-text-headline-3" class="outline-text-2">
 <p>
 After the above actual tests, it is not difficult to find that it is a
 good choice to install Emacs from the source code after installing
-Gnutls in the current environment.
-</p>
+Gnutls in the current environment.</p>
 <p>
 Taking OpenSUSE as an example, Gnutls can be installed by running the
-following statement on the terminal.
-</p>
+following statement on the terminal.</p>
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  sudo zypper install gnutls</code></pre></div>
 </div>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-2">
 <h2 id="headline-4">
 Other possible problems
 </h2>
+<div id="outline-text-headline-4" class="outline-text-2">
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  checking <span style="color:#66d9ef">for</span> library containing tputs... no
   configure: error: The required <span style="color:#66d9ef">function</span> <span style="color:#e6db74">&#39;tputs&#39;</span> was not found in any library.
@@ -931,10 +938,11 @@ Other possible problems
 Besides, if Gnutls is installed in the current environment, and the
 above error is still reported after <code class="verbatim">make</code>, then for OpenSUSE
 environment, you need a package called <code class="verbatim">ncurses-devel</code>, execute the
-following sentence to install.
-</p>
+following sentence to install.</p>
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  sudo zypper install ncurses-devel</code></pre></div>
+</div>
+</div>
 </div>
 <div class="footnotes">
 <hr class="footnotes-separatator">
@@ -942,9 +950,7 @@ following sentence to install.
 <div class="footnote-definition">
 <sup id="footnote-1"><a href="#footnote-reference-1">1</a></sup>
 <div class="footnote-body">
-<p>
-<a href="https://ja.wikipedia.org/wiki/Emacs">The logo of Emacs</a>
-</p>
+<p><a href="https://ja.wikipedia.org/wiki/Emacs">The logo of Emacs</a></p>
 </div>
 </div>
 </div>
@@ -963,7 +969,7 @@ following sentence to install.
   
 
 <p class="edit-page">
-  <a href="https://github.com/xinii/hugo-site-academic/edit/master/content/en/post/emacs-gnutls/index.org">
+  <a class="btn btn-sm btn-outline-secondary" href="https://github.com/xinii/hugo-site-academic/edit/master/content/en/post/emacs-gnutls/index.org">
     <i class="fas fa-pen pr-2"></i>Edit this page
   </a>
 </p>
@@ -1066,12 +1072,6 @@ following sentence to install.
   </ul>
 </div>
 
-
-
-<script type="text/javascript">
- var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
-</script>
-<script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script>
 
 
 
@@ -1301,6 +1301,37 @@ following sentence to install.
 
 
 
+<div class="content-widget-hr" style="text-align:center">
+  <script type="text/javascript">
+   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+       
+
+       
+       var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
+       document.write('\x3Cscript type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js">\x3C/script>');
+       document.write('<br>');
+
+       
+       imobile_tag_ver = "0.3";
+       imobile_pid = "73400";
+       imobile_asid = "1711292";
+       imobile_type = "inline";
+       document.write('\x3Cscript type="text/javascript" src="https://spad.i-mobile.co.jp/script/adssp.js?20110215">\x3C/script>');
+       
+   } else {
+       
+
+       
+       imobile_pid = "73400";
+       imobile_asid = "1711291";
+       imobile_width = 468;
+       imobile_height = 60;
+       document.write('\x3Cscript type="text/javascript" src="https://spdeliver.i-mobile.co.jp/script/ads.js?20101001">\x3C/script>');
+   }
+  </script>
+</div>
+
+
 <section id="comments">
   
     
@@ -1331,7 +1362,6 @@ following sentence to install.
 
 
 
-
 <div class="article-widget">
   
 <div class="post-nav">
@@ -1353,7 +1383,6 @@ following sentence to install.
 </div>
 
 </div>
-
 
 
 
@@ -1483,12 +1512,6 @@ following sentence to install.
      pangu.autoSpacingPage();
  });
 </script>
-
-
-<script type="text/javascript">
- var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
-</script>
-<script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script>
 
 
 

@@ -377,7 +377,13 @@
 
 
 
-  <script data-ad-client="ca-pub-9872583441136696" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script type="text/javascript">
+ if ( window.location.host != "xinii.cf" ) {
+     window.location.replace("https://xinii.cf" + window.location.pathname);
+ }
+</script>
+
+<script src="https://www.googleoptimize.com/optimize.js?id=OPT-MQBJVR6"></script>
 
 
   <title>より効率的な作業を行うためのいくつかWindowsのレジストリー設定 | xin iDEA iNNATA</title>
@@ -401,7 +407,7 @@
       <div id="search-box">
         
         <input name="q" id="search-query" placeholder="検索..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+               autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control" style="font-size: 16px; line-height: 120%;">
         
       </div>
 
@@ -428,12 +434,6 @@
 
 
 
-
-<style type="text/css">
- .fix-width{
-     width: 25px;
- }
-</style>
 
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
@@ -487,7 +487,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/ja/#xinconfig"><span><span class='fas fa-home fix-width'></span>ホーム</span></a>
         </li>
 
@@ -516,7 +516,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/ja/#about"><span><span class='far fa-address-card fix-width'></span>私について</span></a>
         </li>
 
@@ -545,7 +545,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/ja/#posts"><span><span class='far fa-newspaper fix-width'></span>最近の投稿</span></a>
         </li>
 
@@ -574,7 +574,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/ja/#featured"><span><span class='fas fa-book-open fix-width'></span>発表文献</span></a>
         </li>
 
@@ -603,7 +603,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/ja/#categories"><span><span class='fab fa-hotjar fix-width'></span>人気キーワード</span></a>
         </li>
 
@@ -632,7 +632,7 @@
         
         
 
-        <li class="nav-item">
+        <li class="nav-item add-hover">
           <a class="nav-link " href="/ja/#contact"><span><span class='far fa-envelope fix-width'></span>お問い合わせ</span></a>
         </li>
 
@@ -692,6 +692,9 @@
           
           <a href='/ja/admin' class="dropdown-item">
             <span class="fas fa-key fix-width"></span>ログイン
+          </a>
+          <a href='https://ise.teracloud.jp/dav/web/notebook/index.html' class="dropdown-item">
+            <span class="far fa-sticky-note fix-width"></span>ノートブック
           </a>
 
         </div>
@@ -863,27 +866,31 @@
 </li>
 </ul>
 </nav>
-
 </p>
+<div id="outline-container-headline-1" class="outline-2">
 <h2 id="headline-1">
 日本語キーボードのレイアウトに関するレジストリー設定
 </h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<div id="outline-container-headline-2" class="outline-3">
 <h3 id="headline-2">
 スキャンコードについて
 </h3>
+<div id="outline-text-headline-2" class="outline-text-3">
 <p>
-まずは，ウィキペディアに載せたスキャンコードの定義を見よう
-</p>
+まずは，ウィキペディアに載せたスキャンコードの定義を見よう</p>
 <blockquote>
-<p>
-スキャンコード (scancode)
+<p>スキャンコード (scancode)
   とは、コンピュータのキーボードのキーが押されたり離されたりしたときに、
-  キーボードからCPUに送られるコード（符号）のこと。走査コード（そうさコード）ともいう。 - <a href="https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89">Wikipedia</a>
-</p>
+  キーボードからCPUに送られるコード（符号）のこと。走査コード（そうさコード）ともいう。 - <a href="https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89">Wikipedia</a></p>
 </blockquote>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-3">
 <h3 id="headline-3">
 スキャンコードの例<sup class="footnote-reference"><a id="footnote-reference-1" href="#footnote-1">1</a></sup>
 </h3>
+<div id="outline-text-headline-3" class="outline-text-3">
 <table>
 <thead>
 <tr>
@@ -934,36 +941,33 @@
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-3">
 <h3 id="headline-4">
 レジストリーでスキャンコードのマッピングを行うためには
 </h3>
+<div id="outline-text-headline-4" class="outline-text-3">
 <ul>
 <li>
-<p>
-まず， <code class="verbatim">Win key</code> + <code class="verbatim">R</code> を押して <code class="verbatim">regedit</code> を入力したら <code class="verbatim">Enter</code> キーを押す。
+<p>まず， <code class="verbatim">Win key</code> + <code class="verbatim">R</code> を押して <code class="verbatim">regedit</code> を入力したら <code class="verbatim">Enter</code> キーを押す。
 そうすると，Windowsのレジストリーエディターが開かれたはず。
-そこでレジストリーエディターで以下の場所を開く。
-</p>
+そこでレジストリーエディターで以下の場所を開く。</p>
 <div class="src src-sample">
 <pre><code class="language-sample" data-lang="sample">  コンピューター\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout</code></pre>
 </div>
 </li>
 <li>
-<p>
-次に，右クリックしたら，「新規 - バイナリ値(B) - Scancode
-Map」の順に「Scancode Map」というバイナリキーを作る。
-</p>
+<p>次に，右クリックしたら，「新規 - バイナリ値(B) - Scancode
+Map」の順に「Scancode Map」というバイナリキーを作る。</p>
 <p>
 「Scancode Map」のバリュー（マッピングのルール）については，
 以下のような僕の設定を参考していじってみればいいと思う。
 ただし，「バージョン」，「フラグ」と「終端ヌル値」の部分は残る必要がある。
-あと，「マッピング数」については，「終端ヌル値」も含めて設定したマッピングルールの数を数えて書けば良い。
-</p>
+あと，「マッピング数」については，「終端ヌル値」も含めて設定したマッピングルールの数を数えて書けば良い。</p>
 </li>
 <li>
-<p>
-Logicool K380のための自分用レイアウト
-</p>
+<p>Logicool K380のための自分用レイアウト</p>
 <table>
 <thead>
 <tr>
@@ -1021,9 +1025,7 @@ Logicool K380のための自分用レイアウト
 </table>
 </li>
 <li>
-<p>
-FILCO Majestouch MINILA Airのための自分用レイアウト
-</p>
+<p>FILCO Majestouch MINILA Airのための自分用レイアウト</p>
 <table>
 <thead>
 <tr>
@@ -1088,38 +1090,38 @@ FILCO Majestouch MINILA Airのための自分用レイアウト
 </table>
 </li>
 <li>
-<p>
-ここで，「Pause/Break」がいつくかのコードで組み合わせたもので，
+<p>ここで，「Pause/Break」がいつくかのコードで組み合わせたもので，
 「NumLock」のコードも入っているため，
-以上のように設定する時に少し工夫をした。 以下も参考
-</p>
+以上のように設定する時に少し工夫をした。 以下も参考</p>
 <blockquote>
-<p>
-Pause <code>0xE1:0x1D:0x45</code> [ 84key <code>Ctrl</code> (0x1D) + <code>NumLock</code> (0x45)], no auto repeat,
-break code <code>0xE1:0x9D:0xC5</code> - <a href="https://seesaawiki.jp/w/smnb/d/Keyboard%20Scancode%20Map">Keyboard Scancode Map</a>
-</p>
+<p>Pause <code>0xE1:0x1D:0x45</code> [ 84key <code>Ctrl</code> (0x1D) + <code>NumLock</code> (0x45)], no auto repeat,
+break code <code>0xE1:0x9D:0xC5</code> - <a href="https://seesaawiki.jp/w/smnb/d/Keyboard%20Scancode%20Map">Keyboard Scancode Map</a></p>
 </blockquote>
 </li>
 </ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-2">
 <h2 id="headline-5">
 キーボードレイアウトの種類を変更
 </h2>
+<div id="outline-text-headline-5" class="outline-text-2">
+<div id="outline-container-headline-6" class="outline-3">
 <h3 id="headline-6">
 中国語入力において英語配列から日本語配列に
 </h3>
+<div id="outline-text-headline-6" class="outline-text-3">
 <ul>
 <li>
-<p>
-まずは，レジストリーエディターで以下の場所を開く
-</p>
+<p>まずは，レジストリーエディターで以下の場所を開く</p>
 <div class="src src-sample">
 <pre><code class="language-sample" data-lang="sample">  コンピューター\HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Keyboard Layouts\00000804</code></pre>
 </div>
 </li>
 <li>
-<p>
-次に，以下のように変更をする
-</p>
+<p>次に，以下のように変更をする</p>
 <table>
 <thead>
 <tr>
@@ -1138,46 +1140,52 @@ break code <code>0xE1:0x9D:0xC5</code> - <a href="https://seesaawiki.jp/w/smnb/d
 </table>
 </li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-7" class="outline-3">
 <h3 id="headline-7">
 他の言語の入力法において〇〇配列から〇〇配列に
 </h3>
+<div id="outline-text-headline-7" class="outline-text-3">
 <ul>
 <li>
-<p>
-他の言語の入力法の場合は，レジストリーのパスの=00000804=のところを変更し，
-変更後の=***.DLL=の部分に適切な内容で入れ替えたら良いと思う。
-</p>
+<p>他の言語の入力法の場合は，レジストリーのパスの=00000804=のところを変更し，
+変更後の=***.DLL=の部分に適切な内容で入れ替えたら良いと思う。</p>
 </li>
 </ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-8" class="outline-2">
 <h2 id="headline-8">
 「マイコンピュータ」や「PC」の画面に不明なアイコンが出た時のレジストリー設定
 </h2>
+<div id="outline-text-headline-8" class="outline-text-2">
 <ul>
 <li>
-<p>
-以下のレジストリーのパスに，その不明なものを探して見つけたら見つけたものを削除すれば良い
-</p>
+<p>以下のレジストリーのパスに，その不明なものを探して見つけたら見つけたものを削除すれば良い</p>
 <div class="src src-sample">
 <pre><code class="language-sample" data-lang="sample">  コンピューター\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace</code></pre>
 </div>
 </li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-9" class="outline-2">
 <h2 id="headline-9">
 どうしてもローカルネットワークのNASとかに繋がらない時のレジストリー設定<sup class="footnote-reference"><a id="footnote-reference-2" href="#footnote-2">2</a></sup>
 </h2>
+<div id="outline-text-headline-9" class="outline-text-2">
 <ul>
 <li>
-<p>
-まずは，以下の場所を開く
-</p>
+<p>まずは，以下の場所を開く</p>
 <div class="src src-sample">
 <pre><code class="language-sample" data-lang="sample">  コンピューター\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters</code></pre>
 </div>
 </li>
 <li>
-<p>
-次に，下のような変更を行う
-</p>
+<p>次に，下のような変更を行う</p>
 <table>
 <thead>
 <tr>
@@ -1196,43 +1204,39 @@ break code <code>0xE1:0x9D:0xC5</code> - <a href="https://seesaawiki.jp/w/smnb/d
 </table>
 </li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-10" class="outline-2">
 <h2 id="headline-10">
 参考資料
 </h2>
+<div id="outline-text-headline-10" class="outline-text-2">
 <ul>
 <li>
-<p>
-<a href="https://usedoor.jp/howto/digital/pc/windows-uwagaki-keyboard-insert-key-mukouka/">上書きモードになる『Insert』キーを無効化する方法</a>
-</p>
+<p><a href="https://usedoor.jp/howto/digital/pc/windows-uwagaki-keyboard-insert-key-mukouka/">上書きモードになる『Insert』キーを無効化する方法</a></p>
 </li>
 <li>
-<p>
-<a href="https://tepp91.github.io/contents/misc/remap-keyboard-with-scancode-map.html">Scancode Mapによるキー割り当ての変更</a>
-</p>
+<p><a href="https://tepp91.github.io/contents/misc/remap-keyboard-with-scancode-map.html">Scancode Mapによるキー割り当ての変更</a></p>
 </li>
 <li>
-<p>
-<a href="https://answers.microsoft.com/en-us/windows/forum/windows_10-files/homegroup-removed-how-to-get-network-sharing-work/01277332-2916-4a68-853a-116696b20743">Homegroup removed! How to get network sharing work with Windows 10 v1803</a>
-</p>
+<p><a href="https://answers.microsoft.com/en-us/windows/forum/windows_10-files/homegroup-removed-how-to-get-network-sharing-work/01277332-2916-4a68-853a-116696b20743">Homegroup removed! How to get network sharing work with Windows 10 v1803</a></p>
 </li>
 </ul>
+</div>
+</div>
 <div class="footnotes">
 <hr class="footnotes-separatator">
 <div class="footnote-definitions">
 <div class="footnote-definition">
 <sup id="footnote-1"><a href="#footnote-reference-1">1</a></sup>
 <div class="footnote-body">
-<p>
-<a href="http://softwaretechnique.jp/OS_Development/Tips/scan_code_set1.html">スキャンコード一覧（スキャンコードセット1）</a>
-</p>
+<p><a href="http://softwaretechnique.jp/OS_Development/Tips/scan_code_set1.html">スキャンコード一覧（スキャンコードセット1）</a></p>
 </div>
 </div>
 <div class="footnote-definition">
 <sup id="footnote-2"><a href="#footnote-reference-2">2</a></sup>
 <div class="footnote-body">
-<p>
-<a href="https://www.nedia.ne.jp/blog/2019/04/02/13919">NASに接続できない！原因はSMB1.0ではなかった！</a>
-</p>
+<p><a href="https://www.nedia.ne.jp/blog/2019/04/02/13919">NASに接続できない！原因はSMB1.0ではなかった！</a></p>
 </div>
 </div>
 </div>
@@ -1251,8 +1255,8 @@ break code <code>0xE1:0x9D:0xC5</code> - <a href="https://seesaawiki.jp/w/smnb/d
   
 
 <p class="edit-page">
-  <a href="https://github.com/xinii/hugo-site-academic/edit/master/content/ja/post/windows-registry/index.org">
-    <i class="fas fa-pen pr-2"></i>Edit this page
+  <a class="btn btn-sm btn-outline-secondary" href="https://github.com/xinii/hugo-site-academic/edit/master/content/ja/post/windows-registry/index.org">
+    <i class="fas fa-pen pr-2"></i>このページを編集
   </a>
 </p>
 
@@ -1356,12 +1360,6 @@ break code <code>0xE1:0x9D:0xC5</code> - <a href="https://seesaawiki.jp/w/smnb/d
   </ul>
 </div>
 
-
-
-<script type="text/javascript">
- var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
-</script>
-<script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script>
 
 
 
@@ -1591,6 +1589,37 @@ break code <code>0xE1:0x9D:0xC5</code> - <a href="https://seesaawiki.jp/w/smnb/d
 
 
 
+<div class="content-widget-hr" style="text-align:center">
+  <script type="text/javascript">
+   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+       
+
+       
+       var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
+       document.write('\x3Cscript type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js">\x3C/script>');
+       document.write('<br>');
+
+       
+       imobile_tag_ver = "0.3";
+       imobile_pid = "73400";
+       imobile_asid = "1711292";
+       imobile_type = "inline";
+       document.write('\x3Cscript type="text/javascript" src="https://spad.i-mobile.co.jp/script/adssp.js?20110215">\x3C/script>');
+       
+   } else {
+       
+
+       
+       imobile_pid = "73400";
+       imobile_asid = "1711291";
+       imobile_width = 468;
+       imobile_height = 60;
+       document.write('\x3Cscript type="text/javascript" src="https://spdeliver.i-mobile.co.jp/script/ads.js?20101001">\x3C/script>');
+   }
+  </script>
+</div>
+
+
 <section id="comments">
   
     
@@ -1621,7 +1650,6 @@ break code <code>0xE1:0x9D:0xC5</code> - <a href="https://seesaawiki.jp/w/smnb/d
 
 
 
-
 <div class="article-widget">
   
 <div class="post-nav">
@@ -1643,7 +1671,6 @@ break code <code>0xE1:0x9D:0xC5</code> - <a href="https://seesaawiki.jp/w/smnb/d
 </div>
 
 </div>
-
 
 
 
@@ -1782,12 +1809,6 @@ break code <code>0xE1:0x9D:0xC5</code> - <a href="https://seesaawiki.jp/w/smnb/d
      pangu.autoSpacingPage();
  });
 </script>
-
-
-<script type="text/javascript">
- var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
-</script>
-<script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script>
 
 
 

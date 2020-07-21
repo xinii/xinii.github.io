@@ -48,21 +48,19 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-
 &lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 从bash到zsh
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 虽然我使用zsh shell两周后就换到fish shell了（关于fish
 shell下面有专门介绍）， 但这并不否认zsh shell仍然是个很好的shell。
-你可以通过下面的方式从任意的shell切换至zsh shell。
-&lt;/p&gt;
+你可以通过下面的方式从任意的shell切换至zsh shell。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-安装zsh时通过下面的指令：
-&lt;/p&gt;
+&lt;p&gt;安装zsh时通过下面的指令：&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
@@ -71,9 +69,7 @@ shell下面有专门介绍）， 但这并不否认zsh shell仍然是个很好�
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-如果你想要知道现在系统裡已经安装好的shell，输入下面的指令：
-&lt;/p&gt;
+&lt;p&gt;如果你想要知道现在系统裡已经安装好的shell，输入下面的指令：&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
@@ -81,9 +77,7 @@ shell下面有专门介绍）， 但这并不否认zsh shell仍然是个很好�
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-如何将zsh作为你默认的shell呢？，输入下面的指令：
-&lt;/p&gt;
+&lt;p&gt;如何将zsh作为你默认的shell呢？，输入下面的指令：&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
@@ -91,34 +85,24 @@ shell下面有专门介绍）， 但这并不否认zsh shell仍然是个很好�
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-关于配置文件的读取错误
-&lt;/p&gt;
+&lt;p&gt;关于配置文件的读取错误&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-Shell 脚本解释出错时可以查看一下当前所使用的 &lt;code class=&#34;verbatim&#34;&gt;sh&lt;/code&gt; 路径，
-比如有可能是 &lt;code class=&#34;verbatim&#34;&gt;sh&lt;/code&gt; 指向了 &lt;code class=&#34;verbatim&#34;&gt;dash&lt;/code&gt; 导致出错。 通过下面的语句查看。
-&lt;/p&gt;
+&lt;p&gt;Shell 脚本解释出错时可以查看一下当前所使用的 &lt;code class=&#34;verbatim&#34;&gt;sh&lt;/code&gt; 路径，
+比如有可能是 &lt;code class=&#34;verbatim&#34;&gt;sh&lt;/code&gt; 指向了 &lt;code class=&#34;verbatim&#34;&gt;dash&lt;/code&gt; 导致出错。 通过下面的语句查看。&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  ls -l &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;which sh&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-脚本解释器在语法上的不同点
-&lt;/p&gt;
+&lt;p&gt;脚本解释器在语法上的不同点&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-从传统的 bash 等 shell 换到 zsh 时会发现集合的第一个元素的索引是从 &lt;code&gt;1&lt;/code&gt; 开始的，
-如果希望从 &lt;code&gt;0&lt;/code&gt; 开始，在配置文件中配置下面语句即可。
-&lt;/p&gt;
+&lt;p&gt;从传统的 bash 等 shell 换到 zsh 时会发现集合的第一个元素的索引是从 &lt;code&gt;1&lt;/code&gt; 开始的，
+如果希望从 &lt;code&gt;0&lt;/code&gt; 开始，在配置文件中配置下面语句即可。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-Fix array index for zsh:
-&lt;/p&gt;
+&lt;p&gt;Fix array index for zsh:&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
@@ -126,33 +110,38 @@ Fix array index for zsh:
       setopt localoptions ksharrays
   &lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-2&#34;&gt;
 配置 zsh shell
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
 与 bash 的 &lt;code class=&#34;verbatim&#34;&gt;.bashrc&lt;/code&gt; 类似， &lt;code class=&#34;verbatim&#34;&gt;zsh&lt;/code&gt; 的配置也需要一个配置文件，
 这个文件是在用户目录下的 &lt;code class=&#34;verbatim&#34;&gt;.zshrc&lt;/code&gt; 文件，
-如果你不想自己写配置，点击&lt;a href=&#34;https://github.com/xinii/xinconfig/blob/master/profile/core/zsh.sh&#34;&gt;这里&lt;/a&gt;打开我上传到 Github 的配置文件下载使用。
-&lt;/p&gt;
+如果你不想自己写配置，点击&lt;a href=&#34;https://github.com/xinii/xinconfig/blob/master/profile/core/zsh.sh&#34;&gt;这里&lt;/a&gt;打开我上传到 Github 的配置文件下载使用。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-3&#34;&gt;
 从zsh到fish
 &lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 使用zsh shell之后大概两週我就换到fish shell了，
 这不是因为zsh不好，而是fish天然的完成度和易用性吸引了我，
-转移到fish环境后，有关shell折腾算是告一段落，以下对该过程纪录。
-&lt;/p&gt;
+转移到fish环境后，有关shell折腾算是告一段落，以下对该过程纪录。&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-4&#34;&gt;
 fish shell的安装以及默认shell的切换
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
-这个上面提到过，这里具体针对不同的操作系统所需要执行的指令进行介绍。
-&lt;/p&gt;
+这个上面提到过，这里具体针对不同的操作系统所需要执行的指令进行介绍。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-MacOS:
-&lt;/p&gt;
+&lt;p&gt;MacOS:&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
@@ -160,9 +149,7 @@ MacOS:
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-Ubuntu/Linux Mint:
-&lt;/p&gt;
+&lt;p&gt;Ubuntu/Linux Mint:&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
@@ -170,9 +157,7 @@ Ubuntu/Linux Mint:
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-OpenSUSE:
-&lt;/p&gt;
+&lt;p&gt;OpenSUSE:&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
@@ -181,15 +166,13 @@ OpenSUSE:
 &lt;p&gt;
 如果是运行在 Windows 下的 OpenSUSE 环境，
 则可能需要 &lt;code class=&#34;verbatim&#34;&gt;root&lt;/code&gt; 权限，这时在命令前面加上 &lt;code class=&#34;verbatim&#34;&gt;sudo&lt;/code&gt; 。
-通过下面的语句查看当前系统所使用的 Shell。
-&lt;/p&gt;
+通过下面的语句查看当前系统所使用的 Shell。&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  cat /etc/shells&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 如果显示你的fish shell在 &lt;code class=&#34;verbatim&#34;&gt;/usr/bin/fish&lt;/code&gt; ，
-那么执行下面的语句切换其为默认shell（权限不足则补充 &lt;code class=&#34;verbatim&#34;&gt;sudo&lt;/code&gt; ）：
-&lt;/p&gt;
+那么执行下面的语句切换其为默认shell（权限不足则补充 &lt;code class=&#34;verbatim&#34;&gt;sudo&lt;/code&gt; ）：&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  chsh -s /usr/bin/fish&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -198,52 +181,53 @@ OpenSUSE:
 如果打开 Fish shell 后马上报很多关于 hostname 的错误，
 说明当前环境缺少一个叫做 hostname 的包，
 那么使用当前 Linux 发行版的包管理器安装 &lt;code class=&#34;verbatim&#34;&gt;hostname&lt;/code&gt; ，
-例如在 OpenSUSE 下使用：
-&lt;/p&gt;
+例如在 OpenSUSE 下使用：&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  sudo zypper install hostname&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-5&#34;&gt;
 Fish shell 的配置
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
-我写好的配置上传在了Github，点击&lt;a href=&#34;https://github.com/xinii/xinconfig/tree/master/profile/fish&#34;&gt;这里&lt;/a&gt;查看我的配置。
-&lt;/p&gt;
+我写好的配置上传在了Github，点击&lt;a href=&#34;https://github.com/xinii/xinconfig/tree/master/profile/fish&#34;&gt;这里&lt;/a&gt;查看我的配置。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-6&#34;&gt;
 在fish shell下使用python时的常见问题
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;
-目前我遇到的比较需要注意的问题有下面两点：
-&lt;/p&gt;
+目前我遇到的比较需要注意的问题有下面两点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-关于 tmux
-&lt;/p&gt;
+&lt;p&gt;关于 tmux&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-tmux在后台存在session的时候， 即使更新=PYTHONPATH=环境变量也不会生效，
+&lt;p&gt;tmux在后台存在session的时候， 即使更新=PYTHONPATH=环境变量也不会生效，
 此时需要关闭tmux的所有进程，更新才会生效。
-除fish以外其他shell环境应该也会遇到， 我是在fish首次出现，留作纪录。
-&lt;/p&gt;
+除fish以外其他shell环境应该也会遇到， 我是在fish首次出现，留作纪录。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;
-关于 &lt;code&gt;PYTHONPATH&lt;/code&gt;
-&lt;/p&gt;
+&lt;p&gt;关于 &lt;code&gt;PYTHONPATH&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-Fish shell 中定义环境变量的方式为 &lt;code class=&#34;verbatim&#34;&gt;set &amp;lt;variable_name&amp;gt; &amp;lt;parameter_1&amp;gt; &amp;lt;parameter_2&amp;gt;&lt;/code&gt;
+&lt;p&gt;Fish shell 中定义环境变量的方式为 &lt;code class=&#34;verbatim&#34;&gt;set &amp;lt;variable_name&amp;gt; &amp;lt;parameter_1&amp;gt; &amp;lt;parameter_2&amp;gt;&lt;/code&gt;
 这种方式有很大的优越性而且非常方便， 然而对于 &lt;code class=&#34;verbatim&#34;&gt;PYTHONPATH&lt;/code&gt; ，
 则 &lt;code class=&#34;verbatim&#34;&gt;set PYTHONPATH &amp;lt;parameter_1&amp;gt;:&amp;lt;parameter_2&amp;gt;&lt;/code&gt; 的方式更具有通用性。
 原因为，经过测试在 MacOS 下两种方式均可正常使用， 
 但在运行在 Jetson Nano 上的 Ubuntu 下测试时，只有第二种方式可用。
 具体原因尚未明确，有可能时操作系统不同的原因，
 也可能是 Python 版本不同造成的
-（比如版本号相同，但处理器架构不同造成了编译方式的差异导致该问题）。
-&lt;/p&gt;
+（比如版本号相同，但处理器架构不同造成了编译方式的差异导致该问题）。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
