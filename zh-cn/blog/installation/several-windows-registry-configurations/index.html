@@ -1,0 +1,1063 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+  <meta charset="utf-8">
+<title>一些可帮助你更有效地工作的 Windows 注册表设置 - xin iDEA iNNATA</title>
+<meta http-equiv="refresh" content="0; url=https://xinii.cf/zh/post/several-windows-registry-configurations" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/hugo-site-slim-public/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/hugo-site-slim-public/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/hugo-site-slim-public/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/hugo-site-slim-public/favicon/site.webmanifest">
+  
+    <link rel="mask-icon" href="/hugo-site-slim-public/favicon/safari-pinned-tab.svg" color="#ffffff">
+    <link rel="shortcut icon" href="/hugo-site-slim-public/favicon/favicon.ico">
+    <meta name="msapplication-config" content="/hugo-site-slim-public/favicon/browserconfig.xml">
+  
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+<meta name="generator" content="Hugo 0.74.1" /><meta itemprop="name" content="一些可帮助你更有效地工作的 Windows 注册表设置">
+<meta itemprop="description" content="希望实现一些仅通过 Windows 的系统设置无法实现的功能，但也不希望使用第三方软件？来试试修改注册表吧！">
+<meta itemprop="datePublished" content="2020-06-04T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-06-04T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="346">
+<meta itemprop="image" content="https://xinii.github.io/hugo-site-slim-public/img/blog/registry-editor-icon.png">
+
+
+
+<meta itemprop="keywords" content="registry,scancode,keyboard-layout," /><meta property="og:title" content="一些可帮助你更有效地工作的 Windows 注册表设置" />
+<meta property="og:description" content="希望实现一些仅通过 Windows 的系统设置无法实现的功能，但也不希望使用第三方软件？来试试修改注册表吧！" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xinii.github.io/hugo-site-slim-public/zh/blog/windows/several-windows-registry-configurations/" />
+<meta property="og:image" content="https://xinii.github.io/hugo-site-slim-public/img/blog/registry-editor-icon.png" />
+<meta property="article:published_time" content="2020-06-04T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-06-04T00:00:00+00:00" /><meta property="og:site_name" content="xin iDEA iNNATA" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://xinii.github.io/hugo-site-slim-public/img/blog/registry-editor-icon.png"/>
+
+<meta name="twitter:title" content="一些可帮助你更有效地工作的 Windows 注册表设置"/>
+<meta name="twitter:description" content="希望实现一些仅通过 Windows 的系统设置无法实现的功能，但也不希望使用第三方软件？来试试修改注册表吧！"/>
+<meta name="twitter:site" content="@xintxt"/>
+<link rel="stylesheet" href="/hugo-site-slim-public/css/bundle.min.e0b4f4d471560c894134ee31c2399f5aa7687672a226a2db6013c783c58d4ec7.css" integrity="sha256-4LT01HFWDIlBNO4xwjmfWqdodnKiJqLbYBPHg8WNTsc="><link rel="stylesheet" href="/hugo-site-slim-public/css/add-on.css">
+</head>
+
+  <body>
+    
+
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/hugo-site-slim-public/zh/" class="nav">
+        
+          
+            博客
+          
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu menu">
+      
+
+      <a href='/hugo-site-slim-public/zh/' class="nav link"><i class='fa fa-home'></i> 主页 </a>
+      <a href='/hugo-site-slim-public/zh/about/' class="nav link"><i class='far fa-id-card'></i> 关于 </a>
+      <a href='/hugo-site-slim-public/zh/blog/' class="nav link"><i class='far fa-newspaper'></i> 博客 </a>
+      <a href='/hugo-site-slim-public/zh/categories/' class="nav link"><i class='fas fa-sitemap'></i> 分类 </a>
+      <a href='/hugo-site-slim-public/zh/tags/' class="nav link"><i class='fas fa-tags'></i> 标签 </a>
+      <a href='/hugo-site-slim-public/zh/contact/' class="nav link"><i class='far fa-envelope'></i> 联络 </a>
+
+      <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt">&nbsp;</i>分享</a>
+      <a href="#search-input" class="nav search-toggle"><i class="fas fa-search">&nbsp;</i>搜索</a>
+    </menu>
+    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+    <a href="#lang-menu" class="nav lang-toggle" lang="zh">zh</a>
+    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+  <menu id="lang-menu" class="flyout-menu menu">
+  <a href="#" lang="zh" class="nav link active">简体中文 (zh)</a>
+  
+      <a href="https://xinii.github.io/hugo-site-slim-public/blog/windows/several-windows-registry-configurations/" lang="en" class="nav link">English (en)</a>
+    
+      <a href="https://xinii.github.io/hugo-site-slim-public/ja/blog/windows/several-windows-registry-configurations/" lang="ja" class="nav link">日本語 (ja)</a>
+    
+  
+</menu>
+
+  
+    <menu id="share-menu" class="flyout-menu menu">
+      <h1>Share Post</h1>
+      
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=%e4%b8%80%e4%ba%9b%e5%8f%af%e5%b8%ae%e5%8a%a9%e4%bd%a0%e6%9b%b4%e6%9c%89%e6%95%88%e5%9c%b0%e5%b7%a5%e4%bd%9c%e7%9a%84%20Windows%20%e6%b3%a8%e5%86%8c%e8%a1%a8%e8%ae%be%e7%bd%ae&amp;url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fzh%2fblog%2fwindows%2fseveral-windows-registry-configurations%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fzh%2fblog%2fwindows%2fseveral-windows-registry-configurations%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fzh%2fblog%2fwindows%2fseveral-windows-registry-configurations%2f&amp;title=%e4%b8%80%e4%ba%9b%e5%8f%af%e5%b8%ae%e5%8a%a9%e4%bd%a0%e6%9b%b4%e6%9c%89%e6%95%88%e5%9c%b0%e5%b7%a5%e4%bd%9c%e7%9a%84%20Windows%20%e6%b3%a8%e5%86%8c%e8%a1%a8%e8%ae%be%e7%bd%ae" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fzh%2fblog%2fwindows%2fseveral-windows-registry-configurations%2f&amp;title=%e4%b8%80%e4%ba%9b%e5%8f%af%e5%b8%ae%e5%8a%a9%e4%bd%a0%e6%9b%b4%e6%9c%89%e6%95%88%e5%9c%b0%e5%b7%a5%e4%bd%9c%e7%9a%84%20Windows%20%e6%b3%a8%e5%86%8c%e8%a1%a8%e8%ae%be%e7%bd%ae" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fzh%2fblog%2fwindows%2fseveral-windows-registry-configurations%2f&amp;description=%e4%b8%80%e4%ba%9b%e5%8f%af%e5%b8%ae%e5%8a%a9%e4%bd%a0%e6%9b%b4%e6%9c%89%e6%95%88%e5%9c%b0%e5%b7%a5%e4%bd%9c%e7%9a%84%20Windows%20%e6%b3%a8%e5%86%8c%e8%a1%a8%e8%ae%be%e7%bd%ae" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=%e6%9f%a5%e7%9c%8b%e6%ad%a4%e5%b8%96%e5%ad%90%e7%9a%84%e4%bd%9c%e8%80%85 Xin%20Li&amp;body=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fzh%2fblog%2fwindows%2fseveral-windows-registry-configurations%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+    </menu>
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" >
+  <a href="/hugo-site-slim-public/zh/"><img src="https://xinii.github.io/hugo-site-slim-public/img/main/logo.jpg" class="circle" width="72px" alt="xin iDEA iNNATA" /></a>
+  <header>
+    <h1>xin iDEA iNNATA</h1>
+  </header>
+  <main>
+    <p>Wellcome to xin iDEA iNNATA!</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/xinii" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/xinii" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+<li><a href="//facebook.com/xintxt" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+
+
+
+
+
+
+<li><a href="weixin://contacts/profile/xin099" target="_blank" rel="noopener" title="WeChat" class="fab fa-weixin"></a></li>
+<li><a href="//wpa.qq.com/msgrd?v=3&amp;uin=78809709&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener" title="QQ" class="fab fa-qq"></a></li>
+
+
+<li><a href="//twitter.com/xintxt" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+<li><a href="skype:xintxt?userinfo" target="_blank" rel="noopener" title="Skype" class="fab fa-skype"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:xinii@msn.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        
+<article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/hugo-site-slim-public/zh/blog/windows/several-windows-registry-configurations/">一些可帮助你更有效地工作的 Windows 注册表设置</a></h2>
+    
+    
+      <p>希望实现一些仅通过 Windows 的系统设置无法实现的功能，但也不希望使用第三方软件？来试试修改注册表吧！</p>
+    
+  </div>
+  <div class="meta">
+    <time class="published" datetime="2020-06-04 00:00:00 &#43;0000 UTC">
+      June 4, 2020
+    </time>
+    <span class="author">Xin Li</span>
+    
+      <p>2 分钟</p>
+    
+  </div>
+</header>
+
+  <section id="socnet-share">
+    
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=%e4%b8%80%e4%ba%9b%e5%8f%af%e5%b8%ae%e5%8a%a9%e4%bd%a0%e6%9b%b4%e6%9c%89%e6%95%88%e5%9c%b0%e5%b7%a5%e4%bd%9c%e7%9a%84%20Windows%20%e6%b3%a8%e5%86%8c%e8%a1%a8%e8%ae%be%e7%bd%ae&amp;url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fzh%2fblog%2fwindows%2fseveral-windows-registry-configurations%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fzh%2fblog%2fwindows%2fseveral-windows-registry-configurations%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fzh%2fblog%2fwindows%2fseveral-windows-registry-configurations%2f&amp;title=%e4%b8%80%e4%ba%9b%e5%8f%af%e5%b8%ae%e5%8a%a9%e4%bd%a0%e6%9b%b4%e6%9c%89%e6%95%88%e5%9c%b0%e5%b7%a5%e4%bd%9c%e7%9a%84%20Windows%20%e6%b3%a8%e5%86%8c%e8%a1%a8%e8%ae%be%e7%bd%ae" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fzh%2fblog%2fwindows%2fseveral-windows-registry-configurations%2f&amp;title=%e4%b8%80%e4%ba%9b%e5%8f%af%e5%b8%ae%e5%8a%a9%e4%bd%a0%e6%9b%b4%e6%9c%89%e6%95%88%e5%9c%b0%e5%b7%a5%e4%bd%9c%e7%9a%84%20Windows%20%e6%b3%a8%e5%86%8c%e8%a1%a8%e8%ae%be%e7%bd%ae" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fzh%2fblog%2fwindows%2fseveral-windows-registry-configurations%2f&amp;description=%e4%b8%80%e4%ba%9b%e5%8f%af%e5%b8%ae%e5%8a%a9%e4%bd%a0%e6%9b%b4%e6%9c%89%e6%95%88%e5%9c%b0%e5%b7%a5%e4%bd%9c%e7%9a%84%20Windows%20%e6%b3%a8%e5%86%8c%e8%a1%a8%e8%ae%be%e7%bd%ae" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=%e6%9f%a5%e7%9c%8b%e6%ad%a4%e5%b8%96%e5%ad%90%e7%9a%84%e4%bd%9c%e8%80%85 Xin%20Li&amp;body=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fzh%2fblog%2fwindows%2fseveral-windows-registry-configurations%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+  </section>
+  
+  <a href="/hugo-site-slim-public/zh/blog/windows/several-windows-registry-configurations/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/registry-editor-icon.png" alt="">
+    
+  </a>
+
+
+  <div class="content">
+    <h2>目录</h2>
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#headline-1">有关日语键盘布局的注册表设置</a>
+<ul>
+<li><a href="#headline-2">关于键盘扫描码</a>
+</li>
+<li><a href="#headline-3">键盘扫描码的例子<sup class="footnote-reference">1</sup></a>
+</li>
+<li><a href="#headline-4">在注册表中进行键盘扫描码映射</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-5">更改键盘布局类型</a>
+<ul>
+<li><a href="#headline-6">中文输入法的英文布局改为日语键盘布局</a>
+</li>
+<li><a href="#headline-7">其他语言的输入法的键盘布局更改</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-8">当资源管理器的「我的电脑」或「PC」中出现未知图标时的注册表设置</a>
+</li>
+<li><a href="#headline-9">无法连接到本地网络上的 NAS 时的注册表设置<sup class="footnote-reference">2</sup></a>
+</li>
+<li><a href="#headline-10">参考资料</a>
+</li>
+</ul>
+</nav>
+    <hr>
+    
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+有关日语键盘布局的注册表设置
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<div id="outline-container-headline-2" class="outline-3">
+<h3 id="headline-2">
+关于键盘扫描码
+</h3>
+<div id="outline-text-headline-2" class="outline-text-3">
+<p>
+首先，键盘扫描码是什么呢？让我们看看维基百科上的定义。</p>
+<blockquote>
+<p>键盘扫描码（英語：scancode 或 scan code）是绝大多数电脑键盘向计算机发送的一项数据，
+用以报告哪些键被按下。它使用一个数字或数字序列来表示分配到键盘上的每个按键。 - <a href="https://zh.wikipedia.org/wiki/%E9%94%AE%E7%9B%98%E6%89%AB%E6%8F%8F%E7%A0%81">Wikipedia</a></p>
+</blockquote>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-3">
+<h3 id="headline-3">
+键盘扫描码的例子<sup class="footnote-reference"><a id="footnote-reference-1" href="#footnote-1">1</a></sup>
+</h3>
+<div id="outline-text-headline-3" class="outline-text-3">
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RCtrl</td>
+<td><code class="verbatim">1D E0</code></td>
+</tr>
+<tr>
+<td>LAlt</td>
+<td><code class="verbatim">38 00</code></td>
+</tr>
+<tr>
+<td>RAlt</td>
+<td><code class="verbatim">38 E0</code></td>
+</tr>
+<tr>
+<td>ESC</td>
+<td><code class="verbatim">01 00</code></td>
+</tr>
+<tr>
+<td>Insert</td>
+<td><code class="verbatim">52 E0</code></td>
+</tr>
+<tr>
+<td>Enter</td>
+<td><code class="verbatim">1C 00</code></td>
+</tr>
+<tr>
+<td>Caps</td>
+<td><code class="verbatim">3A 00</code></td>
+</tr>
+<tr>
+<td>Space</td>
+<td><code class="verbatim">39 00</code></td>
+</tr>
+<tr>
+<td>日语键盘无变换键</td>
+<td><code class="verbatim">7B 00</code></td>
+</tr>
+<tr>
+<td>日语键盘变换键</td>
+<td><code class="verbatim">79 00</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-3">
+<h3 id="headline-4">
+在注册表中进行键盘扫描码映射
+</h3>
+<div id="outline-text-headline-4" class="outline-text-3">
+<ul>
+<li>
+<p>首先，按 Windows 徽标键 + <code class="verbatim">R</code> ，输入 <code class="verbatim">regedit</code> 后然后按 <code class="verbatim">Enter</code> 键打开
+Windows 注册表编辑器。 然后在注册表编辑器中打开以下位置。</p>
+<div class="src src-text">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout</code></pre></div>
+</div>
+</li>
+<li>
+<p>接下来，右击空白处，按照「新建 - 二进制值(B) - Scancode
+Map」的顺序创建一个叫做「Scancode Map」的二进制 Key，双击即可编辑。
+关于「Scancode Map」的值（也就是映射的规则），以我的设定为例下面列出表格供参考。
+这里，「版本」，「标记」和「终端空值」的部分需保留原样。
+另外，关于「映射数」的部分，需要设定为映射规则的数量和「终端空值」的数量之和。</p>
+</li>
+<li>
+<p>我所使用的 Logicool K380 键盘（日语布局）映射关系</p>
+<table>
+<thead>
+<tr>
+<th>Index</th>
+<th>Scancode</th>
+<th>映射关系</th>
+<th>Scancode</th>
+<th>映射关系</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code class="verbatim">0000</code></td>
+<td><code class="verbatim">00 00 00 00</code></td>
+<td>版本</td>
+<td><code class="verbatim">00 00 00 00</code></td>
+<td>标记</td>
+</tr>
+<tr>
+<td><code class="verbatim">0008</code></td>
+<td><code class="verbatim">08 00 00 00</code></td>
+<td>映射数</td>
+<td><code class="verbatim">1D 00 3A 00</code></td>
+<td>LCtrl &lt;- Caps</td>
+</tr>
+<tr>
+<td><code class="verbatim">0010</code></td>
+<td><code class="verbatim">3A 00 1D 00</code></td>
+<td>Caps &lt;- LCtrl</td>
+<td><code class="verbatim">1D E0 38 00</code></td>
+<td>RCtrl &lt;- LAlt</td>
+</tr>
+<tr>
+<td><code class="verbatim">0018</code></td>
+<td><code class="verbatim">38 00 7B 00</code></td>
+<td>LAlt &lt;- 无变换键</td>
+<td><code class="verbatim">38 E0 70 00</code></td>
+<td>RAlt &lt;- 假名键</td>
+</tr>
+<tr>
+<td><code class="verbatim">0020</code></td>
+<td><code class="verbatim">39 00 79 00</code></td>
+<td>Space &lt;- 变换键</td>
+<td><code class="verbatim">01 00 38 E0</code></td>
+<td>ESC &lt;- RAlt</td>
+</tr>
+<tr>
+<td><code class="verbatim">0028</code></td>
+<td><code class="verbatim">00 00 00 00</code></td>
+<td>终端空值</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>我所使用的 FILCO Majestouch MINILA Air 键盘（日语布局）的映射关系</p>
+<table>
+<thead>
+<tr>
+<th>Index</th>
+<th>Scancode</th>
+<th>映射关系</th>
+<th>Scancode</th>
+<th>映射关系</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code class="verbatim">0000</code></td>
+<td><code class="verbatim">00 00 00 00</code></td>
+<td>版本</td>
+<td><code class="verbatim">00 00 00 00</code></td>
+<td>标记</td>
+</tr>
+<tr>
+<td><code class="verbatim">0008</code></td>
+<td><code class="verbatim">0B 00 00 00</code></td>
+<td>映射数</td>
+<td><code class="verbatim">1C 00 52 E0</code></td>
+<td>Enter &lt;- Insert</td>
+</tr>
+<tr>
+<td><code class="verbatim">0010</code></td>
+<td><code class="verbatim">1D E0 38 00</code></td>
+<td>RCtrl &lt;- LAlt</td>
+<td><code class="verbatim">1D E0 70 00</code></td>
+<td>RCtrl &lt;- Kana</td>
+</tr>
+<tr>
+<td><code class="verbatim">0018</code></td>
+<td><code class="verbatim">7B 00 46 00</code></td>
+<td>变换 &lt;- ScrLk</td>
+<td><code class="verbatim">79 00 1D E1</code></td>
+<td>变换键 &lt;- Pause</td>
+</tr>
+<tr>
+<td><code class="verbatim">0020</code></td>
+<td><code class="verbatim">00 00 45 00</code></td>
+<td>Null &lt;- NumLock</td>
+<td><code class="verbatim">00 00 9D E1</code></td>
+<td>Null &lt;- Break</td>
+</tr>
+<tr>
+<td><code class="verbatim">0028</code></td>
+<td><code class="verbatim">38 00 7B 00</code></td>
+<td>LAlt &lt;- 无变换</td>
+<td><code class="verbatim">01 00 79 00</code></td>
+<td>ESC &lt;- 变换键</td>
+</tr>
+<tr>
+<td><code class="verbatim">0030</code></td>
+<td><code class="verbatim">52 E0 29 00</code></td>
+<td>Insert &lt;- 半/全</td>
+<td><code class="verbatim">00 00 00 00</code></td>
+<td>终端空值</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>在这里需要注意，「Pause/Break」键并非单一扫描码构成，
+「NumLock」的扫描码也在其中，在设定时需根据情况灵活设定。
+可以参考下面的描述。</p>
+<blockquote>
+<p>Pause <code>0xE1:0x1D:0x45</code> [ 84key <code>Ctrl</code> (0x1D) + <code>NumLock</code> (0x45)], no auto repeat,
+break code <code>0xE1:0x9D:0xC5</code> - <a href="https://seesaawiki.jp/w/smnb/d/Keyboard%20Scancode%20Map">Keyboard Scancode Map</a></p>
+</blockquote>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-2">
+<h2 id="headline-5">
+更改键盘布局类型
+</h2>
+<div id="outline-text-headline-5" class="outline-text-2">
+<div id="outline-container-headline-6" class="outline-3">
+<h3 id="headline-6">
+中文输入法的英文布局改为日语键盘布局
+</h3>
+<div id="outline-text-headline-6" class="outline-text-3">
+<ul>
+<li>
+<p>首先，打开注册表的下面位置。</p>
+<div class="src src-text">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Keyboard Layouts\00000804</code></pre></div>
+</div>
+</li>
+<li>
+<p>然后做以下调整。</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>变更前</th>
+<th>变更后</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code class="verbatim">Layout File</code></td>
+<td><code class="verbatim">KBDUS.DLL</code></td>
+<td><code class="verbatim">KBD106.DLL</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-7" class="outline-3">
+<h3 id="headline-7">
+其他语言的输入法的键盘布局更改
+</h3>
+<div id="outline-text-headline-7" class="outline-text-3">
+<ul>
+<li>
+<p>其他的语言的情况下，只需变更注册表路径的 <code class="verbatim">00000804</code>
+的地方到对应的语言的输入法， 然后改变 <code class="verbatim">***.DLL</code>
+的部分到对应语言的动态链接库文件的名称即可。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-8" class="outline-2">
+<h2 id="headline-8">
+当资源管理器的「我的电脑」或「PC」中出现未知图标时的注册表设置
+</h2>
+<div id="outline-text-headline-8" class="outline-text-2">
+<ul>
+<li>
+<p>通过定位到下面的注册表路径，找到位置图标对应的项删除即可。</p>
+<div class="src src-text">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace</code></pre></div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-9" class="outline-2">
+<h2 id="headline-9">
+无法连接到本地网络上的 NAS 时的注册表设置<sup class="footnote-reference"><a id="footnote-reference-2" href="#footnote-2">2</a></sup>
+</h2>
+<div id="outline-text-headline-9" class="outline-text-2">
+<ul>
+<li>
+<p>首先打开以下注册表位置</p>
+<div class="src src-text">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters</code></pre></div>
+</div>
+</li>
+<li>
+<p>然后进行下面的变更</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>变更前</th>
+<th>变更后</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code class="verbatim">AllowInsecureGuestAuth</code></td>
+<td><code class="verbatim">0</code></td>
+<td><code class="verbatim">1</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-10" class="outline-2">
+<h2 id="headline-10">
+参考资料
+</h2>
+<div id="outline-text-headline-10" class="outline-text-2">
+<ul>
+<li>
+<p><a href="https://usedoor.jp/howto/digital/pc/windows-uwagaki-keyboard-insert-key-mukouka/">将 Insert 无效化的方法（原文为日语）</a></p>
+</li>
+<li>
+<p><a href="https://tepp91.github.io/contents/misc/remap-keyboard-with-scancode-map.html">通过 Scancode Map 改变键的分配（原文为日语）</a></p>
+</li>
+<li>
+<p><a href="https://answers.microsoft.com/en-us/windows/forum/windows_10-files/homegroup-removed-how-to-get-network-sharing-work/01277332-2916-4a68-853a-116696b20743">Homegroup removed! How to get network sharing work with Windows 10 v1803</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="footnotes">
+<hr class="footnotes-separatator">
+<div class="footnote-definitions">
+<div class="footnote-definition">
+<sup id="footnote-1"><a href="#footnote-reference-1">1</a></sup>
+<div class="footnote-body">
+<p><a href="http://softwaretechnique.jp/OS_Development/Tips/scan_code_set1.html">键盘扫描码一览表（原文为日语）</a></p>
+</div>
+</div>
+<div class="footnote-definition">
+<sup id="footnote-2"><a href="#footnote-reference-2">2</a></sup>
+<div class="footnote-body">
+<p><a href="https://www.nedia.ne.jp/blog/2019/04/02/13919">无法连接 NAS！原来原因并不是 SMB1.0！（原文为日语）</a></p>
+</div>
+</div>
+</div>
+</div>
+
+  </div>
+  <hr>
+  <footer>
+    <ul class="stats">
+  <li class="categories">
+    <ul>
+    
+      
+        
+          <li><a class="article-terms-link" href="/hugo-site-slim-public/zh/categories/windows/">windows</a></li>
+        
+      
+    
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+    
+      
+        
+          <li><a class="article-terms-link" href="/hugo-site-slim-public/zh/tags/registry/">registry</a></li>
+        
+          <li><a class="article-terms-link" href="/hugo-site-slim-public/zh/tags/scancode/">scancode</a></li>
+        
+          <li><a class="article-terms-link" href="/hugo-site-slim-public/zh/tags/keyboard-layout/">keyboard-layout</a></li>
+        
+      
+    
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+</article>
+
+  <article class="post">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "xinii" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </article>
+
+
+
+
+<div class="pagination">
+  
+    <a href="/hugo-site-slim-public/zh/blog/windows/some-installations-for-windows-10/" class="button"><div class="previous">前一篇</div></a>
+  
+  
+</div>
+
+
+      </main>
+      <section id="site-sidebar">
+  
+  <section id="recent-posts">
+    <header>
+      <h1>最新文章</h1>
+    </header>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/zh/blog/windows/several-windows-registry-configurations/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/registry-editor-icon.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/zh/blog/windows/several-windows-registry-configurations/">一些可帮助你更有效地工作的 Windows 注册表设置</a></h2>
+        <time class="published" datetime="">June 4, 2020</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/zh/blog/windows/some-installations-for-windows-10/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/windows-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/zh/blog/windows/some-installations-for-windows-10/">重装 Windows 10 后的一些工作</a></h2>
+        <time class="published" datetime="">June 4, 2020</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/zh/blog/linux/add-apt-repository-for-fish-and-emacs/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/fish-emacs-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/zh/blog/linux/add-apt-repository-for-fish-and-emacs/">为 Fish 和 Emacs 添加 apt 仓库</a></h2>
+        <time class="published" datetime="">June 3, 2020</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/zh/blog/ssh/several-ssh-configurations/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/ssh-image.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/zh/blog/ssh/several-ssh-configurations/">几个有关 SSH 的配置</a></h2>
+        <time class="published" datetime="">June 3, 2020</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/zh/blog/opencv/install-opencv-on-jetson-nano/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/opencv-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/zh/blog/opencv/install-opencv-on-jetson-nano/">在 Jetson Nano 上安装 OpenCV</a></h2>
+        <time class="published" datetime="">July 12, 2019</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/zh/blog/emacs/install-gnutls-and-compile-emacs-from-source/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/emacs-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/zh/blog/emacs/install-gnutls-and-compile-emacs-from-source/">安装 Gnutls 并从源码编译 Emacs</a></h2>
+        <time class="published" datetime="">May 4, 2019</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/zh/blog/shell/my-shell-migration-record/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/fish-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/zh/blog/shell/my-shell-migration-record/">我的 Shell 迁移记录</a></h2>
+        <time class="published" datetime="">May 3, 2019</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/zh/blog/linux/install-linux-mint-from-the-usb-device/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/linux-mint-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/zh/blog/linux/install-linux-mint-from-the-usb-device/">使用 USB 设备安装 Linux Mint</a></h2>
+        <time class="published" datetime="">April 23, 2019</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/zh/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/jekyll-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/zh/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/">通过 Jekyll 创建博客并发布到 Github</a></h2>
+        <time class="published" datetime="">April 2, 2019</time>
+      </header>
+    </article>
+    
+    
+  </section>
+  
+
+  
+  
+  <section id="categories">
+    <header>
+      <h1><a href="/hugo-site-slim-public/zh/categories">分类</a></h1>
+    </header>
+    <ul>
+      
+      
+      
+      
+      <li>
+        
+        <a href="/hugo-site-slim-public/zh/categories/linux/">linux<span class="count">2</span></a>
+        
+        
+      <li>
+        
+        <a href="/hugo-site-slim-public/zh/categories/windows/">windows<span class="count">2</span></a>
+        
+        
+      <li>
+        
+        <a href="/hugo-site-slim-public/zh/categories/cms/">cms<span class="count">1</span></a>
+        
+        
+      <li>
+        
+        <a href="/hugo-site-slim-public/zh/categories/emacs/">emacs<span class="count">1</span></a>
+        
+        
+      <li>
+        
+        <a href="/hugo-site-slim-public/zh/categories/opencv/">opencv<span class="count">1</span></a>
+        
+        
+      <li>
+        
+        <a href="/hugo-site-slim-public/zh/categories/shell/">shell<span class="count">1</span></a>
+        
+        
+      <li>
+        
+        <a href="/hugo-site-slim-public/zh/categories/ssh/">ssh<span class="count">1</span></a>
+        
+        
+      </li>
+    </ul>
+  </section>
+  
+  
+
+  
+  <section id="mini-bio">
+    <header>
+      <h1>关于</h1>
+    </header>
+    <p>                          I believe everyone has their innate ideas and potential,
+                          be sure to accept your inner thoughts and create your ideas,
+                          here is xin iDEA iNNATA.
+                          <br>
+                          Click the button below to get more information about me.
+                          </p>
+    <footer>
+      <a href="/hugo-site-slim-public/zh/about" class="button">了解更多</a>
+    </footer>
+  </section>
+  
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/xinii" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/xinii" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+<li><a href="//facebook.com/xintxt" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+
+
+
+
+
+
+<li><a href="weixin://contacts/profile/xin099" target="_blank" rel="noopener" title="WeChat" class="fab fa-weixin"></a></li>
+<li><a href="//wpa.qq.com/msgrd?v=3&amp;uin=78809709&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener" title="QQ" class="fab fa-qq"></a></li>
+
+
+<li><a href="//twitter.com/xintxt" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+<li><a href="skype:xintxt?userinfo" target="_blank" rel="noopener" title="Skype" class="fab fa-skype"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:xinii@msn.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+  
+  <p class="copyright">
+    
+      &copy; 2020
+      
+        xin iDEA iNNATA
+      
+    . <br>
+    主题: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.74.1'>Hugo</a> 驱动
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      <script src="/hugo-site-slim-public/js/highlight.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script><script src="/hugo-site-slim-public/js/bundle.min.f2442aa1bcc6f779868bf270301b3f5bb97c530c6761ba5cca76bb234ac628ed.js" integrity="sha256-8kQqobzG93mGi/JwMBs/W7l8UwxnYbpcyna7I0rGKO0="></script>
+    <script src="/hugo-site-slim-public/js/add-on.js"></script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-169244465-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script data-ad-client="ca-pub-9872583441136696" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    </div>
+  </body>
+</html>
