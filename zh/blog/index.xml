@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on xin iDEA iNNATA</title>
+    <link>https://xinii.github.io/hugo-site-slim-public/zh/blog/</link>
+    <description>Recent content in Blog on xin iDEA iNNATA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://xinii.github.io/hugo-site-slim-public/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>一些可帮助你更有效地工作的 Windows 注册表设置</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/zh/blog/windows/several-windows-registry-configurations/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/zh/blog/windows/several-windows-registry-configurations/</guid>
+      <description>有关日语键盘布局的注册表设置  关于键盘扫描码   首先，键盘扫描码是什么呢？让我们看看维基百科上的定义。
+ 键盘扫描码（英語：scancode 或 scan code）是绝大多数电脑键盘向计算机发送的一项数据， 用以报告哪些键被按下。它使用一个数字或数字序列来表示分配到键盘上的每个按键。 - Wikipedia
+   键盘扫描码的例子1     Key Code     RCtrl 1D E0   LAlt 38 00   RAlt 38 E0   ESC 01 00   Insert 52 E0   Enter 1C 00   Caps 3A 00   Space 39 00   日语键盘无变换键 7B 00   日语键盘变换键 79 00      在注册表中进行键盘扫描码映射    首先，按 Windows 徽标键 + R ，输入 regedit 后然后按 Enter 键打开 Windows 注册表编辑器。 然后在注册表编辑器中打开以下位置。</description>
+    </item>
+    
+    <item>
+      <title>重装 Windows 10 后的一些工作</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/zh/blog/windows/some-installations-for-windows-10/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/zh/blog/windows/some-installations-for-windows-10/</guid>
+      <description>激活 Windows 10   打开 cmd ，输入下面语句。
+slmgr -ipk {your product key} slmgr -skms {kms server address of your company} slmgr -ato    安装一些有用的工具    Msys2
+  AutoHotKey
+  Ricty
+    配置msys2  pacman -S git fish tmux emacs gcc python cd ~ git clone https://github.com/xinii/xinconfig .xinconfig cd .xinconfig ./setenv fish exec fish set_conf tmux set_el auto set_el cn change_emacs xin emacs ssh-keygen -A emacs /etc/ssh/sshd_config #Port **** #PasswordAuthentication no cat {path to your pub key} &amp;gt; ~/.</description>
+    </item>
+    
+    <item>
+      <title>为 Fish 和 Emacs 添加 apt 仓库</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/zh/blog/linux/add-apt-repository-for-fish-and-emacs/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/zh/blog/linux/add-apt-repository-for-fish-and-emacs/</guid>
+      <description> 将要使用的命令  add-apt-repository    没这个命令？先试试这个  apt install software-properties-common    安装过程  注册仓库  add-apt-repository ppa:kelleyk/emacs apt-add-repository ppa:fish-shell/release-3    刷新仓库  apt update    安装  apt install emacs26 apt install fish      </description>
+    </item>
+    
+    <item>
+      <title>几个有关 SSH 的配置</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/zh/blog/ssh/several-ssh-configurations/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/zh/blog/ssh/several-ssh-configurations/</guid>
+      <description>ssh 连接中断的现象    当通过 ssh 进行远程登录的时候，如果长时间没有操作，则会出现 Write failed: Broken pipe 的错误提示并连接中断。
+  这是因为在一定时间内没有数据交换的情况下 ssh 连接默认会自动断开。要解决这个问题需要从客户端或者服务器端来改变设置。
+解决方法     从客户端解决
+  将下面的内容配置在 /etc/ssh/ssh_config 或 ~/.ssh/config 中。
+ServerAliveInterval 15 ServerAliveCountMax 10   通过以上的设定，每 15 秒会进行 10 次应答确认，仍然没有应答的情况下才会断开连接。
+  从服务器端解决
+  将下面的内容配置在 /etc/ssh/sshd_config 中。
+ClientAliveInterval 30 ClientAliveCountMax 5   通过以上的设定，每 30 秒会进行 5 次应答确认，仍然没有应答的情况下才会断开连接。
+One more thing   这里非常推荐使用 tmux 或者 screen 之类的工具， 这样即使丢失连接，也可以在重新连接服务器后快速通过挂载原先的会话的方式迅速恢复工作环境。</description>
+    </item>
+    
+    <item>
+      <title>在 Jetson Nano 上安装 OpenCV</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/zh/blog/opencv/install-opencv-on-jetson-nano/</link>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/zh/blog/opencv/install-opencv-on-jetson-nano/</guid>
+      <description>生成swap文件   为防止编译途中由于内存不足等问题报错， 这里首先提前创建一个swap文件，存放路径任意。 重启后swap空间会消失， 以下编译等全部工作完成后可以手动删除这个文件。
+$ fallocate -l 4G swapfile $ chmod 600 swapfile $ mkswap swapfile $ sudo swapon swapfile $ swapon -s    生成安装脚本   安装opencv 4.0.0版本的脚本原始链接
+ 以上是安装opencv 4.0.0的版本，在这里我们希望安装较新的4.1.0版本，将上面的代码中版本号的部分稍作改动。
+#!/bin/bash # # Copyright (c) 2018, NVIDIA CORPORATION. All rights reserved. # # NVIDIA Corporation and its licensors retain all intellectual property # and proprietary rights in and to this software, related documentation # and any modifications thereto.</description>
+    </item>
+    
+    <item>
+      <title>安装 Gnutls 并从源码编译 Emacs</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/zh/blog/emacs/install-gnutls-and-compile-emacs-from-source/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/zh/blog/emacs/install-gnutls-and-compile-emacs-from-source/</guid>
+      <description>环境中缺少Gnutls的情况   若当前环境缺少 Gnutls，那么在对 Emacs1 的源代码进行编译安装前需要以下配置。
+./configure --with-gnutls=no   或者同时指定安装目录、添加忽略其他仍缺少的依赖库的选项等，例如以下配置。
+bash configure --prefix=$HOME/.local --with-gif=no --with-gnutls=no   这样可以在缺少对默认安装路径权限，或者缺少各种依赖库的情况下使配置及安装得以顺利进行。
+  潜在的问题   以上虽可以达到正常安装 Emacs 到 $HOME/.local 目录的目的， 但由于缺少了 Gnutls 组件，Emacs 中用到网络传输的时候便只能使用 http 而不能使用 https。
+ 如果只是 Emacs 初始化时需要网络连接，还可以通过将 Melpa 的链接都改为以 http 开头来解决问题， 但这为今后使用 Emacs 中需要网络连接的各种扩展带来问题。
+ 例如使用 google-translate 时，即使将 Emacs 配置文件夹中 elpa 文件夹下的 google-translate 包内的所有 *.el 文件中出现的 https 改为 http ， 在实际使用的途中仍会出现自动使用某些 https 服务的情况，从而导致翻译异常。
+ 这里有一点需要注意的是，修改 *.</description>
+    </item>
+    
+    <item>
+      <title>我的 Shell 迁移记录</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/zh/blog/shell/my-shell-migration-record/</link>
+      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/zh/blog/shell/my-shell-migration-record/</guid>
+      <description>从bash到zsh   虽然我使用zsh shell两周后就换到fish shell了（关于fish shell下面有专门介绍）， 但这并不否认zsh shell仍然是个很好的shell。 你可以通过下面的方式从任意的shell切换至zsh shell。
+  安装zsh时通过下面的指令：
+  brew install zsh (MacOS) apt install zsh (Ubuntu / Linux Mint)    如果你想要知道现在系统裡已经安装好的shell，输入下面的指令：
+  cat /etc/shells    如何将zsh作为你默认的shell呢？，输入下面的指令：
+  chsh -s /usr/local/bin/zsh    关于配置文件的读取错误
+  Shell 脚本解释出错时可以查看一下当前所使用的 sh 路径， 比如有可能是 sh 指向了 dash 导致出错。 通过下面的语句查看。
+ls -l `which sh`    脚本解释器在语法上的不同点
+  从传统的 bash 等 shell 换到 zsh 时会发现集合的第一个元素的索引是从 1 开始的， 如果希望从 0 开始，在配置文件中配置下面语句即可。</description>
+    </item>
+    
+    <item>
+      <title>使用 USB 设备安装 Linux Mint</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/zh/blog/linux/install-linux-mint-from-the-usb-device/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/zh/blog/linux/install-linux-mint-from-the-usb-device/</guid>
+      <description>  Linux Mint 的 Logo
+ *重要*：在开始下面的工作之前，首先确保U盘没有存任何东西， 或者里面没有放任何的重要数据（因为烧录会导致数据丢失）， 同时电脑上已经准备好空的分区（安装到的目标分区的数据也会被抹掉）。
+准备一个用于安装Linux Mint的USB设备   首先准备一个USB设备，可以是U盘也可以是USB的移动硬盘， 之后会在这个上面写入供安装Linux Mint的安装程序。
+  如果使用的是Windows操作系统，那么点击 这里来查看Ubuntu官方的教程以创建一个可以安装Linux的USB设备。
+  *注意*：上面的教程是教你如何製作一个用于安装Ubuntu的USB设备， 安装Linux Mint的情况下仅需要把涉及到ISO文件的地方换成Linux Mint的iso文件，其他地方完全相同。
+  其中会用到的软件叫做rufus，上面的教程裡面也有提到，点击 这里打开rufus的官方网站，你也可以点击 这里直接下载rufus。
+    Linux Mint的ISO文件   前一节提到的linux mint的iso文件需要从下面的地方获取。 点击这里打开linux mint的官方网站。 或者也可以点击这里直接下载Linux Mint 19.1版本。
+  </description>
+    </item>
+    
+    <item>
+      <title>通过 Jekyll 创建博客并发布到 Github</title>
+      <link>https://xinii.github.io/hugo-site-slim-public/zh/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xinii.github.io/hugo-site-slim-public/zh/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/</guid>
+      <description>安装 Jekyll1   Jekyll 是一个通过 Ruby 语言写的静态网站生成框架，下面是官网介绍。
+ Jekyll is a static site generator. You give it text written in your favorite markup language and it uses layouts to create a static website. You can tweak how you want the site URLs to look, what data gets displayed on the site, and more. –Jekyll2
+  安装 Jekyll 时，首先需要一个 Ruby 的包管理环境， Ruby 编程环境的常用包管理器为 gem ， 例如 Ubuntu 中执行下面的语句则会同时安装 gem 。</description>
+    </item>
+    
+  </channel>
+</rss>

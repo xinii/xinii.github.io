@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>作者列表 | xin iDEA iNNATA</title>
+    <link>https://xinii.cf/zh/authors/</link>
+      <atom:link href="https://xinii.cf/zh/authors/index.xml" rel="self" type="application/rss+xml" />
+    <description>作者列表</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-cn</language><copyright>© 2020 xin iDEA iNNATA</copyright><lastBuildDate>Sun, 01 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xinii.cf/images/logo_hu4469573970495a9d28444639a51ce6fc_83092_300x300_fit_lanczos_2.png</url>
+      <title>作者列表</title>
+      <link>https://xinii.cf/zh/authors/</link>
+    </image>
+    
+  </channel>
+</rss>

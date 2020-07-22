@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux Mint | xin iDEA iNNATA</title>
+    <link>https://xinii.cf/zh/tag/linux-mint/</link>
+      <atom:link href="https://xinii.cf/zh/tag/linux-mint/index.xml" rel="self" type="application/rss+xml" />
+    <description>Linux Mint</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-cn</language><copyright>© 2020 xin iDEA iNNATA</copyright><lastBuildDate>Tue, 23 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xinii.cf/images/logo_hu4469573970495a9d28444639a51ce6fc_83092_300x300_fit_lanczos_2.png</url>
+      <title>Linux Mint</title>
+      <link>https://xinii.cf/zh/tag/linux-mint/</link>
+    </image>
+    
+    <item>
+      <title>使用 USB 设备安装 Linux Mint</title>
+      <link>https://xinii.cf/zh/post/install-linux-mint-from-the-usb-device/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>https://xinii.cf/zh/post/install-linux-mint-from-the-usb-device/</guid>
+      <description>
+&lt;p&gt;
+&lt;h2&gt;目录&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-1&#34;&gt;准备一个用于安装 Linux Mint 的 USB 设备&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#headline-2&#34;&gt;Linux Mint的ISO文件&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;重要&lt;/strong&gt;：在开始下面的工作之前，首先确保U盘没有存任何东西，
+或者里面没有放任何的重要数据（因为烧录会导致数据丢失），
+同时电脑上已经准备好空的分区（安装到的目标分区的数据也会被抹掉）。
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+准备一个用于安装 Linux Mint 的 USB 设备
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+首先准备一个 USB 设备，可以是 U 盘也可以是 USB 的移动硬盘，
+之后会在这个上面写入供安装 Linux Mint 的安装程序。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;如果使用的是 Windows 操作系统，那么点击
+&lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0&#34;&gt;这里&lt;/a&gt;来查看 Ubuntu 官方的教程以创建一个可以安装Linux的USB设备。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    上面的教程是教你如何制作一个用于安装 Ubuntu 的 USB 设备，
+安装 Linux Mint 的情况下仅需要把涉及到镜像文件的地方换成 Linux Mint 的 ISO 文件，
+其他地方完全相同。
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;其中会用到的软件叫做 Rufus，上面的教程裡面也有提到，
+点击&lt;a href=&#34;https://rufus.akeo.ie/&#34;&gt;这里&lt;/a&gt;打开 Rufus 的官方网站，或者也可以点击&lt;a href=&#34;https://github.com/pbatard/rufus/releases/download/v3.5/rufus-3.5.exe&#34;&gt;这里&lt;/a&gt;直接下载 Rufus。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+Linux Mint的ISO文件
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+前一节提到的 Linux Mint 的 ISO 文件需要从下面的地方获取。
+点击&lt;a href=&#34;https://linuxmint.com/&#34;&gt;这里&lt;/a&gt;打开 Linux Mint 的官方网站。或者也可以点击&lt;a href=&#34;http://mirrors.evowise.com/linuxmint/stable/19.1/linuxmint-19.1-cinnamon-64bit.iso&#34;&gt;这里&lt;/a&gt;直接下载 Linux Mint 19.1 版本。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

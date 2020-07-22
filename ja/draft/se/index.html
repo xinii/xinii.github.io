@@ -326,8 +326,12 @@
 
 
   <script type="text/javascript">
- if ( window.location.host != "xinii.cf" ) {
-     window.location.replace("https://xinii.cf" + window.location.pathname);
+ if ( window.location.hostname != "xinii.cf" && window.location.hostname != "localhost") {
+     if ( /categories\/[a-z]+/.test(window.location.pathname) ) {
+         window.location.replace("https://xinii.cf" + window.location.pathname.replace('categories', 'category'));
+     } else {
+         window.location.replace("https://xinii.cf" + window.location.pathname);
+     }
  }
 </script>
 
