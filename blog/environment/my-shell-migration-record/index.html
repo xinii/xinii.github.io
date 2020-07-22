@@ -1,0 +1,876 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title>My shell migration record - xin iDEA iNNATA</title>
+<meta http-equiv="refresh" content="0; url=https://xinii.cf/en/post/my-shell-migration-record" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/hugo-site-slim-public/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/hugo-site-slim-public/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/hugo-site-slim-public/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/hugo-site-slim-public/favicon/site.webmanifest">
+  
+    <link rel="mask-icon" href="/hugo-site-slim-public/favicon/safari-pinned-tab.svg" color="#ffffff">
+    <link rel="shortcut icon" href="/hugo-site-slim-public/favicon/favicon.ico">
+    <meta name="msapplication-config" content="/hugo-site-slim-public/favicon/browserconfig.xml">
+  
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+<meta name="generator" content="Hugo 0.74.1" /><meta itemprop="name" content="My shell migration record">
+<meta itemprop="description" content="bash -&gt; zsh -&gt; fish">
+<meta itemprop="datePublished" content="2019-05-03T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-05-03T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="691">
+<meta itemprop="image" content="https://xinii.github.io/hugo-site-slim-public/img/blog/fish-logo.png">
+
+
+
+<meta itemprop="keywords" content="bash,zsh,fish-shell,tmux," /><meta property="og:title" content="My shell migration record" />
+<meta property="og:description" content="bash -&gt; zsh -&gt; fish" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xinii.github.io/hugo-site-slim-public/blog/shell/my-shell-migration-record/" />
+<meta property="og:image" content="https://xinii.github.io/hugo-site-slim-public/img/blog/fish-logo.png" />
+<meta property="article:published_time" content="2019-05-03T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-05-03T00:00:00+00:00" /><meta property="og:site_name" content="xin iDEA iNNATA" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://xinii.github.io/hugo-site-slim-public/img/blog/fish-logo.png"/>
+
+<meta name="twitter:title" content="My shell migration record"/>
+<meta name="twitter:description" content="bash -&gt; zsh -&gt; fish"/>
+<meta name="twitter:site" content="@xintxt"/>
+<link rel="stylesheet" href="/hugo-site-slim-public/css/bundle.min.e0b4f4d471560c894134ee31c2399f5aa7687672a226a2db6013c783c58d4ec7.css" integrity="sha256-4LT01HFWDIlBNO4xwjmfWqdodnKiJqLbYBPHg8WNTsc="><link rel="stylesheet" href="/hugo-site-slim-public/css/add-on.css">
+</head>
+
+  <body>
+    
+
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/hugo-site-slim-public/" class="nav">
+        
+          
+            Blog
+          
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu menu">
+      
+
+      <a href='/hugo-site-slim-public/' class="nav link"><i class='fa fa-home'></i> Home </a>
+      <a href='/hugo-site-slim-public/about/' class="nav link"><i class='far fa-id-card'></i> About </a>
+      <a href='/hugo-site-slim-public/blog/' class="nav link"><i class='far fa-newspaper'></i> Blog </a>
+      <a href='/hugo-site-slim-public/categories/' class="nav link"><i class='fas fa-sitemap'></i> Categories </a>
+      <a href='/hugo-site-slim-public/tags/' class="nav link"><i class='fas fa-tags'></i> Tags </a>
+      <a href='/hugo-site-slim-public/contact/' class="nav link"><i class='far fa-envelope'></i> Contact </a>
+
+      <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+      <a href="#search-input" class="nav search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
+    </menu>
+    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+    <a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
+    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+  <menu id="lang-menu" class="flyout-menu menu">
+  <a href="#" lang="en" class="nav link active">English (en)</a>
+  
+      <a href="https://xinii.github.io/hugo-site-slim-public/ja/blog/shell/my-shell-migration-record/" lang="ja" class="nav link">日本語 (ja)</a>
+    
+      <a href="https://xinii.github.io/hugo-site-slim-public/zh/blog/shell/my-shell-migration-record/" lang="zh" class="nav link">简体中文 (zh)</a>
+    
+  
+</menu>
+
+  
+    <menu id="share-menu" class="flyout-menu menu">
+      <h1>Share Post</h1>
+      
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=My%20shell%20migration%20record&amp;url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fblog%2fshell%2fmy-shell-migration-record%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fblog%2fshell%2fmy-shell-migration-record%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fblog%2fshell%2fmy-shell-migration-record%2f&amp;title=My%20shell%20migration%20record" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fblog%2fshell%2fmy-shell-migration-record%2f&amp;title=My%20shell%20migration%20record" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fblog%2fshell%2fmy-shell-migration-record%2f&amp;description=My%20shell%20migration%20record" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=Check%20out%20this%20post%20by Xin%20Li&amp;body=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fblog%2fshell%2fmy-shell-migration-record%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+    </menu>
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" >
+  <a href="/hugo-site-slim-public/"><img src="https://xinii.github.io/hugo-site-slim-public/img/main/logo.jpg" class="circle" width="72px" alt="xin iDEA iNNATA" /></a>
+  <header>
+    <h1>xin iDEA iNNATA</h1>
+  </header>
+  <main>
+    <p>Wellcome to xin iDEA iNNATA!</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/xinii" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/xinii" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+<li><a href="//facebook.com/xintxt" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+
+
+
+
+
+
+<li><a href="weixin://contacts/profile/xin099" target="_blank" rel="noopener" title="WeChat" class="fab fa-weixin"></a></li>
+<li><a href="//wpa.qq.com/msgrd?v=3&amp;uin=78809709&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener" title="QQ" class="fab fa-qq"></a></li>
+
+
+<li><a href="//twitter.com/xintxt" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+<li><a href="skype:xintxt?userinfo" target="_blank" rel="noopener" title="Skype" class="fab fa-skype"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:xinii@msn.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        
+<article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/hugo-site-slim-public/blog/shell/my-shell-migration-record/">My shell migration record</a></h2>
+    
+    
+      <p>bash -&gt; zsh -&gt; fish</p>
+    
+  </div>
+  <div class="meta">
+    <time class="published" datetime="2019-05-03 00:00:00 &#43;0000 UTC">
+      May 3, 2019
+    </time>
+    <span class="author">Xin Li</span>
+    
+      <p>4 minute read</p>
+    
+  </div>
+</header>
+
+  <section id="socnet-share">
+    
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=My%20shell%20migration%20record&amp;url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fblog%2fshell%2fmy-shell-migration-record%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fblog%2fshell%2fmy-shell-migration-record%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fblog%2fshell%2fmy-shell-migration-record%2f&amp;title=My%20shell%20migration%20record" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fblog%2fshell%2fmy-shell-migration-record%2f&amp;title=My%20shell%20migration%20record" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fblog%2fshell%2fmy-shell-migration-record%2f&amp;description=My%20shell%20migration%20record" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=Check%20out%20this%20post%20by Xin%20Li&amp;body=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fblog%2fshell%2fmy-shell-migration-record%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+  </section>
+  
+  <a href="/hugo-site-slim-public/blog/shell/my-shell-migration-record/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/fish-logo.png" alt="">
+    
+  </a>
+
+
+  <div class="content">
+    <h2>Table of contents</h2>
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#headline-1">From bash to zsh</a>
+<ul>
+<li><a href="#headline-2">Configure zsh</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-3">From zsh to fish-shell</a>
+<ul>
+<li><a href="#headline-4">fish shell installation and default shell switch</a>
+</li>
+<li><a href="#headline-5">Configuration of Fish shell</a>
+</li>
+<li><a href="#headline-6">Common problems when using python under the fish shell</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+    <hr>
+    
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+From bash to zsh
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<p>
+Although I switched to the fish shell two weeks after using the zsh shell
+(the fish shell has a special introduction below),
+this does not deny that the zsh shell is still a good shell.
+You can switch from any shell to zsh shell in the following way.</p>
+<ul>
+<li>
+<p>Use the following instructions when installing zsh,</p>
+</li>
+</ul>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  brew install zsh <span style="color:#f92672">(</span>MacOS<span style="color:#f92672">)</span>
+  apt install zsh <span style="color:#f92672">(</span>Ubuntu / Linux Mint<span style="color:#f92672">)</span></code></pre></div>
+</div>
+<ul>
+<li>
+<p>If you want to know the shell currently installed in the system, enter the following command,</p>
+</li>
+</ul>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  cat /etc/shells</code></pre></div>
+</div>
+<ul>
+<li>
+<p>How to use zsh as your default shell? Enter the following command,</p>
+</li>
+</ul>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  chsh -s /usr/local/bin/zsh</code></pre></div>
+</div>
+<ul>
+<li>
+<p>Error reading about the configuration file</p>
+</li>
+</ul>
+<p>When the shell script explains the error,
+you can check the currently used <code class="verbatim">sh</code> path.
+For example, it may be that <code class="verbatim">sh</code> points to <code class="verbatim">dash</code>, which causes an error.
+View through the following statement.</p>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  ls -l <span style="color:#e6db74">`</span>which sh<span style="color:#e6db74">`</span></code></pre></div>
+</div>
+<ul>
+<li>
+<p>Script interpreter differences in syntax</p>
+</li>
+</ul>
+<p>When switching from traditional bash and other shells to zsh,
+you will find that the index of the first element of the collection starts from 1.
+If you want to start from 0, configure the following statement in the configuration file.</p>
+<ul>
+<li>
+<p>Fix array index for zsh:</p>
+</li>
+</ul>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span>$ZSH_NAME<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;zsh&#34;</span> <span style="color:#f92672">]</span>;<span style="color:#66d9ef">then</span>
+      setopt localoptions ksharrays
+  <span style="color:#66d9ef">fi</span></code></pre></div>
+</div>
+<div id="outline-container-headline-2" class="outline-3">
+<h3 id="headline-2">
+Configure zsh
+</h3>
+<div id="outline-text-headline-2" class="outline-text-3">
+<p>
+Similar to the bash shell&#39;s <code class="verbatim">.bashrc</code>,
+the configuration of <code class="verbatim">zsh</code> also requires a configuration file.
+This file is the <code class="verbatim">.zshrc</code> file in the user directory.
+<a href="https://github.com/xinii/xinconfig/blob/master/profile/core/zsh.sh">Click here</a> to open the configuration file I uploaded to Github to download and use.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-2">
+<h2 id="headline-3">
+From zsh to fish-shell
+</h2>
+<div id="outline-text-headline-3" class="outline-text-2">
+<p>
+After using the zsh shell,
+I switched to the fish shell in about two weeks.
+This is not because zsh is not good, but the natural completion and ease of use of fish attracted me.
+After moving to the fish environment, the shell toss is a conclusion. The following records of the process.</p>
+<div id="outline-container-headline-4" class="outline-3">
+<h3 id="headline-4">
+fish shell installation and default shell switch
+</h3>
+<div id="outline-text-headline-4" class="outline-text-3">
+<p>
+This was mentioned above.
+Now we will introduce the instructions that different operating systems need to execute.</p>
+<ul>
+<li>
+<p>MacOS:</p>
+</li>
+</ul>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  brew install fish</code></pre></div>
+</div>
+<ul>
+<li>
+<p>Ubuntu/Linux Mint:</p>
+</li>
+</ul>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  apt install fish</code></pre></div>
+</div>
+<ul>
+<li>
+<p>OpenSUSE:</p>
+</li>
+</ul>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  sudo zypper install fish</code></pre></div>
+</div>
+<p>
+If it is an OpenSUSE environment running under Windows,
+you may need <code class="verbatim">root</code> permission, then add <code class="verbatim">sudo</code> in front of the command.
+Use the following statement to view the shell used by the current system.</p>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  cat /etc/shells</code></pre></div>
+</div>
+<p>
+If your fish shell is displayed at <code class="verbatim">/usr/bin/fish</code>,
+Then execute the following statement to switch it to the default shell
+(add <code class="verbatim">sudo</code> if you have insufficient permissions).</p>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  chsh -s /usr/bin/fish</code></pre></div>
+</div>
+<p>
+Now reopen a terminal session and you will find that the default shell has been switched to fish.
+If it reports a lot of errors about hostname immediately after opening the fish shell,
+that is to say, the current environment lacks a package called hostname,
+then use the package manager of the distribution you are using to install <code class="verbatim">hostname</code>, for example, under OpenSUSE,</p>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  sudo zypper install hostname</code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-3">
+<h3 id="headline-5">
+Configuration of Fish shell
+</h3>
+<div id="outline-text-headline-5" class="outline-text-3">
+<p>
+The configuration I wrote was uploaded on Github, <a href="https://github.com/xinii/xinconfig/tree/master/profile/fish">click here</a> to view my configuration.</p>
+</div>
+</div>
+<div id="outline-container-headline-6" class="outline-3">
+<h3 id="headline-6">
+Common problems when using python under the fish shell
+</h3>
+<div id="outline-text-headline-6" class="outline-text-3">
+<p>
+There are two issues that I need to pay attention to at present,</p>
+<ul>
+<li>
+<p>About tmux</p>
+</li>
+</ul>
+<p>When tmux has a session in the background,
+even if the update <code class="verbatim">PYTHONPATH</code> environment variable will not take effect,
+then all processes of tmux need to be closed before the update will take effect.
+In addition to fish, other shell environments should also be encountered.
+I first appeared in fish and kept it as a record.</p>
+<ul>
+<li>
+<p>About <code class="verbatim">PYTHONPATH</code></p>
+</li>
+</ul>
+<p>The way to define environment variables in fish shell is <code class="verbatim">set &lt;variable_name&gt; &lt;parameter_1&gt; &lt;parameter_2&gt;</code>
+This method has great advantages and is very convenient, but for <code class="verbatim">PYTHONPATH</code>,
+then <code class="verbatim">set PYTHONPATH &lt;parameter_1&gt;:&lt;parameter_2&gt;</code> is more versatile.
+The reason is that after testing, both methods can be used normally under MacOS, but it is running on Jetson
+When testing under Ubuntu on Nano, only the second method is available.
+The specific reason is not yet clear, there may be different reasons for the operating system,
+It may also be caused by different python versions
+(For example, the version number is the same, but the different processor architectures cause differences in compilation methods and cause this problem).</p>
+</div>
+</div>
+</div>
+</div>
+
+  </div>
+  <hr>
+  <footer>
+    <ul class="stats">
+  <li class="categories">
+    <ul>
+    
+      
+        
+          <li><a class="article-terms-link" href="/hugo-site-slim-public/categories/shell/">shell</a></li>
+        
+      
+    
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+    
+      
+        
+          <li><a class="article-terms-link" href="/hugo-site-slim-public/tags/bash/">bash</a></li>
+        
+          <li><a class="article-terms-link" href="/hugo-site-slim-public/tags/zsh/">zsh</a></li>
+        
+          <li><a class="article-terms-link" href="/hugo-site-slim-public/tags/fish-shell/">fish-shell</a></li>
+        
+          <li><a class="article-terms-link" href="/hugo-site-slim-public/tags/tmux/">tmux</a></li>
+        
+      
+    
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+</article>
+
+  <article class="post">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "xinii" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </article>
+
+
+
+
+<div class="pagination">
+  
+    <a href="/hugo-site-slim-public/blog/linux/install-linux-mint-from-the-usb-device/" class="button"><div class="previous">Prev post</div></a>
+  
+  
+    <a href="/hugo-site-slim-public/blog/emacs/install-gnutls-and-compile-emacs-from-source/" class="button"><div class="next">Next post</div></a>
+  
+</div>
+
+
+      </main>
+      <section id="site-sidebar">
+  
+  <section id="recent-posts">
+    <header>
+      <h1>Recent posts</h1>
+    </header>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/blog/windows/several-windows-registry-configurations/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/registry-editor-icon.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/blog/windows/several-windows-registry-configurations/">Some Windows registry settings that can help you work more efficiently</a></h2>
+        <time class="published" datetime="">June 4, 2020</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/blog/windows/some-installations-for-windows-10/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/windows-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/blog/windows/some-installations-for-windows-10/">Some works after Windows 10 clean installation</a></h2>
+        <time class="published" datetime="">June 4, 2020</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/blog/linux/add-apt-repository-for-fish-and-emacs/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/fish-emacs-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/blog/linux/add-apt-repository-for-fish-and-emacs/">Add apt repository for Fish and Emacs</a></h2>
+        <time class="published" datetime="">June 3, 2020</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/blog/ssh/several-ssh-configurations/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/ssh-image.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/blog/ssh/several-ssh-configurations/">Several SSH configurations</a></h2>
+        <time class="published" datetime="">June 3, 2020</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/blog/opencv/install-opencv-on-jetson-nano/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/opencv-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/blog/opencv/install-opencv-on-jetson-nano/">How to install OpenCV on Jetson Nano?</a></h2>
+        <time class="published" datetime="">July 12, 2019</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/blog/emacs/install-gnutls-and-compile-emacs-from-source/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/emacs-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/blog/emacs/install-gnutls-and-compile-emacs-from-source/">Install Gnutls and compile Emacs from source</a></h2>
+        <time class="published" datetime="">May 4, 2019</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/blog/shell/my-shell-migration-record/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/fish-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/blog/shell/my-shell-migration-record/">My shell migration record</a></h2>
+        <time class="published" datetime="">May 3, 2019</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/blog/linux/install-linux-mint-from-the-usb-device/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/linux-mint-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/blog/linux/install-linux-mint-from-the-usb-device/">Install Linux Mint from USB device</a></h2>
+        <time class="published" datetime="">April 23, 2019</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/jekyll-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/">Create a blog via Jekyll and post to Github</a></h2>
+        <time class="published" datetime="">April 2, 2019</time>
+      </header>
+    </article>
+    
+    
+  </section>
+  
+
+  
+  
+  <section id="categories">
+    <header>
+      <h1><a href="/hugo-site-slim-public/categories">Categories</a></h1>
+    </header>
+    <ul>
+      
+      
+      
+      
+      <li>
+        
+        <a href="/hugo-site-slim-public/categories/linux/">linux<span class="count">2</span></a>
+        
+        
+      <li>
+        
+        <a href="/hugo-site-slim-public/categories/windows/">windows<span class="count">2</span></a>
+        
+        
+      <li>
+        
+        <a href="/hugo-site-slim-public/categories/cms/">cms<span class="count">1</span></a>
+        
+        
+      <li>
+        
+        <a href="/hugo-site-slim-public/categories/emacs/">emacs<span class="count">1</span></a>
+        
+        
+      <li>
+        
+        <a href="/hugo-site-slim-public/categories/opencv/">opencv<span class="count">1</span></a>
+        
+        
+      <li>
+        
+        <a href="/hugo-site-slim-public/categories/shell/">shell<span class="count">1</span></a>
+        
+        
+      <li>
+        
+        <a href="/hugo-site-slim-public/categories/ssh/">ssh<span class="count">1</span></a>
+        
+        
+      </li>
+    </ul>
+  </section>
+  
+  
+
+  
+  <section id="mini-bio">
+    <header>
+      <h1>About</h1>
+    </header>
+    <p>                          I believe everyone has their innate ideas and potential,
+                          be sure to accept your inner thoughts and create your ideas,
+                          here is xin iDEA iNNATA.
+                          <br>
+                          Click the button below to get more information about me.
+                          </p>
+    <footer>
+      <a href="/hugo-site-slim-public/about" class="button">Learn More</a>
+    </footer>
+  </section>
+  
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/xinii" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/xinii" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+<li><a href="//facebook.com/xintxt" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+
+
+
+
+
+
+<li><a href="weixin://contacts/profile/xin099" target="_blank" rel="noopener" title="WeChat" class="fab fa-weixin"></a></li>
+<li><a href="//wpa.qq.com/msgrd?v=3&amp;uin=78809709&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener" title="QQ" class="fab fa-qq"></a></li>
+
+
+<li><a href="//twitter.com/xintxt" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+<li><a href="skype:xintxt?userinfo" target="_blank" rel="noopener" title="Skype" class="fab fa-skype"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:xinii@msn.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+  
+  <p class="copyright">
+    
+      &copy; 2020
+      
+        xin iDEA iNNATA
+      
+    . <br>
+    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.74.1' target='_blank' rel='noopener'>Hugo</a>
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      <script src="/hugo-site-slim-public/js/highlight.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script><script src="/hugo-site-slim-public/js/bundle.min.f2442aa1bcc6f779868bf270301b3f5bb97c530c6761ba5cca76bb234ac628ed.js" integrity="sha256-8kQqobzG93mGi/JwMBs/W7l8UwxnYbpcyna7I0rGKO0="></script>
+    <script src="/hugo-site-slim-public/js/add-on.js"></script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-169244465-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script data-ad-client="ca-pub-9872583441136696" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    </div>
+  </body>
+</html>
