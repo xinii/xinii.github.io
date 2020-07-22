@@ -1,0 +1,867 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+  <meta charset="utf-8">
+<title>我的 Shell 迁移记录 - xin iDEA iNNATA</title>
+<meta http-equiv="refresh" content="0; url=https://xinii.cf/zh/post/my-shell-migration-record" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/hugo-site-slim-public/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/hugo-site-slim-public/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/hugo-site-slim-public/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/hugo-site-slim-public/favicon/site.webmanifest">
+  
+    <link rel="mask-icon" href="/hugo-site-slim-public/favicon/safari-pinned-tab.svg" color="#ffffff">
+    <link rel="shortcut icon" href="/hugo-site-slim-public/favicon/favicon.ico">
+    <meta name="msapplication-config" content="/hugo-site-slim-public/favicon/browserconfig.xml">
+  
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+<meta name="generator" content="Hugo 0.74.1" /><meta itemprop="name" content="我的 Shell 迁移记录">
+<meta itemprop="description" content="bash -&gt; zsh -&gt; fish">
+<meta itemprop="datePublished" content="2019-05-03T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-05-03T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="207">
+<meta itemprop="image" content="https://xinii.github.io/hugo-site-slim-public/img/blog/fish-logo.png">
+
+
+
+<meta itemprop="keywords" content="bash,zsh,fish-shell,tmux," /><meta property="og:title" content="我的 Shell 迁移记录" />
+<meta property="og:description" content="bash -&gt; zsh -&gt; fish" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xinii.github.io/hugo-site-slim-public/zh/blog/shell/my-shell-migration-record/" />
+<meta property="og:image" content="https://xinii.github.io/hugo-site-slim-public/img/blog/fish-logo.png" />
+<meta property="article:published_time" content="2019-05-03T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-05-03T00:00:00+00:00" /><meta property="og:site_name" content="xin iDEA iNNATA" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://xinii.github.io/hugo-site-slim-public/img/blog/fish-logo.png"/>
+
+<meta name="twitter:title" content="我的 Shell 迁移记录"/>
+<meta name="twitter:description" content="bash -&gt; zsh -&gt; fish"/>
+<meta name="twitter:site" content="@xintxt"/>
+<link rel="stylesheet" href="/hugo-site-slim-public/css/bundle.min.e0b4f4d471560c894134ee31c2399f5aa7687672a226a2db6013c783c58d4ec7.css" integrity="sha256-4LT01HFWDIlBNO4xwjmfWqdodnKiJqLbYBPHg8WNTsc="><link rel="stylesheet" href="/hugo-site-slim-public/css/add-on.css">
+</head>
+
+  <body>
+    
+
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/hugo-site-slim-public/zh/" class="nav">
+        
+          
+            博客
+          
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu menu">
+      
+
+      <a href='/hugo-site-slim-public/zh/' class="nav link"><i class='fa fa-home'></i> 主页 </a>
+      <a href='/hugo-site-slim-public/zh/about/' class="nav link"><i class='far fa-id-card'></i> 关于 </a>
+      <a href='/hugo-site-slim-public/zh/blog/' class="nav link"><i class='far fa-newspaper'></i> 博客 </a>
+      <a href='/hugo-site-slim-public/zh/categories/' class="nav link"><i class='fas fa-sitemap'></i> 分类 </a>
+      <a href='/hugo-site-slim-public/zh/tags/' class="nav link"><i class='fas fa-tags'></i> 标签 </a>
+      <a href='/hugo-site-slim-public/zh/contact/' class="nav link"><i class='far fa-envelope'></i> 联络 </a>
+
+      <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt">&nbsp;</i>分享</a>
+      <a href="#search-input" class="nav search-toggle"><i class="fas fa-search">&nbsp;</i>搜索</a>
+    </menu>
+    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+    <a href="#lang-menu" class="nav lang-toggle" lang="zh">zh</a>
+    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+  <menu id="lang-menu" class="flyout-menu menu">
+  <a href="#" lang="zh" class="nav link active">简体中文 (zh)</a>
+  
+      <a href="https://xinii.github.io/hugo-site-slim-public/blog/shell/my-shell-migration-record/" lang="en" class="nav link">English (en)</a>
+    
+      <a href="https://xinii.github.io/hugo-site-slim-public/ja/blog/shell/my-shell-migration-record/" lang="ja" class="nav link">日本語 (ja)</a>
+    
+  
+</menu>
+
+  
+    <menu id="share-menu" class="flyout-menu menu">
+      <h1>Share Post</h1>
+      
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=%e6%88%91%e7%9a%84%20Shell%20%e8%bf%81%e7%a7%bb%e8%ae%b0%e5%bd%95&amp;url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fzh%2fblog%2fshell%2fmy-shell-migration-record%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fzh%2fblog%2fshell%2fmy-shell-migration-record%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fzh%2fblog%2fshell%2fmy-shell-migration-record%2f&amp;title=%e6%88%91%e7%9a%84%20Shell%20%e8%bf%81%e7%a7%bb%e8%ae%b0%e5%bd%95" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fzh%2fblog%2fshell%2fmy-shell-migration-record%2f&amp;title=%e6%88%91%e7%9a%84%20Shell%20%e8%bf%81%e7%a7%bb%e8%ae%b0%e5%bd%95" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fzh%2fblog%2fshell%2fmy-shell-migration-record%2f&amp;description=%e6%88%91%e7%9a%84%20Shell%20%e8%bf%81%e7%a7%bb%e8%ae%b0%e5%bd%95" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=%e6%9f%a5%e7%9c%8b%e6%ad%a4%e5%b8%96%e5%ad%90%e7%9a%84%e4%bd%9c%e8%80%85 Xin%20Li&amp;body=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fzh%2fblog%2fshell%2fmy-shell-migration-record%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+    </menu>
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" >
+  <a href="/hugo-site-slim-public/zh/"><img src="https://xinii.github.io/hugo-site-slim-public/img/main/logo.jpg" class="circle" width="72px" alt="xin iDEA iNNATA" /></a>
+  <header>
+    <h1>xin iDEA iNNATA</h1>
+  </header>
+  <main>
+    <p>Wellcome to xin iDEA iNNATA!</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/xinii" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/xinii" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+<li><a href="//facebook.com/xintxt" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+
+
+
+
+
+
+<li><a href="weixin://contacts/profile/xin099" target="_blank" rel="noopener" title="WeChat" class="fab fa-weixin"></a></li>
+<li><a href="//wpa.qq.com/msgrd?v=3&amp;uin=78809709&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener" title="QQ" class="fab fa-qq"></a></li>
+
+
+<li><a href="//twitter.com/xintxt" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+<li><a href="skype:xintxt?userinfo" target="_blank" rel="noopener" title="Skype" class="fab fa-skype"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:xinii@msn.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        
+<article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/hugo-site-slim-public/zh/blog/shell/my-shell-migration-record/">我的 Shell 迁移记录</a></h2>
+    
+    
+      <p>bash -&gt; zsh -&gt; fish</p>
+    
+  </div>
+  <div class="meta">
+    <time class="published" datetime="2019-05-03 00:00:00 &#43;0000 UTC">
+      May 3, 2019
+    </time>
+    <span class="author">Xin Li</span>
+    
+      <p>1 分钟</p>
+    
+  </div>
+</header>
+
+  <section id="socnet-share">
+    
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=%e6%88%91%e7%9a%84%20Shell%20%e8%bf%81%e7%a7%bb%e8%ae%b0%e5%bd%95&amp;url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fzh%2fblog%2fshell%2fmy-shell-migration-record%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fzh%2fblog%2fshell%2fmy-shell-migration-record%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fzh%2fblog%2fshell%2fmy-shell-migration-record%2f&amp;title=%e6%88%91%e7%9a%84%20Shell%20%e8%bf%81%e7%a7%bb%e8%ae%b0%e5%bd%95" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fzh%2fblog%2fshell%2fmy-shell-migration-record%2f&amp;title=%e6%88%91%e7%9a%84%20Shell%20%e8%bf%81%e7%a7%bb%e8%ae%b0%e5%bd%95" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fzh%2fblog%2fshell%2fmy-shell-migration-record%2f&amp;description=%e6%88%91%e7%9a%84%20Shell%20%e8%bf%81%e7%a7%bb%e8%ae%b0%e5%bd%95" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=%e6%9f%a5%e7%9c%8b%e6%ad%a4%e5%b8%96%e5%ad%90%e7%9a%84%e4%bd%9c%e8%80%85 Xin%20Li&amp;body=https%3a%2f%2fxinii.github.io%2fhugo-site-slim-public%2fzh%2fblog%2fshell%2fmy-shell-migration-record%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+  </section>
+  
+  <a href="/hugo-site-slim-public/zh/blog/shell/my-shell-migration-record/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/fish-logo.png" alt="">
+    
+  </a>
+
+
+  <div class="content">
+    <h2>目录</h2>
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#headline-1">从bash到zsh</a>
+<ul>
+<li><a href="#headline-2">配置 zsh shell</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-3">从zsh到fish</a>
+<ul>
+<li><a href="#headline-4">fish shell的安装以及默认shell的切换</a>
+</li>
+<li><a href="#headline-5">Fish shell 的配置</a>
+</li>
+<li><a href="#headline-6">在fish shell下使用python时的常见问题</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+    <hr>
+    
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+从bash到zsh
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<p>
+虽然我使用zsh shell两周后就换到fish shell了（关于fish
+shell下面有专门介绍）， 但这并不否认zsh shell仍然是个很好的shell。
+你可以通过下面的方式从任意的shell切换至zsh shell。</p>
+<ul>
+<li>
+<p>安装zsh时通过下面的指令：</p>
+</li>
+</ul>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  brew install zsh <span style="color:#f92672">(</span>MacOS<span style="color:#f92672">)</span>
+  apt install zsh <span style="color:#f92672">(</span>Ubuntu / Linux Mint<span style="color:#f92672">)</span></code></pre></div>
+</div>
+<ul>
+<li>
+<p>如果你想要知道现在系统裡已经安装好的shell，输入下面的指令：</p>
+</li>
+</ul>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  cat /etc/shells</code></pre></div>
+</div>
+<ul>
+<li>
+<p>如何将zsh作为你默认的shell呢？，输入下面的指令：</p>
+</li>
+</ul>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  chsh -s /usr/local/bin/zsh</code></pre></div>
+</div>
+<ul>
+<li>
+<p>关于配置文件的读取错误</p>
+</li>
+</ul>
+<p>Shell 脚本解释出错时可以查看一下当前所使用的 <code class="verbatim">sh</code> 路径，
+比如有可能是 <code class="verbatim">sh</code> 指向了 <code class="verbatim">dash</code> 导致出错。 通过下面的语句查看。</p>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  ls -l <span style="color:#e6db74">`</span>which sh<span style="color:#e6db74">`</span></code></pre></div>
+</div>
+<ul>
+<li>
+<p>脚本解释器在语法上的不同点</p>
+</li>
+</ul>
+<p>从传统的 bash 等 shell 换到 zsh 时会发现集合的第一个元素的索引是从 <code>1</code> 开始的，
+如果希望从 <code>0</code> 开始，在配置文件中配置下面语句即可。</p>
+<ul>
+<li>
+<p>Fix array index for zsh:</p>
+</li>
+</ul>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span>$ZSH_NAME<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;zsh&#34;</span> <span style="color:#f92672">]</span>;<span style="color:#66d9ef">then</span>
+      setopt localoptions ksharrays
+  <span style="color:#66d9ef">fi</span></code></pre></div>
+</div>
+<div id="outline-container-headline-2" class="outline-3">
+<h3 id="headline-2">
+配置 zsh shell
+</h3>
+<div id="outline-text-headline-2" class="outline-text-3">
+<p>
+与 bash 的 <code class="verbatim">.bashrc</code> 类似， <code class="verbatim">zsh</code> 的配置也需要一个配置文件，
+这个文件是在用户目录下的 <code class="verbatim">.zshrc</code> 文件，
+如果你不想自己写配置，点击<a href="https://github.com/xinii/xinconfig/blob/master/profile/core/zsh.sh">这里</a>打开我上传到 Github 的配置文件下载使用。</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-2">
+<h2 id="headline-3">
+从zsh到fish
+</h2>
+<div id="outline-text-headline-3" class="outline-text-2">
+<p>
+使用zsh shell之后大概两週我就换到fish shell了，
+这不是因为zsh不好，而是fish天然的完成度和易用性吸引了我，
+转移到fish环境后，有关shell折腾算是告一段落，以下对该过程纪录。</p>
+<div id="outline-container-headline-4" class="outline-3">
+<h3 id="headline-4">
+fish shell的安装以及默认shell的切换
+</h3>
+<div id="outline-text-headline-4" class="outline-text-3">
+<p>
+这个上面提到过，这里具体针对不同的操作系统所需要执行的指令进行介绍。</p>
+<ul>
+<li>
+<p>MacOS:</p>
+</li>
+</ul>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  brew install fish</code></pre></div>
+</div>
+<ul>
+<li>
+<p>Ubuntu/Linux Mint:</p>
+</li>
+</ul>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  apt install fish</code></pre></div>
+</div>
+<ul>
+<li>
+<p>OpenSUSE:</p>
+</li>
+</ul>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  sudo zypper install fish</code></pre></div>
+</div>
+<p>
+如果是运行在 Windows 下的 OpenSUSE 环境，
+则可能需要 <code class="verbatim">root</code> 权限，这时在命令前面加上 <code class="verbatim">sudo</code> 。
+通过下面的语句查看当前系统所使用的 Shell。</p>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  cat /etc/shells</code></pre></div>
+</div>
+<p>
+如果显示你的fish shell在 <code class="verbatim">/usr/bin/fish</code> ，
+那么执行下面的语句切换其为默认shell（权限不足则补充 <code class="verbatim">sudo</code> ）：</p>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  chsh -s /usr/bin/fish</code></pre></div>
+</div>
+<p>
+现在重新打开一个终端会话会发现默认 Shell 已经切换到 Fish shell 了。
+如果打开 Fish shell 后马上报很多关于 hostname 的错误，
+说明当前环境缺少一个叫做 hostname 的包，
+那么使用当前 Linux 发行版的包管理器安装 <code class="verbatim">hostname</code> ，
+例如在 OpenSUSE 下使用：</p>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  sudo zypper install hostname</code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-3">
+<h3 id="headline-5">
+Fish shell 的配置
+</h3>
+<div id="outline-text-headline-5" class="outline-text-3">
+<p>
+我写好的配置上传在了Github，点击<a href="https://github.com/xinii/xinconfig/tree/master/profile/fish">这里</a>查看我的配置。</p>
+</div>
+</div>
+<div id="outline-container-headline-6" class="outline-3">
+<h3 id="headline-6">
+在fish shell下使用python时的常见问题
+</h3>
+<div id="outline-text-headline-6" class="outline-text-3">
+<p>
+目前我遇到的比较需要注意的问题有下面两点：</p>
+<ul>
+<li>
+<p>关于 tmux</p>
+</li>
+</ul>
+<p>tmux在后台存在session的时候， 即使更新=PYTHONPATH=环境变量也不会生效，
+此时需要关闭tmux的所有进程，更新才会生效。
+除fish以外其他shell环境应该也会遇到， 我是在fish首次出现，留作纪录。</p>
+<ul>
+<li>
+<p>关于 <code>PYTHONPATH</code></p>
+</li>
+</ul>
+<p>Fish shell 中定义环境变量的方式为 <code class="verbatim">set &lt;variable_name&gt; &lt;parameter_1&gt; &lt;parameter_2&gt;</code>
+这种方式有很大的优越性而且非常方便， 然而对于 <code class="verbatim">PYTHONPATH</code> ，
+则 <code class="verbatim">set PYTHONPATH &lt;parameter_1&gt;:&lt;parameter_2&gt;</code> 的方式更具有通用性。
+原因为，经过测试在 MacOS 下两种方式均可正常使用， 
+但在运行在 Jetson Nano 上的 Ubuntu 下测试时，只有第二种方式可用。
+具体原因尚未明确，有可能时操作系统不同的原因，
+也可能是 Python 版本不同造成的
+（比如版本号相同，但处理器架构不同造成了编译方式的差异导致该问题）。</p>
+</div>
+</div>
+</div>
+</div>
+
+  </div>
+  <hr>
+  <footer>
+    <ul class="stats">
+  <li class="categories">
+    <ul>
+    
+      
+        
+          <li><a class="article-terms-link" href="/hugo-site-slim-public/zh/categories/shell/">shell</a></li>
+        
+      
+    
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+    
+      
+        
+          <li><a class="article-terms-link" href="/hugo-site-slim-public/zh/tags/bash/">bash</a></li>
+        
+          <li><a class="article-terms-link" href="/hugo-site-slim-public/zh/tags/zsh/">zsh</a></li>
+        
+          <li><a class="article-terms-link" href="/hugo-site-slim-public/zh/tags/fish-shell/">fish-shell</a></li>
+        
+          <li><a class="article-terms-link" href="/hugo-site-slim-public/zh/tags/tmux/">tmux</a></li>
+        
+      
+    
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+</article>
+
+  <article class="post">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "xinii" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </article>
+
+
+
+
+<div class="pagination">
+  
+    <a href="/hugo-site-slim-public/zh/blog/linux/install-linux-mint-from-the-usb-device/" class="button"><div class="previous">前一篇</div></a>
+  
+  
+    <a href="/hugo-site-slim-public/zh/blog/emacs/install-gnutls-and-compile-emacs-from-source/" class="button"><div class="next">下一篇</div></a>
+  
+</div>
+
+
+      </main>
+      <section id="site-sidebar">
+  
+  <section id="recent-posts">
+    <header>
+      <h1>最新文章</h1>
+    </header>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/zh/blog/windows/several-windows-registry-configurations/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/registry-editor-icon.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/zh/blog/windows/several-windows-registry-configurations/">一些可帮助你更有效地工作的 Windows 注册表设置</a></h2>
+        <time class="published" datetime="">June 4, 2020</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/zh/blog/windows/some-installations-for-windows-10/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/windows-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/zh/blog/windows/some-installations-for-windows-10/">重装 Windows 10 后的一些工作</a></h2>
+        <time class="published" datetime="">June 4, 2020</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/zh/blog/linux/add-apt-repository-for-fish-and-emacs/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/fish-emacs-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/zh/blog/linux/add-apt-repository-for-fish-and-emacs/">为 Fish 和 Emacs 添加 apt 仓库</a></h2>
+        <time class="published" datetime="">June 3, 2020</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/zh/blog/ssh/several-ssh-configurations/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/ssh-image.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/zh/blog/ssh/several-ssh-configurations/">几个有关 SSH 的配置</a></h2>
+        <time class="published" datetime="">June 3, 2020</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/zh/blog/opencv/install-opencv-on-jetson-nano/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/opencv-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/zh/blog/opencv/install-opencv-on-jetson-nano/">在 Jetson Nano 上安装 OpenCV</a></h2>
+        <time class="published" datetime="">July 12, 2019</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/zh/blog/emacs/install-gnutls-and-compile-emacs-from-source/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/emacs-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/zh/blog/emacs/install-gnutls-and-compile-emacs-from-source/">安装 Gnutls 并从源码编译 Emacs</a></h2>
+        <time class="published" datetime="">May 4, 2019</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/zh/blog/shell/my-shell-migration-record/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/fish-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/zh/blog/shell/my-shell-migration-record/">我的 Shell 迁移记录</a></h2>
+        <time class="published" datetime="">May 3, 2019</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/zh/blog/linux/install-linux-mint-from-the-usb-device/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/linux-mint-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/zh/blog/linux/install-linux-mint-from-the-usb-device/">使用 USB 设备安装 Linux Mint</a></h2>
+        <time class="published" datetime="">April 23, 2019</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <header>
+        <section>
+          
+  <a href="/hugo-site-slim-public/zh/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/" class="image featured">
+    
+      <img src="https://xinii.github.io/hugo-site-slim-public/img/blog/jekyll-logo.png" alt="">
+    
+  </a>
+
+
+        </section>
+        <h2><a href="/hugo-site-slim-public/zh/blog/cms/create-a-blog-by-jekyll-and-publish-to-github/">通过 Jekyll 创建博客并发布到 Github</a></h2>
+        <time class="published" datetime="">April 2, 2019</time>
+      </header>
+    </article>
+    
+    
+  </section>
+  
+
+  
+  
+  <section id="categories">
+    <header>
+      <h1><a href="/hugo-site-slim-public/zh/categories">分类</a></h1>
+    </header>
+    <ul>
+      
+      
+      
+      
+      <li>
+        
+        <a href="/hugo-site-slim-public/zh/categories/linux/">linux<span class="count">2</span></a>
+        
+        
+      <li>
+        
+        <a href="/hugo-site-slim-public/zh/categories/windows/">windows<span class="count">2</span></a>
+        
+        
+      <li>
+        
+        <a href="/hugo-site-slim-public/zh/categories/cms/">cms<span class="count">1</span></a>
+        
+        
+      <li>
+        
+        <a href="/hugo-site-slim-public/zh/categories/emacs/">emacs<span class="count">1</span></a>
+        
+        
+      <li>
+        
+        <a href="/hugo-site-slim-public/zh/categories/opencv/">opencv<span class="count">1</span></a>
+        
+        
+      <li>
+        
+        <a href="/hugo-site-slim-public/zh/categories/shell/">shell<span class="count">1</span></a>
+        
+        
+      <li>
+        
+        <a href="/hugo-site-slim-public/zh/categories/ssh/">ssh<span class="count">1</span></a>
+        
+        
+      </li>
+    </ul>
+  </section>
+  
+  
+
+  
+  <section id="mini-bio">
+    <header>
+      <h1>关于</h1>
+    </header>
+    <p>                          I believe everyone has their innate ideas and potential,
+                          be sure to accept your inner thoughts and create your ideas,
+                          here is xin iDEA iNNATA.
+                          <br>
+                          Click the button below to get more information about me.
+                          </p>
+    <footer>
+      <a href="/hugo-site-slim-public/zh/about" class="button">了解更多</a>
+    </footer>
+  </section>
+  
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/xinii" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/xinii" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+<li><a href="//facebook.com/xintxt" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+
+
+
+
+
+
+<li><a href="weixin://contacts/profile/xin099" target="_blank" rel="noopener" title="WeChat" class="fab fa-weixin"></a></li>
+<li><a href="//wpa.qq.com/msgrd?v=3&amp;uin=78809709&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener" title="QQ" class="fab fa-qq"></a></li>
+
+
+<li><a href="//twitter.com/xintxt" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+<li><a href="skype:xintxt?userinfo" target="_blank" rel="noopener" title="Skype" class="fab fa-skype"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:xinii@msn.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+  
+  <p class="copyright">
+    
+      &copy; 2020
+      
+        xin iDEA iNNATA
+      
+    . <br>
+    主题: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.74.1'>Hugo</a> 驱动
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      <script src="/hugo-site-slim-public/js/highlight.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script><script src="/hugo-site-slim-public/js/bundle.min.f2442aa1bcc6f779868bf270301b3f5bb97c530c6761ba5cca76bb234ac628ed.js" integrity="sha256-8kQqobzG93mGi/JwMBs/W7l8UwxnYbpcyna7I0rGKO0="></script>
+    <script src="/hugo-site-slim-public/js/add-on.js"></script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-169244465-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script data-ad-client="ca-pub-9872583441136696" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    </div>
+  </body>
+</html>
