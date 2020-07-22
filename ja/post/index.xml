@@ -754,9 +754,9 @@ SSHを使う際にtmuxやscreenなどを使うことがおすすめ。
     
     <item>
       <title>EmacsのOrg-modeにおいてPythonコードブロックを使った時の落とし穴</title>
-      <link>https://xinii.cf/ja/post/single-language/pitfall-while-using-python-code-block-on-emacs-org-mode/</link>
+      <link>https://xinii.cf/ja/post/pitfall-while-using-python-code-block-on-emacs-org-mode/</link>
       <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>https://xinii.cf/ja/post/single-language/pitfall-while-using-python-code-block-on-emacs-org-mode/</guid>
+      <guid>https://xinii.cf/ja/post/pitfall-while-using-python-code-block-on-emacs-org-mode/</guid>
       <description>&lt;p&gt;
 僕は家計簿をOrg-modeで記録していて，
 その中にPythonのコードを書き，実行とかをやっている。
@@ -789,9 +789,9 @@ Pythonに転送すると，一時的なエラーを解消できるけど，
     
     <item>
       <title>pLaTeXを使う際に扱うepsグラフに関する落とし穴</title>
-      <link>https://xinii.cf/ja/post/single-language/pitfall-while-inserting-figure-into-latex-article/</link>
+      <link>https://xinii.cf/ja/post/pitfall-while-inserting-figure-into-latex-article/</link>
       <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>https://xinii.cf/ja/post/single-language/pitfall-while-inserting-figure-into-latex-article/</guid>
+      <guid>https://xinii.cf/ja/post/pitfall-while-inserting-figure-into-latex-article/</guid>
       <description>&lt;p&gt;
 pLaTeXを使う際に，なぜか特定のepsグラフを文書のソースに入れたらビルドが失敗。
 しかも失敗した時のログをみると，まったく問題を特定できない。&lt;/p&gt;
@@ -810,9 +810,9 @@ epsグラフのスケールを正方形に近い形状から矩形にしたら�
     
     <item>
       <title>EmacsとLilypondで楽譜生成</title>
-      <link>https://xinii.cf/ja/post/single-language/generate-sheet-music-with-lilypond-on-emacs/</link>
+      <link>https://xinii.cf/ja/post/generate-sheet-music-with-lilypond-on-emacs/</link>
       <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>https://xinii.cf/ja/post/single-language/generate-sheet-music-with-lilypond-on-emacs/</guid>
+      <guid>https://xinii.cf/ja/post/generate-sheet-music-with-lilypond-on-emacs/</guid>
       <description>
 &lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
@@ -876,9 +876,9 @@ epsグラフのスケールを正方形に近い形状から矩形にしたら�
     
     <item>
       <title>絶対音感について</title>
-      <link>https://xinii.cf/ja/post/single-language/about-absolute-pitch/</link>
+      <link>https://xinii.cf/ja/post/about-absolute-pitch/</link>
       <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>https://xinii.cf/ja/post/single-language/about-absolute-pitch/</guid>
+      <guid>https://xinii.cf/ja/post/about-absolute-pitch/</guid>
       <description>
 &lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;

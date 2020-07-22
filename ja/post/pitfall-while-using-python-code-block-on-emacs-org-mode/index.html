@@ -27,10 +27,10 @@
   
     
   
-  <meta name="description" content="I believe everyone has their innate ideas and potential, be sure to accept your inner thoughts and create your ideas, here is xin iDEA iNNATA.">
+  <meta name="description" content="EmacsのOrg-modeが必要に便利なツールで，そのままコードをコンパイルできることが魅力的。ただPythonを使う際に落とし穴がある，一緒に見てみよう！">
 
   
-  <link rel="alternate" hreflang="ja-jp" href="https://xinii.cf/ja/404.html">
+  <link rel="alternate" hreflang="ja-jp" href="https://xinii.cf/ja/post/pitfall-while-using-python-code-block-on-emacs-org-mode/">
 
   
 
@@ -257,7 +257,7 @@
   <link rel="icon" type="image/png" href="/images/icon_huc6d37f8d5848c4cf0bbdc638499793df_110525_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_huc6d37f8d5848c4cf0bbdc638499793df_110525_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://xinii.cf/ja/404.html">
+  <link rel="canonical" href="https://xinii.cf/ja/post/pitfall-while-using-python-code-block-on-emacs-org-mode/">
 
   
   
@@ -276,17 +276,65 @@
   <meta property="twitter:creator" content="@xintxt">
   
   <meta property="og:site_name" content="xin iDEA iNNATA">
-  <meta property="og:url" content="https://xinii.cf/ja/404.html">
-  <meta property="og:title" content="404 Page not found | xin iDEA iNNATA">
-  <meta property="og:description" content="I believe everyone has their innate ideas and potential, be sure to accept your inner thoughts and create your ideas, here is xin iDEA iNNATA."><meta property="og:image" content="https://xinii.cf/images/logo_hu4469573970495a9d28444639a51ce6fc_83092_300x300_fit_lanczos_2.png">
+  <meta property="og:url" content="https://xinii.cf/ja/post/pitfall-while-using-python-code-block-on-emacs-org-mode/">
+  <meta property="og:title" content="EmacsのOrg-modeにおいてPythonコードブロックを使った時の落とし穴 | xin iDEA iNNATA">
+  <meta property="og:description" content="EmacsのOrg-modeが必要に便利なツールで，そのままコードをコンパイルできることが魅力的。ただPythonを使う際に落とし穴がある，一緒に見てみよう！"><meta property="og:image" content="https://xinii.cf/images/logo_hu4469573970495a9d28444639a51ce6fc_83092_300x300_fit_lanczos_2.png">
   <meta property="twitter:image" content="https://xinii.cf/images/logo_hu4469573970495a9d28444639a51ce6fc_83092_300x300_fit_lanczos_2.png"><meta property="og:locale" content="ja-jp">
   
     
+      <meta property="article:published_time" content="2019-11-23T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2019-11-23T00:00:00&#43;00:00">
   
 
   
 
 
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://xinii.cf/ja/post/pitfall-while-using-python-code-block-on-emacs-org-mode/"
+  },
+  "headline": "EmacsのOrg-modeにおいてPythonコードブロックを使った時の落とし穴",
+  
+  "datePublished": "2019-11-23T00:00:00Z",
+  "dateModified": "2019-11-23T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Xin Li"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "xin iDEA iNNATA",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://xinii.cf/images/logo_hu4469573970495a9d28444639a51ce6fc_83092_192x192_fit_lanczos_2.png"
+    }
+  },
+  "description": "EmacsのOrg-modeが必要に便利なツールで，そのままコードをコンパイルできることが魅力的。ただPythonを使う際に落とし穴がある，一緒に見てみよう！"
+}
+</script>
+
+  
+
+  
 
 
   
@@ -335,7 +383,7 @@
 <script src="https://www.googleoptimize.com/optimize.js?id=OPT-MQBJVR6"></script>
 
 
-  <title>404 Page not found | xin iDEA iNNATA</title>
+  <title>EmacsのOrg-modeにおいてPythonコードブロックを使った時の落とし穴 | xin iDEA iNNATA</title>
 
 </head>
 <body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
@@ -658,51 +706,585 @@
 </nav>
 
 
-  <div class="universal-wrapper pt-3">
-
-  <h1>ページが見つかりませんでした</h1>
-
-  
-  
-  <form class="d-flex align-items-center mb-3">
-    <input name="q" type="search" class="form-control" placeholder="検索..." autocomplete="off">
-  </form>
-  
+  <article class="article">
 
   
 
-  <p>あなたが探しているものはこれらの中にあるかもしれません</p>
+
+
+
+
+
+
+
+
+
+
+
+  
 
   
   
   
-  <h2>最近の内容</h2>
-  <ul>
+<div class="article-container pt-3">
+  <h1>EmacsのOrg-modeにおいてPythonコードブロックを使った時の落とし穴</h1>
+
+  
+
+  
     
-      <li><a href="/ja/project/xinconfig/">A reasonable configuration tool for your unified working environment</a></li>
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
     
-      <li><a href="/ja/post/some-installations-for-windows-10/">Windows 10をクリーンインストールした後の作業</a></li>
     
-      <li><a href="/ja/post/several-windows-registry-configurations/">より効率的な作業を行うためのいくつかWindowsのレジストリー設定</a></li>
+      
     
-      <li><a href="/ja/post/add-apt-repository-for-fish-and-emacs/">FishとEmacsのためのaptリポジトリ追加</a></li>
-    
-      <li><a href="/ja/post/several-ssh-configurations/">いくつかのSSH設定</a></li>
-    
-      <li><a href="/ja/publication/li2020wave/">船型データの分布を考慮した深層学習による造波抵抗推定</a></li>
-    
-      <li><a href="/ja/publication/li2019improved/">An Improved Auto-encoder Based on 2-Level Prioritized Experience Replay for High Dimension Skewed Data</a></li>
-    
-      <li><a href="/ja/post/pitfall-while-using-python-code-block-on-emacs-org-mode/">EmacsのOrg-modeにおいてPythonコードブロックを使った時の落とし穴</a></li>
-    
-      <li><a href="/ja/post/pitfall-while-inserting-figure-into-latex-article/">pLaTeXを使う際に扱うepsグラフに関する落とし穴</a></li>
-    
-      <li><a href="/ja/post/generate-sheet-music-with-lilypond-on-emacs/">EmacsとLilypondで楽譜生成</a></li>
-    
-  </ul>
+    Sat, Nov 23, 2019
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    1 分で読める
+  </span>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/ja/post/pitfall-while-using-python-code-block-on-emacs-org-mode/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/ja/category/pitfall/">pitfall</a></span>
   
 
 </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>
+僕は家計簿をOrg-modeで記録していて，
+その中にPythonのコードを書き，実行とかをやっている。
+しかし，以下のエラーになったことがある。</p>
+<div class="src src-sample">
+<pre><code class="language-sample" data-lang="sample">File &#34;&lt;stdin&gt;&#34;, line 3
+SyntaxError: Non-UTF-8 code starting with &#39;\xe3&#39; in file &lt;stdin&gt; on line 3, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details</code></pre>
+</div>
+<p>
+考えられるのは， <code># -*- coding: utf-8 -*-</code> を先頭につけることしかないけど，
+結局 <strong>Org-modeの中のPythonのコードブロック</strong> なら効かなかった。</p>
+<p>
+解決法は以下のようなコードブロックのヘッダーを，</p>
+<div class="src src-sample">
+<pre><code class="language-sample" data-lang="sample">#+begin_src python :results file :var data=test</code></pre>
+</div>
+<p>
+以下のように変換する</p>
+<div class="src src-sample">
+<pre><code class="language-sample" data-lang="sample">#+begin_src python :results file :var data=test[, 0:2]</code></pre>
+</div>
+<p>
+すなわち，必須となる数字や日付などが入っているテーブルの列だけを
+Pythonに転送すると，一時的なエラーを解消できるけど，
+本質的には解決していない。</p>
+<p>
+引き続き調査。</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+  
+  
+
+<p class="edit-page">
+  <a class="btn btn-sm btn-outline-secondary" href="https://github.com/xinii/hugo-site-academic/edit/master/content/ja/post/pitfall-org-mode-python.ja.org">
+    <i class="fas fa-pen pr-2"></i>このページを編集
+  </a>
+</p>
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/ja/tag/emacs/">Emacs</a>
+  
+  <a class="badge badge-light" href="/ja/tag/org-mode/">Org-mode</a>
+  
+  <a class="badge badge-light" href="/ja/tag/python/">Python</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://xinii.cf/ja/post/pitfall-while-using-python-code-block-on-emacs-org-mode/&amp;text=Emacs%e3%81%aeOrg-mode%e3%81%ab%e3%81%8a%e3%81%84%e3%81%a6Python%e3%82%b3%e3%83%bc%e3%83%89%e3%83%96%e3%83%ad%e3%83%83%e3%82%af%e3%82%92%e4%bd%bf%e3%81%a3%e3%81%9f%e6%99%82%e3%81%ae%e8%90%bd%e3%81%a8%e3%81%97%e7%a9%b4" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://xinii.cf/ja/post/pitfall-while-using-python-code-block-on-emacs-org-mode/&amp;t=Emacs%e3%81%aeOrg-mode%e3%81%ab%e3%81%8a%e3%81%84%e3%81%a6Python%e3%82%b3%e3%83%bc%e3%83%89%e3%83%96%e3%83%ad%e3%83%83%e3%82%af%e3%82%92%e4%bd%bf%e3%81%a3%e3%81%9f%e6%99%82%e3%81%ae%e8%90%bd%e3%81%a8%e3%81%97%e7%a9%b4" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Emacs%e3%81%aeOrg-mode%e3%81%ab%e3%81%8a%e3%81%84%e3%81%a6Python%e3%82%b3%e3%83%bc%e3%83%89%e3%83%96%e3%83%ad%e3%83%83%e3%82%af%e3%82%92%e4%bd%bf%e3%81%a3%e3%81%9f%e6%99%82%e3%81%ae%e8%90%bd%e3%81%a8%e3%81%97%e7%a9%b4&amp;body=https://xinii.cf/ja/post/pitfall-while-using-python-code-block-on-emacs-org-mode/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://xinii.cf/ja/post/pitfall-while-using-python-code-block-on-emacs-org-mode/&amp;title=Emacs%e3%81%aeOrg-mode%e3%81%ab%e3%81%8a%e3%81%84%e3%81%a6Python%e3%82%b3%e3%83%bc%e3%83%89%e3%83%96%e3%83%ad%e3%83%83%e3%82%af%e3%82%92%e4%bd%bf%e3%81%a3%e3%81%9f%e6%99%82%e3%81%ae%e8%90%bd%e3%81%a8%e3%81%97%e7%a9%b4" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Emacs%e3%81%aeOrg-mode%e3%81%ab%e3%81%8a%e3%81%84%e3%81%a6Python%e3%82%b3%e3%83%bc%e3%83%89%e3%83%96%e3%83%ad%e3%83%83%e3%82%af%e3%82%92%e4%bd%bf%e3%81%a3%e3%81%9f%e6%99%82%e3%81%ae%e8%90%bd%e3%81%a8%e3%81%97%e7%a9%b4%20https://xinii.cf/ja/post/pitfall-while-using-python-code-block-on-emacs-org-mode/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://xinii.cf/ja/post/pitfall-while-using-python-code-block-on-emacs-org-mode/&amp;title=Emacs%e3%81%aeOrg-mode%e3%81%ab%e3%81%8a%e3%81%84%e3%81%a6Python%e3%82%b3%e3%83%bc%e3%83%89%e3%83%96%e3%83%ad%e3%83%83%e3%82%af%e3%82%92%e4%bd%bf%e3%81%a3%e3%81%9f%e6%99%82%e3%81%ae%e8%90%bd%e3%81%a8%e3%81%97%e7%a9%b4" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+    
+    
+    
+
+    
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+        
+        <img class="avatar mr-3 avatar-circle" src="/ja/author/xin-li/avatar_hu52a603635ecebd45650b162dadabb4e5_12861_270x270_fill_q90_lanczos_center.jpg" alt="Xin Li">
+      
+
+      <div class="media-body">
+        <h5 class="card-title"><a href="/ja/author/xin-li/">Xin Li</a></h5>
+        <h6 class="card-subtitle">Postdoctoral researcher</h6>
+        <p class="card-text">機械学習及び深層学習の応用に関する研究に従事し，不均一・偏りのあるデータに対するサンプリング手法および学習アルゴリズムに注目している。</p>
+        <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/ja/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/xintxt" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.facebook.com/xintxt" target="_blank" rel="noopener">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/xinii/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/xinii" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://soundcloud.com/user-499505439-644196268" target="_blank" rel="noopener">
+        <i class="fab fa-soundcloud"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/ja/cv" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.mendeley.com/profiles/xin-li399/" target="_blank" rel="noopener">
+        <i class="ai ai-mendeley"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=90BQQdwAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0003-0024-3670" target="_blank" rel="noopener">
+        <i class="fab fa-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Xin_Li514" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </div>
+  
+
+
+
+
+
+
+
+<div class="content-widget-hr" style="text-align:center">
+  <script type="text/javascript">
+   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+       
+
+       
+       var nend_params = {"media":66848,"site":340536,"spot":1007723,"type":1,"oriented":1};
+       document.write('\x3Cscript type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js">\x3C/script>');
+       document.write('<br>');
+
+       
+       imobile_tag_ver = "0.3";
+       imobile_pid = "73400";
+       imobile_asid = "1711292";
+       imobile_type = "inline";
+       document.write('\x3Cscript type="text/javascript" src="https://spad.i-mobile.co.jp/script/adssp.js?20110215">\x3C/script>');
+       
+   } else {
+       
+
+       
+       imobile_pid = "73400";
+       imobile_asid = "1711291";
+       imobile_width = 468;
+       imobile_height = 60;
+       document.write('\x3Cscript type="text/javascript" src="https://spdeliver.i-mobile.co.jp/script/ads.js?20101001">\x3C/script>');
+   }
+  </script>
+</div>
+
+
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "xinii" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+<div class="article-widget">
+  
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">次へ</div>
+    <a href="/ja/post/several-ssh-configurations/" rel="next">いくつかのSSH設定</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">前へ</div>
+    <a href="/ja/post/pitfall-while-inserting-figure-into-latex-article/" rel="prev">pLaTeXを使う際に扱うepsグラフに関する落とし穴</a>
+  </div>
+  
+</div>
+
+</div>
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>関連項目</h3>
+    <ul>
+      
+      <li><a href="/ja/project/xinconfig/">A reasonable configuration tool for your unified working environment</a></li>
+      
+      <li><a href="/ja/post/add-apt-repository-for-fish-and-emacs/">FishとEmacsのためのaptリポジトリ追加</a></li>
+      
+      <li><a href="/ja/post/generate-sheet-music-with-lilypond-on-emacs/">EmacsとLilypondで楽譜生成</a></li>
+      
+      <li><a href="/ja/post/install-opencv-on-jetson-nano/">Jetson NanoにOpenCVをインストール</a></li>
+      
+      <li><a href="/ja/post/pitfall-while-inserting-figure-into-latex-article/">pLaTeXを使う際に扱うepsグラフに関する落とし穴</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
+</article>
 
       
 

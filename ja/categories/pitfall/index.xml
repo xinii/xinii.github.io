@@ -14,9 +14,9 @@
     
     <item>
       <title>EmacsのOrg-modeにおいてPythonコードブロックを使った時の落とし穴</title>
-      <link>https://xinii.cf/ja/post/single-language/pitfall-while-using-python-code-block-on-emacs-org-mode/</link>
+      <link>https://xinii.cf/ja/post/pitfall-while-using-python-code-block-on-emacs-org-mode/</link>
       <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>https://xinii.cf/ja/post/single-language/pitfall-while-using-python-code-block-on-emacs-org-mode/</guid>
+      <guid>https://xinii.cf/ja/post/pitfall-while-using-python-code-block-on-emacs-org-mode/</guid>
       <description>&lt;p&gt;
 僕は家計簿をOrg-modeで記録していて，
 その中にPythonのコードを書き，実行とかをやっている。
@@ -49,9 +49,9 @@ Pythonに転送すると，一時的なエラーを解消できるけど，
     
     <item>
       <title>pLaTeXを使う際に扱うepsグラフに関する落とし穴</title>
-      <link>https://xinii.cf/ja/post/single-language/pitfall-while-inserting-figure-into-latex-article/</link>
+      <link>https://xinii.cf/ja/post/pitfall-while-inserting-figure-into-latex-article/</link>
       <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>https://xinii.cf/ja/post/single-language/pitfall-while-inserting-figure-into-latex-article/</guid>
+      <guid>https://xinii.cf/ja/post/pitfall-while-inserting-figure-into-latex-article/</guid>
       <description>&lt;p&gt;
 pLaTeXを使う際に，なぜか特定のepsグラフを文書のソースに入れたらビルドが失敗。
 しかも失敗した時のログをみると，まったく問題を特定できない。&lt;/p&gt;
