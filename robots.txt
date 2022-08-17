@@ -1,6 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: https://xinii.cf/sitemap.xml
-Sitemap: https://xinii.cf/en/sitemap.xml
-Sitemap: https://xinii.cf/ja/sitemap.xml
-Sitemap: https://xinii.cf/zh/sitemap.xml
